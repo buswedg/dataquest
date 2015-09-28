@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>NN_template</title>
+<title>INN_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -248,15 +248,33 @@ $( document ).ready(code_toggle);
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Many machine learning prediction problems are rooted in complex data and its non-linear relationships between features. Neural networks are a class of models that can learn these non-linear interactions between variables.</p>
 <p>We will introduce neural networks by predicting the species of iris flowers from data with the following features:</p>
-
-<pre><code>sepal_length - Continuous variable measured in centimeters.
-sepal_width - Continuous variable measured in centimeters.
-petal_length - Continuous variable measured in centimeters.
-petal_width - Continuous variable measured in centimeters.
-species - Categorical. 2 species of iris flowers, Iris-virginica or Iris-versicolor.
-
-</code></pre>
+<ul>
+<li>sepal_length - Continuous variable measured in centimeters.</li>
+<li>sepal_width - Continuous variable measured in centimeters.</li>
+<li>petal_length - Continuous variable measured in centimeters.</li>
+<li>petal_width - Continuous variable measured in centimeters.</li>
+<li>species - Categorical. 2 species of iris flowers, Iris-virginica or Iris-versicolor.</li>
+</ul>
 <p>The DataFrame class includes a hist() method which creates a histogram for every numeric column in that DataFrame. The histograms are generated using Matplotlib and displayed using plt.show().</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Visualize the data using the method hist() on our DataFrame iris and showing the plots.</p>
 
 </div>
 </div>
@@ -587,9 +605,28 @@ nQjsCEOzd6BOsvtjVrYDzpU0j/A1f76ZXTnk9zJQJ+nvs5OU5VhhnRS4Tx9Y5DiO0xB8CjrHcZyG
 <p>So far we have talked about methods which do not allow for a large amount of non-linearity, so we must explore other options like neural networks. Neural networks are very loosely inspired by the structure of neurons in the human brain. These models are built by using a series of activation units, known as neurons, to make predictions of some outcome. Neurons take in some input, apply a transformation function, and return an output.</p>
 <p>An example neuron is taking in 5 units represented as x, a bias unit, and 4 features. This bias unit is similar in concept to the intercept in linear regression and it will shift the activity of the neuron to one direction or the other. These units are then fed into an activation function h.</p>
 <p>We will use the popular sigmoid (logistic) activation function because it returns values between 0 and 1 and can be treated as probabilities:</p>
-<p>Sigmoid Function: g(z)=11+e−z</p>
+<p>Sigmoid Function: g(z)=1/(1+e−z)</p>
 <p>This sigmoid function then leads to the corresponding activation function:</p>
-<p>Sigmoid Activation Function: hΘ(x)=11+e−ΘTx=11+e−(θ01+θ1x1+θ2x2)</p>
+<p>Sigmoid Activation Function: hΘ(x)=1/(1+e−ΘTx)=1/(1+e−(θ01+θ1x1+θ2x2))</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function called sigmoid_activation with inputs x a feature vector and theta a parameter vector of the same length to implement the sigmoid activation function. Assign the value of sigmoid_activation(X, theta_init) to a1. a1 should be a vector.</p>
 
 </div>
 </div>
@@ -658,8 +695,27 @@ nQjsCEOzd6BOsvtjVrYDzpU0j/A1f76ZXTnk9zJQJ+nvs5OU5VhhnRS4Tx9Y5DiO0xB8CjrHcZyG
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can train a single neuron as a two layer network using gradient descent. We need to minimize a cost function which measures the error in our model. The cost function measures the difference between the desired output and actual output, defined as:</p>
-<p>J(Θ)=−1m∑mk=1(yi∗log(hΘ(xi))+(1−yi)log(1−hΘ(xi)))</p>
+<p>J(Θ)=−(1/m)∑mk=1(yi∗log(hΘ(xi))+(1−yi)log(1−hΘ(xi)))</p>
 <p>Since our targets, yi, are binary, either yi or (1−yi) will equal zero. One of the terms in the summation will disappear because of this result and. the activation function is then used to compute the error. For example, if we observe a true target, yi=1, then we want hΘ(xi) to also be close to 1. So as hΘ(xi) approaches 1, the log(hΘ(xi)) becomes very close to 0. Since the log of a value between 0 and 1 is negative, we must take the negative of the entire summation to compute the cost. The parameters are randomly initialized using a normal random variable with a small variance, less than 0.1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function that can compute the cost from just a single observation. Write a function singlecost() using input features X, targets y, and parameters theta to compute the cost function. Assign the cost of variables x0, y, and init_theta to variable first_cost.</p>
 
 </div>
 </div>
@@ -709,6 +765,26 @@ nQjsCEOzd6BOsvtjVrYDzpU0j/A1f76ZXTnk9zJQJ+nvs5OU5VhhnRS4Tx9Y5DiO0xB8CjrHcZyG
 <p>This rule may look complicated, but we can break it down. The first part is computing the error between the target variable and prediction. The second part then computes the sensitivity relative to each parameter. In the end, the gradients are computed as: δ=(yi−hΘ(xi))∗hΘ(xi)∗(1−hΘ(xi))∗xi.</p>
 <p>Now we will step through the math. (yi−hΘ(xi)) is a scalar and the error between our target and prediction. hΘ(xi)∗(1−hΘ(xi)) is also a scalar and the sensitivity of the activation function. xi is the features for our observation i. δ is then a vector of length 5, 4 features plus a bias unit, corresponding to the gradients.</p>
 <p>To implement this, we compute δ for each observation, then average to get the average gradient. The average gradient is then used to update the corresponding parameters.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Compute the average gradients over each observation in X and corresponding target y with the initialized parameters theta_init. Assign the average gradients to variable grads.</p>
+<p>Write a function gradients() which will estimate and return the gradient of each parameter in a vector. The inputs of this function should be features (X), observations (y), a set of parameters (theta), and an epsilon (eps) to control the numerial computation. Assign the gradients using theta_init, X, y, and eps to variable first_gradient.</p>
 
 </div>
 </div>
@@ -771,7 +847,8 @@ nQjsCEOzd6BOsvtjVrYDzpU0j/A1f76ZXTnk9zJQJ+nvs5OU5VhhnRS4Tx9Y5DiO0xB8CjrHcZyG
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="n">theta_init</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 
@@ -1068,6 +1145,25 @@ eDMz6zB3Z5mZWYc5RMzMrMMcImZm1mEOETMz6zCHiJmZdZhDxMzMOswhYmZmHeYQMTOzDvv/pbPB
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function feedforward() that will take in an input X and two sets of parameters theta0 and theta1 to compute the output hΘ(X). Assign the output to variable h using features X and parameters theta0_init and theta1_init.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
@@ -1108,6 +1204,25 @@ eDMz6zB3Z5mZWYc5RMzMrMMcImZm1mEOETMz6zCHiJmZdZhDxMzMOswhYmZmHeYQMTOzDvv/pbPB
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The cost function to multiple layer neural networks is identical to the cost function previously used above, but hΘ(xi) is more complicated.</p>
 <p>J(Θ)=−1m∑mi=1(yi∗log(hΘ(xi))+(1−yi)log(1−hΘ(xi))</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function multiplecost() which estimates the cost function. Use the observations in X, targets y and inital parameters theta0_init and theta1_init. Assign the cost to variable c.</p>
 
 </div>
 </div>
@@ -1167,7 +1282,8 @@ eDMz6zB3Z5mZWYc5RMzMrMMcImZm1mEOETMz6zCHiJmZdZhDxMzMOswhYmZmHeYQMTOzDvv/pbPB
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c"># Use a class for this model, it&#39;s good practice and condenses the code</span>
 <span class="k">class</span> <span class="nc">NNet3</span><span class="p">:</span>
@@ -1469,6 +1585,25 @@ RK5CYII=
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Choose the first 70 rows in both X and y assigning them respectively to X_train and y_train. The last 30 rows should be assigned to variables X_test and y_test.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
@@ -1503,6 +1638,25 @@ RK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To benchmark how well a three layer neural network performs when predicting the species of iris flowers, you will have to compute the AUC, area under the curve, score of the receiver operating characteristic. The function NNet3 not only trains the model but also returns the predictions. The method predict() will return a 2D matrix of probabilities. Since there is only one target variable in this neural network, select the first row of this matrix, which corresponds to the type of flower.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Train the neural network using X_test and y_test and model, which has been initialized with a set of parameters. Once training is complete, use the predict() function to return the probabilities of the flower matching the species Iris-versicolor. Compute the AUC score, using roc_auc_score() and assign it to auc.</p>
 
 </div>
 </div>
