@@ -85,6 +85,10 @@ plt.show()
 
 From this plot, the data looks linear with a negative slope, lower accuracy with higher distance. We can use a linear model, as shown in previous missions, to model this data. This model is written as accuracyi=θ1distancei+θ0+ϵi where θ's are coefficients and ϵ are error terms. To start, lets use sklearn's LinearRegression class to estimate a linear model.
 
+####Instructions
+
+Fit a linear model where distance is the independent variable and accuracy is the dependent variable. Use the sklearn class LinearRegression and assign the coefficient of distance to theta1.
+
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -113,6 +117,10 @@ Gradient descent is a general method that can be used to estimate coefficents of
 To start we must understand cost functions. Most cost functions measure the difference between a model predictions and it's corresponding observations with the coefficients as parameters. Lets say our model is hθ(x)=θ1x+θ0.
 
 The cost function is then defined as, J(θ0,θ1)=12m∑mi=1(hθ(xi)−yi)2. The cost here is one half the average difference between our prediction and observation squared. As we change the coefficients of the model this cost changes. During modeling we will randomly choose the coefficients and update them intelligently to minimize this cost.
+
+####Instructions
+
+Compute the cost for each theta1 in theta1s and theta0=100. Create a plot with theta1s on the x-axis and the corresponding costs on the y-axis.
 
 
 ```python
@@ -157,12 +165,16 @@ plt.plot(theta1s, costs)
 
 
 
-![png](output_10_2.png)
+![png](output_14_2.png)
 
 
 ###4: Cost function, continued
 
 The cost function above is quadratic, like a parabola, with respect to the slope and we can see there is a global minimum. A global minimum is the point where the function has the lowest value. We need to find the best set of parameters to minimize the cost function, but here we are only varying the slope and keeping the intercept constant. The minimum of the cost function is the point where the model has the lowest error, hence the point where our parameters are optimized. Instead we can use a 3D plot to visualize this cost function where the x and y axis will be the slope and intercept and the z axis will be the cost.
+
+####Instructions
+
+Make a 3D surface plot with theta0s on the x-axis, theta1s on the y-axis, and the corrsponding cost on the z-axis. use the cost function provided above. Assign each cost into the repsective index in variable cost.
 
 
 ```python
@@ -231,11 +243,11 @@ plt.show()
     
 
 
-![png](output_13_1.png)
+![png](output_19_1.png)
 
 
 
-![png](output_13_2.png)
+![png](output_19_2.png)
 
 
 ###5: Cost function, slopes
@@ -244,11 +256,15 @@ Gradient descent relies on finding the direction of the largest gradient where a
 
 ∂J(θ0,θ1)∂θ0 is read as the partial derivative of J(θ0,θ1) in terms of θ0. This is not part of the equation but just the representation of partial derivatives.
 
-The partial derivative of the cost function in terms of theta0 is: ∂J(θ0,θ1)∂θ0=1m∑mi=1(hθ(xi)−yi).
+The partial derivative of the cost function in terms of theta0 is: ∂J(θ0,θ1)/∂θ0=1m∑mi=1(hθ(xi)−yi).
 
-The partial deriviate of the cost function in terms of theta1 is: ∂J(θ1)∂θ1=1m∑mi=1(hθ(xi)−yi)∗xi
+The partial deriviate of the cost function in terms of theta1 is: ∂J(θ1)/∂θ1=1m∑mi=1(hθ(xi)−yi)∗xi
 
 We've written the code to compute the partial derivative in terms of theta1 below. theta0 and theta1 are inputs to the function to give a reference point of where to take the derivative from. x is our feature vector and y are the observed, target, values. We then find the error between our observations and hypothesised model and multiply by x. The average of all these terms is then the partial derivative. This function gives us the slope in the direction of the θ1 coefficient.
+
+####Instructions
+
+Write a function named partial_cost_theta0(theta0, theta1, x, y) to compute ∂J(θ0,θ1)/∂θ0. theta0 and theta1 are initial parameters of the linear model, x is our feature vector (distance) and y are the observations (accuracy). Assign the partial derivative where theta0=1, theta1=1, x=pga.distance, and y=pga.accuracy to variable partial0.
 
 
 ```python
@@ -294,6 +310,10 @@ repeat until convergence {
 Let's go through this term by term. θ1 is the current value of our coefficient, ie. how much accuracy is lost per yard of distance. α is the learning rate. This value is set by the user and controls how fast the algorithm will converge by changing the parameters by some percentage of the slope. Values of this learning rate can vary from project to project but in general learning rates can be between 0.0001 and 1. This value must not be too large or the algorithm will overshoot the minimum but if it's too small it will take many iterations to converge. ∂J(θ0)∂θ1 is the partial derivative of our cost function in terms of θ0 and ∂J(θ1)∂θ1 is the partial derivative of our cost function in terms of θ1. These measure the partial derivatives in relation to our coefficients. Since we want to minimize the cost function we substract the partial derivatives times some learning rate from our coefficients to get our new set of coefficients.
 
 We will start by initializing a few variables. updates will store our convergence data for visualization later. theta0 and theta1 will hold initial values of the slope and intercept. alpha is used for our learning rate. Finding a learning rate is often done by trial and error. A good starting point is 0.01. If you find that the algorithm is learning too slowly it can be increased. If the cost starts increasing out of control then the learning rate is probably overshooting the minimum and should be decreased. We will then use the max_epochs to limit the number of iterations so it doesn't run forever. c will be used to hold the initial cost using the initial parameters.
+
+####Instructions
+
+Execute the gradient descent algorithm with alpha=0.01, x=pga.distance, and y=pga.accuracy. Make a plot of costs on the y-axis and the iteration (0 to len(costs)) on the x-axis.
 
 
 ```python
@@ -353,7 +373,7 @@ plt.show()
     
 
 
-![png](output_19_1.png)
+![png](output_29_1.png)
 
 
 ###7: Conclusion
