@@ -1,73 +1,9292 @@
-Albuquerque,749
-Anaheim,371
-Anchorage,828
-Arlington,503
-Atlanta,1379
-Aurora,425
-Austin,408
-Bakersfield,542
-Baltimore,1405
-Boston,835
-Buffalo,1288
-Charlotte-Mecklenburg,647
-Cincinnati,974
-Cleveland,1383
-Colorado Springs,455
-Corpus Christi,658
-Dallas,675
-Denver,615
-Detroit,2122
-El Paso,423
-Fort Wayne,362
-Fort Worth,587
-Fresno,543
-Greensboro,563
-Henderson,168
-Houston,992
-Indianapolis,1185
-Jacksonville,617
-Jersey City,734
-Kansas City,1263
-Las Vegas,784
-Lexington,352
-Lincoln,397
-Long Beach,575
-Los Angeles,481
-Louisville Metro,598
-Memphis,1750
-Mesa,399
-Miami,1172
-Milwaukee,1294
-Minneapolis,992
-Mobile,522
-Nashville,1216
-New Orleans,815
-New York,639
-Newark,1154
-Oakland,1993
-Oklahoma City,919
-Omaha,594
-Philadelphia,1160
-Phoenix,636
-Pittsburgh,752
-Plano,130
-Portland,517
-Raleigh,423
-Riverside,443
-Sacramento,738
-San Antonio,503
-San Diego,413
-San Francisco,704
-San Jose,363
-Santa Ana,401
-Seattle,597
-St. Louis,1776
-St. Paul,722
-Stockton,1548
-Tampa,616
-Toledo,1171
-Tucson,724
-Tulsa,990
-Virginia Beach,169
-Washington,1177
-Wichita,742
+Abbeville,11
+Adamsville,19
+Addison,1
+Alabaster,44
+Alexander City,119
+Aliceville,7
+Andalusia,34
+Anniston,461
+Arab,32
+Ardmore,2
+Arley,3
+Ashford,2
+Ashland,9
+Ashville,10
+Athens,16
+Atmore,52
+Auburn,115
+Bay Minette,47
+Bear Creek,4
+Bessemer,527
+Birmingham,2852
+Blountsville,6
+Brent,16
+Brewton,47
+Bridgeport,13
+Brilliant,4
+Butler,6
+Camp Hill,22
+Carbon Hill,14
+Cedar Bluff,20
+Centre,21
+Centreville,0
+Chickasaw,53
+Childersburg,1
+Citronelle,22
+Clanton,52
+Clayton,8
+Coaling,10
+Collinsville,6
+Cordova,15
+Creola,10
+Crossville,0
+Cullman,31
+Dadeville,17
+Daleville,17
+Daphne,31
+Dauphin Island,4
+Decatur,149
+Demopolis,47
+Dora,21
+Dothan,334
+Double Springs,5
+Douglas,1
+East Brewton,22
+Eclectic,11
+Elba,29
+Enterprise,112
+Eufaula,78
+Eutaw,46
+Evergreen,37
+Fairfield,181
+Fairhope,40
+Fayette,11
+Flomaton,9
+Florala,10
+Florence,207
+Foley,55
+Fyffe,3
+Gadsden,424
+Gardendale,53
+Geneva,13
+Georgiana,12
+Glencoe,13
+Grant,4
+Greenville,0
+Guin,16
+Gulf Shores,51
+Guntersville,48
+Gurley,4
+Hackleburg,3
+Hamilton,12
+Hanceville,16
+Hartford,13
+Hartselle,19
+Headland,7
+Helena,18
+Henagar,3
+Hokes Bluff,3
+Hoover,74
+Hueytown,26
+Huntsville,1507
+Ider,5
+Irondale,46
+Jackson,34
+Jacksonville,35
+Jasper,113
+Jemison,13
+Kinsey,2
+Lafayette,19
+Lake View,6
+Lanett,75
+Leeds,57
+Leesburg,10
+Leighton,8
+Level Plains,11
+Lincoln,31
+Linden,16
+Livingston,18
+Loxley,17
+Luverne,11
+Madison,133
+Maplesville,4
+Margaret,4
+McIntosh,10
+Midfield,47
+Midland City,16
+Millbrook,54
+Mobile,1541
+Monroeville,78
+Montevallo,15
+Moody,21
+Morris,5
+Moulton,5
+Moundville,3
+Mountain Brook,12
+Mount Vernon,28
+Muscle Shoals,58
+Napier Field,4
+New Brockton,5
+New Hope,17
+Newton,3
+Northport,114
+Notasulga,7
+Odenville,21
+Oneonta,21
+Opelika,165
+Owens Crossroads,1
+Oxford,62
+Ozark,86
+Pelham,26
+Pell City,66
+Phenix City,211
+Piedmont,20
+Pine Hill,6
+Pleasant Grove,19
+Powell,8
+Prattville,86
+Priceville,6
+Prichard,469
+Ragland,5
+Rainbow City,14
+Rainsville,15
+Red Bay,10
+Reform,6
+Riverside,8
+Robertsdale,28
+Russellville,42
+Samson,19
+Saraland,37
+Sardis City,0
+Satsuma,15
+Scottsboro,64
+Selma,245
+Sheffield,80
+Silverhill,0
+Slocomb,4
+Snead,3
+Southside,10
+Springville,5
+Sulligent,4
+Sumiton,14
+Summerdale,9
+Sylacauga,55
+Sylvania,1
+Talladega,129
+Tallassee,0
+Tarrant,18
+Taylor,1
+Thorsby,3
+Town Creek,7
+Trinity,5
+Troy,132
+Tuscaloosa,434
+Tuscumbia,47
+Tuskegee,82
+Valley,79
+Valley Head,1
+Vance,4
+Vestavia Hills,17
+Warrior,9
+Weaver,24
+Wedowee,9
+Wetumpka,40
+Winfield,23
+Woodstock,2
+York,21
+Anchorage,2435
+Bethel,56
+Bristol Bay Borough,1
+Cordova,9
+Craig,27
+Dillingham,47
+Fairbanks,213
+Haines,7
+Homer,63
+Juneau,134
+Kenai,30
+Ketchikan,32
+Kodiak,87
+Kotzebue,85
+Nome,34
+North Pole,19
+North Slope Borough,79
+Palmer,20
+Petersburg,6
+Seward,6
+Sitka,7
+Skagway,3
+Soldotna,19
+Unalaska,15
+Valdez,16
+Wasilla,42
+Wrangell,6
+Bisbee,74
+Buckeye,49
+Bullhead City,76
+Camp Verde,33
+Casa Grande,229
+Chandler,575
+Chino Valley,50
+Clarkdale,5
+Clifton,11
+Coolidge,66
+Cottonwood,44
+Eagar,15
+El Mirage,86
+Eloy,72
+Flagstaff,246
+Florence,24
+Fredonia,3
+Gilbert,193
+Glendale,905
+Globe,77
+Goodyear,94
+Holbrook,49
+Huachuca City,0
+Jerome,3
+Kearny,8
+Kingman,128
+Lake Havasu City,87
+Mammoth,5
+Marana,37
+Maricopa,62
+Mesa,1807
+Miami,19
+Nogales,39
+Page,59
+Paradise Valley,13
+Payson,56
+Peoria,254
+Phoenix,9492
+Pima,4
+Pinetop-Lakeside,34
+Prescott,124
+Prescott Valley,82
+Quartzsite6,16
+Sahuarita,17
+San Luis,37
+Scottsdale,337
+Sedona,20
+Show Low,125
+Snowflake-Taylor,21
+Somerton,15
+South Tucson,150
+Springerville,9
+St. Johns,19
+Surprise,149
+Tempe,831
+Thatcher,1
+Tolleson,37
+Tucson,3368
+Wickenburg,15
+Willcox,11
+Williams,12
+Winslow,95
+Yuma,587
+Arkadelphia,40
+Ashdown,11
+Ash Flat,1
+Atkins,2
+Bald Knob,3
+Barling,19
+Bay,1
+Bearden,4
+Beebe,19
+Bella Vista,26
+Benton,107
+Bentonville,61
+Berryville,7
+Blytheville,235
+Booneville,4
+Bradford,3
+Brinkley,13
+Brookland,2
+Bryant,12
+Bull Shoals,8
+Cabot,55
+Caddo Valley,1
+Camden,63
+Cammack Village,0
+Caraway,6
+Carlisle,12
+Cave City,4
+Cave Springs,5
+Centerton,19
+Charleston,11
+Cherokee Village,8
+Clarendon,2
+Clarksville,15
+Clinton,3
+Conway,239
+Corning,13
+Cotter,2
+Crossett,27
+Danville,3
+Dardanelle,21
+Decatur,9
+De Queen,11
+Dermott,3
+Des Arc,0
+De Witt,20
+Diaz,6
+Dover,2
+Dumas,11
+Earle,4
+El Dorado,164
+England,22
+Eudora,8
+Fairfield Bay,5
+Farmington,22
+Fayetteville,339
+Flippin,3
+Fordyce,16
+Forrest City,135
+Fort Smith,606
+Gassville,1
+Gentry,6
+Glenwood,7
+Gosnell,25
+Gravette,4
+Greenbrier,0
+Green Forest,14
+Greenland,6
+Greenwood,19
+Greers Ferry,3
+Gurdon,12
+Hamburg,22
+Hampton,5
+Hardy,2
+Harrisburg,10
+Harrison,71
+Heber Springs,18
+Helena-West Helena,148
+Highfill,0
+Highland,1
+Hope,82
+Hot Springs,140
+Hoxie,6
+Jacksonville,217
+Jonesboro,313
+Kensett,3
+Lake City,3
+Lakeview,1
+Lake Village,31
+Lamar,3
+Leachville,5
+Lepanto,10
+Lincoln,3
+Little Rock,2777
+Lonoke,32
+Lowell,6
+Magnolia,48
+Malvern,8
+Marianna,8
+Marion,91
+Marmaduke,4
+Marvell,2
+Maumelle,20
+Mayflower,6
+McCrory,0
+McGehee,57
+McRae,1
+Mena,21
+Mineral Springs,1
+Monette,3
+Monticello,47
+Morrilton,18
+Mountain Home,24
+Mountain View,10
+Mulberry,10
+Murfreesboro,0
+Nashville,5
+Newport,28
+North Little Rock,461
+Ola,3
+Osceola,99
+Ozark,18
+Pangburn,0
+Paragould,127
+Paris,35
+Pea Ridge,6
+Perryville,1
+Piggott,9
+Plummerville,7
+Pottsville,6
+Prairie Grove,14
+Quitman,0
+Redfield,1
+Rison,2
+Rogers,208
+Russellville,94
+Salem,8
+Sheridan,13
+Sherwood,130
+Siloam Springs,46
+Springdale,354
+Stamps,4
+Star City,12
+Stuttgart,44
+Swifton,0
+Texarkana,305
+Trumann,60
+Van Buren,107
+Vilonia,6
+Waldron,16
+Walnut Ridge,6
+Ward,28
+Warren,22
+White Hall,5
+Wynne,33
+Adelanto,198
+Agoura Hills,19
+Alameda,158
+Albany,29
+Alhambra,163
+Aliso Viejo,25
+Alturas,28
+American Canyon,54
+Anaheim,1130
+Anderson,63
+Antioch,946
+Apple Valley,185
+Arcadia,77
+Arcata,67
+Arroyo Grande,31
+Artesia,63
+Arvin,153
+Atascadero,97
+Atherton,10
+Atwater,182
+Auburn,49
+Avalon,4
+Avenal,62
+Azusa,246
+Bakersfield,1857
+Baldwin Park,220
+Banning,129
+Barstow,229
+Bear Valley,12
+Beaumont,85
+Bell,208
+Bellflower,279
+Bell Gardens,120
+Belmont,27
+Belvedere,0
+Benicia,30
+Berkeley,562
+Beverly Hills,77
+Big Bear Lake,56
+Biggs,16
+Bishop,28
+Blythe,65
+Bradbury,1
+Brawley,61
+Brea,64
+Brentwood,89
+Brisbane,5
+Broadmoor,14
+Buellton,7
+Buena Park,221
+Burbank,171
+Burlingame,37
+Calabasas,20
+Calexico,92
+California City,87
+Calimesa,14
+Calistoga,9
+Camarillo,73
+Campbell,106
+Canyon Lake,3
+Capitola,38
+Carlsbad,221
+Carmel,9
+Carpinteria,21
+Carson,400
+Cathedral City,149
+Central Marin,41
+Ceres,133
+Cerritos,82
+Chico,299
+Chino,258
+Chino Hills,63
+Chowchilla,81
+Chula Vista,595
+Citrus Heights,320
+City of Angels,9
+Claremont,37
+Clayton,2
+Clearlake,125
+Cloverdale,5
+Clovis,181
+Coachella,118
+Coalinga,131
+Colma,5
+Colton,161
+Colusa,10
+Commerce,83
+Compton,1242
+Concord,407
+Corcoran,71
+Corning,47
+Corona,162
+Coronado,11
+Costa Mesa,252
+Cotati,35
+Covina,138
+Crescent City,94
+Cudahy,111
+Culver City,161
+Cupertino,41
+Cypress,50
+Daly City,223
+Dana Point,70
+Danville,17
+Davis,103
+Delano,309
+Del Mar,16
+Del Rey Oaks,5
+Desert Hot Springs,277
+Diamond Bar,62
+Dinuba,214
+Dixon,35
+Dorris,1
+Dos Palos,89
+Downey,326
+Duarte,41
+Dublin,70
+Dunsmuir,4
+East Palo Alto,347
+Eastvale,63
+El Cajon,386
+El Centro,144
+El Cerrito,92
+Elk Grove,469
+El Monte,340
+El Segundo,37
+Emeryville,132
+Encinitas,127
+Escalon,10
+Escondido,596
+Etna,1
+Eureka,192
+Exeter,20
+Fairfax,13
+Fairfield,498
+Farmersville,47
+Ferndale,4
+Fillmore,26
+Firebaugh,70
+Folsom,98
+Fontana,725
+Fort Bragg,53
+Fort Jones,1
+Fortuna,41
+Foster City,15
+Fountain Valley,92
+Fowler,37
+Fremont,273
+Fresno,2552
+Fullerton,372
+Galt,63
+Gardena,245
+Garden Grove,455
+Gilroy,180
+Glendale,181
+Glendora,65
+Goleta,43
+Gonzales,24
+Grand Terrace,38
+Grass Valley,115
+Greenfield,89
+Gridley,72
+Grover Beach,39
+Guadalupe,10
+Gustine,39
+Hanford,299
+Hawaiian Gardens,56
+Hawthorne,580
+Hayward,589
+Healdsburg,25
+Hemet,447
+Hercules,22
+Hermosa Beach,27
+Hesperia,371
+Hidden Hills,2
+Highland,191
+Hillsborough,0
+Hollister,195
+Holtville,12
+Hughson,7
+Huntington Beach,362
+Huntington Park,359
+Huron,71
+Imperial,7
+Imperial Beach,133
+Indian Wells,7
+Indio,468
+Industry,51
+Inglewood,739
+Ione,6
+Irvine,113
+Irwindale,20
+Isleton,9
+Jackson,23
+Jurupa Valley,267
+Kensington,5
+Kerman,45
+King City,68
+Kingsburg,23
+La Canada Flintridge,12
+Lafayette,21
+Laguna Beach,41
+Laguna Hills,53
+Laguna Niguel,57
+Laguna Woods,5
+La Habra,88
+La Habra Heights,3
+Lake Elsinore,103
+Lake Forest,105
+Lakeport,14
+Lake Shastina,2
+Lakewood,225
+La Mesa,181
+La Mirada,72
+Lancaster,832
+La Palma,10
+La Puente,143
+La Quinta,68
+La Verne,37
+Lawndale,162
+Lemon Grove,145
+Lemoore,111
+Lincoln,25
+Lindsay,40
+Livermore,270
+Livingston,33
+Lodi,287
+Loma Linda,61
+Lomita,66
+Lompoc,188
+Long Beach,2346
+Los Alamitos,24
+Los Altos,23
+Los Altos Hills,2
+Los Angeles,16524
+Los Banos,109
+Los Gatos,25
+Lynwood,436
+Madera,568
+Malibu,28
+Mammoth Lakes,18
+Manhattan Beach,64
+Manteca,212
+Marina,50
+Martinez,53
+Marysville,87
+Maywood,112
+McFarland,65
+Mendota,38
+Menifee,99
+Menlo Park,53
+Merced,556
+Mill Valley,11
+Milpitas,93
+Mission Viejo,62
+Modesto,1704
+Monrovia,57
+Montague,2
+Montclair,187
+Montebello,183
+Monterey,120
+Monterey Park,104
+Monte Sereno,1
+Moorpark,37
+Moraga,11
+Moreno Valley,638
+Morgan Hill,63
+Morro Bay,31
+Mountain View,157
+Mount Shasta,5
+Murrieta,70
+Napa,255
+National City,314
+Needles,15
+Nevada City,26
+Newark,123
+Newman,36
+Newport Beach,73
+Norco,42
+Norwalk,407
+Novato,107
+Oakdale,50
+Oakland,7984
+Oakley,70
+Oceanside,634
+Ojai,14
+Ontario,453
+Orange,147
+Orange Cove,212
+Orinda,10
+Orland,27
+Oroville,78
+Oxnard,651
+Pacifica,66
+Pacific Grove,22
+Palmdale,759
+Palm Desert,110
+Palm Springs,255
+Palo Alto,54
+Palos Verdes Estates,6
+Paradise,68
+Paramount,222
+Parlier,91
+Pasadena,434
+Paso Robles,103
+Patterson,41
+Perris,241
+Petaluma,179
+Pico Rivera,207
+Piedmont,20
+Pinole,69
+Pismo Beach,22
+Pittsburg,185
+Placentia,66
+Placerville,63
+Pleasant Hill,55
+Pleasanton,60
+Pomona,809
+Porterville,194
+Port Hueneme,57
+Poway,90
+Rancho Cordova,352
+Rancho Cucamonga,331
+Rancho Mirage,26
+Rancho Palos Verdes,30
+Rancho Santa Margarita,17
+Red Bluff,146
+Redding,585
+Redlands,215
+Redondo Beach,160
+Redwood City,190
+Reedley,157
+Rialto,434
+Richmond,1112
+Ridgecrest,154
+Rio Dell,11
+Rio Vista,32
+Ripon,15
+Riverbank,37
+Riverside,1330
+Rocklin,62
+Rohnert Park,180
+Rolling Hills,0
+Rolling Hills Estates,3
+Rosemead,149
+Roseville,261
+Ross,1
+Sacramento,3137
+Salinas,1001
+San Bernardino,1949
+San Bruno,102
+San Clemente,56
+Sand City,3
+San Diego,5303
+San Dimas,65
+San Fernando,85
+San Francisco,7064
+San Gabriel,103
+Sanger,146
+San Jacinto,124
+San Jose,3215
+San Juan Capistrano,57
+San Leandro,394
+San Luis Obispo,161
+San Marcos,214
+San Marino,20
+San Mateo,239
+San Pablo,200
+San Rafael,206
+San Ramon,27
+Santa Ana,1121
+Santa Barbara,362
+Santa Clara,172
+Santa Clarita,276
+Santa Cruz,407
+Santa Fe Springs,75
+Santa Maria,490
+Santa Monica,324
+Santa Paula,108
+Santa Rosa,541
+Santee,156
+Saratoga,14
+Sausalito,10
+Scotts Valley,11
+Seal Beach,16
+Seaside,120
+Sebastopol,23
+Selma,191
+Shafter,58
+Sierra Madre,13
+Signal Hill,32
+Simi Valley,132
+Solana Beach,27
+Soledad,73
+Solvang,7
+Sonoma,38
+Sonora,13
+South El Monte,88
+South Gate,496
+South Lake Tahoe,116
+South Pasadena,29
+South San Francisco,118
+Stallion Springs,9
+Stanton,112
+St. Helena,6
+Stockton,3622
+Suisun City,64
+Sunnyvale,144
+Susanville,83
+Sutter Creek,4
+Taft,60
+Tehachapi,41
+Temecula,91
+Temple City,48
+Thousand Oaks,139
+Tiburon,2
+Torrance,187
+Tracy,152
+Truckee,18
+Tulare,430
+Tulelake,1
+Turlock,310
+Tustin,100
+Twentynine Palms,74
+Ukiah,116
+Union City,218
+Upland,163
+Vacaville,201
+Vallejo,1019
+Ventura,262
+Vernon,22
+Victorville,651
+Villa Park,6
+Visalia,500
+Vista,445
+Walnut,37
+Walnut Creek,78
+Waterford,29
+Watsonville,237
+Weed,26
+West Covina,231
+West Hollywood,216
+Westlake Village,11
+Westminster,283
+Westmorland,2
+West Sacramento,205
+Wheatland,0
+Whittier,223
+Wildomar,40
+Williams,5
+Willits,30
+Willows,17
+Windsor,105
+Winters,8
+Woodlake,10
+Woodland,272
+Yorba Linda,30
+Yountville,1
+Yreka,49
+Yuba City,174
+Yucaipa,107
+Yucca Valley,86
+Arvada,163
+Aspen,14
+Ault,0
+Aurora,1436
+Avon,9
+Basalt,2
+Berthoud,3
+Black Hawk,6
+Blue River,1
+Boulder,218
+Bow Mar,0
+Breckenridge,22
+Broomfield,33
+Brush,6
+Buena Vista,0
+Burlington,11
+Campo,0
+Canon City,80
+Carbondale,11
+Castle Rock,45
+Cedaredge,0
+Centennial,141
+Center,10
+Central City,4
+Cherry Hills Village,1
+Colorado Springs,1893
+Columbine Valley,0
+Commerce City,156
+Cortez,18
+Craig,18
+Crested Butte,0
+Cripple Creek,9
+Dacono,1
+Del Norte,1
+Delta,25
+Denver,4087
+Dillon,2
+Durango,47
+Eagle,8
+Eaton,6
+Edgewater,2
+Elizabeth,1
+Empire,2
+Erie,11
+Estes Park,5
+Evans,69
+Fairplay,3
+Federal Heights,55
+Firestone,2
+Florence,3
+Fort Collins,357
+Fort Lupton,3
+Fort Morgan,33
+Fountain,78
+Frederick,6
+Frisco,8
+Fruita,20
+Garden City,19
+Georgetown,2
+Glendale,47
+Glenwood Springs,26
+Golden,33
+Granby,5
+Grand Junction,262
+Greeley,491
+Greenwood Village,19
+Gunnison,17
+Hayden,0
+Hotchkiss,2
+Hudson,6
+Idaho Springs,16
+Ignacio,0
+Johnstown,4
+Keenesburg,10
+Kersey,6
+Kiowa,1
+Lafayette,50
+La Junta,16
+Lakeside,5
+Lakewood,624
+Lamar,15
+La Salle,6
+La Veta,5
+Leadville,13
+Limon,7
+Littleton,44
+Lone Tree,5
+Longmont,226
+Louisville,18
+Loveland,150
+Mancos,1
+Manitou Springs,14
+Mead,7
+Meeker,1
+Milliken,5
+Minturn,1
+Monte Vista,16
+Montrose,48
+Monument,5
+Morrison,2
+Mount Crested Butte,1
+New Castle,3
+Northglenn,95
+Oak Creek,0
+Pagosa Springs,10
+Paonia,0
+Parachute,6
+Parker,53
+Pueblo,1011
+Rangely,4
+Rifle,36
+Rocky Ford,2
+Salida,11
+Sheridan,13
+Silt,5
+Silverthorne,6
+Snowmass Village,0
+South Fork,0
+Springfield,3
+Steamboat Springs,37
+Sterling,27
+Stratton,1
+Telluride,6
+Thornton,331
+Timnath,0
+Trinidad,8
+Vail,18
+Walsenburg,18
+Walsh,2
+Westminster,214
+Wheat Ridge,103
+Windsor,6
+Woodland Park,10
+Wray,1
+Yuma,2
+Ansonia,33
+Avon,12
+Berlin,14
+Bethel,3
+Bloomfield,46
+Branford,16
+Bridgeport,1397
+Bristol,82
+Brookfield,9
+Canton,2
+Cheshire,2
+Clinton,21
+Coventry,9
+Cromwell,9
+Danbury,108
+Darien,2
+Derby,22
+East Hampton,5
+East Hartford,182
+East Haven,29
+Easton,1
+East Windsor,16
+Enfield,50
+Fairfield,28
+Farmington,20
+Glastonbury,17
+Granby,5
+Greenwich,12
+Groton,7
+Groton Long Point,0
+Groton Town,47
+Guilford,5
+Hamden,319
+Hartford,1473
+Madison,2
+Manchester,101
+Meriden,175
+Middlebury,1
+Middletown,60
+Milford,42
+Monroe,1
+Naugatuck,33
+New Britain,264
+New Canaan,4
+New Haven,1643
+Newington,23
+New London,299
+New Milford,27
+Newtown,2
+North Branford,5
+North Haven,22
+Norwalk,239
+Norwich,130
+Old Saybrook,7
+Orange,10
+Plainfield,15
+Plainville,45
+Plymouth,9
+Portland,10
+Putnam,26
+Redding,2
+Ridgefield,0
+Rocky Hill,9
+Seymour,16
+Shelton,18
+Simsbury,6
+Southington,34
+South Windsor,13
+Stamford,334
+Stonington,10
+Stratford,74
+Suffield,6
+Thomaston,6
+Torrington,59
+Trumbull,9
+Vernon,47
+Wallingford,17
+Waterbury,410
+Waterford,41
+Watertown,32
+West Hartford,45
+West Haven,290
+Weston,1
+Westport,2
+Wethersfield,17
+Willimantic,33
+Wilton,0
+Winchester,14
+Windsor,25
+Windsor Locks,18
+Wolcott,4
+Woodbridge,5
+Bethany Beach,2
+Blades,7
+Bridgeville,9
+Camden,7
+Cheswold,6
+Clayton,8
+Dagsboro,4
+Delaware City,4
+Delmar,5
+Dewey Beach,17
+Dover,266
+Elsmere,25
+Felton,5
+Fenwick Island,0
+Georgetown,48
+Greenwood,8
+Harrington,25
+Laurel,54
+Lewes,6
+Middletown,48
+Milford,83
+Millsboro,14
+Milton,17
+Newark,117
+New Castle,19
+Newport,10
+Ocean View,2
+Rehoboth Beach,11
+Seaford,75
+Selbyville,11
+Smyrna,69
+Wilmington,1161
+Wyoming,5
+Washington,7880
+Alachua,36
+Altamonte Springs,150
+Altha,1
+Apalachicola,1
+Apopka,178
+Arcadia,82
+Astatula,4
+Atlantic Beach,61
+Atlantis,9
+Auburndale,55
+Aventura,56
+Bal Harbour Village,0
+Bartow,93
+Bay Harbor Islands,6
+Belleair,2
+Belleair Beach,4
+Belleair Bluffs,5
+Belle Glade,348
+Belle Isle,18
+Belleview,19
+Biscayne Park,2
+Blountstown,5
+Boca Raton,165
+Bonifay,10
+Bowling Green,7
+Boynton Beach,367
+Bradenton,351
+Bradenton Beach,1
+Brooksville,71
+Bunnell,62
+Cape Coral,197
+Carrabelle,6
+Casselberry,151
+Cedar Key,0
+Chattahoochee,23
+Chiefland,4
+Chipley,15
+Clearwater,618
+Clermont,84
+Clewiston,51
+Cocoa,321
+Cocoa Beach,83
+Coconut Creek,80
+Cooper City,50
+Coral Gables,84
+Coral Springs,237
+Crescent City,19
+Crestview,180
+Cross City,7
+Cutler Bay,135
+Dade City,37
+Dania,189
+Davenport,5
+Davie,306
+Daytona Beach,799
+Daytona Beach Shores,16
+Deerfield Beach,305
+De Funiak Springs,37
+Deland,149
+Delray Beach,487
+Doral,79
+Dunedin,92
+Dunnellon,9
+Eatonville,30
+Edgewater,21
+Edgewood,1
+El Portal,15
+Eustis,52
+Fellsmere,8
+Fernandina Beach,36
+Flagler Beach,16
+Florida City,345
+Fort Lauderdale,1456
+Fort Myers,752
+Fort Pierce,588
+Fort Walton Beach,56
+Fruitland Park,13
+Gainesville,806
+Golden Beach,1
+Graceville,4
+Greenacres City,184
+Green Cove Springs,49
+Gretna,9
+Gulf Breeze,3
+Gulfport,48
+Gulf Stream,0
+Haines City,64
+Hallandale,279
+Havana,3
+Hialeah,774
+Hialeah Gardens,42
+Highland Beach,1
+High Springs,21
+Hillsboro Beach,0
+Holly Hill,80
+Hollywood,720
+Holmes Beach,5
+Homestead,917
+Howey-in-the-Hills,3
+Hypoluxo,9
+Indialantic,3
+Indian Creek Village,0
+Indian Harbour Beach,1
+Indian River Shores,0
+Indian Rocks Beach,10
+Indian Shores,4
+Interlachen,4
+Jacksonville,5246
+Jacksonville Beach,113
+Jasper,11
+Jennings,3
+Juno Beach,2
+Jupiter,127
+Jupiter Inlet Colony,0
+Jupiter Island,0
+Kenneth City,29
+Key Biscayne,4
+Key Colony Beach,0
+Key West,179
+Kissimmee,542
+Lady Lake,23
+Lake Alfred,17
+Lake City,188
+Lake Clarke Shores,5
+Lake Hamilton,2
+Lake Helen,5
+Lakeland,460
+Lake Mary,17
+Lake Park,67
+Lake Placid,9
+Lake Wales,48
+Lake Worth,459
+Lantana,75
+Largo,352
+Lauderdale-by-the-Sea,11
+Lauderdale Lakes,336
+Lauderhill,459
+Lawtey,0
+Leesburg,172
+Lighthouse Point,8
+Live Oak,70
+Longboat Key,5
+Longwood,69
+Lynn Haven,63
+Madeira Beach,30
+Madison,51
+Maitland,23
+Manalapan,2
+Mangonia Park,79
+Marco Island,4
+Margate,123
+Marianna,77
+Mascotte,16
+Medley,6
+Melbourne,657
+Melbourne Beach,4
+Melbourne Village,0
+Mexico Beach,8
+Miami,4945
+Miami Beach,919
+Miami Gardens,921
+Miami Lakes,30
+Miami Shores,42
+Miami Springs,31
+Milton,25
+Minneola,24
+Miramar,476
+Monticello,19
+Mount Dora,55
+Naples,39
+Neptune Beach,14
+New Port Richey,115
+New Smyrna Beach,104
+Niceville,19
+North Bay Village,8
+North Lauderdale,209
+North Miami,540
+North Miami Beach,322
+North Palm Beach,14
+North Port,108
+North Redington Beach,1
+Oakland,19
+Oakland Park,296
+Ocala,332
+Ocean Ridge,8
+Ocoee,162
+Okeechobee,21
+Oldsmar,30
+Opa Locka,495
+Orange City,15
+Orange Park,46
+Orlando,2316
+Ormond Beach,132
+Oviedo,57
+Pahokee,29
+Palatka,87
+Palm Bay,451
+Palm Beach,6
+Palm Beach Gardens,70
+Palm Beach Shores,1
+Palmetto,125
+Palmetto Bay,38
+Palm Springs,143
+Panama City,322
+Panama City Beach,99
+Parker,20
+Parkland,22
+Pembroke Park,51
+Pembroke Pines,275
+Pensacola,389
+Perry,128
+Pinellas Park,252
+Plantation,311
+Plant City,185
+Pompano Beach,819
+Ponce Inlet,1
+Port Orange,51
+Port Richey,26
+Port St. Joe,23
+Port St. Lucie,303
+Punta Gorda,21
+Quincy,46
+Redington Beaches,3
+Riviera Beach,340
+Rockledge,63
+Royal Palm Beach,116
+Safety Harbor,29
+Sanford,447
+Sanibel,5
+Sarasota,413
+Satellite Beach,34
+Sea Ranch Lakes,1
+Sebastian,55
+Sebring,57
+Seminole,43
+Sewall's Point,0
+Shalimar,0
+South Bay,73
+South Daytona,39
+South Miami,93
+South Palm Beach,0
+South Pasadena,4
+Southwest Ranches,9
+Springfield,43
+Starke,43
+St. Augustine,99
+St. Augustine Beach,7
+St. Cloud,139
+St. Pete Beach,45
+St. Petersburg,2379
+Stuart,54
+Sunny Isles Beach,34
+Sunrise,265
+Surfside,7
+Sweetwater,68
+Tallahassee,1398
+Tamarac,200
+Tampa,2097
+Tarpon Springs,100
+Tavares,55
+Temple Terrace,71
+Tequesta,7
+Titusville,328
+Treasure Island,15
+Trenton,5
+Umatilla,14
+Valparaiso,5
+Venice,37
+Vero Beach,48
+Village of Pinecrest,16
+Virginia Gardens,5
+Waldo,17
+Wauchula,20
+Webster,11
+Wellington,126
+West Melbourne,48
+West Miami,8
+Weston,47
+West Palm Beach,701
+West Park,109
+White Springs,6
+Wildwood,36
+Williston,15
+Wilton Manors,79
+Windermere,0
+Winter Garden,178
+Winter Haven,215
+Winter Park,100
+Winter Springs,51
+Zephyrhills,47
+Abbeville,3
+Adairsville,13
+Adel,18
+Adrian,0
+Alapaha,5
+Albany,749
+Alma,24
+Alpharetta,47
+Alto,0
+Americus,231
+Aragon,3
+Arcade,4
+Arlington,61
+Ashburn,40
+Athens-Clarke County,404
+Atlanta,5517
+Attapulgus,0
+Austell,40
+Bainbridge,88
+Baldwin,3
+Ball Ground,1
+Barnesville,9
+Baxley,15
+Berlin,0
+Blackshear,14
+Blairsville,0
+Blakely,32
+Bloomingdale,3
+Blue Ridge,3
+Blythe,0
+Boston,11
+Bowdon,16
+Braselton,13
+Braswell,0
+Bremen,11
+Brooklet,3
+Brunswick,162
+Buchanan,5
+Buena Vista,8
+Butler,5
+Byron,8
+Cairo,29
+Calhoun,44
+Canton,23
+Carrollton,124
+Cartersville,51
+Cave Spring,2
+Cedartown,53
+Centerville,19
+Chatsworth,10
+Chattahoochee Hills,0
+Chickamauga,6
+Clarkston,67
+Claxton,8
+Clayton,14
+Cleveland,14
+Climax,0
+Cochran,14
+College Park,324
+Colquitt,8
+Columbus,1022
+Commerce,24
+Conyers,103
+Coolidge,0
+Cordele,87
+Cornelia,6
+Covington,47
+Cuthbert,2
+Dalton,66
+Danielsville,0
+Dawson,30
+Decatur,40
+Demorest,0
+Dillard,0
+Doerun,6
+Donalsonville,7
+Doraville,44
+Douglas,100
+Douglasville,213
+Dublin,85
+Duluth,42
+Dunwoody,57
+East Ellijay,7
+Eastman,56
+East Point,420
+Eatonton,36
+Edison,0
+Elberton,59
+Ellaville,9
+Ellijay,1
+Emerson,3
+Ephesus,0
+Eton,0
+Euharlee,1
+Fairburn,52
+Fairmount,1
+Fayetteville,30
+Fitzgerald,52
+Flowery Branch,1
+Folkston,9
+Forsyth,16
+Fort Oglethorpe,28
+Fort Valley,104
+Franklin,4
+Franklin Springs,0
+Gainesville,115
+Garden City,159
+Glennville,15
+Glenwood,3
+Gordon,0
+Gray,3
+Greensboro,22
+Greenville,0
+Griffin,186
+Grovetown,4
+Hahira,3
+Hampton,9
+Hapeville,74
+Harlem,3
+Harrison,0
+Hazlehurst,7
+Helen,6
+Helena,5
+Hinesville,120
+Hiram,9
+Hoboken,1
+Holly Springs,4
+Homeland,0
+Homerville,20
+Jackson,20
+Jefferson,11
+Jeffersonville,0
+Jesup,53
+Johns Creek,37
+Jonesboro,19
+Kennesaw,34
+Kingsland,84
+Lafayette,16
+Lagrange,99
+Lakeland,10
+Lake Park,2
+Lavonia,20
+Lawrenceville,65
+Lilburn,39
+Lincolnton,7
+Locust Grove,10
+Loganville,16
+Lookout Mountain,0
+Lumber City,4
+Lumpkin,0
+Macon,583
+Madison,15
+Manchester,18
+Marietta,450
+McCaysville,2
+McDonough,56
+McIntyre,2
+McRae,17
+Meigs,6
+Midville,0
+Midway,10
+Milledgeville,61
+Milton,8
+Monroe,97
+Montezuma,19
+Morrow,33
+Moultrie,92
+Mount Airy,3
+Nashville,27
+Nelson,1
+Newnan,117
+Newton,2
+Nicholls,14
+Norcross,80
+Oakwood,12
+Ocilla,23
+Oglethorpe,34
+Oxford,0
+Patterson,0
+Pavo,9
+Peachtree City,23
+Pelham,5
+Pembroke,4
+Perry,35
+Pine Mountain,4
+Pooler,35
+Porterdale,24
+Port Wentworth,8
+Poulan,2
+Powder Springs,150
+Quitman,46
+Ray City,0
+Reynolds,0
+Richmond Hill,10
+Ringgold,7
+Riverdale,81
+Rochelle,1
+Rockmart,31
+Rome,247
+Rossville,76
+Roswell,144
+Sandersville,29
+Sandy Springs,186
+Savannah-Chatham Metropolitan,851
+Screven,2
+Senoia,2
+Shiloh,0
+Sky Valley,0
+Smyrna,183
+Snellville,34
+Social Circle,18
+Sparks,10
+Sparta,13
+Springfield,1
+Statesboro,88
+Statham,24
+St. Marys,75
+Summerville,0
+Suwanee,15
+Sylvania,17
+Talbotton,1
+Tallulah Falls,0
+Tennille,11
+Thomasville,88
+Thunderbolt,10
+Tifton,150
+Tignall,1
+Toccoa,57
+Trenton,1
+Trion,13
+Tunnel Hill,0
+Tybee Island,0
+Tyrone,5
+Union City,205
+Union Point,8
+Vidalia,92
+Villa Rica,43
+Walthourville,11
+Warm Springs,0
+Warner Robins,364
+Warrenton,12
+Washington,31
+Watkinsville,1
+Waverly Hall,0
+Waycross,64
+Waynesboro,32
+West Point,21
+Willacoochee,4
+Winder,59
+Winterville,0
+Woodbury,2
+Woodstock,20
+Wrens,10
+Aberdeen,2
+American Falls,4
+Bellevue,0
+Blackfoot,23
+Boise,600
+Bonners Ferry,13
+Buhl,7
+Caldwell,133
+Cascade,0
+Challis,0
+Chubbuck,34
+Coeur d'Alene,257
+Cottonwood,1
+Emmett,8
+Filer,3
+Fruitland,5
+Garden City,65
+Gooding,3
+Grangeville,4
+Hagerman,0
+Hailey,14
+Heyburn,3
+Homedale,9
+Idaho Falls,124
+Jerome,30
+Kamiah,3
+Kellogg,8
+Ketchum,3
+Kimberly,1
+Lewiston,49
+McCall,15
+Meridian,115
+Montpelier,5
+Moscow,25
+Mountain Home,39
+Nampa,202
+Orofino,7
+Osburn,3
+Parma,0
+Payette,19
+Pinehurst,2
+Pocatello,195
+Ponderay,1
+Post Falls,71
+Preston,5
+Priest River,1
+Rathdrum,9
+Rexburg,7
+Rigby,5
+Rupert,11
+Salmon,8
+Sandpoint,19
+Shelley,1
+Shoshone,13
+Soda Springs,14
+Spirit Lake,6
+St. Anthony,4
+St. Maries,9
+Sun Valley,8
+Twin Falls,118
+Wendell,6
+Wilder,3
+Addison,40
+Albany,0
+Albers,0
+Albion,0
+Algonquin,18
+Alsip,42
+Altamont,5
+Alton,108
+Amboy,8
+Anna,21
+Antioch,16
+Arlington Heights,42
+Arthur,2
+Ashland,1
+Ashton,0
+Athens,0
+Atwood,1
+Aurora,601
+Aviston,0
+Bannockburn,0
+Barrington,2
+Barrington Hills,0
+Bartlett,18
+Bartonville,14
+Batavia,20
+Beardstown,8
+Beecher,1
+Bellwood,132
+Belvidere,29
+Benld,0
+Bensenville,25
+Benton,16
+Berkeley,13
+Berwyn,117
+Bethalto,39
+Blandinsville,0
+Bloomingdale,10
+Bloomington,399
+Blue Island,108
+Blue Mound,5
+Bluffs,0
+Bolingbrook,174
+Bradley,26
+Braidwood,7
+Bridgeview,30
+Broadview,32
+Brookfield,17
+Buda,1
+Buffalo Grove,8
+Bull Valley,0
+Burbank,78
+Burnham,16
+Burr Ridge,2
+Byron,0
+Cahokia,65
+Cairo,120
+Cambridge,3
+Campton Hills,0
+Canton,27
+Carbondale,244
+Carlinville,15
+Carlyle,15
+Carol Stream,29
+Carpentersville,26
+Carrollton,2
+Carthage,1
+Cary,11
+Caseyville,61
+Central City,2
+Centralia,67
+Champaign,654
+Channahon,0
+Charleston,22
+Chebanse,1
+Chenoa,4
+Cherry Valley,18
+Chester,14
+Chicago,0
+Chicago Ridge,22
+Chillicothe,13
+Cicero,346
+Clarendon Hills,0
+Coal City,6
+Coal Valley,8
+Cobden,8
+Colchester,2
+Colfax,1
+Collinsville,33
+Colona,1
+Columbia,10
+Cortland,2
+Country Club Hills,44
+Countryside,4
+Crest Hill,26
+Crete,18
+Crystal Lake,47
+Danvers,1
+Darien,12
+Davis,0
+Decatur,351
+Deer Creek,0
+Deerfield,2
+De Kalb,204
+Delavan,1
+De Pue,2
+De Soto,4
+Des Plaines,56
+Diamond,0
+Divernon,0
+Dixmoor,20
+Dixon,13
+Dolton,166
+Downers Grove,25
+Dupo,32
+Du Quoin,8
+Dwight,3
+Earlville,2
+East Alton,13
+East Dubuque,15
+East Dundee,1
+East Hazel Crest,3
+East Moline,63
+Easton,0
+East Peoria,85
+Edwardsville,15
+Effingham,24
+Elburn,2
+Eldorado,10
+Elgin,236
+Elizabeth,2
+Elk Grove Village,25
+Elmhurst,12
+Elmwood,2
+Elmwood Park,29
+El Paso,2
+Elwood,3
+Erie,3
+Eureka,7
+Evanston,189
+Evergreen Park,28
+Fairbury,3
+Fairfield,17
+Fairmont City,3
+Fairview Heights,34
+Farmington,8
+Fayetteville,1
+Findlay,0
+Fisher,3
+Flora,5
+Flossmoor,15
+Forest Park,42
+Forest View,1
+Fox Lake,14
+Fox River Grove,5
+Frankfort,11
+Franklin Grove,0
+Franklin Park,21
+Freeburg,11
+Fulton,4
+Galena,1
+Galesburg,125
+Geneseo,7
+Geneva,5
+Genoa,6
+Germantown,0
+Gibson City,3
+Gilberts,1
+Gillespie,11
+Gilman,2
+Girard,10
+Glasford,3
+Glen Carbon,11
+Glencoe,0
+Glendale Heights,40
+Glen Ellyn,9
+Glenview,22
+Glenwood,13
+Godfrey,12
+Godley,3
+Goodfield,0
+Grafton,0
+Grandview,0
+Granite City,174
+Grantfork,0
+Granville,0
+Grayslake,31
+Grayville,6
+Greenfield,1
+Greenup,19
+Greenville,4
+Gurnee,38
+Hampshire,5
+Hampton,2
+Hanover,0
+Hanover Park,37
+Harrisburg,47
+Hartford,4
+Harvard,4
+Harvey,407
+Harwood Heights,12
+Havana,20
+Hawthorn Woods,1
+Hazel Crest,56
+Henry,6
+Herrin,1
+Herscher,1
+Heyworth,5
+Hickory Hills,10
+Highland Park,23
+Highwood,10
+Hillsboro,29
+Hillsdale,0
+Hinsdale,2
+Hodgkins,5
+Hoffman Estates,55
+Homer,0
+Homer Glen,5
+Hometown,6
+Homewood,45
+Hoopeston,32
+Hopedale,1
+Hudson,0
+Huntley,4
+Indian Head Park,2
+Inverness,1
+Irving,2
+Irvington,1
+Island Lake,6
+Itasca,3
+Jacksonville,39
+Jerome,11
+Jerseyville,20
+Joliet,557
+Justice,10
+Kankakee,196
+Kenilworth,0
+Kewanee,30
+Kildeer,2
+Kincaid,1
+Kingston,0
+Knoxville,0
+Lacon,2
+La Grange,15
+La Grange Park,1
+La Harpe,0
+Lake in the Hills,15
+Lakemoor,1
+Lake Villa,6
+Lakewood,1
+Lake Zurich,3
+Lansing,109
+La Salle,12
+Lawrenceville,14
+Leland,2
+Leland Grove,0
+Lemont,13
+Lexington,1
+Libertyville,6
+Lincoln,50
+Lincolnshire,4
+Lincolnwood,10
+Lindenhurst,4
+Lisle,13
+Litchfield,9
+Loami,1
+Lockport,23
+Lombard,41
+Lovington,2
+Lyons,15
+Machesney Park,58
+Macomb,55
+Mahomet,10
+Malta,0
+Manhattan,3
+Maple Park,2
+Marengo,3
+Marine,0
+Marion,7
+Maroa,2
+Marseilles,7
+Martinsville,0
+Maryville,6
+Mascoutah,5
+Matteson,73
+Mattoon,41
+Maywood,207
+McCook,3
+McHenry,37
+McLean,0
+Melrose Park,43
+Mendota,11
+Merrionette Park,0
+Metropolis,37
+Midlothian,40
+Milan,8
+Minonk,0
+Minooka,4
+Mokena,10
+Moline,121
+Monmouth,56
+Montgomery,18
+Monticello,7
+Morris,19
+Morrison,11
+Morton,18
+Morton Grove,31
+Mount Carmel,18
+Mount Carroll,0
+Mount Morris,1
+Mount Prospect,21
+Mount Pulaski,0
+Mount Vernon,217
+Mount Zion,6
+Moweaqua,2
+Mundelein,16
+Naperville,105
+Nashville,8
+Neoga,2
+New Athens,1
+New Lenox,21
+Newton,3
+Niles,35
+Nokomis,20
+Normal,115
+Norridge,19
+North Aurora,21
+Northbrook,8
+North Chicago,58
+Northfield,2
+Northlake,10
+North Riverside,22
+Norwood,0
+Oak Brook,4
+Oakbrook Terrace,2
+Oak Forest,37
+Oak Lawn,81
+Oak Park,126
+Oakwood Hills,3
+Oblong,18
+O'Fallon,34
+Oglesby,5
+Okawville,1
+Olney,30
+Olympia Fields,3
+Oquawka,2
+Oregon,7
+Orion,1
+Orland Park,17
+Oswego,18
+Ottawa,13
+Palatine,33
+Palestine,7
+Palos Heights,6
+Palos Hills,13
+Palos Park,0
+Pana,12
+Paris,29
+Park City,11
+Park Forest,94
+Park Ridge,15
+Patoka,0
+Pawnee,0
+Paxton,4
+Pekin,120
+Peoria,784
+Peoria Heights,24
+Peotone,7
+Peru,13
+Phoenix,10
+Pierron,0
+Pinckneyville,12
+Pingree Grove,2
+Plainfield,20
+Plano,2
+Pleasant Plains,0
+Polo,6
+Pontiac,51
+Pontoon Beach,6
+Posen,17
+Princeton,12
+Prospect Heights,27
+Quincy,188
+Raleigh,0
+Rantoul,106
+Red Bud,14
+Richmond,6
+Richton Park,42
+Riverdale,183
+River Forest,15
+River Grove,5
+Riverside,15
+Riverton,16
+Riverwoods,1
+Robbins,39
+Robinson,30
+Rochester,4
+Rockdale,2
+Rock Falls,21
+Rockford,2065
+Rock Island,200
+Rockton,3
+Rolling Meadows,23
+Romeoville,30
+Roodhouse,0
+Roscoe,11
+Roselle,10
+Rosemont,15
+Round Lake,27
+Round Lake Beach,37
+Round Lake Heights,8
+Round Lake Park,16
+Roxana,6
+Ruma,0
+Rushville,2
+Salem,6
+Sauget,10
+Sauk Village,72
+Savanna,17
+Schaumburg,71
+Schiller Park,9
+Seneca,21
+Sherman,2
+Shiloh,25
+Shorewood,18
+Silvis,25
+Skokie,157
+Sleepy Hollow,1
+Smithton,0
+South Barrington,0
+South Beloit,16
+South Chicago Heights,12
+South Elgin,30
+South Holland,55
+South Jacksonville,1
+South Pekin,8
+South Roxana,3
+Sparta,8
+Springfield,1191
+Spring Grove,1
+Stanford,0
+St. Anne,0
+Staunton,8
+St. Charles,20
+Steger,32
+Sterling,25
+Stickney,8
+Stockton,4
+Stonington,1
+Streamwood,41
+Streator,20
+Stronghurst,0
+Summit,40
+Swansea,28
+Sycamore,11
+Taylorville,25
+Teutopolis,0
+Thomasboro,10
+Thornton,1
+Tinley Park,46
+Tolono,5
+Tonica,0
+Tower Lakes,0
+Troy,14
+Tuscola,26
+Urbana,141
+Valmeyer,0
+Vandalia,27
+Vernon Hills,14
+Vienna,8
+Villa Park,27
+Virden,10
+Virginia,0
+Wamac,10
+Warrensburg,5
+Warrenville,5
+Washington,24
+Washington Park,114
+Watseka,13
+Wauconda,4
+Waukegan,405
+Waverly,4
+Wayne,0
+Westchester,14
+West Chicago,33
+West City,4
+West Dundee,4
+Westmont,26
+Wheaton,32
+Wheeling,38
+White Hall,7
+Willisville,0
+Willowbrook,6
+Willow Springs,4
+Wilmington,5
+Winfield,2
+Winnebago,1
+Winnetka,7
+Winthrop Harbor,16
+Witt,0
+Wood Dale,9
+Woodhull,0
+Wood River,31
+Woodstock,17
+Worth,8
+Yorkville,12
+Zion,146
+Albion,0
+Alexandria,6
+Anderson,200
+Angola,6
+Auburn,11
+Aurora,20
+Batesville,26
+Bedford,70
+Beech Grove,33
+Berne,1
+Bloomington,275
+Boonville,20
+Bremen,15
+Brownsburg,33
+Carmel,20
+Cedar Lake,13
+Chesterfield,1
+Clarksville,122
+Clinton,16
+Columbia City,4
+Columbus,82
+Crawfordsville,23
+Cumberland,20
+Danville,30
+Decatur,10
+Delphi,13
+Dyer,11
+East Chicago,196
+Edinburgh,14
+Ellettsville,25
+Elwood,7
+Evansville,564
+Fairmount,4
+Fishers,16
+Fort Wayne,949
+Franklin,69
+Garrett,2
+Gary,883
+Goshen,30
+Greenfield,12
+Greensburg,32
+Greenwood,200
+Griffith,30
+Hagerstown,3
+Hammond,654
+Hartford City,6
+Highland,9
+Hobart,61
+Huntington,27
+Indianapolis,10479
+Jasper,48
+Jeffersonville,349
+Knox,6
+Kokomo,185
+Lafayette,389
+Lake Station,50
+La Porte,44
+Lawrenceburg,8
+Ligonier,0
+Linton,0
+Long Beach,0
+Lowell,18
+Marion,80
+Martinsville,7
+Merrillville,99
+Mishawaka,136
+Mooresville,7
+Mount Vernon,12
+Muncie,288
+Nappanee,3
+New Albany,87
+New Haven,24
+New Whiteland,6
+North Judson,6
+North Liberty,0
+North Manchester,11
+North Vernon,22
+Peru,21
+Plainfield,50
+Plymouth,7
+Portage,70
+Porter,1
+Portland,1
+Rensselaer,26
+Rushville,10
+Schererville,20
+Scottsburg,28
+Sellersburg,0
+Seymour,100
+Shelbyville,0
+South Bend,664
+South Whitley,1
+Speedway,29
+Tell City,4
+Terre Haute,177
+Tipton,14
+Valparaiso,33
+Walkerton,1
+Warsaw,106
+Washington,43
+Waterloo,11
+Westfield,21
+West Lafayette,37
+Whitestown,19
+Whiting,4
+Winchester,1
+Winona Lake,12
+Zionsville,2
+Adel,7
+Albia,8
+Algona,15
+Altoona,19
+Ames,88
+Anamosa,2
+Ankeny,43
+Bettendorf,86
+Bloomfield,6
+Blue Grass,0
+Boone,77
+Buffalo,5
+Camanche,5
+Carlisle,5
+Carroll,6
+Carter Lake,19
+Cedar Falls,52
+Cedar Rapids,392
+Centerville,28
+Chariton,18
+Charles City,19
+Cherokee,14
+Clarinda,26
+Clear Lake,6
+Clinton,178
+Clive,28
+Coralville,44
+Council Bluffs,584
+Cresco,5
+Davenport,654
+Decorah,1
+Denison,4
+Des Moines,1026
+De Witt,8
+Dubuque,132
+Dyersville,10
+Eagle Grove,14
+Eldora,21
+Eldridge,13
+Emmetsburg,1
+Estherville,24
+Evansdale,21
+Fairfield,13
+Forest City,3
+Fort Dodge,157
+Fort Madison,52
+Glenwood,28
+Grinnell,34
+Grundy Center,0
+Hampton,3
+Hawarden,2
+Hiawatha,4
+Humboldt,4
+Indianola,73
+Iowa City,228
+Iowa Falls,3
+Jefferson,1
+Johnston,7
+Keokuk,103
+Le Claire,16
+Le Mars,10
+Leon,5
+Lisbon,3
+Manchester,13
+Maquoketa,21
+Marengo,3
+Marion,56
+Marshalltown,172
+Mason City,30
+Monticello,9
+Mount Vernon,5
+Muscatine,146
+New Hampton,2
+Newton,41
+North Liberty,44
+Norwalk,10
+Oelwein,34
+Orange City,3
+Osage,8
+Osceola,10
+Oskaloosa,49
+Ottumwa,74
+Pella,35
+Perry,29
+Pleasant Hill,6
+Prairie City,3
+Red Oak,19
+Sergeant Bluff,15
+Sheldon,10
+Shenandoah,3
+Sioux City,324
+Spencer,19
+Spirit Lake,9
+State Center,0
+Storm Lake,54
+Story City,2
+Toledo,46
+Urbandale,67
+Vinton,4
+Walcott,3
+Washington,54
+Waukee,10
+Waukon,1
+Waverly,54
+Webster City,28
+West Burlington,7
+West Des Moines,90
+West Liberty,7
+Williamsburg,1
+Wilton,3
+Windsor Heights,10
+Winterset,6
+Abilene,11
+Andover,8
+Anthony,14
+Arkansas City,87
+Arma,5
+Atchison,33
+Atwood,4
+Auburn,0
+Augusta,33
+Baldwin City,0
+Basehor,0
+Baxter Springs,5
+Bel Aire,9
+Belleville,6
+Beloit,14
+Bentley,0
+Benton,0
+Bonner Springs,24
+Bucklin,0
+Burlington,4
+Burrton,1
+Caney,1
+Chanute,38
+Chase,0
+Clay Center,16
+Clearwater,3
+Coffeyville,100
+Colby,19
+Columbus,1
+Concordia,27
+Council Grove,6
+Derby,36
+Dodge City,68
+Edwardsville,13
+El Dorado,52
+Ellsworth,2
+Elwood,4
+Enterprise,0
+Eudora,8
+Fairway,4
+Fort Scott,57
+Frontenac,4
+Galena,15
+Garden City,124
+Garnett,4
+Girard,4
+Goddard,7
+Grandview Plaza,3
+Great Bend,74
+Halstead,3
+Hays,71
+Herington,7
+Hesston,2
+Hiawatha,8
+Hill City,3
+Hillsboro,1
+Hoisington,14
+Holcomb,3
+Holton,7
+Horton,5
+Hugoton,4
+Hutchinson,251
+Inman,1
+Iola,24
+Junction City,147
+Kansas City,731
+Kingman,9
+Lansing,21
+Larned,14
+Lawrence,338
+Leavenworth,234
+Leawood,13
+Lebo,0
+Lenexa,58
+Le Roy,0
+Liberal,53
+Lindsborg,6
+Louisburg,2
+Maize,6
+Maple Hill,0
+Marion,3
+Marysville,6
+McLouth,3
+McPherson,41
+Medicine Lodge,5
+Mission,21
+Mission Hills,0
+Mulvane,8
+Neodesha,9
+Newton,123
+North Newton,0
+Norton,6
+Oakley,3
+Oberlin,0
+Olathe,185
+Osage City,3
+Osawatomie,16
+Oswego,2
+Ottawa,30
+Overland Park,284
+Paola,18
+Park City,10
+Peabody,1
+Pittsburg,96
+Plainville,0
+Prairie Village,10
+Pratt,19
+Rose Hill,6
+Russell,24
+Salina,155
+Scott City,14
+Scranton,1
+Sedgwick,1
+Seneca,2
+Shawnee,87
+South Hutchinson,7
+Spring Hill,5
+St. John,9
+St. Marys,4
+Stockton,3
+Tonganoxie,13
+Topeka,612
+Ulysses,13
+Valley Center,15
+Victoria,0
+Wa Keeney,0
+Wamego,4
+Waterville,0
+Wathena,3
+Waverly,0
+Wellington,34
+Wellsville,4
+Westwood,0
+Wichita,3065
+Winchester,0
+Yates Center,0
+Adairville,0
+Albany,0
+Alexandria,5
+Anchorage,0
+Ashland,41
+Auburn,3
+Audubon Park,0
+Barbourville,8
+Bardstown,13
+Bardwell,0
+Beattyville,2
+Beaver Dam,2
+Bellevue,10
+Benham,0
+Benton,2
+Berea,11
+Bloomfield,0
+Bowling Green,201
+Brandenburg,0
+Brownsville,1
+Burkesville,2
+Burnside,1
+Cadiz,5
+Calvert City,1
+Campbellsville,47
+Carlisle,2
+Carrollton,3
+Catlettsburg,5
+Cave City,5
+Central City,6
+Clarkson,0
+Clay,0
+Clay City,1
+Cloverport,0
+Coal Run Village,0
+Cold Spring,5
+Columbia,5
+Corbin,16
+Covington,241
+Cumberland,7
+Cynthiana,14
+Danville,39
+Dawson Springs,1
+Dayton,21
+Earlington,0
+Eddyville,0
+Edgewood,3
+Edmonton,1
+Elizabethtown,35
+Elkton,4
+Elsmere,15
+Eminence,2
+Erlanger,27
+Evarts,0
+Falmouth,2
+Ferguson,0
+Flatwoods,1
+Flemingsburg,0
+Florence,62
+Fort Mitchell,4
+Fort Thomas,9
+Fort Wright,19
+Frankfort,81
+Franklin,14
+Fulton,10
+Gamaliel,0
+Georgetown,78
+Glasgow,30
+Graymoor-Devondale,1
+Grayson,2
+Greensburg,0
+Greenup,0
+Greenville,1
+Guthrie,0
+Hardinsburg,2
+Harlan,14
+Harrodsburg,16
+Hartford,1
+Hawesville,0
+Hazard,30
+Henderson,66
+Heritage Creek,0
+Highland Heights,1
+Hillview,14
+Hodgenville,1
+Hopkinsville,107
+Hurstbourne Acres,0
+Independence,22
+Indian Hills,0
+Irvine,0
+Irvington,0
+Jackson,3
+Jamestown,0
+Jeffersontown,37
+Jenkins,0
+La Grange,4
+Lakeside Park-Crestview Hills,4
+Lancaster,4
+Lawrenceburg,17
+Lebanon,9
+Lebanon Junction,4
+Leitchfield,10
+Lewisburg,1
+Lewisport,3
+Lexington,946
+Liberty,0
+London,8
+Louisa,1
+Louisville Metro,3644
+Loyall,0
+Ludlow,8
+Lynnview,1
+Madisonville,26
+Manchester,2
+Marion,6
+Martin,0
+Mayfield,32
+Maysville,14
+McKee,0
+Meadow Vale,1
+Middlesboro,28
+Monticello,5
+Morehead,11
+Morganfield,4
+Morgantown,2
+Mortons Gap,0
+Mount Sterling,15
+Mount Vernon,3
+Mount Washington,3
+Muldraugh,3
+Munfordville,1
+Murray,38
+New Haven,1
+Newport,63
+Nicholasville,70
+Northfield,0
+Oak Grove,22
+Olive Hill,1
+Owensboro,140
+Owenton,0
+Owingsville,1
+Paducah,72
+Paintsville,3
+Paris,16
+Park Hills,3
+Pembroke,0
+Perryville,0
+Pewee Valley,0
+Pikeville,5
+Pineville,2
+Pioneer Village,0
+Powderly,0
+Prestonsburg,10
+Princeton,8
+Prospect,0
+Providence,7
+Raceland,3
+Radcliff,46
+Ravenna,0
+Richmond,95
+Russell,4
+Russell Springs,3
+Russellville,13
+Salyersville,1
+Science Hill,0
+Scottsville,4
+Shelbyville,32
+Shepherdsville,25
+Shively,93
+Silver Grove,1
+Simpsonville,1
+Smiths Grove,0
+Somerset,23
+Southgate,6
+South Shore,0
+Springfield,6
+Stanford,6
+Stanton,1
+St. Matthews,31
+Strathmoor Village,0
+Sturgis,1
+Taylor Mill,1
+Taylorsville,0
+Tompkinsville,1
+Trenton,0
+Uniontown,0
+Vanceburg,1
+Versailles,32
+Villa Hills,0
+Vine Grove,9
+Warsaw,1
+Wayland,0
+West Buechel,14
+West Liberty,1
+West Point,4
+Wheelwright,0
+Whitesburg,0
+Wilder,3
+Williamsburg,7
+Williamstown,2
+Wilmore,0
+Winchester,52
+Worthington,0
+Abbeville,120
+Addis,8
+Alexandria,803
+Amite,81
+Baker,31
+Bastrop,155
+Baton Rouge,2127
+Bernice,1
+Berwick,2
+Blanchard,0
+Bogalusa,106
+Bossier City,394
+Breaux Bridge,11
+Broussard,30
+Brusly,3
+Carencro,31
+Church Point,11
+Clarence,0
+Clinton,1
+Cottonport,17
+Coushatta,9
+Covington,40
+Delta,3
+Denham Springs,60
+De Quincy,0
+De Ridder,78
+Epps,0
+Erath,20
+Eunice,98
+Farmerville,19
+Ferriday,18
+Fisher,2
+Florien,1
+Folsom,1
+Franklin,60
+Franklinton,22
+French Settlement,2
+Georgetown,0
+Golden Meadow,0
+Gonzales,66
+Grambling,15
+Gramercy,13
+Greenwood,10
+Gretna,67
+Hammond,251
+Harahan,15
+Haughton,3
+Hodge,2
+Houma,204
+Independence,21
+Iowa,62
+Jeanerette,14
+Jena,3
+Jennings,30
+Jonesville,20
+Kaplan,22
+Kenner,193
+Kentwood,29
+Killian,1
+Kinder,13
+Lafayette,868
+Lake Arthur,3
+Lake Charles,547
+Lake Providence,29
+Leesville,29
+Livonia,1
+Lutcher,13
+Mandeville,24
+Mansfield,47
+Many,33
+Marion,1
+Marksville,77
+Minden,31
+Monroe,516
+Montgomery,8
+Montpelier,1
+Moreauville,1
+Morgan City,60
+Napoleonville,1
+Natchitoches,149
+New Orleans,2965
+North Hodge,2
+Norwood,3
+Oak Grove,5
+Oil City,2
+Opelousas,299
+Patterson,10
+Pearl River,15
+Pineville,81
+Plaquemine,46
+Pollock,1
+Ponchatoula,38
+Port Vincent,0
+Rayne,37
+Roseland,3
+Ruston,90
+Scott,18
+Shreveport,1397
+Slidell,96
+St. Francisville,4
+St. Gabriel,24
+Sulphur,140
+Thibodaux,68
+Tickfaw,1
+Vidalia,21
+Vinton,8
+Walker,38
+West Monroe,94
+Westwego,23
+Wilson,0
+Winnfield,81
+Zachary,39
+Zwolle,7
+Ashland,0
+Auburn,32
+Augusta,68
+Baileyville,10
+Bangor,70
+Bar Harbor,3
+Bath,8
+Belfast,9
+Berwick,8
+Biddeford,119
+Boothbay Harbor,1
+Brewer,7
+Bridgton,7
+Brownville,1
+Brunswick,23
+Bucksport,8
+Buxton,11
+Calais,11
+Camden,2
+Cape Elizabeth,0
+Caribou,6
+Carrabassett Valley,0
+Clinton,4
+Cumberland,1
+Damariscotta,2
+Dexter,5
+Dixfield,1
+Dover-Foxcroft,9
+East Millinocket,0
+Eastport,3
+Eliot,4
+Ellsworth,5
+Fairfield,6
+Falmouth,5
+Farmington,14
+Fort Fairfield,4
+Fort Kent,2
+Freeport,3
+Fryeburg,5
+Gardiner,10
+Gorham,14
+Gouldsboro,1
+Greenville,4
+Hallowell,4
+Hampden,4
+Holden,1
+Houlton,6
+Islesboro,0
+Jay,3
+Kennebunk,7
+Kennebunkport,1
+Kittery,11
+Lewiston,89
+Limestone,3
+Lincoln,2
+Lisbon,5
+Livermore Falls,2
+Machias,8
+Madawaska,2
+Madison,4
+Mechanic Falls,6
+Mexico,3
+Milbridge,2
+Millinocket,3
+Milo,18
+Monmouth,1
+Mount Desert,0
+Newport,2
+North Berwick,3
+Norway,9
+Oakland,3
+Ogunquit,1
+Old Orchard Beach,11
+Old Town,11
+Orono,3
+Oxford,4
+Paris,2
+Phippsburg,0
+Pittsfield,0
+Portland,177
+Presque Isle,13
+Rangeley,1
+Richmond,0
+Rockland,8
+Rockport,0
+Rumford,6
+Sabattus,6
+Saco,24
+Sanford,70
+Scarborough,17
+Searsport,0
+Skowhegan,18
+South Berwick,4
+South Portland,60
+Southwest Harbor,0
+Swan's Island,0
+Thomaston,0
+Topsham,4
+Van Buren,0
+Veazie,1
+Waldoboro,4
+Washburn,1
+Waterville,43
+Wells,5
+Westbrook,38
+Wilton,5
+Windham,9
+Winslow,11
+Winter Harbor,1
+Winthrop,3
+Wiscasset,8
+Yarmouth,6
+York,8
+Aberdeen,50
+Annapolis,169
+Baltimore,8725
+Baltimore City Sheriff,0
+Bel Air,47
+Berlin,5
+Berwyn Heights,7
+Bladensburg,95
+Boonsboro,2
+Bowie,61
+Brentwood,1
+Brunswick,8
+Cambridge,119
+Capitol Heights,15
+Centreville,6
+Chestertown,27
+Cheverly,29
+Chevy Chase Village,0
+Colmar Manor,12
+Cottage City,4
+Crisfield,11
+Cumberland,160
+Delmar,10
+Denton,13
+District Heights,6
+Easton,41
+Edmonston,7
+Elkton,194
+Fairmount Heights,0
+Federalsburg,41
+Forest Heights,4
+Frederick,328
+Frostburg,19
+Fruitland,20
+Glenarden,9
+Greenbelt,106
+Greensboro,9
+Hagerstown,244
+Hampstead,6
+Hancock,1
+Havre de Grace,35
+Hurlock,4
+Hyattsville,76
+Landover Hills,10
+La Plata,45
+Laurel,147
+Lonaconing,0
+Luke,0
+Manchester,5
+Morningside,6
+Mount Rainier,50
+New Carrollton,46
+North East,7
+Oakland,1
+Ocean City,83
+Ocean Pines,30
+Oxford,0
+Perryville,13
+Pocomoke City,49
+Princess Anne,22
+Ridgely,10
+Rising Sun,3
+Riverdale Park,51
+Rock Hall,4
+Salisbury,326
+Seat Pleasant,34
+Smithsburg,1
+Snow Hill,15
+St. Michaels,2
+Sykesville,4
+Takoma Park,60
+Taneytown,6
+Thurmont,11
+Trappe,4
+University Park,2
+Upper Marlboro,1
+Westminster,88
+Abington,48
+Acton,8
+Acushnet,19
+Adams,21
+Agawam,41
+Amesbury,42
+Amherst,70
+Andover,20
+Arlington,55
+Ashburnham,5
+Ashby,7
+Ashland,18
+Athol,53
+Attleboro,108
+Auburn,47
+Avon,10
+Ayer,12
+Barnstable,302
+Barre,26
+Becket,4
+Bedford,6
+Belchertown,21
+Bellingham,35
+Belmont,24
+Berkley,9
+Berlin,0
+Bernardston,4
+Beverly,88
+Billerica,48
+Blackstone,17
+Bolton,9
+Boston,5037
+Bourne,91
+Boxborough,8
+Boxford,4
+Braintree,83
+Brewster,7
+Brimfield,1
+Brockton,1162
+Brookline,85
+Burlington,33
+Cambridge,361
+Canton,59
+Carver,35
+Charlton,22
+Chatham,11
+Chelmsford,22
+Chelsea,458
+Chicopee,272
+Chilmark,1
+Clinton,10
+Cohasset,9
+Concord,17
+Dalton,5
+Danvers,51
+Dartmouth,49
+Dedham,15
+Deerfield,7
+Dennis,80
+Dighton,10
+Douglas,10
+Dover,2
+Dracut,20
+Dudley,34
+Dunstable,7
+Duxbury,2
+East Bridgewater,31
+East Brookfield,5
+Eastham,11
+Easthampton,19
+East Longmeadow,28
+Easton,33
+Edgartown,8
+Egremont,1
+Erving,6
+Essex,0
+Everett,202
+Fairhaven,64
+Fall River,944
+Falmouth,102
+Fitchburg,307
+Framingham,172
+Franklin,7
+Freetown,21
+Gardner,93
+Georgetown,3
+Gill,1
+Gloucester,22
+Goshen,0
+Grafton,22
+Granby,9
+Granville,2
+Great Barrington,30
+Groton,8
+Groveland,1
+Halifax,8
+Hamilton,3
+Hampden,3
+Hanover,2
+Hanson,19
+Hardwick,5
+Harvard,4
+Harwich,24
+Hatfield,5
+Haverhill,414
+Hingham,17
+Holbrook,39
+Holden,8
+Holliston,14
+Holyoke,419
+Hopedale,18
+Hopkinton,3
+Hubbardston,6
+Hudson,16
+Hull,42
+Ipswich,10
+Kingston,20
+Lakeville,10
+Lancaster,8
+Lawrence,776
+Lee,7
+Leicester,13
+Lenox,4
+Leominster,263
+Lexington,17
+Lincoln,6
+Littleton,9
+Longmeadow,14
+Lowell,625
+Ludlow,32
+Lunenburg,22
+Lynn,814
+Lynnfield,2
+Malden,205
+Manchester-by-the-Sea,9
+Mansfield,47
+Marblehead,17
+Marion,7
+Marlborough,156
+Marshfield,54
+Mashpee,45
+Mattapoisett,6
+Maynard,13
+Medfield,12
+Medford,112
+Medway,1
+Melrose,21
+Mendon,5
+Merrimac,11
+Methuen,106
+Middleboro,70
+Middleton,11
+Milford,58
+Millbury,38
+Millville,2
+Milton,21
+Monson,27
+Montague,45
+Monterey,0
+Nahant,8
+Nantucket,41
+Natick,36
+New Bedford,1039
+Newburyport,31
+Newton,74
+Norfolk,0
+North Adams,133
+Northampton,130
+North Andover,10
+North Attleboro,2
+Northborough,18
+Northbridge,38
+North Brookfield,34
+North Reading,12
+Norton,8
+Norwell,12
+Norwood,18
+Oak Bluffs,18
+Orange,25
+Orleans,9
+Oxford,27
+Palmer,38
+Paxton,4
+Peabody,115
+Pelham,0
+Pembroke,33
+Pepperell,22
+Pittsfield,111
+Plainville,2
+Plymouth,184
+Plympton,7
+Princeton,7
+Provincetown,17
+Quincy,361
+Randolph,176
+Raynham,26
+Reading,10
+Rehoboth,13
+Revere,317
+Rochester,3
+Rockport,6
+Rowley,6
+Rutland,25
+Salem,128
+Salisbury,45
+Sandwich,31
+Saugus,80
+Scituate,24
+Seekonk,33
+Sharon,1
+Sherborn,3
+Shirley,11
+Shrewsbury,6
+Somerset,28
+Somerville,191
+Southampton,4
+Southborough,2
+Southbridge,82
+South Hadley,38
+Southwick,8
+Spencer,29
+Springfield,1673
+Sterling,12
+Stockbridge,4
+Stoneham,11
+Stoughton,80
+Stow,4
+Sturbridge,30
+Sudbury,0
+Sutton,4
+Swampscott,26
+Swansea,34
+Taunton,209
+Templeton,22
+Tewksbury,141
+Townsend,7
+Truro,5
+Tyngsboro,16
+Upton,7
+Uxbridge,21
+Wakefield,49
+Wales,1
+Walpole,11
+Waltham,141
+Ware,42
+Wareham,163
+Warren,33
+Watertown,53
+Wayland,5
+Webster,122
+Wellesley,15
+Wellfleet,4
+Westborough,14
+West Boylston,5
+West Bridgewater,23
+Westfield,103
+Westford,14
+Westhampton,0
+Westminster,9
+West Newbury,6
+Weston,3
+Westport,27
+West Springfield,163
+West Tisbury,1
+Westwood,20
+Weymouth,195
+Whately,6
+Whitman,53
+Wilbraham,17
+Williamsburg,4
+Williamstown,14
+Wilmington,29
+Winchendon,50
+Winchester,10
+Winthrop,58
+Woburn,83
+Worcester,1750
+Wrentham,8
+Yarmouth,202
+Akron,1
+Albion,58
+Allegan,17
+Allen Park,35
+Alma,22
+Almont,8
+Alpena,46
+Ann Arbor,247
+Armada,1
+Auburn Hills,61
+Bad Axe,14
+Bangor,13
+Barryton,0
+Barry Township,0
+Bath Township,19
+Bay City,217
+Belding,7
+Bellaire,0
+Belleville,4
+Benton Harbor,225
+Benton Township,157
+Berkley,12
+Berrien Springs-Oronoko Township,13
+Beverly Hills,6
+Big Rapids,29
+Birch Run,6
+Birmingham,14
+Bloomfield Hills,1
+Bloomfield Township,23
+Boyne City,10
+Breckenridge,1
+Bridgeport Township,41
+Brighton,2
+Bronson,4
+Brown City,3
+Brownstown Township,56
+Buena Vista Township,99
+Burr Oak,8
+Burton,119
+Cadillac,46
+Calumet,4
+Cambridge Township,1
+Canton Township,94
+Capac,4
+Carleton,9
+Caro,26
+Carrollton Township,20
+Caseville,0
+Cass City,3
+Cassopolis,2
+Cedar Springs,13
+Center Line,37
+Central Lake,0
+Charlevoix,4
+Charlotte,28
+Cheboygan,20
+Chelsea,11
+Chesaning,3
+Chesterfield Township,119
+Chikaming Township,3
+Chocolay Township,0
+Clare,18
+Clawson,10
+Clayton Township,12
+Clay Township,11
+Clinton Township,285
+Clio,4
+Coleman,2
+Colon,2
+Columbia Township,18
+Concord,1
+Corunna,5
+Covert Township,9
+Croswell,9
+Crystal Falls,1
+Davison Township,27
+Dearborn,347
+Dearborn Heights,212
+Denton Township,9
+Detroit,14504
+Dewitt,5
+Dryden Township,2
+East Grand Rapids,3
+East Lansing,109
+Eastpointe,295
+Eaton Rapids,8
+Eau Claire,0
+Edmore,0
+Elk Rapids,2
+Elkton,0
+Elsie,0
+Emmett Township,54
+Escanaba,26
+Essexville,2
+Evart,6
+Farmington,13
+Farmington Hills,72
+Fenton,17
+Ferndale,42
+Flat Rock,17
+Flint,1907
+Flint Township,336
+Flushing,5
+Forsyth Township,12
+Fowlerville,10
+Frankenmuth,10
+Frankfort,2
+Franklin,2
+Fraser,29
+Fremont,5
+Frost Township,0
+Fruitport,34
+Garden City,80
+Gaylord,8
+Genesee Township,118
+Gibraltar,8
+Gladstone,5
+Gladwin,15
+Grand Beach,0
+Grand Blanc,12
+Grand Blanc Township,63
+Grand Haven,29
+Grand Ledge,6
+Grand Rapids,1326
+Grandville,26
+Grayling,8
+Green Oak Township,22
+Greenville,33
+Grosse Ile Township,4
+Grosse Pointe,5
+Grosse Pointe Farms,7
+Grosse Pointe Park,18
+Grosse Pointe Shores,0
+Grosse Pointe Woods,19
+Hamburg Township,5
+Hampton Township,13
+Hamtramck,366
+Hancock,4
+Harbor Beach,6
+Harbor Springs,1
+Harper Woods,169
+Hart,4
+Hartford,10
+Hastings,14
+Hazel Park,76
+Highland Park,187
+Hillsdale,32
+Holland,137
+Holly,9
+Hopkins,0
+Houghton,8
+Howard City,6
+Howell,28
+Huntington Woods,1
+Huron Township,38
+Imlay City,14
+Inkster,396
+Ionia,21
+Iron River,5
+Ironwood,13
+Ishpeming,8
+Ishpeming Township,0
+Jackson,370
+Jonesville,2
+Kalkaska,0
+Keego Harbor,5
+Kentwood,141
+Kinde,0
+Kinross Township,3
+Laingsburg,2
+Lake Linden,1
+Lake Odessa,5
+Lake Orion,2
+Lansing,1204
+Lapeer,42
+Lapeer Township,1
+Lathrup Village,3
+Laurium,1
+Lawton,4
+Lennon,0
+Lincoln Park,232
+Lincoln Township,18
+Linden,8
+Litchfield,2
+Livonia,148
+Lowell,26
+Ludington,25
+Luna Pier,1
+Mackinac Island,2
+Mackinaw City,3
+Madison Heights,78
+Madison Township,7
+Mancelona,2
+Manistee,11
+Manistique,7
+Marlette,7
+Marquette,19
+Marshall,16
+Marysville,2
+Mason,7
+Mattawan,1
+Mayville,1
+Melvindale,34
+Memphis,4
+Menominee,20
+Meridian Township,116
+Metamora Township,2
+Michiana,0
+Milan,11
+Milford,12
+Monroe,110
+Montrose Township,11
+Morenci,5
+Morrice,0
+Mount Morris,25
+Mount Morris Township,149
+Mount Pleasant,58
+Mundy Township,23
+Munising,2
+Muskegon,325
+Muskegon Heights,206
+Napoleon Township,2
+Nashville,2
+Negaunee,2
+Newaygo,18
+New Baltimore,9
+Niles,54
+Northfield Township,15
+North Muskegon,5
+Northville,4
+Northville Township,18
+Novi,48
+Oakley,3
+Oak Park,180
+Olivet,1
+Orchard Lake,3
+Oscoda Township,20
+Otisville,0
+Otsego,8
+Ovid,1
+Owosso,55
+Oxford,6
+Paw Paw,11
+Pentwater,0
+Perry,2
+Petoskey,1
+Pinckney,0
+Pinconning,0
+Pittsfield Township,69
+Plainwell,10
+Pleasant Ridge,5
+Plymouth,14
+Plymouth Township,18
+Portage,88
+Port Huron,179
+Potterville,0
+Raisin Township,0
+Reading,0
+Redford Township,244
+Reed City,7
+Reese,1
+Richfield Township Genesee County,10
+Richfield Township Roscommon County,10
+Richland,0
+Richmond,17
+River Rouge,84
+Riverview,19
+Rochester,9
+Rockford,7
+Rockwood,2
+Rogers City,3
+Romeo,5
+Romulus,138
+Roosevelt Park,7
+Roseville,218
+Royal Oak,99
+Saginaw,985
+Saginaw Township,96
+Saline,11
+Sand Lake,0
+Sandusky,4
+Saugatuck-Douglas,5
+Sault Ste. Marie,36
+Sebewaing,2
+Shepherd,4
+Somerset Township,1
+Southfield,262
+Southgate,85
+South Haven,3
+South Lyon,17
+Sparta,14
+Spring Arbor Township,1
+Springfield,13
+Spring Lake-Ferrysburg,4
+Stanton,2
+St. Charles,11
+St. Clair,6
+Sterling Heights,244
+St. Ignace,5
+St. Johns,8
+St. Joseph Township,19
+St. Louis,8
+Stockbridge,5
+Sumpter Township,14
+Swartz Creek,10
+Sylvan Lake,10
+Tawas,10
+Taylor,347
+Thetford Township,3
+Thomas Township,9
+Three Rivers,54
+Tittabawassee Township,15
+Trenton,25
+Troy,62
+Tuscarora Township,5
+Unadilla Township,6
+Union City,2
+Utica,25
+Van Buren Township,63
+Vassar,6
+Vicksburg,7
+Walker,40
+Walled Lake,26
+Warren,679
+Waterford Township,135
+Wayne,121
+West Bloomfield Township,43
+West Branch,3
+Westland,363
+White Cloud,8
+Whitehall,6
+White Lake Township,22
+White Pigeon,6
+Williamston,2
+Wixom,20
+Wolverine Lake,3
+Woodhaven,17
+Wyandotte,56
+Wyoming,309
+Yale,5
+Ypsilanti,163
+Zeeland,4
+Zilwaukee,1
+Albany,4
+Albert Lea,35
+Alexandria,35
+Annandale,0
+Anoka,37
+Appleton,2
+Apple Valley,49
+Arden Hills,4
+Austin,61
+Avon,1
+Babbitt,2
+Baxter,8
+Bayport,0
+Becker,5
+Belgrade,0
+Belle Plaine,4
+Bemidji,44
+Benson,5
+Big Lake,17
+Blackduck,1
+Blaine,49
+Blooming Prairie,0
+Bloomington,128
+Blue Earth,1
+Brainerd,55
+Breckenridge,5
+Brooklyn Center,132
+Brooklyn Park,248
+Brownton,0
+Buffalo,21
+Burnsville,95
+Caledonia,7
+Cambridge,14
+Canby,0
+Cannon Falls,5
+Centennial Lakes,10
+Champlin,20
+Chaska,17
+Chisholm,2
+Cloquet,30
+Cold Spring,1
+Columbia Heights,39
+Coon Rapids,94
+Corcoran,0
+Cottage Grove,25
+Crookston,13
+Crosby,3
+Crystal,30
+Dawson,1
+Dayton,1
+Deephaven,2
+Detroit Lakes,14
+Dilworth,3
+Duluth,342
+Eagan,37
+Eagle Lake,4
+East Grand Forks,10
+Echo,0
+Eden Prairie,39
+Edina,16
+Elk River,11
+Elmore,8
+Ely,7
+Eveleth,11
+Fairmont,6
+Falcon Heights,6
+Faribault,90
+Farmington,16
+Fergus Falls,37
+Floodwood,1
+Forest Lake,19
+Fridley,77
+Gilbert,0
+Glencoe,1
+Glenwood,3
+Golden Valley,16
+Goodview,7
+Grand Rapids,33
+Granite Falls,5
+Hallock,0
+Hastings,32
+Hermantown,4
+Hibbing,4
+Hokah,0
+Hopkins,34
+Houston,4
+Hoyt Lakes,1
+Hutchinson,35
+International Falls,16
+Inver Grove Heights,83
+Isanti,8
+Janesville,0
+Jordan,6
+Kasson,2
+Kimball,0
+La Crescent,0
+Lake City,6
+Lake Crystal,2
+Lakefield,3
+Lakes Area,11
+Lakeville,15
+Lauderdale,2
+Lester Prairie,3
+Le Sueur,5
+Lewiston,0
+Lino Lakes,15
+Litchfield,5
+Little Canada,23
+Little Falls,10
+Long Prairie,3
+Madison Lake,1
+Mankato,107
+Maple Grove,28
+Mapleton,0
+Maplewood,75
+Marshall,22
+Medina,5
+Melrose,2
+Mendota Heights,9
+Milaca,1
+Minneapolis,4038
+Minnetonka,13
+Minnetrista,3
+Montevideo,10
+Montgomery,8
+Moorhead,38
+Moose Lake,8
+Morris,9
+Mounds View,23
+Mountain Lake,3
+New Brighton,17
+New Hope,24
+Newport,5
+New Prague,7
+New Richland,1
+New Ulm,15
+North Branch,13
+Northfield,18
+North Mankato,22
+North Oaks,1
+North St. Paul,5
+Oakdale,55
+Oak Park Heights,1
+Olivia,2
+Orono,4
+Ortonville,0
+Osakis,1
+Osseo,0
+Owatonna,36
+Park Rapids,13
+Paynesville,3
+Plainview,4
+Plymouth,49
+Princeton,8
+Prior Lake,20
+Proctor,6
+Ramsey,32
+Red Wing,35
+Redwood Falls,19
+Richfield,88
+Robbinsdale,33
+Rochester,214
+Rogers,16
+Roseau,0
+Rosemount,9
+Roseville,52
+Sartell,4
+Sauk Centre,2
+Sauk Rapids,12
+Savage,35
+Shakopee,53
+Shoreview,12
+Silver Bay,3
+Silver Lake,0
+Slayton,1
+Sleepy Eye,3
+South Lake Minnetonka,16
+South St. Paul,88
+Springfield,0
+Spring Grove,0
+Spring Lake Park,29
+St. Anthony,9
+Staples,7
+St. Charles,4
+St. Cloud,250
+St. Francis,6
+Stillwater,16
+St. James,10
+St. Joseph,2
+St. Louis Park,68
+St. Paul,2200
+St. Paul Park,15
+St. Peter,22
+Thief River Falls,11
+Tracy,0
+Two Harbors,5
+Vadnais Heights,17
+Virginia,37
+Wabasha,5
+Wadena,4
+Waite Park,22
+Warroad,0
+Waseca,5
+Wayzata,4
+Wells,0
+West Hennepin,6
+West St. Paul,84
+Wheaton,0
+White Bear Lake,44
+White Bear Township,3
+Willmar,42
+Windom,5
+Winnebago,2
+Winona,30
+Winsted,2
+Woodbury,21
+Worthington,25
+Wyoming,3
+Zumbrota,1
+Aberdeen,9
+Amory,5
+Batesville,18
+Biloxi,213
+Byhalia,10
+Byram,16
+Cleveland,62
+Columbia,18
+D'Iberville,9
+Flowood,38
+Fulton,0
+Gautier,48
+Greenville,99
+Greenwood,83
+Gulfport,153
+Hattiesburg,157
+Horn Lake,35
+Iuka,4
+Jackson,1631
+Laurel,59
+Long Beach,14
+Louisville,10
+Madison,16
+McComb,79
+Meridian,233
+Ocean Springs,33
+Olive Branch,66
+Pascagoula,130
+Pass Christian,8
+Petal,0
+Philadelphia,47
+Picayune,39
+Poplarville,8
+Ridgeland,40
+Southaven,168
+Starkville,42
+Vicksburg,110
+West Point,54
+Wiggins,8
+Adrian,3
+Advance,1
+Anderson,14
+Annapolis,0
+Appleton City,0
+Arbyrd,0
+Archie,0
+Arnold,36
+Ash Grove,2
+Ashland,19
+Aurora,60
+Auxvasse,2
+Ava,9
+Ballwin,22
+Battlefield,0
+Bella Villa,2
+Belle,12
+Bellefontaine Neighbors,36
+Bellerive,0
+Bel-Nor,2
+Bel-Ridge,39
+Belton,83
+Berkeley,58
+Bernie,0
+Bertrand,1
+Bethany,6
+Beverly Hills,15
+Billings,1
+Birch Tree,0
+Bismarck,1
+Blackburn,0
+Bloomfield,5
+Blue Springs,133
+Bolivar,45
+Bonne Terre,7
+Boonville,31
+Bowling Green,5
+Branson,160
+Branson West,11
+Braymer,0
+Breckenridge Hills,25
+Brentwood,12
+Bridgeton,100
+Brookfield,4
+Brunswick,4
+Bucklin,2
+Buckner,3
+Buffalo,5
+Butler,11
+Butterfield Village,0
+Byrnes Mill,5
+Cabool,4
+California,7
+Calverton Park,5
+Camdenton,15
+Cameron,36
+Campbell,5
+Canalou,0
+Canton,6
+Cape Girardeau,258
+Cardwell,0
+Carl Junction,6
+Carrollton,4
+Carterville,5
+Carthage,29
+Caruthersville,89
+Cassville,12
+Center,0
+Centralia,9
+Chaffee,6
+Charlack,8
+Charleston,35
+Chesterfield,25
+Chillicothe,23
+Clarkton,9
+Claycomo,7
+Clayton,13
+Cleveland,0
+Clever,16
+Clinton,41
+Cole Camp,2
+Columbia,416
+Concordia,3
+Conway,0
+Cool Valley,3
+Corder,0
+Cottleville,1
+Country Club Hills,11
+Crane,1
+Creighton,0
+Crestwood,7
+Creve Coeur,17
+Crocker,16
+Crystal City,6
+Cuba,10
+Delta,0
+Desloge,16
+De Soto,21
+Des Peres,5
+Dexter,20
+Diamond,4
+Dixon,9
+Doniphan,24
+Doolittle,0
+Drexel,3
+Duenweg,6
+Duquesne,2
+East Prairie,2
+Edgar Springs,0
+Edina,0
+Edmundson,2
+Eldon,14
+El Dorado Springs,19
+Ellington,2
+Ellisville,4
+Ellsinore,3
+Elsberry,9
+Eminence,0
+Emma,0
+Essex,1
+Eureka,6
+Excelsior Springs,24
+Exeter,1
+Fair Grove,5
+Fair Play,0
+Fairview,0
+Farmington,51
+Fayette,4
+Ferguson,101
+Ferrelview,1
+Festus,49
+Fleming,0
+Flordell Hills,7
+Florissant,85
+Foley,0
+Fordland,1
+Foristell,0
+Forsyth,2
+Fredericktown,27
+Freeman,0
+Frontenac,5
+Fulton,44
+Galena,0
+Gallatin,2
+Garden City,2
+Gerald,0
+Gideon,2
+Gladstone,48
+Glasgow,0
+Glendale,3
+Glen Echo Park,1
+Goodman,0
+Gower,3
+Grain Valley,16
+Granby,8
+Grandin,0
+Grandview,106
+Greendale,0
+Greenfield,2
+Greenville,0
+Greenwood,4
+Hallsville,2
+Hamilton,2
+Hannibal,74
+Harrisonville,16
+Hartville,0
+Hawk Point,1
+Hayti,15
+Hayti Heights,0
+Hazelwood,95
+Henrietta,3
+Herculaneum,2
+Hermann,8
+Higginsville,3
+Highlandville,1
+Hillsboro,4
+Hillsdale,20
+Holcomb,0
+Holden,4
+Hollister,13
+Holt,0
+Holts Summit,5
+Hornersville,3
+Houston,0
+Howardville,1
+Humansville,6
+Hurley,0
+Iberia,0
+Independence,543
+Indian Point,1
+Iron Mountain Lake,5
+Ironton,1
+Jackson,16
+Jasper,8
+Jefferson City,200
+Jennings,159
+Jonesburg,3
+Joplin,240
+Kahoka,0
+Kansas City,5864
+Kearney,12
+Kennett,40
+Kimberling City,7
+Kimmswick,0
+King City,0
+Kinloch,15
+Kirksville,43
+Kirkwood,20
+Knob Noster,7
+Ladue,8
+La Grange,1
+Lake Lotawana,0
+Lake Ozark,4
+Lakeshire,3
+Lake St. Louis,10
+Lake Tapawingo,0
+Lake Waukomis,0
+Lake Winnebago,0
+Lamar,13
+La Monte,0
+La Plata,1
+Lathrop,3
+Laurie,6
+Lawson,8
+Leadington,1
+Leadwood,15
+Leasburg,0
+Lebanon,70
+Lee's Summit,91
+Leeton,0
+Liberal,1
+Liberty,58
+Licking,2
+Lincoln,3
+Linn,1
+Linn Creek,0
+Lone Jack,0
+Louisiana,5
+Lowry City,0
+Macon,9
+Malden,9
+Manchester,9
+Mansfield,2
+Maplewood,22
+Marble Hill,7
+Marceline,33
+Marionville,4
+Marshall,24
+Marshfield,28
+Marston,1
+Marthasville,0
+Martinsburg,0
+Maryland Heights,47
+Maryville,33
+Matthews,3
+Maysville,2
+Memphis,0
+Merriam Woods,0
+Mexico,45
+Milan,5
+Miller,6
+Miner,11
+Miramiguoa,1
+Moberly,29
+Moline Acres,15
+Monett,11
+Monroe City,2
+Montgomery City,4
+Morehouse,1
+Morley,2
+Mosby,3
+Moscow Mills,9
+Mound City,0
+Mountain Grove,17
+Mountain View,15
+Mount Vernon,13
+Napoleon,0
+Neosho,30
+Nevada,46
+New Bloomfield,0
+Newburg,0
+New Florence,0
+New Franklin,8
+New Haven,3
+New London,2
+New Madrid,0
+New Melle,1
+Niangua,0
+Nixa,18
+Noel,8
+Norborne,1
+Normandy,24
+North Kansas City,24
+Northmoor,2
+Northwoods,44
+Norwood,4
+Oak Grove,6
+Oakland,2
+Oakview Village,1
+Odessa,3
+O'Fallon,63
+Old Monroe,0
+Olivette,13
+Oregon,0
+Oronogo,2
+Orrick,1
+Osage Beach,22
+Osceola,7
+Overland,51
+Owensville,1
+Ozark,48
+Pacific,17
+Pagedale,39
+Palmyra,0
+Parkville,11
+Parma,2
+Pasadena Park,1
+Peculiar,9
+Perry,0
+Perryville,15
+Pevely,37
+Piedmont,4
+Pierce City,0
+Pilot Knob,1
+Pine Lawn,41
+Pineville,1
+Platte City,5
+Platte Woods,0
+Plattsburg,3
+Pleasant Hill,2
+Pleasant Hope,1
+Pleasant Valley,5
+Polo,0
+Poplar Bluff,77
+Portageville,1
+Potosi,5
+Purdy,3
+Puxico,1
+Qulin,0
+Randolph,0
+Raymore,16
+Raytown,113
+Reeds Spring,1
+Republic,39
+Rich Hill,8
+Richland,9
+Richmond,10
+Richmond Heights,23
+Riverside,6
+Riverview,30
+Rockaway Beach,4
+Rock Hill,6
+Rock Port,0
+Rogersville,1
+Rolla,65
+Rosebud,0
+Salem,8
+Salisbury,2
+Sarcoxie,3
+Savannah,3
+Scott City,14
+Sedalia,122
+Seligman,0
+Senath,2
+Seneca,5
+Seymour,15
+Shelbina,0
+Shrewsbury,3
+Sikeston,329
+Silex,0
+Slater,2
+Smithville,9
+Southwest City,5
+Sparta,3
+Springfield,1894
+St. Ann,89
+St. Charles,113
+St. Clair,13
+Steele,35
+Steelville,3
+Ste. Genevieve,16
+Stewartsville,0
+St. James,5
+St. John,27
+St. Joseph,374
+St. Louis,5077
+St. Marys,2
+Stover,14
+St. Peters,117
+Strafford,8
+Strasburg,0
+St. Robert,19
+Sturgeon,0
+Sugar Creek,12
+Sullivan,35
+Summersville,1
+Sunset Hills,10
+Sweet Springs,2
+Tarkio,0
+Terre du Lac,5
+Thayer,0
+Tipton,0
+Town and Country,6
+Trenton,39
+Trimble,5
+Troy,28
+Truesdale,7
+Union,48
+Unionville,0
+University City,190
+Urbana,2
+Van Buren,0
+Vandalia,15
+Velda City,12
+Velda Village Hills,6
+Verona,1
+Versailles,15
+Viburnum,1
+Vienna,0
+Vinita Park,4
+Walnut Grove,1
+Wardell,5
+Warrensburg,36
+Warrenton,53
+Warsaw,18
+Warson Woods,1
+Washburn,0
+Washington,16
+Waynesville,15
+Weatherby Lake,2
+Webb City,16
+Webster Groves,24
+Wellston,76
+Wellsville,2
+Wentzville,40
+Weston,3
+West Plains,33
+Wheaton,0
+Willard,7
+Willow Springs,12
+Winfield,6
+Winona,9
+Wood Heights,0
+Woodson Terrace,12
+Wright City,16
+Baker,1
+Belgrade,24
+Billings,360
+Boulder,7
+Bozeman,67
+Bridger,0
+Columbia Falls,5
+Columbus,1
+Conrad,6
+Cut Bank,11
+Deer Lodge,5
+Dillon,6
+East Helena,2
+Ennis,0
+Eureka,0
+Fort Benton,3
+Glasgow,6
+Glendive,11
+Great Falls,149
+Hamilton,24
+Havre,34
+Helena,112
+Hot Springs,1
+Joliet,0
+Kalispell,47
+Laurel,15
+Lewistown,37
+Libby,3
+Livingston,20
+Manhattan,2
+Miles City,15
+Missoula,218
+Plains,3
+Polson,24
+Red Lodge,1
+Ronan City,15
+Sidney,14
+Stevensville,5
+Thompson Falls,0
+Troy,0
+West Yellowstone,1
+Whitefish,19
+Wolf Point,16
+Alliance,20
+Ashland,2
+Aurora,1
+Beatrice,66
+Bellevue,70
+Bennington,0
+Blair,8
+Bridgeport,0
+Broken Bow,6
+Central City,1
+Chadron,9
+Columbus,22
+Cozad,4
+Crete,15
+Falls City,2
+Fremont,45
+Gering,0
+Gordon,7
+Gothenburg,1
+Grand Island,136
+Hastings,54
+Holdrege,6
+Imperial,5
+Kearney,56
+Kimball,18
+La Vista,7
+Lexington,27
+Lincoln,990
+Madison,3
+McCook,10
+Milford,0
+Minden,3
+Mitchell,0
+Nebraska City,6
+Norfolk,30
+Ogallala,3
+Omaha,2449
+O'Neill,0
+Papillion,10
+Plattsmouth,3
+Ralston,6
+Scottsbluff,41
+Seward,6
+South Sioux City,13
+Superior,1
+Valentine,8
+Valley,4
+Wahoo,2
+West Point,0
+Wilber,0
+York,1
+Boulder City,22
+Carlin,16
+Elko,89
+Fallon,23
+Henderson,367
+Las Vegas Metropolitan Police Department,11374
+Lovelock,19
+Mesquite,11
+North Las Vegas,1806
+Reno,1154
+Sparks,271
+West Wendover,23
+Winnemucca,17
+Yerington,4
+Alexandria,0
+Alstead,0
+Alton,9
+Amherst,7
+Antrim,8
+Ashland,5
+Atkinson,1
+Auburn,2
+Barnstead,5
+Barrington,1
+Bartlett,3
+Bedford,12
+Belmont,25
+Bennington,2
+Berlin,22
+Bethlehem,1
+Boscawen,7
+Bow,6
+Brentwood,2
+Bristol,8
+Campton,16
+Candia,6
+Canterbury,1
+Carroll,1
+Center Harbor,1
+Charlestown,4
+Chester,6
+Claremont,41
+Colebrook,8
+Concord,103
+Conway,38
+Dalton,2
+Danville,0
+Deerfield,3
+Deering,3
+Derry,57
+Dover,49
+Dublin,0
+Dunbarton,3
+Durham,27
+Effingham,4
+Enfield,15
+Epping,7
+Epsom,2
+Exeter,22
+Farmington,22
+Franconia,1
+Freedom,1
+Fremont,1
+Gilford,8
+Gilmanton,2
+Goffstown,13
+Gorham,6
+Grantham,2
+Greenland,4
+Hampstead,6
+Hampton,30
+Hampton Falls,5
+Hancock,1
+Hanover,19
+Haverhill,14
+Henniker,6
+Hillsborough,13
+Hinsdale,5
+Hooksett,21
+Hopkinton,10
+Hudson,41
+Jaffrey,13
+Keene,70
+Kingston,2
+Laconia,71
+Lancaster,6
+Lebanon,48
+Lee,8
+Lincoln,1
+Lisbon,1
+Litchfield,6
+Londonderry,32
+Loudon,3
+Madison,0
+Manchester,747
+Marlborough,0
+Meredith,3
+Merrimack,6
+Middleton,6
+Milford,24
+Milton,16
+Mont Vernon,2
+Moultonborough,7
+Nashua,182
+New Boston,5
+Newbury,0
+New Durham,2
+Newfields,0
+New Hampton,1
+Newington,3
+New Ipswich,2
+New London,0
+Newport,16
+Newton,9
+Northfield,8
+North Hampton,4
+Northumberland,9
+Northwood,9
+Nottingham,4
+Orford,0
+Ossipee,13
+Pelham,20
+Pembroke,15
+Peterborough,6
+Plaistow,5
+Plymouth,15
+Portsmouth,50
+Raymond,17
+Rindge,8
+Rochester,105
+Rollinsford,2
+Rye,3
+Salem,48
+Sanbornton,1
+Sandown,1
+Sandwich,0
+Seabrook,31
+Somersworth,47
+South Hampton,0
+Strafford,5
+Stratham,2
+Sugar Hill,1
+Sunapee,6
+Thornton,0
+Tilton,10
+Troy,1
+Wakefield,5
+Warner,6
+Washington,1
+Waterville Valley,0
+Weare,15
+Webster,0
+Wilton,3
+Winchester,7
+Windham,15
+Wolfeboro,7
+Woodstock,1
+Aberdeen Township,19
+Absecon,21
+Allendale,0
+Allenhurst,0
+Allentown,3
+Alpha,1
+Alpine,0
+Andover Township,1
+Asbury Park,264
+Atlantic City,685
+Atlantic Highlands,0
+Audubon,10
+Audubon Park,0
+Avalon,2
+Avon-by-the-Sea,1
+Barnegat Light,2
+Barnegat Township,17
+Barrington,3
+Bay Head,0
+Bayonne,138
+Beach Haven,0
+Beachwood,7
+Bedminster Township,1
+Belleville,112
+Bellmawr,16
+Belmar,8
+Belvidere,2
+Bergenfield,16
+Berkeley Heights Township,1
+Berlin,14
+Berlin Township,5
+Bernards Township,2
+Bernardsville,2
+Beverly,14
+Blairstown Township,1
+Bloomfield,137
+Bloomingdale,2
+Bogota,5
+Boonton,9
+Boonton Township,2
+Bordentown,0
+Bordentown Township,16
+Bound Brook,16
+Bradley Beach,4
+Branchburg Township,4
+Brick Township,89
+Bridgeton,340
+Bridgewater Township,16
+Brielle,2
+Brigantine,3
+Brooklawn,18
+Buena,16
+Burlington,60
+Burlington Township,28
+Butler,11
+Byram Township,0
+Caldwell,8
+Califon,0
+Cape May,4
+Cape May Point,0
+Carlstadt,8
+Carney's Point Township,32
+Carteret,49
+Cedar Grove Township,4
+Chatham,2
+Chatham Township,0
+Cherry Hill Township,123
+Chesilhurst,4
+Chester,3
+Chesterfield Township,2
+Chester Township,1
+Cinnaminson Township,21
+Clark Township,5
+Clayton,13
+Clementon,20
+Cliffside Park,50
+Clifton,175
+Clinton,3
+Clinton Township,4
+Closter,3
+Collingswood,26
+Colts Neck Township,3
+Cranbury Township,2
+Cranford Township,4
+Deal,2
+Delanco Township,6
+Delaware Township,1
+Delran Township,16
+Demarest,1
+Denville Township,5
+Deptford Township,61
+Dover,28
+Dumont,7
+Dunellen,3
+Eastampton Township,6
+East Brunswick Township,30
+East Greenwich Township,5
+East Hanover Township,19
+East Newark,11
+East Orange,405
+East Rutherford,7
+Eatontown,26
+Edgewater,12
+Edgewater Park Township,16
+Edison Township,123
+Egg Harbor City,19
+Egg Harbor Township,106
+Elizabeth,999
+Elk Township,7
+Elmer,0
+Elmwood Park,30
+Elsinboro Township,0
+Emerson,0
+Englewood,109
+Englewood Cliffs,2
+Englishtown,1
+Essex Fells,2
+Evesham Township,25
+Ewing Township,70
+Fairfield Township Essex County,11
+Fair Haven,3
+Fair Lawn,17
+Fairview,21
+Fanwood,6
+Far Hills,0
+Flemington,10
+Florence Township,13
+Florham Park,7
+Fort Lee,28
+Franklin,5
+Franklin Lakes,2
+Franklin Township Gloucester County,12
+Franklin Township Hunterdon County,2
+Franklin Township Somerset County,79
+Freehold,47
+Freehold Township,30
+Frenchtown,0
+Galloway Township,98
+Garfield,62
+Garwood,5
+Gibbsboro,4
+Glassboro,30
+Glen Ridge,7
+Glen Rock,1
+Gloucester City,29
+Gloucester Township,190
+Green Brook Township,3
+Greenwich Township Gloucester County,4
+Greenwich Township Warren County,1
+Guttenberg,36
+Hackensack,111
+Hackettstown,8
+Haddonfield,8
+Haddon Heights,2
+Haddon Township,19
+Haledon,11
+Hamburg,1
+Hamilton Township Atlantic County,42
+Hamilton Township Mercer County,189
+Hammonton,8
+Hanover Township,11
+Harding Township,1
+Hardyston Township,5
+Harrington Park,0
+Harrison,63
+Harrison Township,3
+Harvey Cedars,1
+Hasbrouck Heights,3
+Haworth,0
+Hawthorne,4
+Hazlet Township,7
+Helmetta,3
+High Bridge,4
+Highland Park,9
+Highlands,4
+Hightstown,10
+Hillsborough Township,7
+Hillsdale,3
+Hillside Township,91
+Hi-Nella,5
+Hoboken,152
+Ho-Ho-Kus,0
+Holland Township,0
+Holmdel Township,8
+Hopatcong,14
+Hopewell,2
+Hopewell Township,10
+Howell Township,41
+Independence Township,4
+Interlaken,0
+Irvington,815
+Island Heights,0
+Jackson Township,33
+Jamesburg,7
+Jefferson Township,6
+Jersey City,1655
+Keansburg,21
+Kearny,78
+Kenilworth,9
+Keyport,15
+Kinnelon,1
+Lacey Township,19
+Lake Como,3
+Lakehurst,4
+Lakewood Township,93
+Lambertville,3
+Laurel Springs,1
+Lavallette,0
+Lawrence Township Mercer County,47
+Lebanon Township,1
+Leonia,6
+Lincoln Park,9
+Linden,123
+Lindenwold,122
+Linwood,1
+Little Egg Harbor Township,26
+Little Falls Township,12
+Little Ferry,9
+Little Silver,4
+Livingston Township,15
+Loch Arbour,0
+Lodi,36
+Logan Township,7
+Long Beach Township,2
+Long Branch,124
+Long Hill Township,2
+Longport,0
+Lopatcong Township,1
+Lower Alloways Creek Township,3
+Lower Township,31
+Lumberton Township,17
+Lyndhurst Township,17
+Madison,4
+Magnolia,14
+Manalapan Township,20
+Manasquan,3
+Manchester Township,19
+Mansfield Township Burlington County,3
+Mansfield Township Warren County,9
+Mantoloking,0
+Mantua Township,11
+Manville,10
+Maple Shade Township,42
+Maplewood Township,41
+Margate City,5
+Marlboro Township,10
+Matawan,4
+Maywood,6
+Medford Lakes,1
+Medford Township,11
+Mendham,1
+Mendham Township,1
+Merchantville,7
+Metuchen,6
+Middlesex,6
+Middle Township,59
+Middletown Township,43
+Midland Park,2
+Millburn Township,9
+Milltown,0
+Millville,254
+Mine Hill Township,0
+Monmouth Beach,0
+Monroe Township Gloucester County,49
+Monroe Township Middlesex County,9
+Montclair,73
+Montgomery Township,3
+Montvale,3
+Montville Township,5
+Moonachie,4
+Moorestown Township,24
+Morris Plains,3
+Morristown,84
+Morris Township,11
+Mountain Lakes,0
+Mountainside,1
+Mount Arlington,2
+Mount Ephraim,10
+Mount Holly Township,38
+Mount Laurel Township,28
+Mount Olive Township,16
+Mullica Township,5
+National Park,7
+Neptune City,19
+Neptune Township,174
+Netcong,7
+Newark,3516
+New Brunswick,303
+Newfield,1
+New Hanover Township,0
+New Milford,2
+New Providence,3
+Newton,7
+North Arlington,12
+North Bergen Township,102
+North Brunswick Township,45
+North Caldwell,1
+Northfield,1
+North Hanover Township,8
+North Plainfield,53
+Northvale,3
+North Wildwood,11
+Norwood,1
+Nutley Township,20
+Oakland,2
+Oaklyn,6
+Ocean City,12
+Ocean Gate,1
+Oceanport,6
+Ocean Township Monmouth County,50
+Ocean Township Ocean County,1
+Ogdensburg,1
+Old Bridge Township,47
+Old Tappan,0
+Oradell,2
+Orange,377
+Oxford Township,1
+Palisades Park,19
+Palmyra,25
+Paramus,32
+Park Ridge,1
+Parsippany-Troy Hills Township,19
+Passaic,512
+Paterson,1555
+Paulsboro,27
+Peapack and Gladstone,0
+Pemberton,3
+Pemberton Township,86
+Pennington,0
+Pennsauken Township,105
+Penns Grove,18
+Pennsville Township,12
+Pequannock Township,6
+Perth Amboy,243
+Phillipsburg,30
+Pine Beach,0
+Pine Hill,46
+Pine Valley,0
+Piscataway Township,46
+Pitman,7
+Plainfield,427
+Pleasantville,145
+Plumsted Township,12
+Pohatcong Township,4
+Point Pleasant,16
+Point Pleasant Beach,3
+Pompton Lakes,7
+Princeton,17
+Prospect Park,11
+Rahway,50
+Ramsey,14
+Randolph Township,4
+Raritan,6
+Raritan Township,4
+Readington Township,2
+Red Bank,19
+Ridgefield,4
+Ridgefield Park,5
+Ridgewood,8
+Ringwood,5
+Riverdale,1
+River Edge,1
+Riverside Township,24
+Riverton,4
+River Vale Township,9
+Robbinsville Township,6
+Rochelle Park Township,3
+Rockaway,5
+Rockaway Township,11
+Rockleigh,1
+Roseland,1
+Roselle,65
+Roselle Park,8
+Roxbury Township,7
+Rumson,2
+Runnemede,13
+Rutherford,9
+Saddle Brook Township,6
+Saddle River,1
+Salem,54
+Sayreville,38
+Scotch Plains Township,19
+Sea Bright,1
+Sea Girt,0
+Sea Isle City,3
+Seaside Heights,30
+Seaside Park,3
+Secaucus,18
+Ship Bottom,1
+Shrewsbury,3
+Somerdale,14
+Somers Point,28
+Somerville,15
+South Amboy,16
+South Bound Brook,1
+South Brunswick Township,21
+South Hackensack Township,5
+South Harrison Township,1
+South Orange,35
+South Plainfield,19
+South River,28
+South Toms River,7
+Sparta Township,4
+Spotswood,4
+Springfield,12
+Springfield Township,1
+Spring Lake,1
+Spring Lake Heights,1
+Stafford Township,14
+Stanhope,1
+Stone Harbor,0
+Stratford,11
+Summit,8
+Surf City,0
+Swedesboro,2
+Tavistock,0
+Teaneck Township,49
+Tenafly,2
+Teterboro,1
+Tewksbury Township,0
+Tinton Falls,6
+Toms River Township,74
+Totowa,23
+Trenton,1122
+Tuckerton,2
+Union Beach,15
+Union City,247
+Union Township,92
+Upper Saddle River,3
+Ventnor City,12
+Vernon Township,5
+Verona,3
+Vineland,208
+Voorhees Township,31
+Waldwick,1
+Wallington,9
+Wall Township,11
+Wanaque,8
+Warren Township,3
+Washington,4
+Washington Township Bergen County,2
+Washington Township Gloucester County,23
+Washington Township Morris County,2
+Washington Township Warren County,2
+Watchung,6
+Waterford Township,14
+Wayne Township,29
+Weehawken Township,21
+Wenonah,0
+Westampton Township,17
+West Amwell Township,2
+West Caldwell Township,6
+West Cape May,1
+West Deptford Township,7
+Westfield,12
+West Long Branch,8
+West Milford Township,24
+West New York,161
+West Orange,79
+Westville,11
+West Wildwood,3
+West Windsor Township,17
+Westwood,2
+Wharton,6
+Wildwood,90
+Wildwood Crest,6
+Willingboro Township,119
+Winfield Township,0
+Winslow Township,93
+Woodbridge Township,135
+Woodbury,45
+Woodbury Heights,3
+Woodcliff Lake,2
+Woodland Park,3
+Woodlynne,15
+Wood-Ridge,1
+Woodstown,7
+Woolwich Township,1
+Wyckoff Township,0
+Alamogordo,80
+Albuquerque,4325
+Artesia,144
+Aztec,26
+Bloomfield,64
+Bosque Farms,19
+Carrizozo,3
+Cimarron,7
+Clayton,0
+Clovis,269
+Deming,148
+Dexter,1
+Estancia,2
+Eunice,6
+Farmington,291
+Gallup,463
+Grants,53
+Hobbs,298
+Jal,11
+Las Cruces,332
+Las Vegas,116
+Logan,3
+Loving,1
+Moriarty,3
+Peralta,24
+Questa,2
+Raton,11
+Red River,2
+Santa Rosa,23
+San Ysidro,0
+Socorro,74
+Sunland Park,10
+Taos,66
+Taos Ski Valley,1
+Truth or Consequences,17
+Tucumcari,26
+Adams Village,0
+Addison Town and Village,3
+Akron Village,3
+Albany,791
+Albion Village,23
+Alfred Village,5
+Allegany Village,3
+Amherst Town,107
+Amityville Village,9
+Amsterdam,30
+Arcade Village,0
+Ardsley Village,5
+Asharoken Village,0
+Attica Village,2
+Auburn,96
+Avon Village,1
+Baldwinsville Village,5
+Ballston Spa Village,8
+Batavia,57
+Bath Village,15
+Bedford Town,5
+Bethlehem Town,13
+Binghamton,284
+Black River,0
+Blooming Grove Town,8
+Bolivar Village,1
+Bolton Town,2
+Boonville Village,1
+Brant Town,4
+Brewster,0
+Briarcliff Manor Village,1
+Brighton Town,26
+Brockport Village,23
+Bronxville Village,0
+Brownville Village,0
+Buffalo,3249
+Cairo Town,0
+Cambridge Village,2
+Camden Village,5
+Camillus Town and Village,14
+Canandaigua,22
+Canastota Village,4
+Canisteo Village,3
+Canton Village,3
+Cape Vincent Village,0
+Carmel Town,10
+Carroll Town,0
+Carthage Village,1
+Cattaraugus Village,0
+Cayuga Heights Village,1
+Cazenovia Village,0
+Central Square Village,3
+Chatham Village,3
+Cheektowaga Town,158
+Chester Town,0
+Chittenango Village,1
+Cicero Town,12
+Clarkstown Town,65
+Clyde Village,4
+Cobleskill Village,5
+Coeymans Town,39
+Cohoes,26
+Colonie Town,63
+Cooperstown Village,1
+Corning,35
+Cornwall-on-Hudson Village,2
+Cornwall Town,1
+Cortland,18
+Crawford Town,11
+Croton-on-Hudson Village,1
+Cuba Town,5
+Dansville Village,2
+Deerpark Town,7
+Delhi Village,1
+Depew Village,17
+Deposit Village,0
+Dewitt Town,20
+Dexter Village,0
+Dobbs Ferry Village,1
+Dolgeville Village,7
+Dryden Village,3
+Dunkirk,40
+East Aurora-Aurora Town,5
+Eastchester Town,2
+East Fishkill Town,9
+East Greenbush Town,12
+East Hampton Town,20
+East Hampton Village,0
+East Rochester Village,8
+East Syracuse Village,8
+Eden Town,1
+Ellenville Village,17
+Ellicott Town,7
+Elmira,81
+Elmira Heights Village,2
+Elmira Town,0
+Endicott Village,46
+Evans Town,17
+Fairport Village,5
+Fallsburg Town,22
+Fishkill Town,3
+Floral Park Village,14
+Florida Village,0
+Fort Plain Village,4
+Frankfort Town,0
+Frankfort Village,5
+Franklinville Village,1
+Fredonia Village,10
+Freeport Village,152
+Friendship Town,0
+Fulton City,24
+Garden City Village,10
+Gates Town,57
+Geddes Town,7
+Geneseo Village,6
+Geneva,28
+Germantown Town,0
+Glen Cove,3
+Glen Park Village,0
+Glens Falls,22
+Glenville Town,13
+Gloversville,33
+Goshen Village,2
+Gowanda Village,5
+Granville Village,6
+Great Neck Estates Village,0
+Greece Town,151
+Greenburgh Town,48
+Greene Village,0
+Green Island Village,2
+Greenport Town,2
+Greenwood Lake Village,2
+Groton Village,2
+Guilderland Town,12
+Hamburg Town,38
+Hamburg Village,8
+Hammondsport Village,0
+Harrison Town,6
+Hastings-on-Hudson Village,1
+Haverstraw Town,64
+Hempstead Village,433
+Herkimer Village,53
+Highland Falls Village,3
+Homer Village,0
+Hoosick Falls Village,9
+Hornell,5
+Horseheads Village,2
+Hudson,26
+Hudson Falls Village,6
+Huntington Bay Village,1
+Hyde Park Town,18
+Ilion Village,15
+Irondequoit Town,93
+Irvington Village,0
+Jamestown,168
+Johnson City Village,69
+Johnstown,14
+Jordan Village,1
+Kenmore Village,26
+Kent Town,1
+Kings Point Village,1
+Kingston,74
+Kirkland Town,0
+Lackawanna,89
+Lake Placid Village,2
+Lake Success Village,2
+Lakewood-Busti,1
+Lancaster Town,15
+Larchmont Village,2
+Le Roy Village,11
+Lewiston Town and Village,12
+Liberty Village,21
+Little Falls,16
+Liverpool Village,2
+Lloyd Harbor Village,0
+Lloyd Town,6
+Lockport,70
+Long Beach,35
+Lowville Village,2
+Lynbrook Village,12
+Lyons Village,27
+Macedon Town and Village,4
+Malone Village,4
+Malverne Village,4
+Mamaroneck Town,1
+Mamaroneck Village,8
+Manchester Village,0
+Manlius Town,18
+Marcellus Village,0
+Marlborough Town,5
+Massena Village,22
+Mechanicville,8
+Medina Village,12
+Menands Village,5
+Middleport Village,2
+Middletown,114
+Monroe Village,12
+Montgomery Town,6
+Montgomery Village,2
+Monticello Village,48
+Moravia Village,3
+Moriah Town,7
+Mount Hope Town,0
+Mount Kisco Village,17
+Mount Morris Village,2
+Mount Pleasant Town,12
+Mount Vernon,554
+Newark Village,27
+New Berlin Town,0
+Newburgh,435
+Newburgh Town,38
+New Castle Town,2
+New Hartford Town and Village,13
+New Paltz Town and Village,34
+New Rochelle,175
+New Windsor Town,31
+New York,52384
+New York Mills Village,2
+Niagara Falls,584
+Niagara Town,13
+Niskayuna Town,13
+Nissequogue Village,0
+North Castle Town,3
+North Greenbush Town,8
+Northport Village,6
+North Syracuse Village,10
+North Tonawanda,41
+Northville Village,0
+Norwich,15
+Ogdensburg,23
+Ogden Town,17
+Old Brookville Village,4
+Old Westbury Village,1
+Olean,40
+Oneida,18
+Oneonta City,21
+Orangetown Town,37
+Orchard Park Town,16
+Oriskany Village,0
+Ossining Village,36
+Oswego City,54
+Owego Village,9
+Oxford Village,2
+Oyster Bay Cove Village,0
+Painted Post Village,1
+Palmyra Village,4
+Peekskill,30
+Pelham Manor Village,2
+Pelham Village,7
+Penn Yan Village,4
+Perry Village,3
+Piermont Village,1
+Pine Plains Town,1
+Plattekill Town,8
+Plattsburgh City,39
+Pleasantville Village,0
+Port Byron Village,0
+Port Chester Village,48
+Port Dickinson Village,0
+Port Jervis,15
+Portville Village,0
+Potsdam Village,8
+Poughkeepsie,286
+Poughkeepsie Town,39
+Pound Ridge Town,3
+Pulaski Village,1
+Quogue Village,0
+Ramapo Town,57
+Red Hook Village,1
+Rensselaer City,19
+Rhinebeck Village,2
+Riverhead Town,64
+Rochester,2107
+Rockville Centre Village,22
+Rome,47
+Rosendale Town,1
+Rotterdam Town,33
+Rye Brook Village,2
+Sag Harbor Village,3
+Salamanca,18
+Sands Point Village,0
+Saranac Lake Village,26
+Saratoga Springs,33
+Saugerties Town,15
+Scarsdale Village,1
+Schenectady,607
+Schodack Town,4
+Schoharie Village,0
+Scotia Village,5
+Seneca Falls Town,12
+Shandaken Town,4
+Shawangunk Town,3
+Shelter Island Town,3
+Sherburne Village,1
+Sherrill,4
+Shortsville Village,0
+Sidney Village,7
+Skaneateles Village,0
+Sleepy Hollow Village,8
+Sodus Village,0
+Solvay Village,19
+Southampton Town,44
+Southampton Village,3
+South Glens Falls Village,6
+Southold Town,12
+Spring Valley Village,132
+Stillwater Town,1
+St. Johnsville Village,3
+Stony Point Town,12
+Suffern Village,9
+Syracuse,1192
+Tarrytown Village,6
+Ticonderoga Town,11
+Tonawanda,34
+Tonawanda Town,118
+Troy,371
+Trumansburg Village,2
+Tuckahoe Village,0
+Tupper Lake Village,3
+Tuxedo Park Village,0
+Ulster Town,14
+Utica,361
+Vestal Town,16
+Walden Village,18
+Wallkill Town,40
+Walton Village,6
+Warsaw Village,6
+Washingtonville Village,2
+Waterford Town and Village,4
+Waterloo Village,11
+Watertown,109
+Watervliet,26
+Watkins Glen Village,6
+Waverly Village,5
+Webster Town and Village,21
+Weedsport Village,0
+Wellsville Village,11
+Westhampton Beach Village,2
+West Seneca Town,35
+Whitehall Village,6
+White Plains,78
+Whitesboro Village,4
+Whitestown Town,0
+Woodbury Town,3
+Woodridge Village,7
+Woodstock Town,2
+Yonkers,1036
+Yorktown Town,15
+Aberdeen,23
+Albemarle,70
+Apex,36
+Archdale,8
+Asheboro,82
+Atlantic Beach,15
+Aulander,1
+Ayden,27
+Banner Elk,2
+Beaufort,16
+Belhaven,2
+Benson,30
+Bethel,5
+Beulaville,8
+Biltmore Forest,0
+Biscoe,3
+Black Mountain,7
+Blowing Rock,0
+Boiling Spring Lakes,10
+Boone,40
+Brevard,10
+Bunn,2
+Burgaw,9
+Burlington,362
+Butner,20
+Canton,23
+Cape Carteret,0
+Carolina Beach,11
+Carrboro,53
+Carthage,4
+Cary,102
+Catawba,2
+Chadbourn,27
+Chapel Hill,71
+Charlotte-Mecklenburg,5093
+Cherryville,18
+Claremont,7
+Clayton,28
+Cleveland,2
+Clinton,62
+Coats,4
+Columbus,2
+Concord,122
+Cornelius,42
+Creedmoor,10
+Davidson,11
+Dobson,6
+Drexel,0
+Duck,1
+Eden,57
+Edenton,39
+Elizabeth City,109
+Elon,2
+Emerald Isle,12
+Enfield,18
+Erwin,9
+Fairmont,22
+Farmville,35
+Fayetteville,1170
+Fletcher,7
+Forest City,20
+Franklin,16
+Franklinton,7
+Garner,52
+Garysburg,8
+Gastonia,510
+Gibsonville,3
+Goldsboro,283
+Graham,75
+Granite Falls,9
+Greensboro,1449
+Greenville,555
+Hamlet,49
+Havelock,44
+Haw River,9
+Henderson,214
+Hendersonville,53
+Hertford,18
+Hickory,167
+Highlands,2
+High Point,556
+Holly Ridge,4
+Holly Springs,23
+Hope Mills,74
+Hudson,3
+Huntersville,49
+Indian Beach,0
+Kannapolis,87
+Kenansville,5
+Kernersville,86
+Kill Devil Hills,42
+King,13
+Kinston,273
+Kitty Hawk,3
+Knightdale,19
+Lake Lure,0
+Laurel Park,1
+Laurinburg,212
+Leland,24
+Lexington,85
+Liberty,4
+Lincolnton,52
+Long View,25
+Louisburg,11
+Lumberton,383
+Madison,3
+Maiden,8
+Manteo,7
+Marion,30
+Mars Hill,3
+Matthews,58
+Mayodan,11
+Mebane,45
+Mint Hill,45
+Mocksville,11
+Monroe,204
+Mooresville,77
+Morehead City,57
+Morganton,47
+Morrisville,12
+Mount Airy,40
+Mount Holly,36
+Mount Olive,44
+Murfreesboro,7
+Murphy,13
+New Bern,120
+Newland,2
+Newport,8
+Newton,53
+North Topsail Beach,2
+North Wilkesboro,20
+Oak Island,27
+Oxford,86
+Pilot Mountain,4
+Pinebluff,0
+Pinehurst,8
+Pine Knoll Shores,0
+Pineville,31
+Pittsboro,16
+Raeford,29
+Raleigh,1683
+Ramseur,11
+Randleman,10
+Red Springs,27
+Reidsville,53
+Richlands,6
+Rich Square,7
+River Bend,0
+Roanoke Rapids,92
+Rockingham,37
+Rockwell,2
+Rocky Mount,599
+Rolesville,4
+Rose Hill,8
+Rowland,4
+Roxboro,76
+Rutherfordton,0
+Salisbury,262
+Scotland Neck,12
+Selma,38
+Shallotte,20
+Shelby,125
+Siler City,27
+Smithfield,71
+Snow Hill,11
+Southern Pines,88
+Southern Shores,1
+Sparta,9
+Spencer,39
+Spring Hope,7
+Stallings,15
+Stanley,5
+Statesville,187
+St. Pauls,8
+Sunset Beach,1
+Surf City,12
+Sylva,21
+Tabor City,22
+Tarboro,53
+Taylorsville,4
+Thomasville,117
+Trent Woods,3
+Troutman,6
+Troy,14
+Tryon,2
+Valdese,2
+Vanceboro,2
+Wadesboro,80
+Wake Forest,43
+Wallace,13
+Warsaw,14
+Waxhaw,15
+Weaverville,3
+Weldon,4
+Wendell,13
+Whispering Pines,0
+Whitakers,6
+Whiteville,97
+Wilkesboro,19
+Williamston,64
+Wilmington,687
+Wilson's Mills,3
+Windsor,10
+Wingate,20
+Winston-Salem,1426
+Winterville,8
+Woodfin,17
+Wrightsville Beach,11
+Yadkinville,22
+Zebulon,31
+Belfield,0
+Beulah,4
+Bismarck,194
+Bowman,1
+Burlington,1
+Carrington,1
+Cavalier,1
+Devils Lake,23
+Dickinson,76
+Ellendale,1
+Fargo,446
+Fessenden,0
+Grafton,17
+Grand Forks,144
+Harvey,0
+Jamestown,42
+Kenmare,1
+Killdeer,0
+Lamoure,1
+Lincoln,3
+Lisbon,2
+Mandan,57
+Medora,0
+Minot,122
+Napoleon,0
+New Town,7
+Northwood,0
+Oakes,2
+Powers Lake,0
+Rolla,2
+Rugby,6
+Sherwood,0
+Stanley,1
+Steele,0
+Surrey,1
+Thompson,0
+Tioga,6
+Valley City,14
+Wahpeton,7
+Watford City,12
+West Fargo,44
+Williston,87
+Wishek,0
+Ada,7
+Akron,1570
+Albany,0
+Alliance,83
+Amberley Village,1
+Amelia,1
+American Township,2
+Amherst,9
+Arcanum,0
+Ashland,14
+Ashville,1
+Athens,17
+Aurora,9
+Austintown,53
+Bainbridge Township,3
+Barberton,87
+Batavia,2
+Bath Township Summit County,2
+Bazetta Township,1
+Beavercreek,12
+Beaver Township,5
+Bedford,31
+Bellaire,3
+Bellbrook,2
+Bellefontaine,45
+Belpre,5
+Berea,18
+Bethel,4
+Beverly,1
+Bexley,20
+Blanchester,1
+Blendon Township,13
+Blue Ash,7
+Bluffton,1
+Bowling Green,49
+Brecksville,1
+Brewster,0
+Bridgeport,0
+Brimfield Township,22
+Broadview Heights,11
+Brooklyn,20
+Brookville,2
+Brunswick,16
+Brunswick Hills Township,0
+Bryan,1
+Burton,0
+Cambridge,37
+Canal Fulton,1
+Canfield,2
+Canton,673
+Cardington,1
+Celina,11
+Centerville,19
+Chagrin Falls,1
+Champion Township,3
+Chardon,6
+Chillicothe,73
+Cincinnati,2826
+Circleville,23
+Clayton,5
+Clearcreek Township,4
+Cleveland,5751
+Cleveland Heights,144
+Clinton Township,25
+Coalton,2
+Coitsville Township,1
+Colerain Township,87
+Columbiana,4
+Commercial Point,0
+Conneaut,10
+Cortland,4
+Covington,1
+Crestline,5
+Cuyahoga Falls,69
+Danville,0
+Dayton,1230
+Deer Park,8
+Defiance,31
+Delaware,53
+Delhi Township,17
+Delphos,1
+Delta,1
+Dover,14
+Dublin,10
+Eastlake,16
+East Palestine,6
+Eaton,12
+Englewood,15
+Evendale,8
+Fairborn,62
+Fairfax,1
+Fairfield,120
+Fairfield Township,25
+Fairport Harbor,10
+Findlay,75
+Forest Park,30
+Fort Recovery,0
+Franklin Township,5
+Fredericktown,0
+Fremont,42
+Gahanna,23
+Galion,22
+Gallipolis,4
+Gates Mills,0
+Georgetown,3
+Germantown,1
+German Township Clark County,3
+German Township Montgomery County,0
+Girard,35
+Goshen Township Mahoning County,8
+Grafton,4
+Grandview Heights,8
+Greenfield,4
+Greenhills,1
+Greenville,34
+Grove City,40
+Groveport,3
+Hamilton,378
+Hamilton Township Warren County,4
+Harrison,3
+Hartville,0
+Heath,20
+Hebron,1
+Highland Heights,6
+Hilliard,26
+Hillsboro,9
+Hinckley Township,2
+Holland,8
+Howland Township,22
+Hubbard,5
+Hubbard Township,7
+Huber Heights,61
+Hudson,3
+Hunting Valley,0
+Independence,4
+Indian Hill,2
+Jackson,7
+Jackson Center,0
+Jackson Township Montgomery County,0
+Jackson Township Stark County,43
+Johnstown,3
+Kent,56
+Kenton,13
+Kettering,53
+Kirtland,0
+Kirtland Hills,0
+Lawrence Township,9
+Lebanon,20
+Liberty Township,21
+Lima,366
+Lithopolis,0
+Lockland,21
+Lodi,1
+Logan,7
+London,16
+Lorain,304
+Loudonville,0
+Louisville,6
+Loveland,7
+Lowellville,0
+Lyndhurst,5
+Madeira,0
+Mansfield,169
+Mariemont,0
+Marietta,19
+Martins Ferry,10
+Marysville,12
+Mason,11
+Massillon,69
+Matamoras,0
+Maumee,11
+McArthur,0
+McConnelsville,1
+Medina,19
+Medina Township,4
+Mentor,43
+Miamisburg,19
+Miami Township Clermont County,21
+Miami Township Montgomery County,37
+Middlefield,4
+Middleport,3
+Middletown,301
+Mifflin Township,13
+Milford,6
+Millersburg,3
+Minerva Park,1
+Monroe,61
+Monroeville,0
+Montgomery,3
+Montpelier,22
+Montville Township,3
+Moraine,30
+Moreland Hills,0
+Mount Vernon,14
+Napoleon,5
+Navarre,0
+Nelsonville,13
+New Albany,2
+Newark,67
+New Boston,1
+Newcomerstown,19
+New Concord,1
+New Franklin,5
+New Lebanon,1
+New Lexington,13
+New London,0
+New Philadelphia,8
+Newtown,2
+Niles,51
+North Canton,12
+North College Hill,24
+North Ridgeville,14
+Northwood,9
+Norton,7
+Norwalk,19
+Norwood,62
+Oak Harbor,3
+Oak Hill,0
+Oberlin,12
+Obetz,4
+Olmsted Falls,1
+Olmsted Township,5
+Ontario,7
+Oregon,26
+Orrville,7
+Ottawa Hills,5
+Oxford,47
+Painesville,45
+Parma Heights,17
+Paulding,0
+Perrysburg,5
+Perrysville,0
+Perry Township Columbiana County,1
+Perry Township Franklin County,0
+Perry Township Montgomery County,0
+Pierce Township,3
+Pioneer,1
+Piqua,33
+Poland Township,3
+Poland Village,0
+Port Clinton,16
+Portsmouth,89
+Powell,2
+Powhatan Point,1
+Reminderville,2
+Richfield,0
+Richmond Heights,13
+Richwood,3
+Rio Grande,1
+Rittman,7
+Riverside,44
+Rocky Ridge,0
+Roseville,2
+Rossford,3
+Russell Township,1
+Sabina,2
+Sagamore Hills,8
+Salem,6
+Salineville,2
+Sandusky,78
+Sebring,9
+Seven Hills,5
+Shaker Heights,41
+Shawnee Township,0
+Sheffield Lake,5
+Shelby,11
+Sidney,34
+Silverton,17
+Solon,7
+South Bloomfield,0
+South Charleston,0
+South Euclid,31
+South Point,8
+South Russell,0
+Spencerville,1
+Springboro,11
+Springdale,41
+Springfield,427
+Springfield Township Hamilton County,74
+Springfield Township Mahoning County,6
+Springfield Township Summit County,23
+St. Clair Township,2
+Stow,23
+Strasburg,1
+Streetsboro,10
+Strongsville,27
+Struthers,11
+Sugarcreek Township,9
+Sylvania Township,15
+Tallmadge,21
+Tipp City,9
+Toledo,2902
+Toronto,9
+Trotwood,110
+Troy,19
+Twinsburg,9
+Uhrichsville,1
+Union,7
+Uniontown,0
+University Heights,23
+Upper Arlington,10
+Upper Sandusky,4
+Urbana,20
+Utica,3
+Vandalia,22
+Van Wert,21
+Vermilion,11
+Village of Leesburg,0
+Wadsworth,18
+Waite Hill,0
+Walbridge,2
+Walton Hills,0
+Wapakoneta,9
+Warren,263
+Warren Township,11
+Washington Court House,24
+Waterville,5
+Wauseon,8
+Waverly,0
+Weathersfield,14
+Wellston,12
+Wells Township,3
+West Alexandria,0
+West Carrollton,29
+West Chester Township,43
+Westerville,13
+West Jefferson,2
+West Lafayette,0
+West Liberty,2
+Whitehall,127
+Whitehouse,3
+Williamsburg,5
+Willoughby,14
+Wintersville,3
+Woodlawn,12
+Woodmere Village,4
+Wooster,42
+Worthington,5
+Wyoming,2
+Xenia,55
+Yellow Springs,3
+Youngstown,526
+Zanesville,103
+Achille,0
+Ada,184
+Allen,0
+Altus,50
+Alva,3
+Anadarko,26
+Antlers,9
+Apache,2
+Ardmore,370
+Arkoma,3
+Atoka,11
+Bartlesville,87
+Beaver,4
+Beggs,3
+Bethany,57
+Bixby,25
+Blackwell,31
+Blanchard,10
+Boise City,0
+Boley,0
+Bristow,18
+Broken Arrow,147
+Broken Bow,32
+Caddo,1
+Calera,0
+Caney,0
+Canton,0
+Carnegie,6
+Carney,2
+Cashion,1
+Catoosa,50
+Chandler,10
+Checotah,3
+Chelsea,1
+Cherokee,4
+Chickasha,152
+Choctaw,17
+Chouteau,6
+Claremore,35
+Clayton,0
+Cleveland,10
+Clinton,31
+Coalgate,1
+Colbert,0
+Collinsville,4
+Comanche,2
+Cordell,3
+Coweta,13
+Crescent,0
+Cushing,16
+Davenport,2
+Davis,5
+Del City,126
+Depew,3
+Dewar,1
+Dewey,0
+Dibble,0
+Drumright,4
+Duncan,78
+Durant,168
+Edmond,87
+Elgin,0
+Elk City,30
+El Reno,45
+Enid,228
+Eufaula,7
+Fairfax,6
+Fairview,3
+Fletcher,0
+Forest Park,0
+Fort Gibson,4
+Frederick,18
+Geary,7
+Glenpool,69
+Goodwell,1
+Grove,33
+Guthrie,27
+Guymon,36
+Haileyville,1
+Harrah,10
+Hartshorne,3
+Haskell,2
+Healdton,9
+Heavener,9
+Hennessey,1
+Henryetta,10
+Hinton,0
+Hobart,5
+Holdenville,7
+Hollis,2
+Hominy,14
+Hooker,0
+Howe,1
+Hugo,3
+Hulbert,0
+Hydro,2
+Idabel,33
+Jay,1
+Jones,8
+Kiefer,1
+Kingfisher,2
+Kingston,0
+Krebs,2
+Lahoma,0
+Lamont,0
+Lawton,919
+Lexington,3
+Lindsay,25
+Locust Grove,1
+Lone Grove,4
+Luther,0
+Madill,0
+Mangum,6
+Mannford,3
+Marietta,11
+Marlow,8
+Maysville,2
+McAlester,89
+McCurtain,0
+McLoud,17
+Medicine Park,0
+Meeker,6
+Miami,59
+Midwest City,359
+Minco,5
+Moore,72
+Mooreland,1
+Morris,8
+Mountain View,1
+Muldrow,3
+Muskogee,309
+Mustang,39
+Newcastle,8
+Newkirk,3
+Nichols Hills,2
+Nicoma Park,2
+Ninnekah,0
+Noble,7
+Norman,178
+North Enid,0
+Nowata,18
+Oilton,4
+Okemah,4
+Oklahoma City,4998
+Okmulgee,45
+Oologah,0
+Owasso,56
+Pauls Valley,23
+Pawhuska,17
+Pawnee,3
+Perkins,7
+Perry,7
+Piedmont,6
+Pocola,1
+Ponca City,128
+Porum,4
+Poteau,39
+Prague,10
+Pryor,87
+Purcell,23
+Ringling,6
+Roland,1
+Rush Springs,1
+Sallisaw,29
+Sand Springs,20
+Sapulpa,39
+Sawyer,0
+Sayre,6
+Seiling,1
+Shawnee,170
+Skiatook,11
+Snyder,2
+South Coffeyville,0
+Sparks,0
+Spencer,8
+Spiro,1
+Stigler,10
+Stilwell,14
+Stonewall,0
+Stratford,3
+Stringtown,0
+Stroud,2
+Sulphur,8
+Tahlequah,56
+Talihina,6
+Tecumseh,18
+Texhoma,0
+The Village,22
+Tishomingo,5
+Tonkawa,5
+Tryon,3
+Tulsa,3827
+Tushka,1
+Tuttle,10
+Valliant,1
+Verdigris,1
+Vian,4
+Vinita,7
+Wagoner,66
+Walters,1
+Warner,3
+Warr Acres,54
+Washington,3
+Watonga,7
+Waukomis,2
+Waurika,4
+Waynoka,2
+Weatherford,23
+Weleetka,7
+Westville,2
+Wetumka,0
+Wewoka,12
+Wilburton,0
+Wilson,18
+Woodward,33
+Wright City,1
+Wyandotte,1
+Wynnewood,1
+Yale,3
+Yukon,61
+Albany,40
+Amity,1
+Ashland,33
+Astoria,33
+Athena,1
+Aumsville,6
+Baker City,27
+Bandon,1
+Banks,4
+Beaverton,124
+Bend,182
+Black Butte,0
+Boardman,8
+Brookings,2
+Burns,1
+Canby,13
+Cannon Beach,1
+Carlton,4
+Central Point,33
+Clatskanie,0
+Coburg,0
+Columbia City,0
+Condon,0
+Coos Bay,60
+Coquille,0
+Cornelius,18
+Corvallis,64
+Cottage Grove,18
+Dallas,41
+Eagle Point,24
+Enterprise,2
+Estacada,3
+Eugene,402
+Fairview,14
+Florence,6
+Forest Grove,76
+Gaston,1
+Gearhart,0
+Gervais,10
+Gladstone,23
+Gold Beach,0
+Grants Pass,110
+Gresham,611
+Hermiston,18
+Hillsboro,141
+Hines,0
+Hubbard,4
+Independence,11
+Jacksonville,3
+John Day,1
+Junction City,3
+Keizer,61
+King City,4
+Klamath Falls,76
+La Grande,28
+Lake Oswego,22
+Lakeview,10
+Lebanon,30
+Lincoln City,34
+Malin,1
+Manzanita,0
+McMinnville,68
+Medford,483
+Milton-Freewater,7
+Milwaukie,30
+Molalla,11
+Monmouth,13
+Mount Angel,8
+Newberg-Dundee,22
+Newport,46
+North Bend,7
+North Plains,2
+Ontario,65
+Oregon City,33
+Pendleton,54
+Philomath,2
+Phoenix,9
+Pilot Rock,0
+Portland,2941
+Prineville,24
+Rainier,2
+Redmond,87
+Rockaway Beach,2
+Rogue River,2
+Salem,520
+Scappoose,11
+Seaside,8
+Sherwood,8
+Silverton,10
+Springfield,98
+Stanfield,2
+Stayton,23
+St. Helens,9
+Sunriver,2
+Sweet Home,10
+Talent,7
+The Dalles,14
+Tigard,57
+Tillamook,10
+Toledo,16
+Troutdale,22
+Tualatin,24
+Turner,1
+Umatilla,13
+Warrenton,0
+West Linn,6
+Wilsonville,17
+Woodburn,82
+Yamhill,0
+Abington Township Lackawanna County,1
+Abington Township Montgomery County,63
+Adamstown,0
+Adams Township Butler County,8
+Adams Township Cambria County,0
+Akron,6
+Alburtis,1
+Aldan,2
+Aleppo Township,0
+Aliquippa,49
+Allegheny Township Blair County,29
+Allegheny Township Westmoreland County,4
+Allentown,628
+Altoona,131
+Ambler,12
+Ambridge,86
+Amity Township,3
+Annville Township,5
+Armagh Township,2
+Arnold,31
+Ashland,4
+Ashville,0
+Aspinwall,0
+Aston Township,7
+Athens,4
+Avalon,28
+Avis,2
+Avondale,0
+Avonmore Boro,0
+Baldwin Borough,22
+Bally,0
+Bangor,25
+Beallsville,0
+Beaver Falls,51
+Beaver Meadows,1
+Bedford,10
+Bell Acres,0
+Bellevue,27
+Bellwood,0
+Ben Avon,2
+Ben Avon Heights,0
+Bensalem Township,106
+Benton Area,0
+Berlin,5
+Bern Township,9
+Bernville,0
+Berwick,33
+Bessemer,0
+Bethel Park,19
+Bethel Township Armstrong County,0
+Bethel Township Berks County,5
+Bethel Township Delaware County,19
+Bethlehem,183
+Bethlehem Township,22
+Biglerville,0
+Birdsboro,6
+Birmingham Township,1
+Blair Township,1
+Blakely,2
+Blawnox,7
+Bloomsburg Town,41
+Blossburg,1
+Bonneauville,1
+Boswell,0
+Brackenridge,2
+Braddock Hills,4
+Bradford,89
+Bradford Township,12
+Brecknock Township Berks County,1
+Brentwood,28
+Briar Creek Township,1
+Bridgeport,4
+Bridgeville,5
+Bridgewater,8
+Bristol,28
+Bristol Township,84
+Brockway,10
+Brookhaven,16
+Brookville,5
+Brownsville,10
+Bryn Athyn,0
+Buckingham Township,2
+Buffalo Township,11
+Buffalo Valley Regional,7
+Burgettstown,4
+Butler Township Butler County,15
+Butler Township Luzerne County,34
+Butler Township Schuylkill County,0
+Caernarvon Township Berks County,18
+California,21
+Callery,0
+Caln Township,71
+Cambria Township,1
+Cambridge Springs,1
+Canton,2
+Carbondale,11
+Carrolltown,1
+Carroll Township Washington County,8
+Carroll Township York County,3
+Carroll Valley,2
+Castle Shannon,8
+Catasauqua,2
+Catawissa,4
+Cecil Township,5
+Center Township,25
+Centerville,2
+Central Berks Regional,13
+Chalfont,0
+Chambersburg,86
+Charleroi Regional,51
+Chartiers Township,5
+Cheltenham Township,88
+Cherry Tree,0
+Chester,731
+Chester Township,55
+Chippewa Township,3
+Christiana,1
+Churchill,11
+Clarion,5
+Clarks Summit,7
+Clearfield,26
+Cleona,2
+Clifton Heights,68
+Coaldale,0
+Coal Township,21
+Coatesville,140
+Cochranton,1
+Collegeville,1
+Collier Township,6
+Colonial Regional,7
+Columbia,24
+Conemaugh Township Cambria County,3
+Conemaugh Township Somerset County,4
+Conewago Township Adams County,6
+Conewango Township,12
+Conneaut Lake Regional,0
+Connellsville,26
+Conoy Township,2
+Conshohocken,14
+Conway,3
+Conyngham,0
+Conyngham Township Columbia County,4
+Coopersburg,4
+Coplay,1
+Coraopolis,43
+Cornwall,1
+Corry,33
+Coudersport,0
+Courtdale,3
+Covington Township,1
+Cranberry Township,17
+Crescent Township,7
+Cresson,3
+Cresson Township,2
+Croyle Township,0
+Cumberland Township Adams County,3
+Cumberland Township Greene County,18
+Cumru Township,17
+Curwensville,17
+Dallas,0
+Dallas Township,5
+Dalton,1
+Danville,28
+Darby,466
+Darby Township,53
+Darlington Township,1
+Decatur Township,8
+Delano Township,0
+Delmont,0
+Derry Township Dauphin County,35
+Dickson City,25
+Donora,12
+Dormont,22
+Douglass Township Berks County,2
+Douglass Township Montgomery County,25
+Doylestown,14
+Doylestown Township,10
+Dublin Borough,3
+Du Bois,24
+Dunbar,3
+Dunmore,10
+Dunnstable Township,0
+Dupont,9
+Duquesne,55
+Duryea,4
+Earl Township,2
+East Berlin,0
+East Bethlehem Township,5
+East Brandywine Township,10
+East Cocalico Township,3
+East Conemaugh,0
+East Coventry Township,1
+East Deer Township,2
+East Earl Township,1
+Eastern Adams Regional,1
+Eastern Pike Regional,7
+East Fallowfield Township,6
+East Hempfield Township,26
+East Lampeter Township,19
+East Lansdowne,29
+East Marlborough Township,0
+East Norriton Township,22
+East Norwegian Township,0
+Easton,96
+East Penn Township,0
+East Petersburg,1
+East Pikeland Township,3
+East Pittsburgh,57
+East Rochester,4
+East Taylor Township,2
+Easttown Township,10
+East Union Township,0
+East Vincent Township,4
+East Washington,15
+East Whiteland Township,2
+Ebensburg,7
+Economy,0
+Eddystone,20
+Edgewood,12
+Edgeworth,2
+Edinboro,6
+Edwardsville,44
+Elizabethtown,8
+Elizabeth Township,11
+Elkland,0
+Ellwood City,25
+Emlenton Borough,0
+Emmaus,7
+Emporium,1
+Emsworth,1
+Ephrata,28
+Ephrata Township,11
+Erie,457
+Etna,9
+Everett,3
+Exeter Township Berks County,14
+Fairfield,0
+Fairview Township Luzerne County,0
+Fairview Township York County,26
+Falls Township Bucks County,46
+Fawn Township,3
+Fayette City,0
+Ferguson Township,14
+Ferndale,5
+Findlay Township,3
+Fleetwood,5
+Ford City,4
+Forest City,3
+Forest Hills,10
+Forks Township,3
+Forty Fort,5
+Forward Township,1
+Foster Township McKean County,4
+Foster Township Schuylkill County,0
+Fountain Hill,17
+Fox Chapel,1
+Frackville,10
+Franconia Township,5
+Franklin,8
+Franklin Park,3
+Franklin Township Carbon County,11
+Frazer Township,0
+Freedom,9
+Freeland,16
+Freemansburg,3
+Freeport,5
+Galeton,0
+Gallitzin Township,0
+Geistown,0
+Gettysburg,27
+Gilberton,0
+Girard,7
+Girardville,2
+Glassport,22
+Granville Township,2
+Great Bend,0
+Greencastle,2
+Greenfield Township Blair County,1
+Greensburg,26
+Green Tree,14
+Greenville,24
+Grove City,3
+Hamburg,14
+Hampton Township,14
+Hanover,24
+Hanover Township Luzerne County,31
+Harmony Township,7
+Harrisville,0
+Harveys Lake,2
+Hatboro,2
+Hatfield Township,17
+Haverford Township,27
+Hazleton,83
+Heidelberg,3
+Heidelberg Township Berks County,1
+Hellam Township,21
+Hellertown,18
+Hemlock Township,1
+Hempfield Township Mercer County,6
+Hermitage,38
+Hickory Township,1
+Highland Township,0
+Highspire,9
+Hilltown Township,13
+Hollidaysburg,3
+Homestead,43
+Honesdale,20
+Honey Brook,2
+Horsham Township,25
+Hughesville,2
+Hulmeville,0
+Hummelstown,1
+Huntingdon,12
+Independence Township Beaver County,0
+Independence Township Washington County,0
+Indiana,199
+Indiana Township,4
+Indian Lake,1
+Ingram,0
+Irwin,19
+Ivyland,1
+Jackson Township Butler County,0
+Jackson Township Cambria County,2
+Jamestown,0
+Jeannette,7
+Jefferson Hills Borough,10
+Jefferson Township Lackawanna County,5
+Jefferson Township Mercer County,2
+Jefferson Township Washington County,0
+Jenkins Township,4
+Jenkintown,2
+Jennerstown,0
+Jermyn,23
+Jim Thorpe,8
+Johnsonburg,8
+Johnstown,129
+Kenhorst,13
+Kennedy Township,25
+Kennett Square,11
+Kidder Township,9
+Kilbuck Township,0
+Kingston,21
+Kingston Township,10
+Kittanning,7
+Kline Township,0
+Knox,2
+Kutztown,10
+Laceyville,0
+Lake City,2
+Lamar Township,0
+Lancaster,497
+Lancaster Township Butler County,0
+Lancaster Township Lancaster County,20
+Langhorne Manor,2
+Lansdale,34
+Lansdowne,33
+Larksville,9
+Latimore Township,0
+Latrobe,27
+Laureldale,6
+Lawrence Park Township,6
+Lawrence Township Clearfield County,59
+Lawrence Township Tioga County,4
+Lawrenceville,3
+Lebanon,103
+Leechburg,2
+Leetsdale,6
+Lehighton,11
+Lehigh Township Northampton County,5
+Lehman Township,10
+Lewistown,40
+Liberty,1
+Ligonier,5
+Ligonier Township,8
+Limerick Township,2
+Lincoln,1
+Linesville,2
+Lititz,5
+Little Beaver Township,0
+Littlestown,9
+Lock Haven,17
+Locust Township,4
+Logan Township,47
+Loretto,0
+Lower Allen Township,17
+Lower Burrell,9
+Lower Chichester Township,33
+Lower Frederick Township,1
+Lower Gwynedd Township,14
+Lower Heidelberg Township,3
+Lower Mahanoy Township,0
+Lower Makefield Township,28
+Lower Merion Township,42
+Lower Milford Township,0
+Lower Moreland Township,7
+Lower Paxton Township,81
+Lower Pottsgrove Township,25
+Lower Providence Township,50
+Lower Salford Township,5
+Lower Saucon Township,10
+Lower Southampton Township,22
+Lower Swatara Township,7
+Lower Windsor Township,4
+Luzerne,5
+Luzerne Township,1
+Lykens,0
+Macungie,2
+Mahanoy City,10
+Mahoning Township Lawrence County,5
+Main Township,0
+Malvern,4
+Manheim Township,26
+Manor,3
+Manor Township Armstrong County,0
+Manor Township Lancaster County,11
+Mansfield,1
+Marcus Hook,30
+Marietta,2
+Marion Township Beaver County,0
+Marion Township Berks County,0
+Marlborough Township,1
+Marple Township,12
+Mars,1
+Martinsburg,0
+Masontown,4
+McCandless,12
+McDonald Borough,8
+McKeesport,407
+McKees Rocks,98
+McSherrystown,1
+Meadville,17
+Mechanicsburg,10
+Media,30
+Mercer,1
+Meshoppen,14
+Meyersdale,0
+Middleburg,1
+Middlesex Township Butler County,6
+Middlesex Township Cumberland County,9
+Middletown Township,32
+Midland,14
+Midway,1
+Mifflinburg,1
+Mifflin County Regional,13
+Milford,3
+Millbourne,8
+Millcreek Township Lebanon County,2
+Millersburg,3
+Millersville,14
+Millvale,4
+Millville,0
+Milton,16
+Minersville,9
+Mohnton,5
+Monaca,10
+Monessen,84
+Monongahela,23
+Monroeville,59
+Montgomery Township,15
+Montoursville,9
+Montour Township,1
+Montrose,7
+Moon Township,14
+Moore Township,4
+Moosic,31
+Morton,13
+Moscow,4
+Mount Carmel,33
+Mount Carmel Township,5
+Mount Gretna Borough,0
+Mount Holly Springs,2
+Mount Joy,10
+Mount Lebanon,18
+Mount Pleasant,3
+Mount Pleasant Township,2
+Mount Union,6
+Mountville,3
+Muhlenberg Township,33
+Muncy,1
+Muncy Township,2
+Munhall,31
+Murrysville,6
+Myerstown,12
+Nanticoke,12
+Narberth,2
+Nazareth,17
+Nescopeck,1
+Nesquehoning,11
+Nether Providence Township,11
+Neville Township,7
+Newberry Township,9
+New Bethlehem,2
+New Brighton,41
+New Britain,2
+New Britain Township,5
+New Castle,210
+New Castle Township,1
+New Florence,0
+New Garden Township,11
+New Hanover Township,4
+New Holland,2
+New Hope,19
+New Kensington,46
+New Philadelphia,3
+New Sewickley Township,14
+Newton Township,0
+Newtown,2
+Newtown Township Bucks County,5
+Newtown Township Delaware County,6
+Newville,3
+Norristown,324
+Northampton,7
+Northampton Township,10
+North Annville Township,0
+North Beaver,0
+North Belle Vernon,12
+North Cornwall Township,9
+North Coventry Township,5
+Northeastern Regional,23
+Northern Berks Regional,4
+Northern Cambria Borough,5
+Northern Lancaster County Regional,43
+Northern Regional,6
+Northern York Regional,73
+North Franklin Township,8
+North Hopewell Township,0
+North Huntingdon Township,26
+North Lebanon Township,22
+North Londonderry Township,3
+North Middleton Township,19
+North Sewickley Township,11
+North Strabane Township,5
+Northumberland,3
+North Union Township,0
+North Versailles Township,34
+North Wales,3
+Northwest Lancaster County Regional,6
+North Woodbury,0
+Norwood,3
+Oakland,0
+Oakmont,20
+O'Hara Township,0
+Ohio Township,0
+Oil City,13
+Old Lycoming Township,5
+Oley Township,0
+Olyphant,3
+Orwigsburg,5
+Osceola Township,0
+Oxford,12
+Paint Township,22
+Palmerton,5
+Palmyra,8
+Palo Alto,1
+Parkesburg,8
+Parks Township,0
+Patterson Township,4
+Patton Township,6
+Paxtang,5
+Pen Argyl,13
+Penbrook,6
+Penn,0
+Penndel,3
+Penn Hills,155
+Pennridge Regional,4
+Penn Township Butler County,2
+Penn Township Perry County,2
+Penn Township Westmoreland County,15
+Penn Township York County,24
+Pequea Township,4
+Perkasie,7
+Perryopolis,3
+Peters Township,9
+Philadelphia,17074
+Phoenixville,36
+Pine Creek Township,0
+Pine Grove,8
+Pitcairn,35
+Pittsburgh,2259
+Pittston,8
+Plains Township,9
+Pleasant Hills,1
+Plymouth Township Montgomery County,29
+Pocono Mountain Regional,68
+Pocono Township,11
+Point Township,11
+Portage,2
+Portersville,0
+Portland,0
+Port Vue,5
+Pottstown,170
+Pottsville,37
+Pringle,1
+Prospect,0
+Pulaski Township Lawrence County,9
+Punxsutawney,6
+Pymatuning Township,6
+Quakertown,21
+Quarryville,9
+Raccoon Township,2
+Radnor Township,29
+Rankin,22
+Reading,743
+Reading Township,5
+Redstone Township,2
+Reserve Township,2
+Rice Township,1
+Richland Township Bucks County,6
+Richland Township Cambria County,16
+Ridgway,1
+Ridley Park,13
+Ridley Township,51
+Ringtown,0
+Riverside,0
+Roaring Brook Township,0
+Roaring Spring,1
+Robeson Township,6
+Robinson Township Allegheny County,26
+Robinson Township Washington County,2
+Rochester,69
+Rochester Township,10
+Rockledge,6
+Roseto,2
+Ross Township,39
+Royalton,0
+Royersford,20
+Rural Valley,0
+Rush Township,4
+Ryan Township,0
+Sadsbury Township Chester County,0
+Salem Township Luzerne County,5
+Salisbury Township,8
+Saltsburg,0
+Sandy Lake,1
+Sandy Township,22
+Sankertown,0
+Sayre,9
+Schuylkill Township Chester County,4
+Scottdale,27
+Scott Township Allegheny County,10
+Scranton,166
+Selinsgrove,79
+Seward,0
+Sewickley,3
+Sewickley Heights,0
+Shade Township,0
+Shaler Township,12
+Shamokin,4
+Sharon Hill,61
+Sharpsburg,15
+Sharpsville,18
+Shenandoah,17
+Shillington,2
+Shinglehouse,1
+Shippensburg,4
+Shippingport,2
+Shohola Township,1
+Silver Lake Township,3
+Silver Spring Township,3
+Sinking Spring,0
+Slatington,4
+Slippery Rock,7
+Smethport,3
+Smithton Borough,0
+Solebury Township,3
+Somerset,7
+Souderton,18
+South Abington Township,10
+South Buffalo Township,1
+South Centre Township,2
+South Coatesville,1
+South Connellsville Borough,3
+Southern Regional Lancaster County,5
+Southern Regional York County,5
+South Fayette Township,5
+South Greensburg,3
+South Heidelberg Township,6
+South Lebanon Township,7
+South Londonderry Township,2
+South Park Township,8
+South Pymatuning Township,1
+South Strabane Township,22
+Southwestern Regional,12
+Southwest Greensburg,7
+Southwest Regional Fayette County,10
+Southwest Regional Washington County,0
+South Whitehall Township,13
+South Williamsport,6
+Spring City,6
+Springettsbury Township,30
+Springfield Township Delaware County,10
+Springfield Township Montgomery County,13
+Spring Garden Township,28
+Spring Township Berks County,19
+Spring Township Centre County,0
+State College,41
+St. Clair Boro,2
+Steelton,26
+St. Marys City,10
+Stoneboro,1
+Stowe Township,13
+Strasburg,1
+Stroud Area Regional,72
+Sugarcreek,4
+Sugarloaf Township Luzerne County,1
+Summerhill Township,1
+Summit Hill,2
+Summit Township,0
+Susquehanna,2
+Susquehanna Regional,8
+Susquehanna Township Dauphin County,46
+Swatara Township,63
+Swissvale,90
+Swoyersville,7
+Sykesville,0
+Tamaqua,12
+Tarentum,11
+Tatamy,0
+Taylor,15
+Telford,14
+Terre Hill6,0
+Throop,16
+Tiadaghton Valley Regional,10
+Tidioute,0
+Tinicum Township Bucks County,1
+Tinicum Township Delaware County,17
+Titusville,7
+Towamencin Township,14
+Towanda,17
+Tower City,1
+Trafford,6
+Trainer,21
+Tredyffrin Township,16
+Troy,1
+Tulpehocken Township,0
+Tunkhannock Township Wyoming County,2
+Turtle Creek,10
+Tyrone,21
+Union City,1
+Uniontown,47
+Union Township Lawerence County,7
+Upland,37
+Upper Burrell Township,0
+Upper Chichester Township,38
+Upper Darby Township,450
+Upper Dublin Township,14
+Upper Gwynedd Township,11
+Upper Leacock Township,2
+Upper Macungine Township,10
+Upper Makefield Township,3
+Upper Merion Township,21
+Upper Moreland Township,19
+Upper Nazareth Township,8
+Upper Perkiomen,15
+Upper Pottsgrove Township,11
+Upper Providence Township Delaware County,2
+Upper Providence Township Montgomery County,9
+Upper Saucon Township,4
+Upper Southampton Township,8
+Upper St. Clair Township,5
+Upper Uwchlan Township,1
+Upper Yoder Township,5
+Uwchlan Township,14
+Valley Township,3
+Vandergrift,17
+Vandling,1
+Vernon Township,4
+Vintondale,0
+Walker Township,1
+Walnutport,0
+Wampum,0
+Warminster Township,21
+Warren,46
+Warrington Township,18
+Warwick Township Bucks County,19
+Washington Washington County,67
+Washington Township Fayette County,4
+Washington Township Franklin County6,3
+Washington Township Northampton County,0
+Washington Township Westmoreland County,10
+Watsontown,1
+Waynesboro6,24
+Wayne Township Lawrence County,0
+Wellsboro,6
+Wesleyville,3
+West Brandywine Township,7
+West Brownsville,0
+West Caln Township,13
+West Carroll Township,0
+West Chester,71
+West Cocalico Township,4
+West Conshohocken,2
+West Cornwall Township,1
+West Deer Township,2
+West Earl Township,6
+Western Berks Regional,1
+West Fallowfield Township,0
+West Goshen Township,13
+West Grove Borough,3
+West Hempfield Township,12
+West Hills Regional,5
+West Homestead,12
+West Kittanning,0
+West Lampeter Township,4
+West Lebanon Township,2
+West Leechburg,0
+West Mahanoy Township,0
+West Manchester Township,29
+West Manheim Township,10
+West Mead Township,1
+West Mifflin,57
+West Newton,7
+West Norriton Township,43
+West Nottingham Township,1
+West Pikeland Township,2
+West Pittston,5
+West Pottsgrove Township,17
+West Reading,29
+West Sadsbury Township,2
+West Salem Township,22
+Westtown-East Goshen Regional,24
+West View,6
+West Vincent Township,1
+West Whiteland Township,8
+West York,23
+Whitaker Borough,0
+Whitehall,11
+Whitehall Township,30
+Whitemarsh Township,12
+White Oak,7
+Whitpain Township,17
+Wiconisco Township,1
+Wilkes-Barre,208
+Wilkes-Barre Township,21
+Wilkins Township,6
+Williamsburg,0
+Williamsport,110
+Willistown Township,5
+Wilson,37
+Wind Gap,3
+Womelsdorf,2
+Woodward Township,1
+Wrightsville,2
+Wright Township,1
+Wyoming,3
+Wyomissing,10
+Yardley,5
+Yeadon,78
+York,348
+York Area Regional,136
+Youngsville,15
+Zelienople,4
+Zerbe Township,0
+Barrington,3
+Bristol,11
+Burrillville,20
+Central Falls,131
+Charlestown,8
+Coventry,31
+Cranston,151
+Cumberland,36
+East Greenwich,6
+East Providence,60
+Foster,3
+Glocester,3
+Hopkinton,5
+Jamestown,1
+Johnston,26
+Lincoln,22
+Little Compton,0
+Middletown,14
+Narragansett,11
+Newport,111
+New Shoreham,3
+North Kingstown,25
+North Providence,47
+North Smithfield,14
+Pawtucket,279
+Portsmouth,9
+Providence,1115
+Richmond,5
+Scituate,3
+Smithfield,16
+South Kingstown,21
+Tiverton,21
+Warren,12
+Warwick,93
+Westerly,24
+West Greenwich,7
+West Warwick,54
+Woonsocket,241
+Abbeville,40
+Aiken,96
+Allendale,49
+Anderson,278
+Andrews,26
+Aynor,1
+Bamberg,23
+Barnwell,45
+Batesburg-Leesville,50
+Beaufort,153
+Belton,33
+Bennettsville,115
+Bishopville,58
+Blacksburg,10
+Blackville,16
+Bluffton,49
+Burnettown,10
+Camden,97
+Central,7
+Chapin,9
+Charleston,231
+Cheraw,51
+Chesnee,10
+Chester,69
+Chesterfield,7
+Clemson,21
+Clinton,53
+Clover,148
+Columbia,952
+Conway,113
+Cottageville,0
+Coward,0
+Cowpens,5
+Darlington,48
+Denmark,24
+Dillon,107
+Due West,0
+Duncan,4
+Easley,75
+Edgefield,11
+Edisto Beach,0
+Ehrhardt,5
+Elgin,15
+Estill,31
+Florence,293
+Folly Beach,16
+Forest Acres,72
+Fort Lawn,3
+Fort Mill,23
+Fountain Inn,41
+Gaffney,66
+Gaston,5
+Georgetown,111
+Goose Creek,85
+Great Falls,10
+Greenville,455
+Greenwood,300
+Greer,125
+Hampton,10
+Hanahan,32
+Hardeeville,36
+Harleyville,8
+Hartsville,87
+Hemingway,5
+Holly Hill,16
+Honea Path,12
+Inman,10
+Irmo,53
+Isle of Palms,2
+Jackson,0
+Johnsonville,3
+Johnston,21
+Kingstree,41
+Lake City,68
+Lake View,4
+Lamar,5
+Lancaster,109
+Landrum,6
+Latta,37
+Laurens,90
+Lexington,45
+Liberty,9
+Loris,19
+Lyman,3
+Lynchburg,3
+Manning,58
+Marion,91
+Mauldin,40
+McBee,1
+McColl,19
+McCormick,9
+Moncks Corner,38
+Mount Pleasant,117
+Mullins,64
+Myrtle Beach,475
+Newberry,68
+New Ellenton,8
+Nichols,1
+North,2
+North Augusta,41
+North Charleston,693
+North Myrtle Beach,120
+Orangeburg,99
+Pacolet,9
+Pageland,26
+Pelion,5
+Pickens,13
+Port Royal,14
+Prosperity,1
+Ridgeland,15
+Rock Hill,372
+Salley,0
+Saluda,22
+Santee,13
+Scranton,0
+Seneca,60
+Spartanburg,527
+Springdale,9
+St. George,15
+St. Matthews,13
+Sullivans Island,2
+Summerton,10
+Summerville,104
+Sumter,387
+Surfside Beach,19
+Swansea,16
+Tega Cay,2
+Travelers Rest,9
+Turbeville,2
+Union,77
+Wagener,2
+Walhalla,23
+Walterboro,46
+Ware Shoals,25
+Wellford,3
+West Columbia,111
+Westminster,12
+West Pelzer,2
+West Union,2
+Whitmire,6
+Williamston,23
+Williston,16
+Winnsboro,14
+Woodruff,25
+York,63
+Aberdeen,74
+Avon,0
+Belle Fourche,14
+Beresford,3
+Box Elder,30
+Brandon,1
+Brookings,9
+Burke,0
+Canton,2
+Centerville,0
+Chamberlain,18
+Clark,2
+Deadwood,1
+Eagle Butte,0
+Estelline,0
+Faith,0
+Flandreau,12
+Freeman,0
+Gettysburg,0
+Hermosa,0
+Hot Springs,7
+Hoven,0
+Huron,55
+Irene,0
+Jefferson,0
+Kadoka,0
+Kimball,0
+Lead,4
+Lennox,2
+Leola,0
+Madison,4
+Martin,13
+Menno,0
+Miller,0
+Mitchell,63
+Mobridge,6
+North Sioux City,0
+Parkston,0
+Philip,0
+Pierre,31
+Rapid City,398
+Rosholt,0
+Scotland,0
+Selby,0
+Sioux Falls,636
+Sisseton,19
+Spearfish,8
+Springfield,0
+Sturgis,10
+Summerset,1
+Tea,3
+Tripp,0
+Tyndall,0
+Vermillion,31
+Viborg,0
+Wagner,2
+Watertown,59
+Whitewood,0
+Winner,6
+Worthing,0
+Yankton,48
+Adamsville,4
+Alamo,10
+Alcoa,61
+Alexandria,2
+Algood,13
+Ardmore,7
+Ashland City,20
+Athens,161
+Atoka,11
+Baileyton,2
+Baneberry,0
+Bartlett,106
+Baxter,3
+Bean Station,16
+Belle Meade,1
+Bells,18
+Benton,2
+Berry Hill,3
+Big Sandy,2
+Blaine,0
+Bluff City,5
+Bolivar,35
+Bradford,5
+Brentwood,20
+Brighton,10
+Bristol,96
+Brownsville,143
+Bruceton,1
+Burns,3
+Calhoun,0
+Camden,5
+Carthage,6
+Caryville,10
+Celina,1
+Centerville,9
+Chapel Hill,6
+Charleston,1
+Chattanooga,1692
+Church Hill,16
+Clarksburg,0
+Clarksville,748
+Cleveland,339
+Clifton,1
+Clinton,39
+Collegedale,16
+Collinwood,0
+Columbia,276
+Cookeville,143
+Coopertown,2
+Copperhill,0
+Cornersville,2
+Covington,114
+Cowan,5
+Cross Plains,5
+Crossville,142
+Crump,3
+Cumberland City,3
+Dandridge,5
+Dayton,16
+Decatur,3
+Decaturville,2
+Decherd,6
+Dickson,55
+Dover,3
+Dresden,4
+Dunlap,24
+Dyer,24
+Dyersburg,264
+Eagleville,0
+East Ridge,152
+Elizabethton,42
+Elkton,0
+Englewood,4
+Erin,10
+Erwin,38
+Estill Springs,10
+Ethridge,6
+Etowah,16
+Fairview,13
+Fayetteville,50
+Franklin,117
+Friendship,3
+Gadsden,5
+Gainesboro,1
+Gallatin,127
+Gallaway,4
+Gates,1
+Gatlinburg,32
+Germantown,38
+Gibson,0
+Gleason,1
+Goodlettsville,89
+Gordonsville,2
+Grand Junction,2
+Graysville,4
+Greenbrier,19
+Greeneville,70
+Greenfield,3
+Halls,14
+Harriman,40
+Henderson,24
+Hendersonville,91
+Henning,9
+Henry,0
+Hohenwald,20
+Hollow Rock,5
+Hornbeak,0
+Humboldt,131
+Huntingdon,8
+Huntland,5
+Jacksboro,4
+Jackson,925
+Jamestown,8
+Jasper,8
+Jefferson City,30
+Jellico,3
+Johnson City,297
+Jonesborough,8
+Kenton,1
+Kimball,3
+Kingsport,267
+Kingston,17
+Knoxville,1541
+Lafayette,14
+La Follette,52
+Lake City,11
+Lawrenceburg,99
+Lebanon,200
+Lenoir City,30
+Lewisburg,83
+Lexington,88
+Livingston,15
+Lookout Mountain,0
+Loretto,2
+Loudon,5
+Madisonville,26
+Manchester,58
+Martin,23
+Maryville,61
+Mason,19
+Maury City,6
+Maynardville,4
+McEwen,2
+McKenzie,21
+Medina,4
+Memphis,10894
+Middleton,3
+Milan,42
+Millersville,13
+Millington,92
+Minor Hill,1
+Monteagle,4
+Monterey,4
+Morristown,162
+Moscow,6
+Mountain City,4
+Mount Carmel,7
+Mount Juliet,48
+Mount Pleasant,59
+Munford,14
+Murfreesboro,705
+Nashville,6612
+Newbern,26
+New Johnsonville,5
+New Market,0
+Newport,58
+New Tazewell,9
+Nolensville,8
+Norris,0
+Oakland,8
+Obion,0
+Oliver Springs,15
+Oneida,19
+Paris,47
+Parsons,4
+Petersburg,0
+Pigeon Forge,43
+Pikeville,5
+Piperton,0
+Pittman Center,0
+Plainview,2
+Pleasant View,0
+Portland,56
+Powells Crossroads,0
+Pulaski,60
+Puryear,1
+Red Bank,70
+Red Boiling Springs,1
+Ridgely,3
+Ridgetop,1
+Ripley,134
+Rockwood,21
+Rogersville,12
+Rossville,2
+Rutherford,2
+Rutledge,4
+Saltillo,1
+Samburg,0
+Savannah,35
+Scotts Hill,0
+Selmer,19
+Sevierville,85
+Sewanee,2
+Sharon,0
+Shelbyville,119
+Signal Mountain,9
+Smithville,19
+Smyrna,111
+Sneedville,6
+Soddy-Daisy,32
+South Carthage,8
+South Fulton,19
+Sparta,11
+Spencer,0
+Spring City,3
+Springfield,165
+Spring Hill,48
+St. Joseph,0
+Sunbright,0
+Surgoinsville,0
+Sweetwater,30
+Tazewell,17
+Tellico Plains,1
+Tiptonville,11
+Toone,1
+Townsend,3
+Tracy City,20
+Trenton,45
+Trezevant,2
+Trimble,0
+Troy,5
+Tullahoma,73
+Tusculum,0
+Union City,62
+Vonore,8
+Wartburg,3
+Wartrace,1
+Watauga,0
+Watertown,2
+Waverly,16
+Waynesboro,14
+Westmoreland,7
+White Bluff,7
+White House,10
+White Pine,3
+Whiteville,14
+Winchester,50
+Winfield,2
+Woodbury,6
+Abernathy,0
+Abilene,477
+Addison,51
+Alamo,164
+Alamo Heights,9
+Alice,155
+Allen,62
+Alton,10
+Alvarado,16
+Alvin,53
+Amarillo,1286
+Andrews,94
+Angleton,58
+Anna,7
+Anson,4
+Anthony,5
+Aransas Pass,32
+Arcola,5
+Argyle,3
+Arlington,1837
+Arp,0
+Atlanta,24
+Aubrey,6
+Austin,3123
+Azle,28
+Baird,2
+Balch Springs,200
+Balcones Heights,9
+Ballinger,9
+Bangs,0
+Bastrop,23
+Bay City,60
+Bayou Vista,2
+Baytown,285
+Beaumont,1225
+Bedford,206
+Bee Cave,4
+Beeville,30
+Bellaire,13
+Bellmead,152
+Bellville,13
+Belton,67
+Benbrook,23
+Bertram,1
+Beverly Hills,10
+Big Sandy,0
+Big Spring,147
+Bishop,3
+Blanco,3
+Blue Mound,1
+Boerne,23
+Bogata,12
+Bonham,22
+Borger,134
+Bovina,5
+Bowie,11
+Brady,8
+Brazoria,16
+Breckenridge,9
+Brenham,68
+Bridge City,12
+Brookshire,20
+Brookside Village,4
+Brownfield,39
+Brownsville,473
+Brownwood,61
+Bryan,358
+Buda,9
+Bullard,1
+Bulverde,5
+Burkburnett,34
+Burleson,57
+Burnet,26
+Cactus,21
+Caddo Mills,0
+Caldwell,8
+Calvert,5
+Cameron,17
+Canyon,16
+Carrollton,185
+Carthage,40
+Castle Hills,6
+Castroville,5
+Cedar Hill,89
+Cedar Park,69
+Celina,7
+Center,39
+Chillicothe,0
+Cibolo,16
+Cisco,5
+Clarksville,33
+Cleburne,88
+Cleveland,69
+Clifton,2
+Clint,0
+Clyde,3
+Cockrell Hill,21
+Coleman,10
+College Station,379
+Colleyville,9
+Collinsville,1
+Colorado City,34
+Columbus,6
+Comanche,19
+Combes,3
+Commerce,28
+Conroe,216
+Converse,124
+Coppell,17
+Copperas Cove,95
+Corinth,14
+Corpus Christi,1939
+Corrigan,6
+Corsicana,121
+Crandall,7
+Crane,5
+Crockett,25
+Crosbyton,3
+Crowell,0
+Crowley,14
+Cuero,83
+Cumby,2
+Daingerfield,10
+Dalhart,53
+Dallas,8330
+Dalworthington Gardens,1
+Danbury,1
+Dayton,24
+Decatur,17
+De Kalb,4
+De Leon,4
+Del Rio,72
+Denison,94
+Denton,338
+Denver City,5
+Desoto,179
+Diboll,6
+Dickinson,37
+Dilley,6
+Dimmitt,15
+Donna,154
+Double Oak,1
+Driscoll,1
+Dublin,2
+Dumas,50
+Duncanville,146
+Eagle Pass,29
+Early,27
+Eastland,9
+East Mountain,5
+Edcouch,9
+Edinburg,277
+Edna,12
+El Campo,54
+Electra,5
+Elgin,21
+El Paso,2522
+Elsa,18
+Ennis,61
+Euless,89
+Everman,26
+Fairfield,4
+Fair Oaks Ranch,1
+Falfurrias,9
+Farmers Branch,65
+Farmersville,7
+Farwell,3
+Ferris,11
+Flatonia,2
+Florence,0
+Floresville,13
+Flower Mound,39
+Floydada,11
+Forney,19
+Fort Stockton,58
+Fort Worth,4420
+Frankston,3
+Fredericksburg,9
+Freeport,28
+Freer,28
+Friendswood,11
+Friona,1
+Frisco,100
+Fulton,3
+Gainesville,89
+Galena Park,18
+Galveston,236
+Garden Ridge,1
+Garland,514
+Gatesville,22
+Georgetown,71
+Giddings,15
+Gilmer,36
+Gladewater,43
+Glenn Heights,30
+Godley,2
+Gonzales,105
+Gorman,3
+Graham,18
+Granbury,21
+Grand Prairie,511
+Grand Saline,2
+Granger,1
+Granite Shoals,7
+Grapeland,2
+Grapevine,88
+Greenville,204
+Gregory,2
+Groesbeck,2
+Groves,79
+Gun Barrel City,12
+Hale Center,5
+Hallettsville,17
+Hallsville,8
+Haltom City,110
+Hamlin,19
+Harker Heights,90
+Harlingen,264
+Haskell,3
+Hawkins,0
+Hawley,1
+Hearne,47
+Heath,1
+Hedwig Village,6
+Helotes,4
+Hemphill,1
+Hempstead,18
+Henderson,96
+Hereford,55
+Hewitt,14
+Hickory Creek,7
+Highland Park,5
+Highland Village,8
+Hill Country Village,0
+Hillsboro,30
+Hitchcock,29
+Hollywood Park,0
+Hondo,22
+Hooks,7
+Horizon City,13
+Horseshoe Bay,5
+Houston,20993
+Howe,6
+Hubbard,0
+Hudson,27
+Hughes Springs,1
+Humble,95
+Huntington,4
+Huntsville,213
+Hurst,205
+Hutchins,8
+Hutto,8
+Idalou,6
+Ingleside,32
+Ingram,5
+Iowa Park,13
+Irving,530
+Jacksboro,13
+Jacksonville,111
+Jamaica Beach,0
+Jarrell,0
+Jasper,31
+Jefferson,13
+Jersey Village,38
+Johnson City,2
+Jones Creek,0
+Jonestown,9
+Joshua,15
+Jourdanton,2
+Junction,6
+Karnes City,6
+Katy,38
+Kaufman,12
+Keene,4
+Keller,27
+Kenedy,8
+Kennedale,11
+Kermit,18
+Kerrville,48
+Kilgore,53
+Killeen,753
+Kingsville,103
+Kirby,49
+Kirbyville,5
+Kountze,11
+Kress,0
+Kyle,90
+Lacy-Lakeview,38
+La Feria,7
+Lago Vista,14
+La Grange,4
+La Grulla,5
+Laguna Vista,4
+La Joya,6
+Lake Dallas,15
+Lake Jackson,40
+Lakeside,7
+Lakeview Harris County,10
+Lakeway,16
+Lake Worth,14
+La Marque,70
+Lamesa,44
+Lampasas,20
+Lancaster,179
+La Porte,40
+Laredo,1027
+La Vernia,3
+La Villa,0
+Lavon,1
+League City,96
+Leander,26
+Leon Valley,26
+Levelland,67
+Lewisville,243
+Lexington,6
+Liberty,46
+Lindale,16
+Linden,6
+Little Elm,48
+Littlefield,30
+Live Oak,45
+Livingston,43
+Llano,0
+Lockhart,45
+Lone Star,6
+Longview,451
+Lorena,1
+Lorenzo,2
+Los Fresnos,7
+Lubbock,1829
+Luling,29
+Lumberton,25
+Lyford,1
+Lytle,0
+Madisonville,17
+Magnolia,9
+Malakoff,13
+Manor,15
+Mansfield,80
+Manvel,6
+Marble Falls,28
+Marlin,17
+Marshall,141
+Martindale,4
+Mathis,25
+McAllen,171
+McGregor,7
+McKinney,207
+Meadows Place,7
+Melissa,1
+Memorial Villages,5
+Memphis,6
+Mercedes,106
+Meridian,0
+Merkel,5
+Mesquite,402
+Mexia,42
+Midland,350
+Midlothian,25
+Mineola,19
+Mineral Wells,55
+Mission,72
+Missouri City,72
+Monahans,30
+Mont Belvieu,9
+Montgomery,1
+Morgans Point Resort,2
+Moulton,1
+Mount Pleasant,41
+Muleshoe,4
+Munday,2
+Murphy,4
+Mustang Ridge,0
+Nacogdoches,97
+Naples,1
+Nash,9
+Nassau Bay,17
+Navasota,77
+Nederland,58
+Needville,11
+New Boston,9
+New Braunfels,147
+Nocona,2
+Nolanville,22
+Northlake,7
+North Richland Hills,157
+Oak Ridge,2
+Odessa,1080
+O'Donnell,0
+Olmos Park,1
+Olney,3
+Olton,8
+Omaha,3
+Onalaska,16
+Orange,111
+Orange Grove,1
+Overton,7
+Ovilla,4
+Oyster Creek,14
+Paducah,2
+Palacios,4
+Palestine,113
+Palmer,2
+Palmhurst,2
+Palm Valley,0
+Palmview,25
+Pampa,186
+Panhandle,5
+Pantego,14
+Paris,170
+Parker,5
+Pasadena,592
+Pearland,152
+Pearsall,8
+Pecos,12
+Penitas,36
+Perryton,12
+Pflugerville,59
+Pharr,230
+Pilot Point,6
+Pittsburg,35
+Plainview,57
+Plano,389
+Pleasanton,35
+Ponder,3
+Port Aransas,23
+Port Arthur,359
+Port Isabel,12
+Portland,22
+Port Neches,37
+Poteet,13
+Poth,12
+Pottsboro,5
+Premont,20
+Presidio,1
+Primera,2
+Princeton,10
+Progreso,9
+Prosper,12
+Queen City,9
+Quitman,2
+Ralls,2
+Rancho Viejo,1
+Ranger,9
+Ransom Canyon,1
+Raymondville,178
+Red Oak,11
+Refugio,9
+Reno,2
+Richardson,128
+Richland Hills,5
+Richmond,53
+Riesel,4
+Rio Grande City,44
+Rio Hondo,7
+River Oaks,8
+Roanoke,7
+Robinson,19
+Robstown,15
+Rockdale,7
+Rockport,32
+Rockwall,25
+Rollingwood,1
+Roma,39
+Roman Forest,0
+Roscoe,1
+Rosenberg,94
+Round Rock,149
+Rowlett,82
+Royse City,7
+Runaway Bay,0
+Sabinal,1
+Sachse,14
+Salado,0
+San Angelo,263
+San Antonio,8828
+San Augustine,6
+San Diego,13
+Sanger,14
+San Juan,191
+San Marcos,220
+San Saba,7
+Sansom Park Village,11
+Santa Anna,4
+Santa Fe,12
+Santa Rosa,3
+Schertz,68
+Schulenburg,12
+Seabrook,17
+Seagoville,8
+Seagraves,11
+Sealy,35
+Seguin,61
+Selma,15
+Seminole,9
+Seven Points,6
+Seymour,15
+Shallowater,0
+Shamrock,2
+Shavano Park,3
+Shenandoah,9
+Sherman,120
+Silsbee,8
+Sinton,40
+Slaton,16
+Smithville,7
+Snyder,75
+Socorro,58
+Somerset,3
+Sonora,9
+Sour Lake,5
+South Houston,92
+Southlake,14
+Southmayd,4
+South Padre Island,49
+Southside Place,0
+Spearman,3
+Splendora,6
+Springtown,16
+Spring Valley,7
+Spur,0
+Stafford,94
+Stagecoach,0
+Stamford,16
+Stanton,2
+Stephenville,27
+Stratford,3
+Sugar Land,108
+Sullivan City,3
+Sulphur Springs,25
+Sunrise Beach Village,0
+Sunset Valley,3
+Sweeny,11
+Sweetwater,82
+Taft,19
+Tatum,7
+Taylor,30
+Terrell,78
+Terrell Hills,1
+Texarkana,329
+Texas City,126
+The Colony,48
+Thorndale,2
+Thrall,0
+Three Rivers,25
+Tioga,0
+Tomball,30
+Tool,7
+Trinity,13
+Trophy Club,9
+Troy,4
+Tulia,10
+Tye,8
+Tyler,376
+Universal City,52
+University Park,8
+Uvalde,104
+Valley Mills,1
+Van,3
+Van Alstyne,4
+Venus,4
+Vernon,37
+Victoria,396
+Vidor,58
+Waco,515
+Waelder,0
+Wake Village,8
+Waller,9
+Wallis,4
+Watauga,22
+Waxahachie,33
+Weatherford,7
+Webster,46
+Weimar,3
+Weslaco,389
+West,1
+West Columbia,18
+West Orange,7
+Westover Hills,0
+West Tawakoni,0
+Westworth,6
+Wharton,57
+Whitehouse,9
+White Oak,7
+Whitesboro,6
+White Settlement,24
+Whitewright,9
+Whitney,2
+Wichita Falls,401
+Willow Park,0
+Wills Point,1
+Wilmer,6
+Windcrest,12
+Wink,0
+Winnsboro,8
+Winters,4
+Wolfforth,12
+Woodbranch,1
+Woodville,3
+Woodway,8
+Wortham,1
+Wylie,32
+Yoakum,8
+Yorktown,12
+American Fork/Cedar Hills,26
+Big Water,2
+Blanding,18
+Bluffdale,10
+Bountiful,61
+Brian Head,0
+Brigham City,58
+Cedar City,78
+Centerfield,0
+Centerville,19
+Clearfield,39
+Clinton,13
+Cottonwood Heights,37
+Draper,36
+East Carbon,1
+Enoch,18
+Ephraim,1
+Fairview,2
+Farmington,13
+Fountain Green,1
+Grantsville,15
+Harrisville,6
+Helper,4
+Hurricane,14
+Kamas,2
+Kanab,6
+Kaysville,11
+La Verkin,14
+Layton,95
+Lehi,32
+Lindon,7
+Logan,35
+Lone Peak,2
+Mapleton,2
+Moab,19
+Monticello,1
+Moroni,0
+Mount Pleasant,5
+Naples,0
+Nephi,6
+North Ogden,9
+North Park,1
+North Salt Lake,33
+Ogden,416
+Orem,33
+Park City,31
+Parowan,5
+Payson,9
+Perry,13
+Pleasant Grove,16
+Pleasant View,2
+Price,27
+Provo,160
+Richfield,7
+Riverdale,11
+Roosevelt,63
+Roy,40
+Salem,3
+Salina,5
+Salt Lake City,1475
+Sandy,134
+Santaquin/Genola,3
+Saratoga Springs,12
+Smithfield,7
+South Jordan,28
+South Ogden,24
+South Salt Lake,204
+Spanish Fork,10
+Springdale,3
+Springville,33
+St. George,133
+Stockton,0
+Sunset,4
+Syracuse,6
+Tooele,72
+Tremonton,28
+Vernal,33
+Washington,18
+West Bountiful,17
+West Valley,703
+Willard,2
+Woods Cross,33
+Barre Town,2
+Bennington,31
+Berlin,13
+Bradford,1
+Brattleboro,36
+Brighton,0
+Bristol,2
+Castleton,9
+Colchester,14
+Dover,1
+Essex,19
+Fair Haven,2
+Hardwick,8
+Hartford,18
+Hinesburg,1
+Milton,6
+Morristown,1
+Newport,15
+Northfield,6
+Norwich,0
+Randolph,1
+Richmond,0
+Rutland,63
+Shelburne,2
+Springfield,20
+St. Johnsbury,15
+Stowe,2
+Swanton,3
+Vergennes,3
+Waterbury,3
+Weathersfield,1
+Williston,5
+Wilmington,3
+Windsor,8
+Woodstock,0
+Abingdon,10
+Alexandria,258
+Altavista,8
+Amherst,2
+Appalachia,12
+Ashland,26
+Bedford,12
+Berryville,5
+Big Stone Gap,17
+Blacksburg,31
+Blackstone,14
+Bloxom,0
+Bowling Green,0
+Boykins,0
+Bridgewater,4
+Bristol,59
+Broadway,0
+Brookneal,1
+Buena Vista,9
+Burkeville,1
+Cape Charles,0
+Charlottesville,211
+Chase City,9
+Chatham,0
+Chesapeake,737
+Chilhowie,0
+Chincoteague,2
+Christiansburg,30
+Clarksville,3
+Clifton Forge,8
+Clintwood,2
+Coeburn,3
+Colonial Beach,8
+Colonial Heights,43
+Covington,7
+Crewe,3
+Culpeper,38
+Damascus,2
+Danville,150
+Dayton,0
+Dublin,2
+Dumfries,0
+Edinburg,0
+Elkton,0
+Emporia,24
+Exmore,6
+Fairfax City,26
+Falls Church,24
+Farmville,15
+Franklin,35
+Fredericksburg,114
+Front Royal,30
+Galax,12
+Gate City,4
+Glasgow,1
+Glen Lyn,1
+Gordonsville,1
+Gretna,1
+Grottoes,0
+Grundy,0
+Halifax,1
+Hampton,292
+Harrisonburg,106
+Haymarket,0
+Haysi,0
+Herndon,51
+Hillsville,10
+Honaker,4
+Hopewell,100
+Hurt,0
+Independence,1
+Jonesville,0
+Kenbridge,6
+Kilmarnock,3
+La Crosse,0
+Lawrenceville,2
+Lebanon,3
+Leesburg,74
+Lexington,4
+Louisa,2
+Luray,3
+Lynchburg,330
+Manassas,122
+Manassas Park,15
+Marion,25
+Martinsville,56
+Middleburg,0
+Middletown,4
+Mount Jackson,3
+Narrows,4
+New Market,0
+Newport News,795
+Norfolk,1418
+Norton,11
+Occoquan,0
+Onancock,0
+Onley,0
+Orange,8
+Parksley,0
+Pearisburg,4
+Pembroke,0
+Pennington Gap,5
+Petersburg,163
+Pocahontas,1
+Poquoson,17
+Portsmouth,590
+Pound,2
+Pulaski,27
+Purcellville,2
+Quantico,0
+Radford,91
+Rich Creek,2
+Richlands,12
+Richmond,1327
+Roanoke,457
+Rocky Mount,23
+Rural Retreat,0
+Salem,24
+Saltville,8
+Shenandoah,2
+Smithfield,13
+South Boston,43
+South Hill,16
+Stanley,2
+Staunton,50
+Stephens City,0
+St. Paul,4
+Strasburg,9
+Suffolk,268
+Tappahannock,5
+Tazewell,7
+Timberville,0
+Victoria,0
+Vienna,9
+Vinton,34
+Virginia Beach,730
+Warrenton,13
+Warsaw,0
+Waverly,1
+Waynesboro,46
+Weber City,0
+West Point,2
+White Stone,0
+Williamsburg,22
+Winchester,89
+Windsor,5
+Wise,7
+Woodstock,16
+Wytheville,10
+Aberdeen,58
+Airway Heights,6
+Algona,0
+Anacortes,21
+Arlington,37
+Asotin,1
+Auburn,293
+Bainbridge Island,12
+Battle Ground,13
+Bellevue,125
+Bingen,0
+Black Diamond,0
+Blaine,3
+Bonney Lake,28
+Bothell,18
+Bremerton,227
+Brewster,4
+Brier,3
+Buckley,1
+Burien,177
+Burlington,16
+Camas,14
+Carnation,1
+Castle Rock,4
+Centralia,61
+Chehalis,11
+Cheney,19
+Chewelah,5
+Clarkston,27
+Cle Elum,2
+Clyde Hill,2
+Colfax,4
+College Place,8
+Colton,0
+Colville,3
+Connell,9
+Cosmopolis,0
+Coulee Dam,2
+Coupeville,5
+Covington,34
+Des Moines,98
+Dupont,9
+Duvall,2
+East Wenatchee,25
+Eatonville,9
+Edgewood,9
+Edmonds,70
+Ellensburg,33
+Elma,4
+Enumclaw,9
+Ephrata,17
+Everett,443
+Everson,1
+Federal Way,291
+Ferndale,26
+Fife,89
+Fircrest,16
+Forks,12
+Garfield,0
+Gig Harbor,22
+Goldendale,8
+Grand Coulee,7
+Grandview,19
+Granger,2
+Granite Falls,9
+Ilwaco,2
+Issaquah,21
+Kalama,7
+Kelso,72
+Kenmore,14
+Kennewick,240
+Kent,319
+Kettle Falls,3
+Kirkland,71
+Kittitas,1
+La Center,2
+Lacey6,79
+Lake Forest Park,5
+Lake Stevens,44
+Lakewood,410
+Liberty Lake,3
+Long Beach,1
+Longview,170
+Lynden,9
+Lynnwood,105
+Mabton,0
+Maple Valley,15
+Marysville,138
+Mattawa,3
+McCleary,0
+Medina,1
+Mercer Island,8
+Mill Creek,26
+Milton,17
+Monroe,67
+Montesano,0
+Morton,2
+Moses Lake,103
+Mountlake Terrace,32
+Mount Vernon,89
+Moxee,2
+Mukilteo,14
+Newcastle,12
+Normandy Park,1
+North Bend,11
+Oak Harbor,31
+Oakville,1
+Ocean Shores,7
+Odessa,0
+Olympia6,131
+Omak,28
+Oroville,1
+Orting,11
+Othello,47
+Pacific,10
+Palouse,0
+Pasco,158
+Port Angeles,94
+Port Orchard,74
+Port Townsend,41
+Poulsbo,19
+Prosser,9
+Pullman,27
+Puyallup,104
+Quincy,18
+Raymond,2
+Reardan,1
+Redmond,39
+Renton,254
+Republic,7
+Richland,95
+Ridgefield,1
+Ritzville,1
+Rosalia,0
+Roy,1
+Royal City,5
+Ruston,1
+Sammamish,11
+SeaTac,172
+Seattle,3758
+Sedro Woolley,18
+Selah,0
+Sequim,13
+Shelton,36
+Shoreline,80
+Snohomish,23
+Snoqualmie,3
+Spokane,1440
+Spokane Valley,231
+Springdale,1
+Stanwood,9
+Steilacoom,13
+Sultan,10
+Sumas,0
+Sumner,29
+Sunnyside,42
+Tacoma,1766
+Tenino,1
+Tieton,1
+Tonasket,6
+Toppenish,38
+Tukwila,164
+Tumwater6,41
+Twisp,1
+Union Gap,11
+University Place,92
+Vancouver,593
+Wapato,22
+Warden,3
+Washougal,29
+Westport,0
+West Richland,15
+White Salmon,0
+Wilbur,0
+Winlock,0
+Winthrop,0
+Woodinville,20
+Woodland,19
+Woodway,0
+Yakima,471
+Yarrow Point,0
+Zillah,3
+Alderson,0
+Barboursville,1
+Beech Bottom,0
+Benwood,2
+Bluefield,56
+Bridgeport,12
+Buckhannon,9
+Chapmanville,2
+Charles Town,10
+Clearview,0
+Dunbar,24
+Eleanor,2
+Elkins,68
+Gauley Bridge,1
+Glasgow,2
+Glen Dale,6
+Glenville,0
+Grafton,3
+Hamlin,15
+Harpers Ferry/Bolivar,0
+Harrisville,4
+Hinton,3
+Hurricane,3
+Kenova,7
+Keyser,9
+Lewisburg,8
+Marmet,3
+Martinsburg,70
+Mason,2
+Milton,4
+Moorefield,7
+Morgantown,94
+Mount Hope,0
+Nitro,11
+Oak Hill,27
+Oceana,40
+Parkersburg,127
+Philippi,22
+Point Pleasant,3
+Princeton,60
+Rainelle,0
+Ravenswood,0
+Reedsville,0
+Ripley,3
+Romney,3
+Ronceverte,2
+Shepherdstown,1
+Shinnston,2
+Sistersville,3
+Sophia,1
+South Charleston,80
+Spencer,2
+St. Albans,39
+Star City,7
+Summersville,22
+Vienna,10
+Welch,6
+Wellsburg,0
+West Liberty,0
+Weston,2
+White Hall,4
+White Sulphur Springs,1
+Williamson,8
+Winfield,4
+Adams,7
+Albany,8
+Algoma,1
+Alma,0
+Altoona,8
+Amery,11
+Antigo,10
+Appleton,176
+Arcadia,3
+Ashland,32
+Ashwaubenon,14
+Athens,0
+Avoca,0
+Bangor,3
+Baraboo,25
+Barneveld,0
+Bayfield,1
+Beaver Dam,8
+Belleville,1
+Beloit,129
+Beloit Town,12
+Berlin,3
+Big Bend,1
+Black River Falls,2
+Blair,0
+Blanchardville,1
+Bloomer,1
+Bloomfield,2
+Blue Mounds,5
+Boscobel,13
+Brandon-Fairwater,0
+Brillion,0
+Brodhead,4
+Brookfield,30
+Brookfield Township,13
+Brown Deer,15
+Burlington,17
+Butler,9
+Caledonia,12
+Campbellsport,0
+Campbell Township,3
+Cashton,0
+Cedarburg,1
+Chenequa,0
+Chetek,4
+Chilton,2
+Chippewa Falls,26
+Cleveland,2
+Clinton,2
+Clintonville,3
+Colby-Abbotsford,1
+Columbus,4
+Cornell,0
+Cottage Grove,11
+Crandon,2
+Cross Plains6,0
+Cuba City,2
+Cudahy,39
+Cumberland,13
+Dane,0
+Darlington,1
+Deforest6,13
+Delafield,2
+Delavan,12
+Delavan Town,1
+Denmark,1
+De Pere,7
+Dodgeville,3
+Durand,2
+Eagle River,4
+East Troy,7
+Eau Claire,123
+Edgar,0
+Edgerton,4
+Eleva,0
+Elkhart Lake,1
+Elkhorn,9
+Elk Mound,2
+Ellsworth,6
+Elm Grove,1
+Elroy,2
+Endeavor,0
+Evansville,4
+Everest,14
+Fall Creek,0
+Fall River,3
+Fennimore,2
+Fitchburg,61
+Fond du Lac,154
+Fontana,7
+Fort Atkinson,12
+Fountain City,0
+Fox Lake,0
+Fox Point,1
+Fox Valley Metro,14
+Frederic,2
+Freedom,0
+Geneva Town,2
+Genoa City,2
+Germantown,13
+Gilman,0
+Glendale,35
+Grafton,1
+Grand Chute,23
+Grand Rapids,2
+Grantsburg,2
+Green Bay,500
+Greendale,14
+Greenfield,51
+Green Lake,0
+Hales Corners,10
+Hartford,10
+Hartland,6
+Hayward,5
+Hazel Green,1
+Highland,0
+Hobart-Lawrence,0
+Holmen,11
+Horicon,2
+Hortonville,0
+Hudson,12
+Independence,0
+Iron Ridge,1
+Iron River,2
+Jackson,5
+Janesville,166
+Jefferson,22
+Juneau,0
+Kaukauna,19
+Kenosha,274
+Kewaskum,2
+Kewaunee,0
+Kiel,4
+Kohler,0
+Kronenwetter,3
+La Crosse,107
+Ladysmith,7
+Lake Delton,13
+Lake Geneva,5
+Lake Hallie,7
+Lake Mills,3
+Lancaster,21
+Lodi,1
+Lomira,1
+Luxemburg,0
+Madison,884
+Manawa,3
+Manitowoc,75
+Marathon City,1
+Marinette,8
+Marion,4
+Markesan,2
+Marshall Village6,4
+Marshfield,12
+Mauston,20
+Mayville,1
+McFarland6,5
+Medford,13
+Menasha,31
+Menomonee Falls,14
+Menomonie,24
+Mequon,2
+Merrill,29
+Middleton,8
+Milton,9
+Milwaukee,8194
+Mineral Point,4
+Minocqua,11
+Mishicot,0
+Monona,21
+Monroe,17
+Montello,0
+Mosinee,2
+Mount Horeb,5
+Mount Pleasant,14
+Mukwonago,5
+Mukwonago Town,8
+Muskego,6
+Neenah,41
+Neillsville,0
+Neshkoro,0
+New Glarus,2
+New Holstein,7
+New Lisbon,3
+New London,7
+New Richmond,15
+Niagara,2
+North Fond du Lac,7
+North Hudson,0
+North Prairie,0
+Oak Creek,46
+Oconomowoc,12
+Oconomowoc Town,2
+Oconto,10
+Omro,4
+Onalaska6,8
+Oregon6,15
+Osceola,16
+Oshkosh,155
+Osseo,2
+Oxford,0
+Palmyra,2
+Park Falls,1
+Pepin,0
+Peshtigo,2
+Pewaukee Village,10
+Phillips,11
+Plainfield,0
+Platteville,5
+Pleasant Prairie,21
+Plover,15
+Plymouth,6
+Portage,46
+Port Washington,0
+Poynette,0
+Prairie du Chien,15
+Prescott,19
+Princeton,1
+Pulaski,0
+Racine,297
+Reedsburg,18
+Rhinelander,23
+Richland Center,2
+Ripon,8
+River Falls,29
+River Hills,1
+Rome Town,5
+Rosendale,0
+Rothschild,3
+Sauk Prairie,3
+Saukville,1
+Seymour,9
+Shawano,19
+Sheboygan,132
+Sheboygan Falls,2
+Shiocton,0
+Shorewood,30
+Shorewood Hills6,0
+Silver Lake,1
+Siren,2
+Slinger,1
+South Milwaukee,41
+Sparta,32
+Spooner,17
+Spring Green,0
+Stanley,9
+St. Croix Falls,6
+Stevens Point,41
+St. Francis,10
+Stoughton,4
+Strum,0
+Sturgeon Bay,15
+Sturtevant,2
+Summit,0
+Sun Prairie,30
+Superior,92
+Theresa,5
+Thiensville,0
+Tomah,24
+Tomahawk,2
+Town of East Troy,0
+Town of Madison6,49
+Town of Menasha,19
+Trempealeau,0
+Twin Lakes,1
+Two Rivers,19
+Valders,0
+Verona,6
+Viroqua,2
+Walworth,6
+Washburn,3
+Waterloo,3
+Watertown,94
+Waukesha,90
+Waunakee,10
+Waupaca,29
+Waupun,10
+Wausau,85
+Wautoma,1
+Wauwatosa,59
+West Allis,196
+West Bend,18
+Westby,2
+Westfield,0
+West Milwaukee,26
+West Salem,3
+Whitefish Bay,3
+Whitehall,4
+Whitewater,31
+Williams Bay,1
+Winneconne,1
+Wisconsin Dells,16
+Wisconsin Rapids,10
+Woodruff,3
+Afton,0
+Buffalo,20
+Casper,88
+Cheyenne,133
+Cody,14
+Diamondville,0
+Douglas,16
+Evanston,7
+Evansville,19
+Gillette,53
+Glenrock,1
+Green River,56
+Greybull,7
+Guernsey,2
+Hanna,1
+Hulett,2
+Jackson,62
+Kemmerer,3
+Lander,5
+Laramie,37
+Lusk,3
+Mills,28
+Moorcroft,1
+Newcastle,8
+Pine Bluffs,4
+Powell,22
+Rawlins,30
+Riverton,45
+Rock Springs,71
+Saratoga,4
+Sheridan,23
+Sundance,0
+Thermopolis,2
+Torrington,18
+Wheatland,11
+Worland,7

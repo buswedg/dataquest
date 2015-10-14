@@ -1,42 +1,4 @@
 
-
-```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
-
 #Python Programming
 
 ##If Statements and Loops
@@ -135,15 +97,19 @@ Remember how strings are also objects? Well, we can use the .split method to spl
 
 
 ```python
-# Split a string into a list.
+# Create string.
 a_string = "This\nis\na\nstring\n"
 print a_string
+
+# Split string into a list.
 split_string = a_string.split('\n')
 print split_string
 
-# Here's another example.
+# Create string.
 string_two = "How much wood\ncan a woodchuck chuck\nif a woodchuck\ncan chuck wood?"
 print string_two
+
+# Split string into a list.
 split_string_two = string_two.split('\n')
 print split_string_two
 
@@ -171,11 +137,11 @@ Before we make a loop, let's try doing a repetitive task without loops.
 
 
 ```python
-# We have a list, the_list
+# Create list.
 the_list = [3,5,8,10,15,17,19]
 print the_list
 
-# We can print the elements out
+# Print list elements.
 print the_list[0]
 print the_list[1]
 print the_list[2]
@@ -232,10 +198,11 @@ There can be multiple indented lines inside a for loop. The first line that isn'
 
 
 ```python
+# Create list.
 the_list = [3,5,8,10,15,17,19]
 print the_list
 
-# Loop over each item in a list and apply function.
+# Loop over each list item and apply function.
 sum = 0
 for i in the_list:
     # Double the value of i.
@@ -244,7 +211,7 @@ for i in the_list:
     sum = sum + double_i
 print sum
 
-# Loop over each item in a list and apply function.
+# Loop over each list item and apply function.
 sum = 0
 for i in the_list:
     triple_i = i * 3
@@ -263,17 +230,18 @@ So far, we have been using for loops with the format for i in the_list. i is a s
 
 
 ```python
+# Create list.
 the_list = [3,5,8,10,15,17,19]
 print the_list
 
-# Loop over each item in a list and apply function.
+# Loop over each list item and apply function.
 sum = 0
 for i in the_list:
     double_value = i * 2
     sum = sum + double_value
 print sum
 
-# Loop over each item in a list and apply function.
+# Loop over each list item and apply function.
 sum = 0
 for value in the_list:
     triple_value = value * 3
@@ -292,21 +260,29 @@ We can store integers, floats, and strings into lists. We can also store other l
 
 
 ```python
-# Create a list of lists
+# Create a list of lists.
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
 print lolists
 
 # Pull out the first element of the list, which is [1,2,3].
-# Since [1,2,3] is a list, it can also be indexed.
 a = lolists[0]
+print a
+
+# Since [1,2,3] is a list, it can also be indexed.
 b = a[0]
+print b
+
 list1 = lolists[1]
+print list1
+
 value_1_0 = list1[0]
 print value_1_0
 value_1_2 = list1[2]
 print value_1_2
 
 list2 = lolists[2]
+print list2
+
 value_2_0 = list2[0]
 print value_2_0
 value_2_2 = list2[2]
@@ -314,8 +290,12 @@ print value_2_2
 ```
 
     [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    [1, 2, 3]
+    1
+    [10, 15, 14]
     10
     14
+    [10.1, 8.7, 2.3]
     10.1
     2.3
     
@@ -326,7 +306,7 @@ When a statement or function returns a variable, we can directly manipulate it i
 
 
 ```python
-# Create a list of lists
+# Create a list of lists.
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
 print lolists
 
@@ -388,19 +368,26 @@ We can use the .append method to add to a list. list.append(10) will add the ele
 
 
 ```python
+# Create empty list.
 a = []
 print a
+
+# Append value to list.
 a.append(10)
 print a
 
+# Create list with value.
 b = [30]
 print b
+
+# Append value to list.
 b.append(50)
 print b
 
 old_list = [1,2,5,10]
 new_list = []
 
+# Use loop to append values to list.
 for item in old_list:
     new_list.append(item)
 print new_list
@@ -450,6 +437,7 @@ We can iterate over the data to count up the number of rows.
 
 
 ```python
+# Create list.
 the_list = [5,6,10,13,17]
 print the_list
 
@@ -492,6 +480,7 @@ Now that we understand the table structure better, we can count up the number of
 
 
 ```python
+# Create list of lists.
 l = [[1,2,3],[3,4,5],[5,6,7]]
 print l
 
@@ -532,35 +521,36 @@ Booleans can be used to compare equality and return True or False. Let's practic
 
 
 ```python
-# Booleans are statements that take on either True or False as a value.
-# We can create booleans by comparing two values and seeing if they are equal
-# This will be False
-print("Andre the Giant" == "Short")
-
-# This is True
-print("Andre the Giant" == "Andre the Giant")
+# Create boolean by comparing two values.
+print "Andre the Giant" == "Short"
+print "Andre the Giant" == "Andre the Giant"
 
 # True and False are special python keywords of the boolean type.
-# Boolean is abbreviated to bool.
-print(type(True))
-print(type(False))
+print type(True)
+print type(False)
 
 a = 10
 b = 5
 
 # False
-print(a == b)
+print a == b
 
 # True
-print(a == 10)
+print a == 10
 
-# Assigning a boolean to a variable
+# Assigning boolean to a variable.
 c = a == b
-print(c)
+print c
+
 d = a == 10
 e = b == 5
 f = a == 9
 g = b == 4
+
+print d
+print e
+print f
+print g
 ```
 
     False
@@ -569,6 +559,10 @@ g = b == 4
     <type 'bool'>
     False
     True
+    False
+    True
+    True
+    False
     False
     
 
@@ -578,25 +572,28 @@ We can also use the greater than sign with booleans Saying 5 > 4 will evaluate t
 
 
 ```python
-# This will be True
-print(5 > 4)
+# Create boolean by comparing two values.
+print 5 > 4
+print 4 > 5
 
-# This is False
-print(4 > 5)
-
-# We can also assign these values to variables
-# The value of a will be True, and it will be a boolean type
+# Assigning boolean to a variable.
 a = 5 > 4
-print(a)
-print(type(a))
+print a
+print type(a)
+
 b = 10 > 8
 c = 8 > 10
+
+print b
+print c
 ```
 
     True
     False
     True
     <type 'bool'>
+    True
+    False
     
 
 ###19: Booleans with less than
@@ -605,23 +602,28 @@ We can also use the less than sign with booleans Saying 5 < 4 will evaluate to F
 
 
 ```python
-# Just like with the greater than sign, we can use the less than sign.
-print(4 < 5)
-print(5 < 4)
+# Create boolean by comparing two values.
+print 4 < 5
+print 5 < 4
 
-# We can assign these values to variables.
-# They will be of the boolean type.
+# Assigning boolean to a variable.
 a = 4 < 5
-print(a)
-print(type(a))
+print a
+print type(a)
+
 b = 3 < 5
 c = 5 < 3
+
+print b
+print c
 ```
 
     True
     False
     True
     <type 'bool'>
+    True
+    False
     
 
 ###20: Using booleans in if statements
@@ -630,18 +632,15 @@ You can use booleans to control when certain code gets executed. When the statem
 
 
 ```python
-# If statements are followed by a boolean, which evaluates to True or False.
-# If the boolean is True, the code is run.
-# Otherwise, it isn't.
-# Success! will be printed here.
+# Create 'if' statement based on boolean by comparing two values.
 if 4 == 4:
-    print("Success!")
+    print "Success!"
 
-# Nothing will be printed here, because 10 doesn't equal 8.
+# Create 'if' statement based on boolean by comparing two values.
 if 10 == 8:
-    print("No success!")
+    print "No success!"
 if 10 == 10:
-    print("Hello world!")
+    print "Hello world!"
 ```
 
     Success!
@@ -654,33 +653,24 @@ We can also use if statements with booleans that contain variables. if a == 5: w
 
 
 ```python
-# Use if statements with boolean statements containing variables.
-
 a = 4
-print "a: ", a
+b = 10
+c = 15
 
-print "Does a = 4?:"
+# Create 'if' statement based on boolean by comparing two values.
 if a == 4:
     print "Success!"
 
-b = 10
+# Create 'if' statement based on boolean by comparing two values.
 if b > 10:
-    print("No success!")
+    print "No success!"
 
-    
-c = 15
-print "c: ", c
-
-print "Does c = 15?:"
+# Create 'if' statement based on boolean by comparing two values.
 if c == 15:
-    print("Much success!")
+    print "Much success!"
 ```
 
-    a:  4
-    Does a = 4?:
     Success!
-    c:  15
-    Does c = 15?:
     Much success!
     
 
@@ -698,8 +688,7 @@ count = 0
 for item in the_list:
     if item > 10:
         count = count + 1
-print "Elements in the_list are greater than 10: ", count
-
+print count
 
 
 a = 2
@@ -707,23 +696,23 @@ a = 2
 # Print all of the elements in the_list if a > 1.
 if a > 1:
     for item in the_list:
-        print "Element greater than 1: ", item
+        print item
 
 # Print all of the elements in the_list if item > 5.
 for item in the_list:
     if item > 5:
-        print "Element greater than 5: ", item
+        print item
 ```
 
     [5, 10, 15, 20]
-    Elements in the_list are greater than 10:  2
-    Element greater than 1:  5
-    Element greater than 1:  10
-    Element greater than 1:  15
-    Element greater than 1:  20
-    Element greater than 5:  10
-    Element greater than 5:  15
-    Element greater than 5:  20
+    2
+    5
+    10
+    15
+    20
+    10
+    15
+    20
     
 
 ###23: Using if statements to find the smallest value
@@ -735,7 +724,7 @@ Now that we know how we can combine if statements and for loops, we can learn ho
 the_list = [20,50,5,100]
 print the_list
 
-# Set smallest_item to a value that is bigger than anything in the_list.
+# Set 'smallest_item' to a value that is bigger than anything in 'the_list'.
 smallest_item = 1000
 for item in the_list:
     # Check if each item is less than smallest_item.
@@ -749,8 +738,8 @@ print "Smallest item in list: ", smallest_item
 # Set smallest_item to a value that is bigger than anything in the_list.
 smallest_item = 1000
 
-print a
 a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
+print a
 
 for item in a:
     if item < smallest_item:
@@ -772,18 +761,16 @@ We can convert between different data types. The int() function will convert an 
 
 ```python
 # There's one problem with our parsed CSV file -- because we parsed it from a string, all of the values are stored as strings.
-# (go to the csv parsing and check types if you want to verify)
-# We need the crime rate column s an integer so we can work with it.
 
-# We can use the int() function to turn a string into an int.
+# Use the int() function to turn a string into an int.
 a = '5'
 print a
-print(type(a))
+print type(a)
 
 # We can use the int function to parse it into the integer 5.
 b = int(a)
-print(b)
-print(type(b))
+print b
+print type(b)
 
 c = '10'
 d = '20'
@@ -805,22 +792,23 @@ Now, let's convert a list into integers.
 
 
 ```python
-# Now that we know about the int() function, let's use it to convert the values in a list to integers.
+# Use the 'int' function to convert values in a list to integers.
 the_list = ['1', '2', '3']
 print the_list
 
 new_list = []
-
 # Loop through the_list.
 for item in the_list:
     # Get the int value of the item in the list.
     item_int = int(item)
     # Add the int item to the new list.
     new_list.append(item_int)
-# Print out the new list.
+    
 print new_list
 
 a = ['10', '15', '20', '35']
+print a
+
 new_a = []
 for item in a:
     item_int = int(item)
@@ -829,6 +817,7 @@ for item in a:
 
     ['1', '2', '3']
     [1, 2, 3]
+    ['10', '15', '20', '35']
     
 
 ###26: Convert csv to integers
@@ -881,19 +870,19 @@ print the_list
 # Loop through 'the_list', if the list item equals 5, print out "Found".
 for item in the_list:
     if item == 5:
-        print "List item equals 5: Found"
+        print "Found"
 
 a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
 
 # Loop through 'a', if the list item equals 78, print out "Yes".
 for item in a:
     if item == 78:
-        print "List item equals 78: Yes"
+        print "Yes"
 ```
 
     [5, 6, 7, 10, 50]
-    List item equals 5: Found
-    List item equals 78: Yes
+    Found
+    Yes
     
 
 ###29: Searching a list of lists
@@ -913,7 +902,7 @@ for item in lolist:
     if last_value == 9:
         value = first_value
         
-print "First element of the inner list whose third element is 9: ", value
+print value
 
 
 # Get the second element in the inner list whose first element is 7.
@@ -922,12 +911,12 @@ for item in lolist:
     if item[0] == 7:
         value = item[1]
         
-print "Second element in the inner list whose first element is 7: ", value
+print value
 ```
 
     [[1, 5, 7], [10, 8, 9], [7, 10, 11]]
-    First element of the inner list whose third element is 9:  10
-    Second element in the inner list whose first element is 7:  10
+    10
+    10
     
 
 ###30: Finding the answer!
@@ -960,8 +949,3 @@ print "City with lowest crime rate: ", city
 
     City with lowest crime rate:  Sundance
     
-
-
-```python
-
-```

@@ -1,42 +1,4 @@
 
-
-```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
-
 #Python Programming
 
 ##Functions and Debugging
@@ -47,7 +9,7 @@ The story is stored in the "story.txt" file. Open the file and read the contents
 
 
 ```python
-# The story is stored in the file "story.txt".
+# Load the story stored in the file "story.txt".
 f = open("data/story.txt", 'r')
 story = f.read()
 ```
@@ -60,12 +22,16 @@ The story is loaded into the story variable. Tokenize the story, and store the t
 
 
 ```python
-# We can split strings into lists with the .split() method.
-# If we use a space as the input to .split(), it will split based on the space.
+# Split strings into lists with the .split() method.
 text = "Bears are probably better than sharks, but I can't get close enough to one to be sure."
 tokenized_text = text.split(" ")
 tokenized_story = story.split(" ")
+
+print "Raw: ", tokenized_story
 ```
+
+    Raw:  ['There\nwas\nonce\na\ngreat\nand\nnoble\nfrmer\nnamed\nJulius.\nHe\nwas\nthe\nbest\nfarmer\nin\nhis\nvillage,\nand\nprabably\neven\nthe\nwhole\nworld.\nOne\nday,\nhe\ndecidid\nto\ngrw\npotatoes.\nJulius\nknew\nthat\npotatoes\nwere\nhard\nto\ngrow,\nso\nhe\nkniw\nhe\nhd\nto\ngoe\nto\nthe\nmagic\nfarmer\nin\nthe\nsky\nto\nseek\nhis\nguidance.\nJulius\nset\nout\non\nhis\njourney\naroudn\nnoon\none\nday.\nIt\nstarted\nraining\nalmosty\nimmediately.\nt\ngo\non,\nbut\nhe\nperserved.\nHe\nbecame\nsoaked,\nand\nstoped\nin\nthe\nstore\nto\nbuy\nan\numbrella.\nHe\ntold\nthe\nstorekeeper,\nReggie,\nabout\nhis\njourney.",\n,\n,\n,\n,\n,\n,\n,\n"\nJulius\ncame\nback\nto\nthe\nvillage,\nand\nmanaged\nto\ngrow\nthe\nfinest\ncrop\nthe\nvillage\nhad\never\nseen.\nEveryone\nhad\npotatoes\nto\neat\nfor\nmonths,\nand\nsang\nJulius\'s\npraises.\n']
+    
 
 ###3: Replacing punctuation
 
@@ -79,18 +45,14 @@ Print out no_punctuation_tokens if you want to see which types of punctuation ar
 
 
 ```python
-# We can use the .replace function to replace punctuation in a string.
+# Use the .replace function to replace punctuation in a string.
 text = "Who really shot John F. Kennedy?"
 text = text.replace("?", "?!")
+#print text
 
-# The question mark has been replaced with ?!.
-print(text)
-
-# We can replace strings with blank spaces, meaning that they are just removed.
+# Replace strings with blank spaces in order to remove them.
 text = text.replace("?", "")
-
-# The question mark is gone now.
-print(text)
+#print text
 
 no_punctuation_tokens = []
 for token in tokenized_story:
@@ -100,10 +62,11 @@ for token in tokenized_story:
     token = token.replace(";", "")
     token = token.replace("\n", "")
     no_punctuation_tokens.append(token)
+    
+print "No punctuations: ", no_punctuation_tokens
 ```
 
-    Who really shot John F. Kennedy?!
-    Who really shot John F. Kennedy!
+    No punctuations:  ['TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney""JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises']
     
 
 ###4: Lowercasing the words
@@ -114,25 +77,27 @@ The tokens without punctuation have been loaded into no_punctuation_tokens. Loop
 
 
 ```python
-# We can make strings all lowercase using the .lower() method.
+# Make strings all lowercase using the .lower() method.
 text = "MY CAPS LOCK IS STUCK"
 text = text.lower()
 
 # The text is much nicer to read now.
-print(text)
+#print text
 
 lowercase_tokens = []
 for token in no_punctuation_tokens:
     token = token.lower()
     lowercase_tokens.append(token)
+
+print "Lowercase: ", lowercase_tokens
 ```
 
-    my caps lock is stuck
+    Lowercase:  ['therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney""juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises']
     
 
 ###5: Making a basic function
 
-Define a function that takes degrees in fahrenheit as an input, and return degrees celsius
+Define a function that takes degrees in fahrenheit as an input, and return degrees celsius.
 
 Use it to convert 100 degrees fahrenheit to celsius. Assign the result to celsius_100. 
 Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsius_150.
@@ -142,60 +107,74 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 # A simple function that takes in a number of miles, and turns it into kilometers
 # The input at position 0 will be put into the miles variable.
 def miles_to_km(miles):
-    # return is a special keyword that indicates that the function will output whatever comes after it.
     return miles/0.62137
 
-# Returns the number of kilometers equivalent to one mile
-print(miles_to_km(1))
+# Return the number of kilometers equivalent to one mile.
+print "Number of km's in one mile: ", miles_to_km(1)
 
-# Convert a from 10 miles to kilometers
+# Convert 'a' from 10 miles to kilometers.
 a = 10
 a = miles_to_km(a)
 
-# We can convert and assign to a different variable
+# Convert and assign to a different variable.
 b = 50
 c = miles_to_km(b)
 
+# Function that takes degrees in fahrenheit as an input, and return degrees celsius.
 fahrenheit = 80
 celsius = (fahrenheit - 32)/1.8
+
 def convert(degrees):
     return (degrees - 32)/1.8
+
 celsius_100 = convert(100)
 celsius_150 = convert(150)
+
+print "Degrees celsius in 100 degrees fahrenheit: ", celsius_100
+print "Degrees celsius in 150 degrees fahrenheit: ", celsius_150
 ```
 
-    1.60934708789
+    Number of km's in one mile:  1.60934708789
+    Degrees celsius in 100 degrees fahrenheit:  37.7777777778
+    Degrees celsius in 150 degrees fahrenheit:  65.5555555556
     
 
 ###6: Function introduction
 
-
-```python
 Make a function that takes a string as input and outputs a lowercase version. 
 
 Use it to turn the string lowercase_me to lowercase. Assign the result to lowercased_string.
-```
 
 
 ```python
+# Function to split a string into a list.
 def split_string(text):
     return text.split(" ")
 
 sally = "Sally sells seashells by the seashore."
-# This splits the string into a list.
-print(split_string(sally))
+print sally
 
-# We can assign the output of a function to a variable.
+# Split 'sally' into a list.
+print split_string(sally)
+
+# Assign the output to 'sally_tokens'.
 sally_tokens = split_string(sally)
 
 lowercase_me = "I wish I was in ALL lowercase"
+print lowercase_me
+
+# Function output a lowercase version of a string. 
 def lowercase(text):
     return text.lower()
 
-lowercased_string = lowercase(lowercase_me)
+# Assign the output to 'lowercased_string'.
+print lowercase(lowercase_me)
 ```
 
+    Sally sells seashells by the seashore.
     ['Sally', 'sells', 'seashells', 'by', 'the', 'seashore.']
+    I wish I was in ALL lowercase
+    i wish i was in all lowercase
     
 
 ###7: Types of errors
@@ -209,7 +188,7 @@ b = 5
 
 for item in a:
     if b == 5:
-        print(item)
+        print item
 ```
 
     Errors are no fun!
@@ -219,16 +198,16 @@ for item in a:
 
 ###8: More syntax errors
 
-The code to the right has multiple syntax errors. Fix them so the code prints out "I never liked that 6"
+The code has multiple syntax errors. Fix them so the code prints out "I never liked that 6"
 
 
 ```python
 a = 5
 
 if a == 6:
-    print("6 is obviously the best number")
+    print "6 is obviously the best number"
 else:
-    print("I never liked that 6")
+    print "I never liked that 6"
 ```
 
     I never liked that 6
@@ -243,12 +222,10 @@ The code to the right has multiple index errors. Fix them so that the code print
 
 ```python
 the_list = ["Harrison Ford", "Mark Hammil"]
-
-print(the_list[1])
+print the_list[1]
 
 another_list = ["Jabba"]
-
-print(another_list[0])
+print another_list[0]
 ```
 
     Mark Hammil
@@ -263,32 +240,36 @@ All the tokens from Julius's story are in the tokenized_story variable. Write a 
 
 
 ```python
-# Functions can have multiple lines in the function body.
+# Basic math function.
 def do_math(number):
-    # Multiply the number by 10
+    # Multiply the number by 10.
     number = number * 10
-    # Add 20 to the number
+    # Add 20 to the number.
     number = number + 20
     return number
 
-print(do_math(20))
+print "Apply math function to 20: ", do_math(20)
 a = do_math(10)
+```
 
+    Apply math function to 20:  220
+    
+
+
+```python
 no_punctuation_tokens = []
-def remove_punctuation(token):
+for token in tokenized_story:
     token = token.replace(".","")
     token = token.replace(",","")
     token = token.replace("'", "")
     token = token.replace(";", "")
     token = token.replace("\n", "")
-    return token
-
-for token in tokenized_story:
-    token = remove_punctuation(token)
     no_punctuation_tokens.append(token)
+    
+print "No punctuations: ", no_punctuation_tokens
 ```
 
-    220
+    No punctuations:  ['TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney""JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises']
     
 
 ###11: Making a function to lowercase input
@@ -308,15 +289,16 @@ def normalize(token):
     token = token.lower()
     return token
 
-# We've read the tokens from Julius's story into the tokenized_story variable.
-# Can you add to the remove_punctuation function so it also lowercases the tokens?
-# Then loop over the tokens in tokenized_story, normalize them with the function, and append them to normalized_tokens.
 normalized_tokens = []
-
 for token in tokenized_story:
     token = normalize(token)
     normalized_tokens.append(token)
+    
+print "Normalized: ", normalized_tokens
 ```
+
+    Normalized:  ['therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney""juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises']
+    
 
 ###12: Practice with multiple argument functions
 
@@ -329,15 +311,17 @@ Assign the values of multiply(20,-1,3) to b.
 
 
 ```python
-# This function takes two arguments, at positions 0 and 1
+# Function to divide numbers at position 0 and 1
 def divide(x,y):
     return x/y
 
 # 5 is assigned to x, and 1 is assigned to y based on positions
-print(divide(5,1))
+print "Divide 5 by 1: ", divide(5,1)
 
 # 1 is assigned to x, and 5 is assigned to y based on positions.
-print(divide(1,5))
+print "Divide 1 by 5: ", divide(1,5)
+
+# Function to multiply numbers at position 0, 1, 2
 def multiply(x, y, z):
     return x * y * z
 
@@ -345,8 +329,8 @@ a = multiply(10,3,5)
 b = multiply(20,-1,3)
 ```
 
-    5
-    0
+    Divide 5 by 1:  5
+    Divide 1 by 5:  0
     
 
 ###13: Reading in and normalizing the dictionary
@@ -373,7 +357,6 @@ for token in tokens:
     token = normalize(token)
     normalized_dictionary_tokens.append(token)
 
-
 normalized_story_tokens = []
 f = open("data/story.txt", 'r')
 tokens = f.read().split(" ")
@@ -398,8 +381,8 @@ for token in normalized_story_tokens:
     else:
         potential_misspellings.append(token)
 
-print(potential_misspellings)
+print "Potential misspellings: ", potential_misspellings
 ```
 
-    ['therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney""juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises']
+    Potential misspellings:  ['therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney""juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises']
     

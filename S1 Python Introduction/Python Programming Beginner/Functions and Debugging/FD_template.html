@@ -169,60 +169,6 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s">code_show=true; </span>
-<span class="s">function code_toggle() {</span>
-<span class="s"> if (code_show){</span>
-<span class="s"> $(&#39;div.input&#39;).hide();</span>
-<span class="s"> } else {</span>
-<span class="s"> $(&#39;div.input&#39;).show();</span>
-<span class="s"> }</span>
-<span class="s"> code_show = !code_show</span>
-<span class="s">} </span>
-<span class="s">$( document ).ready(code_toggle);</span>
-<span class="s">&lt;/script&gt;</span>
-<span class="s">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -262,10 +208,10 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># The story is stored in the file &quot;story.txt&quot;.</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Load the story stored in the file &quot;story.txt&quot;.</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">story</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </pre></div>
@@ -297,17 +243,32 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># We can split strings into lists with the .split() method.</span>
-<span class="c"># If we use a space as the input to .split(), it will split based on the space.</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Split strings into lists with the .split() method.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;Bears are probably better than sharks, but I can&#39;t get close enough to one to be sure.&quot;</span>
 <span class="n">tokenized_text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 <span class="n">tokenized_story</span> <span class="o">=</span> <span class="n">story</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">&quot;Raw: &quot;</span><span class="p">,</span> <span class="n">tokenized_story</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Raw:  [&apos;There\nwas\nonce\na\ngreat\nand\nnoble\nfrmer\nnamed\nJulius.\nHe\nwas\nthe\nbest\nfarmer\nin\nhis\nvillage,\nand\nprabably\neven\nthe\nwhole\nworld.\nOne\nday,\nhe\ndecidid\nto\ngrw\npotatoes.\nJulius\nknew\nthat\npotatoes\nwere\nhard\nto\ngrow,\nso\nhe\nkniw\nhe\nhd\nto\ngoe\nto\nthe\nmagic\nfarmer\nin\nthe\nsky\nto\nseek\nhis\nguidance.\nJulius\nset\nout\non\nhis\njourney\naroudn\nnoon\none\nday.\nIt\nstarted\nraining\nalmosty\nimmediately.\nt\ngo\non,\nbut\nhe\nperserved.\nHe\nbecame\nsoaked,\nand\nstoped\nin\nthe\nstore\nto\nbuy\nan\numbrella.\nHe\ntold\nthe\nstorekeeper,\nReggie,\nabout\nhis\njourney.&quot;,\n,\n,\n,\n,\n,\n,\n,\n&quot;\nJulius\ncame\nback\nto\nthe\nvillage,\nand\nmanaged\nto\ngrow\nthe\nfinest\ncrop\nthe\nvillage\nhad\never\nseen.\nEveryone\nhad\npotatoes\nto\neat\nfor\nmonths,\nand\nsang\nJulius\&apos;s\npraises.\n&apos;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -336,21 +297,17 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># We can use the .replace function to replace punctuation in a string.</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Use the .replace function to replace punctuation in a string.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;Who really shot John F. Kennedy?&quot;</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;?&quot;</span><span class="p">,</span> <span class="s">&quot;?!&quot;</span><span class="p">)</span>
+<span class="c">#print text</span>
 
-<span class="c"># The question mark has been replaced with ?!.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-<span class="c"># We can replace strings with blank spaces, meaning that they are just removed.</span>
+<span class="c"># Replace strings with blank spaces in order to remove them.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;?&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-
-<span class="c"># The question mark is gone now.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="c">#print text</span>
 
 <span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
@@ -360,6 +317,8 @@ $( document ).ready(code_toggle);
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    
+<span class="k">print</span> <span class="s">&quot;No punctuations: &quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span>
 </pre></div>
 
 </div>
@@ -372,8 +331,7 @@ $( document ).ready(code_toggle);
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Who really shot John F. Kennedy?!
-Who really shot John F. Kennedy!
+<pre>No punctuations:  [&apos;TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney&quot;&quot;JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises&apos;]
 </pre>
 </div>
 </div>
@@ -404,20 +362,22 @@ Who really shot John F. Kennedy!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># We can make strings all lowercase using the .lower() method.</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Make strings all lowercase using the .lower() method.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;MY CAPS LOCK IS STUCK&quot;</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
 <span class="c"># The text is much nicer to read now.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="c">#print text</span>
 
 <span class="n">lowercase_tokens</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">no_punctuation_tokens</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="n">lowercase_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">&quot;Lowercase: &quot;</span><span class="p">,</span> <span class="n">lowercase_tokens</span>
 </pre></div>
 
 </div>
@@ -430,7 +390,7 @@ Who really shot John F. Kennedy!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>my caps lock is stuck
+<pre>Lowercase:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
 </pre>
 </div>
 </div>
@@ -453,7 +413,7 @@ Who really shot John F. Kennedy!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Define a function that takes degrees in fahrenheit as an input, and return degrees celsius</p>
+<p>Define a function that takes degrees in fahrenheit as an input, and return degrees celsius.</p>
 <p>Use it to convert 100 degrees fahrenheit to celsius. Assign the result to celsius_100. 
 Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsius_150.</p>
 
@@ -462,32 +422,37 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># A simple function that takes in a number of miles, and turns it into kilometers</span>
 <span class="c"># The input at position 0 will be put into the miles variable.</span>
 <span class="k">def</span> <span class="nf">miles_to_km</span><span class="p">(</span><span class="n">miles</span><span class="p">):</span>
-    <span class="c"># return is a special keyword that indicates that the function will output whatever comes after it.</span>
     <span class="k">return</span> <span class="n">miles</span><span class="o">/</span><span class="mf">0.62137</span>
 
-<span class="c"># Returns the number of kilometers equivalent to one mile</span>
-<span class="k">print</span><span class="p">(</span><span class="n">miles_to_km</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="c"># Return the number of kilometers equivalent to one mile.</span>
+<span class="k">print</span> <span class="s">&quot;Number of km&#39;s in one mile: &quot;</span><span class="p">,</span> <span class="n">miles_to_km</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c"># Convert a from 10 miles to kilometers</span>
+<span class="c"># Convert &#39;a&#39; from 10 miles to kilometers.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">miles_to_km</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="c"># We can convert and assign to a different variable</span>
+<span class="c"># Convert and assign to a different variable.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">miles_to_km</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
+<span class="c"># Function that takes degrees in fahrenheit as an input, and return degrees celsius.</span>
 <span class="n">fahrenheit</span> <span class="o">=</span> <span class="mi">80</span>
 <span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span><span class="o">/</span><span class="mf">1.8</span>
+
 <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">degrees</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">degrees</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span><span class="o">/</span><span class="mf">1.8</span>
+
 <span class="n">celsius_100</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">celsius_150</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">&quot;Degrees celsius in 100 degrees fahrenheit: &quot;</span><span class="p">,</span> <span class="n">celsius_100</span>
+<span class="k">print</span> <span class="s">&quot;Degrees celsius in 150 degrees fahrenheit: &quot;</span><span class="p">,</span> <span class="n">celsius_150</span>
 </pre></div>
 
 </div>
@@ -500,7 +465,9 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1.60934708789
+<pre>Number of km&apos;s in one mile:  1.60934708789
+Degrees celsius in 100 degrees fahrenheit:  37.7777777778
+Degrees celsius in 150 degrees fahrenheit:  65.5555555556
 </pre>
 </div>
 </div>
@@ -518,41 +485,44 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">Make</span> <span class="n">a</span> <span class="n">function</span> <span class="n">that</span> <span class="n">takes</span> <span class="n">a</span> <span class="n">string</span> <span class="k">as</span> <span class="nb">input</span> <span class="ow">and</span> <span class="n">outputs</span> <span class="n">a</span> <span class="n">lowercase</span> <span class="n">version</span><span class="o">.</span> 
-
-<span class="n">Use</span> <span class="n">it</span> <span class="n">to</span> <span class="n">turn</span> <span class="n">the</span> <span class="n">string</span> <span class="n">lowercase_me</span> <span class="n">to</span> <span class="n">lowercase</span><span class="o">.</span> <span class="n">Assign</span> <span class="n">the</span> <span class="n">result</span> <span class="n">to</span> <span class="n">lowercased_string</span><span class="o">.</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Make a function that takes a string as input and outputs a lowercase version.</p>
+<p>Use it to turn the string lowercase_me to lowercase. Assign the result to lowercased_string.</p>
 
 </div>
 </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Function to split a string into a list.</span>
+<span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 
 <span class="n">sally</span> <span class="o">=</span> <span class="s">&quot;Sally sells seashells by the seashore.&quot;</span>
-<span class="c"># This splits the string into a list.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">sally</span>
 
-<span class="c"># We can assign the output of a function to a variable.</span>
+<span class="c"># Split &#39;sally&#39; into a list.</span>
+<span class="k">print</span> <span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">)</span>
+
+<span class="c"># Assign the output to &#39;sally_tokens&#39;.</span>
 <span class="n">sally_tokens</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">)</span>
 
 <span class="n">lowercase_me</span> <span class="o">=</span> <span class="s">&quot;I wish I was in ALL lowercase&quot;</span>
+<span class="k">print</span> <span class="n">lowercase_me</span>
+
+<span class="c"># Function output a lowercase version of a string. </span>
 <span class="k">def</span> <span class="nf">lowercase</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
-<span class="n">lowercased_string</span> <span class="o">=</span> <span class="n">lowercase</span><span class="p">(</span><span class="n">lowercase_me</span><span class="p">)</span>
+<span class="c"># Assign the output to &#39;lowercased_string&#39;.</span>
+<span class="k">print</span> <span class="n">lowercase</span><span class="p">(</span><span class="n">lowercase_me</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -565,7 +535,10 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&apos;Sally&apos;, &apos;sells&apos;, &apos;seashells&apos;, &apos;by&apos;, &apos;the&apos;, &apos;seashore.&apos;]
+<pre>Sally sells seashells by the seashore.
+[&apos;Sally&apos;, &apos;sells&apos;, &apos;seashells&apos;, &apos;by&apos;, &apos;the&apos;, &apos;seashore.&apos;]
+I wish I was in ALL lowercase
+i wish i was in all lowercase
 </pre>
 </div>
 </div>
@@ -595,7 +568,7 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Errors are no fun!&quot;</span><span class="p">,</span> <span class="s">&quot;But they can be fixed&quot;</span><span class="p">,</span> <span class="s">&quot;Just fix the syntax and everything will be fine&quot;</span><span class="p">]</span>
@@ -603,7 +576,7 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">print</span> <span class="n">item</span>
 </pre></div>
 
 </div>
@@ -641,22 +614,22 @@ Just fix the syntax and everything will be fine
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The code to the right has multiple syntax errors. Fix them so the code prints out "I never liked that 6"</p>
+<p>The code has multiple syntax errors. Fix them so the code prints out "I never liked that 6"</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;6 is obviously the best number&quot;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s">&quot;6 is obviously the best number&quot;</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;I never liked that 6&quot;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s">&quot;I never liked that 6&quot;</span>
 </pre></div>
 
 </div>
@@ -700,16 +673,14 @@ Just fix the syntax and everything will be fine
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Harrison Ford&quot;</span><span class="p">,</span> <span class="s">&quot;Mark Hammil&quot;</span><span class="p">]</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">another_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Jabba&quot;</span><span class="p">]</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">another_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span> <span class="n">another_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -754,32 +725,19 @@ Jabba
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Functions can have multiple lines in the function body.</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Basic math function.</span>
 <span class="k">def</span> <span class="nf">do_math</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
-    <span class="c"># Multiply the number by 10</span>
+    <span class="c"># Multiply the number by 10.</span>
     <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">*</span> <span class="mi">10</span>
-    <span class="c"># Add 20 to the number</span>
+    <span class="c"># Add 20 to the number.</span>
     <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">20</span>
     <span class="k">return</span> <span class="n">number</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">do_math</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+<span class="k">print</span> <span class="s">&quot;Apply math function to 20: &quot;</span><span class="p">,</span> <span class="n">do_math</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">do_math</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-
-<span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">token</span>
-
-<span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-    <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -792,7 +750,43 @@ Jabba
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>220
+<pre>Apply math function to 20:  220
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    
+<span class="k">print</span> <span class="s">&quot;No punctuations: &quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>No punctuations:  [&apos;TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney&quot;&quot;JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises&apos;]
 </pre>
 </div>
 </div>
@@ -823,7 +817,7 @@ Jabba
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
@@ -835,17 +829,29 @@ Jabba
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">token</span>
 
-<span class="c"># We&#39;ve read the tokens from Julius&#39;s story into the tokenized_story variable.</span>
-<span class="c"># Can you add to the remove_punctuation function so it also lowercases the tokens?</span>
-<span class="c"># Then loop over the tokens in tokenized_story, normalize them with the function, and append them to normalized_tokens.</span>
 <span class="n">normalized_tokens</span> <span class="o">=</span> <span class="p">[]</span>
-
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
     <span class="n">normalized_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    
+<span class="k">print</span> <span class="s">&quot;Normalized: &quot;</span><span class="p">,</span> <span class="n">normalized_tokens</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Normalized:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -874,18 +880,20 @@ Assign the values of multiply(20,-1,3) to b.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># This function takes two arguments, at positions 0 and 1</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Function to divide numbers at position 0 and 1</span>
 <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
 
 <span class="c"># 5 is assigned to x, and 1 is assigned to y based on positions</span>
-<span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">print</span> <span class="s">&quot;Divide 5 by 1: &quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c"># 1 is assigned to x, and 5 is assigned to y based on positions.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="k">print</span> <span class="s">&quot;Divide 1 by 5: &quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c"># Function to multiply numbers at position 0, 1, 2</span>
 <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">*</span> <span class="n">z</span>
 
@@ -903,8 +911,8 @@ Assign the values of multiply(20,-1,3) to b.</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5
-0
+<pre>Divide 5 by 1:  5
+Divide 1 by 5:  0
 </pre>
 </div>
 </div>
@@ -935,7 +943,7 @@ Assign the values of multiply(20,-1,3) to b.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
@@ -953,7 +961,6 @@ Assign the values of multiply(20,-1,3) to b.</p>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
     <span class="n">normalized_dictionary_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-
 
 <span class="n">normalized_story_tokens</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
@@ -990,7 +997,7 @@ Assign the values of multiply(20,-1,3) to b.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">potential_misspellings</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1001,7 +1008,7 @@ Assign the values of multiply(20,-1,3) to b.</p>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">potential_misspellings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">potential_misspellings</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;Potential misspellings: &quot;</span><span class="p">,</span> <span class="n">potential_misspellings</span>
 </pre></div>
 
 </div>
@@ -1014,7 +1021,7 @@ Assign the values of multiply(20,-1,3) to b.</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
+<pre>Potential misspellings:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
 </pre>
 </div>
 </div>

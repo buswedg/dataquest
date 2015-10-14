@@ -1,42 +1,4 @@
 
-
-```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
-
 #Python Programming
 
 ##Dictionaries
@@ -56,7 +18,25 @@ rows = data.split('\n')
 for row in rows:
     split_row = row.split(",")
     weather_data.append(split_row)
+
+weather_data[:10]
 ```
+
+
+
+
+    [['Day', 'Type\xa0of\xa0Weather'],
+     ['1', 'Sunny'],
+     ['2', 'Sunny'],
+     ['3', 'Sunny'],
+     ['4', 'Sunny'],
+     ['5', 'Sunny'],
+     ['6', 'Rain'],
+     ['7', 'Sunny'],
+     ['8', 'Sunny'],
+     ['9', 'Fog']]
+
+
 
 ###2: Getting a single column from the data
 
@@ -68,8 +48,27 @@ Get all of the values in the second column and append them to weather_column.
 ```python
 weather_column = []
 for row in weather_data:
-    weather_column.append(row[1])
+    if row:
+        weather_column.append(row[1])
+        
+weather_column[:10]
 ```
+
+
+
+
+    ['Type\xa0of\xa0Weather',
+     'Sunny',
+     'Sunny',
+     'Sunny',
+     'Sunny',
+     'Sunny',
+     'Rain',
+     'Sunny',
+     'Sunny',
+     'Fog']
+
+
 
 ###3: Pre-defined variables
 
@@ -82,15 +81,18 @@ with open('data/la_weather.csv', 'r') as f:
     # weather_data = [row.rstrip().split(',') for row in f]
     weather = [row.rstrip().split(',')[1] for row in f][1:]
 
+print "First weather entry: ", weather[0]
 
-print(weather[0])
-
+# Loop over the weather variable, and set count equal to the number of items in weather.
 count = 0
 for item in weather:
     count = count + 1
+
+print "Number of weather entries: ", count
 ```
 
-    Sunny
+    First weather entry:  Sunny
+    Number of weather entries:  365
     
 
 ###4: Practice slicing a list
@@ -99,24 +101,35 @@ Assign a slice containing index 2 and 3 from slice_me to slice1. Assign a slice 
 
 
 ```python
-# Let's practice with some list slicing.
 a = [4,5,6,7,8]
+print a
 # New list containing index 2 and 3.
-print(a[2:4])
+print a[2:4]
 # New list with no elements.
-print(a[2:2])
+print a[2:2]
 # New list containing only index 2.
-print(a[2:3])
+print a[2:3]
 
 slice_me = [7,6,4,5,6]
+print slice_me
+
 slice1 = slice_me[2:4]
 slice2 = slice_me[1:2]
 slice3 = slice_me[3:5]
+
+print slice1
+print slice2
+print slice3
 ```
 
+    [4, 5, 6, 7, 8]
     [6, 7]
     []
     [6]
+    [7, 6, 4, 5, 6]
+    [4, 5]
+    [6]
+    [5, 6]
     
 
 ###5: Removing our header
@@ -126,7 +139,25 @@ The weather data is in the weather variable. Slice the data and remove the heade
 
 ```python
 new_weather = weather[1:367]
+
+new_weather[:10]
 ```
+
+
+
+
+    ['Sunny',
+     'Sunny',
+     'Sunny',
+     'Sunny',
+     'Rain',
+     'Sunny',
+     'Sunny',
+     'Fog',
+     'Rain',
+     'Sunny']
+
+
 
 ###6: Making a dictionary
 
@@ -134,26 +165,30 @@ Assign the value 5 to the key "test" in dictionary_two. Assign the value "hello"
 
 
 ```python
-# We can make a dictionary with curly braces.
+# Make dictionary.
 dictionary_one = {}
 
-# The we can add keys and values.
+# Add keys and values.
 dictionary_one["key_one"] = 2
-print(dictionary_one)
+print dictionary_one
 
-# Keys and values can be anything.
-# And dictionaries can have multiple keys
+# Dictionaries can have multiple keys.
 dictionary_one[10] = 5
 dictionary_one[5.2] = "hello"
-print(dictionary_one)
+print dictionary_one
 
+# Make dictionary.
 dictionary_two = {}
+
+# Add keys and values.
 dictionary_two["test"] = 5
 dictionary_two[10] = "hello"
+print dictionary_two
 ```
 
     {'key_one': 2}
     {5.2: 'hello', 10: 5, 'key_one': 2}
+    {'test': 5, 10: 'hello'}
     
 
 ###7: Indexing a dictionary
@@ -164,24 +199,46 @@ Assign the value in "key1" in dictionary_two to a. Assign the value in "key2" in
 
 
 ```python
+# Make dictionary.
 dictionary_one = {}
+
+# Add keys and values.
 dictionary_one["test"] = 10
 dictionary_one["key"] = "fly"
-# We can retrieve values from dictionaries with square brackets.
-print(dictionary_one["test"])
-print(dictionary_one["key"])
 
+print dictionary_one
+
+# Retrieve values from dictionaries.
+print dictionary_one["test"]
+print dictionary_one["key"]
+
+# Make dictionary.
 dictionary_two = {}
+
+# Add keys and values.
 dictionary_two["key1"] = "high"
 dictionary_two["key2"] = 10
 dictionary_two["key3"] = 5.6
+
+print dictionary_two
+
+# Retrieve values from dictionaries.
 a = dictionary_two["key1"]
 b = dictionary_two["key2"]
 c = dictionary_two["key3"]
+
+print a
+print b
+print c
 ```
 
+    {'test': 10, 'key': 'fly'}
     10
     fly
+    {'key3': 5.6, 'key2': 10, 'key1': 'high'}
+    high
+    10
+    5.6
     
 
 ###8: Defining a dictionary with values
@@ -192,23 +249,35 @@ Make a dictionary c with the keys 7, 8, and 9 corresponding to the values "raven
 
 
 ```python
-# We can define dictionaries that already contain values.
-# All we do is add in keys and values separated by colons.
-# We have to separate pairs of keys and values with commas.
+# Define dictionary that already contains values.
 a = {"key1": 10, "key2": "indubitably", "key3": "dataquest", 3: 5.6}
+print a
+print a["key1"]
 
-# a is initialized with those keys and values, so we can access them.
-print(a["key1"])
-
-# Another example
+# Define dictionary that already contains values.
 b = {4: "robin", 5: "bluebird", 6: "sparrow"}
-print(b[4])
+print b
+print b[4]
+
+# Define dictionary that already contains values.
 c = {7: "raven", 8: "goose", 9: "duck"}
+print c
+print c[7]
+
+# Define dictionary that already contains values.
 d = {"morning": 9, "afternoon": 14, "evening": 19, "night": 23}
+print d
+print d["morning"]
 ```
 
+    {'key3': 'dataquest', 'key2': 'indubitably', 'key1': 10, 3: 5.6}
     10
+    {4: 'robin', 5: 'bluebird', 6: 'sparrow'}
     robin
+    {8: 'goose', 9: 'duck', 7: 'raven'}
+    raven
+    {'night': 23, 'evening': 19, 'afternoon': 14, 'morning': 9}
+    9
     
 
 ###9: Testing if items are in a list
@@ -217,29 +286,43 @@ Check if 9 is in list2, and assign the result to c. Check if 8 is in list2, and 
 
 
 ```python
-# We can check if values are in lists using the in statement.
+# Create list.
 the_list = [10,60,-5,8]
+print the_list
 
-# This is True because 10 is in the_list
-print(10 in the_list)
+# Print whether 10 is in 'the_list' using an 'in' statement.
+print 10 in the_list
 
-# This is True because -5 is in the_list
-print(-5 in the_list)
+# Print whether -5 is in 'the_list' using an 'in' statement.
+print -5 in the_list
 
-# This is False because 9 isn't in the_list
-print(9 in the_list)
+# Print whether 9 is in 'the_list' using an 'in' statement.
+print 9 in the_list
 
-# We can assign the results of an in statement to a variable.
-# Just like any other boolean.
+# Assign the result of an in statement to a variable.
 a = 7 in the_list
+print a
 
+# Create list.
 list2 = [8, 5.6, 70, 800]
+print list2
+
 c = 9 in list2
 d = 8 in list2
 e = -1 in list2
+
+print c
+print d
+print e
 ```
 
+    [10, 60, -5, 8]
     True
+    True
+    False
+    False
+    [8, 5.6, 70, 800]
+    False
     True
     False
     
@@ -252,23 +335,39 @@ Check whether "jupiter" is in dict2 and assign the result to b. Check whether "e
 
 
 ```python
-# We can check if a key is in a dictionary with the in statement.
+# Define dictionary that already contains values.
 the_dict = {"robin": "red", "cardinal": "red", "oriole": "orange", "lark": "blue"}
+print the_dict
 
-# This is True
-print("robin" in the_dict)
+# Print whether robin is in 'the_dict' using an 'in' statement.
+print "robin" in the_dict
 
-# This is False
-print("crow" in the_dict)
+# Print whether crow is in 'the_dict' using an 'in' statement.
+print "crow" in the_dict
 
-# We can also assign the boolean to a variable
+# Assign the result of an in statement to a variable.
 a = "cardinal" in the_dict
-print(a)
+print a
 
+# Define dictionary that already contains values.
 dict2 = {"mercury": 1, "venus": 2, "earth": 3, "mars": 4}
+print dict2
+
 b = "jupiter" in dict2
 c = "earth" in dict2
+
+print b
+print c
 ```
+
+    {'lark': 'blue', 'oriole': 'orange', 'cardinal': 'red', 'robin': 'red'}
+    True
+    False
+    True
+    {'mercury': 1, 'earth': 3, 'venus': 2, 'mars': 4}
+    False
+    True
+    
 
 ###11: Practicing with the else statement
 
@@ -278,28 +377,24 @@ Write an if statement that prints "It's hot!" when the season is "Summer" Add an
 
 
 ```python
-# The code in an else statement will be executed if the if statement boolean is False.
-# This will print "Not 7!"
+# Code in an else statement will be executed if the if statement boolean is False.
 a = 6
-# a doesn't equal 7, so this is False.
 if a == 7:
     print(a)
 else:
-    print("Not 7!")
+    print "Not 7!"
 
-# This will print "Nintendo is the best!"
 video_game = "Mario"
-# video_game is "Mario", so this is True
 if video_game == "Mario":
-    print("Nintendo is the best!")
+    print "Nintendo is the best!"
 else:
-    print("Sony is the best!")
+    print "Sony is the best!"
 
 season = "Spring"
 if season == "Summer":
-    print("It's hot!")
+    print "It's hot!"
 else:
-    print("It might be hot!")
+    print "It might be hot!"
 ```
 
     Not 7!
@@ -315,34 +410,47 @@ Count how many times each presidential last name appears in us_presidents. Assig
 
 
 ```python
-# We can count how many times items appear in a list using dictionaries.
+# Create list.
 pantry = ["apple", "orange", "grape", "apple", "orange", "apple", "tomato", "potato", "grape"]
+print pantry
 
-# Create an empty dictionary
+# Create an empty dictionary.
 pantry_counts = {}
-# Loop through the whole list
+
+# Loop through the list.
 for item in pantry:
-    # If the list item is already a key in the dictionary, then add 1 to the value of that key.
-    # This is because we've seen the item again, so our count goes up.
     if item in pantry_counts:
+        # If the list item is already a key in the dictionary, then add 1 to the value of that key.
         pantry_counts[item] = pantry_counts[item] + 1
     else:
         # If the item isn't already a key in the count dictionary, then add the key, and set the value to 1.
-        # We set the value to 1 because we are seeing the item, so it's occured once already in the list.
         pantry_counts[item] = 1
-print(pantry_counts)
+        
+print pantry_counts
 
+# Create list.
 us_presidents = ["Adams", "Bush", "Clinton", "Obama", "Harrison", "Taft", "Bush", "Adams", "Wilson", "Roosevelt", "Roosevelt"]
+print us_presidents
 
+# Create an empty dictionary.
 us_president_counts = {}
+
+# Loop through the list.
 for president in us_presidents:
     if president in us_president_counts:
+        # If the list item is already a key in the dictionary, then add 1 to the value of that key.
         us_president_counts[president] = us_president_counts[president] + 1
     else:
+        # If the item isn't already a key in the count dictionary, then add the key, and set the value to 1.
         us_president_counts[president] = 1
+        
+print us_president_counts
 ```
 
+    ['apple', 'orange', 'grape', 'apple', 'orange', 'apple', 'tomato', 'potato', 'grape']
     {'orange': 2, 'tomato': 1, 'grape': 2, 'apple': 3, 'potato': 1}
+    ['Adams', 'Bush', 'Clinton', 'Obama', 'Harrison', 'Taft', 'Bush', 'Adams', 'Wilson', 'Roosevelt', 'Roosevelt']
+    {'Wilson': 1, 'Taft': 1, 'Clinton': 1, 'Adams': 2, 'Roosevelt': 2, 'Bush': 2, 'Harrison': 1, 'Obama': 1}
     
 
 ##13: Counting the weather!
@@ -353,21 +461,18 @@ The weather column, minus the header, has been loaded into the weather variable.
 
 
 ```python
-# Our weather column, minus the header, is assigned to the weather variable.
+# Create an empty dictionary.
 weather_counts = {}
+
+# Loop through the list.
 for item in weather:
     if item in weather_counts:
         weather_counts[item] = weather_counts[item] + 1
     else:
         weather_counts[item] = 1
 
-print(weather_counts)
+print weather_counts
 ```
 
     {'Fog': 125, 'Sunny': 210, 'Thunderstorm': 1, 'Rain': 25, 'Fog-Rain': 4}
     
-
-
-```python
-
-```
