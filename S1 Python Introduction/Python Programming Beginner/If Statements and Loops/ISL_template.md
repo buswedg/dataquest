@@ -47,8 +47,7 @@ A counter is a map from values to their frequencies. If you initialize a counter
 
 
 ```python
-# We can open files with the open function.
-# The open function returns a file object, which we store in a variable so that we can use it later.
+# Open the csv file with the open function and assign to 'b'.
 b = open('data/crime_rates.csv', 'r')
 ```
 
@@ -58,10 +57,21 @@ crime_rates.csv stores the data on crime rates. This data will help us find the 
 
 
 ```python
-f = open("data/crime_rates.csv", 'r')
+# Read the csv file.
+b = open('data/crime_rates.csv', 'r')
+b = b.read()
 
-b = f.read()
+print "First 50 elements in list:"
+print b[:50]
 ```
+
+    First 50 elements in list:
+    Abbeville,11
+    Adamsville,19
+    Addison,1
+    Alabaster,44
+    
+    
 
 ###3: Making a list
 
@@ -69,16 +79,32 @@ We can make a list by using square brackets. An empty list can be initialized by
 
 
 ```python
-# We can make an empty list with square brackets
+# Make an empty list
 a = []
 
-# We can also initialize a list with values inside of it
+# Can also initialize a list with values
 b = [1, "I'm a string in a list!", 5.1]
+print b
+
 c = [1,2,3]
+print c
+
 d = [1,2,3]
+print d
+
 e = ["hello", "bye", "hi"]
+print e
+
 f = [5.1, 3.4, 10.5]
+print f
 ```
+
+    [1, "I'm a string in a list!", 5.1]
+    [1, 2, 3]
+    [1, 2, 3]
+    ['hello', 'bye', 'hi']
+    [5.1, 3.4, 10.5]
+    
 
 ###4: Indexing a list
 
@@ -86,9 +112,12 @@ We can get values from a list by using square brackets, along with an index. Pyt
 
 
 ```python
-# We can get values from lists by using an index.
+# Get values from lists by using an index.
 sample_list = [10, "Boris Yeltsin", 50]
+print sample_list
+
 b = sample_list[0]
+print "First element of sample_list: ", b
 
 c = [1, "Mikhail Gorbachev", 10.5]
 d = c[0]
@@ -96,28 +125,43 @@ e = c[1]
 f = c[2]
 ```
 
+    [10, 'Boris Yeltsin', 50]
+    First element of sample_list:  10
+    
+
 ###5: Splitting a CSV file
 
 Remember how strings are also objects? Well, we can use the .split method to split strings. The .split method takes a character as input, and then turns a string into a list of strings.
 
 
 ```python
-# We can split a string into a list.
+# Split a string into a list.
 a_string = "This\nis\na\nstring\n"
+print a_string
 split_string = a_string.split('\n')
-print(split_string)
+print split_string
 
 # Here's another example.
 string_two = "How much wood\ncan a woodchuck chuck\nif a woodchuck\ncan chuck wood?"
+print string_two
 split_string_two = string_two.split('\n')
-print(split_string_two)
+print split_string_two
 
-f = open('data/crime_rates.csv', 'r')
-data = f.read()
-rows = data.split('\n')
+#f = open('data/crime_rates.csv', 'r')
+#data = f.read()
+#rows = data.split('\n')
 ```
 
+    This
+    is
+    a
+    string
+    
     ['This', 'is', 'a', 'string', '']
+    How much wood
+    can a woodchuck chuck
+    if a woodchuck
+    can chuck wood?
     ['How much wood', 'can a woodchuck chuck', 'if a woodchuck', 'can chuck wood?']
     
 
@@ -129,26 +173,24 @@ Before we make a loop, let's try doing a repetitive task without loops.
 ```python
 # We have a list, the_list
 the_list = [3,5,8,10,15,17,19]
+print the_list
 
-# We can print the first element out
-print(the_list[0])
-print(the_list[0])
-print(the_list[1])
-print(the_list[2])
-print(the_list[3])
-print(the_list[4])
-print(the_list[5])
-print(the_list[6])
+# We can print the elements out
+print the_list[0]
+print the_list[1]
+print the_list[2]
+print the_list[3]
+print the_list[4]
+print the_list[5]
 ```
 
-    3
+    [3, 5, 8, 10, 15, 17, 19]
     3
     5
     8
     10
     15
     17
-    19
     
 
 ###7: Now let's add loops to the equation
@@ -157,21 +199,24 @@ We can loop over lists using the for i in the_list: notation. The area inside th
 
 
 ```python
-# We can loop over each item in a list.
+# Loop over each item in a list.
 a = [5, 10, 15]
+print a
 for i in a:
-    print(i)
+    print i
 
-# The whole block underneath a for loop needs to be indented 4 spaces, and is run once for each item in the list.
-
+# Loop over each item in a list.
 the_list = [3,5,8,10,15,17,19]
+print the_list
 for i in the_list:
-    print(i)
+    print i
 ```
 
+    [5, 10, 15]
     5
     10
     15
+    [3, 5, 8, 10, 15, 17, 19]
     3
     5
     8
@@ -187,25 +232,29 @@ There can be multiple indented lines inside a for loop. The first line that isn'
 
 
 ```python
-# We can have multiple lines underneath a for loop.
-# The code above will go through the_list.
-# At the end, sum will equal the sum of all of the items in the list doubled.
 the_list = [3,5,8,10,15,17,19]
+print the_list
+
+# Loop over each item in a list and apply function.
 sum = 0
 for i in the_list:
     # Double the value of i.
     double_i = i * 2
     # Add the doubled value to the sum.
     sum = sum + double_i
-print(sum)
+print sum
 
+# Loop over each item in a list and apply function.
 sum = 0
 for i in the_list:
     triple_i = i * 3
     sum = sum + triple_i
+print sum
 ```
 
+    [3, 5, 8, 10, 15, 17, 19]
     154
+    231
     
 
 ###9: For loops with different variable names
@@ -214,21 +263,27 @@ So far, we have been using for loops with the format for i in the_list. i is a s
 
 
 ```python
-# We can name the loop variable anything we want, it just has to be also used inside the loop.
 the_list = [3,5,8,10,15,17,19]
+print the_list
+
+# Loop over each item in a list and apply function.
 sum = 0
 for i in the_list:
     double_value = i * 2
     sum = sum + double_value
-print(sum)
+print sum
 
+# Loop over each item in a list and apply function.
 sum = 0
 for value in the_list:
     triple_value = value * 3
     sum = sum + triple_value
+print sum
 ```
 
+    [3, 5, 8, 10, 15, 17, 19]
     154
+    231
     
 
 ###10: Lists of lists
@@ -239,19 +294,31 @@ We can store integers, floats, and strings into lists. We can also store other l
 ```python
 # Create a list of lists
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
+print lolists
 
-# We can pull out the first element of the list, which is [1,2,3].
-# Since [1,2,3] is a list, we can also index it to get elements out.
+# Pull out the first element of the list, which is [1,2,3].
+# Since [1,2,3] is a list, it can also be indexed.
 a = lolists[0]
 b = a[0]
 list1 = lolists[1]
 value_1_0 = list1[0]
+print value_1_0
 value_1_2 = list1[2]
+print value_1_2
 
 list2 = lolists[2]
 value_2_0 = list2[0]
+print value_2_0
 value_2_2 = list2[2]
+print value_2_2
 ```
+
+    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    10
+    14
+    10.1
+    2.3
+    
 
 ###11: Skipping the assignment
 
@@ -261,20 +328,32 @@ When a statement or function returns a variable, we can directly manipulate it i
 ```python
 # Create a list of lists
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
+print lolists
 
-# Pulls out the first element in the first list.
+# Pull out the first element in the first list.
 a = lolists[0][0]
+print a
 
-# Pulls out the third element in the second list.
+# Pull out the third element in the second list.
 b = lolists[1][2]
+print b
 
-# We can also directly do math with expressions.
+# Directly do math with expressions.
 c = lolists[0][2] + 10
+print c
 
-# Any expression in python can be manipulated without first assigning it to a variable.
+# Directly do math with expressions.
 d = 10
 e = d * lolists[2][0]
+print e
 ```
+
+    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    1
+    14
+    13
+    101.0
+    
 
 ###12: Looping through lists of lists
 
@@ -283,15 +362,18 @@ When we loop through a list of lists, the loop variable will be a list at each i
 
 ```python
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
+print lolists
 
+# Loop through and print inner lists.
 for inner_list in lolists:
-    # This will loop through and print each inner list, starting from the one at index 0.
     print(inner_list)
     
+# Loop through and print first element of each inner list.
 for inner_list in lolists:
     print(inner_list[0])
 ```
 
+    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
     [1, 2, 3]
     [10, 15, 14]
     [10.1, 8.7, 2.3]
@@ -306,28 +388,22 @@ We can use the .append method to add to a list. list.append(10) will add the ele
 
 
 ```python
-# The append method adds items to the end of lists.
-# a will go from having no items in it to having 10 at index 0.
 a = []
-print(a)
+print a
 a.append(10)
-print(a)
+print a
 
-# b will go from having one item to having two items.
 b = [30]
-print(b)
+print b
 b.append(50)
-print(b)
+print b
 
-# We can setup an old list with items, and an empty new list.
 old_list = [1,2,5,10]
 new_list = []
 
-# At the end of this loop, new_list will be equal to old_list.
-# The loop will have gone through each item in old_list, starting from index 0, and appended it to the end of new_list.
 for item in old_list:
     new_list.append(item)
-print(new_list)
+print new_list
 
 c = [20,30]
 c.append(60)
@@ -347,15 +423,12 @@ When we left off with parsing our csv file, we had split it into rows, but still
 
 
 ```python
-# We can use the .split method, with a comma as an input, to split a string on a comma.
-# a_list is a list with 1,10,15, and 20 as elements.
 a_string = "1,10,15,20"
 a_list = a_string.split(",")
-print(a_list)
-print(type(a_list))
-print(a_list[0])
+print a_list
+print type(a_list)
+print a_list[0]
 
-# We split our csv file data into rows earlier.
 f = open('data/crime_rates.csv', 'r')
 data = f.read()
 rows = data.split('\n')
@@ -377,26 +450,41 @@ We can iterate over the data to count up the number of rows.
 
 
 ```python
-# Remember how we counted the length of our list before?
-# When the loop finishes, count will be equal to 5, which is the number of items in the_list.
-# This is because 1 will be added to count for every iteration of the loop.
 the_list = [5,6,10,13,17]
+print the_list
+
+# Count number of items in list.
 count = 0
+
 for item in the_list:
     count = count + 1
+    
+print "Number of items in list: ", count
 
-# We can parse our csv file like we did before.
+
 f = open('data/crime_rates.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 full_data = []
+
 for row in rows:
     split_row = row.split(",")
     full_data.append(split_row)
+    
+    
+# Count number of items in list.
 count = 0
+
 for row in full_data:
     count = count + 1
+    
+print "Number of items in list: ", count
 ```
+
+    [5, 6, 10, 13, 17]
+    Number of items in list:  5
+    Number of items in list:  9293
+    
 
 ###16: Finding the number of columns
 
@@ -404,31 +492,39 @@ Now that we understand the table structure better, we can count up the number of
 
 
 ```python
-# We just counted the number of rows.  We can do the same for the number of columns.
-# Let's create a list of lists, and assume that the inner lists are the rows.
-# If this is the case, the number of columns is the number of items in any row.
 l = [[1,2,3],[3,4,5],[5,6,7]]
+print l
+
 first_row = l[0]
 count = 0
 for column in first_row:
     count = count + 1
+    
+print "Columns in first row: ", count
 
-# Count is now equal to 3, the number of items in the first row of data.
-# All of the rows have the same number of items, so 3 is our column count.
 
 # We parse our csv file
 f = open('data/crime_rates.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 full_data = []
+
 for row in rows:
     split_row = row.split(",")
     full_data.append(split_row)
+    
 first_row = full_data[0]
 count = 0
 for column in first_row:
     count = count + 1
+
+print "Columns in first row: ", count
 ```
+
+    [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
+    Columns in first row:  3
+    Columns in first row:  2
+    
 
 ###17: Practicing with booleans
 
@@ -558,23 +654,33 @@ We can also use if statements with booleans that contain variables. if a == 5: w
 
 
 ```python
-# We can also use if statements with boolean statements containing variables.
-# The if statement below will print "Success!" because a == 4 evaluates to True.
-a = 4
-if a == 4:
-    print("Success!")
+# Use if statements with boolean statements containing variables.
 
-# This will print nothing, because b > 10 is False.
+a = 4
+print "a: ", a
+
+print "Does a = 4?:"
+if a == 4:
+    print "Success!"
+
 b = 10
 if b > 10:
     print("No success!")
 
+    
 c = 15
+print "c: ", c
+
+print "Does c = 15?:"
 if c == 15:
     print("Much success!")
 ```
 
+    a:  4
+    Does a = 4?:
     Success!
+    c:  15
+    Does c = 15?:
     Much success!
     
 
@@ -584,41 +690,40 @@ We can also use if statements inside for loops (or vice versa). When this happen
 
 
 ```python
-# We can 'nest' if statements inside for loops, or vice versa.
 the_list = [5, 10, 15, 20]
+print the_list
 
-# Let's say we want to count how many elements in the_list are greater than 10.
+# Count how many elements in the_list are greater than 10.
 count = 0
 for item in the_list:
     if item > 10:
         count = count + 1
-print(count)
+print "Elements in the_list are greater than 10: ", count
 
-# Count equals two because item > 10 evaluated to True for 2 of the items in the_list.
-# Notice how we indented the body of the if statement another 4 spaces.
-# Whenever you put statements that have indented blocks inside each other, you will need to indent 4 more spaces.
+
 
 a = 2
 
-# Let's say we want to print all of the elements in the_list if a > 1.
+# Print all of the elements in the_list if a > 1.
 if a > 1:
     for item in the_list:
-        print(item)
+        print "Element greater than 1: ", item
 
-# The above code will print all of the items in the_list, because a > 1 evaluates to True.
+# Print all of the elements in the_list if item > 5.
 for item in the_list:
     if item > 5:
-        print(item)
+        print "Element greater than 5: ", item
 ```
 
-    2
-    5
-    10
-    15
-    20
-    10
-    15
-    20
+    [5, 10, 15, 20]
+    Elements in the_list are greater than 10:  2
+    Element greater than 1:  5
+    Element greater than 1:  10
+    Element greater than 1:  15
+    Element greater than 1:  20
+    Element greater than 5:  10
+    Element greater than 5:  15
+    Element greater than 5:  20
     
 
 ###23: Using if statements to find the smallest value
@@ -627,8 +732,8 @@ Now that we know how we can combine if statements and for loops, we can learn ho
 
 
 ```python
-# We can use for loops and if statements to find the smallest value in a list.
 the_list = [20,50,5,100]
+print the_list
 
 # Set smallest_item to a value that is bigger than anything in the_list.
 smallest_item = 1000
@@ -637,21 +742,27 @@ for item in the_list:
     if item < smallest_item:
         # If it is, set smallest_item equal to its value.
         smallest_item = item
-print(smallest_item)
+        
+print "Smallest item in list: ", smallest_item
 
-# The first time through the loop above, smallest_item will be set to 20, because 20 < 1000 is True.
-# The second time through, smallest_item will stay at 20, because 50 < 20 is False.
-# The third time through, smallest_item will be set to 5, because 5 < 20 is True.
-# The last time through, smallest_item will stay at 5, because 100 < 5 is False.
 
+# Set smallest_item to a value that is bigger than anything in the_list.
 smallest_item = 1000
+
+print a
 a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
+
 for item in a:
     if item < smallest_item:
         smallest_item = item
+        
+print "Smallest item in list: ", smallest_item
 ```
 
-    5
+    [20, 50, 5, 100]
+    Smallest item in list:  5
+    [500, 10, 200, 5, 78, -1, -10, -100, 567, 890, 400, 34, -101, 895]
+    Smallest item in list:  -101
     
 
 ###24: Converting types
@@ -665,11 +776,10 @@ We can convert between different data types. The int() function will convert an 
 # We need the crime rate column s an integer so we can work with it.
 
 # We can use the int() function to turn a string into an int.
-# It only works with strings that have int values inside them.
 a = '5'
+print a
 print(type(a))
 
-# a is a string containing the integer '5'.
 # We can use the int function to parse it into the integer 5.
 b = int(a)
 print(b)
@@ -683,6 +793,7 @@ d_int = int(d)
 e_int = int(e)
 ```
 
+    5
     <type 'str'>
     5
     <type 'int'>
@@ -696,16 +807,18 @@ Now, let's convert a list into integers.
 ```python
 # Now that we know about the int() function, let's use it to convert the values in a list to integers.
 the_list = ['1', '2', '3']
+print the_list
+
 new_list = []
 
-# Loop through the_list
+# Loop through the_list.
 for item in the_list:
-    # Get the int value of the item in the list
+    # Get the int value of the item in the list.
     item_int = int(item)
-    # Add the int item to the new list
+    # Add the int item to the new list.
     new_list.append(item_int)
-# Print out the new list
-print(new_list)
+# Print out the new list.
+print new_list
 
 a = ['10', '15', '20', '35']
 new_a = []
@@ -714,6 +827,7 @@ for item in a:
     new_a.append(item_int)
 ```
 
+    ['1', '2', '3']
     [1, 2, 3]
     
 
@@ -723,19 +837,17 @@ Let's convert our crime rate column to integers while we are reading it in. In o
 
 
 ```python
-# We need to convert the crime rate values from our csv file into integers.
-# They are strings now because we originally split them up from a large string we read in.
-
-# Here's our csv reading code from before
 f = open('data/crime_rates.csv', 'r')
 data = f.read()
 rows = data.split('\n')
 
+# Convert crime rate to integer and store in full_data.
 full_data = []
 for row in rows:
     split_row = row.split(",")
-    split_row[1] = int(split_row[1])
-    full_data.append(split_row)
+    if row:
+        split_row[1] = int(split_row[1])
+        full_data.append(split_row)
 ```
 
 ###27: Finding the lowest crime rate
@@ -744,136 +856,110 @@ We now know enough to find the lowest crime rate. We can scan through the list, 
 
 
 ```python
-# We now know everything we need to find the smallest crime rate.
-# Remember that we are finding the smallest crime rate (second column), not the city (first column) with the lowest crime rate.
-# We parse our csv file
-f = open('data/crime_rates.csv', 'r')
-data = f.read()
-rows = data.split('\n')
-full_data = []
-for row in rows:
-    split_row = row.split(",")
-    split_row[1] = int(split_row[1])
-    full_data.append(split_row)
-
+# Find city with lowest crime rate.
 lowest_crime_rate = 10000
 for row in full_data:
     crime_rate = row[1]
     if crime_rate < lowest_crime_rate:
         lowest_crime_rate = crime_rate
+
+print "Lowest crime rate: ", lowest_crime_rate
 ```
 
-###28: Finding the lowest crime rate
+    Lowest crime rate:  0
+    
+
+###28: Searching a list
 
 We can search a list for a value. We can do this by looping through the list, and then using an if statement.
 
 
 ```python
-# We can search a list for a given value
 the_list = [5, 6, 7, 10, 50]
+print the_list
 
-# Loop through the_list
+# Loop through 'the_list', if the list item equals 5, print out "Found".
 for item in the_list:
-    # If the list item equals 5, print out "Found"
     if item == 5:
-        print("Found")
-
-# The above code will print "Found" once.
+        print "List item equals 5: Found"
 
 a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
+
+# Loop through 'a', if the list item equals 78, print out "Yes".
 for item in a:
     if item == 78:
-        print("Yes")
+        print "List item equals 78: Yes"
 ```
 
-    Found
-    Yes
+    [5, 6, 7, 10, 50]
+    List item equals 5: Found
+    List item equals 78: Yes
     
 
-###29: Searching a list
-
-We can search a list for a value. We can do this by looping through the list, and then using an if statement.
-
-
-```python
-# We can search a list for a given value
-the_list = [5, 6, 7, 10, 50]
-
-# Loop through the_list
-for item in the_list:
-    # If the list item equals 5, print out "Found"
-    if item == 5:
-        print("Found")
-
-# The above code will print "Found" once.
-
-a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
-for item in a:
-    if item == 78:
-        print("Yes")
-```
-
-    Found
-    Yes
-    
-
-###30: Searching a list of lists
+###29: Searching a list of lists
 
 Just like we can search through a list, we can search through a list of lists.
 
 
 ```python
 lolist = [[1,5,7],[10,8,9],[7,10,11]]
+print lolist
 
-# Let's say we want to get the first element of the inner list whose third element is 9.
+# Get the first element of the inner list whose third element is 9.
 value = 0
 for item in lolist:
     last_value = item[2]
     first_value = item[0]
     if last_value == 9:
         value = first_value
-print(value)
+        
+print "First element of the inner list whose third element is 9: ", value
 
-# The above code will print 10, which is the first value in the inner list where 9 is the last value.
-# What we are doing can also be described in terms of rows and columns.
-# We are finding the first column in the rows where the third column equals 9.
 
-# Can you write code to find the second element in the inner list whose first element is 7? (search through lolist)
-# Set the value variable equal to the answer.
+# Get the second element in the inner list whose first element is 7.
 value = 0
 for item in lolist:
     if item[0] == 7:
         value = item[1]
+        
+print "Second element in the inner list whose first element is 7: ", value
 ```
 
-    10
+    [[1, 5, 7], [10, 8, 9], [7, 10, 11]]
+    First element of the inner list whose third element is 9:  10
+    Second element in the inner list whose first element is 7:  10
     
 
-###31: Finding the answer!
+###30: Finding the answer!
 
 We know the lowest crime rate, and we know how to search through lists. Let's combine the knowledge to find out the city with the lowest crime rate.
 
 
 ```python
-# We know that the lowest crime rate is 130.
-# This is the second column of the data.
+# We know that the lowest crime rate is 0.
 # We need to find the corresponding value in the first column -- the city with the lowest crime rate.
 
-# Let's load the csv file
 f = open('data/crime_rates.csv', 'r')
 data = f.read()
 rows = data.split('\n')
+
 full_data = []
 for row in rows:
     split_row = row.split(",")
-    split_row[1] = int(split_row[1])
-    full_data.append(split_row)
+    if row:
+        split_row[1] = int(split_row[1])
+        full_data.append(split_row)
 
 city = ""
 for row in full_data:
-    if row[1] == 130:
+    if row[1] == 0:
         city = row[0]
+
+print "City with lowest crime rate: ", city
 ```
+
+    City with lowest crime rate:  Sundance
+    
 
 
 ```python
