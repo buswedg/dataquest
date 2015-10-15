@@ -1,25 +1,6 @@
 
 # coding: utf-8
 
-# In[1]:
-
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-
-
 # #Python for Business Analysts
 
 # ##Introduction to Pandas
@@ -27,8 +8,6 @@ $( document ).ready(code_toggle);
 # ###1: Intro to Housing Affordability Data
 
 # We are going to explore how to use the programming language, Python, and the Python toolkit, Pandas, to analyze, clean, and visualize housing affordability data from HUD.gov. This dataset is derived from an annual survey conducted by the US Department of Housing & Urban Development (HUD) and has detailed information on the affordability of housing as it relates to income and other personal economic indicators.
-# 
-# In this series, we are going to focus heavily on the application of the Pandas toolkit to improve our data workflow. To gain a better understanding of how Python works and to become more familiar with programming in general, we recommend going through the Learn Python sequence on Dataquest.
 
 # ###2: Why Python?
 
@@ -74,8 +53,9 @@ print "Number of columns:  " + str(num_columns)
 
 # Of the 6 columns, let's filter the dataset down to just 3 columns that looks especially interesting: AGE1, TOTSAL, and FMR. In Excel, this would mean making a new worksheet tab and copying and pasting manually the columns we want or hiding the columns we don't want. Both methods add unnecessary complexity and more things to keep track of...let's see how Pandas manages this.
 
-# In[6]:
+# In[3]:
 
+# Create new dataframe which includes desired columns.
 filtered_housing_2013 = housing_2013[[ 'AGE1', 'FMR','TOTSAL' ]]
 
 filtered_housing_2013.head(5)
@@ -91,6 +71,7 @@ filtered_housing_2013.head(5)
 
 get_ipython().magic(u'matplotlib inline')
 
+# Create histogram of 'FMR' series within filtered dataframe.
 filtered_housing_2013.hist(column='FMR', bins=20)
 
 
@@ -112,6 +93,7 @@ filtered_housing_2013.hist(column='FMR', bins=20)
 
 get_ipython().magic(u'matplotlib inline')
 
+# Create histograms of 'FMR' and 'AGE1' series within filtered dataframe.
 filtered_housing_2013.hist(column='FMR', bins=20)
 filtered_housing_2013.hist(column='AGE1', bins=20)
 
@@ -132,8 +114,9 @@ filtered_housing_2013.hist(column='AGE1', bins=20)
 
 # Assign the result of the conditional filter to the object, evaluated_row_numbers. You will need to replace the brackets [] on the right side of the equals sign with the conditional filter we wrote. Then, run print(evaluated_row_numbers) to observe the results.
 
-# In[11]:
+# In[5]:
 
+# Create new dataframe which includes boolean eval of 'AGE1'.
 evaluted_row_numbers = []
 evaluated_row_numbers = filtered_housing_2013['AGE1'] > 0
 
@@ -150,8 +133,9 @@ print evaluated_row_numbers.head(5)
 # 
 # cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]
 
-# In[13]:
+# In[6]:
 
+# Apply boolean eval of 'AGE1' to return new dataframe with desired rows.
 cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]
 
 cleaned_housing_2013.head(10)
@@ -173,9 +157,12 @@ print filtered_count - cleaned_count
 
 # 4438 closely matches the initial guess we had of 4500 while eyeballing the histogram. To verify the cleanup further, let's write and apply a filter that verifies that there are no rows left with a negative value for AGE1. Our filter criteria needs to be the opposite of the one we wrote earlier, since we want the filter to evaluate to True when AGE1 is negative and False when positive. Then, we'll evaluate the filter on cleaned_housing_2013 and assign the resulting DataFrame to negative_housing_2013. Finally, let's print the length of the resulting DataFrame using len().
 
-# In[15]:
+# In[7]:
 
+# Create new dataframe which includes boolean eval of 'AGE1'.
 negative_row_numbers = cleaned_housing_2013['AGE1'] < 0
+
+# Apply boolean eval of 'AGE1' to return new dataframe with desired rows.
 negative_housing_2013 = cleaned_housing_2013[negative_row_numbers]
 
 print len(negative_housing_2013)

@@ -1,38 +1,19 @@
 
 # coding: utf-8
 
-# In[1]:
-
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-
-
 # #Python for Business Analysts
 
 # ##Automate Repetitive Tasks
 
 # ###1: Introduction
 
-# In this mission, we will explore how we can use Python to automate tasks for us. We will continue to use data from the HUD on Housing Affordability. You'll notice that the studies were conducted and released every 2 years (on odd numbered years) starting in 1985 all the way to present day.
+# In this mission, we will explore how we can use Python to automate tasks for us.
 
 # ####Instructions
 
 # Create 2 variables, housing_2007 and housing_2005, that contain the DataFrame objects associated with Hud_2007.csv and Hud_2005.csv, respectively.
 
-# In[3]:
+# In[1]:
 
 import pandas
 
@@ -58,17 +39,21 @@ housing_2005 = pandas.read_csv("data/Hud_2005.csv")
 # 
 # The list now contains these two DataFrames in the order we added them.
 
-# In[4]:
+# In[2]:
 
+# Create list.
 data_frames_list = []
 
+# Add a year column to each dataframe.
 housing_2005['year'] = '2005'
 housing_2007['year'] = '2007'
 
+# .append() adds the specified object to the end of the list.
 data_frames_list.append(housing_2005)
 data_frames_list.append(housing_2007)
 
-print(len(data_frames_list))
+# List now contains 2 objects, the respective dataframes for 2005 and 2007.
+print len(data_frames_list)
 
 
 # ###3: Column Filtering
@@ -81,13 +66,18 @@ print(len(data_frames_list))
 
 # First, create a List variable, columns, that contains the names of all of the columns we are interested in. When specifying the elements we want in the list, we need to surround each column name we want with quotes (either single or double quotes), add a comma between each column name, and then surround the whole thing with a starting [ and closing bracket ]. Then, we use bracket notation on the DataFrame object to specify a filter. We want the filter to just contain the columns list.
 
-# In[5]:
+# In[3]:
 
 columns = []
 filtered_housing_2007 = []
 
+# Create list of column names to filter by.
 columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+
+# Filter dataframe.
 filtered_housing_2007 = housing_2007[columns]
+
+print filtered_housing_2007[:5]
 
 
 # ###4: Functions
@@ -96,13 +86,19 @@ filtered_housing_2007 = housing_2007[columns]
 # 
 # We want the function to filter each DataFrame down to only the columns we want. Let's use the same columns from the last code block: * 'AGE1', 'FMR', 'TOTSAL', year
 
-# In[6]:
+# In[4]:
 
 def filter_columns(data_frames_list):
+    # Create list.
     new_df_list = list()
+    
+    # Look through each dataframe.
     for df in data_frames_list:
+        # Create list of column names to filter by.
         columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+        # Filter dataframe.
         filtered_df = df[columns]
+        # Append filtered dataframe to 'new_df_list'.
         new_df_list.append(filtered_df)
 
     return new_df_list
@@ -148,10 +144,12 @@ filtered_data_frames_list = filter_columns(data_frames_list)
 
 # Let's quickly verify that each of the DataFrame objects in filtered_data_frames_list only contains the 4 columns we specified in columns. Here we will write a print() statement within a for loop to print all of the columns in each DataFrame housed in filtered_data_frames_list.
 
-# In[7]:
+# In[5]:
 
+# For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
-    print(df.columns)
+    # Print dataframe columns.
+    print df.columns
 
 
 # ###7: Summary
@@ -168,12 +166,16 @@ for df in filtered_data_frames_list:
 # 
 # we use the function str() to convert Integer objects, like year and len(negative_age_count), into String objects. The print function can only print String objects, so we must convert other objects to String objects. While not all objects can be converted to String objects for displaying, most can and we will cover in a later lesson how we can tell.
 
-# In[8]:
+# In[6]:
 
+# For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
+    # Get the dataframe year.
     year = df['year'][0]
-    negative_age_count = df[df['AGE1'] < 0]
-    print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")
+    # Return rows with negative age values.
+    negative_age_count = df[df['AGE1']<0]
+    # Print row count.
+    print str(year) + " - " + str(len( negative_age_count ) ) + " rows"
 
 
 # ###9: Explanation
@@ -202,17 +204,23 @@ for df in filtered_data_frames_list:
 # 
 # Let's run this function clean_rows on data_frames_list and assign the results to cleaned_data_frames_list.
 
-# In[9]:
+# In[7]:
 
 def clean_rows(filtered_data_frames_list):
+    # Create list.
     cleaned_list = list()
     
+    # For every dataframe in the list 'filtered_data_frames_list'.
     for df in filtered_data_frames_list:
-        cleaned_df = df[ df ['AGE1'] > 0 ] 
+        # Return rows with positive age values.
+        cleaned_df = df[df['AGE1']>0] 
+        # Append filtered dataframe to 'cleaned_list'.
         cleaned_list.append(cleaned_df)
     return cleaned_list
 
 cleaned_data_frames_list = clean_rows(filtered_data_frames_list)
+
+print cleaned_data_frames_list
 
 
 # ###11: Verify Cleanup
@@ -223,17 +231,22 @@ cleaned_data_frames_list = clean_rows(filtered_data_frames_list)
 
 # Run the function verify_cleanup on cleaned_data_frames_list and assign the result to a new variable, verification_count.
 
-# In[11]:
+# In[8]:
 
 def verify_cleanup(data_frames_list):
+    # Create count.
     negative_rows_count = 0
     
+    # For every dataframe in the list 'data_frames_list'.
     for df in data_frames_list:
-        negative_rows_count += len ( df [ df ['AGE1'] < 0 ] )
+        # Add the number of negative rows to 'negative_rows_count'.
+        negative_rows_count += len(df[df['AGE1']<0])
     return negative_rows_count
 
 verification_count = -1
 verification_count = verify_cleanup(cleaned_data_frames_list)
+
+print verification_count
 
 
 # ###12: Summary

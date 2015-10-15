@@ -169,60 +169,6 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s">code_show=true; </span>
-<span class="s">function code_toggle() {</span>
-<span class="s"> if (code_show){</span>
-<span class="s"> $(&#39;div.input&#39;).hide();</span>
-<span class="s"> } else {</span>
-<span class="s"> $(&#39;div.input&#39;).show();</span>
-<span class="s"> }</span>
-<span class="s"> code_show = !code_show</span>
-<span class="s">} </span>
-<span class="s">$( document ).ready(code_toggle);</span>
-<span class="s">&lt;/script&gt;</span>
-<span class="s">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -256,7 +202,6 @@ $( document ).ready(code_toggle);
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We are going to explore how to use the programming language, Python, and the Python toolkit, Pandas, to analyze, clean, and visualize housing affordability data from HUD.gov. This dataset is derived from an annual survey conducted by the US Department of Housing &amp; Urban Development (HUD) and has detailed information on the affordability of housing as it relates to income and other personal economic indicators.</p>
-<p>In this series, we are going to focus heavily on the application of the Pandas toolkit to improve our data workflow. To gain a better understanding of how Python works and to become more familiar with programming in general, we recommend going through the Learn Python sequence on Dataquest.</p>
 
 </div>
 </div>
@@ -562,10 +507,11 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">filtered_housing_2013</span> <span class="o">=</span> <span class="n">housing_2013</span><span class="p">[[</span> <span class="s">&#39;AGE1&#39;</span><span class="p">,</span> <span class="s">&#39;FMR&#39;</span><span class="p">,</span><span class="s">&#39;TOTSAL&#39;</span> <span class="p">]]</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes desired columns.</span>
+<span class="n">filtered_housing_2013</span> <span class="o">=</span> <span class="n">housing_2013</span><span class="p">[[</span> <span class="s">&#39;AGE1&#39;</span><span class="p">,</span> <span class="s">&#39;FMR&#39;</span><span class="p">,</span><span class="s">&#39;TOTSAL&#39;</span> <span class="p">]]</span>
 
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
@@ -578,7 +524,7 @@ $( document ).ready(code_toggle);
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -660,6 +606,7 @@ $( document ).ready(code_toggle);
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
 
+<span class="c"># Create histogram of &#39;FMR&#39; series within filtered dataframe.</span>
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;FMR&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
 
@@ -876,6 +823,7 @@ AElFTkSuQmCC
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
 
+<span class="c"># Create histograms of &#39;FMR&#39; and &#39;AGE1&#39; series within filtered dataframe.</span>
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;FMR&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;AGE1&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
@@ -1254,10 +1202,11 @@ ZmYN50JgZtZwLgRmZg3nQmBm1nAuBGZmDff/AaTdHGUOajXBAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">evaluted_row_numbers</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
+<span class="n">evaluted_row_numbers</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">evaluated_row_numbers</span> <span class="o">=</span> <span class="n">filtered_housing_2013</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span>
 
 <span class="k">print</span> <span class="n">evaluated_row_numbers</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -1311,10 +1260,11 @@ Name: AGE1, dtype: bool
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cleaned_housing_2013</span> <span class="o">=</span> <span class="n">filtered_housing_2013</span><span class="p">[</span><span class="n">evaluated_row_numbers</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Apply boolean eval of &#39;AGE1&#39; to return new dataframe with desired rows.</span>
+<span class="n">cleaned_housing_2013</span> <span class="o">=</span> <span class="n">filtered_housing_2013</span><span class="p">[</span><span class="n">evaluated_row_numbers</span><span class="p">]</span>
 
 <span class="n">cleaned_housing_2013</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
@@ -1327,7 +1277,7 @@ Name: AGE1, dtype: bool
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -1482,10 +1432,13 @@ Name: AGE1, dtype: bool
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">negative_row_numbers</span> <span class="o">=</span> <span class="n">cleaned_housing_2013</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
+<span class="n">negative_row_numbers</span> <span class="o">=</span> <span class="n">cleaned_housing_2013</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span>
+
+<span class="c"># Apply boolean eval of &#39;AGE1&#39; to return new dataframe with desired rows.</span>
 <span class="n">negative_housing_2013</span> <span class="o">=</span> <span class="n">cleaned_housing_2013</span><span class="p">[</span><span class="n">negative_row_numbers</span><span class="p">]</span>
 
 <span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">negative_housing_2013</span><span class="p">)</span>

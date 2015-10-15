@@ -1,49 +1,11 @@
 
-
-```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
-
 #Python for Business Analysts
 
 ##Automate Repetitive Tasks
 
 ###1: Introduction
 
-In this mission, we will explore how we can use Python to automate tasks for us. We will continue to use data from the HUD on Housing Affordability. You'll notice that the studies were conducted and released every 2 years (on odd numbered years) starting in 1985 all the way to present day.
+In this mission, we will explore how we can use Python to automate tasks for us.
 
 ####Instructions
 
@@ -77,15 +39,19 @@ The list now contains these two DataFrames in the order we added them.
 
 
 ```python
+# Create list.
 data_frames_list = []
 
+# Add a year column to each dataframe.
 housing_2005['year'] = '2005'
 housing_2007['year'] = '2007'
 
+# .append() adds the specified object to the end of the list.
 data_frames_list.append(housing_2005)
 data_frames_list.append(housing_2007)
 
-print(len(data_frames_list))
+# List now contains 2 objects, the respective dataframes for 2005 and 2007.
+print len(data_frames_list)
 ```
 
     2
@@ -106,9 +72,22 @@ First, create a List variable, columns, that contains the names of all of the co
 columns = []
 filtered_housing_2007 = []
 
+# Create list of column names to filter by.
 columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+
+# Filter dataframe.
 filtered_housing_2007 = housing_2007[columns]
+
+print filtered_housing_2007[:5]
 ```
+
+       AGE1   FMR  TOTSAL  year
+    0    -9  1048      -9  2007
+    1    69  1048       0  2007
+    2    45   757   26000  2007
+    3    47   847  126000  2007
+    4    30   616   42000  2007
+    
 
 ###4: Functions
 
@@ -119,10 +98,16 @@ We want the function to filter each DataFrame down to only the columns we want. 
 
 ```python
 def filter_columns(data_frames_list):
+    # Create list.
     new_df_list = list()
+    
+    # Look through each dataframe.
     for df in data_frames_list:
+        # Create list of column names to filter by.
         columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+        # Filter dataframe.
         filtered_df = df[columns]
+        # Append filtered dataframe to 'new_df_list'.
         new_df_list.append(filtered_df)
 
     return new_df_list
@@ -170,8 +155,10 @@ Let's quickly verify that each of the DataFrame objects in filtered_data_frames_
 
 
 ```python
+# For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
-    print(df.columns)
+    # Print dataframe columns.
+    print df.columns
 ```
 
     Index([u'AGE1', u'FMR', u'TOTSAL', u'year'], dtype='object')
@@ -194,10 +181,14 @@ we use the function str() to convert Integer objects, like year and len(negative
 
 
 ```python
+# For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
+    # Get the dataframe year.
     year = df['year'][0]
-    negative_age_count = df[df['AGE1'] < 0]
-    print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")
+    # Return rows with negative age values.
+    negative_age_count = df[df['AGE1']<0]
+    # Print row count.
+    print str(year) + " - " + str(len( negative_age_count ) ) + " rows"
 ```
 
     2005 - 3493 rows
@@ -233,15 +224,150 @@ Let's run this function clean_rows on data_frames_list and assign the results to
 
 ```python
 def clean_rows(filtered_data_frames_list):
+    # Create list.
     cleaned_list = list()
     
+    # For every dataframe in the list 'filtered_data_frames_list'.
     for df in filtered_data_frames_list:
-        cleaned_df = df[ df ['AGE1'] > 0 ] 
+        # Return rows with positive age values.
+        cleaned_df = df[df['AGE1']>0] 
+        # Append filtered dataframe to 'cleaned_list'.
         cleaned_list.append(cleaned_df)
     return cleaned_list
 
 cleaned_data_frames_list = clean_rows(filtered_data_frames_list)
+
+print cleaned_data_frames_list
 ```
+
+    [       AGE1   FMR  TOTSAL  year
+    0        43   680   20000  2005
+    1        44   760   71000  2005
+    2        58   680   63000  2005
+    3        22   519   27040  2005
+    4        48   600   14000  2005
+    5        42   788   42000  2005
+    7        23   546   48000  2005
+    8        51   680   58000  2005
+    9        47  1081  125000  2005
+    10       66  1081       0  2005
+    11       47  1006   54400  2005
+    12       30   874  439364  2005
+    13       49   916   75000  2005
+    14       60   972       0  2005
+    15       47   862   80000  2005
+    16       59   629     550  2005
+    17       45   862   42000  2005
+    18       54   607   65000  2005
+    19       35   892   57000  2005
+    21       33   972   58000  2005
+    22       42   760   59050  2005
+    23       37   963   44000  2005
+    24       52   879  136000  2005
+    26       27   750   42500  2005
+    27       54  1035    5000  2005
+    28       37   833    2000  2005
+    29       52   940   77883  2005
+    30       70  1080       0  2005
+    31       82  1017       0  2005
+    32       46  1168   14000  2005
+    ...     ...   ...     ...   ...
+    46821    27   677   62000  2005
+    46822    53   972       0  2005
+    46823    42  1267   95000  2005
+    46824    47  1190   53200  2005
+    46825    28  1397   91000  2005
+    46826    23   677   30000  2005
+    46828    84   817       0  2005
+    46829    36  1168   79919  2005
+    46830    30  1607   82000  2005
+    46831    54  1094   54000  2005
+    46832    46  1190   79000  2005
+    46833    46  1168   48000  2005
+    46834    58   817   42500  2005
+    46835    62  1168  124000  2005
+    46836    56  1420   82000  2005
+    46837    34  1420  103000  2005
+    46838    41  1168   52000  2005
+    46839    56  1607   85000  2005
+    46840    30   825   24000  2005
+    46841    60   825  100000  2005
+    46842    46   693   46500  2005
+    46843    28   825   50000  2005
+    46844    26  1397   61000  2005
+    46845    23  1190   57000  2005
+    46846    34  1633  200000  2005
+    46847    46  1168  302000  2005
+    46848    33  1168  105000  2005
+    46849    40  1397   65000  2005
+    46850    44  1397  280400  2005
+    46852    44  1420   75000  2005
+    
+    [43360 rows x 4 columns],        AGE1   FMR  TOTSAL  year
+    1        69  1048       0  2007
+    2        45   757   26000  2007
+    3        47   847  126000  2007
+    4        30   616   42000  2007
+    5        50   605   15000  2007
+    6        44   807  145000  2007
+    8        24   599   96000  2007
+    9        53   757   85000  2007
+    10       49   974  165000  2007
+    11       44   974   71000  2007
+    12       61   956  104000  2007
+    13       29   572       0  2007
+    14       21   572   25000  2007
+    15       49  1097   93000  2007
+    16       31   871  485968  2007
+    17       51   900   53500  2007
+    18       49   930   90000  2007
+    19       61   930       0  2007
+    20       45   930       0  2007
+    21       53   923  150000  2007
+    22       56   818  125000  2007
+    23       20   583   12000  2007
+    24       48  1169  200000  2007
+    25       34  1042   81000  2007
+    26       44   847   70000  2007
+    27       39   961   55000  2007
+    28       54   882  130000  2007
+    29       46   948  150000  2007
+    30       50   951   50000  2007
+    32       24   700   55000  2007
+    ...     ...   ...     ...   ...
+    42696    71  1010       0  2007
+    42697    19   896     100  2007
+    42698    36  1278   96000  2007
+    42700    47  1097   80400  2007
+    42701    44  1147  116000  2007
+    42702    65   896   90000  2007
+    42703    45  1784   80000  2007
+    42704    33  1359  176000  2007
+    42705    50   648   44000  2007
+    42706    55  1042       0  2007
+    42707    49  1139   48000  2007
+    42708    21   648   10000  2007
+    42710    38  1278   32000  2007
+    42711    34  1470  100002  2007
+    42712    44  1169  162000  2007
+    42713    48  1139   25000  2007
+    42714    48  1278   74100  2007
+    42715    65  1278   87000  2007
+    42716    58  1359  120000  2007
+    42717    67   963       0  2007
+    42718    58  1517       0  2007
+    42719    65  1517       0  2007
+    42721    35  1517   12000  2007
+    42722    24  1359   60000  2007
+    42723    48  1278  310000  2007
+    42724    57  1278   40800  2007
+    42725    42  1517   94000  2007
+    42726    46  1517  185000  2007
+    42727    25   782       0  2007
+    42728    45  1310   90000  2007
+    
+    [39107 rows x 4 columns]]
+    
 
 ###11: Verify Cleanup
 
@@ -254,15 +380,23 @@ Run the function verify_cleanup on cleaned_data_frames_list and assign the resul
 
 ```python
 def verify_cleanup(data_frames_list):
+    # Create count.
     negative_rows_count = 0
     
+    # For every dataframe in the list 'data_frames_list'.
     for df in data_frames_list:
-        negative_rows_count += len ( df [ df ['AGE1'] < 0 ] )
+        # Add the number of negative rows to 'negative_rows_count'.
+        negative_rows_count += len(df[df['AGE1']<0])
     return negative_rows_count
 
 verification_count = -1
 verification_count = verify_cleanup(cleaned_data_frames_list)
+
+print verification_count
 ```
+
+    0
+    
 
 ###12: Summary
 
