@@ -169,60 +169,6 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s">code_show=true; </span>
-<span class="s">function code_toggle() {</span>
-<span class="s"> if (code_show){</span>
-<span class="s"> $(&#39;div.input&#39;).hide();</span>
-<span class="s"> } else {</span>
-<span class="s"> $(&#39;div.input&#39;).show();</span>
-<span class="s"> }</span>
-<span class="s"> code_show = !code_show</span>
-<span class="s">} </span>
-<span class="s">$( document ).ready(code_toggle);</span>
-<span class="s">&lt;/script&gt;</span>
-<span class="s">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -255,7 +201,6 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's get started using pandas. Because pandas builds on numpy, some things will be familiar, but others will take some time to get used to.</p>
 <p>The first step, as always, is reading in a csv file.</p>
 <p>With pandas, we'll need to use the read_csv method.</p>
 <p>With pandas, the equivalent of a two-dimensional numpy array, or matrix, is called a dataframe.</p>
@@ -284,7 +229,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span>
@@ -313,13 +258,17 @@ $( document ).ready(code_toggle);
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Indexing in pandas is slightly different from in numpy.</p>
 <p>We need to use the .iloc[] method (note how it uses square brackets instead of parentheses).</p>
-<p>numpy_array[0,0]
-numpy_array[:,0]
-numpy_array[0,:]</p>
+<ul>
+<li>numpy_array[0,0]</li>
+<li>numpy_array[:,0]</li>
+<li>numpy_array[0,:]</li>
+</ul>
 <p>The above lines of code will get the first element of the first row, the whole first column, and the whole first row from a numpy array, respectively.</p>
-<p>pandas_dataframe.iloc[0,0]
-pandas_dataframe.iloc[:,0]
-pandas_dataframe.iloc[0,:]</p>
+<ul>
+<li>pandas_dataframe.iloc[0,0]</li>
+<li>pandas_dataframe.iloc[:,0]</li>
+<li>pandas_dataframe.iloc[0,:]  </li>
+</ul>
 <p>The above is the equivalent indexing in a pandas dataframe.</p>
 
 </div>
@@ -347,12 +296,12 @@ pandas_dataframe.iloc[0,:]</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Print first row of data.</span>
 <span class="k">print</span> <span class="s">&quot;First row of data:&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
+<span class="k">print</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 
 <span class="c"># Assign second row.</span>
 <span class="n">second_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
@@ -372,61 +321,59 @@ pandas_dataframe.iloc[0,:]</p>
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>First row of data:
-NDB_No                                        1001
-Shrt_Desc                         BUTTER,WITH SALT
-Water_(g)                                    15.87
-Energ_Kcal                                     717
-Protein_(g)                                   0.85
-Lipid_Tot_(g)                                81.11
-Ash_(g)                                       2.11
-Carbohydrt_(g)                                0.06
-Fiber_TD_(g)                                     0
-Sugar_Tot_(g)                                 0.06
-Calcium_(mg)                                    24
-Iron_(mg)                                     0.02
-Magnesium_(mg)                                   2
-Phosphorus_(mg)                                 24
-Potassium_(mg)                                  24
-Sodium_(mg)                                    643
-Zinc_(mg)                                     0.09
-Copper_(mg)                                      0
-Manganese_(mg)                                   0
-Selenium_(mcg)                                   1
-Vit_C_(mg)                                       0
-Thiamin_(mg)                                 0.005
-Riboflavin_(mg)                              0.034
-Niacin_(mg)                                  0.042
-Panto_Acid_mg)                                0.11
-Vit_B6_(mg)                                  0.003
-Folate_Tot_(�g)                                  3
-Folic_Acid_(�g)                                  0
-Food_Folate_(�g)                                 3
-Folate_DFE_(�g)                                  3
-Choline_Tot_ (mg)                             18.8
-Vit_B12_(�g)                                  0.17
-Vit_A_IU                                      2499
-Vit_A_RAE                                      684
-Retinol_(�g)                                   671
-Alpha_Carot_(�g)                                 0
-Beta_Carot_(�g)                                158
-Beta_Crypt_(�g)                                  0
-Lycopene_(�g)                                    0
-Lut+Zea_ (�g)                                    0
-Vit_E_(mg)                                    2.32
-Vit_D_�g                                         0
-Vit_D_IU                                         0
-Vit_K_(�g)                                       7
-FA_Sat_(g)                                  51.368
-FA_Mono_(g)                                 21.021
-FA_Poly_(g)                                  3.043
-Cholestrl_(mg)                                 215
-GmWt_1                                           5
-GmWt_Desc1              1 pat,  (1&quot; sq, 1/3&quot; high)
-GmWt_2                                        14.2
-GmWt_Desc2                                  1 tbsp
-Refuse_Pct                                       0
-new_rating                                  -79.41
-normalized_vitamin_c                             0
+NDB_No                                     1001
+Shrt_Desc                      BUTTER,WITH SALT
+Water_(g)                                 15.87
+Energ_Kcal                                  717
+Protein_(g)                                0.85
+Lipid_Tot_(g)                             81.11
+Ash_(g)                                    2.11
+Carbohydrt_(g)                             0.06
+Fiber_TD_(g)                                  0
+Sugar_Tot_(g)                              0.06
+Calcium_(mg)                                 24
+Iron_(mg)                                  0.02
+Magnesium_(mg)                                2
+Phosphorus_(mg)                              24
+Potassium_(mg)                               24
+Sodium_(mg)                                 643
+Zinc_(mg)                                  0.09
+Copper_mg)                                    0
+Manganese_(mg)                                0
+Selenium_(�g)                                 1
+Vit_C_(mg)                                    0
+Thiamin_(mg)                              0.005
+Riboflavin_(mg)                           0.034
+Niacin_(mg)                               0.042
+Panto_Acid_mg)                             0.11
+Vit_B6_(mg)                               0.003
+Folate_Tot_(�g)                               3
+Folic_Acid_(�g)                               0
+Food_Folate_(�g)                              3
+Folate_DFE_(�g)                               3
+Choline_Tot_ (mg)                          18.8
+Vit_B12_(�g)                               0.17
+Vit_A_IU                                   2499
+Vit_A_RAE                                   684
+Retinol_(�g)                                671
+Alpha_Carot_(�g)                              0
+Beta_Carot_(�g)                             158
+Beta_Crypt_(�g)                               0
+Lycopene_(�g)                                 0
+Lut+Zea_ (�g)                                 0
+Vit_E_(mg)                                 2.32
+Vit_D_�g                                      0
+Vit_D_IU                                      0
+Vit_K_(�g)                                    7
+FA_Sat_(g)                               51.368
+FA_Mono_(g)                              21.021
+FA_Poly_(g)                               3.043
+Cholestrl_(mg)                              215
+GmWt_1                                        5
+GmWt_Desc1           1 pat,  (1&quot; sq, 1/3&quot; high)
+GmWt_2                                     14.2
+GmWt_Desc2                               1 tbsp
+Refuse_Pct                                    0
 Name: 0, dtype: object
 </pre>
 </div>
@@ -478,10 +425,11 @@ Name: 0, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">first_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Assin a series.</span>
+<span class="n">first_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 
 <span class="c"># Assign first 10 items from first row.</span>
 <span class="n">first_ten_items_in_first_row</span> <span class="o">=</span> <span class="n">first_row</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
@@ -540,12 +488,16 @@ Name: 0, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Print names of all the columns (in order).</span>
+<span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 
+<span class="c"># Print a particular column.</span>
+<span class="k">print</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+
+<span class="c"># Assign particular columns.</span>
 <span class="n">sodium_column</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">]</span>
 <span class="n">saturated_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Sat_(g)&quot;</span><span class="p">]</span>
 <span class="n">cholesterol</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Cholestrl_(mg)&quot;</span><span class="p">]</span>
@@ -623,10 +575,10 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c">#print list(food_info.columns.values)</span>
+<div class=" highlight hl-ipython2"><pre><span class="c">#print list food_info.columns.values</span>
 
 <span class="c"># Rename copper and selenium columns.</span>
 <span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Copper_mg)&#39;</span><span class="p">:</span> <span class="s">&#39;Copper_(mg)&#39;</span><span class="p">})</span>
@@ -693,19 +645,25 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">total_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Sat_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Mono_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Poly_(g)&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Sum fat columns.</span>
+<span class="n">total_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Sat_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Mono_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Poly_(g)&quot;</span><span class="p">]</span>
 
+<span class="c"># Protein per calorie.</span>
 <span class="n">grams_of_protein_per_calorie</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Energ_Kcal&quot;</span><span class="p">]</span>
 
+<span class="c"># Protein squared.</span>
 <span class="n">grams_of_protein_squared</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span>
 
+<span class="c"># Non-sugar carbohydrates.</span>
 <span class="n">non_sugar_carbs</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Carbohydrt_(g)&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">]</span>
 
+<span class="c"># Protein per water.</span>
 <span class="n">grams_of_protein_per_gram_of_water</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Water_(g)&quot;</span><span class="p">]</span>
 
+<span class="c"># Sum calcium and iron.</span>
 <span class="n">milligrams_of_calcium_and_iron</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Calcium_(mg)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Iron_(mg)&quot;</span><span class="p">]</span>
 </pre></div>
 
@@ -758,7 +716,7 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Divide the protein column by a scalar to get kilograms.</span>
@@ -821,7 +779,7 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Sort foods by amount of fat.</span>
@@ -857,61 +815,59 @@ Name: Protein_(g), dtype: float64
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Food with least vitamin C:
-NDB_No                                        1001
-Shrt_Desc                         BUTTER,WITH SALT
-Water_(g)                                    15.87
-Energ_Kcal                                     717
-Protein_(g)                                   0.85
-Lipid_Tot_(g)                                81.11
-Ash_(g)                                       2.11
-Carbohydrt_(g)                                0.06
-Fiber_TD_(g)                                     0
-Sugar_Tot_(g)                                 0.06
-Calcium_(mg)                                    24
-Iron_(mg)                                     0.02
-Magnesium_(mg)                                   2
-Phosphorus_(mg)                                 24
-Potassium_(mg)                                  24
-Sodium_(mg)                                    643
-Zinc_(mg)                                     0.09
-Copper_(mg)                                      0
-Manganese_(mg)                                   0
-Selenium_(mcg)                                   1
-Vit_C_(mg)                                       0
-Thiamin_(mg)                                 0.005
-Riboflavin_(mg)                              0.034
-Niacin_(mg)                                  0.042
-Panto_Acid_mg)                                0.11
-Vit_B6_(mg)                                  0.003
-Folate_Tot_(�g)                                  3
-Folic_Acid_(�g)                                  0
-Food_Folate_(�g)                                 3
-Folate_DFE_(�g)                                  3
-Choline_Tot_ (mg)                             18.8
-Vit_B12_(�g)                                  0.17
-Vit_A_IU                                      2499
-Vit_A_RAE                                      684
-Retinol_(�g)                                   671
-Alpha_Carot_(�g)                                 0
-Beta_Carot_(�g)                                158
-Beta_Crypt_(�g)                                  0
-Lycopene_(�g)                                    0
-Lut+Zea_ (�g)                                    0
-Vit_E_(mg)                                    2.32
-Vit_D_�g                                         0
-Vit_D_IU                                         0
-Vit_K_(�g)                                       7
-FA_Sat_(g)                                  51.368
-FA_Mono_(g)                                 21.021
-FA_Poly_(g)                                  3.043
-Cholestrl_(mg)                                 215
-GmWt_1                                           5
-GmWt_Desc1              1 pat,  (1&quot; sq, 1/3&quot; high)
-GmWt_2                                        14.2
-GmWt_Desc2                                  1 tbsp
-Refuse_Pct                                       0
-new_rating                                  -79.41
-normalized_vitamin_c                             0
+NDB_No                                     1001
+Shrt_Desc                      BUTTER,WITH SALT
+Water_(g)                                 15.87
+Energ_Kcal                                  717
+Protein_(g)                                0.85
+Lipid_Tot_(g)                             81.11
+Ash_(g)                                    2.11
+Carbohydrt_(g)                             0.06
+Fiber_TD_(g)                                  0
+Sugar_Tot_(g)                              0.06
+Calcium_(mg)                                 24
+Iron_(mg)                                  0.02
+Magnesium_(mg)                                2
+Phosphorus_(mg)                              24
+Potassium_(mg)                               24
+Sodium_(mg)                                 643
+Zinc_(mg)                                  0.09
+Copper_(mg)                                   0
+Manganese_(mg)                                0
+Selenium_(mcg)                                1
+Vit_C_(mg)                                    0
+Thiamin_(mg)                              0.005
+Riboflavin_(mg)                           0.034
+Niacin_(mg)                               0.042
+Panto_Acid_mg)                             0.11
+Vit_B6_(mg)                               0.003
+Folate_Tot_(�g)                               3
+Folic_Acid_(�g)                               0
+Food_Folate_(�g)                              3
+Folate_DFE_(�g)                               3
+Choline_Tot_ (mg)                          18.8
+Vit_B12_(�g)                               0.17
+Vit_A_IU                                   2499
+Vit_A_RAE                                   684
+Retinol_(�g)                                671
+Alpha_Carot_(�g)                              0
+Beta_Carot_(�g)                             158
+Beta_Crypt_(�g)                               0
+Lycopene_(�g)                                 0
+Lut+Zea_ (�g)                                 0
+Vit_E_(mg)                                 2.32
+Vit_D_�g                                      0
+Vit_D_IU                                      0
+Vit_K_(�g)                                    7
+FA_Sat_(g)                               51.368
+FA_Mono_(g)                              21.021
+FA_Poly_(g)                               3.043
+Cholestrl_(mg)                              215
+GmWt_1                                        5
+GmWt_Desc1           1 pat,  (1&quot; sq, 1/3&quot; high)
+GmWt_2                                     14.2
+GmWt_Desc2                               1 tbsp
+Refuse_Pct                                    0
 Name: 0, dtype: object
 </pre>
 </div>
@@ -964,14 +920,14 @@ Name: 0, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Perform a multicolumn sort, with first column &quot;Lipid_Tot_(g)&quot; ascending, and the second &quot;Sodium_(mg)&quot; ascending</span>
 <span class="n">ascending_fat_then_ascending_sodium</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">True</span><span class="p">,</span> <span class="bp">True</span><span class="p">])</span>
 
 <span class="c"># Print the multicolumn sort</span>
-<span class="c">#print(ascending_fat_then_ascending_sodium.iloc[0,:])</span>
+<span class="c">#print ascending_fat_then_ascending_sodium.iloc[0,:]</span>
 
 <span class="c"># Perform a multicolumn sort, with first column &quot;Lipid_Tot_(g)&quot; ascending, and the second &quot;Sodium_(mg)&quot; descending</span>
 <span class="n">ascending_fat_then_descending_sodium</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">])</span>
@@ -986,7 +942,7 @@ Name: 0, dtype: object
 <span class="n">descending_cholesterol_then_ascending_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Cholestrl_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Protein_(g)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">,</span> <span class="bp">True</span><span class="p">])</span>
 
 <span class="k">print</span> <span class="s">&quot;Food with greatest cholesterol and least protein:&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">descending_cholesterol_then_ascending_protein</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
+<span class="k">print</span> <span class="n">descending_cholesterol_then_ascending_protein</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 </pre></div>
 
 </div>
@@ -1000,61 +956,59 @@ Name: 0, dtype: object
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Food with greatest cholesterol and least protein:
-NDB_No                                                      17189
-Shrt_Desc               VEAL,VAR MEATS&amp;BY-PRODUCTS,BRAIN,CKD,BRSD
-Water_(g)                                                   76.89
-Energ_Kcal                                                    136
-Protein_(g)                                                 11.48
-Lipid_Tot_(g)                                                9.63
-Ash_(g)                                                       1.4
-Carbohydrt_(g)                                                  0
-Fiber_TD_(g)                                                    0
-Sugar_Tot_(g)                                                 NaN
-Calcium_(mg)                                                   16
-Iron_(mg)                                                    1.67
-Magnesium_(mg)                                                 16
-Phosphorus_(mg)                                               385
-Potassium_(mg)                                                214
-Sodium_(mg)                                                   156
-Zinc_(mg)                                                    1.61
-Copper_(mg)                                                  0.26
-Manganese_(mg)                                              0.038
-Selenium_(mcg)                                                 11
-Vit_C_(mg)                                                     13
-Thiamin_(mg)                                                 0.08
-Riboflavin_(mg)                                               0.2
-Niacin_(mg)                                                  2.43
-Panto_Acid_mg)                                                  1
-Vit_B6_(mg)                                                  0.17
-Folate_Tot_(�g)                                                 3
-Folic_Acid_(�g)                                                 0
-Food_Folate_(�g)                                                3
-Folate_DFE_(�g)                                                 3
-Choline_Tot_ (mg)                                             NaN
-Vit_B12_(�g)                                                 9.65
-Vit_A_IU                                                        0
-Vit_A_RAE                                                       0
-Retinol_(�g)                                                    0
-Alpha_Carot_(�g)                                              NaN
-Beta_Carot_(�g)                                               NaN
-Beta_Crypt_(�g)                                               NaN
-Lycopene_(�g)                                                 NaN
-Lut+Zea_ (�g)                                                 NaN
-Vit_E_(mg)                                                    NaN
-Vit_D_�g                                                      NaN
-Vit_D_IU                                                      NaN
-Vit_K_(�g)                                                    NaN
-FA_Sat_(g)                                                   2.18
-FA_Mono_(g)                                                  1.74
-FA_Poly_(g)                                                  1.49
-Cholestrl_(mg)                                               3100
-GmWt_1                                                         85
-GmWt_Desc1                                                   3 oz
-GmWt_2                                                        339
-GmWt_Desc2              1 unit, cooked (yield from 1 lb raw meat)
-Refuse_Pct                                                      0
-new_rating                                                  13.33
-normalized_vitamin_c                                  0.004758419
+NDB_No                                                   17189
+Shrt_Desc            VEAL,VAR MEATS&amp;BY-PRODUCTS,BRAIN,CKD,BRSD
+Water_(g)                                                76.89
+Energ_Kcal                                                 136
+Protein_(g)                                              11.48
+Lipid_Tot_(g)                                             9.63
+Ash_(g)                                                    1.4
+Carbohydrt_(g)                                               0
+Fiber_TD_(g)                                                 0
+Sugar_Tot_(g)                                              NaN
+Calcium_(mg)                                                16
+Iron_(mg)                                                 1.67
+Magnesium_(mg)                                              16
+Phosphorus_(mg)                                            385
+Potassium_(mg)                                             214
+Sodium_(mg)                                                156
+Zinc_(mg)                                                 1.61
+Copper_(mg)                                               0.26
+Manganese_(mg)                                           0.038
+Selenium_(mcg)                                              11
+Vit_C_(mg)                                                  13
+Thiamin_(mg)                                              0.08
+Riboflavin_(mg)                                            0.2
+Niacin_(mg)                                               2.43
+Panto_Acid_mg)                                               1
+Vit_B6_(mg)                                               0.17
+Folate_Tot_(�g)                                              3
+Folic_Acid_(�g)                                              0
+Food_Folate_(�g)                                             3
+Folate_DFE_(�g)                                              3
+Choline_Tot_ (mg)                                          NaN
+Vit_B12_(�g)                                              9.65
+Vit_A_IU                                                     0
+Vit_A_RAE                                                    0
+Retinol_(�g)                                                 0
+Alpha_Carot_(�g)                                           NaN
+Beta_Carot_(�g)                                            NaN
+Beta_Crypt_(�g)                                            NaN
+Lycopene_(�g)                                              NaN
+Lut+Zea_ (�g)                                              NaN
+Vit_E_(mg)                                                 NaN
+Vit_D_�g                                                   NaN
+Vit_D_IU                                                   NaN
+Vit_K_(�g)                                                 NaN
+FA_Sat_(g)                                                2.18
+FA_Mono_(g)                                               1.74
+FA_Poly_(g)                                               1.49
+Cholestrl_(mg)                                            3100
+GmWt_1                                                      85
+GmWt_Desc1                                                3 oz
+GmWt_2                                                     339
+GmWt_Desc2           1 unit, cooked (yield from 1 lb raw meat)
+Refuse_Pct                                                   0
 Name: 5287, dtype: object
 </pre>
 </div>
@@ -1109,7 +1063,7 @@ Name: 5287, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Calculate the weighted value for protein.</span>
@@ -1127,7 +1081,7 @@ Name: 5287, dtype: object
 <span class="n">descending_new_rating</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;new_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">])</span>
 
 <span class="k">print</span> <span class="s">&quot;Food with greatest new weighting:&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">descending_new_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
+<span class="k">print</span> <span class="n">descending_new_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 </pre></div>
 
 </div>
@@ -1248,7 +1202,7 @@ Name: 5009, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Use the max() method to find the maximum value in a column.</span>
@@ -1267,7 +1221,7 @@ Name: 5009, dtype: object
 <span class="c"># Sort by normalized vitamin C values.</span>
 <span class="n">descending_normalized_vitamin_c</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;normalized_vitamin_c&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">])</span>
 <span class="k">print</span> <span class="s">&quot;Food with greatest normalized vitamin C:&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">descending_normalized_vitamin_c</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
+<span class="k">print</span> <span class="n">descending_normalized_vitamin_c</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 
 <span class="c"># Create normalized zinc value.</span>
 <span class="n">normalized_zinc</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -1395,7 +1349,7 @@ Name: 332, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Create better protein rating.</span>
@@ -1414,7 +1368,7 @@ Name: 332, dtype: object
 <span class="c"># Sort by new protein rating.</span>
 <span class="n">descending_better_protein_rating</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;better_protein_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">])</span>
 <span class="k">print</span> <span class="s">&quot;Food with greatest better protein rating:&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">descending_better_protein_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
+<span class="k">print</span> <span class="n">descending_better_protein_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
 </pre></div>
 
 </div>
@@ -1537,7 +1491,7 @@ Name: 5009, dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Energ_Kcal&quot;</span><span class="p">,</span> <span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span>
@@ -1548,13 +1502,11 @@ Name: 5009, dtype: object
 
 <span class="c"># All columns is a list of all the columns in the food_info dataframe.</span>
 <span class="n">all_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;All columns:&quot;</span>
-<span class="k">print</span> <span class="n">all_columns</span>
+<span class="c">#print &quot;All columns: &quot;, all_columns</span>
 
 <span class="n">column_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_columns</span><span class="p">)</span>
 <span class="n">all_columns</span> <span class="o">=</span> <span class="n">all_columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">column_count</span><span class="p">]</span>
-<span class="k">print</span> <span class="s">&quot;Removed &#39;NDB_No&#39; and &#39;Shrt_Desc&#39;:&quot;</span>
-<span class="k">print</span> <span class="n">all_columns</span>
+<span class="k">print</span> <span class="s">&quot;Removed &#39;NDB_No&#39; and &#39;Shrt_Desc&#39;: &quot;</span><span class="p">,</span> <span class="n">all_columns</span>
 </pre></div>
 
 </div>
@@ -1567,10 +1519,7 @@ Name: 5009, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>All columns:
-[&apos;NDB_No&apos;, &apos;Shrt_Desc&apos;, &apos;Water_(g)&apos;, &apos;Energ_Kcal&apos;, &apos;Protein_(g)&apos;, &apos;Lipid_Tot_(g)&apos;, &apos;Ash_(g)&apos;, &apos;Carbohydrt_(g)&apos;, &apos;Fiber_TD_(g)&apos;, &apos;Sugar_Tot_(g)&apos;, &apos;Calcium_(mg)&apos;, &apos;Iron_(mg)&apos;, &apos;Magnesium_(mg)&apos;, &apos;Phosphorus_(mg)&apos;, &apos;Potassium_(mg)&apos;, &apos;Sodium_(mg)&apos;, &apos;Zinc_(mg)&apos;, &apos;Copper_(mg)&apos;, &apos;Manganese_(mg)&apos;, &apos;Selenium_(mcg)&apos;, &apos;Vit_C_(mg)&apos;, &apos;Thiamin_(mg)&apos;, &apos;Riboflavin_(mg)&apos;, &apos;Niacin_(mg)&apos;, &apos;Panto_Acid_mg)&apos;, &apos;Vit_B6_(mg)&apos;, &apos;Folate_Tot_(\xb5g)&apos;, &apos;Folic_Acid_(\xb5g)&apos;, &apos;Food_Folate_(\xb5g)&apos;, &apos;Folate_DFE_(\xb5g)&apos;, &apos;Choline_Tot_ (mg)&apos;, &apos;Vit_B12_(\xb5g)&apos;, &apos;Vit_A_IU&apos;, &apos;Vit_A_RAE&apos;, &apos;Retinol_(\xb5g)&apos;, &apos;Alpha_Carot_(\xb5g)&apos;, &apos;Beta_Carot_(\xb5g)&apos;, &apos;Beta_Crypt_(\xb5g)&apos;, &apos;Lycopene_(\xb5g)&apos;, &apos;Lut+Zea_ (\xb5g)&apos;, &apos;Vit_E_(mg)&apos;, &apos;Vit_D_\xb5g&apos;, &apos;Vit_D_IU&apos;, &apos;Vit_K_(\xb5g)&apos;, &apos;FA_Sat_(g)&apos;, &apos;FA_Mono_(g)&apos;, &apos;FA_Poly_(g)&apos;, &apos;Cholestrl_(mg)&apos;, &apos;GmWt_1&apos;, &apos;GmWt_Desc1&apos;, &apos;GmWt_2&apos;, &apos;GmWt_Desc2&apos;, &apos;Refuse_Pct&apos;, &apos;new_rating&apos;, &apos;normalized_vitamin_c&apos;, &apos;better_protein_rating&apos;]
-Removed &apos;NDB_No&apos; and &apos;Shrt_Desc&apos;:
-[&apos;Water_(g)&apos;, &apos;Energ_Kcal&apos;, &apos;Protein_(g)&apos;, &apos;Lipid_Tot_(g)&apos;, &apos;Ash_(g)&apos;, &apos;Carbohydrt_(g)&apos;, &apos;Fiber_TD_(g)&apos;, &apos;Sugar_Tot_(g)&apos;, &apos;Calcium_(mg)&apos;, &apos;Iron_(mg)&apos;, &apos;Magnesium_(mg)&apos;, &apos;Phosphorus_(mg)&apos;, &apos;Potassium_(mg)&apos;, &apos;Sodium_(mg)&apos;, &apos;Zinc_(mg)&apos;, &apos;Copper_(mg)&apos;, &apos;Manganese_(mg)&apos;, &apos;Selenium_(mcg)&apos;, &apos;Vit_C_(mg)&apos;, &apos;Thiamin_(mg)&apos;, &apos;Riboflavin_(mg)&apos;, &apos;Niacin_(mg)&apos;, &apos;Panto_Acid_mg)&apos;, &apos;Vit_B6_(mg)&apos;, &apos;Folate_Tot_(\xb5g)&apos;, &apos;Folic_Acid_(\xb5g)&apos;, &apos;Food_Folate_(\xb5g)&apos;, &apos;Folate_DFE_(\xb5g)&apos;, &apos;Choline_Tot_ (mg)&apos;, &apos;Vit_B12_(\xb5g)&apos;, &apos;Vit_A_IU&apos;, &apos;Vit_A_RAE&apos;, &apos;Retinol_(\xb5g)&apos;, &apos;Alpha_Carot_(\xb5g)&apos;, &apos;Beta_Carot_(\xb5g)&apos;, &apos;Beta_Crypt_(\xb5g)&apos;, &apos;Lycopene_(\xb5g)&apos;, &apos;Lut+Zea_ (\xb5g)&apos;, &apos;Vit_E_(mg)&apos;, &apos;Vit_D_\xb5g&apos;, &apos;Vit_D_IU&apos;, &apos;Vit_K_(\xb5g)&apos;, &apos;FA_Sat_(g)&apos;, &apos;FA_Mono_(g)&apos;, &apos;FA_Poly_(g)&apos;, &apos;Cholestrl_(mg)&apos;, &apos;GmWt_1&apos;, &apos;GmWt_Desc1&apos;, &apos;GmWt_2&apos;, &apos;GmWt_Desc2&apos;, &apos;Refuse_Pct&apos;, &apos;new_rating&apos;, &apos;normalized_vitamin_c&apos;, &apos;better_protein_rating&apos;]
+<pre>Removed &apos;NDB_No&apos; and &apos;Shrt_Desc&apos;:  [&apos;Water_(g)&apos;, &apos;Energ_Kcal&apos;, &apos;Protein_(g)&apos;, &apos;Lipid_Tot_(g)&apos;, &apos;Ash_(g)&apos;, &apos;Carbohydrt_(g)&apos;, &apos;Fiber_TD_(g)&apos;, &apos;Sugar_Tot_(g)&apos;, &apos;Calcium_(mg)&apos;, &apos;Iron_(mg)&apos;, &apos;Magnesium_(mg)&apos;, &apos;Phosphorus_(mg)&apos;, &apos;Potassium_(mg)&apos;, &apos;Sodium_(mg)&apos;, &apos;Zinc_(mg)&apos;, &apos;Copper_(mg)&apos;, &apos;Manganese_(mg)&apos;, &apos;Selenium_(mcg)&apos;, &apos;Vit_C_(mg)&apos;, &apos;Thiamin_(mg)&apos;, &apos;Riboflavin_(mg)&apos;, &apos;Niacin_(mg)&apos;, &apos;Panto_Acid_mg)&apos;, &apos;Vit_B6_(mg)&apos;, &apos;Folate_Tot_(\xb5g)&apos;, &apos;Folic_Acid_(\xb5g)&apos;, &apos;Food_Folate_(\xb5g)&apos;, &apos;Folate_DFE_(\xb5g)&apos;, &apos;Choline_Tot_ (mg)&apos;, &apos;Vit_B12_(\xb5g)&apos;, &apos;Vit_A_IU&apos;, &apos;Vit_A_RAE&apos;, &apos;Retinol_(\xb5g)&apos;, &apos;Alpha_Carot_(\xb5g)&apos;, &apos;Beta_Carot_(\xb5g)&apos;, &apos;Beta_Crypt_(\xb5g)&apos;, &apos;Lycopene_(\xb5g)&apos;, &apos;Lut+Zea_ (\xb5g)&apos;, &apos;Vit_E_(mg)&apos;, &apos;Vit_D_\xb5g&apos;, &apos;Vit_D_IU&apos;, &apos;Vit_K_(\xb5g)&apos;, &apos;FA_Sat_(g)&apos;, &apos;FA_Mono_(g)&apos;, &apos;FA_Poly_(g)&apos;, &apos;Cholestrl_(mg)&apos;, &apos;GmWt_1&apos;, &apos;GmWt_Desc1&apos;, &apos;GmWt_2&apos;, &apos;GmWt_Desc2&apos;, &apos;Refuse_Pct&apos;, &apos;new_rating&apos;, &apos;normalized_vitamin_c&apos;, &apos;better_protein_rating&apos;]
 </pre>
 </div>
 </div>
@@ -1627,7 +1576,7 @@ Removed &apos;NDB_No&apos; and &apos;Shrt_Desc&apos;:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Fiber_TD_(g)&#39;</span><span class="p">,</span> <span class="s">&#39;Sugar_Tot_(g)&#39;</span><span class="p">]</span>
@@ -1726,7 +1675,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Assign double protein values.</span>
@@ -1783,7 +1732,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Assign nutritional rating.</span>
@@ -1868,7 +1817,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Assign most nutritional foods.</span>
@@ -1943,7 +1892,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Assign least nutritional foods.</span>

@@ -1,33 +1,12 @@
 
 # coding: utf-8
 
-# In[1]:
-
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-
-
 # #Python for Business Analysts
 
 # ##Dataframe Basics
 
 # ###1: Read in a CSV file
 
-# Let's get started using pandas. Because pandas builds on numpy, some things will be familiar, but others will take some time to get used to.
-# 
 # The first step, as always, is reading in a csv file.
 # 
 # With pandas, we'll need to use the read_csv method.
@@ -38,7 +17,7 @@ $( document ).ready(code_toggle);
 
 # Read "food_info.csv" info food_info.
 
-# In[6]:
+# In[1]:
 
 import pandas
 
@@ -51,15 +30,15 @@ food_info = pandas.read_csv("data/food_info.csv")
 # 
 # We need to use the .iloc[] method (note how it uses square brackets instead of parentheses).
 # 
-# numpy_array[0,0]
-# numpy_array[:,0]
-# numpy_array[0,:]
+# - numpy_array[0,0]
+# - numpy_array[:,0]
+# - numpy_array[0,:]
 # 
 # The above lines of code will get the first element of the first row, the whole first column, and the whole first row from a numpy array, respectively.
 # 
-# pandas_dataframe.iloc[0,0]
-# pandas_dataframe.iloc[:,0]
-# pandas_dataframe.iloc[0,:]  
+# - pandas_dataframe.iloc[0,0]
+# - pandas_dataframe.iloc[:,0]
+# - pandas_dataframe.iloc[0,:]  
 # 
 # The above is the equivalent indexing in a pandas dataframe.
 
@@ -69,11 +48,11 @@ food_info = pandas.read_csv("data/food_info.csv")
 # 
 # Assign the tenth row of food_info to the variable tenth_row.
 
-# In[48]:
+# In[4]:
 
 # Print first row of data.
 print "First row of data:"
-print(food_info.iloc[0,:])
+print food_info.iloc[0,:]
 
 # Assign second row.
 second_row = food_info.iloc[1,:]
@@ -94,8 +73,9 @@ tenth_row = food_info.iloc[9,:]
 # 
 # Assign the first 10 items in the first column to first_10_items_in_first_column.
 
-# In[51]:
+# In[3]:
 
+# Assin a series.
 first_row = food_info.iloc[0,:]
 
 # Assign first 10 items from first row.
@@ -119,11 +99,15 @@ first_10_items_in_first_column = food_info.iloc[:,0][0:10]
 # 
 # Assign the Cholestrl_(mg) to the variable cholesterol.
 
-# In[9]:
+# In[5]:
 
-print(list(food_info.columns.values))
-print(food_info["Protein_(g)"][0:10])
+# Print names of all the columns (in order).
+print list(food_info.columns.values)
 
+# Print a particular column.
+print food_info["Protein_(g)"][0:10]
+
+# Assign particular columns.
 sodium_column = food_info["Sodium_(mg)"]
 saturated_fat = food_info["FA_Sat_(g)"]
 cholesterol = food_info["Cholestrl_(mg)"]
@@ -141,9 +125,9 @@ cholesterol = food_info["Cholestrl_(mg)"]
 # 
 # Make sure that you get the columns in order (zinc and selenium come first).
 
-# In[52]:
+# In[6]:
 
-#print list(food_info.columns.values)
+#print list food_info.columns.values
 
 # Rename copper and selenium columns.
 food_info = food_info.rename(columns={'Copper_mg)': 'Copper_(mg)'})
@@ -178,18 +162,24 @@ selenium_and_thiamin = food_info[['Selenium_(mcg)', 'Thiamin_(mg)']]
 # 
 # Assign the total amount of calcium and iron("Calcium_(mg)" column plus "Iron_(mg)" column) to milligrams_of_calcium_and_iron.
 
-# In[29]:
+# In[7]:
 
+# Sum fat columns.
 total_fat = food_info["FA_Sat_(g)"] + food_info["FA_Mono_(g)"] + food_info["FA_Poly_(g)"]
 
+# Protein per calorie.
 grams_of_protein_per_calorie = food_info["Protein_(g)"] / food_info["Energ_Kcal"]
 
+# Protein squared.
 grams_of_protein_squared = food_info["Protein_(g)"] * food_info["Protein_(g)"]
 
+# Non-sugar carbohydrates.
 non_sugar_carbs = food_info["Carbohydrt_(g)"] - food_info["Sugar_Tot_(g)"]
 
+# Protein per water.
 grams_of_protein_per_gram_of_water = food_info["Protein_(g)"] / food_info["Water_(g)"]
 
+# Sum calcium and iron.
 milligrams_of_calcium_and_iron = food_info["Calcium_(mg)"] + food_info["Iron_(mg)"]
 
 
@@ -209,7 +199,7 @@ milligrams_of_calcium_and_iron = food_info["Calcium_(mg)"] + food_info["Iron_(mg
 # 
 # Assign the number of milligrams of "Sugar_Tot_(g)" to the variable sugar_milligrams (multiply the column by 1000).
 
-# In[30]:
+# In[8]:
 
 # Divide the protein column by a scalar to get kilograms.
 protein_kilograms = food_info["Protein_(g)"] / 1000
@@ -236,7 +226,7 @@ sugar_milligrams = food_info["Sugar_Tot_(g)"] * 1000
 # 
 # Sort by the amount of "Vit_C_(mg)", with the smallest value on top (ascending sort). Assign the result to ascending_vitamin_c.
 
-# In[60]:
+# In[9]:
 
 # Sort foods by amount of fat.
 descending_fat = food_info.sort(["Lipid_Tot_(g)"], ascending=[False])
@@ -274,13 +264,13 @@ print(ascending_vitamin_c.iloc[0,:])
 # 
 # Perform a multicolumn sort on food_info, with the first column being "Cholestrl_(mg)" descending, and the second being "Protein_(g)" ascending. Assign the result to descending_cholesterol_then_ascending_protein.
 
-# In[59]:
+# In[10]:
 
 # Perform a multicolumn sort, with first column "Lipid_Tot_(g)" ascending, and the second "Sodium_(mg)" ascending
 ascending_fat_then_ascending_sodium = food_info.sort(["Lipid_Tot_(g)", "Sodium_(mg)"], ascending=[True, True])
 
 # Print the multicolumn sort
-#print(ascending_fat_then_ascending_sodium.iloc[0,:])
+#print ascending_fat_then_ascending_sodium.iloc[0,:]
 
 # Perform a multicolumn sort, with first column "Lipid_Tot_(g)" ascending, and the second "Sodium_(mg)" descending
 ascending_fat_then_descending_sodium = food_info.sort(["Lipid_Tot_(g)", "Sodium_(mg)"], ascending=[True, False])
@@ -295,7 +285,7 @@ ascending_sugar_then_descending_zinc = food_info.sort(["Sugar_Tot_(g)", "Zinc_(m
 descending_cholesterol_then_ascending_protein = food_info.sort(["Cholestrl_(mg)", "Protein_(g)"], ascending=[False, True])
 
 print "Food with greatest cholesterol and least protein:"
-print(descending_cholesterol_then_ascending_protein.iloc[0,:])
+print descending_cholesterol_then_ascending_protein.iloc[0,:]
 
 
 # ###10: Creating a rating
@@ -316,7 +306,7 @@ print(descending_cholesterol_then_ascending_protein.iloc[0,:])
 # 
 # Construct the new rating, and assign it to new_rating
 
-# In[43]:
+# In[11]:
 
 # Calculate the weighted value for protein.
 weighted_protein = food_info["Protein_(g)"] * 3
@@ -333,7 +323,7 @@ food_info["new_rating"] = new_rating
 descending_new_rating = food_info.sort(["new_rating"], ascending=[False])
 
 print "Food with greatest new weighting:"
-print(descending_new_rating.iloc[0,:])
+print descending_new_rating.iloc[0,:]
 
 
 # ###11: Normalizing columns
@@ -352,7 +342,7 @@ print(descending_new_rating.iloc[0,:])
 # 
 # Normalize the values in the "Zinc_(mg)" column, and assign the result to normalized_zinc
 
-# In[55]:
+# In[12]:
 
 # Use the max() method to find the maximum value in a column.
 max_protein = food_info["Protein_(g)"].max()
@@ -370,7 +360,7 @@ food_info["normalized_vitamin_c"] = normalized_vitamin_c
 # Sort by normalized vitamin C values.
 descending_normalized_vitamin_c = food_info.sort(["normalized_vitamin_c"], ascending=[False])
 print "Food with greatest normalized vitamin C:"
-print(descending_normalized_vitamin_c.iloc[0,:])
+print descending_normalized_vitamin_c.iloc[0,:]
 
 # Create normalized zinc value.
 normalized_zinc = food_info["Zinc_(mg)"] / food_info["Zinc_(mg)"].max()
@@ -393,7 +383,7 @@ We just have to normalize the columns that we are interested in before we create
 # 
 # Make sure to normalize the protein ("Protein_(g)") and fat ("Lipid_Tot_(g)") columns first.
 
-# In[61]:
+# In[13]:
 
 # Create better protein rating.
 better_protein_rating = None
@@ -411,7 +401,7 @@ food_info["better_protein_rating"] = better_protein_rating
 # Sort by new protein rating.
 descending_better_protein_rating = food_info.sort(["better_protein_rating"], ascending=[False])
 print "Food with greatest better protein rating:"
-print(descending_better_protein_rating.iloc[0,:])
+print descending_better_protein_rating.iloc[0,:]
 
 
 # ###13: Normalizing multiple columns
@@ -430,7 +420,7 @@ print(descending_better_protein_rating.iloc[0,:])
 # 
 # Then, use a for loop to normalize all the other columns.
 
-# In[67]:
+# In[15]:
 
 column_list = ["Energ_Kcal", "Protein_(g)"]
 
@@ -440,13 +430,11 @@ for column in column_list:
 
 # All columns is a list of all the columns in the food_info dataframe.
 all_columns = list(food_info.columns.values)
-print "All columns:"
-print all_columns
+#print "All columns: ", all_columns
 
 column_count = len(all_columns)
 all_columns = all_columns[2:column_count]
-print "Removed 'NDB_No' and 'Shrt_Desc':"
-print all_columns
+print "Removed 'NDB_No' and 'Shrt_Desc': ", all_columns
 
 
 # ###14: Finding the amount of vitamins
@@ -473,7 +461,7 @@ print all_columns
 # 
 # You'll need to sum the total in each row.
 
-# In[73]:
+# In[16]:
 
 column_list = ['Fiber_TD_(g)', 'Sugar_Tot_(g)']
 
@@ -512,7 +500,7 @@ print vitamin_totals.head(10)
 # 
 # Assign vitamin_totals to the "vitamin_totals" column in food_info.
 
-# In[74]:
+# In[17]:
 
 # Assign double protein values.
 food_info["double_protein"] = food_info["Protein_(g)"] * 2
@@ -533,7 +521,7 @@ food_info["vitamin_totals"] = vitamin_totals
 # 
 # Construct a rating using the above weights, and assign it to nutritional_rating.
 
-# In[80]:
+# In[18]:
 
 # Assign nutritional rating.
 nutritional_rating = None
@@ -558,7 +546,7 @@ print nutritional_rating.head(10)
 # 
 # If most_nutritious_foods isn't a list at the end, use the list() function to turn it into one.
 
-# In[88]:
+# In[19]:
 
 # Assign most nutritional foods.
 most_nutritious_foods = []
@@ -582,7 +570,7 @@ print most_nutritious_foods
 # 
 # If least_nutritious_foods isn't a list at the end, use the list() function to turn it into one.
 
-# In[89]:
+# In[20]:
 
 # Assign least nutritional foods.
 least_nutritious_foods = []
