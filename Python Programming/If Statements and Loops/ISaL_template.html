@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>ISL_template</title>
+<title>ISaL_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -206,12 +206,31 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Open the file called "crime_rates.csv" and store it in b.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Open the csv file with the open function and assign to &#39;b&#39;.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Open the csv file with the open function and assign to &#39;b&#39;.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -239,17 +258,34 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Open the "crime_rates.csv" file and assign it to f. Then read the contents of f and assign them to b.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Read the csv file.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Read the csv file.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-
-<span class="k">print</span> <span class="s">&quot;First 50 elements in list:&quot;</span>
-<span class="k">print</span> <span class="n">b</span><span class="p">[:</span><span class="mi">50</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -262,8 +298,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>First 50 elements in list:
-Abbeville,11
+<pre>Abbeville,11
 Adamsville,19
 Addison,1
 Alabaster,44
@@ -295,29 +330,48 @@ Alabaster,44
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Make a list d that contains all integer values. Make another list e containing all string values. Make a final list f containing all float values.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Make an empty list</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Make an empty list</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c"># Can also initialize a list with values</span>
 <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;I&#39;m a string in a list!&quot;</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">d</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 
 <span class="n">e</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="s">&quot;bye&quot;</span><span class="p">,</span> <span class="s">&quot;hi&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">e</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.1</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">f</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -362,17 +416,36 @@ Alabaster,44
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the first element in c to the variable d, the second element in c to e, and the third element in c to f.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Get values from lists by using an index.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Get values from lists by using an index.</span>
 <span class="n">sample_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Boris Yeltsin&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">sample_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sample_list</span><span class="p">)</span>
 
 <span class="n">b</span> <span class="o">=</span> <span class="n">sample_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="s">&quot;First element of sample_list: &quot;</span><span class="p">,</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;First element of sample_list: &quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Mikhail Gorbachev&quot;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">]</span>
 <span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -421,28 +494,24 @@ First element of sample_list:  10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create string.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create string.</span>
 <span class="n">a_string</span> <span class="o">=</span> <span class="s">&quot;This</span><span class="se">\n</span><span class="s">is</span><span class="se">\n</span><span class="s">a</span><span class="se">\n</span><span class="s">string</span><span class="se">\n</span><span class="s">&quot;</span>
-<span class="k">print</span> <span class="n">a_string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_string</span><span class="p">)</span>
 
 <span class="c"># Split string into a list.</span>
 <span class="n">split_string</span> <span class="o">=</span> <span class="n">a_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">split_string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">split_string</span><span class="p">)</span>
 
 <span class="c"># Create string.</span>
 <span class="n">string_two</span> <span class="o">=</span> <span class="s">&quot;How much wood</span><span class="se">\n</span><span class="s">can a woodchuck chuck</span><span class="se">\n</span><span class="s">if a woodchuck</span><span class="se">\n</span><span class="s">can chuck wood?&quot;</span>
-<span class="k">print</span> <span class="n">string_two</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string_two</span><span class="p">)</span>
 
 <span class="c"># Split string into a list.</span>
 <span class="n">split_string_two</span> <span class="o">=</span> <span class="n">string_two</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">split_string_two</span>
-
-<span class="c">#f = open(&#39;data/crime_rates.csv&#39;, &#39;r&#39;)</span>
-<span class="c">#data = f.read()</span>
-<span class="c">#rows = data.split(&#39;\n&#39;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">split_string_two</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -479,6 +548,55 @@ can chuck wood?
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Read the "crime_rates.csv" file in, split it on the newline character (\n), and store the result in the rows variable.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rows</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&apos;Abbeville,11&apos;, &apos;Adamsville,19&apos;, &apos;Addison,1&apos;, &apos;Alabaster,44&apos;, &apos;Alexander City,119&apos;, &apos;Aliceville,7&apos;, &apos;Andalusia,34&apos;, &apos;Anniston,461&apos;, &apos;Arab,32&apos;, &apos;Ardmore,2&apos;, &apos;Arley,3&apos;, &apos;Ashford,2&apos;, &apos;Ashland,9&apos;, &apos;Ashville,10&apos;, &apos;Athens,16&apos;, &apos;Atmore,52&apos;, &apos;Auburn,115&apos;, &apos;Bay Minette,47&apos;, &apos;Bear Creek,4&apos;, &apos;Bessemer,527&apos;, &apos;Birmingham,2852&apos;, &apos;Blountsville,6&apos;, &apos;Brent,16&apos;, &apos;Brewton,47&apos;, &apos;Bridgeport,13&apos;, &apos;Brilliant,4&apos;, &apos;Butler,6&apos;, &apos;Camp Hill,22&apos;, &apos;Carbon Hill,14&apos;, &apos;Cedar Bluff,20&apos;, &apos;Centre,21&apos;, &apos;Centreville,0&apos;, &apos;Chickasaw,53&apos;, &apos;Childersburg,1&apos;, &apos;Citronelle,22&apos;, &apos;Clanton,52&apos;, &apos;Clayton,8&apos;, &apos;Coaling,10&apos;, &apos;Collinsville,6&apos;, &apos;Cordova,15&apos;, &apos;Creola,10&apos;, &apos;Crossville,0&apos;, &apos;Cullman,31&apos;, &apos;Dadeville,17&apos;, &apos;Daleville,17&apos;, &apos;Daphne,31&apos;, &apos;Dauphin Island,4&apos;, &apos;Decatur,149&apos;, &apos;Demopolis,47&apos;, &apos;Dora,21&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="6:-The-manual-way----doing-it-without-loops">6: The manual way -- doing it without loops<a class="anchor-link" href="#6:-The-manual-way----doing-it-without-loops">&#182;</a></h3>
 </div>
 </div>
@@ -493,22 +611,41 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write separate print functions to print out the rest of the values in the list. Start at index 1, and go up to index 6.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Print list elements.</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -555,22 +692,41 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Use a for loop to print all of the items in the_list.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Loop over each item in a list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Loop over each item in a list.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">i</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 
 <span class="c"># Loop over each item in a list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">i</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -622,14 +778,33 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set the sum variable equal to the sum of all the values tripled.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Loop over each list item and apply function.</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
@@ -638,14 +813,14 @@ can chuck wood?
     <span class="n">double_i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">2</span>
     <span class="c"># Add the doubled value to the sum.</span>
     <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">double_i</span>
-<span class="k">print</span> <span class="nb">sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 
 <span class="c"># Loop over each list item and apply function.</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="n">triple_i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">3</span>
     <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">triple_i</span>
-<span class="k">print</span> <span class="nb">sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -688,28 +863,47 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set the sum variable equal to the sum of all the values tripled. Use a name other than i for the loop variable.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Loop over each list item and apply function.</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="n">double_value</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">2</span>
     <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">double_value</span>
-<span class="k">print</span> <span class="nb">sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 
 <span class="c"># Loop over each list item and apply function.</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="n">triple_value</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mi">3</span>
     <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">triple_value</span>
-<span class="k">print</span> <span class="nb">sum</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -752,38 +946,59 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the first element in the second inner list of lolists to the variable value_1_0. Assign the last element in the second inner list to value_1_2. Assign the first element in the third inner list to value_2_0. Assign the last element in the third inner list to value_2_2.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create a list of lists.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create a list of lists.</span>
 <span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="k">print</span> <span class="n">lolists</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lolists</span><span class="p">)</span>
 
 <span class="c"># Pull out the first element of the list, which is [1,2,3].</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Since [1,2,3] is a list, it can also be indexed.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="n">list1</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">list1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
 
 <span class="n">value_1_0</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">value_1_0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">value_1_0</span><span class="p">)</span>
+
 <span class="n">value_1_2</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">value_1_2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">value_1_2</span><span class="p">)</span>
 
 <span class="n">list2</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
 
 <span class="n">value_2_0</span> <span class="o">=</span> <span class="n">list2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">value_2_0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">value_2_0</span><span class="p">)</span>
+
 <span class="n">value_2_2</span> <span class="o">=</span> <span class="n">list2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">value_2_2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">value_2_2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -832,31 +1047,50 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set e equal to d times the first element in the third inner list of lolists.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create a list of lists.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create a list of lists.</span>
 <span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="k">print</span> <span class="n">lolists</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lolists</span><span class="p">)</span>
 
 <span class="c"># Pull out the first element in the first list.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Pull out the third element in the second list.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="c"># Directly do math with expressions.</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 
 <span class="c"># Directly do math with expressions.</span>
 <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">e</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">e</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -901,21 +1135,40 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Use a for loop to print the first element of each inner list.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="k">print</span> <span class="n">lolists</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lolists</span><span class="p">)</span>
 
 <span class="c"># Loop through and print inner lists.</span>
 <span class="k">for</span> <span class="n">inner_list</span> <span class="ow">in</span> <span class="n">lolists</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">inner_list</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">inner_list</span><span class="p">)</span>
     
 <span class="c"># Loop through and print first element of each inner list.</span>
 <span class="k">for</span> <span class="n">inner_list</span> <span class="ow">in</span> <span class="n">lolists</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">inner_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">inner_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -962,26 +1215,45 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Add 60 to the end of list c. Then add 70 to list c. c should end up with 4 items.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create empty list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create empty list.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Append value to list.</span>
 <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Create list with value.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="c"># Append value to list.</span>
 <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="n">old_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -989,11 +1261,12 @@ can chuck wood?
 <span class="c"># Use loop to append values to list.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">old_list</span><span class="p">:</span>
     <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">new_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]</span>
 <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1011,6 +1284,7 @@ can chuck wood?
 [30]
 [30, 50]
 [1, 2, 5, 10]
+[20, 30, 60, 70]
 </pre>
 </div>
 </div>
@@ -1038,16 +1312,36 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Split each string in the list rows and append the result to full_data. At the end, full_data will be a list of lists containing the rows and columns in the csv file. You'll need to use for loops to iterate.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a_string</span> <span class="o">=</span> <span class="s">&quot;1,10,15,20&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># We can use the .split method, with a comma as an input, to split a string on a comma.</span>
+<span class="n">a_string</span> <span class="o">=</span> <span class="s">&quot;1,10,15,20&quot;</span>
 <span class="n">a_list</span> <span class="o">=</span> <span class="n">a_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">a_list</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a_list</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -1057,6 +1351,7 @@ can chuck wood?
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
     <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
     <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">full_data</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -1070,8 +1365,9 @@ can chuck wood?
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&apos;1&apos;, &apos;10&apos;, &apos;15&apos;, &apos;20&apos;]
-&lt;type &apos;list&apos;&gt;
+&lt;class &apos;list&apos;&gt;
 1
+[[&apos;Abbeville&apos;, &apos;11&apos;], [&apos;Adamsville&apos;, &apos;19&apos;], [&apos;Addison&apos;, &apos;1&apos;], [&apos;Alabaster&apos;, &apos;44&apos;], [&apos;Alexander City&apos;, &apos;119&apos;], [&apos;Aliceville&apos;, &apos;7&apos;], [&apos;Andalusia&apos;, &apos;34&apos;], [&apos;Anniston&apos;, &apos;461&apos;], [&apos;Arab&apos;, &apos;32&apos;], [&apos;Ardmore&apos;, &apos;2&apos;], [&apos;Arley&apos;, &apos;3&apos;], [&apos;Ashford&apos;, &apos;2&apos;], [&apos;Ashland&apos;, &apos;9&apos;], [&apos;Ashville&apos;, &apos;10&apos;], [&apos;Athens&apos;, &apos;16&apos;], [&apos;Atmore&apos;, &apos;52&apos;], [&apos;Auburn&apos;, &apos;115&apos;], [&apos;Bay Minette&apos;, &apos;47&apos;], [&apos;Bear Creek&apos;, &apos;4&apos;], [&apos;Bessemer&apos;, &apos;527&apos;], [&apos;Birmingham&apos;, &apos;2852&apos;], [&apos;Blountsville&apos;, &apos;6&apos;], [&apos;Brent&apos;, &apos;16&apos;], [&apos;Brewton&apos;, &apos;47&apos;], [&apos;Bridgeport&apos;, &apos;13&apos;], [&apos;Brilliant&apos;, &apos;4&apos;], [&apos;Butler&apos;, &apos;6&apos;], [&apos;Camp Hill&apos;, &apos;22&apos;], [&apos;Carbon Hill&apos;, &apos;14&apos;], [&apos;Cedar Bluff&apos;, &apos;20&apos;], [&apos;Centre&apos;, &apos;21&apos;], [&apos;Centreville&apos;, &apos;0&apos;], [&apos;Chickasaw&apos;, &apos;53&apos;], [&apos;Childersburg&apos;, &apos;1&apos;], [&apos;Citronelle&apos;, &apos;22&apos;], [&apos;Clanton&apos;, &apos;52&apos;], [&apos;Clayton&apos;, &apos;8&apos;], [&apos;Coaling&apos;, &apos;10&apos;], [&apos;Collinsville&apos;, &apos;6&apos;], [&apos;Cordova&apos;, &apos;15&apos;], [&apos;Creola&apos;, &apos;10&apos;], [&apos;Crossville&apos;, &apos;0&apos;], [&apos;Cullman&apos;, &apos;31&apos;], [&apos;Dadeville&apos;, &apos;17&apos;], [&apos;Daleville&apos;, &apos;17&apos;], [&apos;Daphne&apos;, &apos;31&apos;], [&apos;Dauphin Island&apos;, &apos;4&apos;], [&apos;Decatur&apos;, &apos;149&apos;], [&apos;Demopolis&apos;, &apos;47&apos;], [&apos;Dora&apos;, &apos;21&apos;]]
 </pre>
 </div>
 </div>
@@ -1099,22 +1395,39 @@ can chuck wood?
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set count equal to the number of rows in full_data. You'll need to use a for loop.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Count number of items in list.</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-    
-<span class="k">print</span> <span class="s">&quot;Number of items in list: &quot;</span><span class="p">,</span> <span class="n">count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Number of items in list: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
@@ -1129,11 +1442,9 @@ can chuck wood?
     
 <span class="c"># Count number of items in list.</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-    
-<span class="k">print</span> <span class="s">&quot;Number of items in list: &quot;</span><span class="p">,</span> <span class="n">count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Number of items in list: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1176,24 +1487,41 @@ Number of items in list:  9293
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set count equal to the number of columns in full_data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list of lists.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list of lists. Assume inner lists are the rows and number of columns is the number of items in any row.</span>
 <span class="n">l</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span>
-<span class="k">print</span> <span class="n">l</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
 
 <span class="n">first_row</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">first_row</span><span class="p">:</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-    
-<span class="k">print</span> <span class="s">&quot;Columns in first row: &quot;</span><span class="p">,</span> <span class="n">count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Columns in first row: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 
 
-<span class="c"># We parse our csv file</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
@@ -1207,8 +1535,7 @@ Number of items in list:  9293
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">first_row</span><span class="p">:</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="k">print</span> <span class="s">&quot;Columns in first row: &quot;</span><span class="p">,</span> <span class="n">count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Columns in first row: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1251,41 +1578,62 @@ Columns in first row:  2
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign a boolean that evaluates to True to d. Assign a boolean that evaluates to True to e. Assign a boolean that evaluates to False to f. Assign a boolean that evaluates to False to g.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="k">print</span> <span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Short&quot;</span>
-<span class="k">print</span> <span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Andre the Giant&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Short&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Andre the Giant&quot;</span><span class="p">)</span>
 
 <span class="c"># True and False are special python keywords of the boolean type.</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="k">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="k">False</span><span class="p">))</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="c"># False</span>
-<span class="k">print</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+<span class="c"># False.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="c"># True</span>
-<span class="k">print</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="c"># True.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span>
 
 <span class="c"># Assigning boolean to a variable.</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">10</span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">5</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">9</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">d</span>
-<span class="k">print</span> <span class="n">e</span>
-<span class="k">print</span> <span class="n">f</span>
-<span class="k">print</span> <span class="n">g</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">9</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1300,8 +1648,8 @@ Columns in first row:  2
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>False
 True
-&lt;type &apos;bool&apos;&gt;
-&lt;type &apos;bool&apos;&gt;
+&lt;class &apos;bool&apos;&gt;
+&lt;class &apos;bool&apos;&gt;
 False
 True
 False
@@ -1336,25 +1684,44 @@ False
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a boolean statement using the greater than sign (&gt;) that evaluates to True and assign it to b. Write a boolean statement using the greater than sign that evaluates to False and assign it to c.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="k">print</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span>
-<span class="k">print</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span>
 
 <span class="c"># Assigning boolean to a variable.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span>
-<span class="k">print</span> <span class="n">a</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
 <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">8</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1370,7 +1737,7 @@ False
 <pre>True
 False
 True
-&lt;type &apos;bool&apos;&gt;
+&lt;class &apos;bool&apos;&gt;
 True
 False
 </pre>
@@ -1400,25 +1767,44 @@ False
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a boolean statement using the less than sign (&lt;) that evaluates to True and assign it to b. Write a boolean statement using the less than sign that evaluates to False and assign it to c.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="k">print</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>
-<span class="k">print</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
 
 <span class="c"># Assigning boolean to a variable.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>
-<span class="k">print</span> <span class="n">a</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1434,7 +1820,7 @@ False
 <pre>True
 False
 True
-&lt;type &apos;bool&apos;&gt;
+&lt;class &apos;bool&apos;&gt;
 True
 False
 </pre>
@@ -1464,20 +1850,40 @@ False
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write an if statement whose boolean statement evaluates to True and prints out "Hello world!".</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
 <span class="k">if</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Success!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Success!&quot;</span><span class="p">)</span>
 
 <span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
 <span class="k">if</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;No success!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;No success!&quot;</span><span class="p">)</span>
+    
 <span class="k">if</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Hello world!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1519,26 +1925,45 @@ Hello world!
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write an if statement whose boolean statement contains c and evaluates to True. The if statement should print out "Much success!"</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">15</span>
 
 <span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Success!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Success!&quot;</span><span class="p">)</span>
 
 <span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
 <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;No success!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;No success!&quot;</span><span class="p">)</span>
 
 <span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
 <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">15</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Much success!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Much success!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1566,7 +1991,7 @@ Much success!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="22:-Ifs-and-for-loops,-together-at-last!">22: Ifs and for loops, together at last!<a class="anchor-link" href="#22:-Ifs-and-for-loops,-together-at-last!">&#182;</a></h3>
+<h3 id="22:-If-statements-and-for-loops,-together-at-last!">22: If statements and for loops, together at last!<a class="anchor-link" href="#22:-If-statements-and-for-loops,-together-at-last!">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1580,33 +2005,50 @@ Much success!
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a for loop that prints out all of the items in the_list that are greater than 5.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Count how many elements in the_list are greater than 10.</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
         <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">print</span> <span class="n">count</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-
 <span class="c"># Print all of the elements in the_list if a &gt; 1.</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">item</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
 <span class="c"># Print all of the elements in the_list if item &gt; 5.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">item</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1655,13 +2097,32 @@ Much success!
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set the smallest_item variable equal to the lowest value in the list a. Use a for loop to iterate through a.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Set &#39;smallest_item&#39; to a value that is bigger than anything in &#39;the_list&#39;.</span>
 <span class="n">smallest_item</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -1670,21 +2131,19 @@ Much success!
     <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">smallest_item</span><span class="p">:</span>
         <span class="c"># If it is, set smallest_item equal to its value.</span>
         <span class="n">smallest_item</span> <span class="o">=</span> <span class="n">item</span>
-        
-<span class="k">print</span> <span class="s">&quot;Smallest item in list: &quot;</span><span class="p">,</span> <span class="n">smallest_item</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Smallest item in list: &quot;</span><span class="p">,</span> <span class="n">smallest_item</span><span class="p">)</span>
 
 
 <span class="c"># Set smallest_item to a value that is bigger than anything in the_list.</span>
 <span class="n">smallest_item</span> <span class="o">=</span> <span class="mi">1000</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">567</span><span class="p">,</span><span class="mi">890</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="o">-</span><span class="mi">101</span><span class="p">,</span><span class="mi">895</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">smallest_item</span><span class="p">:</span>
         <span class="n">smallest_item</span> <span class="o">=</span> <span class="n">item</span>
-        
-<span class="k">print</span> <span class="s">&quot;Smallest item in list: &quot;</span><span class="p">,</span> <span class="n">smallest_item</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Smallest item in list: &quot;</span><span class="p">,</span> <span class="n">smallest_item</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1728,28 +2187,49 @@ Smallest item in list:  -101
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the integer value of c to c_int. Assign the integer value of d to d_int. Assign the integer value of e to e_int.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># There&#39;s one problem with our parsed CSV file -- because we parsed it from a string, all of the values are stored as strings.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># There&#39;s one problem with our parsed CSV file -- because we parsed it from a string, all of the values are stored as strings.</span>
 
 <span class="c"># Use the int() function to turn a string into an int.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="s">&#39;5&#39;</span>
-<span class="k">print</span> <span class="n">a</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
 <span class="c"># We can use the int function to parse it into the integer 5.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="s">&#39;10&#39;</span>
-<span class="n">d</span> <span class="o">=</span> <span class="s">&#39;20&#39;</span>
-<span class="n">e</span> <span class="o">=</span> <span class="s">&#39;30&#39;</span>
 <span class="n">c_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="s">&#39;20&#39;</span>
 <span class="n">d_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="s">&#39;30&#39;</span>
 <span class="n">e_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
 
@@ -1764,9 +2244,9 @@ Smallest item in list:  -101
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>5
-&lt;type &apos;str&apos;&gt;
+&lt;class &apos;str&apos;&gt;
 5
-&lt;type &apos;int&apos;&gt;
+&lt;class &apos;int&apos;&gt;
 </pre>
 </div>
 </div>
@@ -1794,14 +2274,33 @@ Smallest item in list:  -101
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Convert all the values in a into integers using a for loop. Append each integer to new_a.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Use the &#39;int&#39; function to convert values in a list to integers.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Use the &#39;int&#39; function to convert values in a list to integers.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="c"># Loop through the_list.</span>
@@ -1810,16 +2309,16 @@ Smallest item in list:  -101
     <span class="n">item_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
     <span class="c"># Add the int item to the new list.</span>
     <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_int</span><span class="p">)</span>
-    
-<span class="k">print</span> <span class="n">new_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10&#39;</span><span class="p">,</span> <span class="s">&#39;15&#39;</span><span class="p">,</span> <span class="s">&#39;20&#39;</span><span class="p">,</span> <span class="s">&#39;35&#39;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="n">new_a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
     <span class="n">item_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
     <span class="n">new_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_int</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_a</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1835,6 +2334,7 @@ Smallest item in list:  -101
 <pre>[&apos;1&apos;, &apos;2&apos;, &apos;3&apos;]
 [1, 2, 3]
 [&apos;10&apos;, &apos;15&apos;, &apos;20&apos;, &apos;35&apos;]
+[10, 15, 20, 35]
 </pre>
 </div>
 </div>
@@ -1862,12 +2362,31 @@ Smallest item in list:  -101
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Insert code into the example that will turn the second value in split_row into an integer.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
 
@@ -1878,9 +2397,24 @@ Smallest item in list:  -101
     <span class="k">if</span> <span class="n">row</span><span class="p">:</span>
         <span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
         <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">full_data</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[&apos;Abbeville&apos;, 11], [&apos;Adamsville&apos;, 19], [&apos;Addison&apos;, 1], [&apos;Alabaster&apos;, 44], [&apos;Alexander City&apos;, 119], [&apos;Aliceville&apos;, 7], [&apos;Andalusia&apos;, 34], [&apos;Anniston&apos;, 461], [&apos;Arab&apos;, 32], [&apos;Ardmore&apos;, 2], [&apos;Arley&apos;, 3], [&apos;Ashford&apos;, 2], [&apos;Ashland&apos;, 9], [&apos;Ashville&apos;, 10], [&apos;Athens&apos;, 16], [&apos;Atmore&apos;, 52], [&apos;Auburn&apos;, 115], [&apos;Bay Minette&apos;, 47], [&apos;Bear Creek&apos;, 4], [&apos;Bessemer&apos;, 527], [&apos;Birmingham&apos;, 2852], [&apos;Blountsville&apos;, 6], [&apos;Brent&apos;, 16], [&apos;Brewton&apos;, 47], [&apos;Bridgeport&apos;, 13], [&apos;Brilliant&apos;, 4], [&apos;Butler&apos;, 6], [&apos;Camp Hill&apos;, 22], [&apos;Carbon Hill&apos;, 14], [&apos;Cedar Bluff&apos;, 20], [&apos;Centre&apos;, 21], [&apos;Centreville&apos;, 0], [&apos;Chickasaw&apos;, 53], [&apos;Childersburg&apos;, 1], [&apos;Citronelle&apos;, 22], [&apos;Clanton&apos;, 52], [&apos;Clayton&apos;, 8], [&apos;Coaling&apos;, 10], [&apos;Collinsville&apos;, 6], [&apos;Cordova&apos;, 15], [&apos;Creola&apos;, 10], [&apos;Crossville&apos;, 0], [&apos;Cullman&apos;, 31], [&apos;Dadeville&apos;, 17], [&apos;Daleville&apos;, 17], [&apos;Daphne&apos;, 31], [&apos;Dauphin Island&apos;, 4], [&apos;Decatur&apos;, 149], [&apos;Demopolis&apos;, 47], [&apos;Dora&apos;, 21]]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1904,19 +2438,37 @@ Smallest item in list:  -101
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Set lowest_crime_rate to the lowest crime rate in full_data. Use for loops and if statements like we did in the last screen. You'll also need to the index the second item in each row inside the loop.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Find city with lowest crime rate.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Find city with lowest crime rate.</span>
 <span class="n">lowest_crime_rate</span> <span class="o">=</span> <span class="mi">10000</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
     <span class="n">crime_rate</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">crime_rate</span> <span class="o">&lt;</span> <span class="n">lowest_crime_rate</span><span class="p">:</span>
         <span class="n">lowest_crime_rate</span> <span class="o">=</span> <span class="n">crime_rate</span>
-
-<span class="k">print</span> <span class="s">&quot;Lowest crime rate: &quot;</span><span class="p">,</span> <span class="n">lowest_crime_rate</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Lowest crime rate: &quot;</span><span class="p">,</span> <span class="n">lowest_crime_rate</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1957,25 +2509,43 @@ Smallest item in list:  -101
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Search a for the number 78, and print "Yes" when it's found.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Loop through &#39;the_list&#39;, if the list item equals 5, print out &quot;Found&quot;.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s">&quot;Found&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Found&quot;</span><span class="p">)</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">567</span><span class="p">,</span><span class="mi">890</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="o">-</span><span class="mi">101</span><span class="p">,</span><span class="mi">895</span><span class="p">]</span>
-
 <span class="c"># Loop through &#39;a&#39;, if the list item equals 78, print out &quot;Yes&quot;.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="mi">78</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s">&quot;Yes&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Yes&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2018,13 +2588,32 @@ Yes
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Find the second element in the inner list whose first element is 7. You'll need to search through lolist to do it. Assign the answer to the value variable.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">lolist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">]]</span>
-<span class="k">print</span> <span class="n">lolist</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">lolist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lolist</span><span class="p">)</span>
 
 <span class="c"># Get the first element of the inner list whose third element is 9.</span>
 <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
@@ -2032,18 +2621,16 @@ Yes
     <span class="n">last_value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
     <span class="n">first_value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">last_value</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">first_value</span>
-        
-<span class="k">print</span> <span class="n">value</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">first_value</span>     
+<span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
 
 <span class="c"># Get the second element in the inner list whose first element is 7.</span>
 <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lolist</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        
-<span class="k">print</span> <span class="n">value</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2086,14 +2673,32 @@ Yes
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Assign the city with the lowest crime rate to city.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># We know that the lowest crime rate is 0.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># We know that the lowest crime rate is 0.</span>
 <span class="c"># We need to find the corresponding value in the first column -- the city with the lowest crime rate.</span>
-
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/crime_rates.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
@@ -2109,8 +2714,7 @@ Yes
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">city</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="k">print</span> <span class="s">&quot;City with lowest crime rate: &quot;</span><span class="p">,</span> <span class="n">city</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;City with lowest crime rate: &quot;</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span>
 </pre></div>
 
 </div>
