@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# In[1]:
+
+from __future__ import print_function
+
+
 # #Python Programming
 
 # ##Python Basics
@@ -15,7 +20,7 @@
 
 # Assign 5 to the variable a.
 
-# In[1]:
+# In[2]:
 
 # Here is an example of assigning the value 10 to the variable b.
 b = 10
@@ -37,7 +42,7 @@ a = 5
 
 # Use the print function to print the number 5.
 
-# In[2]:
+# In[3]:
 
 # The line below will print out the number 10.
 # Look in the output area underneath to see it.
@@ -53,14 +58,14 @@ print(5)
 
 # Print the star_wars variable.
 
-# In[3]:
+# In[4]:
 
 star_wars = []
-f = open("data/star_wars.txt", 'r')
+f = open("data/star_wars.txt", "r")
 star_wars = f.read()
 rows = star_wars.split('\n')
 
-print(star_wars[:500])
+print("star_wars[:500]:\n", star_wars[:500])
 
 
 # ###4: Types of variables
@@ -75,7 +80,7 @@ print(star_wars[:500])
 
 # Assign an integer to h, a string to i, and a float to j.
 
-# In[4]:
+# In[5]:
 
 # A number without decimals is an integer type.
 # An integer can hold negative and positive values.
@@ -84,7 +89,7 @@ a = 5
 b = -1
 
 # Print a multiplied by b.
-print(a * b)
+print("a * b:", a * b)
 
 # Anything enclosed in single or double quotes is a string.
 # Strings hold text.
@@ -117,7 +122,7 @@ j = 5.1
 
 # Assign the type of 10 to c, the type of "racecar" to d, and the type of 10.6 to e.
 
-# In[5]:
+# In[6]:
 
 # The type function has only one input value.
 a = type(5)
@@ -128,16 +133,16 @@ a = type(5)
 # We can also invoke functions on variables.
 b = "Dataquest is the best thing ever"
 # Note how when the type for b is printed, it is abbreviated to str.
-print(type(b))
+print("type(b):", type(b))
 
 c = type(10)
-print(c)
+print("c:", c)
 
 d = type("racecar")
-print(d)
+print("d:", d)
 
 e = type(10.6)
-print(e)
+print("e:", e)
 
 
 # ###6: So, which character speaks the most?
@@ -158,7 +163,7 @@ print(e)
 
 # There's an easy automatic way to find who speaks the most lines that we'll learn later. For now, look through the printout of lines, and figure out who spoke the most lines. Assign the name of that character to most_lines.
 
-# In[6]:
+# In[7]:
 
 # The preprocessed data is loaded into the lines variable.
 # Lines is a dictionary (dict), a type that we'll learn about in the next mission.

@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Python Programming
 
 ##If Statements and Loops
@@ -14,7 +19,7 @@ Open the file called "crime_rates.csv" and store it in b.
 
 ```python
 # Open the csv file with the open function and assign to 'b'.
-b = open('data/crime_rates.csv', 'r')
+b = open("data/crime_rates.csv", "r")
 ```
 
 ###2: CSV files
@@ -28,12 +33,13 @@ Open the "crime_rates.csv" file and assign it to f. Then read the contents of f 
 
 ```python
 # Read the csv file.
-b = open('data/crime_rates.csv', 'r')
+b = open("data/crime_rates.csv", "r")
 b = b.read()
-print(b[:50])
+print("b[:50]:\n", b[:50])
 ```
 
-    Abbeville,11
+    b[:50]:
+     Abbeville,11
     Adamsville,19
     Addison,1
     Alabaster,44
@@ -55,26 +61,26 @@ a = []
 
 # Can also initialize a list with values
 b = [1, "I'm a string in a list!", 5.1]
-print(b)
+print("b:", b)
 
 c = [1,2,3]
-print(c)
+print("c:", c)
 
 d = [1,2,3]
-print(d)
+print("d:", d)
 
 e = ["hello", "bye", "hi"]
-print(e)
+print("e:", e)
 
 f = [5.1, 3.4, 10.5]
-print(f)
+print("f:", f)
 ```
 
-    [1, "I'm a string in a list!", 5.1]
-    [1, 2, 3]
-    [1, 2, 3]
-    ['hello', 'bye', 'hi']
-    [5.1, 3.4, 10.5]
+    b: [1, "I'm a string in a list!", 5.1]
+    c: [1, 2, 3]
+    d: [1, 2, 3]
+    e: ['hello', 'bye', 'hi']
+    f: [5.1, 3.4, 10.5]
     
 
 ###4: Indexing a list
@@ -89,10 +95,10 @@ Assign the first element in c to the variable d, the second element in c to e, a
 ```python
 # Get values from lists by using an index.
 sample_list = [10, "Boris Yeltsin", 50]
-print(sample_list)
+print("sample_list:", sample_list)
 
 b = sample_list[0]
-print("First element of sample_list: ", b)
+print("b:", b)
 
 c = [1, "Mikhail Gorbachev", 10.5]
 d = c[0]
@@ -100,8 +106,8 @@ e = c[1]
 f = c[2]
 ```
 
-    [10, 'Boris Yeltsin', 50]
-    First element of sample_list:  10
+    sample_list: [10, 'Boris Yeltsin', 50]
+    b: 10
     
 
 ###5: Splitting a CSV file
@@ -112,32 +118,32 @@ Remember how strings are also objects? Well, we can use the .split method to spl
 ```python
 # Create string.
 a_string = "This\nis\na\nstring\n"
-print(a_string)
+print("a_string:", a_string)
 
 # Split string into a list.
-split_string = a_string.split('\n')
-print(split_string)
+split_string = a_string.split("\n")
+print("split_string:", split_string)
 
 # Create string.
 string_two = "How much wood\ncan a woodchuck chuck\nif a woodchuck\ncan chuck wood?"
-print(string_two)
+print("string_two:", string_two)
 
 # Split string into a list.
 split_string_two = string_two.split('\n')
-print(split_string_two)
+print("split_string_two:", split_string_two)
 ```
 
-    This
+    a_string: This
     is
     a
     string
     
-    ['This', 'is', 'a', 'string', '']
-    How much wood
+    split_string: ['This', 'is', 'a', 'string', '']
+    string_two: How much wood
     can a woodchuck chuck
     if a woodchuck
     can chuck wood?
-    ['How much wood', 'can a woodchuck chuck', 'if a woodchuck', 'can chuck wood?']
+    split_string_two: ['How much wood', 'can a woodchuck chuck', 'if a woodchuck', 'can chuck wood?']
     
 
 ####Instructions
@@ -146,13 +152,13 @@ Read the "crime_rates.csv" file in, split it on the newline character (\n), and 
 
 
 ```python
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
-print(rows[:50])
+rows = data.split("\n")
+print("rows[:50]:", rows[:50])
 ```
 
-    ['Abbeville,11', 'Adamsville,19', 'Addison,1', 'Alabaster,44', 'Alexander City,119', 'Aliceville,7', 'Andalusia,34', 'Anniston,461', 'Arab,32', 'Ardmore,2', 'Arley,3', 'Ashford,2', 'Ashland,9', 'Ashville,10', 'Athens,16', 'Atmore,52', 'Auburn,115', 'Bay Minette,47', 'Bear Creek,4', 'Bessemer,527', 'Birmingham,2852', 'Blountsville,6', 'Brent,16', 'Brewton,47', 'Bridgeport,13', 'Brilliant,4', 'Butler,6', 'Camp Hill,22', 'Carbon Hill,14', 'Cedar Bluff,20', 'Centre,21', 'Centreville,0', 'Chickasaw,53', 'Childersburg,1', 'Citronelle,22', 'Clanton,52', 'Clayton,8', 'Coaling,10', 'Collinsville,6', 'Cordova,15', 'Creola,10', 'Crossville,0', 'Cullman,31', 'Dadeville,17', 'Daleville,17', 'Daphne,31', 'Dauphin Island,4', 'Decatur,149', 'Demopolis,47', 'Dora,21']
+    rows[:50]: ['Abbeville,11', 'Adamsville,19', 'Addison,1', 'Alabaster,44', 'Alexander City,119', 'Aliceville,7', 'Andalusia,34', 'Anniston,461', 'Arab,32', 'Ardmore,2', 'Arley,3', 'Ashford,2', 'Ashland,9', 'Ashville,10', 'Athens,16', 'Atmore,52', 'Auburn,115', 'Bay Minette,47', 'Bear Creek,4', 'Bessemer,527', 'Birmingham,2852', 'Blountsville,6', 'Brent,16', 'Brewton,47', 'Bridgeport,13', 'Brilliant,4', 'Butler,6', 'Camp Hill,22', 'Carbon Hill,14', 'Cedar Bluff,20', 'Centre,21', 'Centreville,0', 'Chickasaw,53', 'Childersburg,1', 'Citronelle,22', 'Clanton,52', 'Clayton,8', 'Coaling,10', 'Collinsville,6', 'Cordova,15', 'Creola,10', 'Crossville,0', 'Cullman,31', 'Dadeville,17', 'Daleville,17', 'Daphne,31', 'Dauphin Island,4', 'Decatur,149', 'Demopolis,47', 'Dora,21']
     
 
 ###6: The manual way -- doing it without loops
@@ -167,24 +173,24 @@ Write separate print functions to print out the rest of the values in the list. 
 ```python
 # Create list.
 the_list = [3,5,8,10,15,17,19]
-print(the_list)
+print("the_list:", the_list)
 
 # Print list elements.
-print(the_list[0])
-print(the_list[1])
-print(the_list[2])
-print(the_list[3])
-print(the_list[4])
-print(the_list[5])
+print("the_list[0]:", the_list[0])
+print("the_list[1]:", the_list[1])
+print("the_list[2]:", the_list[2])
+print("the_list[3]:", the_list[3])
+print("the_list[4]:", the_list[4])
+print("the_list[5]:", the_list[5])
 ```
 
-    [3, 5, 8, 10, 15, 17, 19]
-    3
-    5
-    8
-    10
-    15
-    17
+    the_list: [3, 5, 8, 10, 15, 17, 19]
+    the_list[0]: 3
+    the_list[1]: 5
+    the_list[2]: 8
+    the_list[3]: 10
+    the_list[4]: 15
+    the_list[5]: 17
     
 
 ###7: Now let's add loops to the equation
@@ -199,29 +205,29 @@ Use a for loop to print all of the items in the_list.
 ```python
 # Loop over each item in a list.
 a = [5, 10, 15]
-print(a)
+print("a:", a)
 for i in a:
-    print(i)
+    print("i:", i)
 
 # Loop over each item in a list.
 the_list = [3,5,8,10,15,17,19]
-print(the_list)
+print("the_list:", the_list)
 for i in the_list:
-    print(i)
+    print("i:", i)
 ```
 
-    [5, 10, 15]
-    5
-    10
-    15
-    [3, 5, 8, 10, 15, 17, 19]
-    3
-    5
-    8
-    10
-    15
-    17
-    19
+    a: [5, 10, 15]
+    i: 5
+    i: 10
+    i: 15
+    the_list: [3, 5, 8, 10, 15, 17, 19]
+    i: 3
+    i: 5
+    i: 8
+    i: 10
+    i: 15
+    i: 17
+    i: 19
     
 
 ###8: Multiline for loops
@@ -236,7 +242,7 @@ Set the sum variable equal to the sum of all the values tripled.
 ```python
 # Create list.
 the_list = [3,5,8,10,15,17,19]
-print(the_list)
+print("the_list:", the_list)
 
 # Loop over each list item and apply function.
 sum = 0
@@ -245,19 +251,19 @@ for i in the_list:
     double_i = i * 2
     # Add the doubled value to the sum.
     sum = sum + double_i
-print(sum)
+print("sum:", sum)
 
 # Loop over each list item and apply function.
 sum = 0
 for i in the_list:
     triple_i = i * 3
     sum = sum + triple_i
-print(sum)
+print("sum:", sum)
 ```
 
-    [3, 5, 8, 10, 15, 17, 19]
-    154
-    231
+    the_list: [3, 5, 8, 10, 15, 17, 19]
+    sum: 154
+    sum: 231
     
 
 ###9: For loops with different variable names
@@ -272,26 +278,26 @@ Set the sum variable equal to the sum of all the values tripled. Use a name othe
 ```python
 # Create list.
 the_list = [3,5,8,10,15,17,19]
-print(the_list)
+print("the_list:", the_list)
 
 # Loop over each list item and apply function.
 sum = 0
 for i in the_list:
     double_value = i * 2
     sum = sum + double_value
-print(sum)
+print("sum:", sum)
 
 # Loop over each list item and apply function.
 sum = 0
 for value in the_list:
     triple_value = value * 3
     sum = sum + triple_value
-print(sum)
+print("sum:", sum)
 ```
 
-    [3, 5, 8, 10, 15, 17, 19]
-    154
-    231
+    the_list: [3, 5, 8, 10, 15, 17, 19]
+    sum: 154
+    sum: 231
     
 
 ###10: Lists of lists
@@ -306,44 +312,44 @@ Assign the first element in the second inner list of lolists to the variable val
 ```python
 # Create a list of lists.
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
-print(lolists)
+print("lolists:", lolists)
 
 # Pull out the first element of the list, which is [1,2,3].
 a = lolists[0]
-print(a)
+print("a:", a)
 
 # Since [1,2,3] is a list, it can also be indexed.
 b = a[0]
-print(b)
+print("b:", b)
 
 list1 = lolists[1]
-print(list1)
+print("list1:", list1)
 
 value_1_0 = list1[0]
-print(value_1_0)
+print("value_1_0:", value_1_0)
 
 value_1_2 = list1[2]
-print(value_1_2)
+print("value_1_2:", value_1_2)
 
 list2 = lolists[2]
-print(list2)
+print("list2:", list2)
 
 value_2_0 = list2[0]
-print(value_2_0)
+print("value_2_0", value_2_0)
 
 value_2_2 = list2[2]
-print(value_2_2)
+print("value_2_2:", value_2_2)
 ```
 
-    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-    [1, 2, 3]
-    1
-    [10, 15, 14]
-    10
-    14
-    [10.1, 8.7, 2.3]
-    10.1
-    2.3
+    lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    a: [1, 2, 3]
+    b: 1
+    list1: [10, 15, 14]
+    value_1_0: 10
+    value_1_2: 14
+    list2: [10.1, 8.7, 2.3]
+    value_2_0 10.1
+    value_2_2: 2.3
     
 
 ###11: Skipping the assignment
@@ -358,31 +364,31 @@ Set e equal to d times the first element in the third inner list of lolists.
 ```python
 # Create a list of lists.
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
-print(lolists)
+print("lolists:", lolists)
 
 # Pull out the first element in the first list.
 a = lolists[0][0]
-print(a)
+print("a:", a)
 
 # Pull out the third element in the second list.
 b = lolists[1][2]
-print(b)
+print("b:", b)
 
 # Directly do math with expressions.
 c = lolists[0][2] + 10
-print(c)
+print("c:", c)
 
 # Directly do math with expressions.
 d = 10
 e = d * lolists[2][0]
-print(e)
+print("e:", e)
 ```
 
-    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-    1
-    14
-    13
-    101.0
+    lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    a: 1
+    b: 14
+    c: 13
+    e: 101.0
     
 
 ###12: Looping through lists of lists
@@ -396,24 +402,24 @@ Use a for loop to print the first element of each inner list.
 
 ```python
 lolists = [[1,2,3], [10,15,14], [10.1,8.7,2.3]]
-print(lolists)
+print("lolists:", lolists)
 
 # Loop through and print inner lists.
 for inner_list in lolists:
-    print(inner_list)
+    print("inner_list:", inner_list)
     
 # Loop through and print first element of each inner list.
 for inner_list in lolists:
-    print(inner_list[0])
+    print("inner_list[0]:", inner_list[0])
 ```
 
-    [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-    [1, 2, 3]
-    [10, 15, 14]
-    [10.1, 8.7, 2.3]
-    1
-    10
-    10.1
+    lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
+    inner_list: [1, 2, 3]
+    inner_list: [10, 15, 14]
+    inner_list: [10.1, 8.7, 2.3]
+    inner_list[0]: 1
+    inner_list[0]: 10
+    inner_list[0]: 10.1
     
 
 ###13: Adding to lists
@@ -428,19 +434,19 @@ Add 60 to the end of list c. Then add 70 to list c. c should end up with 4 items
 ```python
 # Create empty list.
 a = []
-print(a)
+print("a:", a)
 
 # Append value to list.
 a.append(10)
-print(a)
+print("a:", a)
 
 # Create list with value.
 b = [30]
-print(b)
+print("b:", b)
 
 # Append value to list.
 b.append(50)
-print(b)
+print("b:", b)
 
 old_list = [1,2,5,10]
 new_list = []
@@ -448,20 +454,20 @@ new_list = []
 # Use loop to append values to list.
 for item in old_list:
     new_list.append(item)
-print(new_list)
+print("new_list:", new_list)
 
 c = [20,30]
 c.append(60)
 c.append(70)
-print(c)
+print("c:", c)
 ```
 
-    []
-    [10]
-    [30]
-    [30, 50]
-    [1, 2, 5, 10]
-    [20, 30, 60, 70]
+    a: []
+    a: [10]
+    b: [30]
+    b: [30, 50]
+    new_list: [1, 2, 5, 10]
+    c: [20, 30, 60, 70]
     
 
 ###14: Splitting the csv file into columns
@@ -477,25 +483,25 @@ Split each string in the list rows and append the result to full_data. At the en
 # We can use the .split method, with a comma as an input, to split a string on a comma.
 a_string = "1,10,15,20"
 a_list = a_string.split(",")
-print(a_list)
-print(type(a_list))
-print(a_list[0])
+print("a_list:", a_list)
+print("type(a_list):", type(a_list))
+print("a_list[0]:", a_list[0])
 
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
+rows = data.split("\n")
 
 full_data = []
 for row in rows:
     split_row = row.split(",")
     full_data.append(split_row)
-print(full_data[:50])
+print("full_data[:50]:", full_data[:50])
 ```
 
-    ['1', '10', '15', '20']
-    <class 'list'>
-    1
-    [['Abbeville', '11'], ['Adamsville', '19'], ['Addison', '1'], ['Alabaster', '44'], ['Alexander City', '119'], ['Aliceville', '7'], ['Andalusia', '34'], ['Anniston', '461'], ['Arab', '32'], ['Ardmore', '2'], ['Arley', '3'], ['Ashford', '2'], ['Ashland', '9'], ['Ashville', '10'], ['Athens', '16'], ['Atmore', '52'], ['Auburn', '115'], ['Bay Minette', '47'], ['Bear Creek', '4'], ['Bessemer', '527'], ['Birmingham', '2852'], ['Blountsville', '6'], ['Brent', '16'], ['Brewton', '47'], ['Bridgeport', '13'], ['Brilliant', '4'], ['Butler', '6'], ['Camp Hill', '22'], ['Carbon Hill', '14'], ['Cedar Bluff', '20'], ['Centre', '21'], ['Centreville', '0'], ['Chickasaw', '53'], ['Childersburg', '1'], ['Citronelle', '22'], ['Clanton', '52'], ['Clayton', '8'], ['Coaling', '10'], ['Collinsville', '6'], ['Cordova', '15'], ['Creola', '10'], ['Crossville', '0'], ['Cullman', '31'], ['Dadeville', '17'], ['Daleville', '17'], ['Daphne', '31'], ['Dauphin Island', '4'], ['Decatur', '149'], ['Demopolis', '47'], ['Dora', '21']]
+    a_list: ['1', '10', '15', '20']
+    type(a_list): <class 'list'>
+    a_list[0]: 1
+    full_data[:50]: [['Abbeville', '11'], ['Adamsville', '19'], ['Addison', '1'], ['Alabaster', '44'], ['Alexander City', '119'], ['Aliceville', '7'], ['Andalusia', '34'], ['Anniston', '461'], ['Arab', '32'], ['Ardmore', '2'], ['Arley', '3'], ['Ashford', '2'], ['Ashland', '9'], ['Ashville', '10'], ['Athens', '16'], ['Atmore', '52'], ['Auburn', '115'], ['Bay Minette', '47'], ['Bear Creek', '4'], ['Bessemer', '527'], ['Birmingham', '2852'], ['Blountsville', '6'], ['Brent', '16'], ['Brewton', '47'], ['Bridgeport', '13'], ['Brilliant', '4'], ['Butler', '6'], ['Camp Hill', '22'], ['Carbon Hill', '14'], ['Cedar Bluff', '20'], ['Centre', '21'], ['Centreville', '0'], ['Chickasaw', '53'], ['Childersburg', '1'], ['Citronelle', '22'], ['Clanton', '52'], ['Clayton', '8'], ['Coaling', '10'], ['Collinsville', '6'], ['Cordova', '15'], ['Creola', '10'], ['Crossville', '0'], ['Cullman', '31'], ['Dadeville', '17'], ['Daleville', '17'], ['Daphne', '31'], ['Dauphin Island', '4'], ['Decatur', '149'], ['Demopolis', '47'], ['Dora', '21']]
     
 
 ###15: Finding the number of rows
@@ -510,18 +516,18 @@ Set count equal to the number of rows in full_data. You'll need to use a for loo
 ```python
 # Create list.
 the_list = [5,6,10,13,17]
-print(the_list)
+print("the_list:", the_list)
 
 # Count number of items in list.
 count = 0
 for item in the_list:
     count = count + 1
-print("Number of items in list: ", count)
+print("count:", count)
 
 
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
+rows = data.split("\n")
 full_data = []
 
 for row in rows:
@@ -533,12 +539,12 @@ for row in rows:
 count = 0
 for row in full_data:
     count = count + 1
-print("Number of items in list: ", count)
+print("count:", count)
 ```
 
-    [5, 6, 10, 13, 17]
-    Number of items in list:  5
-    Number of items in list:  9293
+    the_list: [5, 6, 10, 13, 17]
+    count: 5
+    count: 9293
     
 
 ###16: Finding the number of columns
@@ -553,18 +559,18 @@ Set count equal to the number of columns in full_data.
 ```python
 # Create list of lists. Assume inner lists are the rows and number of columns is the number of items in any row.
 l = [[1,2,3],[3,4,5],[5,6,7]]
-print(l)
+print("l:", l)
 
 first_row = l[0]
 count = 0
 for column in first_row:
     count = count + 1
-print("Columns in first row: ", count)
+print("count:", count)
 
 
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
+rows = data.split("\n")
 full_data = []
 
 for row in rows:
@@ -575,12 +581,12 @@ first_row = full_data[0]
 count = 0
 for column in first_row:
     count = count + 1
-print("Columns in first row: ", count)
+print("count:", count)
 ```
 
-    [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
-    Columns in first row:  3
-    Columns in first row:  2
+    l: [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
+    count: 3
+    count: 2
     
 
 ###17: Practicing with booleans
@@ -594,50 +600,53 @@ Assign a boolean that evaluates to True to d. Assign a boolean that evaluates to
 
 ```python
 # Create boolean by comparing two values.
-print("Andre the Giant" == "Short")
-print("Andre the Giant" == "Andre the Giant")
+bool1 = "Andre the Giant" == "Short"
+print("bool1:", bool1)
+
+bool2 = "Andre the Giant" == "Andre the Giant"
+print("bool2:", bool2)
 
 # True and False are special python keywords of the boolean type.
-print(type(True))
-print(type(False))
+print("type(True):", type(True))
+print("type(False):", type(False))
 
 a = 10
 b = 5
 
 # False.
-print(a == b)
+print("a == b:", a == b)
 
 # True.
-print(a == 10)
+print("a == 10:", a == 10)
 
 # Assigning boolean to a variable.
 c = a == b
-print(c)
+print("c:", c)
 
 d = a == 10
-print(d)
+print("d:", d)
 
 e = b == 5
-print(e)
+print("e:", e)
 
 f = a == 9
-print(f)
+print("f:", f)
 
 g = b == 4
-print(g)
+print("g:", g)
 ```
 
-    False
-    True
-    <class 'bool'>
-    <class 'bool'>
-    False
-    True
-    False
-    True
-    True
-    False
-    False
+    bool1: False
+    bool2: True
+    type(True): <class 'bool'>
+    type(False): <class 'bool'>
+    a == b: False
+    a == 10: True
+    c: False
+    d: True
+    e: True
+    f: False
+    g: False
     
 
 ###18: Booleans with greater than
@@ -651,27 +660,27 @@ Write a boolean statement using the greater than sign (>) that evaluates to True
 
 ```python
 # Create boolean by comparing two values.
-print(5 > 4)
-print(4 > 5)
+print("5 > 4:", 5 > 4)
+print("4 > 5:", 4 > 5)
 
 # Assigning boolean to a variable.
 a = 5 > 4
-print(a)
-print(type(a))
+print("a:", a)
+print("type(a):", type(a))
 
 b = 10 > 8
-print(b)
+print("b:", b)
 
 c = 8 > 10
-print(c)
+print("c:", c)
 ```
 
-    True
-    False
-    True
-    <class 'bool'>
-    True
-    False
+    5 > 4: True
+    4 > 5: False
+    a: True
+    type(a): <class 'bool'>
+    b: True
+    c: False
     
 
 ###19: Booleans with less than
@@ -685,27 +694,27 @@ Write a boolean statement using the less than sign (<) that evaluates to True an
 
 ```python
 # Create boolean by comparing two values.
-print(4 < 5)
-print(5 < 4)
+print("4 < 5:", 4 < 5)
+print("5 < 4:", 5 < 4)
 
 # Assigning boolean to a variable.
 a = 4 < 5
-print(a)
-print(type(a))
+print("a:", a)
+print("type(a):", type(a))
 
 b = 3 < 5
-print(b)
+print("b:", b)
 
 c = 5 < 3
-print(c)
+print("c:", c)
 ```
 
-    True
-    False
-    True
-    <class 'bool'>
-    True
-    False
+    4 < 5: True
+    5 < 4: False
+    a: True
+    type(a): <class 'bool'>
+    b: True
+    c: False
     
 
 ###20: Using booleans in if statements
@@ -776,36 +785,36 @@ Write a for loop that prints out all of the items in the_list that are greater t
 
 ```python
 the_list = [5, 10, 15, 20]
-print(the_list)
+print("the_list:", the_list)
 
 # Count how many elements in the_list are greater than 10.
 count = 0
 for item in the_list:
     if item > 10:
         count = count + 1
-print(count)
+print("count:", count)
 
 a = 2
 # Print all of the elements in the_list if a > 1.
 if a > 1:
     for item in the_list:
-        print(item)
+        print("item:", item)
 
 # Print all of the elements in the_list if item > 5.
 for item in the_list:
     if item > 5:
-        print(item)
+        print("item:", item)
 ```
 
-    [5, 10, 15, 20]
-    2
-    5
-    10
-    15
-    20
-    10
-    15
-    20
+    the_list: [5, 10, 15, 20]
+    count: 2
+    item: 5
+    item: 10
+    item: 15
+    item: 20
+    item: 10
+    item: 15
+    item: 20
     
 
 ###23: Using if statements to find the smallest value
@@ -819,7 +828,7 @@ Set the smallest_item variable equal to the lowest value in the list a. Use a fo
 
 ```python
 the_list = [20,50,5,100]
-print(the_list)
+print("the_list:", the_list)
 
 # Set 'smallest_item' to a value that is bigger than anything in 'the_list'.
 smallest_item = 1000
@@ -828,25 +837,25 @@ for item in the_list:
     if item < smallest_item:
         # If it is, set smallest_item equal to its value.
         smallest_item = item
-print("Smallest item in list: ", smallest_item)
+print("smallest_item:", smallest_item)
 
 
 # Set smallest_item to a value that is bigger than anything in the_list.
 smallest_item = 1000
 
 a = [500,10,200,5,78,-1,-10,-100,567,890,400,34,-101,895]
-print(a)
+print("a:", a)
 
 for item in a:
     if item < smallest_item:
         smallest_item = item
-print("Smallest item in list: ", smallest_item)
+print("smallest_item:", smallest_item)
 ```
 
-    [20, 50, 5, 100]
-    Smallest item in list:  5
-    [500, 10, 200, 5, 78, -1, -10, -100, 567, 890, 400, 34, -101, 895]
-    Smallest item in list:  -101
+    the_list: [20, 50, 5, 100]
+    smallest_item: 5
+    a: [500, 10, 200, 5, 78, -1, -10, -100, 567, 890, 400, 34, -101, 895]
+    smallest_item: -101
     
 
 ###24: Converting types
@@ -863,13 +872,13 @@ Assign the integer value of c to c_int. Assign the integer value of d to d_int. 
 
 # Use the int() function to turn a string into an int.
 a = '5'
-print(a)
-print(type(a))
+print("a:", a)
+print("type(a):", type(a))
 
 # We can use the int function to parse it into the integer 5.
 b = int(a)
-print(b)
-print(type(b))
+print("b:", b)
+print("type(b):", type(b))
 
 c = '10'
 c_int = int(c)
@@ -881,10 +890,10 @@ e = '30'
 e_int = int(e)
 ```
 
-    5
-    <class 'str'>
-    5
-    <class 'int'>
+    a: 5
+    type(a): <class 'str'>
+    b: 5
+    type(b): <class 'int'>
     
 
 ###25: Converting a list to integers
@@ -899,7 +908,7 @@ Convert all the values in a into integers using a for loop. Append each integer 
 ```python
 # Use the 'int' function to convert values in a list to integers.
 the_list = ['1', '2', '3']
-print(the_list)
+print("the_list:", the_list)
 
 new_list = []
 # Loop through the_list.
@@ -908,22 +917,22 @@ for item in the_list:
     item_int = int(item)
     # Add the int item to the new list.
     new_list.append(item_int)
-print(new_list)
+print("new_list:", new_list)
 
 a = ['10', '15', '20', '35']
-print(a)
+print("a:", a)
 
 new_a = []
 for item in a:
     item_int = int(item)
     new_a.append(item_int)
-print(new_a)
+print("new_a:", new_a)
 ```
 
-    ['1', '2', '3']
-    [1, 2, 3]
-    ['10', '15', '20', '35']
-    [10, 15, 20, 35]
+    the_list: ['1', '2', '3']
+    new_list: [1, 2, 3]
+    a: ['10', '15', '20', '35']
+    new_a: [10, 15, 20, 35]
     
 
 ###26: Convert csv to integers
@@ -936,9 +945,9 @@ Insert code into the example that will turn the second value in split_row into a
 
 
 ```python
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
+rows = data.split("\n")
 
 # Convert crime rate to integer and store in full_data.
 full_data = []
@@ -947,10 +956,10 @@ for row in rows:
     if row:
         split_row[1] = int(split_row[1])
         full_data.append(split_row)
-print(full_data[:50])
+print("full_data[:50]:", full_data[:50])
 ```
 
-    [['Abbeville', 11], ['Adamsville', 19], ['Addison', 1], ['Alabaster', 44], ['Alexander City', 119], ['Aliceville', 7], ['Andalusia', 34], ['Anniston', 461], ['Arab', 32], ['Ardmore', 2], ['Arley', 3], ['Ashford', 2], ['Ashland', 9], ['Ashville', 10], ['Athens', 16], ['Atmore', 52], ['Auburn', 115], ['Bay Minette', 47], ['Bear Creek', 4], ['Bessemer', 527], ['Birmingham', 2852], ['Blountsville', 6], ['Brent', 16], ['Brewton', 47], ['Bridgeport', 13], ['Brilliant', 4], ['Butler', 6], ['Camp Hill', 22], ['Carbon Hill', 14], ['Cedar Bluff', 20], ['Centre', 21], ['Centreville', 0], ['Chickasaw', 53], ['Childersburg', 1], ['Citronelle', 22], ['Clanton', 52], ['Clayton', 8], ['Coaling', 10], ['Collinsville', 6], ['Cordova', 15], ['Creola', 10], ['Crossville', 0], ['Cullman', 31], ['Dadeville', 17], ['Daleville', 17], ['Daphne', 31], ['Dauphin Island', 4], ['Decatur', 149], ['Demopolis', 47], ['Dora', 21]]
+    full_data[:50]: [['Abbeville', 11], ['Adamsville', 19], ['Addison', 1], ['Alabaster', 44], ['Alexander City', 119], ['Aliceville', 7], ['Andalusia', 34], ['Anniston', 461], ['Arab', 32], ['Ardmore', 2], ['Arley', 3], ['Ashford', 2], ['Ashland', 9], ['Ashville', 10], ['Athens', 16], ['Atmore', 52], ['Auburn', 115], ['Bay Minette', 47], ['Bear Creek', 4], ['Bessemer', 527], ['Birmingham', 2852], ['Blountsville', 6], ['Brent', 16], ['Brewton', 47], ['Bridgeport', 13], ['Brilliant', 4], ['Butler', 6], ['Camp Hill', 22], ['Carbon Hill', 14], ['Cedar Bluff', 20], ['Centre', 21], ['Centreville', 0], ['Chickasaw', 53], ['Childersburg', 1], ['Citronelle', 22], ['Clanton', 52], ['Clayton', 8], ['Coaling', 10], ['Collinsville', 6], ['Cordova', 15], ['Creola', 10], ['Crossville', 0], ['Cullman', 31], ['Dadeville', 17], ['Daleville', 17], ['Daphne', 31], ['Dauphin Island', 4], ['Decatur', 149], ['Demopolis', 47], ['Dora', 21]]
     
 
 ###27: Finding the lowest crime rate
@@ -969,10 +978,10 @@ for row in full_data:
     crime_rate = row[1]
     if crime_rate < lowest_crime_rate:
         lowest_crime_rate = crime_rate
-print("Lowest crime rate: ", lowest_crime_rate)
+print("lowest_crime_rate:", lowest_crime_rate)
 ```
 
-    Lowest crime rate:  0
+    lowest_crime_rate: 0
     
 
 ###28: Searching a list
@@ -986,7 +995,7 @@ Search a for the number 78, and print "Yes" when it's found.
 
 ```python
 the_list = [5, 6, 7, 10, 50]
-print(the_list)
+print("the_list:", the_list)
 
 # Loop through 'the_list', if the list item equals 5, print out "Found".
 for item in the_list:
@@ -1000,7 +1009,7 @@ for item in a:
         print("Yes")
 ```
 
-    [5, 6, 7, 10, 50]
+    the_list: [5, 6, 7, 10, 50]
     Found
     Yes
     
@@ -1016,7 +1025,7 @@ Find the second element in the inner list whose first element is 7. You'll need 
 
 ```python
 lolist = [[1,5,7],[10,8,9],[7,10,11]]
-print(lolist)
+print("lolist:", lolist)
 
 # Get the first element of the inner list whose third element is 9.
 value = 0
@@ -1025,7 +1034,7 @@ for item in lolist:
     first_value = item[0]
     if last_value == 9:
         value = first_value     
-print(value)
+print("value:", value)
 
 
 # Get the second element in the inner list whose first element is 7.
@@ -1033,12 +1042,12 @@ value = 0
 for item in lolist:
     if item[0] == 7:
         value = item[1]  
-print(value)
+print("value:", value)
 ```
 
-    [[1, 5, 7], [10, 8, 9], [7, 10, 11]]
-    10
-    10
+    lolist: [[1, 5, 7], [10, 8, 9], [7, 10, 11]]
+    value: 10
+    value: 10
     
 
 ###30: Finding the answer!
@@ -1053,9 +1062,9 @@ Assign the city with the lowest crime rate to city.
 ```python
 # We know that the lowest crime rate is 0.
 # We need to find the corresponding value in the first column -- the city with the lowest crime rate.
-f = open('data/crime_rates.csv', 'r')
+f = open("data/crime_rates.csv", "r")
 data = f.read()
-rows = data.split('\n')
+rows = data.split("\n")
 
 full_data = []
 for row in rows:
@@ -1068,8 +1077,8 @@ city = ""
 for row in full_data:
     if row[1] == 0:
         city = row[0]
-print("City with lowest crime rate: ", city)
+print("city:", city)
 ```
 
-    City with lowest crime rate:  Sundance
+    city: Sundance
     

@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Python Programming
 
 ##Python Basics
@@ -58,14 +63,15 @@ Print the star_wars variable.
 
 ```python
 star_wars = []
-f = open("data/star_wars.txt", 'r')
+f = open("data/star_wars.txt", "r")
 star_wars = f.read()
 rows = star_wars.split('\n')
 
-print(star_wars[:500])
+print("star_wars[:500]:\n", star_wars[:500])
 ```
 
-    "character" "dialogue"
+    star_wars[:500]:
+     "character" "dialogue"
     "1" "THREEPIO" "Did you hear that?  They've shut down the main reactor.  We'll be destroyed for sure.  This is madness!"
     "2" "THREEPIO" "We're doomed!"
     "3" "THREEPIO" "There'll be no escape for the Princess this time."
@@ -96,7 +102,7 @@ a = 5
 b = -1
 
 # Print a multiplied by b.
-print(a * b)
+print("a * b:", a * b)
 
 # Anything enclosed in single or double quotes is a string.
 # Strings hold text.
@@ -117,7 +123,7 @@ i = "Strings are great."
 j = 5.1
 ```
 
-    -5
+    a * b: -5
     
 
 ###5: Checking the type of a variable
@@ -143,22 +149,22 @@ a = type(5)
 # We can also invoke functions on variables.
 b = "Dataquest is the best thing ever"
 # Note how when the type for b is printed, it is abbreviated to str.
-print(type(b))
+print("type(b):", type(b))
 
 c = type(10)
-print(c)
+print("c:", c)
 
 d = type("racecar")
-print(d)
+print("d:", d)
 
 e = type(10.6)
-print(e)
+print("e:", e)
 ```
 
-    <class 'str'>
-    <class 'int'>
-    <class 'str'>
-    <class 'float'>
+    type(b): <class 'str'>
+    c: <class 'int'>
+    d: <class 'str'>
+    e: <class 'float'>
     
 
 ###6: So, which character speaks the most?

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>ISaL_template</title>
+<title>MaC_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -196,7 +196,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="If-Statements-and-Loops">If Statements and Loops<a class="anchor-link" href="#If-Statements-and-Loops">&#182;</a></h2>
+<h2 id="Modules-and-Classes">Modules and Classes<a class="anchor-link" href="#Modules-and-Classes">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -205,7 +205,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1:-Opening-files">1: Opening files<a class="anchor-link" href="#1:-Opening-files">&#182;</a></h3>
+<h3 id="1:-Importing-and-using-modules">1: Importing and using modules<a class="anchor-link" href="#1:-Importing-and-using-modules">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -214,7 +214,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A counter is a map from values to their frequencies. If you initialize a counter with a string, you get a map from each letter to the number of times it appears. If two words are anagrams, they yield equal Counters, so you can use Counters to test anagrams in linear time.</p>
+<p>A module is a piece of code that someone else has already written.</p>
+<p>We can use modules to do common tasks -- they save us from having to write the code ourselves.</p>
+<p>To get access to a module, we have to use the import statement to import it.</p>
+<p>Once we import it, we can access the functions in a module using dot notation.</p>
 
 </div>
 </div>
@@ -233,7 +236,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Open the file called "crime_rates.csv" and store it in b.</p>
+<p>Assign the square root of 16 to a.</p>
+<p>Assign the ceiling of 111.3 to b.</p>
+<p>Assign the floor of 89.9 to c.</p>
 
 </div>
 </div>
@@ -243,21 +248,57 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Open the csv file with the open function and assign to &#39;b&#39;.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c"># The sqrt function in the math module will take the square root of a number.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;math.sqrt(9):&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+
+<span class="c"># The ceil function will round a number up.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;math.ceil(8.1):&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">8.1</span><span class="p">))</span>
+
+<span class="c"># And the floor function will round a number down.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;math.floor(11.9):&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">11.9</span><span class="p">))</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">111.3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">89.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>math.sqrt(9): 3.0
+math.ceil(8.1): 9
+math.floor(11.9): 11
+a: 4.0
+b: 112
+c: 89
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2:-CSV-files">2: CSV files<a class="anchor-link" href="#2:-CSV-files">&#182;</a></h3>
+<h3 id="2:-More-about-modules">2: More about modules<a class="anchor-link" href="#2:-More-about-modules">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -266,7 +307,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>crime_rates.csv stores the data on crime rates. This data will help us find the city with the lowest violent crime. We can use the .read() method to read the data in the file into a variable. Methods are different from functions in that they are associated with a specific object. We will get more into objects and classes later on, but for now, it is enough to know that methods act on objects, whereas functions are global, and unattached to any specific objects.</p>
+<p>We can also access other properties in modules.</p>
+<p>Some modules have variables defined inside them.</p>
+<p>Just like with functions, we can access them with the dot notation.</p>
+<p>Imagine a module as a street, with houses on that street being functions and variables.</p>
+<p>If you wanted to tell someone how to get to a house, you would first tell them how to get to the street.</p>
+<p>Then you would tell them to turn onto the street and stop at the house.</p>
+<p>Python is the same way -- it has to know how to get to a a function or variable before it can find it.</p>
+<p>If the function or variable is inside a module, Python needs directions to be told about the module first.</p>
 
 </div>
 </div>
@@ -285,7 +333,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Open the "crime_rates.csv" file and assign it to f. Then read the contents of f and assign them to b.</p>
+<p>Assign the square root of pi to a.</p>
+<p>Assign the ceiling of pi to b.</p>
+<p>Assign the floor of pi to c.</p>
 
 </div>
 </div>
@@ -295,10 +345,19 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Read the csv file.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b[:50]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c"># Multiply pi by 2.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;math.pi * 2:&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -311,12 +370,10 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>b[:50]:
- Abbeville,11
-Adamsville,19
-Addison,1
-Alabaster,44
-
+<pre>math.pi * 2: 6.283185307179586
+a: 1.7724538509055159
+b: 4
+c: 3
 </pre>
 </div>
 </div>
@@ -330,7 +387,7 @@ Alabaster,44
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3:-Making-a-list">3: Making a list<a class="anchor-link" href="#3:-Making-a-list">&#182;</a></h3>
+<h3 id="3:-An-easier-way-to-read-in-csv-files!">3: An easier way to read in csv files!<a class="anchor-link" href="#3:-An-easier-way-to-read-in-csv-files!">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -339,7 +396,7 @@ Alabaster,44
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can make a list by using square brackets. An empty list can be initialized by using []. We can also initialize lists with elements in them by doing something like [1,10,3]. Lists can contain any type of variable, including strings, floats, and integers.</p>
+<p>You may be happy to know that there is a much easier way to load csv files : the csv module!</p>
 
 </div>
 </div>
@@ -358,7 +415,7 @@ Alabaster,44
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Make a list d that contains all integer values. Make another list e containing all string values. Make a final list f containing all float values.</p>
+<p>Read in all of the data from "nfl.csv" into a List variable named nfl using the csv module.</p>
 
 </div>
 </div>
@@ -368,24 +425,13 @@ Alabaster,44
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Make an empty list</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">csv</span>
 
-<span class="c"># Can also initialize a list with values</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;I&#39;m a string in a list!&quot;</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/nfl.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+<span class="n">csvreader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">nfl</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csvreader</span><span class="p">)</span>
 
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d:&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="s">&quot;bye&quot;</span><span class="p">,</span> <span class="s">&quot;hi&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;e:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
-
-<span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.1</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;f:&quot;</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;nfl[:5]:&quot;</span><span class="p">,</span> <span class="n">nfl</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -398,11 +444,7 @@ Alabaster,44
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>b: [1, &quot;I&apos;m a string in a list!&quot;, 5.1]
-c: [1, 2, 3]
-d: [1, 2, 3]
-e: [&apos;hello&apos;, &apos;bye&apos;, &apos;hi&apos;]
-f: [5.1, 3.4, 10.5]
+<pre>nfl[:5]: [[&apos;2009&apos;, &apos;1&apos;, &apos;Pittsburgh Steelers&apos;, &apos;Tennessee Titans&apos;], [&apos;2009&apos;, &apos;1&apos;, &apos;Minnesota Vikings&apos;, &apos;Cleveland Browns&apos;], [&apos;2009&apos;, &apos;1&apos;, &apos;New York Giants&apos;, &apos;Washington Redskins&apos;], [&apos;2009&apos;, &apos;1&apos;, &apos;San Francisco 49ers&apos;, &apos;Arizona Cardinals&apos;], [&apos;2009&apos;, &apos;1&apos;, &apos;Seattle Seahawks&apos;, &apos;St. Louis Rams&apos;]]
 </pre>
 </div>
 </div>
@@ -416,7 +458,7 @@ f: [5.1, 3.4, 10.5]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4:-Indexing-a-list">4: Indexing a list<a class="anchor-link" href="#4:-Indexing-a-list">&#182;</a></h3>
+<h3 id="4:-Counting-how-many-times-a-team-won">4: Counting how many times a team won<a class="anchor-link" href="#4:-Counting-how-many-times-a-team-won">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -425,7 +467,9 @@ f: [5.1, 3.4, 10.5]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can get values from a list by using square brackets, along with an index. Python is a 0-indexed language, so we start counting at 0.</p>
+<p>Now that we can load in the .csv file, let's count up the wins for a team.</p>
+<p>Each row is the result of a single game.</p>
+<p>The first column is the year, the second column is the week (The NFL regular season is 17 weeks, and games are played each week), the third column is the winning team, and the last column is the losing team.</p>
 
 </div>
 </div>
@@ -444,7 +488,9 @@ f: [5.1, 3.4, 10.5]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the first element in c to the variable d, the second element in c to e, and the third element in c to f.</p>
+<p>Loop through the nfl data.</p>
+<p>Count up how many games the "New England Patriots" won from 2009-2013.</p>
+<p>Assign the count to patriots_wins. The count should be an integer.</p>
 
 </div>
 </div>
@@ -454,45 +500,24 @@ f: [5.1, 3.4, 10.5]
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Get values from lists by using an index.</span>
-<span class="n">sample_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Boris Yeltsin&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sample_list:&quot;</span><span class="p">,</span> <span class="n">sample_list</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">sample_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Mikhail Gorbachev&quot;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">]</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># The nfl data is loaded into the nfl variable.</span>
+<span class="n">patriots_wins</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;New England Patriots&quot;</span><span class="p">:</span>
+        <span class="n">patriots_wins</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>sample_list: [10, &apos;Boris Yeltsin&apos;, 50]
-b: 10
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5:-Splitting-a-CSV-file">5: Splitting a CSV file<a class="anchor-link" href="#5:-Splitting-a-CSV-file">&#182;</a></h3>
+<h3 id="5:-Making-a-function-to-count-wins">5: Making a function to count wins<a class="anchor-link" href="#5:-Making-a-function-to-count-wins">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -501,7 +526,30 @@ b: 10
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Remember how strings are also objects? Well, we can use the .split method to split strings. The .split method takes a character as input, and then turns a string into a list of strings.</p>
+<p>Great, we can count up the wins for a single team.</p>
+<p>Now let's make a function to count wins for any team we want.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function called nfl_wins that will take a team name, in the form of a string, as input.</p>
+<p>The function should output the number of wins the team had from 2009-2013, as an integer.</p>
+<p>Use the function to assign the number of wins by the "Dallas Cowboys" to cowboys_wins.</p>
+<p>Use the function to assign the number of wins by the "Atlanta Falcons" to falcons_wins.</p>
 
 </div>
 </div>
@@ -511,21 +559,19 @@ b: 10
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create string.</span>
-<span class="n">a_string</span> <span class="o">=</span> <span class="s">&quot;This</span><span class="se">\n</span><span class="s">is</span><span class="se">\n</span><span class="s">a</span><span class="se">\n</span><span class="s">string</span><span class="se">\n</span><span class="s">&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a_string:&quot;</span><span class="p">,</span> <span class="n">a_string</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># The nfl data is loaded into the nfl variable.</span>
+<span class="k">def</span> <span class="nf">nfl_wins</span><span class="p">(</span><span class="n">team</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">team</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
 
-<span class="c"># Split string into a list.</span>
-<span class="n">split_string</span> <span class="o">=</span> <span class="n">a_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;split_string:&quot;</span><span class="p">,</span> <span class="n">split_string</span><span class="p">)</span>
+<span class="n">cowboys_wins</span> <span class="o">=</span> <span class="n">nfl_wins</span><span class="p">(</span><span class="s">&quot;Dallas Cowboys&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;cowboys_wins:&quot;</span><span class="p">,</span> <span class="n">cowboys_wins</span><span class="p">)</span>
 
-<span class="c"># Create string.</span>
-<span class="n">string_two</span> <span class="o">=</span> <span class="s">&quot;How much wood</span><span class="se">\n</span><span class="s">can a woodchuck chuck</span><span class="se">\n</span><span class="s">if a woodchuck</span><span class="se">\n</span><span class="s">can chuck wood?&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;string_two:&quot;</span><span class="p">,</span> <span class="n">string_two</span><span class="p">)</span>
-
-<span class="c"># Split string into a list.</span>
-<span class="n">split_string_two</span> <span class="o">=</span> <span class="n">string_two</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;split_string_two:&quot;</span><span class="p">,</span> <span class="n">split_string_two</span><span class="p">)</span>
+<span class="n">falcons_wins</span> <span class="o">=</span> <span class="n">nfl_wins</span><span class="p">(</span><span class="s">&quot;Atlanta Falcons&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;falcons_wins:&quot;</span><span class="p">,</span> <span class="n">falcons_wins</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -538,17 +584,8 @@ b: 10
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a_string: This
-is
-a
-string
-
-split_string: [&apos;This&apos;, &apos;is&apos;, &apos;a&apos;, &apos;string&apos;, &apos;&apos;]
-string_two: How much wood
-can a woodchuck chuck
-if a woodchuck
-can chuck wood?
-split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;, &apos;if a woodchuck&apos;, &apos;can chuck wood?&apos;]
+<pre>cowboys_wins: 41
+falcons_wins: 49
 </pre>
 </div>
 </div>
@@ -556,6 +593,40 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6:-Using-boolean-statements-with-the-and-keyword">6: Using boolean statements with the and keyword<a class="anchor-link" href="#6:-Using-boolean-statements-with-the-and-keyword">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can use the and keyword in a boolean to check if multiple conditions are True.</p>
+
+<pre><code>a = 5
+b = 10
+a == 5 and b == 10
+
+</code></pre>
+<p>will evaluate to True.</p>
+<p>But</p>
+
+<pre><code>a = 5
+b = 10
+a == 5 and b == 11
+
+</code></pre>
+<p>will evaluate to False. and statements only evaluate to True if all of their elements evaluate to True individually.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -571,7 +642,8 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Read the "crime_rates.csv" file in, split it on the newline character (\n), and store the result in the rows variable.</p>
+<p>Assign a boolean that uses the and keyword and evaluates to True to a.</p>
+<p>Assign a boolean that uses the and keyword and evaluates to False to b.</p>
 
 </div>
 </div>
@@ -581,10 +653,22 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;rows[:50]:&quot;</span><span class="p">,</span> <span class="n">rows</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">its_raining</span> <span class="o">=</span> <span class="s">&quot;Yes&quot;</span>
+<span class="n">its_snowing</span> <span class="o">=</span> <span class="s">&quot;No&quot;</span>
+
+<span class="c"># Each statement is evaluated separately.</span>
+<span class="c"># If either of them is False on its own, then the whole statement is False.</span>
+<span class="n">logic1</span> <span class="o">=</span> <span class="n">its_raining</span> <span class="o">==</span> <span class="s">&quot;Yes&quot;</span> <span class="ow">and</span> <span class="n">its_snowing</span> <span class="o">==</span> <span class="s">&quot;Yes&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;logic1:&quot;</span><span class="p">,</span> <span class="n">logic1</span><span class="p">)</span>
+
+<span class="c"># If both evaluate to True, then the whole statement is True.</span>
+<span class="n">logic2</span> <span class="o">=</span> <span class="n">its_raining</span> <span class="o">==</span> <span class="s">&quot;Yes&quot;</span> <span class="ow">and</span> <span class="n">its_snowing</span> <span class="o">==</span> <span class="s">&quot;No&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;logic2:&quot;</span><span class="p">,</span> <span class="n">logic2</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">50</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">11</span> <span class="ow">and</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">50</span>
 </pre></div>
 
 </div>
@@ -597,7 +681,8 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>rows[:50]: [&apos;Abbeville,11&apos;, &apos;Adamsville,19&apos;, &apos;Addison,1&apos;, &apos;Alabaster,44&apos;, &apos;Alexander City,119&apos;, &apos;Aliceville,7&apos;, &apos;Andalusia,34&apos;, &apos;Anniston,461&apos;, &apos;Arab,32&apos;, &apos;Ardmore,2&apos;, &apos;Arley,3&apos;, &apos;Ashford,2&apos;, &apos;Ashland,9&apos;, &apos;Ashville,10&apos;, &apos;Athens,16&apos;, &apos;Atmore,52&apos;, &apos;Auburn,115&apos;, &apos;Bay Minette,47&apos;, &apos;Bear Creek,4&apos;, &apos;Bessemer,527&apos;, &apos;Birmingham,2852&apos;, &apos;Blountsville,6&apos;, &apos;Brent,16&apos;, &apos;Brewton,47&apos;, &apos;Bridgeport,13&apos;, &apos;Brilliant,4&apos;, &apos;Butler,6&apos;, &apos;Camp Hill,22&apos;, &apos;Carbon Hill,14&apos;, &apos;Cedar Bluff,20&apos;, &apos;Centre,21&apos;, &apos;Centreville,0&apos;, &apos;Chickasaw,53&apos;, &apos;Childersburg,1&apos;, &apos;Citronelle,22&apos;, &apos;Clanton,52&apos;, &apos;Clayton,8&apos;, &apos;Coaling,10&apos;, &apos;Collinsville,6&apos;, &apos;Cordova,15&apos;, &apos;Creola,10&apos;, &apos;Crossville,0&apos;, &apos;Cullman,31&apos;, &apos;Dadeville,17&apos;, &apos;Daleville,17&apos;, &apos;Daphne,31&apos;, &apos;Dauphin Island,4&apos;, &apos;Decatur,149&apos;, &apos;Demopolis,47&apos;, &apos;Dora,21&apos;]
+<pre>logic1: False
+logic2: True
 </pre>
 </div>
 </div>
@@ -611,7 +696,7 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6:-The-manual-way----doing-it-without-loops">6: The manual way -- doing it without loops<a class="anchor-link" href="#6:-The-manual-way----doing-it-without-loops">&#182;</a></h3>
+<h3 id="7:-Using-boolean-statements-with-the-or-keyword">7: Using boolean statements with the or keyword<a class="anchor-link" href="#7:-Using-boolean-statements-with-the-or-keyword">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -620,7 +705,22 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Before we make a loop, let's try doing a repetitive task without loops.</p>
+<p>We can use the or keyword in a boolean to check if any condition is True.</p>
+
+<pre><code>a = 5
+b = 10
+a == 5 or b == 5
+
+</code></pre>
+<p>will evaluate to True because a == 5.</p>
+<p>But</p>
+
+<pre><code>a = 5
+b = 10
+a == 6 or b == 11
+
+</code></pre>
+<p>will evaluate to False because both statements are False. or statements evaluate to True if any of their elements evaluate to True individually.</p>
 
 </div>
 </div>
@@ -639,7 +739,8 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Write separate print functions to print out the rest of the values in the list. Start at index 1, and go up to index 6.</p>
+<p>Assign a boolean that uses the or keyword and evaluates to True to a.</p>
+<p>Assign a boolean that uses the or keyword and evaluates to False to b.</p>
 
 </div>
 </div>
@@ -649,17 +750,21 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">current_president</span> <span class="o">=</span> <span class="s">&quot;Barack Obama&quot;</span>
 
-<span class="c"># Print list elements.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[0]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[1]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[2]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[3]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[4]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[5]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="c"># Each statement is evaluated separately.</span>
+<span class="c"># If either of them is True on its own, then the statement is True.</span>
+<span class="n">logic1</span> <span class="o">=</span> <span class="n">current_president</span> <span class="o">==</span> <span class="s">&quot;Barack Obama&quot;</span> <span class="ow">or</span> <span class="n">current_president</span> <span class="o">==</span> <span class="s">&quot;George Bush&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;logic1:&quot;</span><span class="p">,</span> <span class="n">logic1</span><span class="p">)</span>
+
+<span class="c"># If all of the statements evaluate to False, then the statement is False.</span>
+<span class="n">logic2</span> <span class="o">=</span> <span class="n">current_president</span> <span class="o">==</span> <span class="s">&quot;Eminem&quot;</span> <span class="ow">or</span> <span class="n">current_president</span> <span class="o">==</span> <span class="s">&quot;Kanye West&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;logic2:&quot;</span><span class="p">,</span> <span class="n">logic2</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">10</span> <span class="ow">or</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">50</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">11</span> <span class="ow">or</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">55</span>
 </pre></div>
 
 </div>
@@ -672,13 +777,8 @@ split_string_two: [&apos;How much wood&apos;, &apos;can a woodchuck chuck&apos;,
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [3, 5, 8, 10, 15, 17, 19]
-the_list[0]: 3
-the_list[1]: 5
-the_list[2]: 8
-the_list[3]: 10
-the_list[4]: 15
-the_list[5]: 17
+<pre>logic1: True
+logic2: False
 </pre>
 </div>
 </div>
@@ -692,7 +792,7 @@ the_list[5]: 17
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7:-Now-let's-add-loops-to-the-equation">7: Now let's add loops to the equation<a class="anchor-link" href="#7:-Now-let's-add-loops-to-the-equation">&#182;</a></h3>
+<h3 id="8:-Counting-wins-in-a-given-year">8: Counting wins in a given year<a class="anchor-link" href="#8:-Counting-wins-in-a-given-year">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -701,7 +801,7 @@ the_list[5]: 17
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can loop over lists using the for i in the_list: notation. The area inside the for loop is indented 4 spaces, and will be run once for every item in the list. The variable i will be assigned the value of each element of the list in turn.</p>
+<p>Let's make a function to count up the wins for a team for a single year.</p>
 
 </div>
 </div>
@@ -720,7 +820,12 @@ the_list[5]: 17
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Use a for loop to print all of the items in the_list.</p>
+<p>Modify the nfl_wins function so it will take a team name, in the form of a string, and a year, in the form of an string, as input.</p>
+<p>The only valid years are "2009", "2010", "2011", "2012", and "2013".</p>
+<p>Remember that the years are stored as strings in the data, so we also have to use strings for consistency.</p>
+<p>The function should output the number of wins the team had in the given year, as an integer.</p>
+<p>Use the function to assign the number of wins by the "Cleveland Browns" in 2010 to browns_2010_wins.</p>
+<p>Use the function to assign the number of wins by the "Philadelphia Eagles" in 2011 to eagles_2011_wins.</p>
 
 </div>
 </div>
@@ -730,17 +835,27 @@ the_list[5]: 17
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Loop over each item in a list.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;i:&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Modify this function to also take a year as input, and returns the wins by the team in the year.</span>
+<span class="k">def</span> <span class="nf">nfl_wins</span><span class="p">(</span><span class="n">team</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+        <span class="c"># We need to ensure that we only increment the count when the row pertains to the year we want.</span>
+        <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">team</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
 
-<span class="c"># Loop over each item in a list.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;i:&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">nfl_wins_in_a_year</span><span class="p">(</span><span class="n">team</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">team</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="n">browns_2010_wins</span> <span class="o">=</span> <span class="n">nfl_wins_in_a_year</span><span class="p">(</span><span class="s">&quot;Cleveland Browns&quot;</span><span class="p">,</span> <span class="s">&quot;2010&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;browns_2010_wins:&quot;</span><span class="p">,</span> <span class="n">browns_2010_wins</span><span class="p">)</span>
+
+<span class="n">eagles_2011_wins</span> <span class="o">=</span> <span class="n">nfl_wins_in_a_year</span><span class="p">(</span><span class="s">&quot;Philadelphia Eagles&quot;</span><span class="p">,</span> <span class="s">&quot;2011&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;eagles_2011_wins:&quot;</span><span class="p">,</span> <span class="n">eagles_2011_wins</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -753,18 +868,8 @@ the_list[5]: 17
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a: [5, 10, 15]
-i: 5
-i: 10
-i: 15
-the_list: [3, 5, 8, 10, 15, 17, 19]
-i: 3
-i: 5
-i: 8
-i: 10
-i: 15
-i: 17
-i: 19
+<pre>browns_2010_wins: 5
+eagles_2011_wins: 8
 </pre>
 </div>
 </div>
@@ -778,7 +883,7 @@ i: 19
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8:-Multiline-for-loops">8: Multiline for loops<a class="anchor-link" href="#8:-Multiline-for-loops">&#182;</a></h3>
+<h3 id="9:-Counting-wins-by-year">9: Counting wins by year<a class="anchor-link" href="#9:-Counting-wins-by-year">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -787,7 +892,8 @@ i: 19
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There can be multiple indented lines inside a for loop. The first line that isn't indented will mark the end of the loop.</p>
+<p>Now that we can count wins for a single team in a given year, we can make a function that counts up wins for a team by year.</p>
+<p>We'll use the function we worked with earlier to count wins by a team in a given year.</p>
 
 </div>
 </div>
@@ -806,7 +912,11 @@ i: 19
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Set the sum variable equal to the sum of all the values tripled.</p>
+<p>Make a new function that calls on the nfl_wins_by_year function to compute wins for each year from 2009 - 2013.</p>
+<p>Valid years are "2009", "2010", "2011", "2012", and "2013".</p>
+<p>The function should return a dictionary with the years as keys, and the number of wins in each year as values.</p>
+<p>Use the function to assign the number of wins by year by the "Miami Dolphins" to dolphins_wins_by_year.</p>
+<p>Use the function to assign the number of wins by year by the "San Diego Chargers" to chargers_wins_by_year.</p>
 
 </div>
 </div>
@@ -816,25 +926,26 @@ i: 19
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># We&#39;ll need to create a new function to returns wins for each year.</span>
+<span class="c"># It will call nfl_wins_by_year as part of its computations.</span>
+<span class="k">def</span> <span class="nf">nfl_wins_in_a_year</span><span class="p">(</span><span class="n">team</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">team</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
 
-<span class="c"># Loop over each list item and apply function.</span>
-<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="c"># Double the value of i.</span>
-    <span class="n">double_i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="c"># Add the doubled value to the sum.</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">double_i</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sum:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">nfl_wins_by_year</span><span class="p">(</span><span class="n">team</span><span class="p">):</span>
+    <span class="n">win_dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&quot;2009&quot;</span><span class="p">,</span> <span class="s">&quot;2010&quot;</span><span class="p">,</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span> <span class="s">&quot;2013&quot;</span><span class="p">]:</span>
+        <span class="n">win_dict</span><span class="p">[</span><span class="n">year</span><span class="p">]</span> <span class="o">=</span> <span class="n">nfl_wins_in_a_year</span><span class="p">(</span><span class="n">team</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">win_dict</span>
 
-<span class="c"># Loop over each list item and apply function.</span>
-<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="n">triple_i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">3</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">triple_i</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sum:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+<span class="n">dolphins_wins_by_year</span> <span class="o">=</span> <span class="n">nfl_wins_by_year</span><span class="p">(</span><span class="s">&quot;Miami Dolphins&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dolphins_wins_by_year:&quot;</span><span class="p">,</span> <span class="n">dolphins_wins_by_year</span><span class="p">)</span>
+
+<span class="n">chargers_wins_by_year</span> <span class="o">=</span> <span class="n">nfl_wins_by_year</span><span class="p">(</span><span class="s">&quot;San Diego Chargers&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;chargers_wins_by_year:&quot;</span><span class="p">,</span> <span class="n">chargers_wins_by_year</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -847,9 +958,8 @@ i: 19
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [3, 5, 8, 10, 15, 17, 19]
-sum: 154
-sum: 231
+<pre>dolphins_wins_by_year: {&apos;2009&apos;: 7, &apos;2011&apos;: 6, &apos;2013&apos;: 8, &apos;2010&apos;: 7, &apos;2012&apos;: 7}
+chargers_wins_by_year: {&apos;2009&apos;: 13, &apos;2011&apos;: 8, &apos;2013&apos;: 10, &apos;2010&apos;: 9, &apos;2012&apos;: 7}
 </pre>
 </div>
 </div>
@@ -863,7 +973,7 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="9:-For-loops-with-different-variable-names">9: For loops with different variable names<a class="anchor-link" href="#9:-For-loops-with-different-variable-names">&#182;</a></h3>
+<h3 id="10:-Intro-to-classes">10: Intro to classes<a class="anchor-link" href="#10:-Intro-to-classes">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -872,7 +982,10 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So far, we have been using for loops with the format for i in the_list. i is a special variable that will take on a different value every time through the loop. It takes on the value of each of the list elements in succession, starting from index 0. But we don't have to name the variable i. We can name it anything, as long as we refer to it inside the loop by the same name.</p>
+<p>Classes are a way to organize and structure code.</p>
+<p>We've already been using classes, they just haven't been presented as such.</p>
+<p>Strings in python are classes, and we can access class methods on them, such as .lower().</p>
+<p>Let's define a simple class.</p>
 
 </div>
 </div>
@@ -891,7 +1004,9 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Set the sum variable equal to the sum of all the values tripled. Use a name other than i for the loop variable.</p>
+<p>Make a class called Team.</p>
+<p>Give it a class property called name, with the value "Tampa Bay Buccaneers".</p>
+<p>Make an instance of the class, and assign it to the variable bucs.</p>
 
 </div>
 </div>
@@ -901,23 +1016,30 @@ sum: 231
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Classes are defined with the class keyword.</span>
+<span class="c"># The parentheses are used to denote which class this class inherits from.</span>
+<span class="k">class</span> <span class="nc">NFLTeam</span><span class="p">():</span>
+    <span class="c"># Classes can have class properties.</span>
+    <span class="c"># These properties can then be accessed later on.</span>
+    <span class="c"># Properties are just variables that are contained in a class.</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Pittsburgh Steelers&quot;</span>
 
-<span class="c"># Loop over each list item and apply function.</span>
-<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="n">double_value</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">double_value</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sum:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+<span class="c"># After we define a class, we create an instance of it.</span>
+<span class="n">steelers</span> <span class="o">=</span> <span class="n">NFLTeam</span><span class="p">()</span>
 
-<span class="c"># Loop over each list item and apply function.</span>
-<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="n">triple_value</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mi">3</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">triple_value</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sum:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+<span class="c"># We can access the class property.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;steelers.name:&quot;</span><span class="p">,</span> <span class="n">steelers</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="c"># The steelers variable is called an instance of the class.</span>
+<span class="c"># NFLTeam is the class.</span>
+<span class="c"># Because name is a class property, not an instance property, we can also access it directly.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;NFLTeam.name:&quot;</span><span class="p">,</span> <span class="n">NFLTeam</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Team</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Tampa Bay Buccaneers&quot;</span>
+
+<span class="n">bucs</span> <span class="o">=</span> <span class="n">Team</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;bucs.name:&quot;</span><span class="p">,</span> <span class="n">bucs</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -930,9 +1052,9 @@ sum: 231
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [3, 5, 8, 10, 15, 17, 19]
-sum: 154
-sum: 231
+<pre>steelers.name: Pittsburgh Steelers
+NFLTeam.name: Pittsburgh Steelers
+bucs.name: Tampa Bay Buccaneers
 </pre>
 </div>
 </div>
@@ -946,7 +1068,7 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="10:-Lists-of-lists">10: Lists of lists<a class="anchor-link" href="#10:-Lists-of-lists">&#182;</a></h3>
+<h3 id="11:-Initializing-a-class">11: Initializing a class<a class="anchor-link" href="#11:-Initializing-a-class">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -955,7 +1077,9 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can store integers, floats, and strings into lists. We can also store other lists. [[1,2,3], [4,5,6], [7,8,9]] is a valid list. When we index the outer list, we get an inner list as the result.</p>
+<p>When we instantiate a class (create an instance of it), we have a chance to run a special function.</p>
+<p>It's called the <strong>init</strong> function, and it runs every time a class is instantiated.</p>
+<p>We define functions inside our classes by indenting 4 spaces and then using the def keyword.</p>
 
 </div>
 </div>
@@ -974,7 +1098,9 @@ sum: 231
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the first element in the second inner list of lolists to the variable value_1_0. Assign the last element in the second inner list to value_1_2. Assign the first element in the third inner list to value_2_0. Assign the last element in the third inner list to value_2_2.</p>
+<p>Modify the Team class so that name is an instance property.</p>
+<p>Make an instance of the class, passing in the value "Tampa Bay Buccaneers" to the <strong>init</strong> function.</p>
+<p>Assign the instance to the variable bucs.</p>
 
 </div>
 </div>
@@ -984,35 +1110,32 @@ sum: 231
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create a list of lists.</span>
-<span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lolists:&quot;</span><span class="p">,</span> <span class="n">lolists</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Car</span><span class="p">():</span>
+    <span class="c"># The special __init__ function is run whenever a class is instantiated.</span>
+    <span class="c"># The init function can take arguments, but self is always the first one.</span>
+    <span class="c"># Self is a reference to the instance of the class.</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">car</span><span class="p">):</span>
+        <span class="c"># Using self before car means that car is an instance property.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">car</span> <span class="o">=</span> <span class="n">car</span>
 
-<span class="c"># Pull out the first element of the list, which is [1,2,3].</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="c"># When we instantiate the class, we pass in any arguments that the __init__ function needs.</span>
+<span class="c"># We skip the self argument.</span>
+<span class="n">accord</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s">&quot;Honda Accord&quot;</span><span class="p">)</span>
 
-<span class="c"># Since [1,2,3] is a list, it can also be indexed.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="c"># We set self.car in the __init__ function, but can print accord.car here.</span>
+<span class="c"># self is a reference to the instance of the class.</span>
+<span class="c"># It lets us interact with the class instance within the class.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;accord.car:&quot;</span><span class="p">,</span> <span class="n">accord</span><span class="o">.</span><span class="n">car</span><span class="p">)</span>
 
-<span class="n">list1</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;list1:&quot;</span><span class="p">,</span> <span class="n">list1</span><span class="p">)</span>
+<span class="c"># Instance properties are only available to instances, not to the classes.</span>
+<span class="c"># We couldn&#39;t print Car.car, for example.</span>
 
-<span class="n">value_1_0</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value_1_0:&quot;</span><span class="p">,</span> <span class="n">value_1_0</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Team</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 
-<span class="n">value_1_2</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value_1_2:&quot;</span><span class="p">,</span> <span class="n">value_1_2</span><span class="p">)</span>
-
-<span class="n">list2</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;list2:&quot;</span><span class="p">,</span> <span class="n">list2</span><span class="p">)</span>
-
-<span class="n">value_2_0</span> <span class="o">=</span> <span class="n">list2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value_2_0&quot;</span><span class="p">,</span> <span class="n">value_2_0</span><span class="p">)</span>
-
-<span class="n">value_2_2</span> <span class="o">=</span> <span class="n">list2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value_2_2:&quot;</span><span class="p">,</span> <span class="n">value_2_2</span><span class="p">)</span>
+<span class="n">bucs</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s">&quot;Tampa Bay Buccaneers&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;bucs.name:&quot;</span><span class="p">,</span> <span class="n">bucs</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1025,15 +1148,8 @@ sum: 231
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-a: [1, 2, 3]
-b: 1
-list1: [10, 15, 14]
-value_1_0: 10
-value_1_2: 14
-list2: [10.1, 8.7, 2.3]
-value_2_0 10.1
-value_2_2: 2.3
+<pre>accord.car: Honda Accord
+bucs.name: Tampa Bay Buccaneers
 </pre>
 </div>
 </div>
@@ -1047,7 +1163,7 @@ value_2_2: 2.3
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="11:-Skipping-the-assignment">11: Skipping the assignment<a class="anchor-link" href="#11:-Skipping-the-assignment">&#182;</a></h3>
+<h3 id="12:-Instance-methods">12: Instance methods<a class="anchor-link" href="#12:-Instance-methods">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1056,7 +1172,17 @@ value_2_2: 2.3
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When a statement or function returns a variable, we can directly manipulate it instead of assigning it to a variable first.</p>
+<p>Classes can have methods. Once example is the .lower() method that turns a string into a lowercase version.</p>
+<p>Methods are just functions that are contained within a class.</p>
+<p>Here's an example of a method:</p>
+
+<pre><code>class Car():
+    def __init__(self, miles_per_gallon):
+        self.mpg = miles_per_gallon
+
+    def get_gas_cost(self, miles):
+        total_gas = self.mpg * miles
+        return total_gas * 3.00</code></pre>
 
 </div>
 </div>
@@ -1075,7 +1201,10 @@ value_2_2: 2.3
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Set e equal to d times the first element in the third inner list of lolists.</p>
+<p>Add a method called count_total_wins to the Team class.</p>
+<p>The method should take no arguments (except self), and should return the number of games the team won from 2009-2013.</p>
+<p>Use the instance method to assign the number of wins by the "Denver Broncos" to broncos_wins.</p>
+<p>Use the instance method to assign the number of wins by the "Kansas City Chiefs" to chiefs_wins.</p>
 
 </div>
 </div>
@@ -1085,26 +1214,50 @@ value_2_2: 2.3
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create a list of lists.</span>
-<span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lolists:&quot;</span><span class="p">,</span> <span class="n">lolists</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Zoo</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">animals</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c"># Pull out the first element in the first list.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="c"># This is an instance method.</span>
+    <span class="c"># It can be invoked on any instance of this class.</span>
+    <span class="c"># Note that because it is an instance method, we still need to put in the self argument.</span>
+    <span class="k">def</span> <span class="nf">add_animal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">animal</span><span class="p">):</span>
+        <span class="c"># This will add the animal to the list of animals that the instance is storing.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">animal</span><span class="p">)</span>
 
-<span class="c"># Pull out the third element in the second list.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="c"># We start with no animals.</span>
+<span class="n">san_diego_zoo</span> <span class="o">=</span> <span class="n">Zoo</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;san_diego_zoo.animals:&quot;</span><span class="p">,</span> <span class="n">san_diego_zoo</span><span class="o">.</span><span class="n">animals</span><span class="p">)</span>
 
-<span class="c"># Directly do math with expressions.</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="c"># Then we get a panda!</span>
+<span class="n">san_diego_zoo</span><span class="o">.</span><span class="n">add_animal</span><span class="p">(</span><span class="s">&quot;panda&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;san_diego_zoo.animals:&quot;</span><span class="p">,</span> <span class="n">san_diego_zoo</span><span class="o">.</span><span class="n">animals</span><span class="p">)</span>
 
-<span class="c"># Directly do math with expressions.</span>
-<span class="n">d</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*</span> <span class="n">lolists</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;e:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<span class="c"># The we get an orca!</span>
+<span class="n">san_diego_zoo</span><span class="o">.</span><span class="n">add_animal</span><span class="p">(</span><span class="s">&quot;orca&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;san_diego_zoo.animals:&quot;</span><span class="p">,</span> <span class="n">san_diego_zoo</span><span class="o">.</span><span class="n">animals</span><span class="p">)</span>
+
+<span class="c"># The nfl data is loaded into the nfl variable.</span>
+<span class="k">class</span> <span class="nc">Team</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">count_total_wins</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">nfl</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">count</span>
+
+<span class="n">broncos</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s">&quot;Denver Broncos&quot;</span><span class="p">)</span>
+<span class="n">broncos_wins</span> <span class="o">=</span> <span class="n">broncos</span><span class="o">.</span><span class="n">count_total_wins</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;broncos.name:&quot;</span><span class="p">,</span> <span class="n">broncos</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;broncos_wins:&quot;</span><span class="p">,</span> <span class="n">broncos_wins</span><span class="p">)</span>
+
+<span class="n">chiefs</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s">&quot;Kansas City Chiefs&quot;</span><span class="p">)</span>
+<span class="n">chiefs_wins</span> <span class="o">=</span> <span class="n">chiefs</span><span class="o">.</span><span class="n">count_total_wins</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;chiefs.name:&quot;</span><span class="p">,</span> <span class="n">chiefs</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;chiefs_wins:&quot;</span><span class="p">,</span> <span class="n">chiefs_wins</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1117,11 +1270,13 @@ value_2_2: 2.3
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-a: 1
-b: 14
-c: 13
-e: 101.0
+<pre>san_diego_zoo.animals: []
+san_diego_zoo.animals: [&apos;panda&apos;]
+san_diego_zoo.animals: [&apos;panda&apos;, &apos;orca&apos;]
+broncos.name: Denver Broncos
+broncos_wins: 47
+chiefs.name: Kansas City Chiefs
+chiefs_wins: 34
 </pre>
 </div>
 </div>
@@ -1135,7 +1290,7 @@ e: 101.0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="12:-Looping-through-lists-of-lists">12: Looping through lists of lists<a class="anchor-link" href="#12:-Looping-through-lists-of-lists">&#182;</a></h3>
+<h3 id="13:-Adding-to-the-init-function">13: Adding to the init function<a class="anchor-link" href="#13:-Adding-to-the-init-function">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1144,7 +1299,7 @@ e: 101.0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When we loop through a list of lists, the loop variable will be a list at each iteration. We can do computation inside the loop and pull values out of the list with indexing.</p>
+<p>We read in the nfl data to the nfl variable automatically before, but we've removed it for this code cell.</p>
 
 </div>
 </div>
@@ -1163,7 +1318,10 @@ e: 101.0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Use a for loop to print the first element of each inner list.</p>
+<p>Add in code to read the csv nfl data to the <strong>init</strong> method.</p>
+<p>Store the nfl data in the self.nfl instance property.</p>
+<p>Then convert the count_total_wins function to use the self.nfl property.</p>
+<p>Use the instance method to assign the number of wins by the "Jacksonville Jaguars" to jaguars_wins.</p>
 
 </div>
 </div>
@@ -1173,16 +1331,26 @@ e: 101.0
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">lolists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.1</span><span class="p">,</span><span class="mf">8.7</span><span class="p">,</span><span class="mf">2.3</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lolists:&quot;</span><span class="p">,</span> <span class="n">lolists</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">csv</span>
+   
+<span class="k">class</span> <span class="nc">Team</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/nfl.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+        <span class="n">csvreader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nfl</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csvreader</span><span class="p">)</span>
 
-<span class="c"># Loop through and print inner lists.</span>
-<span class="k">for</span> <span class="n">inner_list</span> <span class="ow">in</span> <span class="n">lolists</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;inner_list:&quot;</span><span class="p">,</span> <span class="n">inner_list</span><span class="p">)</span>
-    
-<span class="c"># Loop through and print first element of each inner list.</span>
-<span class="k">for</span> <span class="n">inner_list</span> <span class="ow">in</span> <span class="n">lolists</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;inner_list[0]:&quot;</span><span class="p">,</span> <span class="n">inner_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">count_total_wins</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nfl</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">count</span>
+
+<span class="n">jaguars</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s">&quot;Jacksonville Jaguars&quot;</span><span class="p">)</span>
+<span class="n">jaguars_wins</span> <span class="o">=</span> <span class="n">jaguars</span><span class="o">.</span><span class="n">count_total_wins</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;jaguars_wins:&quot;</span><span class="p">,</span> <span class="n">jaguars_wins</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1195,13 +1363,7 @@ e: 101.0
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>lolists: [[1, 2, 3], [10, 15, 14], [10.1, 8.7, 2.3]]
-inner_list: [1, 2, 3]
-inner_list: [10, 15, 14]
-inner_list: [10.1, 8.7, 2.3]
-inner_list[0]: 1
-inner_list[0]: 10
-inner_list[0]: 10.1
+<pre>jaguars_wins: 26
 </pre>
 </div>
 </div>
@@ -1215,7 +1377,7 @@ inner_list[0]: 10.1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="13:-Adding-to-lists">13: Adding to lists<a class="anchor-link" href="#13:-Adding-to-lists">&#182;</a></h3>
+<h3 id="14:-Wins-by-year-method">14: Wins by year method<a class="anchor-link" href="#14:-Wins-by-year-method">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1224,7 +1386,7 @@ inner_list[0]: 10.1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can use the .append method to add to a list. list.append(10) will add the element 10 to the end of the list.</p>
+<p>Let's add the wins by year function that we created earlier to our class as a method.</p>
 
 </div>
 </div>
@@ -1243,7 +1405,10 @@ inner_list[0]: 10.1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Add 60 to the end of list c. Then add 70 to list c. c should end up with 4 items.</p>
+<p>Add a method to the Team class that computes wins by year for the team.</p>
+<p>The wins_by_year function should return a dictionary with each year from 2009-2013 as keys, and the number of wins in that year as values.</p>
+<p>Valid years are "2009", "2010", "2011", "2012", and "2013".</p>
+<p>Use the instance method to assign the number of wins by year by the "San Francisco 49ers" to niners_wins_by_year.</p>
 
 </div>
 </div>
@@ -1253,34 +1418,37 @@ inner_list[0]: 10.1
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create empty list.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">csv</span>
 
-<span class="c"># Append value to list.</span>
-<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Team</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/nfl.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+        <span class="n">csvreader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nfl</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csvreader</span><span class="p">)</span>
 
-<span class="c"># Create list with value.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">count_total_wins</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nfl</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">count</span>
 
-<span class="c"># Append value to list.</span>
-<span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">wins_by_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;2009&quot;</span><span class="p">,</span> <span class="s">&quot;2010&quot;</span><span class="p">,</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span> <span class="s">&quot;2013&quot;</span><span class="p">]</span>
+        <span class="n">wins</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nfl</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="ow">and</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">:</span>
+                    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">wins</span><span class="p">[</span><span class="n">year</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+        <span class="k">return</span> <span class="n">wins</span>
 
-<span class="n">old_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">niners</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s">&quot;San Francisco 49ers&quot;</span><span class="p">)</span>
+<span class="n">niners_wins_by_year</span> <span class="o">=</span> <span class="n">niners</span><span class="o">.</span><span class="n">wins_by_year</span><span class="p">()</span>
 
-<span class="c"># Use loop to append values to list.</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">old_list</span><span class="p">:</span>
-    <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;new_list:&quot;</span><span class="p">,</span> <span class="n">new_list</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]</span>
-<span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-<span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;niners_wins_by_year:&quot;</span><span class="p">,</span> <span class="n">niners_wins_by_year</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1293,1458 +1461,7 @@ inner_list[0]: 10.1
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a: []
-a: [10]
-b: [30]
-b: [30, 50]
-new_list: [1, 2, 5, 10]
-c: [20, 30, 60, 70]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="14:-Splitting-the-csv-file-into-columns">14: Splitting the csv file into columns<a class="anchor-link" href="#14:-Splitting-the-csv-file-into-columns">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>When we left off with parsing our csv file, we had split it into rows, but still had to split up the strings we were left with into columns. We can use the .split method, along with our newfound knowledge of for loops and lists of lists, to split up the file.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Split each string in the list rows and append the result to full_data. At the end, full_data will be a list of lists containing the rows and columns in the csv file. You'll need to use for loops to iterate.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># We can use the .split method, with a comma as an input, to split a string on a comma.</span>
-<span class="n">a_string</span> <span class="o">=</span> <span class="s">&quot;1,10,15,20&quot;</span>
-<span class="n">a_list</span> <span class="o">=</span> <span class="n">a_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a_list:&quot;</span><span class="p">,</span> <span class="n">a_list</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(a_list):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a_list</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a_list[0]:&quot;</span><span class="p">,</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-
-<span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-    <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-    <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;full_data[:50]:&quot;</span><span class="p">,</span> <span class="n">full_data</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>a_list: [&apos;1&apos;, &apos;10&apos;, &apos;15&apos;, &apos;20&apos;]
-type(a_list): &lt;class &apos;list&apos;&gt;
-a_list[0]: 1
-full_data[:50]: [[&apos;Abbeville&apos;, &apos;11&apos;], [&apos;Adamsville&apos;, &apos;19&apos;], [&apos;Addison&apos;, &apos;1&apos;], [&apos;Alabaster&apos;, &apos;44&apos;], [&apos;Alexander City&apos;, &apos;119&apos;], [&apos;Aliceville&apos;, &apos;7&apos;], [&apos;Andalusia&apos;, &apos;34&apos;], [&apos;Anniston&apos;, &apos;461&apos;], [&apos;Arab&apos;, &apos;32&apos;], [&apos;Ardmore&apos;, &apos;2&apos;], [&apos;Arley&apos;, &apos;3&apos;], [&apos;Ashford&apos;, &apos;2&apos;], [&apos;Ashland&apos;, &apos;9&apos;], [&apos;Ashville&apos;, &apos;10&apos;], [&apos;Athens&apos;, &apos;16&apos;], [&apos;Atmore&apos;, &apos;52&apos;], [&apos;Auburn&apos;, &apos;115&apos;], [&apos;Bay Minette&apos;, &apos;47&apos;], [&apos;Bear Creek&apos;, &apos;4&apos;], [&apos;Bessemer&apos;, &apos;527&apos;], [&apos;Birmingham&apos;, &apos;2852&apos;], [&apos;Blountsville&apos;, &apos;6&apos;], [&apos;Brent&apos;, &apos;16&apos;], [&apos;Brewton&apos;, &apos;47&apos;], [&apos;Bridgeport&apos;, &apos;13&apos;], [&apos;Brilliant&apos;, &apos;4&apos;], [&apos;Butler&apos;, &apos;6&apos;], [&apos;Camp Hill&apos;, &apos;22&apos;], [&apos;Carbon Hill&apos;, &apos;14&apos;], [&apos;Cedar Bluff&apos;, &apos;20&apos;], [&apos;Centre&apos;, &apos;21&apos;], [&apos;Centreville&apos;, &apos;0&apos;], [&apos;Chickasaw&apos;, &apos;53&apos;], [&apos;Childersburg&apos;, &apos;1&apos;], [&apos;Citronelle&apos;, &apos;22&apos;], [&apos;Clanton&apos;, &apos;52&apos;], [&apos;Clayton&apos;, &apos;8&apos;], [&apos;Coaling&apos;, &apos;10&apos;], [&apos;Collinsville&apos;, &apos;6&apos;], [&apos;Cordova&apos;, &apos;15&apos;], [&apos;Creola&apos;, &apos;10&apos;], [&apos;Crossville&apos;, &apos;0&apos;], [&apos;Cullman&apos;, &apos;31&apos;], [&apos;Dadeville&apos;, &apos;17&apos;], [&apos;Daleville&apos;, &apos;17&apos;], [&apos;Daphne&apos;, &apos;31&apos;], [&apos;Dauphin Island&apos;, &apos;4&apos;], [&apos;Decatur&apos;, &apos;149&apos;], [&apos;Demopolis&apos;, &apos;47&apos;], [&apos;Dora&apos;, &apos;21&apos;]]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="15:-Finding-the-number-of-rows">15: Finding the number of rows<a class="anchor-link" href="#15:-Finding-the-number-of-rows">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can iterate over the data to count up the number of rows.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Set count equal to the number of rows in full_data. You'll need to use a for loop.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-
-<span class="c"># Count number of items in list.</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-
-
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-    <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-    <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-    
-    
-<span class="c"># Count number of items in list.</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [5, 6, 10, 13, 17]
-count: 5
-count: 9293
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="16:-Finding-the-number-of-columns">16: Finding the number of columns<a class="anchor-link" href="#16:-Finding-the-number-of-columns">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we understand the table structure better, we can count up the number of columns.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Set count equal to the number of columns in full_data.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create list of lists. Assume inner lists are the rows and number of columns is the number of items in any row.</span>
-<span class="n">l</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;l:&quot;</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
-
-<span class="n">first_row</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">first_row</span><span class="p">:</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-
-
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-    <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-    <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-    
-<span class="n">first_row</span> <span class="o">=</span> <span class="n">full_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">first_row</span><span class="p">:</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>l: [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
-count: 3
-count: 2
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="17:-Practicing-with-booleans">17: Practicing with booleans<a class="anchor-link" href="#17:-Practicing-with-booleans">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Booleans can be used to compare equality and return True or False. Let's practice a bit with creating booleans.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign a boolean that evaluates to True to d. Assign a boolean that evaluates to True to e. Assign a boolean that evaluates to False to f. Assign a boolean that evaluates to False to g.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="n">bool1</span> <span class="o">=</span> <span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Short&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;bool1:&quot;</span><span class="p">,</span> <span class="n">bool1</span><span class="p">)</span>
-
-<span class="n">bool2</span> <span class="o">=</span> <span class="s">&quot;Andre the Giant&quot;</span> <span class="o">==</span> <span class="s">&quot;Andre the Giant&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;bool2:&quot;</span><span class="p">,</span> <span class="n">bool2</span><span class="p">)</span>
-
-<span class="c"># True and False are special python keywords of the boolean type.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(True):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="k">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(False):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="k">False</span><span class="p">))</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="c"># False.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a == b:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="c"># True.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a == 10:&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span>
-
-<span class="c"># Assigning boolean to a variable.</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d:&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">5</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;e:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
-
-<span class="n">f</span> <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">9</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;f:&quot;</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-
-<span class="n">g</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;g:&quot;</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>bool1: False
-bool2: True
-type(True): &lt;class &apos;bool&apos;&gt;
-type(False): &lt;class &apos;bool&apos;&gt;
-a == b: False
-a == 10: True
-c: False
-d: True
-e: True
-f: False
-g: False
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="18:-Booleans-with-greater-than">18: Booleans with greater than<a class="anchor-link" href="#18:-Booleans-with-greater-than">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also use the greater than sign with booleans Saying 5 &gt; 4 will evaluate to True, and 4 &gt; 5 will be False.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write a boolean statement using the greater than sign (&gt;) that evaluates to True and assign it to b. Write a boolean statement using the greater than sign that evaluates to False and assign it to c.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;5 &gt; 4:&quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;4 &gt; 5:&quot;</span><span class="p">,</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span>
-
-<span class="c"># Assigning boolean to a variable.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(a):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">8</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>5 &gt; 4: True
-4 &gt; 5: False
-a: True
-type(a): &lt;class &apos;bool&apos;&gt;
-b: True
-c: False
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="19:-Booleans-with-less-than">19: Booleans with less than<a class="anchor-link" href="#19:-Booleans-with-less-than">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also use the less than sign with booleans Saying 5 &lt; 4 will evaluate to False, and 4 &lt; 5 will be True.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write a boolean statement using the less than sign (&lt;) that evaluates to True and assign it to b. Write a boolean statement using the less than sign that evaluates to False and assign it to c.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create boolean by comparing two values.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;4 &lt; 5:&quot;</span><span class="p">,</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;5 &lt; 4:&quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
-
-<span class="c"># Assigning boolean to a variable.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(a):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4 &lt; 5: True
-5 &lt; 4: False
-a: True
-type(a): &lt;class &apos;bool&apos;&gt;
-b: True
-c: False
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="20:-Using-booleans-in-if-statements">20: Using booleans in if statements<a class="anchor-link" href="#20:-Using-booleans-in-if-statements">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You can use booleans to control when certain code gets executed. When the statement after the if statement is True, then the code runs. Otherwise, it doesn't.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write an if statement whose boolean statement evaluates to True and prints out "Hello world!".</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
-<span class="k">if</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Success!&quot;</span><span class="p">)</span>
-
-<span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
-<span class="k">if</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;No success!&quot;</span><span class="p">)</span>
-    
-<span class="k">if</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Success!
-Hello world!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="21:-If-statement-with-variables">21: If statement with variables<a class="anchor-link" href="#21:-If-statement-with-variables">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also use if statements with booleans that contain variables. if a == 5: will evaluate to True, and run the code inside the if statement.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write an if statement whose boolean statement contains c and evaluates to True. The if statement should print out "Much success!"</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">15</span>
-
-<span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
-<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Success!&quot;</span><span class="p">)</span>
-
-<span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
-<span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;No success!&quot;</span><span class="p">)</span>
-
-<span class="c"># Create &#39;if&#39; statement based on boolean by comparing two values.</span>
-<span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">15</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Much success!&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Success!
-Much success!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="22:-If-statements-and-for-loops,-together-at-last!">22: If statements and for loops, together at last!<a class="anchor-link" href="#22:-If-statements-and-for-loops,-together-at-last!">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also use if statements inside for loops (or vice versa). When this happens, we need to indent everything in the inner block another 4 spaces.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write a for loop that prints out all of the items in the_list that are greater than 5.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-
-<span class="c"># Count how many elements in the_list are greater than 10.</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="c"># Print all of the elements in the_list if a &gt; 1.</span>
-<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;item:&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-
-<span class="c"># Print all of the elements in the_list if item &gt; 5.</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;item:&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [5, 10, 15, 20]
-count: 2
-item: 5
-item: 10
-item: 15
-item: 20
-item: 10
-item: 15
-item: 20
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="23:-Using-if-statements-to-find-the-smallest-value">23: Using if statements to find the smallest value<a class="anchor-link" href="#23:-Using-if-statements-to-find-the-smallest-value">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we know how we can combine if statements and for loops, we can learn how to use for loops to find minimum values.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Set the smallest_item variable equal to the lowest value in the list a. Use a for loop to iterate through a.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-
-<span class="c"># Set &#39;smallest_item&#39; to a value that is bigger than anything in &#39;the_list&#39;.</span>
-<span class="n">smallest_item</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="c"># Check if each item is less than smallest_item.</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">smallest_item</span><span class="p">:</span>
-        <span class="c"># If it is, set smallest_item equal to its value.</span>
-        <span class="n">smallest_item</span> <span class="o">=</span> <span class="n">item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;smallest_item:&quot;</span><span class="p">,</span> <span class="n">smallest_item</span><span class="p">)</span>
-
-
-<span class="c"># Set smallest_item to a value that is bigger than anything in the_list.</span>
-<span class="n">smallest_item</span> <span class="o">=</span> <span class="mi">1000</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">567</span><span class="p">,</span><span class="mi">890</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="o">-</span><span class="mi">101</span><span class="p">,</span><span class="mi">895</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">smallest_item</span><span class="p">:</span>
-        <span class="n">smallest_item</span> <span class="o">=</span> <span class="n">item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;smallest_item:&quot;</span><span class="p">,</span> <span class="n">smallest_item</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [20, 50, 5, 100]
-smallest_item: 5
-a: [500, 10, 200, 5, 78, -1, -10, -100, 567, 890, 400, 34, -101, 895]
-smallest_item: -101
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="24:-Converting-types">24: Converting types<a class="anchor-link" href="#24:-Converting-types">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can convert between different data types. The int() function will convert an object to an integer.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the integer value of c to c_int. Assign the integer value of d to d_int. Assign the integer value of e to e_int.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># There&#39;s one problem with our parsed CSV file -- because we parsed it from a string, all of the values are stored as strings.</span>
-
-<span class="c"># Use the int() function to turn a string into an int.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="s">&#39;5&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(a):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="c"># We can use the int function to parse it into the integer 5.</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(b):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="s">&#39;10&#39;</span>
-<span class="n">c_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="s">&#39;20&#39;</span>
-<span class="n">d_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="s">&#39;30&#39;</span>
-<span class="n">e_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>a: 5
-type(a): &lt;class &apos;str&apos;&gt;
-b: 5
-type(b): &lt;class &apos;int&apos;&gt;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="25:-Converting-a-list-to-integers">25: Converting a list to integers<a class="anchor-link" href="#25:-Converting-a-list-to-integers">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, let's convert a list into integers.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Convert all the values in a into integers using a for loop. Append each integer to new_a.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Use the &#39;int&#39; function to convert values in a list to integers.</span>
-<span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-
-<span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="c"># Loop through the_list.</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="c"># Get the int value of the item in the list.</span>
-    <span class="n">item_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-    <span class="c"># Add the int item to the new list.</span>
-    <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;new_list:&quot;</span><span class="p">,</span> <span class="n">new_list</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10&#39;</span><span class="p">,</span> <span class="s">&#39;15&#39;</span><span class="p">,</span> <span class="s">&#39;20&#39;</span><span class="p">,</span> <span class="s">&#39;35&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">new_a</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="n">item_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-    <span class="n">new_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;new_a:&quot;</span><span class="p">,</span> <span class="n">new_a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [&apos;1&apos;, &apos;2&apos;, &apos;3&apos;]
-new_list: [1, 2, 3]
-a: [&apos;10&apos;, &apos;15&apos;, &apos;20&apos;, &apos;35&apos;]
-new_a: [10, 15, 20, 35]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="26:-Convert-csv-to-integers">26: Convert csv to integers<a class="anchor-link" href="#26:-Convert-csv-to-integers">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's convert our crime rate column to integers while we are reading it in. In order to do this, we'll need to convert the values in the second column to integers after splitting the rows.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Insert code into the example that will turn the second value in split_row into an integer.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-
-<span class="c"># Convert crime rate to integer and store in full_data.</span>
-<span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-    <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">row</span><span class="p">:</span>
-        <span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-        <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;full_data[:50]:&quot;</span><span class="p">,</span> <span class="n">full_data</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>full_data[:50]: [[&apos;Abbeville&apos;, 11], [&apos;Adamsville&apos;, 19], [&apos;Addison&apos;, 1], [&apos;Alabaster&apos;, 44], [&apos;Alexander City&apos;, 119], [&apos;Aliceville&apos;, 7], [&apos;Andalusia&apos;, 34], [&apos;Anniston&apos;, 461], [&apos;Arab&apos;, 32], [&apos;Ardmore&apos;, 2], [&apos;Arley&apos;, 3], [&apos;Ashford&apos;, 2], [&apos;Ashland&apos;, 9], [&apos;Ashville&apos;, 10], [&apos;Athens&apos;, 16], [&apos;Atmore&apos;, 52], [&apos;Auburn&apos;, 115], [&apos;Bay Minette&apos;, 47], [&apos;Bear Creek&apos;, 4], [&apos;Bessemer&apos;, 527], [&apos;Birmingham&apos;, 2852], [&apos;Blountsville&apos;, 6], [&apos;Brent&apos;, 16], [&apos;Brewton&apos;, 47], [&apos;Bridgeport&apos;, 13], [&apos;Brilliant&apos;, 4], [&apos;Butler&apos;, 6], [&apos;Camp Hill&apos;, 22], [&apos;Carbon Hill&apos;, 14], [&apos;Cedar Bluff&apos;, 20], [&apos;Centre&apos;, 21], [&apos;Centreville&apos;, 0], [&apos;Chickasaw&apos;, 53], [&apos;Childersburg&apos;, 1], [&apos;Citronelle&apos;, 22], [&apos;Clanton&apos;, 52], [&apos;Clayton&apos;, 8], [&apos;Coaling&apos;, 10], [&apos;Collinsville&apos;, 6], [&apos;Cordova&apos;, 15], [&apos;Creola&apos;, 10], [&apos;Crossville&apos;, 0], [&apos;Cullman&apos;, 31], [&apos;Dadeville&apos;, 17], [&apos;Daleville&apos;, 17], [&apos;Daphne&apos;, 31], [&apos;Dauphin Island&apos;, 4], [&apos;Decatur&apos;, 149], [&apos;Demopolis&apos;, 47], [&apos;Dora&apos;, 21]]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="27:-Finding-the-lowest-crime-rate">27: Finding the lowest crime rate<a class="anchor-link" href="#27:-Finding-the-lowest-crime-rate">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We now know enough to find the lowest crime rate. We can scan through the list, and check if there is a lower crime rate in it.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Set lowest_crime_rate to the lowest crime rate in full_data. Use for loops and if statements like we did in the last screen. You'll also need to the index the second item in each row inside the loop.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Find city with lowest crime rate.</span>
-<span class="n">lowest_crime_rate</span> <span class="o">=</span> <span class="mi">10000</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
-    <span class="n">crime_rate</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">crime_rate</span> <span class="o">&lt;</span> <span class="n">lowest_crime_rate</span><span class="p">:</span>
-        <span class="n">lowest_crime_rate</span> <span class="o">=</span> <span class="n">crime_rate</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowest_crime_rate:&quot;</span><span class="p">,</span> <span class="n">lowest_crime_rate</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>lowest_crime_rate: 0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="28:-Searching-a-list">28: Searching a list<a class="anchor-link" href="#28:-Searching-a-list">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can search a list for a value. We can do this by looping through the list, and then using an if statement.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Search a for the number 78, and print "Yes" when it's found.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
-
-<span class="c"># Loop through &#39;the_list&#39;, if the list item equals 5, print out &quot;Found&quot;.</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Found&quot;</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">567</span><span class="p">,</span><span class="mi">890</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="o">-</span><span class="mi">101</span><span class="p">,</span><span class="mi">895</span><span class="p">]</span>
-<span class="c"># Loop through &#39;a&#39;, if the list item equals 78, print out &quot;Yes&quot;.</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="mi">78</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Yes&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>the_list: [5, 6, 7, 10, 50]
-Found
-Yes
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="29:-Searching-a-list-of-lists">29: Searching a list of lists<a class="anchor-link" href="#29:-Searching-a-list-of-lists">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Just like we can search through a list, we can search through a list of lists.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Find the second element in the inner list whose first element is 7. You'll need to search through lolist to do it. Assign the answer to the value variable.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">lolist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lolist:&quot;</span><span class="p">,</span> <span class="n">lolist</span><span class="p">)</span>
-
-<span class="c"># Get the first element of the inner list whose third element is 9.</span>
-<span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lolist</span><span class="p">:</span>
-    <span class="n">last_value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-    <span class="n">first_value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">last_value</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">first_value</span>     
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-
-
-<span class="c"># Get the second element in the inner list whose first element is 7.</span>
-<span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lolist</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>lolist: [[1, 5, 7], [10, 8, 9], [7, 10, 11]]
-value: 10
-value: 10
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="30:-Finding-the-answer!">30: Finding the answer!<a class="anchor-link" href="#30:-Finding-the-answer!">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We know the lowest crime rate, and we know how to search through lists. Let's combine the knowledge to find out the city with the lowest crime rate.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the city with the lowest crime rate to city.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># We know that the lowest crime rate is 0.</span>
-<span class="c"># We need to find the corresponding value in the first column -- the city with the lowest crime rate.</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/crime_rates.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-
-<span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-    <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">row</span><span class="p">:</span>
-        <span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">split_row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-        <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-
-<span class="n">city</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">full_data</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">city</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;city:&quot;</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>city: Sundance
+<pre>niners_wins_by_year: {&apos;2009&apos;: 8, &apos;2011&apos;: 13, &apos;2013&apos;: 14, &apos;2010&apos;: 6, &apos;2012&apos;: 12}
 </pre>
 </div>
 </div>

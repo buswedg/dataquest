@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>FD_template</title>
+<title>FaD_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -169,6 +169,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -201,6 +214,15 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The story is stored in the "story.txt" file. Open the file and read the contents into the story variable.</p>
 
 </div>
@@ -211,12 +233,40 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Load the story stored in the file &quot;story.txt&quot;.</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Load the story stored in the file &quot;story.txt&quot;.</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
 <span class="n">story</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;story:&quot;</span><span class="p">,</span> <span class="n">story</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>story: There was once a great and noble frmer named Julius.  He was the best farmer in his village, and prabably even the whole world.  One day, he decidid to grw potatoes.
+
+Julius knew that potatoes were hard to grow, so he kniw he hd to goe to the magic farmer in the sky to seek his guidance.  Julius set out on his journey aroudn noon one day.  It started raining almosty immediately.
+
+Julius wondered if this was a sign that he shouldn&apos;t go on, but he perserved.  He became soaked, and stoped in the store to buy an umbrella.  He told the storekeeper, Reggie, about his journey.
+
+Reggie told him that he was crzy to seek out the magic farmer; the last 10 people to try to find him had never come back.  Julius was undetered and decided to keep going.
+
+He travelled many long days in alternatng searing heat and freezing cold.  At night, he curled into a ball and tried to sleep underneath trees along the roadside.
+
+After mich anguish, Julius found the magic farmer, who gave him the secret of growing potatoes.
+
+Julius came back to the village, and managed to grow the finest crop the village had ever seen.  Everyone had potatoes to eat for months, and sang Julius&apos;s praises.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -235,23 +285,43 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We now have to tokenize the file. Tokenizing is the process of splitting the file into individual words. For now, we'll split the file up based on whitespace (the space character).</p>
-<p>The story is loaded into the story variable. Tokenize the story, and store the tokens into the tokenized_story variable.</p>
+<p>We now have to tokenize the file. Tokenizing sounds complicated, but its just the process of splitting the file into individual words.</p>
+<p>We can get fancy with this, but for now, we'll just split the file up based on whitespace (the space character).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The story is loaded into the story variable.</p>
+<p>Tokenize the story, and store the tokens into the tokenized_story variable.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Split strings into lists with the .split() method.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Split strings into lists with the .split() method.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;Bears are probably better than sharks, but I can&#39;t get close enough to one to be sure.&quot;</span>
 <span class="n">tokenized_text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 <span class="n">tokenized_story</span> <span class="o">=</span> <span class="n">story</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="s">&quot;Raw: &quot;</span><span class="p">,</span> <span class="n">tokenized_story</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;tokenized_story:&quot;</span><span class="p">,</span> <span class="n">tokenized_story</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -264,7 +334,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Raw:  [&apos;There\nwas\nonce\na\ngreat\nand\nnoble\nfrmer\nnamed\nJulius.\nHe\nwas\nthe\nbest\nfarmer\nin\nhis\nvillage,\nand\nprabably\neven\nthe\nwhole\nworld.\nOne\nday,\nhe\ndecidid\nto\ngrw\npotatoes.\nJulius\nknew\nthat\npotatoes\nwere\nhard\nto\ngrow,\nso\nhe\nkniw\nhe\nhd\nto\ngoe\nto\nthe\nmagic\nfarmer\nin\nthe\nsky\nto\nseek\nhis\nguidance.\nJulius\nset\nout\non\nhis\njourney\naroudn\nnoon\none\nday.\nIt\nstarted\nraining\nalmosty\nimmediately.\nt\ngo\non,\nbut\nhe\nperserved.\nHe\nbecame\nsoaked,\nand\nstoped\nin\nthe\nstore\nto\nbuy\nan\numbrella.\nHe\ntold\nthe\nstorekeeper,\nReggie,\nabout\nhis\njourney.&quot;,\n,\n,\n,\n,\n,\n,\n,\n&quot;\nJulius\ncame\nback\nto\nthe\nvillage,\nand\nmanaged\nto\ngrow\nthe\nfinest\ncrop\nthe\nvillage\nhad\never\nseen.\nEveryone\nhad\npotatoes\nto\neat\nfor\nmonths,\nand\nsang\nJulius\&apos;s\npraises.\n&apos;]
+<pre>tokenized_story: [&apos;There&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;Julius.&apos;, &apos;&apos;, &apos;He&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village,&apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world.&apos;, &apos;&apos;, &apos;One&apos;, &apos;day,&apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoes.\n\nJulius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow,&apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance.&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day.&apos;, &apos;&apos;, &apos;It&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediately.\n\nJulius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &quot;shouldn&apos;t&quot;, &apos;go&apos;, &apos;on,&apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved.&apos;, &apos;&apos;, &apos;He&apos;, &apos;became&apos;, &apos;soaked,&apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella.&apos;, &apos;&apos;, &apos;He&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper,&apos;, &apos;Reggie,&apos;, &apos;about&apos;, &apos;his&apos;, &apos;journey.\n\nReggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer;&apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back.&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;going.\n\nHe&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold.&apos;, &apos;&apos;, &apos;At&apos;, &apos;night,&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadside.\n\nAfter&apos;, &apos;mich&apos;, &apos;anguish,&apos;, &apos;Julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer,&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoes.\n\nJulius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village,&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen.&apos;, &apos;&apos;, &apos;Everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months,&apos;, &apos;and&apos;, &apos;sang&apos;, &quot;Julius&apos;s&quot;, &apos;praises.&apos;]
 </pre>
 </div>
 </div>
@@ -287,9 +357,35 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In order to spell check our words, we'll be comparing the words in the story to a dictionary. If the word is in the dictionary, it will be correct. If it isn't, it will be incorrect.</p>
+<p>In order to spell check our words, we'll be comparing the words in the story to a dictionary.</p>
+<p>If the word is in the dictionary, it will be correct.</p>
+<p>If it isn't, it will be incorrect.</p>
+<p>Simple, but it will be effective in this situation.</p>
 <p>In order to ensure that words that have apostrophes, commas, or other punctuation don't get falsely marked as incorrect, we need to remove all punctuation.</p>
-<p>The story has been loaded into tokenized_story. Replace all of the punctuation in each of the tokens. You'll need to loop through tokenized_story to do so. You'll need to use multiple replace statements, one for each punctuation character to replace. Append the token to no_punctuation_tokens once you are done replacing characters.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The story has been loaded into tokenized_story.</p>
+<p>Replace all of the punctuation in each of the tokens.</p>
+<p>You'll need to loop through tokenized_story to do so.</p>
+<p>You'll need to use multiple replace statements, one for each punctuation character to replace.</p>
+<p>Append the token to no_punctuation_tokens once you are done replacing characters.</p>
+<p>Don't forget to remove newlines!</p>
 <p>Print out no_punctuation_tokens if you want to see which types of punctuation are still in the data.</p>
 
 </div>
@@ -297,28 +393,27 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Use the .replace function to replace punctuation in a string.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Use the .replace function to replace punctuation in a string.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;Who really shot John F. Kennedy?&quot;</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;?&quot;</span><span class="p">,</span> <span class="s">&quot;?!&quot;</span><span class="p">)</span>
-<span class="c">#print text</span>
+<span class="c">#print(text)</span>
 
 <span class="c"># Replace strings with blank spaces in order to remove them.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;?&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-<span class="c">#print text</span>
+<span class="c">#print(text)</span>
 
 <span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-    
-<span class="k">print</span> <span class="s">&quot;No punctuations: &quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;no_punctuation_tokens:&quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -331,7 +426,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>No punctuations:  [&apos;TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney&quot;&quot;JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises&apos;]
+<pre>no_punctuation_tokens: [&apos;There&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;Julius&apos;, &apos;&apos;, &apos;He&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village&apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world&apos;, &apos;&apos;, &apos;One&apos;, &apos;day&apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoesJulius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day&apos;, &apos;&apos;, &apos;It&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediatelyJulius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;shouldnt&apos;, &apos;go&apos;, &apos;on&apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved&apos;, &apos;&apos;, &apos;He&apos;, &apos;became&apos;, &apos;soaked&apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella&apos;, &apos;&apos;, &apos;He&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper&apos;, &apos;Reggie&apos;, &apos;about&apos;, &apos;his&apos;, &apos;journeyReggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;goingHe&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold&apos;, &apos;&apos;, &apos;At&apos;, &apos;night&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadsideAfter&apos;, &apos;mich&apos;, &apos;anguish&apos;, &apos;Julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoesJulius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen&apos;, &apos;&apos;, &apos;Everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months&apos;, &apos;and&apos;, &apos;sang&apos;, &apos;Juliuss&apos;, &apos;praises&apos;]
 </pre>
 </div>
 </div>
@@ -354,30 +449,50 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the same reason that we replace punctuation, we also need to make the tokens lower case. We don't want to run into a situation where 'Farmer' isn't in the dictionary, but 'farmer' is.</p>
-<p>The tokens without punctuation have been loaded into no_punctuation_tokens. Loop through the tokens and lowercase each one. Append each token to lowercase_tokens when you're done lowercasing.</p>
+<p>For the same reason that we replace punctuation, we also need to make the tokens lower case.</p>
+<p>We don't want to run into a situation where 'Farmer' isn't in the dictionary, but 'farmer' is.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The tokens without punctuation have been loaded into no_punctuation_tokens.</p>
+<p>Loop through the tokens and lowercase each one.</p>
+<p>Append each token to lowercase_tokens when you're done lowercasing.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Make strings all lowercase using the .lower() method.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Make strings all lowercase using the .lower() method.</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s">&quot;MY CAPS LOCK IS STUCK&quot;</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
 <span class="c"># The text is much nicer to read now.</span>
-<span class="c">#print text</span>
+<span class="c">#print(text)</span>
 
 <span class="n">lowercase_tokens</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">no_punctuation_tokens</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="n">lowercase_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-
-<span class="k">print</span> <span class="s">&quot;Lowercase: &quot;</span><span class="p">,</span> <span class="n">lowercase_tokens</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowercase_tokens:&quot;</span><span class="p">,</span> <span class="n">lowercase_tokens</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -390,7 +505,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Lowercase:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
+<pre>lowercase_tokens: [&apos;there&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;julius&apos;, &apos;&apos;, &apos;he&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village&apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world&apos;, &apos;&apos;, &apos;one&apos;, &apos;day&apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoesjulius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance&apos;, &apos;&apos;, &apos;julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day&apos;, &apos;&apos;, &apos;it&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediatelyjulius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;shouldnt&apos;, &apos;go&apos;, &apos;on&apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved&apos;, &apos;&apos;, &apos;he&apos;, &apos;became&apos;, &apos;soaked&apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella&apos;, &apos;&apos;, &apos;he&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper&apos;, &apos;reggie&apos;, &apos;about&apos;, &apos;his&apos;, &apos;journeyreggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back&apos;, &apos;&apos;, &apos;julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;goinghe&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold&apos;, &apos;&apos;, &apos;at&apos;, &apos;night&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadsideafter&apos;, &apos;mich&apos;, &apos;anguish&apos;, &apos;julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoesjulius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen&apos;, &apos;&apos;, &apos;everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months&apos;, &apos;and&apos;, &apos;sang&apos;, &apos;juliuss&apos;, &apos;praises&apos;]
 </pre>
 </div>
 </div>
@@ -413,25 +528,44 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Define a function that takes degrees in fahrenheit as an input, and return degrees celsius.</p>
-<p>Use it to convert 100 degrees fahrenheit to celsius. Assign the result to celsius_100. 
-Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsius_150.</p>
+<p>Let's make a basic function.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Define a function that takes degrees in fahrenheit as an input, and return degrees celsius</p>
+<p>Use it to convert 100 degrees fahrenheit to celsius. Assign the result to celsius_100.</p>
+<p>Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsius_150.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># A simple function that takes in a number of miles, and turns it into kilometers</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># A simple function that takes in a number of miles, and turns it into kilometers</span>
 <span class="c"># The input at position 0 will be put into the miles variable.</span>
 <span class="k">def</span> <span class="nf">miles_to_km</span><span class="p">(</span><span class="n">miles</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">miles</span><span class="o">/</span><span class="mf">0.62137</span>
 
 <span class="c"># Return the number of kilometers equivalent to one mile.</span>
-<span class="k">print</span> <span class="s">&quot;Number of km&#39;s in one mile: &quot;</span><span class="p">,</span> <span class="n">miles_to_km</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;miles_to_km(1):&quot;</span><span class="p">,</span> <span class="n">miles_to_km</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="c"># Convert &#39;a&#39; from 10 miles to kilometers.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
@@ -449,10 +583,10 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
     <span class="k">return</span> <span class="p">(</span><span class="n">degrees</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span><span class="o">/</span><span class="mf">1.8</span>
 
 <span class="n">celsius_100</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">celsius_150</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;celsius_100:&quot;</span><span class="p">,</span> <span class="n">celsius_100</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="s">&quot;Degrees celsius in 100 degrees fahrenheit: &quot;</span><span class="p">,</span> <span class="n">celsius_100</span>
-<span class="k">print</span> <span class="s">&quot;Degrees celsius in 150 degrees fahrenheit: &quot;</span><span class="p">,</span> <span class="n">celsius_150</span>
+<span class="n">celsius_150</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;celsius_150:&quot;</span><span class="p">,</span> <span class="n">celsius_150</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -465,9 +599,9 @@ Use it to convert 150 degrees fahrenheit to celsius. Assign the result to celsiu
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Number of km&apos;s in one mile:  1.60934708789
-Degrees celsius in 100 degrees fahrenheit:  37.7777777778
-Degrees celsius in 150 degrees fahrenheit:  65.5555555556
+<pre>miles_to_km(1): 1.6093470878864444
+celsius_100: 37.77777777777778
+celsius_150: 65.55555555555556
 </pre>
 </div>
 </div>
@@ -481,7 +615,26 @@ Degrees celsius in 150 degrees fahrenheit:  65.5555555556
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6:-Function-introduction">6: Function introduction<a class="anchor-link" href="#6:-Function-introduction">&#182;</a></h3>
+<h3 id="6:-Practice:-functions">6: Practice: functions<a class="anchor-link" href="#6:-Practice:-functions">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we know what a function is, let's practice a bit with them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -491,38 +644,39 @@ Degrees celsius in 150 degrees fahrenheit:  65.5555555556
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Make a function that takes a string as input and outputs a lowercase version.</p>
-<p>Use it to turn the string lowercase_me to lowercase. Assign the result to lowercased_string.</p>
+<p>Then use it to turn the string lowercase_me to lowercase.</p>
+<p>Assign the result to lowercased_string.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Function to split a string into a list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Function to split a string into a list.</span>
 <span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 
 <span class="n">sally</span> <span class="o">=</span> <span class="s">&quot;Sally sells seashells by the seashore.&quot;</span>
-<span class="k">print</span> <span class="n">sally</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;sally:&quot;</span><span class="p">,</span> <span class="n">sally</span><span class="p">)</span>
 
 <span class="c"># Split &#39;sally&#39; into a list.</span>
-<span class="k">print</span> <span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;split_string(sally):&quot;</span><span class="p">,</span> <span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">))</span>
 
 <span class="c"># Assign the output to &#39;sally_tokens&#39;.</span>
 <span class="n">sally_tokens</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">sally</span><span class="p">)</span>
 
 <span class="n">lowercase_me</span> <span class="o">=</span> <span class="s">&quot;I wish I was in ALL lowercase&quot;</span>
-<span class="k">print</span> <span class="n">lowercase_me</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowercase_me:&quot;</span><span class="p">,</span> <span class="n">lowercase_me</span><span class="p">)</span>
 
 <span class="c"># Function output a lowercase version of a string. </span>
 <span class="k">def</span> <span class="nf">lowercase</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
 <span class="c"># Assign the output to &#39;lowercased_string&#39;.</span>
-<span class="k">print</span> <span class="n">lowercase</span><span class="p">(</span><span class="n">lowercase_me</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowercase(lowercase_me):&quot;</span><span class="p">,</span> <span class="n">lowercase</span><span class="p">(</span><span class="n">lowercase_me</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -535,10 +689,10 @@ Degrees celsius in 150 degrees fahrenheit:  65.5555555556
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Sally sells seashells by the seashore.
-[&apos;Sally&apos;, &apos;sells&apos;, &apos;seashells&apos;, &apos;by&apos;, &apos;the&apos;, &apos;seashore.&apos;]
-I wish I was in ALL lowercase
-i wish i was in all lowercase
+<pre>sally: Sally sells seashells by the seashore.
+split_string(sally): [&apos;Sally&apos;, &apos;sells&apos;, &apos;seashells&apos;, &apos;by&apos;, &apos;the&apos;, &apos;seashore.&apos;]
+lowercase_me: I wish I was in ALL lowercase
+lowercase(lowercase_me): i wish i was in all lowercase
 </pre>
 </div>
 </div>
@@ -561,22 +715,43 @@ i wish i was in all lowercase
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are multiple syntax errors in the code to the right. You can tell because of the error showing up in the results panel. Fix the errors and get the code running properly. It should print all of the items in a.</p>
+<p>We are starting to get into more complex code now.</p>
+<p>Before we go too far down that road, let's look into common code errors, and how to fix them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are multiple syntax errors in the code to the right.</p>
+<p>You can tell because of the error showing up in the results panel.</p>
+<p>Fix the errors and get the code running properly. It should print all of the items in a.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Errors are no fun!&quot;</span><span class="p">,</span> <span class="s">&quot;But they can be fixed&quot;</span><span class="p">,</span> <span class="s">&quot;Just fix the syntax and everything will be fine&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Errors are no fun!&quot;</span><span class="p">,</span> <span class="s">&quot;But they can be fixed&quot;</span><span class="p">,</span> <span class="s">&quot;Just fix the syntax and everything will be fine&quot;</span><span class="p">]</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">item</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;item:&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -589,9 +764,9 @@ i wish i was in all lowercase
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Errors are no fun!
-But they can be fixed
-Just fix the syntax and everything will be fine
+<pre>item: Errors are no fun!
+item: But they can be fixed
+item: Just fix the syntax and everything will be fine
 </pre>
 </div>
 </div>
@@ -614,22 +789,41 @@ Just fix the syntax and everything will be fine
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The code has multiple syntax errors. Fix them so the code prints out "I never liked that 6"</p>
+<p>Syntax errors can take a lot of forms, so let's look at a few more.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code to the right has multiple syntax errors.</p>
+<p>Fix them so the code prints out "I never liked that 6"</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-
+<div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;6 is obviously the best number&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;6 is obviously the best number&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;I never liked that 6&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;I never liked that 6&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -666,21 +860,40 @@ Just fix the syntax and everything will be fine
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Index errors occur when a list index that doesn't exist is referenced.</p>
-<p>The code to the right has multiple index errors. Fix them so that the code prints the last item in each list.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code to the right has multiple index errors.</p>
+<p>Fix them so that the code prints the last item in each list.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Harrison Ford&quot;</span><span class="p">,</span> <span class="s">&quot;Mark Hammil&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Harrison Ford&quot;</span><span class="p">,</span> <span class="s">&quot;Mark Hammil&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list[1]:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="n">another_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Jabba&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">another_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;another_list[0]:&quot;</span><span class="p">,</span> <span class="n">another_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -693,8 +906,8 @@ Just fix the syntax and everything will be fine
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Mark Hammil
-Jabba
+<pre>the_list[1]: Mark Hammil
+another_list[0]: Jabba
 </pre>
 </div>
 </div>
@@ -718,17 +931,38 @@ Jabba
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's make a function to remove all punctuation.</p>
-<p>All the tokens from Julius's story are in the tokenized_story variable. Write a function that removes all punctuation from an input string. Then loop over tokenized_story and call the function to remove the punctuation from each token. Append the tokens to no_punctuation_tokens.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>All the tokens from Julius's story are in the tokenized_story variable.</p>
+<p>Write a function that removes all punctuation from an input string.</p>
+<p>Then loop over tokenized_story and call the function to remove the punctuation from each token.</p>
+<p>Append the tokens to no_punctuation_tokens.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Basic math function.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Basic math function.</span>
 <span class="k">def</span> <span class="nf">do_math</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
     <span class="c"># Multiply the number by 10.</span>
     <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">*</span> <span class="mi">10</span>
@@ -736,44 +970,22 @@ Jabba
     <span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">20</span>
     <span class="k">return</span> <span class="n">number</span>
 
-<span class="k">print</span> <span class="s">&quot;Apply math function to 20: &quot;</span><span class="p">,</span> <span class="n">do_math</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;do_math(20):&quot;</span><span class="p">,</span> <span class="n">do_math</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">do_math</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Apply math function to 20:  220
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+<span class="n">no_punctuation_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">token</span>
     
-<span class="k">print</span> <span class="s">&quot;No punctuations: &quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span>
+<span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+    <span class="n">no_punctuation_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;no_punctuation_tokens:&quot;</span><span class="p">,</span> <span class="n">no_punctuation_tokens</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -786,7 +998,8 @@ Jabba
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>No punctuations:  [&apos;TherewasonceagreatandnoblefrmernamedJuliusHewasthebestfarmerinhisvillageandprabablyeventhewholeworldOnedayhedecididtogrwpotatoesJuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidanceJuliussetoutonhisjourneyaroudnnoononedayItstartedrainingalmostyimmediatelytgoonbutheperservedHebecamesoakedandstopedinthestoretobuyanumbrellaHetoldthestorekeeperReggieabouthisjourney&quot;&quot;JuliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseenEveryonehadpotatoestoeatformonthsandsangJuliusspraises&apos;]
+<pre>do_math(20): 220
+no_punctuation_tokens: [&apos;There&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;Julius&apos;, &apos;&apos;, &apos;He&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village&apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world&apos;, &apos;&apos;, &apos;One&apos;, &apos;day&apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoesJulius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day&apos;, &apos;&apos;, &apos;It&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediatelyJulius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;shouldnt&apos;, &apos;go&apos;, &apos;on&apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved&apos;, &apos;&apos;, &apos;He&apos;, &apos;became&apos;, &apos;soaked&apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella&apos;, &apos;&apos;, &apos;He&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper&apos;, &apos;Reggie&apos;, &apos;about&apos;, &apos;his&apos;, &apos;journeyReggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back&apos;, &apos;&apos;, &apos;Julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;goingHe&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold&apos;, &apos;&apos;, &apos;At&apos;, &apos;night&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadsideAfter&apos;, &apos;mich&apos;, &apos;anguish&apos;, &apos;Julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoesJulius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen&apos;, &apos;&apos;, &apos;Everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months&apos;, &apos;and&apos;, &apos;sang&apos;, &apos;Juliuss&apos;, &apos;praises&apos;]
 </pre>
 </div>
 </div>
@@ -810,19 +1023,39 @@ Jabba
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, let's add to our function so that it also lowercases input.</p>
-<p>The remove_punctuation function is to the right. Can you add to it so that it also makes the output lowercase? Then loop over the tokens in tokenized_story and normalize them with the function. Append the tokens to normalized_tokens when you're done.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We've written the remove_punctuation function for you. Can you add to it so that it also makes the output lowercase?</p>
+<p>Then loop over the tokens in tokenized_story and normalize them with the function.</p>
+<p>Append the tokens to normalized_tokens when you're done.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
@@ -833,8 +1066,7 @@ Jabba
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokenized_story</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
     <span class="n">normalized_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-    
-<span class="k">print</span> <span class="s">&quot;Normalized: &quot;</span><span class="p">,</span> <span class="n">normalized_tokens</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;normalized_tokens:&quot;</span><span class="p">,</span> <span class="n">normalized_tokens</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -847,7 +1079,7 @@ Jabba
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Normalized:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
+<pre>normalized_tokens: [&apos;there&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;julius&apos;, &apos;&apos;, &apos;he&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village&apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world&apos;, &apos;&apos;, &apos;one&apos;, &apos;day&apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoesjulius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance&apos;, &apos;&apos;, &apos;julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day&apos;, &apos;&apos;, &apos;it&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediatelyjulius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;shouldnt&apos;, &apos;go&apos;, &apos;on&apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved&apos;, &apos;&apos;, &apos;he&apos;, &apos;became&apos;, &apos;soaked&apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella&apos;, &apos;&apos;, &apos;he&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper&apos;, &apos;reggie&apos;, &apos;about&apos;, &apos;his&apos;, &apos;journeyreggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back&apos;, &apos;&apos;, &apos;julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;goinghe&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold&apos;, &apos;&apos;, &apos;at&apos;, &apos;night&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadsideafter&apos;, &apos;mich&apos;, &apos;anguish&apos;, &apos;julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoesjulius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen&apos;, &apos;&apos;, &apos;everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months&apos;, &apos;and&apos;, &apos;sang&apos;, &apos;juliuss&apos;, &apos;praises&apos;]
 </pre>
 </div>
 </div>
@@ -870,28 +1102,47 @@ Jabba
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's practice with functions that take multiple arguments.</p>
-<p>Create a multiply function that takes in x, y, and z argument. The function should return x <em> y </em> z.</p>
-<p>Assign the values of multiply(10,3,5) to a.
-Assign the values of multiply(20,-1,3) to b.</p>
+<p>Let's practice with functions that take multiple arguments</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create a multiply function that takes in x, y, and z argument.</p>
+<p>The function should return x <em> y </em> z</p>
+<p>Assign the values of multiply(10,3,5) to a</p>
+<p>Assign the values of multiply(20,-1,3) to b</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Function to divide numbers at position 0 and 1</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Function to divide numbers at position 0 and 1</span>
 <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
 
 <span class="c"># 5 is assigned to x, and 1 is assigned to y based on positions</span>
-<span class="k">print</span> <span class="s">&quot;Divide 5 by 1: &quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;divide(5,1):&quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="c"># 1 is assigned to x, and 5 is assigned to y based on positions.</span>
-<span class="k">print</span> <span class="s">&quot;Divide 1 by 5: &quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;divide(1,5):&quot;</span><span class="p">,</span> <span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 
 <span class="c"># Function to multiply numbers at position 0, 1, 2</span>
 <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
@@ -911,8 +1162,8 @@ Assign the values of multiply(20,-1,3) to b.</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Divide 5 by 1:  5
-Divide 1 by 5:  0
+<pre>divide(5,1): 5.0
+divide(1,5): 0.2
 </pre>
 </div>
 </div>
@@ -935,42 +1186,81 @@ Divide 1 by 5:  0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Read in the dictionary from the "dictionary.txt" file. Split it into tokens based on the space character. Normalize each token using the normalize function. Append the normalized tokens to normalized_dictionary_tokens.</p>
-<p>Do the same for the "story.txt" file.</p>
+<p>The dictionary is stored in dictionary.txt</p>
+<p>We'll need to read it in and normalize it.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Read in the dictionary from the "dictionary.txt" file.</p>
+<p>Split it into tokens based on the space character.</p>
+<p>Normalize each token using the normalize function.</p>
+<p>Append the normalized tokens to normalized_dictionary_tokens.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">token</span>
 
 <span class="n">normalized_dictionary_tokens</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/dictionary.txt&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/dictionary.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+<span class="n">tokens</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
     <span class="n">normalized_dictionary_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;normalized_dictionary_tokens:&quot;</span><span class="p">,</span> <span class="n">normalized_dictionary_tokens</span><span class="p">)</span>
 
 <span class="n">normalized_story_tokens</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/story.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
 <span class="n">tokens</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
     <span class="n">token</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
     <span class="n">normalized_story_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;normalized_story_tokens:&quot;</span><span class="p">,</span> <span class="n">normalized_story_tokens</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>normalized_dictionary_tokens: [&apos;a&apos;, &apos;about&apos;, &apos;after&apos;, &apos;almost&apos;, &apos;along&apos;, &apos;alternating&apos;, &apos;an&apos;, &apos;and&apos;, &apos;anguish&apos;, &apos;around&apos;, &apos;at&apos;, &apos;back&apos;, &apos;ball&apos;, &apos;became&apos;, &apos;best&apos;, &apos;but&apos;, &apos;buy&apos;, &apos;came&apos;, &apos;cold&apos;, &apos;come&apos;, &apos;crop&apos;, &apos;crazy&apos;, &apos;curled&apos;, &apos;day&apos;, &apos;days&apos;, &apos;decided&apos;, &apos;decided&apos;, &apos;eat&apos;, &apos;even&apos;, &apos;ever&apos;, &apos;everyone&apos;, &apos;farmer&apos;, &apos;farmer&apos;, &apos;find&apos;, &apos;finest&apos;, &apos;for&apos;, &apos;found&apos;, &apos;freezing&apos;, &apos;farmer&apos;, &apos;gave&apos;, &apos;go&apos;, &apos;going&apos;, &apos;great&apos;, &apos;grow&apos;, &apos;growing&apos;, &apos;guidance&apos;, &apos;had&apos;, &apos;hard&apos;, &apos;he&apos;, &apos;heat&apos;, &apos;him&apos;, &apos;his&apos;, &apos;if&apos;, &apos;immediately&apos;, &apos;in&apos;, &apos;into&apos;, &apos;it&apos;, &apos;journey&apos;, &apos;julius&apos;, &apos;juliuss&apos;, &apos;keep&apos;, &apos;knew&apos;, &apos;last&apos;, &apos;long&apos;, &apos;magic&apos;, &apos;managed&apos;, &apos;many&apos;, &apos;much&apos;, &apos;months&apos;, &apos;named&apos;, &apos;never&apos;, &apos;night&apos;, &apos;noble&apos;, &apos;noon&apos;, &apos;of&apos;, &apos;on&apos;, &apos;once&apos;, &apos;one&apos;, &apos;out&apos;, &apos;people&apos;, &apos;persevered&apos;, &apos;potatoes&apos;, &apos;probably&apos;, &apos;praises&apos;, &apos;raining&apos;, &apos;reggie&apos;, &apos;roadside&apos;, &apos;sang&apos;, &apos;searing&apos;, &apos;secret&apos;, &apos;seek&apos;, &apos;seen&apos;, &apos;set&apos;, &apos;shouldnt&apos;, &apos;sign&apos;, &apos;sky&apos;, &apos;sleep&apos;, &apos;so&apos;, &apos;soaked&apos;, &apos;started&apos;, &apos;stopped&apos;, &apos;store&apos;, &apos;storekeeper&apos;, &apos;that&apos;, &apos;the&apos;, &apos;there&apos;, &apos;this&apos;, &apos;to&apos;, &apos;told&apos;, &apos;travelled&apos;, &apos;trees&apos;, &apos;tried&apos;, &apos;try&apos;, &apos;umbrella&apos;, &apos;underneath&apos;, &apos;undeterred&apos;, &apos;village&apos;, &apos;was&apos;, &apos;were&apos;, &apos;who&apos;, &apos;whole&apos;, &apos;wondered&apos;, &apos;world&apos;, &apos;&apos;]
+normalized_story_tokens: [&apos;there&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;frmer&apos;, &apos;named&apos;, &apos;julius &apos;, &apos;&apos;, &apos;he&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;village &apos;, &apos;and&apos;, &apos;prabably&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;world &apos;, &apos;&apos;, &apos;one&apos;, &apos;day &apos;, &apos;he&apos;, &apos;decidid&apos;, &apos;to&apos;, &apos;grw&apos;, &apos;potatoes   julius&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;grow &apos;, &apos;so&apos;, &apos;he&apos;, &apos;kniw&apos;, &apos;he&apos;, &apos;hd&apos;, &apos;to&apos;, &apos;goe&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;guidance &apos;, &apos;&apos;, &apos;julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;aroudn&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;day &apos;, &apos;&apos;, &apos;it&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;almosty&apos;, &apos;immediately   julius&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;shouldn t&apos;, &apos;go&apos;, &apos;on &apos;, &apos;but&apos;, &apos;he&apos;, &apos;perserved &apos;, &apos;&apos;, &apos;he&apos;, &apos;became&apos;, &apos;soaked &apos;, &apos;and&apos;, &apos;stoped&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;umbrella &apos;, &apos;&apos;, &apos;he&apos;, &apos;told&apos;, &apos;the&apos;, &apos;storekeeper &apos;, &apos;reggie &apos;, &apos;about&apos;, &apos;his&apos;, &apos;journey   reggie&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;crzy&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer &apos;, &apos;the&apos;, &apos;last&apos;, &apos;10&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;back &apos;, &apos;&apos;, &apos;julius&apos;, &apos;was&apos;, &apos;undetered&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;going   he&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;alternatng&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;cold &apos;, &apos;&apos;, &apos;at&apos;, &apos;night &apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;roadside   after&apos;, &apos;mich&apos;, &apos;anguish &apos;, &apos;julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer &apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;potatoes   julius&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;village &apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;seen &apos;, &apos;&apos;, &apos;everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;months &apos;, &apos;and&apos;, &apos;sang&apos;, &apos;julius s&apos;, &apos;praises &apos;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -989,18 +1279,39 @@ Divide 1 by 5:  0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>A solution is in sight! All we need to do is loop through the normalized story tokens, and check if they are in the dictionary. If they aren't, they are potential misspellings.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The normalized story tokens are in normalized_story_tokens, and the normalized dictionary tokens are in normalized_dictionary_tokens.</p>
-<p>Loop through the story tokens, and check if each token is in the dictionary. If the token is in normalized_dictionary_tokens, append it to correctly_spelled. If it isn't, append it to potential_misspellings.</p>
+<p>Loop through the story tokens, and check if each token is in the dictionary.</p>
+<p>If the token is in normalized_dictionary_tokens, append it to correctly_spelled</p>
+<p>If it isn't, append it to potential_misspellings.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">potential_misspellings</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">potential_misspellings</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">correctly_spelled</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">normalized_story_tokens</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">normalized_dictionary_tokens</span><span class="p">:</span>
@@ -1008,7 +1319,8 @@ Divide 1 by 5:  0
     <span class="k">else</span><span class="p">:</span>
         <span class="n">potential_misspellings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="s">&quot;Potential misspellings: &quot;</span><span class="p">,</span> <span class="n">potential_misspellings</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s">&quot;correctly_spelled:&quot;</span><span class="p">,</span> <span class="n">correctly_spelled</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s">&quot;potential_misspellings:&quot;</span><span class="p">,</span> <span class="n">potential_misspellings</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1021,7 +1333,8 @@ Divide 1 by 5:  0
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Potential misspellings:  [&apos;therewasonceagreatandnoblefrmernamedjuliushewasthebestfarmerinhisvillageandprabablyeventhewholeworldonedayhedecididtogrwpotatoesjuliusknewthatpotatoeswerehardtogrowsohekniwhehdtogoetothemagicfarmerintheskytoseekhisguidancejuliussetoutonhisjourneyaroudnnoononedayitstartedrainingalmostyimmediatelytgoonbutheperservedhebecamesoakedandstopedinthestoretobuyanumbrellahetoldthestorekeeperreggieabouthisjourney&quot;&quot;juliuscamebacktothevillageandmanagedtogrowthefinestcropthevillagehadeverseeneveryonehadpotatoestoeatformonthsandsangjuliusspraises&apos;]
+<pre>correctly_spelled: [&apos;there&apos;, &apos;was&apos;, &apos;once&apos;, &apos;a&apos;, &apos;great&apos;, &apos;and&apos;, &apos;noble&apos;, &apos;named&apos;, &apos;&apos;, &apos;he&apos;, &apos;was&apos;, &apos;the&apos;, &apos;best&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;his&apos;, &apos;and&apos;, &apos;even&apos;, &apos;the&apos;, &apos;whole&apos;, &apos;&apos;, &apos;one&apos;, &apos;he&apos;, &apos;to&apos;, &apos;knew&apos;, &apos;that&apos;, &apos;potatoes&apos;, &apos;were&apos;, &apos;hard&apos;, &apos;to&apos;, &apos;so&apos;, &apos;he&apos;, &apos;he&apos;, &apos;to&apos;, &apos;to&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;farmer&apos;, &apos;in&apos;, &apos;the&apos;, &apos;sky&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;his&apos;, &apos;&apos;, &apos;julius&apos;, &apos;set&apos;, &apos;out&apos;, &apos;on&apos;, &apos;his&apos;, &apos;journey&apos;, &apos;noon&apos;, &apos;one&apos;, &apos;&apos;, &apos;it&apos;, &apos;started&apos;, &apos;raining&apos;, &apos;wondered&apos;, &apos;if&apos;, &apos;this&apos;, &apos;was&apos;, &apos;a&apos;, &apos;sign&apos;, &apos;that&apos;, &apos;he&apos;, &apos;go&apos;, &apos;but&apos;, &apos;he&apos;, &apos;&apos;, &apos;he&apos;, &apos;became&apos;, &apos;and&apos;, &apos;in&apos;, &apos;the&apos;, &apos;store&apos;, &apos;to&apos;, &apos;buy&apos;, &apos;an&apos;, &apos;&apos;, &apos;he&apos;, &apos;told&apos;, &apos;the&apos;, &apos;about&apos;, &apos;his&apos;, &apos;told&apos;, &apos;him&apos;, &apos;that&apos;, &apos;he&apos;, &apos;was&apos;, &apos;to&apos;, &apos;seek&apos;, &apos;out&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;the&apos;, &apos;last&apos;, &apos;people&apos;, &apos;to&apos;, &apos;try&apos;, &apos;to&apos;, &apos;find&apos;, &apos;him&apos;, &apos;had&apos;, &apos;never&apos;, &apos;come&apos;, &apos;&apos;, &apos;julius&apos;, &apos;was&apos;, &apos;and&apos;, &apos;decided&apos;, &apos;to&apos;, &apos;keep&apos;, &apos;travelled&apos;, &apos;many&apos;, &apos;long&apos;, &apos;days&apos;, &apos;in&apos;, &apos;searing&apos;, &apos;heat&apos;, &apos;and&apos;, &apos;freezing&apos;, &apos;&apos;, &apos;at&apos;, &apos;he&apos;, &apos;curled&apos;, &apos;into&apos;, &apos;a&apos;, &apos;ball&apos;, &apos;and&apos;, &apos;tried&apos;, &apos;to&apos;, &apos;sleep&apos;, &apos;underneath&apos;, &apos;trees&apos;, &apos;along&apos;, &apos;the&apos;, &apos;julius&apos;, &apos;found&apos;, &apos;the&apos;, &apos;magic&apos;, &apos;who&apos;, &apos;gave&apos;, &apos;him&apos;, &apos;the&apos;, &apos;secret&apos;, &apos;of&apos;, &apos;growing&apos;, &apos;came&apos;, &apos;back&apos;, &apos;to&apos;, &apos;the&apos;, &apos;and&apos;, &apos;managed&apos;, &apos;to&apos;, &apos;grow&apos;, &apos;the&apos;, &apos;finest&apos;, &apos;crop&apos;, &apos;the&apos;, &apos;village&apos;, &apos;had&apos;, &apos;ever&apos;, &apos;&apos;, &apos;everyone&apos;, &apos;had&apos;, &apos;potatoes&apos;, &apos;to&apos;, &apos;eat&apos;, &apos;for&apos;, &apos;and&apos;, &apos;sang&apos;]
+potential_misspellings: [&apos;frmer&apos;, &apos;julius &apos;, &apos;village &apos;, &apos;prabably&apos;, &apos;world &apos;, &apos;day &apos;, &apos;decidid&apos;, &apos;grw&apos;, &apos;potatoes   julius&apos;, &apos;grow &apos;, &apos;kniw&apos;, &apos;hd&apos;, &apos;goe&apos;, &apos;guidance &apos;, &apos;aroudn&apos;, &apos;day &apos;, &apos;almosty&apos;, &apos;immediately   julius&apos;, &apos;shouldn t&apos;, &apos;on &apos;, &apos;perserved &apos;, &apos;soaked &apos;, &apos;stoped&apos;, &apos;umbrella &apos;, &apos;storekeeper &apos;, &apos;reggie &apos;, &apos;journey   reggie&apos;, &apos;crzy&apos;, &apos;farmer &apos;, &apos;10&apos;, &apos;back &apos;, &apos;undetered&apos;, &apos;going   he&apos;, &apos;alternatng&apos;, &apos;cold &apos;, &apos;night &apos;, &apos;roadside   after&apos;, &apos;mich&apos;, &apos;anguish &apos;, &apos;farmer &apos;, &apos;potatoes   julius&apos;, &apos;village &apos;, &apos;seen &apos;, &apos;months &apos;, &apos;julius s&apos;, &apos;praises &apos;]
 </pre>
 </div>
 </div>

@@ -169,6 +169,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -202,6 +215,24 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Our data is in a CSV file, so we'll need to parse it before we can get started.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Open "la_weather.csv", parse it, and assign the result to weather_data.</p>
 
 </div>
@@ -209,17 +240,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">weather_data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/la_weather.csv&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">weather_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/la_weather.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
     <span class="n">split_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
     <span class="n">weather_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_row</span><span class="p">)</span>
-
 <span class="n">weather_data</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 
@@ -231,7 +261,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -268,6 +298,24 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The first column of the data isn't very useful to what we're doing, so let's get rid of it and only work with the second column.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Get all of the values in the second column and append them to weather_column.</p>
 
 </div>
@@ -275,14 +323,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">weather_column</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">weather_column</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">weather_data</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">row</span><span class="p">:</span>
         <span class="n">weather_column</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-        
 <span class="n">weather_column</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 
@@ -294,7 +341,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -335,24 +382,41 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Loop over the weather variable, and set count equal to the number of items in weather.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">weather</span> <span class="o">=</span> <span class="n">weather_data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/la_weather.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">weather</span> <span class="o">=</span> <span class="n">weather_data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;data/la_weather.csv&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="c"># weather_data = [row.rstrip().split(&#39;,&#39;) for row in f]</span>
     <span class="n">weather</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;,&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-
-<span class="k">print</span> <span class="s">&quot;First weather entry: &quot;</span><span class="p">,</span> <span class="n">weather</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;weather[0]:&quot;</span><span class="p">,</span> <span class="n">weather</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="c"># Loop over the weather variable, and set count equal to the number of items in weather.</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">weather</span><span class="p">:</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="k">print</span> <span class="s">&quot;Number of weather entries: &quot;</span><span class="p">,</span> <span class="n">count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count:&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -365,8 +429,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>First weather entry:  Sunny
-Number of weather entries:  365
+<pre>weather[0]: Sunny
+count: 365
 </pre>
 </div>
 </div>
@@ -389,6 +453,25 @@ Number of weather entries:  365
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we know how to slice lists, let's practice.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Assign a slice containing index 2 and 3 from slice_me to slice1. Assign a slice containing index 1 from slice_me to slice2. Assign a slice containing index 3 and 4 from slice_me to slice3.</p>
 
 </div>
@@ -396,28 +479,29 @@ Number of weather entries:  365
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">a</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 <span class="c"># New list containing index 2 and 3.</span>
-<span class="k">print</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a[2:4]:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
 <span class="c"># New list with no elements.</span>
-<span class="k">print</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a[2:2]:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 <span class="c"># New list containing only index 2.</span>
-<span class="k">print</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a[2:3]:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 
 <span class="n">slice_me</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">slice_me</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;slice_me:&quot;</span><span class="p">,</span> <span class="n">slice_me</span><span class="p">)</span>
 
 <span class="n">slice1</span> <span class="o">=</span> <span class="n">slice_me</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">slice2</span> <span class="o">=</span> <span class="n">slice_me</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">slice3</span> <span class="o">=</span> <span class="n">slice_me</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;slice1:&quot;</span><span class="p">,</span> <span class="n">slice1</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">slice1</span>
-<span class="k">print</span> <span class="n">slice2</span>
-<span class="k">print</span> <span class="n">slice3</span>
+<span class="n">slice2</span> <span class="o">=</span> <span class="n">slice_me</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;slice2:&quot;</span><span class="p">,</span> <span class="n">slice2</span><span class="p">)</span>
+
+<span class="n">slice3</span> <span class="o">=</span> <span class="n">slice_me</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;slice3:&quot;</span><span class="p">,</span> <span class="n">slice3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -430,14 +514,14 @@ Number of weather entries:  365
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[4, 5, 6, 7, 8]
-[6, 7]
-[]
-[6]
-[7, 6, 4, 5, 6]
-[4, 5]
-[6]
-[5, 6]
+<pre>a: [4, 5, 6, 7, 8]
+a[2:4]: [6, 7]
+a[2:2]: []
+a[2:3]: [6]
+slice_me: [7, 6, 4, 5, 6]
+slice1: [4, 5]
+slice2: [6]
+slice3: [5, 6]
 </pre>
 </div>
 </div>
@@ -460,6 +544,25 @@ Number of weather entries:  365
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we can slice lists, let's remove the header from the weather data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The weather data is in the weather variable. Slice the data and remove the header. The slice can end at 367. Assign the result to new_weather.</p>
 
 </div>
@@ -467,11 +570,10 @@ Number of weather entries:  365
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">new_weather</span> <span class="o">=</span> <span class="n">weather</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">367</span><span class="p">]</span>
-
+<div class=" highlight hl-ipython3"><pre><span class="n">new_weather</span> <span class="o">=</span> <span class="n">weather</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">367</span><span class="p">]</span>
 <span class="n">new_weather</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 
@@ -483,7 +585,7 @@ Number of weather entries:  365
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -519,6 +621,25 @@ Number of weather entries:  365
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Use curly braces to define a dictionary -- {} -- and then you add keys.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Assign the value 5 to the key "test" in dictionary_two. Assign the value "hello" to the key 10 in dictionary_two.</p>
 
 </div>
@@ -526,20 +647,20 @@ Number of weather entries:  365
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Make dictionary.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Make dictionary.</span>
 <span class="n">dictionary_one</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c"># Add keys and values.</span>
 <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;key_one&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">print</span> <span class="n">dictionary_one</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_one:&quot;</span><span class="p">,</span> <span class="n">dictionary_one</span><span class="p">)</span>
 
 <span class="c"># Dictionaries can have multiple keys.</span>
 <span class="n">dictionary_one</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">dictionary_one</span><span class="p">[</span><span class="mf">5.2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span>
-<span class="k">print</span> <span class="n">dictionary_one</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_one:&quot;</span><span class="p">,</span> <span class="n">dictionary_one</span><span class="p">)</span>
 
 <span class="c"># Make dictionary.</span>
 <span class="n">dictionary_two</span> <span class="o">=</span> <span class="p">{}</span>
@@ -547,7 +668,7 @@ Number of weather entries:  365
 <span class="c"># Add keys and values.</span>
 <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;test&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">dictionary_two</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span>
-<span class="k">print</span> <span class="n">dictionary_two</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_two:&quot;</span><span class="p">,</span> <span class="n">dictionary_two</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -560,9 +681,9 @@ Number of weather entries:  365
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;key_one&apos;: 2}
-{5.2: &apos;hello&apos;, 10: 5, &apos;key_one&apos;: 2}
-{&apos;test&apos;: 5, 10: &apos;hello&apos;}
+<pre>dictionary_one: {&apos;key_one&apos;: 2}
+dictionary_one: {10: 5, &apos;key_one&apos;: 2, 5.2: &apos;hello&apos;}
+dictionary_two: {&apos;test&apos;: 5, 10: &apos;hello&apos;}
 </pre>
 </div>
 </div>
@@ -586,6 +707,24 @@ Number of weather entries:  365
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can index dictionaries with square brackets. a = dictionary[10] will get the value stored in the dictionary for the key 10 and assign it to a.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Assign the value in "key1" in dictionary_two to a. Assign the value in "key2" in dictionary_two to b. Assign the value in "key3" in dictionary_two to c.</p>
 
 </div>
@@ -593,21 +732,21 @@ Number of weather entries:  365
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Make dictionary.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Make dictionary.</span>
 <span class="n">dictionary_one</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c"># Add keys and values.</span>
 <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;test&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;key&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;fly&quot;</span>
 
-<span class="k">print</span> <span class="n">dictionary_one</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_one:&quot;</span><span class="p">,</span> <span class="n">dictionary_one</span><span class="p">)</span>
 
 <span class="c"># Retrieve values from dictionaries.</span>
-<span class="k">print</span> <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;test&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;key&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_one[&#39;test&#39;]:&quot;</span><span class="p">,</span> <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;test&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_one[&#39;key&#39;]:&quot;</span><span class="p">,</span> <span class="n">dictionary_one</span><span class="p">[</span><span class="s">&quot;key&quot;</span><span class="p">])</span>
 
 <span class="c"># Make dictionary.</span>
 <span class="n">dictionary_two</span> <span class="o">=</span> <span class="p">{}</span>
@@ -617,16 +756,17 @@ Number of weather entries:  365
 <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key3&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">5.6</span>
 
-<span class="k">print</span> <span class="n">dictionary_two</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dictionary_two:&quot;</span><span class="p">,</span> <span class="n">dictionary_two</span><span class="p">)</span>
 
 <span class="c"># Retrieve values from dictionaries.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key1&quot;</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key2&quot;</span><span class="p">]</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key3&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">a</span>
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key2&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">dictionary_two</span><span class="p">[</span><span class="s">&quot;key3&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -639,13 +779,13 @@ Number of weather entries:  365
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;test&apos;: 10, &apos;key&apos;: &apos;fly&apos;}
-10
-fly
-{&apos;key3&apos;: 5.6, &apos;key2&apos;: 10, &apos;key1&apos;: &apos;high&apos;}
-high
-10
-5.6
+<pre>dictionary_one: {&apos;test&apos;: 10, &apos;key&apos;: &apos;fly&apos;}
+dictionary_one[&apos;test&apos;]: 10
+dictionary_one[&apos;key&apos;]: fly
+dictionary_two: {&apos;key3&apos;: 5.6, &apos;key2&apos;: 10, &apos;key1&apos;: &apos;high&apos;}
+a: high
+b: 10
+c: 5.6
 </pre>
 </div>
 </div>
@@ -669,6 +809,24 @@ high
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can define a dictionary that already contains values.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Make a dictionary c with the keys 7, 8, and 9 corresponding to the values "raven", "goose", and "duck". Make a dictionary d with the keys "morning", "afternoon", "evening", and "night" corresponding to the values 9, 14, 19, and 23.</p>
 
 </div>
@@ -676,28 +834,28 @@ high
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Define dictionary that already contains values.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Define dictionary that already contains values.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;key1&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&quot;key2&quot;</span><span class="p">:</span> <span class="s">&quot;indubitably&quot;</span><span class="p">,</span> <span class="s">&quot;key3&quot;</span><span class="p">:</span> <span class="s">&quot;dataquest&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mf">5.6</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">a</span>
-<span class="k">print</span> <span class="n">a</span><span class="p">[</span><span class="s">&quot;key1&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a[&#39;key1&#39;]:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="s">&quot;key1&quot;</span><span class="p">])</span>
 
 <span class="c"># Define dictionary that already contains values.</span>
 <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">:</span> <span class="s">&quot;robin&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s">&quot;bluebird&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s">&quot;sparrow&quot;</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">b</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b[4]:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
 
 <span class="c"># Define dictionary that already contains values.</span>
 <span class="n">c</span> <span class="o">=</span> <span class="p">{</span><span class="mi">7</span><span class="p">:</span> <span class="s">&quot;raven&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s">&quot;goose&quot;</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s">&quot;duck&quot;</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">c</span>
-<span class="k">print</span> <span class="n">c</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c[7]:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
 
 <span class="c"># Define dictionary that already contains values.</span>
 <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;morning&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s">&quot;afternoon&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s">&quot;evening&quot;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="s">&quot;night&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">d</span>
-<span class="k">print</span> <span class="n">d</span><span class="p">[</span><span class="s">&quot;morning&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d:&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d[&#39;morning&#39;]:&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="s">&quot;morning&quot;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -710,14 +868,14 @@ high
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;key3&apos;: &apos;dataquest&apos;, &apos;key2&apos;: &apos;indubitably&apos;, &apos;key1&apos;: 10, 3: 5.6}
-10
-{4: &apos;robin&apos;, 5: &apos;bluebird&apos;, 6: &apos;sparrow&apos;}
-robin
-{8: &apos;goose&apos;, 9: &apos;duck&apos;, 7: &apos;raven&apos;}
-raven
-{&apos;night&apos;: 23, &apos;evening&apos;: 19, &apos;afternoon&apos;: 14, &apos;morning&apos;: 9}
-9
+<pre>a: {3: 5.6, &apos;key3&apos;: &apos;dataquest&apos;, &apos;key2&apos;: &apos;indubitably&apos;, &apos;key1&apos;: 10}
+a[&apos;key1&apos;]: 10
+b: {4: &apos;robin&apos;, 5: &apos;bluebird&apos;, 6: &apos;sparrow&apos;}
+b[4]: robin
+c: {8: &apos;goose&apos;, 9: &apos;duck&apos;, 7: &apos;raven&apos;}
+c[7]: raven
+d: {&apos;evening&apos;: 19, &apos;night&apos;: 23, &apos;afternoon&apos;: 14, &apos;morning&apos;: 9}
+d[&apos;morning&apos;]: 9
 </pre>
 </div>
 </div>
@@ -740,6 +898,25 @@ raven
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's practice testing if items are in a list.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Check if 9 is in list2, and assign the result to c. Check if 8 is in list2, and assign the result to d. Check if -1 is in list2, and assign the result to e.</p>
 
 </div>
@@ -747,37 +924,38 @@ raven
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">the_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_list:&quot;</span><span class="p">,</span> <span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Print whether 10 is in &#39;the_list&#39; using an &#39;in&#39; statement.</span>
-<span class="k">print</span> <span class="mi">10</span> <span class="ow">in</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;10 in the_list:&quot;</span><span class="p">,</span> <span class="mi">10</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Print whether -5 is in &#39;the_list&#39; using an &#39;in&#39; statement.</span>
-<span class="k">print</span> <span class="o">-</span><span class="mi">5</span> <span class="ow">in</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;-5 in the_list:&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Print whether 9 is in &#39;the_list&#39; using an &#39;in&#39; statement.</span>
-<span class="k">print</span> <span class="mi">9</span> <span class="ow">in</span> <span class="n">the_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;9 in the_list:&quot;</span><span class="p">,</span> <span class="mi">9</span> <span class="ow">in</span> <span class="n">the_list</span><span class="p">)</span>
 
 <span class="c"># Assign the result of an in statement to a variable.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span> <span class="ow">in</span> <span class="n">the_list</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Create list.</span>
 <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">800</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;list2:&quot;</span><span class="p">,</span> <span class="n">list2</span><span class="p">)</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="mi">9</span> <span class="ow">in</span> <span class="n">list2</span>
-<span class="n">d</span> <span class="o">=</span> <span class="mi">8</span> <span class="ow">in</span> <span class="n">list2</span>
-<span class="n">e</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">c</span>
-<span class="k">print</span> <span class="n">d</span>
-<span class="k">print</span> <span class="n">e</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">8</span> <span class="ow">in</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d:&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">list2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;e:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -790,15 +968,15 @@ raven
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[10, 60, -5, 8]
-True
-True
-False
-False
-[8, 5.6, 70, 800]
-False
-True
-False
+<pre>the_list: [10, 60, -5, 8]
+10 in the_list: True
+-5 in the_list: True
+9 in the_list: False
+a: False
+list2: [8, 5.6, 70, 800]
+c: False
+d: True
+e: False
 </pre>
 </div>
 </div>
@@ -822,6 +1000,24 @@ False
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can also use the in statement to check if a key is in a dictionary. We do this the same way we check if a value is in a list.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Check whether "jupiter" is in dict2 and assign the result to b. Check whether "earth" is in dict2 and assign the result to c.</p>
 
 </div>
@@ -829,32 +1025,32 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Define dictionary that already contains values.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Define dictionary that already contains values.</span>
 <span class="n">the_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;robin&quot;</span><span class="p">:</span> <span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;cardinal&quot;</span><span class="p">:</span> <span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;oriole&quot;</span><span class="p">:</span> <span class="s">&quot;orange&quot;</span><span class="p">,</span> <span class="s">&quot;lark&quot;</span><span class="p">:</span> <span class="s">&quot;blue&quot;</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">the_dict</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;the_dict:&quot;</span><span class="p">,</span> <span class="n">the_dict</span><span class="p">)</span>
 
 <span class="c"># Print whether robin is in &#39;the_dict&#39; using an &#39;in&#39; statement.</span>
-<span class="k">print</span> <span class="s">&quot;robin&quot;</span> <span class="ow">in</span> <span class="n">the_dict</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;&#39;robin&#39; in the_dict:&quot;</span><span class="p">,</span> <span class="s">&quot;robin&quot;</span> <span class="ow">in</span> <span class="n">the_dict</span><span class="p">)</span>
 
 <span class="c"># Print whether crow is in &#39;the_dict&#39; using an &#39;in&#39; statement.</span>
-<span class="k">print</span> <span class="s">&quot;crow&quot;</span> <span class="ow">in</span> <span class="n">the_dict</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;&#39;crow&#39; in the_dict:&quot;</span><span class="p">,</span> <span class="s">&quot;crow&quot;</span> <span class="ow">in</span> <span class="n">the_dict</span><span class="p">)</span>
 
 <span class="c"># Assign the result of an in statement to a variable.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="s">&quot;cardinal&quot;</span> <span class="ow">in</span> <span class="n">the_dict</span>
-<span class="k">print</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 
 <span class="c"># Define dictionary that already contains values.</span>
 <span class="n">dict2</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;mercury&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;venus&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&quot;earth&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;mars&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
-<span class="k">print</span> <span class="n">dict2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dict2&quot;</span><span class="p">,</span> <span class="n">dict2</span><span class="p">)</span>
 
 <span class="n">b</span> <span class="o">=</span> <span class="s">&quot;jupiter&quot;</span> <span class="ow">in</span> <span class="n">dict2</span>
-<span class="n">c</span> <span class="o">=</span> <span class="s">&quot;earth&quot;</span> <span class="ow">in</span> <span class="n">dict2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">b</span>
-<span class="k">print</span> <span class="n">c</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s">&quot;earth&quot;</span> <span class="ow">in</span> <span class="n">dict2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -867,13 +1063,13 @@ False
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;lark&apos;: &apos;blue&apos;, &apos;oriole&apos;: &apos;orange&apos;, &apos;cardinal&apos;: &apos;red&apos;, &apos;robin&apos;: &apos;red&apos;}
-True
-False
-True
-{&apos;mercury&apos;: 1, &apos;earth&apos;: 3, &apos;venus&apos;: 2, &apos;mars&apos;: 4}
-False
-True
+<pre>the_dict: {&apos;cardinal&apos;: &apos;red&apos;, &apos;lark&apos;: &apos;blue&apos;, &apos;robin&apos;: &apos;red&apos;, &apos;oriole&apos;: &apos;orange&apos;}
+&apos;robin&apos; in the_dict: True
+&apos;crow&apos; in the_dict: False
+a: True
+dict2 {&apos;earth&apos;: 3, &apos;mercury&apos;: 1, &apos;venus&apos;: 2, &apos;mars&apos;: 4}
+b: False
+c: True
 </pre>
 </div>
 </div>
@@ -897,6 +1093,24 @@ True
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The else statement is a powerful way to extend a basic if statement.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Write an if statement that prints "It's hot!" when the season is "Summer" Add an else statement to the if that prints "It might be hot!".</p>
 
 </div>
@@ -904,27 +1118,27 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Code in an else statement will be executed if the if statement boolean is False.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Code in an else statement will be executed if the if statement boolean is False.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Not 7!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Not 7!&quot;</span><span class="p">)</span>
 
 <span class="n">video_game</span> <span class="o">=</span> <span class="s">&quot;Mario&quot;</span>
 <span class="k">if</span> <span class="n">video_game</span> <span class="o">==</span> <span class="s">&quot;Mario&quot;</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Nintendo is the best!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Nintendo is the best!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;Sony is the best!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Sony is the best!&quot;</span><span class="p">)</span>
 
 <span class="n">season</span> <span class="o">=</span> <span class="s">&quot;Spring&quot;</span>
 <span class="k">if</span> <span class="n">season</span> <span class="o">==</span> <span class="s">&quot;Summer&quot;</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;It&#39;s hot!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;It&#39;s hot!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span> <span class="s">&quot;It might be hot!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;It might be hot!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -953,7 +1167,7 @@ It might be hot!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="12:-Practicing-with-the-else-statement">12: Practicing with the else statement<a class="anchor-link" href="#12:-Practicing-with-the-else-statement">&#182;</a></h2>
+<h2 id="12:-Counting-with-dictionaries">12: Counting with dictionaries<a class="anchor-link" href="#12:-Counting-with-dictionaries">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -963,6 +1177,24 @@ It might be hot!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can combine some of the concepts we've already learned to count how many times items appear in a list using dictionaries. We'll loop over the list, and create a key for each item we want to count. We then increment the key whenever we see the element again. At the end, we have the count.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Count how many times each presidential last name appears in us_presidents. Assign the counts to us_president_counts.</p>
 
 </div>
@@ -970,16 +1202,15 @@ It might be hot!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">pantry</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;apple&quot;</span><span class="p">,</span> <span class="s">&quot;orange&quot;</span><span class="p">,</span> <span class="s">&quot;grape&quot;</span><span class="p">,</span> <span class="s">&quot;apple&quot;</span><span class="p">,</span> <span class="s">&quot;orange&quot;</span><span class="p">,</span> <span class="s">&quot;apple&quot;</span><span class="p">,</span> <span class="s">&quot;tomato&quot;</span><span class="p">,</span> <span class="s">&quot;potato&quot;</span><span class="p">,</span> <span class="s">&quot;grape&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">pantry</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;pantry:&quot;</span><span class="p">,</span> <span class="n">pantry</span><span class="p">)</span>
 
 <span class="c"># Create an empty dictionary.</span>
 <span class="n">pantry_counts</span> <span class="o">=</span> <span class="p">{}</span>
-
 <span class="c"># Loop through the list.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">pantry</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">pantry_counts</span><span class="p">:</span>
@@ -987,17 +1218,15 @@ It might be hot!
         <span class="n">pantry_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">pantry_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="c"># If the item isn&#39;t already a key in the count dictionary, then add the key, and set the value to 1.</span>
-        <span class="n">pantry_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        
-<span class="k">print</span> <span class="n">pantry_counts</span>
+        <span class="n">pantry_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;pantry_counts:&quot;</span><span class="p">,</span> <span class="n">pantry_counts</span><span class="p">)</span>
 
 <span class="c"># Create list.</span>
 <span class="n">us_presidents</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Adams&quot;</span><span class="p">,</span> <span class="s">&quot;Bush&quot;</span><span class="p">,</span> <span class="s">&quot;Clinton&quot;</span><span class="p">,</span> <span class="s">&quot;Obama&quot;</span><span class="p">,</span> <span class="s">&quot;Harrison&quot;</span><span class="p">,</span> <span class="s">&quot;Taft&quot;</span><span class="p">,</span> <span class="s">&quot;Bush&quot;</span><span class="p">,</span> <span class="s">&quot;Adams&quot;</span><span class="p">,</span> <span class="s">&quot;Wilson&quot;</span><span class="p">,</span> <span class="s">&quot;Roosevelt&quot;</span><span class="p">,</span> <span class="s">&quot;Roosevelt&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">us_presidents</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;us_presidents:&quot;</span><span class="p">,</span> <span class="n">us_presidents</span><span class="p">)</span>
 
 <span class="c"># Create an empty dictionary.</span>
 <span class="n">us_president_counts</span> <span class="o">=</span> <span class="p">{}</span>
-
 <span class="c"># Loop through the list.</span>
 <span class="k">for</span> <span class="n">president</span> <span class="ow">in</span> <span class="n">us_presidents</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">president</span> <span class="ow">in</span> <span class="n">us_president_counts</span><span class="p">:</span>
@@ -1006,8 +1235,7 @@ It might be hot!
     <span class="k">else</span><span class="p">:</span>
         <span class="c"># If the item isn&#39;t already a key in the count dictionary, then add the key, and set the value to 1.</span>
         <span class="n">us_president_counts</span><span class="p">[</span><span class="n">president</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        
-<span class="k">print</span> <span class="n">us_president_counts</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;us_president_counts:&quot;</span><span class="p">,</span> <span class="n">us_president_counts</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1020,10 +1248,10 @@ It might be hot!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&apos;apple&apos;, &apos;orange&apos;, &apos;grape&apos;, &apos;apple&apos;, &apos;orange&apos;, &apos;apple&apos;, &apos;tomato&apos;, &apos;potato&apos;, &apos;grape&apos;]
-{&apos;orange&apos;: 2, &apos;tomato&apos;: 1, &apos;grape&apos;: 2, &apos;apple&apos;: 3, &apos;potato&apos;: 1}
-[&apos;Adams&apos;, &apos;Bush&apos;, &apos;Clinton&apos;, &apos;Obama&apos;, &apos;Harrison&apos;, &apos;Taft&apos;, &apos;Bush&apos;, &apos;Adams&apos;, &apos;Wilson&apos;, &apos;Roosevelt&apos;, &apos;Roosevelt&apos;]
-{&apos;Wilson&apos;: 1, &apos;Taft&apos;: 1, &apos;Clinton&apos;: 1, &apos;Adams&apos;: 2, &apos;Roosevelt&apos;: 2, &apos;Bush&apos;: 2, &apos;Harrison&apos;: 1, &apos;Obama&apos;: 1}
+<pre>pantry: [&apos;apple&apos;, &apos;orange&apos;, &apos;grape&apos;, &apos;apple&apos;, &apos;orange&apos;, &apos;apple&apos;, &apos;tomato&apos;, &apos;potato&apos;, &apos;grape&apos;]
+pantry_counts: {&apos;tomato&apos;: 1, &apos;apple&apos;: 3, &apos;potato&apos;: 1, &apos;orange&apos;: 2, &apos;grape&apos;: 2}
+us_presidents: [&apos;Adams&apos;, &apos;Bush&apos;, &apos;Clinton&apos;, &apos;Obama&apos;, &apos;Harrison&apos;, &apos;Taft&apos;, &apos;Bush&apos;, &apos;Adams&apos;, &apos;Wilson&apos;, &apos;Roosevelt&apos;, &apos;Roosevelt&apos;]
+us_president_counts: {&apos;Harrison&apos;: 1, &apos;Roosevelt&apos;: 2, &apos;Clinton&apos;: 1, &apos;Adams&apos;: 2, &apos;Taft&apos;: 1, &apos;Bush&apos;: 2, &apos;Obama&apos;: 1, &apos;Wilson&apos;: 1}
 </pre>
 </div>
 </div>
@@ -1047,6 +1275,24 @@ It might be hot!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We now know how to count up how many times each type of weather occurs in the data!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The weather column, minus the header, has been loaded into the weather variable. Count up how many times each type of weather occurs. Store the counts in weather_counts.</p>
 
 </div>
@@ -1054,20 +1300,18 @@ It might be hot!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create an empty dictionary.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create an empty dictionary.</span>
 <span class="n">weather_counts</span> <span class="o">=</span> <span class="p">{}</span>
-
 <span class="c"># Loop through the list.</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">weather</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">weather_counts</span><span class="p">:</span>
         <span class="n">weather_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">weather_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">weather_counts</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="k">print</span> <span class="n">weather_counts</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;weather_counts:&quot;</span><span class="p">,</span> <span class="n">weather_counts</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1080,7 +1324,7 @@ It might be hot!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;Fog&apos;: 125, &apos;Sunny&apos;: 210, &apos;Thunderstorm&apos;: 1, &apos;Rain&apos;: 25, &apos;Fog-Rain&apos;: 4}
+<pre>weather_counts: {&apos;Rain&apos;: 25, &apos;Sunny&apos;: 210, &apos;Fog-Rain&apos;: 4, &apos;Thunderstorm&apos;: 1, &apos;Fog&apos;: 125}
 </pre>
 </div>
 </div>
