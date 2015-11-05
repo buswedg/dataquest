@@ -437,7 +437,7 @@ else:
     It might be hot!
     
 
-##12: Counting with dictionaries
+###12: Counting with dictionaries
 
 We can combine some of the concepts we've already learned to count how many times items appear in a list using dictionaries. We'll loop over the list, and create a key for each item we want to count. We then increment the key whenever we see the element again. At the end, we have the count.
 
@@ -486,7 +486,7 @@ print("us_president_counts:", us_president_counts)
     us_president_counts: {'Harrison': 1, 'Roosevelt': 2, 'Clinton': 1, 'Adams': 2, 'Taft': 1, 'Bush': 2, 'Obama': 1, 'Wilson': 1}
     
 
-##13: Counting the weather!
+###13: Counting the weather!
 
 We now know how to count up how many times each type of weather occurs in the data!
 
