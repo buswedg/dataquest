@@ -115,3 +115,58 @@
     </td>
   </tr>
 </table>
+
+<br>
+
+<table style = "width:100%">
+  <tr></tr>
+  <tr>
+    <td colspan = "4"><b>Project</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4"><a href = "https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/">Data Visualization</a></td>
+  </tr>
+  <tr>
+    <td><b>Author</b></td>
+    <td><b>Expertise</b></td>
+    <td><b>Tool</b></td>
+    <td><b>Industry</b></td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Darryl Buswell</td>
+    <td style="vertical-align:top">Exploratory Analysis</td>
+    <td style="vertical-align:top">Python</td>
+    <td style="vertical-align:top">Education<br>Environment<br>Health Care</td>
+  </tr>
+  <tr>
+    <td colspan = "4"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4">
+
+      Various techniques to visualize data using Python, including the Matplotlib module and Seaborn.<br><br>
+      Including:<br>
+      <ul style = "list-style-type:square;font-size:13px">
+        <li>Use of the Matplotlib module to plot charts in Python of forest fire data from Montesinho National Park.</li>
+        <li>Use of Python, Pandas and Matplotlib to effectively utilize visualization to explore employment data from the American Community Survey for 2010 to 2012.</li>
+        <li>Use of Seaborn to produce a visually appealing histogram plot in Python of National Survey of Family Growth data from 2002 to 2003.</li>
+        <li>Use of different components of the Matplotlib module to create customizable data visualizations in Python.</li>
+      </ul>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan = "4"><b>Dataset</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4">
+    
+      <ul style = "list-style-type:square;font-size:13px">
+        <li>Meteorological and forest burning data for the northeast region of Portugal, including temperature, humidity, wind speed and area of forest burned. <a href = "https://archive.ics.uci.edu/ml/datasets/Forest+Fires">[link]</a></li>
+        <li>American Community Survey from a survey on job outcomes for recent college graduates based on the major they studied in college. <a href="https://github.com/fivethirtyeight/data/blob/master/college-majors/recent-grads.csv">[link]</a></li>
+        <li>Survey data from the National Survey of Family Growth from January 2002 to March 2003 which contains data on mothers age, pregnancy duration, and birth weight. <a href = "http://www.cdc.gov/nchs/nsfg.htm">[link]</a></li>
+       </ul>
+
+    </td>
+  </tr>
+</table>
