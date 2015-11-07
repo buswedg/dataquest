@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Python for Business Analysts
 
 ##Introduction to Pandas
@@ -203,10 +208,10 @@ Let's learn how to use Pandas to verify the number of columns.
 ```python
 num_columns = len(housing_2013.columns)
 
-print "Number of columns:  " + str(num_columns)
+print("num_columns:" + str(num_columns))
 ```
 
-    Number of columns:  99
+    num_columns:99
     
 
 ###5: Formatting Data
@@ -288,12 +293,12 @@ filtered_housing_2013.hist(column='FMR', bins=20)
 
 
 
-    array([[<matplotlib.axes._subplots.AxesSubplot object at 0x000000000C599630>]], dtype=object)
+    array([[<matplotlib.axes._subplots.AxesSubplot object at 0x000000000B1408D0>]], dtype=object)
 
 
 
 
-![png](output_17_1.png)
+![png](output_18_1.png)
 
 
 ###7: Plot Histogram of Household Age
@@ -302,7 +307,7 @@ We can specify any numerical column we want and immediately see a histogram. We 
 
 If you observe the notation:
 
-filtered_housing_2013.hist(column='FMR', bins=20)
+    filtered_housing_2013.hist(column='FMR', bins=20)
 
 we wrote out the name of the filtered DataFrame, filtered_housing_2013, and then attached .hist(), with some parameters (or settings) specified in the parentheses. We used column='FMR ' to specify that we want a histogram of the values in the FMR column. We also use bins=20 to specify that we want the histogram to be split up into 20 bins, or groups. You'll notice that we surrounded FMR with single quotes, but didn't surround the 20 in bins=20 with any quotes. This is because in Python, and in most languages, using quotes explicitly specifies that we want to interpret the input as text, and not as a command or an integer. We didn't place 20 in quotes because we wanted to treat 20 as a number instead of a text string. If we had a column called 45 and we wanted to plot the histogram for it, we would need to surround 45 with quotes as so: .hist(column='45').
 
@@ -322,16 +327,16 @@ filtered_housing_2013.hist(column='AGE1', bins=20)
 
 
 
-    array([[<matplotlib.axes._subplots.AxesSubplot object at 0x0000000012A14B00>]], dtype=object)
+    array([[<matplotlib.axes._subplots.AxesSubplot object at 0x000000000B4D5828>]], dtype=object)
 
 
 
 
-![png](output_22_1.png)
+![png](output_23_1.png)
 
 
 
-![png](output_22_2.png)
+![png](output_23_2.png)
 
 
 ###9: Bad Data
@@ -342,7 +347,7 @@ looks like there's a problem with our dataset. This shows how a histogram can be
 
 Conditional filtering is a way to filter our DataFrame by specifying criteria that can be evaluated to True or False. We can use conditional filtering to select the rows in a DataFrame that meet a certain criteria and those that don't. In this case, we only want to select rows that contain a postive value for AGE1. Therefore, our filter should evaluate to True whenever the AGE1 value for a row is greater than 0, and False whenever it's less than 0. We can express that criteria in Python:
 
-filtered_housing_2013['AGE1'] > 0
+    filtered_housing_2013['AGE1'] > 0
 
 Let's now practice assigning objects by assigning the results of this filter to an object called evaluated_row_numbers.
 
@@ -356,8 +361,11 @@ Assign the result of the conditional filter to the object, evaluated_row_numbers
 evaluted_row_numbers = []
 evaluated_row_numbers = filtered_housing_2013['AGE1'] > 0
 
-print evaluated_row_numbers.head(5)
+evaluated_row_numbers.head(5)
 ```
+
+
+
 
     0    True
     1    True
@@ -365,17 +373,18 @@ print evaluated_row_numbers.head(5)
     3    True
     4    True
     Name: AGE1, dtype: bool
-    
+
+
 
 ###11: Applying the Conditional Filter
 
 We now have a list evaluated_row_numbers that has a value, True or False, for every row number. We can now use this list to select just the rows where the filter criteria is True through bracket notation. Bracket notation is the primary way to filter either rows or columns. Earlier, we used bracket notation to filter columns:
 
-filtered_housing_2013 = housing_2013[[ 'AGE1', 'BURDEN', 'FMR', 'FMTBEDRMS', 'FMTBUILT', 'TOTSAL' ]]
+    filtered_housing_2013 = housing_2013[[ 'AGE1', 'BURDEN', 'FMR', 'FMTBEDRMS', 'FMTBUILT', 'TOTSAL' ]]
 
 We surrounded the column names with brackets to specify that we want the contents to be treated as a list. We will now repeat the same pattern for filtering rows:
 
-cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]
+    cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]
 
 
 ```python
@@ -473,11 +482,12 @@ Quickly count the number of rows in filtered_housing_2013, the number of rows in
 ```python
 filtered_count = len(filtered_housing_2013)
 cleaned_count = len(cleaned_housing_2013)
+count_diff = filtered_count - cleaned_count
 
-print filtered_count - cleaned_count
+print("count_diff:",count_diff)
 ```
 
-    4438
+    count_diff: 4438
     
 
 ##13: Verifying the Cleanup
@@ -492,12 +502,12 @@ negative_row_numbers = cleaned_housing_2013['AGE1'] < 0
 # Apply boolean eval of 'AGE1' to return new dataframe with desired rows.
 negative_housing_2013 = cleaned_housing_2013[negative_row_numbers]
 
-print len(negative_housing_2013)
+print("negative_housing_2013:", len(negative_housing_2013))
 ```
 
-    0
+    negative_housing_2013: 0
     
 
 ##14: Conclusion
 
-We have zero rows in negative_housing_2013, which means that cleaned_housing_2013 didn't have any rows where the value for AGE1 was negative (or it would have the rows where it was). In the next mission, we are going to walk through how we can repeat our data cleanup for the 2005 and 2007 datasets of the same study without rewriting the logic each time. Before proceeding to the next mission, we highly recommend our Data Analysis series, which will give you more familiarity with both Python and Pandas.
+We have zero rows in negative_housing_2013, which means that cleaned_housing_2013 didn't have any rows where the value for AGE1 was negative (or it would have the rows where it was). In the next mission, we are going to walk through how we can repeat our data cleanup for the 2005 and 2007 datasets of the same study without rewriting the logic each time.

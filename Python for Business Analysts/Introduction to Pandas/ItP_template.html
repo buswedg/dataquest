@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>IP_template</title>
+<title>ItP_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -169,6 +169,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -248,10 +261,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span>
 
 <span class="n">housing_2013</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/Hud_2013.csv&quot;</span><span class="p">)</span>
 <span class="n">housing_2013</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -265,7 +278,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -462,9 +475,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">num_columns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">housing_2013</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">num_columns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">housing_2013</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="s">&quot;Number of columns:  &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;num_columns:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_columns</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -477,7 +490,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Number of columns:  99
+<pre>num_columns:99
 </pre>
 </div>
 </div>
@@ -507,10 +520,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes desired columns.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create new dataframe which includes desired columns.</span>
 <span class="n">filtered_housing_2013</span> <span class="o">=</span> <span class="n">housing_2013</span><span class="p">[[</span> <span class="s">&#39;AGE1&#39;</span><span class="p">,</span> <span class="s">&#39;FMR&#39;</span><span class="p">,</span><span class="s">&#39;TOTSAL&#39;</span> <span class="p">]]</span>
 
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -524,7 +537,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -601,10 +614,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c"># Create histogram of &#39;FMR&#39; series within filtered dataframe.</span>
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;FMR&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -618,11 +631,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x000000000C599630&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x000000000B1408D0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -791,7 +804,10 @@ AElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can specify any numerical column we want and immediately see a histogram. We don't need to go through a chart wizard every time or any cumbersome setup process. Because the DataFrame object is highly optimized for speed, even if our dataset has hundreds of thousands of rows, we still see a histogram of values immediately. Let's now dive into the notation!</p>
 <p>If you observe the notation:</p>
-<p>filtered_housing_2013.hist(column='FMR', bins=20)</p>
+
+<pre><code>filtered_housing_2013.hist(column='FMR', bins=20)
+
+</code></pre>
 <p>we wrote out the name of the filtered DataFrame, filtered_housing_2013, and then attached .hist(), with some parameters (or settings) specified in the parentheses. We used column='FMR ' to specify that we want a histogram of the values in the FMR column. We also use bins=20 to specify that we want the histogram to be split up into 20 bins, or groups. You'll notice that we surrounded FMR with single quotes, but didn't surround the 20 in bins=20 with any quotes. This is because in Python, and in most languages, using quotes explicitly specifies that we want to interpret the input as text, and not as a command or an integer. We didn't place 20 in quotes because we wanted to treat 20 as a number instead of a text string. If we had a column called 45 and we wanted to plot the histogram for it, we would need to surround 45 with quotes as so: .hist(column='45').</p>
 
 </div>
@@ -818,10 +834,10 @@ AElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c"># Create histograms of &#39;FMR&#39; and &#39;AGE1&#39; series within filtered dataframe.</span>
 <span class="n">filtered_housing_2013</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;FMR&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -836,11 +852,11 @@ AElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x0000000012A14B00&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x000000000B4D5828&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -1175,7 +1191,10 @@ ZmYN50JgZtZwLgRmZg3nQmBm1nAuBGZmDff/AaTdHGUOajXBAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Conditional filtering is a way to filter our DataFrame by specifying criteria that can be evaluated to True or False. We can use conditional filtering to select the rows in a DataFrame that meet a certain criteria and those that don't. In this case, we only want to select rows that contain a postive value for AGE1. Therefore, our filter should evaluate to True whenever the AGE1 value for a row is greater than 0, and False whenever it's less than 0. We can express that criteria in Python:</p>
-<p>filtered_housing_2013['AGE1'] &gt; 0</p>
+
+<pre><code>filtered_housing_2013['AGE1'] &gt; 0
+
+</code></pre>
 <p>Let's now practice assigning objects by assigning the results of this filter to an object called evaluated_row_numbers.</p>
 
 </div>
@@ -1202,14 +1221,14 @@ ZmYN50JgZtZwLgRmZg3nQmBm1nAuBGZmDff/AaTdHGUOajXBAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
 <span class="n">evaluted_row_numbers</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">evaluated_row_numbers</span> <span class="o">=</span> <span class="n">filtered_housing_2013</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span>
 
-<span class="k">print</span> <span class="n">evaluated_row_numbers</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">evaluated_row_numbers</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1220,16 +1239,18 @@ ZmYN50JgZtZwLgRmZg3nQmBm1nAuBGZmDff/AaTdHGUOajXBAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
 <pre>0    True
 1    True
 2    True
 3    True
 4    True
-Name: AGE1, dtype: bool
-</pre>
+Name: AGE1, dtype: bool</pre>
 </div>
+
 </div>
 
 </div>
@@ -1251,19 +1272,23 @@ Name: AGE1, dtype: bool
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We now have a list evaluated_row_numbers that has a value, True or False, for every row number. We can now use this list to select just the rows where the filter criteria is True through bracket notation. Bracket notation is the primary way to filter either rows or columns. Earlier, we used bracket notation to filter columns:</p>
-<p>filtered_housing_2013 = housing_2013[[ 'AGE1', 'BURDEN', 'FMR', 'FMTBEDRMS', 'FMTBUILT', 'TOTSAL' ]]</p>
+
+<pre><code>filtered_housing_2013 = housing_2013[[ 'AGE1', 'BURDEN', 'FMR', 'FMTBEDRMS', 'FMTBUILT', 'TOTSAL' ]]
+
+</code></pre>
 <p>We surrounded the column names with brackets to specify that we want the contents to be treated as a list. We will now repeat the same pattern for filtering rows:</p>
-<p>cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]</p>
+
+<pre><code>cleaned_housing_2013 = filtered_housing_2013[evaluated_row_numbers]</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Apply boolean eval of &#39;AGE1&#39; to return new dataframe with desired rows.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Apply boolean eval of &#39;AGE1&#39; to return new dataframe with desired rows.</span>
 <span class="n">cleaned_housing_2013</span> <span class="o">=</span> <span class="n">filtered_housing_2013</span><span class="p">[</span><span class="n">evaluated_row_numbers</span><span class="p">]</span>
 
 <span class="n">cleaned_housing_2013</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -1277,7 +1302,7 @@ Name: AGE1, dtype: bool
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -1383,13 +1408,14 @@ Name: AGE1, dtype: bool
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">filtered_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">filtered_housing_2013</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">filtered_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">filtered_housing_2013</span><span class="p">)</span>
 <span class="n">cleaned_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cleaned_housing_2013</span><span class="p">)</span>
+<span class="n">count_diff</span> <span class="o">=</span> <span class="n">filtered_count</span> <span class="o">-</span> <span class="n">cleaned_count</span>
 
-<span class="k">print</span> <span class="n">filtered_count</span> <span class="o">-</span> <span class="n">cleaned_count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;count_diff:&quot;</span><span class="p">,</span><span class="n">count_diff</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1402,7 +1428,7 @@ Name: AGE1, dtype: bool
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>4438
+<pre>count_diff: 4438
 </pre>
 </div>
 </div>
@@ -1432,16 +1458,16 @@ Name: AGE1, dtype: bool
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create new dataframe which includes boolean eval of &#39;AGE1&#39;.</span>
 <span class="n">negative_row_numbers</span> <span class="o">=</span> <span class="n">cleaned_housing_2013</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span>
 
 <span class="c"># Apply boolean eval of &#39;AGE1&#39; to return new dataframe with desired rows.</span>
 <span class="n">negative_housing_2013</span> <span class="o">=</span> <span class="n">cleaned_housing_2013</span><span class="p">[</span><span class="n">negative_row_numbers</span><span class="p">]</span>
 
-<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">negative_housing_2013</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;negative_housing_2013:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">negative_housing_2013</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -1454,7 +1480,7 @@ Name: AGE1, dtype: bool
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0
+<pre>negative_housing_2013: 0
 </pre>
 </div>
 </div>
@@ -1477,7 +1503,7 @@ Name: AGE1, dtype: bool
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have zero rows in negative_housing_2013, which means that cleaned_housing_2013 didn't have any rows where the value for AGE1 was negative (or it would have the rows where it was). In the next mission, we are going to walk through how we can repeat our data cleanup for the 2005 and 2007 datasets of the same study without rewriting the logic each time. Before proceeding to the next mission, we highly recommend our Data Analysis series, which will give you more familiarity with both Python and Pandas.</p>
+<p>We have zero rows in negative_housing_2013, which means that cleaned_housing_2013 didn't have any rows where the value for AGE1 was negative (or it would have the rows where it was). In the next mission, we are going to walk through how we can repeat our data cleanup for the 2005 and 2007 datasets of the same study without rewriting the logic each time.</p>
 
 </div>
 </div>

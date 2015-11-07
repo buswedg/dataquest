@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# In[1]:
+
+from __future__ import print_function
+
+
 # #Python for Business Analysts
 
 # ##Automate Repetitive Tasks
@@ -13,12 +18,15 @@
 
 # Create 2 variables, housing_2007 and housing_2005, that contain the DataFrame objects associated with Hud_2007.csv and Hud_2005.csv, respectively.
 
-# In[1]:
+# In[2]:
 
 import pandas
 
 housing_2007 = pandas.read_csv("data/Hud_2007.csv")
+print("housing_2007:\n", housing_2007.head(3))
+
 housing_2005 = pandas.read_csv("data/Hud_2005.csv")
+print("housing_2005:\n", housing_2005.head(3))
 
 
 # ###2: Lists
@@ -29,17 +37,17 @@ housing_2005 = pandas.read_csv("data/Hud_2005.csv")
 # 
 # Then, we will add a year column for each DataFrame to keep track of which DataFrame is which:
 # 
-# housing_2005['year'] = '2005'
-# housing_2007['year'] = '2007'
+#     housing_2005['year'] = '2005'
+#     housing_2007['year'] = '2007'
 # 
 # Each row now has a value for year, either 2005 or 2007, identifying which dataset that row originated from. Finally, we will use .append() to first add housing_2005 then housing_2007 to the end of data_frames_list. The List object preserves the order by which the DataFrames were added:
 # 
-# data_frames_list.append(housing_2005)
-# data_frames_list.append(housing_2007)
+#     data_frames_list.append(housing_2005)
+#     data_frames_list.append(housing_2007)
 # 
 # The list now contains these two DataFrames in the order we added them.
 
-# In[2]:
+# In[3]:
 
 # Create list.
 data_frames_list = []
@@ -53,7 +61,7 @@ data_frames_list.append(housing_2005)
 data_frames_list.append(housing_2007)
 
 # List now contains 2 objects, the respective dataframes for 2005 and 2007.
-print len(data_frames_list)
+print("data_frames_list:", len(data_frames_list))
 
 
 # ###3: Column Filtering
@@ -66,7 +74,7 @@ print len(data_frames_list)
 
 # First, create a List variable, columns, that contains the names of all of the columns we are interested in. When specifying the elements we want in the list, we need to surround each column name we want with quotes (either single or double quotes), add a comma between each column name, and then surround the whole thing with a starting [ and closing bracket ]. Then, we use bracket notation on the DataFrame object to specify a filter. We want the filter to just contain the columns list.
 
-# In[3]:
+# In[4]:
 
 columns = []
 filtered_housing_2007 = []
@@ -77,7 +85,7 @@ columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
 # Filter dataframe.
 filtered_housing_2007 = housing_2007[columns]
 
-print filtered_housing_2007[:5]
+print("filtered_housing_2007:\n", filtered_housing_2007[:5])
 
 
 # ###4: Functions
@@ -86,7 +94,7 @@ print filtered_housing_2007[:5]
 # 
 # We want the function to filter each DataFrame down to only the columns we want. Let's use the same columns from the last code block: * 'AGE1', 'FMR', 'TOTSAL', year
 
-# In[4]:
+# In[5]:
 
 def filter_columns(data_frames_list):
     # Create list.
@@ -118,23 +126,23 @@ filtered_data_frames_list = filter_columns(data_frames_list)
 # 
 # Instead of hard coding the columns we want at the filter level like we did in the last lesson:
 # 
-# filtered_housing_2013 = housing_2013[[ 'AGE1', 'FMR',  'TOTSAL', 'year' ]]
+#     filtered_housing_2013 = housing_2013[[ 'AGE1', 'FMR',  'TOTSAL', 'year' ]]
 # 
 # we assigned the column names to a list object, called columns:
 # 
-# columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+#     columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
 # 
 # and passed it into the filter criteria:
 # 
-# filtered_df = df[columns]
+#     filtered_df = df[columns]
 # 
 # Instead of creating two different DataFrame objects (like filtered_housing_2005, filtered_housing_2007, etc), we created an empty list called new_df_list:
 # 
-# new_df_list = list()
+#     new_df_list = list()
 # 
 # and appended each of the filtered_df objects to it:
 # 
-# new_df_list.append(filtered_df)
+#     new_df_list.append(filtered_df)
 # 
 # As you can see, we placed a heavy emphasis on abstracting, or generalizing, our logic so we can detail the logic once, and apply it in many cases. The filter_columns function that we wrote is essentially a piece of software that will filter any list of DataFrame objects into the 4 columns we want. Whether the list of DataFrame objects has 1 DataFrame object or 25, the same function can be applied to get the result we want. Another abstraction we could implement would be to modify the function and specify the columns we want filtered every time by adding it as an input to the function (alongside data_frames_list). This way, instead of always using a specific set of columns within the function, the user can now specify in the input which columns they prefer to filter their DataFrames.
 # 
@@ -144,12 +152,12 @@ filtered_data_frames_list = filter_columns(data_frames_list)
 
 # Let's quickly verify that each of the DataFrame objects in filtered_data_frames_list only contains the 4 columns we specified in columns. Here we will write a print() statement within a for loop to print all of the columns in each DataFrame housed in filtered_data_frames_list.
 
-# In[5]:
+# In[6]:
 
 # For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
     # Print dataframe columns.
-    print df.columns
+    print("df.columns:", df.columns)
 
 
 # ###7: Summary
@@ -162,11 +170,11 @@ for df in filtered_data_frames_list:
 # 
 # In the following code block:
 # 
-# print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")
+#     print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")
 # 
 # we use the function str() to convert Integer objects, like year and len(negative_age_count), into String objects. The print function can only print String objects, so we must convert other objects to String objects. While not all objects can be converted to String objects for displaying, most can and we will cover in a later lesson how we can tell.
 
-# In[6]:
+# In[7]:
 
 # For every dataframe in the list 'filtered_data_frames_list'.
 for df in filtered_data_frames_list:
@@ -175,7 +183,7 @@ for df in filtered_data_frames_list:
     # Return rows with negative age values.
     negative_age_count = df[df['AGE1']<0]
     # Print row count.
-    print str(year) + " - " + str(len( negative_age_count ) ) + " rows"
+    print(str(year) + " - " + str(len( negative_age_count ) ) + " rows")
 
 
 # ###9: Explanation
@@ -192,19 +200,19 @@ for df in filtered_data_frames_list:
 # 
 # Inside the function, we will first instantiate, or create, an empty list with no elements:
 # 
-# cleaned_list = list()
+#     cleaned_list = list()
 # 
 # Then, we will iterate through each DataFrame in filtered_data_frames_list, create a temporary DataFrame cleaned_df containing just the positive AGE1 rows for each DataFrame:
 # 
-# cleaned_df = df[ df ['AGE1'] > 0 ]
+#     cleaned_df = df[ df ['AGE1'] > 0 ]
 # 
 # And then we will append cleaned_df to cleaned_list for each iteration:
 # 
-# cleaned_list.append(cleaned_df)
+#     cleaned_list.append(cleaned_df)
 # 
 # Let's run this function clean_rows on data_frames_list and assign the results to cleaned_data_frames_list.
 
-# In[7]:
+# In[8]:
 
 def clean_rows(filtered_data_frames_list):
     # Create list.
@@ -220,7 +228,8 @@ def clean_rows(filtered_data_frames_list):
 
 cleaned_data_frames_list = clean_rows(filtered_data_frames_list)
 
-print cleaned_data_frames_list
+print("cleaned_data_frames_list[0]:\n", cleaned_data_frames_list[0][:5])
+print("cleaned_data_frames_list[1]:\n", cleaned_data_frames_list[1][:5])
 
 
 # ###11: Verify Cleanup
@@ -231,7 +240,7 @@ print cleaned_data_frames_list
 
 # Run the function verify_cleanup on cleaned_data_frames_list and assign the result to a new variable, verification_count.
 
-# In[8]:
+# In[9]:
 
 def verify_cleanup(data_frames_list):
     # Create count.
@@ -246,7 +255,7 @@ def verify_cleanup(data_frames_list):
 verification_count = -1
 verification_count = verify_cleanup(cleaned_data_frames_list)
 
-print verification_count
+print("verification_count:", verification_count)
 
 
 # ###12: Summary

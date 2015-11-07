@@ -169,6 +169,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -227,16 +240,76 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span>
 
 <span class="n">housing_2007</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/Hud_2007.csv&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;housing_2007:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">housing_2007</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+
 <span class="n">housing_2005</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/Hud_2005.csv&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;housing_2005:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">housing_2005</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>housing_2007:
+           CONTROL  AGE1  BEDRMS  PER REGION   LMED   FMR    L30    L50    L80  \
+0  &apos;100003130103&apos;    -9       3   -6    &apos;1&apos;  66440  1048  14344  23890  37385   
+1  &apos;100003130203&apos;    69       3    1    &apos;1&apos;  66440  1048  14344  23890  37385   
+2  &apos;100006110249&apos;    45       3    1    &apos;3&apos;  49575   757  10893  18140  29019   
+
+     ...          FMTINCRELFMRCAT  FMTCOST06RELAMICAT FMTCOST08RELAMICAT  \
+0    ...                      &apos;.&apos;    &apos;3 50 - 60% AMI&apos;   &apos;4 60 - 80% AMI&apos;   
+1    ...               &apos;3 GT FMR&apos;     &apos;1 LTE 30% AMI&apos;    &apos;1 LTE 30% AMI&apos;   
+2    ...      &apos;2 50.1 - 100% FMR&apos;    &apos;4 60 - 80% AMI&apos;  &apos;5 80 - 100% AMI&apos;   
+
+   FMTCOST12RELAMICAT  FMTCOSTMEDRELAMICAT     FMTINCRELAMICAT FMTASSISTED  \
+0   &apos;5 80 - 100% AMI&apos;     &apos;3 50 - 60% AMI&apos;                 &apos;.&apos;         &apos;.&apos;   
+1     &apos;1 LTE 30% AMI&apos;      &apos;1 LTE 30% AMI&apos;  &apos;6 100 - 120% AMI&apos;         &apos;.&apos;   
+2  &apos;6 100 - 120% AMI&apos;     &apos;4 60 - 80% AMI&apos;    &apos;4 60 - 80% AMI&apos;         &apos;.&apos;   
+
+           FMTBURDEN  FMTREGION  FMTSTATUS  
+0                &apos;.&apos;       &apos;-5&apos;       &apos;-5&apos;  
+1  &apos;1 Less than 30%&apos;       &apos;-5&apos;       &apos;-5&apos;  
+2     &apos;2 30% to 50%&apos;       &apos;-5&apos;       &apos;-5&apos;  
+
+[3 rows x 99 columns]
+housing_2005:
+           CONTROL  AGE1  BEDRMS  PER REGION   LMED  FMR    L30    L50    L80  \
+0  &apos;100006110249&apos;    43       3    1    &apos;3&apos;  47954  680  10359  17263  27615   
+1  &apos;100006370140&apos;    44       4    5    &apos;3&apos;  47954  760  15988  26630  42607   
+2  &apos;100006520140&apos;    58       3    3    &apos;3&apos;  47954  680  13321  22194  35506   
+
+     ...          FMTINCRELFMRCAT  FMTCOST06RELAMICAT FMTCOST08RELAMICAT  \
+0    ...      &apos;2 50.1 - 100% FMR&apos;    &apos;4 60 - 80% AMI&apos;   &apos;4 60 - 80% AMI&apos;   
+1    ...               &apos;3 GT FMR&apos;   &apos;5 80 - 100% AMI&apos;  &apos;5 80 - 100% AMI&apos;   
+2    ...               &apos;3 GT FMR&apos;  &apos;6 100 - 120% AMI&apos;     &apos;7 120% AMI +&apos;   
+
+   FMTCOST12RELAMICAT FMTCOSTMEDRELAMICAT   FMTINCRELAMICAT  FMTASSISTED  \
+0   &apos;5 80 - 100% AMI&apos;    &apos;4 60 - 80% AMI&apos;  &apos;3 50 - 60% AMI&apos;          &apos;.&apos;   
+1      &apos;7 120% AMI +&apos;   &apos;5 80 - 100% AMI&apos;    &apos;7 120% AMI +&apos;          &apos;.&apos;   
+2      &apos;7 120% AMI +&apos;  &apos;6 100 - 120% AMI&apos;    &apos;7 120% AMI +&apos;          &apos;.&apos;   
+
+              FMTBURDEN  FMTREGION  FMTSTATUS  
+0  &apos;3 Greater than 50%&apos;       &apos;-5&apos;       &apos;-5&apos;  
+1     &apos;1 Less than 30%&apos;       &apos;-5&apos;       &apos;-5&apos;  
+2     &apos;1 Less than 30%&apos;       &apos;-5&apos;       &apos;-5&apos;  
+
+[3 rows x 99 columns]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -258,11 +331,17 @@ div#notebook {
 <p>Now that we have read in both datasets into DataFrame objects, let's add them to a List. A List is type of object (just like a DataFrame, Integer, or String) that contains an ordered group of objects. Just like how a grocery list contains a group of "ingredient" objects to buy, is a List object in Python houses a group of the objects we add to it. Instead of writing code to manipulate each object separately (in our case the objects are DataFrames), we can group a few objects into a List object, write the logic once, and apply it to every object in that List. This saves us a lot of time and energy, and will be important when we deal with much larger datasets with tens, hundreds or even thousands of DataFrames.</p>
 <p>In the following code block, we will create an empty List called data_frames_list by assigning it empty brackets: []</p>
 <p>Then, we will add a year column for each DataFrame to keep track of which DataFrame is which:</p>
-<p>housing_2005['year'] = '2005'
-housing_2007['year'] = '2007'</p>
+
+<pre><code>housing_2005['year'] = '2005'
+housing_2007['year'] = '2007'
+
+</code></pre>
 <p>Each row now has a value for year, either 2005 or 2007, identifying which dataset that row originated from. Finally, we will use .append() to first add housing_2005 then housing_2007 to the end of data_frames_list. The List object preserves the order by which the DataFrames were added:</p>
-<p>data_frames_list.append(housing_2005)
-data_frames_list.append(housing_2007)</p>
+
+<pre><code>data_frames_list.append(housing_2005)
+data_frames_list.append(housing_2007)
+
+</code></pre>
 <p>The list now contains these two DataFrames in the order we added them.</p>
 
 </div>
@@ -270,10 +349,10 @@ data_frames_list.append(housing_2007)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Create list.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create list.</span>
 <span class="n">data_frames_list</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c"># Add a year column to each dataframe.</span>
@@ -285,7 +364,7 @@ data_frames_list.append(housing_2007)</p>
 <span class="n">data_frames_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">housing_2007</span><span class="p">)</span>
 
 <span class="c"># List now contains 2 objects, the respective dataframes for 2005 and 2007.</span>
-<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;data_frames_list:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -298,7 +377,7 @@ data_frames_list.append(housing_2007)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2
+<pre>data_frames_list: 2
 </pre>
 </div>
 </div>
@@ -348,10 +427,10 @@ data_frames_list.append(housing_2007)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">columns</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">columns</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">filtered_housing_2007</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c"># Create list of column names to filter by.</span>
@@ -360,7 +439,7 @@ data_frames_list.append(housing_2007)</p>
 <span class="c"># Filter dataframe.</span>
 <span class="n">filtered_housing_2007</span> <span class="o">=</span> <span class="n">housing_2007</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
 
-<span class="k">print</span> <span class="n">filtered_housing_2007</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;filtered_housing_2007:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">filtered_housing_2007</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -373,7 +452,8 @@ data_frames_list.append(housing_2007)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   AGE1   FMR  TOTSAL  year
+<pre>filtered_housing_2007:
+    AGE1   FMR  TOTSAL  year
 0    -9  1048      -9  2007
 1    69  1048       0  2007
 2    45   757   26000  2007
@@ -409,10 +489,10 @@ data_frames_list.append(housing_2007)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">filter_columns</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">filter_columns</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">):</span>
     <span class="c"># Create list.</span>
     <span class="n">new_df_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
     
@@ -454,15 +534,30 @@ data_frames_list.append(housing_2007)</p>
 <p>for df in data_frames_list:</p>
 <p>to iterate over all of the object in data_frames_list (which contained our twp DataFrames we added earlier) and applied our column filtering logic. We iterated over a list object by object, referring to the current object we were applying the logic to as df.</p>
 <p>Instead of hard coding the columns we want at the filter level like we did in the last lesson:</p>
-<p>filtered_housing_2013 = housing_2013[[ 'AGE1', 'FMR',  'TOTSAL', 'year' ]]</p>
+
+<pre><code>filtered_housing_2013 = housing_2013[[ 'AGE1', 'FMR',  'TOTSAL', 'year' ]]
+
+</code></pre>
 <p>we assigned the column names to a list object, called columns:</p>
-<p>columns = ['AGE1', 'FMR', 'TOTSAL', 'year']</p>
+
+<pre><code>columns = ['AGE1', 'FMR', 'TOTSAL', 'year']
+
+</code></pre>
 <p>and passed it into the filter criteria:</p>
-<p>filtered_df = df[columns]</p>
+
+<pre><code>filtered_df = df[columns]
+
+</code></pre>
 <p>Instead of creating two different DataFrame objects (like filtered_housing_2005, filtered_housing_2007, etc), we created an empty list called new_df_list:</p>
-<p>new_df_list = list()</p>
+
+<pre><code>new_df_list = list()
+
+</code></pre>
 <p>and appended each of the filtered_df objects to it:</p>
-<p>new_df_list.append(filtered_df)</p>
+
+<pre><code>new_df_list.append(filtered_df)
+
+</code></pre>
 <p>As you can see, we placed a heavy emphasis on abstracting, or generalizing, our logic so we can detail the logic once, and apply it in many cases. The filter_columns function that we wrote is essentially a piece of software that will filter any list of DataFrame objects into the 4 columns we want. Whether the list of DataFrame objects has 1 DataFrame object or 25, the same function can be applied to get the result we want. Another abstraction we could implement would be to modify the function and specify the columns we want filtered every time by adding it as an input to the function (alongside data_frames_list). This way, instead of always using a specific set of columns within the function, the user can now specify in the input which columns they prefer to filter their DataFrames.</p>
 <p>This is the power of abstraction. It allows us to automate repetitive work incredibly easily.</p>
 
@@ -490,13 +585,13 @@ data_frames_list.append(housing_2007)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># For every dataframe in the list &#39;filtered_data_frames_list&#39;.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># For every dataframe in the list &#39;filtered_data_frames_list&#39;.</span>
 <span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">filtered_data_frames_list</span><span class="p">:</span>
     <span class="c"># Print dataframe columns.</span>
-    <span class="k">print</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;df.columns:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -509,8 +604,8 @@ data_frames_list.append(housing_2007)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apos;], dtype=&apos;object&apos;)
-Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apos;], dtype=&apos;object&apos;)
+<pre>df.columns: Index([&apos;AGE1&apos;, &apos;FMR&apos;, &apos;TOTSAL&apos;, &apos;year&apos;], dtype=&apos;object&apos;)
+df.columns: Index([&apos;AGE1&apos;, &apos;FMR&apos;, &apos;TOTSAL&apos;, &apos;year&apos;], dtype=&apos;object&apos;)
 </pre>
 </div>
 </div>
@@ -554,7 +649,10 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now let's write a function that counts the number of rows in each DataFrame that have negative values for the AGE1 column. We will also use Python's ability to custom print values.</p>
 <p>In the following code block:</p>
-<p>print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")</p>
+
+<pre><code>print( str(year) + " - " + str(len( negative_age_count ) ) + " rows")
+
+</code></pre>
 <p>we use the function str() to convert Integer objects, like year and len(negative_age_count), into String objects. The print function can only print String objects, so we must convert other objects to String objects. While not all objects can be converted to String objects for displaying, most can and we will cover in a later lesson how we can tell.</p>
 
 </div>
@@ -562,17 +660,17 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># For every dataframe in the list &#39;filtered_data_frames_list&#39;.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># For every dataframe in the list &#39;filtered_data_frames_list&#39;.</span>
 <span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">filtered_data_frames_list</span><span class="p">:</span>
     <span class="c"># Get the dataframe year.</span>
     <span class="n">year</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">&#39;year&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
     <span class="c"># Return rows with negative age values.</span>
     <span class="n">negative_age_count</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;AGE1&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">]</span>
     <span class="c"># Print row count.</span>
-    <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; - &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span> <span class="n">negative_age_count</span> <span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="s">&quot; rows&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; - &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span> <span class="n">negative_age_count</span> <span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="s">&quot; rows&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -632,11 +730,20 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 <p>If you recall from the previous mission, the 2013 dataset had 4438 rows with negative ages. The 2005 and 2007 datasets are not as bad, but now we have to clean up two years’ data at the same time. Let's write a function that automates the clean up we did in the last mission so that we are left only with the rows that contain positive values for the AGE1 column.</p>
 <p>Now let's write a function clean_rows() that takes a List of DataFrames and returns a List of cleaned DataFrames with just rows containing positive AGE1 values.</p>
 <p>Inside the function, we will first instantiate, or create, an empty list with no elements:</p>
-<p>cleaned_list = list()</p>
+
+<pre><code>cleaned_list = list()
+
+</code></pre>
 <p>Then, we will iterate through each DataFrame in filtered_data_frames_list, create a temporary DataFrame cleaned_df containing just the positive AGE1 rows for each DataFrame:</p>
-<p>cleaned_df = df[ df ['AGE1'] &gt; 0 ]</p>
+
+<pre><code>cleaned_df = df[ df ['AGE1'] &gt; 0 ]
+
+</code></pre>
 <p>And then we will append cleaned_df to cleaned_list for each iteration:</p>
-<p>cleaned_list.append(cleaned_df)</p>
+
+<pre><code>cleaned_list.append(cleaned_df)
+
+</code></pre>
 <p>Let's run this function clean_rows on data_frames_list and assign the results to cleaned_data_frames_list.</p>
 
 </div>
@@ -644,10 +751,10 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">clean_rows</span><span class="p">(</span><span class="n">filtered_data_frames_list</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">clean_rows</span><span class="p">(</span><span class="n">filtered_data_frames_list</span><span class="p">):</span>
     <span class="c"># Create list.</span>
     <span class="n">cleaned_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
     
@@ -661,7 +768,8 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 
 <span class="n">cleaned_data_frames_list</span> <span class="o">=</span> <span class="n">clean_rows</span><span class="p">(</span><span class="n">filtered_data_frames_list</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">cleaned_data_frames_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;cleaned_data_frames_list[0]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">cleaned_data_frames_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;cleaned_data_frames_list[1]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">cleaned_data_frames_list</span><span class="p">[</span><span class="mi">1</span><span class="p">][:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -674,133 +782,20 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[       AGE1   FMR  TOTSAL  year
-0        43   680   20000  2005
-1        44   760   71000  2005
-2        58   680   63000  2005
-3        22   519   27040  2005
-4        48   600   14000  2005
-5        42   788   42000  2005
-7        23   546   48000  2005
-8        51   680   58000  2005
-9        47  1081  125000  2005
-10       66  1081       0  2005
-11       47  1006   54400  2005
-12       30   874  439364  2005
-13       49   916   75000  2005
-14       60   972       0  2005
-15       47   862   80000  2005
-16       59   629     550  2005
-17       45   862   42000  2005
-18       54   607   65000  2005
-19       35   892   57000  2005
-21       33   972   58000  2005
-22       42   760   59050  2005
-23       37   963   44000  2005
-24       52   879  136000  2005
-26       27   750   42500  2005
-27       54  1035    5000  2005
-28       37   833    2000  2005
-29       52   940   77883  2005
-30       70  1080       0  2005
-31       82  1017       0  2005
-32       46  1168   14000  2005
-...     ...   ...     ...   ...
-46821    27   677   62000  2005
-46822    53   972       0  2005
-46823    42  1267   95000  2005
-46824    47  1190   53200  2005
-46825    28  1397   91000  2005
-46826    23   677   30000  2005
-46828    84   817       0  2005
-46829    36  1168   79919  2005
-46830    30  1607   82000  2005
-46831    54  1094   54000  2005
-46832    46  1190   79000  2005
-46833    46  1168   48000  2005
-46834    58   817   42500  2005
-46835    62  1168  124000  2005
-46836    56  1420   82000  2005
-46837    34  1420  103000  2005
-46838    41  1168   52000  2005
-46839    56  1607   85000  2005
-46840    30   825   24000  2005
-46841    60   825  100000  2005
-46842    46   693   46500  2005
-46843    28   825   50000  2005
-46844    26  1397   61000  2005
-46845    23  1190   57000  2005
-46846    34  1633  200000  2005
-46847    46  1168  302000  2005
-46848    33  1168  105000  2005
-46849    40  1397   65000  2005
-46850    44  1397  280400  2005
-46852    44  1420   75000  2005
-
-[43360 rows x 4 columns],        AGE1   FMR  TOTSAL  year
-1        69  1048       0  2007
-2        45   757   26000  2007
-3        47   847  126000  2007
-4        30   616   42000  2007
-5        50   605   15000  2007
-6        44   807  145000  2007
-8        24   599   96000  2007
-9        53   757   85000  2007
-10       49   974  165000  2007
-11       44   974   71000  2007
-12       61   956  104000  2007
-13       29   572       0  2007
-14       21   572   25000  2007
-15       49  1097   93000  2007
-16       31   871  485968  2007
-17       51   900   53500  2007
-18       49   930   90000  2007
-19       61   930       0  2007
-20       45   930       0  2007
-21       53   923  150000  2007
-22       56   818  125000  2007
-23       20   583   12000  2007
-24       48  1169  200000  2007
-25       34  1042   81000  2007
-26       44   847   70000  2007
-27       39   961   55000  2007
-28       54   882  130000  2007
-29       46   948  150000  2007
-30       50   951   50000  2007
-32       24   700   55000  2007
-...     ...   ...     ...   ...
-42696    71  1010       0  2007
-42697    19   896     100  2007
-42698    36  1278   96000  2007
-42700    47  1097   80400  2007
-42701    44  1147  116000  2007
-42702    65   896   90000  2007
-42703    45  1784   80000  2007
-42704    33  1359  176000  2007
-42705    50   648   44000  2007
-42706    55  1042       0  2007
-42707    49  1139   48000  2007
-42708    21   648   10000  2007
-42710    38  1278   32000  2007
-42711    34  1470  100002  2007
-42712    44  1169  162000  2007
-42713    48  1139   25000  2007
-42714    48  1278   74100  2007
-42715    65  1278   87000  2007
-42716    58  1359  120000  2007
-42717    67   963       0  2007
-42718    58  1517       0  2007
-42719    65  1517       0  2007
-42721    35  1517   12000  2007
-42722    24  1359   60000  2007
-42723    48  1278  310000  2007
-42724    57  1278   40800  2007
-42725    42  1517   94000  2007
-42726    46  1517  185000  2007
-42727    25   782       0  2007
-42728    45  1310   90000  2007
-
-[39107 rows x 4 columns]]
+<pre>cleaned_data_frames_list[0]:
+    AGE1  FMR  TOTSAL  year
+0    43  680   20000  2005
+1    44  760   71000  2005
+2    58  680   63000  2005
+3    22  519   27040  2005
+4    48  600   14000  2005
+cleaned_data_frames_list[1]:
+    AGE1   FMR  TOTSAL  year
+1    69  1048       0  2007
+2    45   757   26000  2007
+3    47   847  126000  2007
+4    30   616   42000  2007
+5    50   605   15000  2007
 </pre>
 </div>
 </div>
@@ -849,10 +844,10 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">verify_cleanup</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">verify_cleanup</span><span class="p">(</span><span class="n">data_frames_list</span><span class="p">):</span>
     <span class="c"># Create count.</span>
     <span class="n">negative_rows_count</span> <span class="o">=</span> <span class="mi">0</span>
     
@@ -865,7 +860,7 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 <span class="n">verification_count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="n">verification_count</span> <span class="o">=</span> <span class="n">verify_cleanup</span><span class="p">(</span><span class="n">cleaned_data_frames_list</span><span class="p">)</span>
 
-<span class="k">print</span> <span class="n">verification_count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;verification_count:&quot;</span><span class="p">,</span> <span class="n">verification_count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -878,7 +873,7 @@ Index([u&apos;AGE1&apos;, u&apos;FMR&apos;, u&apos;TOTSAL&apos;, u&apos;year&apo
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0
+<pre>verification_count: 0
 </pre>
 </div>
 </div>
