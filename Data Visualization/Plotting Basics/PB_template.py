@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# In[1]:
+
+from __future__ import print_function
+
+
 # #Data Visualization
 
 # ##Plotting Basics
@@ -20,7 +25,7 @@
 # In[2]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Create plot data.
 month = [1,1,2,2,4,5,5,7,8,10,10,11,12]
@@ -46,7 +51,7 @@ plt.show()
 # In[3]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Create plot data.
 weight = [600,150,200,300,200,100,125,180]
@@ -90,7 +95,7 @@ forest_fires.head(5)
 # In[5]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 plt.scatter(forest_fires["X"], forest_fires["Y"])
 plt.show()
@@ -121,7 +126,7 @@ plt.show()
 # In[6]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 plt.plot(forest_fires["temp"], forest_fires["area"])
 plt.show()
@@ -152,7 +157,7 @@ plt.show()
 # In[7]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Scatter plot of "X" and "Y" fire positions.
 plt.scatter(forest_fires["X"], forest_fires["Y"])
@@ -194,13 +199,13 @@ plt.show()
 # 
 # Plot "rain" on the x axis and "area" on the y axis.
 
-# In[9]:
+# In[8]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Print all available styles.
-print plt.style.available
+print("plt.style.available:", plt.style.available)
 
 # Use the ggplot style for plotting.
 plt.style.use('ggplot')
@@ -227,11 +232,11 @@ plt.show()
 # 
 # For example, we can graph month against the area that fires consumed in that month.
 
-# In[10]:
+# In[9]:
 
 import numpy
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Pivot table with Y position of the fire as the index, and the average area of forest burned per fire as the values.
 area_by_y = forest_fires.pivot_table(index="Y", values="area", aggfunc=numpy.mean)

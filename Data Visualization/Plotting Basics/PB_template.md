@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Data Visualization
 
 ##Plotting Basics
@@ -32,7 +37,7 @@ plt.show()
 ```
 
 
-![png](output_6_0.png)
+![png](output_7_0.png)
 
 
 ###2: Making a scatter plot
@@ -72,11 +77,11 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![png](output_12_0.png)
 
 
 
-![png](output_11_1.png)
+![png](output_12_1.png)
 
 
 ###3: Plotting fire data
@@ -223,15 +228,15 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](output_18_0.png)
 
 
 
-![png](output_17_1.png)
+![png](output_18_1.png)
 
 
 
-![png](output_17_2.png)
+![png](output_18_2.png)
 
 
 ###4: Making a line chart
@@ -272,19 +277,19 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![png](output_23_0.png)
 
 
 
-![png](output_22_1.png)
+![png](output_23_1.png)
 
 
 
-![png](output_22_2.png)
+![png](output_23_2.png)
 
 
 
-![png](output_22_3.png)
+![png](output_23_3.png)
 
 
 ###5: Labeling the chart
@@ -329,11 +334,11 @@ plt.show()
 ```
 
 
-![png](output_27_0.png)
+![png](output_28_0.png)
 
 
 
-![png](output_27_1.png)
+![png](output_28_1.png)
 
 
 ###6: Nicer looking plots
@@ -356,7 +361,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 
 # Print all available styles.
-print plt.style.available
+print("plt.style.available:", plt.style.available)
 
 # Use the ggplot style for plotting.
 plt.style.use('ggplot')
@@ -375,15 +380,15 @@ plt.scatter(forest_fires["rain"], forest_fires["area"])
 plt.show()
 ```
 
-    [u'dark_background', u'bmh', u'grayscale', u'ggplot', u'fivethirtyeight']
+    plt.style.available: ['bmh', 'dark_background', 'grayscale', 'fivethirtyeight', 'ggplot']
     
 
 
-![png](output_32_1.png)
+![png](output_33_1.png)
 
 
 
-![png](output_32_2.png)
+![png](output_33_2.png)
 
 
 ###7: Making a bar plot
@@ -415,9 +420,9 @@ plt.show()
 ```
 
 
-![png](output_35_0.png)
+![png](output_36_0.png)
 
 
 
-![png](output_35_1.png)
+![png](output_36_1.png)
 
