@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>DB_template</title>
+<title>GSwM_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -196,7 +196,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dataframe-Basics">Dataframe Basics<a class="anchor-link" href="#Dataframe-Basics">&#182;</a></h2>
+<h2 id="Getting-Started-with-Matrices">Getting Started with Matrices<a class="anchor-link" href="#Getting-Started-with-Matrices">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -205,7 +205,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1:-Read-in-a-CSV-file">1: Read in a CSV file<a class="anchor-link" href="#1:-Read-in-a-CSV-file">&#182;</a></h3>
+<h3 id="1:-Reading-data-into-NumPy">1: Reading data into NumPy<a class="anchor-link" href="#1:-Reading-data-into-NumPy">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -214,9 +214,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The first step, as always, is reading in a csv file.</p>
-<p>With pandas, we'll need to use the read_csv method.</p>
-<p>With pandas, the equivalent of a two-dimensional numpy array, or matrix, is called a dataframe.</p>
+<p>NumPy is a Python module that has a lot of functions for working with data.</p>
+<p>If you want to do serious work with data in Python, you'll be using a lot of NumPy.</p>
+<p>We'll work through importing NumPy and loading in a csv file.</p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Read "food_info.csv" info food_info.</p>
+<p>Import the data in "world_alcohol.csv" into the variable world_alcohol.</p>
 
 </div>
 </div>
@@ -245,10 +245,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span>
 
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/food_info.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s">&quot;latin-1&quot;</span><span class="p">)</span>
-<span class="n">food_info</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">f</span> <span class="o">=</span> <span class="s">&quot;data/world_alcohol.csv&quot;</span>
+<span class="n">world_alcohol</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -259,164 +260,24 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>NDB_No</th>
-      <th>Shrt_Desc</th>
-      <th>Water_(g)</th>
-      <th>Energ_Kcal</th>
-      <th>Protein_(g)</th>
-      <th>Lipid_Tot_(g)</th>
-      <th>Ash_(g)</th>
-      <th>Carbohydrt_(g)</th>
-      <th>Fiber_TD_(g)</th>
-      <th>Sugar_Tot_(g)</th>
-      <th>...</th>
-      <th>Vit_K_(µg)</th>
-      <th>FA_Sat_(g)</th>
-      <th>FA_Mono_(g)</th>
-      <th>FA_Poly_(g)</th>
-      <th>Cholestrl_(mg)</th>
-      <th>GmWt_1</th>
-      <th>GmWt_Desc1</th>
-      <th>GmWt_2</th>
-      <th>GmWt_Desc2</th>
-      <th>Refuse_Pct</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1001</td>
-      <td>BUTTER,WITH SALT</td>
-      <td>15.87</td>
-      <td>717</td>
-      <td>0.85</td>
-      <td>81.11</td>
-      <td>2.11</td>
-      <td>0.06</td>
-      <td>0</td>
-      <td>0.06</td>
-      <td>...</td>
-      <td>7.0</td>
-      <td>51.368</td>
-      <td>21.021</td>
-      <td>3.043</td>
-      <td>215</td>
-      <td>5.00</td>
-      <td>1 pat,  (1" sq, 1/3" high)</td>
-      <td>14.2</td>
-      <td>1 tbsp</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1002</td>
-      <td>BUTTER,WHIPPED,W/ SALT</td>
-      <td>16.72</td>
-      <td>718</td>
-      <td>0.49</td>
-      <td>78.30</td>
-      <td>1.62</td>
-      <td>2.87</td>
-      <td>0</td>
-      <td>0.06</td>
-      <td>...</td>
-      <td>4.6</td>
-      <td>45.390</td>
-      <td>19.874</td>
-      <td>3.331</td>
-      <td>225</td>
-      <td>3.80</td>
-      <td>1 pat,  (1" sq, 1/3" high)</td>
-      <td>9.4</td>
-      <td>1 tbsp</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1003</td>
-      <td>BUTTER OIL,ANHYDROUS</td>
-      <td>0.24</td>
-      <td>876</td>
-      <td>0.28</td>
-      <td>99.48</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0</td>
-      <td>0.00</td>
-      <td>...</td>
-      <td>8.6</td>
-      <td>61.924</td>
-      <td>28.732</td>
-      <td>3.694</td>
-      <td>256</td>
-      <td>12.80</td>
-      <td>1 tbsp</td>
-      <td>205.0</td>
-      <td>1 cup</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1004</td>
-      <td>CHEESE,BLUE</td>
-      <td>42.41</td>
-      <td>353</td>
-      <td>21.40</td>
-      <td>28.74</td>
-      <td>5.11</td>
-      <td>2.34</td>
-      <td>0</td>
-      <td>0.50</td>
-      <td>...</td>
-      <td>2.4</td>
-      <td>18.669</td>
-      <td>7.778</td>
-      <td>0.800</td>
-      <td>75</td>
-      <td>28.35</td>
-      <td>1 oz</td>
-      <td>17.0</td>
-      <td>1 cubic inch</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1005</td>
-      <td>CHEESE,BRICK</td>
-      <td>41.11</td>
-      <td>371</td>
-      <td>23.24</td>
-      <td>29.68</td>
-      <td>3.18</td>
-      <td>2.79</td>
-      <td>0</td>
-      <td>0.51</td>
-      <td>...</td>
-      <td>2.5</td>
-      <td>18.764</td>
-      <td>8.598</td>
-      <td>0.784</td>
-      <td>94</td>
-      <td>132.00</td>
-      <td>1 cup, diced</td>
-      <td>113.0</td>
-      <td>1 cup, shredded</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 53 columns</p>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>world_alcohol:
+ [[  1.98600000e+03              nan              nan              nan
+    0.00000000e+00]
+ [  1.98600000e+03              nan              nan              nan
+    5.00000000e-01]
+ [  1.98500000e+03              nan              nan              nan
+    1.62000000e+00]
+ ..., 
+ [  1.98600000e+03              nan              nan              nan
+    2.54000000e+00]
+ [  1.98700000e+03              nan              nan              nan
+    0.00000000e+00]
+ [  1.98600000e+03              nan              nan              nan
+    5.15000000e+00]]
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -428,7 +289,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2:-Indexing-data-with-pandas">2: Indexing data with pandas<a class="anchor-link" href="#2:-Indexing-data-with-pandas">&#182;</a></h3>
+<h3 id="3:-Fixing-the-data-types">3: Fixing the data types<a class="anchor-link" href="#3:-Fixing-the-data-types">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -437,20 +298,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Indexing in pandas is slightly different from in numpy.</p>
-<p>We need to use the .iloc[] method (note how it uses square brackets instead of parentheses).</p>
-<ul>
-<li>numpy_array[0,0]</li>
-<li>numpy_array[:,0]</li>
-<li>numpy_array[0,:]</li>
-</ul>
-<p>The above lines of code will get the first element of the first row, the whole first column, and the whole first row from a numpy array, respectively.</p>
-<ul>
-<li>pandas_dataframe.iloc[0,0]</li>
-<li>pandas_dataframe.iloc[:,0]</li>
-<li>pandas_dataframe.iloc[0,:]  </li>
-</ul>
-<p>The above is the equivalent indexing in a pandas dataframe.</p>
+<p>If you looked at the data you read in last screen, you may have noticed that it looked very strange.</p>
+<p>This is because genfromtxt reads the data into a NumPy array.</p>
+<p>Every element in an array has to be the same data type.</p>
+<p>So everything is a string, or everything is an integer, and so on.</p>
+<p>NumPy tried to convert all of our data to floats, which caused the values to become strange.</p>
+<p>We'll need to specify the data type when we read our data in so we can avoid that.</p>
 
 </div>
 </div>
@@ -469,8 +322,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the second row of food_info to the variable second_row.</p>
-<p>Assign the tenth row of food_info to the variable tenth_row.</p>
+<p>Read in the "world_alcohol.csv" data to world_alcohol, using the str datatype.</p>
+<p>Be sure to skip the header row.</p>
 
 </div>
 </div>
@@ -480,14 +333,16 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Print first row of data.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;food_info.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span>
 
-<span class="c"># Assign second row.</span>
-<span class="n">second_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
-
-<span class="c"># Assign tenth row.</span>
-<span class="n">tenth_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">9</span><span class="p">,:]</span>
+<span class="c"># Using the dtype keyword argument with the str type tells numpy that everything we are reading in is a string.</span>
+<span class="c"># &quot;U75&quot; tells numpy to load the file as strings.</span>
+<span class="c"># The &quot;U&quot; refers to unicode (a type of string), and the 75 is the maximum length of a string element in the data.</span>
+<span class="c"># While we&#39;re at it, let&#39;s also skip the header.</span>
+<span class="c"># We can add the optional skip_header keyword argument, and set it equal to the number of header rows to skip (1).</span>
+<span class="n">f</span> <span class="o">=</span> <span class="s">&quot;data/world_alcohol.csv&quot;</span>
+<span class="n">world_alcohol</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&quot;U75&quot;</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -500,18 +355,14 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>food_info.iloc[0,:10]:
- NDB_No                        1001
-Shrt_Desc         BUTTER,WITH SALT
-Water_(g)                    15.87
-Energ_Kcal                     717
-Protein_(g)                   0.85
-Lipid_Tot_(g)                81.11
-Ash_(g)                       2.11
-Carbohydrt_(g)                0.06
-Fiber_TD_(g)                     0
-Sugar_Tot_(g)                 0.06
-Name: 0, dtype: object
+<pre>world_alcohol:
+ [[&apos;1986&apos; &apos;Western Pacific&apos; &apos;Viet Nam&apos; &apos;Wine&apos; &apos;0&apos;]
+ [&apos;1986&apos; &apos;Americas&apos; &apos;Uruguay&apos; &apos;Other&apos; &apos;0.5&apos;]
+ [&apos;1985&apos; &apos;Africa&apos; &quot;Cte d&apos;Ivoire&quot; &apos;Wine&apos; &apos;1.62&apos;]
+ ..., 
+ [&apos;1986&apos; &apos;Europe&apos; &apos;Switzerland&apos; &apos;Spirits&apos; &apos;2.54&apos;]
+ [&apos;1987&apos; &apos;Western Pacific&apos; &apos;Papua New Guinea&apos; &apos;Other&apos; &apos;0&apos;]
+ [&apos;1986&apos; &apos;Africa&apos; &apos;Swaziland&apos; &apos;Other&apos; &apos;5.15&apos;]]
 </pre>
 </div>
 </div>
@@ -525,7 +376,7 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3:-Index-a-series">3: Index a series<a class="anchor-link" href="#3:-Index-a-series">&#182;</a></h3>
+<h3 id="3:-Indexing-the-data">3: Indexing the data<a class="anchor-link" href="#3:-Indexing-the-data">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -534,8 +385,9 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What we call a vector or a one-dimensional array is called a series in pandas.</p>
-<p>We index a series without using .iloc[].</p>
+<p>Now that we know how to read in a file, let's start pulling values out.</p>
+<p>Remember how all elements in a matrix have an index?</p>
+<p>We can print the item at row 1, column 2, by typing print world_alcohol[0,1]</p>
 
 </div>
 </div>
@@ -554,8 +406,9 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the first 20 items in the second row to first_20_items_in_second_row.</p>
-<p>Assign the first 10 items in the first column to first_10_items_in_first_column.</p>
+<p>Assign the amount of alcohol Uruguayans drank in other beverages per capita in 1986 to uruguay_other_1986. This is the second row in the data.</p>
+<p>Assign the whole fourth row to row_four.</p>
+<p>Assign the whole year column to years.</p>
 
 </div>
 </div>
@@ -565,31 +418,60 @@ Name: 0, dtype: object
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Assin a series.</span>
-<span class="n">first_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># The columns are Year, Region, Country, Beverage type, and Number of liters of pure alcohol drunk per person</span>
+<span class="c"># The print function below prints the number of liters of pure alcohol vietnamese drank in wine in 1986.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol[0,4]:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
 
-<span class="c"># Assign first 10 items from first row.</span>
-<span class="n">first_ten_items_in_first_row</span> <span class="o">=</span> <span class="n">first_row</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">first_ten_items_in_first_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<span class="c"># The Beverage type can take the values &quot;Beer&quot;, &quot;Wine&quot;, &quot;Spirits&quot;, and &quot;Other&quot;.</span>
 
-<span class="c"># Assign first 20 items from second row.</span>
-<span class="n">first_20_items_in_second_row</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,:][</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
+<span class="c"># If we want to grab a whole row, we replace the column number with a colon, which means &quot;get all of the columns&quot;.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol[0,:]:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span>
 
-<span class="c"># Assign first 10 items from first column.</span>
-<span class="n">first_10_items_in_first_column</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<span class="c"># If we want to grab a whole column, we do the same thing with the row number.</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;countries:&quot;</span><span class="p">,</span> <span class="n">countries</span><span class="p">)</span>
+
+<span class="n">uruguay_other_1986</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;uruguay_other_1986:&quot;</span><span class="p">,</span> <span class="n">uruguay_other_1986</span><span class="p">)</span>
+
+<span class="n">row_four</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">3</span><span class="p">,:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;row_four:&quot;</span><span class="p">,</span> <span class="n">row_four</span><span class="p">)</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;years:&quot;</span><span class="p">,</span> <span class="n">years</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>world_alcohol[0,4]: 0
+world_alcohol[0,:]: [&apos;1986&apos; &apos;Western Pacific&apos; &apos;Viet Nam&apos; &apos;Wine&apos; &apos;0&apos;]
+countries: [&apos;Viet Nam&apos; &apos;Uruguay&apos; &quot;Cte d&apos;Ivoire&quot; ..., &apos;Switzerland&apos; &apos;Papua New Guinea&apos;
+ &apos;Swaziland&apos;]
+uruguay_other_1986: 0.5
+row_four: [&apos;1986&apos; &apos;Americas&apos; &apos;Colombia&apos; &apos;Beer&apos; &apos;4.27&apos;]
+years: [&apos;1986&apos; &apos;1986&apos; &apos;1985&apos; ..., &apos;1986&apos; &apos;1987&apos; &apos;1986&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4:-Get-column-by-name">4: Get column by name<a class="anchor-link" href="#4:-Get-column-by-name">&#182;</a></h3>
+<h3 id="4:-Vectors">4: Vectors<a class="anchor-link" href="#4:-Vectors">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -598,7 +480,10 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One cool thing about pandas is that we can get columns with their names, instead of only by number.</p>
+<p>When we grab a whole row or column from the matrix, we actually end up with a vector.</p>
+<p>Just like a matrix is a 2-dimensional array because it has rows and columns, a vector is a 1-dimensional array.</p>
+<p>Vectors are similar to Python lists in that they can be indexed with only one number.</p>
+<p>Think of a vector as just a single row, or a single column.</p>
 
 </div>
 </div>
@@ -617,8 +502,9 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the FA<em>Sat</em>(g) column to the variable saturated_fat.</p>
-<p>Assign the Cholestrl_(mg) to the variable cholesterol.</p>
+<p>Assign index 30 in the years column to years_30.</p>
+<p>Assign from index 80 to index 200, inclusive, in the years columns to years_80_200.</p>
+<p>Assign from index 100 to index 103, inclusive, in the years columns to years_100_103.</p>
 
 </div>
 </div>
@@ -628,16 +514,23 @@ Name: 0, dtype: object
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Print names of all the columns (in order).</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;list(food_info.columns.values):</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Countries is a vector.</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
 
-<span class="c"># Print a particular column.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;food_info[&#39;Protein_(g)&#39;][0:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+<span class="c"># We can index a vector with only one number.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;countries[0]:&quot;</span><span class="p">,</span> <span class="n">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;countries[10]:&quot;</span><span class="p">,</span> <span class="n">countries</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>
 
-<span class="c"># Assign particular columns.</span>
-<span class="n">sodium_column</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">]</span>
-<span class="n">saturated_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Sat_(g)&quot;</span><span class="p">]</span>
-<span class="n">cholesterol</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Cholestrl_(mg)&quot;</span><span class="p">]</span>
+<span class="c"># We can also slice vectors to get some of the values in the vector.</span>
+<span class="c"># The result is a new, smaller, vector.</span>
+<span class="c"># Slicing gets values from the first index up to but not including the second index.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;countries[1:10]:&quot;</span><span class="p">,</span> <span class="n">countries</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;countries[50:70]:&quot;</span><span class="p">,</span> <span class="n">countries</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">70</span><span class="p">])</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">years_30</span> <span class="o">=</span> <span class="n">years</span><span class="p">[</span><span class="mi">30</span><span class="p">]</span>
+<span class="n">years_80_200</span> <span class="o">=</span> <span class="n">years</span><span class="p">[</span><span class="mi">80</span><span class="p">:</span><span class="mi">201</span><span class="p">]</span>
+<span class="n">years_100_103</span> <span class="o">=</span> <span class="n">years</span><span class="p">[</span><span class="mi">100</span><span class="p">:</span><span class="mi">104</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -650,20 +543,15 @@ Name: 0, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>list(food_info.columns.values):
- [&apos;NDB_No&apos;, &apos;Shrt_Desc&apos;, &apos;Water_(g)&apos;, &apos;Energ_Kcal&apos;, &apos;Protein_(g)&apos;, &apos;Lipid_Tot_(g)&apos;, &apos;Ash_(g)&apos;, &apos;Carbohydrt_(g)&apos;, &apos;Fiber_TD_(g)&apos;, &apos;Sugar_Tot_(g)&apos;, &apos;Calcium_(mg)&apos;, &apos;Iron_(mg)&apos;, &apos;Magnesium_(mg)&apos;, &apos;Phosphorus_(mg)&apos;, &apos;Potassium_(mg)&apos;, &apos;Sodium_(mg)&apos;, &apos;Zinc_(mg)&apos;, &apos;Copper_mg)&apos;, &apos;Manganese_(mg)&apos;, &apos;Selenium_(µg)&apos;, &apos;Vit_C_(mg)&apos;, &apos;Thiamin_(mg)&apos;, &apos;Riboflavin_(mg)&apos;, &apos;Niacin_(mg)&apos;, &apos;Panto_Acid_mg)&apos;, &apos;Vit_B6_(mg)&apos;, &apos;Folate_Tot_(µg)&apos;, &apos;Folic_Acid_(µg)&apos;, &apos;Food_Folate_(µg)&apos;, &apos;Folate_DFE_(µg)&apos;, &apos;Choline_Tot_ (mg)&apos;, &apos;Vit_B12_(µg)&apos;, &apos;Vit_A_IU&apos;, &apos;Vit_A_RAE&apos;, &apos;Retinol_(µg)&apos;, &apos;Alpha_Carot_(µg)&apos;, &apos;Beta_Carot_(µg)&apos;, &apos;Beta_Crypt_(µg)&apos;, &apos;Lycopene_(µg)&apos;, &apos;Lut+Zea_ (µg)&apos;, &apos;Vit_E_(mg)&apos;, &apos;Vit_D_µg&apos;, &apos;Vit_D_IU&apos;, &apos;Vit_K_(µg)&apos;, &apos;FA_Sat_(g)&apos;, &apos;FA_Mono_(g)&apos;, &apos;FA_Poly_(g)&apos;, &apos;Cholestrl_(mg)&apos;, &apos;GmWt_1&apos;, &apos;GmWt_Desc1&apos;, &apos;GmWt_2&apos;, &apos;GmWt_Desc2&apos;, &apos;Refuse_Pct&apos;]
-food_info[&apos;Protein_(g)&apos;][0:10]:
- 0     0.85
-1     0.49
-2     0.28
-3    21.40
-4    23.24
-5    20.75
-6    19.80
-7    25.18
-8    22.87
-9    23.37
-Name: Protein_(g), dtype: float64
+<pre>countries[0]: Viet Nam
+countries[10]: Botswana
+countries[1:10]: [&apos;Uruguay&apos; &quot;Cte d&apos;Ivoire&quot; &apos;Colombia&apos; &apos;Saint Kitts and Nevis&apos; &apos;Guatemala&apos;
+ &apos;Mauritius&apos; &apos;Angola&apos; &apos;Antigua and Barbuda&apos; &apos;Nigeria&apos;]
+countries[50:70]: [&apos;Switzerland&apos; &apos;Finland&apos; &apos;Saudi Arabia&apos; &apos;Kuwait&apos; &apos;El Salvador&apos; &apos;Suriname&apos;
+ &apos;Viet Nam&apos; &apos;Croatia&apos; &apos;Somalia&apos; &apos;Syrian Arab Republic&apos;
+ &apos;Iran (Islamic Republic of)&apos; &apos;Papua New Guinea&apos; &apos;Suriname&apos; &apos;Libya&apos;
+ &apos;Bolivia (Plurinational State of)&apos; &apos;Somalia&apos; &apos;Iraq&apos; &apos;Namibia&apos; &apos;Uganda&apos;
+ &apos;Togo&apos;]
 </pre>
 </div>
 </div>
@@ -677,7 +565,7 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5:-Getting-multiple-columns-by-name">5: Getting multiple columns by name<a class="anchor-link" href="#5:-Getting-multiple-columns-by-name">&#182;</a></h3>
+<h3 id="5:-Array-shape">5: Array shape<a class="anchor-link" href="#5:-Array-shape">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -686,7 +574,9 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can get a single column by passing in a name, but we can also get multiple columns by passing in a list of names.</p>
+<p>All arrays, whether they are 1-dimensional (vectors), two dimensional (matrices), or even larger, have a number of elements in each dimension.</p>
+<p>For example, a matrix may have 200 rows and 10 columns.</p>
+<p>We can use the shape method to find these dimensions.</p>
 
 </div>
 </div>
@@ -705,9 +595,8 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the 'Zinc<em>(mg)' and 'Copper</em>(mg)' columns to zinc_and_copper.</p>
-<p>Assign the 'Selenium<em>(mcg)' and 'Thiamin</em>(mg)' columns to selenium_and_thiamin.</p>
-<p>Make sure that you get the columns in order (zinc and selenium come first).</p>
+<p>Assign the shape of the first column in world_alcohol to column_one_shape. The first column has index 0.</p>
+<p>Assign the shape of the tenth row in world_alcohol to row_ten_shape. The tenth row has index 9.</p>
 
 </div>
 </div>
@@ -717,34 +606,42 @@ Name: Protein_(g), dtype: float64
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c">#print(food_info.columns.values)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Print the shape of the world alcohol matrix.</span>
+<span class="c"># The first number is the number of rows, and the second is the number of columns.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol.shape:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-<span class="c"># Rename copper and selenium columns.</span>
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Copper_mg)&#39;</span><span class="p">:</span> <span class="s">&#39;Copper_(mg)&#39;</span><span class="p">})</span>
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Selenium_(</span><span class="se">\xb5</span><span class="s">g)&#39;</span><span class="p">:</span> <span class="s">&#39;Selenium_(mcg)&#39;</span><span class="p">})</span>
-
-<span class="c"># Assign fiber and suger columns.</span>
-<span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Fiber_TD_(g)&#39;</span><span class="p">,</span> <span class="s">&#39;Sugar_Tot_(g)&#39;</span><span class="p">]</span>
-<span class="n">fiber_and_sugar</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="n">column_list</span><span class="p">]</span>
-
-<span class="c"># Assign zinc and copper columns.</span>
-<span class="n">zinc_and_copper</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[[</span><span class="s">&#39;Zinc_(mg)&#39;</span><span class="p">,</span> <span class="s">&#39;Copper_(mg)&#39;</span><span class="p">]]</span>
-
-<span class="c"># Assign selenium and thiamin columns.</span>
-<span class="n">selenium_and_thiamin</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[[</span><span class="s">&#39;Selenium_(mcg)&#39;</span><span class="p">,</span> <span class="s">&#39;Thiamin_(mg)&#39;</span><span class="p">]]</span>
+<span class="c"># We can do the same with a vector, but they only have one dimension, so only one number is printed.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol[1,:].shape:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">column_one_shape</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">row_ten_shape</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="mi">9</span><span class="p">,:]</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>world_alcohol.shape: (3257, 5)
+world_alcohol[1,:].shape: (5,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6:-Math-with-columns">6: Math with columns<a class="anchor-link" href="#6:-Math-with-columns">&#182;</a></h3>
+<h3 id="6:-Boolean-elements">6: Boolean elements<a class="anchor-link" href="#6:-Boolean-elements">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -753,11 +650,13 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can do math with vectors (or, as we are more familiar with them as, columns).</p>
-<p>Adding two columns will go through and add each value at each position to the corresponding value in the same position.</p>
-<p>First, the values at index 0 will be added, then the values at index 1, and so on.</p>
-<p>At the end, you'll have a new vector with all of the sums.</p>
-<p>In order to do this kind of math, the vectors all need to be the same length (have the same number of elements).</p>
+<p>We can also use boolean statements on arrays to get truth values.</p>
+<p>The interesting part about this is that the booleans are computed elementwise.</p>
+
+<pre><code>world_alcohol[:,3] == "Beer"
+
+</code></pre>
+<p>The above code will actually compare each element of the fourth column of world_alcohol, check if it equals "Beer", and create a new vector with the True/False values.</p>
 
 </div>
 </div>
@@ -776,8 +675,8 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the number of grams of protein per gram of water ("Protein<em>(g)" column divided by "Water</em>(g)" column) to grams_of_protein_per_gram_of_water.</p>
-<p>Assign the total amount of calcium and iron("Calcium<em>(mg)" column plus "Iron</em>(mg)" column) to milligrams_of_calcium_and_iron.</p>
+<p>Create a vector that checks if the values in column one equal "1984". Assign the vector to years_1984.</p>
+<p>Create a vector that checks if the values in column three equal "Canada". Assign the vector to countries_canada.</p>
 
 </div>
 </div>
@@ -787,36 +686,44 @@ Name: Protein_(g), dtype: float64
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Sum fat columns.</span>
-<span class="n">total_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Sat_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Mono_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;FA_Poly_(g)&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># This will get the first 10 items in the fourth column of world alcohol.</span>
+<span class="c"># This is the type column.</span>
+<span class="n">selected_types</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 
-<span class="c"># Protein per calorie.</span>
-<span class="n">grams_of_protein_per_calorie</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Energ_Kcal&quot;</span><span class="p">]</span>
-
-<span class="c"># Protein squared.</span>
-<span class="n">grams_of_protein_squared</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span>
-
-<span class="c"># Non-sugar carbohydrates.</span>
-<span class="n">non_sugar_carbs</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Carbohydrt_(g)&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">]</span>
-
-<span class="c"># Protein per water.</span>
-<span class="n">grams_of_protein_per_gram_of_water</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Water_(g)&quot;</span><span class="p">]</span>
-
-<span class="c"># Sum calcium and iron.</span>
-<span class="n">milligrams_of_calcium_and_iron</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Calcium_(mg)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Iron_(mg)&quot;</span><span class="p">]</span>
+<span class="c"># This will create a vector that contains True if the item at that position equal &quot;Beer&quot;, and False if not.</span>
+<span class="c"># The vector is then printed.</span>
+<span class="c"># Note how the first three values are False, because the element in the position does not equal &quot;Beer&quot;.</span>
+<span class="c"># The fourth and fifth are &quot;True&quot;.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;selected_types == &#39;Beer&#39;:&quot;</span><span class="p">,</span> <span class="n">selected_types</span> <span class="o">==</span> <span class="s">&quot;Beer&quot;</span><span class="p">)</span>
+<span class="n">years_1984</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1984&quot;</span>
+<span class="n">countries_canada</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Canada&quot;</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>selected_types == &apos;Beer&apos;: [False False False  True  True False False False False False]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7:-Math-with-scalars">7: Math with scalars<a class="anchor-link" href="#7:-Math-with-scalars">&#182;</a></h3>
+<h3 id="7:-Subsets-of-vectors">7: Subsets of vectors<a class="anchor-link" href="#7:-Subsets-of-vectors">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -825,10 +732,14 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also do math with a vector (column) and a scalar (single numbers).</p>
-<p>food<em>info["Iron</em>(mg)"] / 1000</p>
-<p>The statement above will divide each item in the "Iron_(mg)" column by 1000, converting the values from milligrams to grams.</p>
-<p>Multiplying by scalars can be a good way to manipulate values in columns.</p>
+<p>We can subset vectors based on boolean vectors like the ones we generated in the last screen.</p>
+
+<pre><code>beer = world_alcohol[:,3] == "Beer"
+print world_alcohol[:,3][beer]
+
+</code></pre>
+<p>The code above will select and print only the elements in the fourth column whose value is "Beer".</p>
+<p>world_alcohol[:,3][beer] goes through each position in the fourth column vector (from 0 to the last index), and checks if the beer vector is True at the same position. If the beer vector is True, it assigns the element of the fourth column at that position to the subset. If the beer vector is False, the element is skipped.</p>
 
 </div>
 </div>
@@ -847,8 +758,8 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Assign the number of grams of "Sodium_(mg)" to the variable sodium_grams (divide the column by 1000).</p>
-<p>Assign the number of milligrams of "Sugar<em>Tot</em>(g)" to the variable sugar_milligrams (multiply the column by 1000).</p>
+<p>Subset the third column of world_alcohol on whether the value is "Algeria". Assign the result to country_algeria.</p>
+<p>Subset the first column of world_alcohol on whether the value is "1987". Assign the result to year_1987.</p>
 
 </div>
 </div>
@@ -858,30 +769,49 @@ Name: Protein_(g), dtype: float64
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Divide the protein column by a scalar to get kilograms.</span>
-<span class="n">protein_kilograms</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">1000</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Select the first 10 values in the &quot;type&quot; column</span>
+<span class="n">types</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;types:&quot;</span><span class="p">,</span> <span class="n">types</span><span class="p">)</span>
 
-<span class="c"># Subtract 5 grams from carbohydrates.</span>
-<span class="n">lowered_carbs</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Carbohydrt_(g)&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">5</span>
+<span class="c"># Create a boolean vector that contains True or False indicating whether each element in types == &quot;Beer&quot;</span>
+<span class="n">beer_boolean</span> <span class="o">=</span> <span class="n">types</span> <span class="o">==</span> <span class="s">&quot;Beer&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;beer_boolean:&quot;</span><span class="p">,</span> <span class="n">beer_boolean</span><span class="p">)</span>
 
-<span class="c"># Assign the number of grams of &quot;Sodium_(mg)&quot; to the variable sodium_grams.</span>
-<span class="n">sodium_grams</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">1000</span>
-
-<span class="c"># Assign the number of milligrams of &quot;Sugar_Tot_(g)&quot; to the variable sugar_milligrams.</span>
-<span class="n">sugar_milligrams</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1000</span>
+<span class="c"># Subset the types vector using the beer_boolean</span>
+<span class="c"># We end up with only two entries, corresponding to the entries in the types vector that have the &quot;Beer&quot; value</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;types[beer_boolean]:&quot;</span><span class="p">,</span> <span class="n">types</span><span class="p">[</span><span class="n">beer_boolean</span><span class="p">])</span>
+<span class="n">country_algeria</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Algeria&quot;</span><span class="p">]</span>
+<span class="n">year_1987</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1987&quot;</span><span class="p">]</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>types: [&apos;Wine&apos; &apos;Other&apos; &apos;Wine&apos; &apos;Beer&apos; &apos;Beer&apos; &apos;Other&apos; &apos;Wine&apos; &apos;Spirits&apos; &apos;Spirits&apos;
+ &apos;Other&apos;]
+beer_boolean: [False False False  True  True False False False False False]
+types[beer_boolean]: [&apos;Beer&apos; &apos;Beer&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8:-Sorting-columns">8: Sorting columns<a class="anchor-link" href="#8:-Sorting-columns">&#182;</a></h3>
+<h3 id="8:-Subsets-of-matrices">8: Subsets of matrices<a class="anchor-link" href="#8:-Subsets-of-matrices">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -890,8 +820,21 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also sort the dataframe by the values in a column.</p>
-<p>To do this, we use the .sort method, which returns a new dataframe sorted according to the specified criteria.</p>
+<p>We can subset a matrix in the same way that we can subset a vector.</p>
+
+<pre><code>beer = world_alcohol[:,3] == "Beer"
+print world_alcohol[beer,:]
+
+</code></pre>
+<p>The above code will print all of the rows in world_alcohol where the "Type" column equals "Beer"</p>
+<p>Note how because matrices are indexed using two numbers, we are substituting the boolean vector beer for the first number.</p>
+<p>We can alter the second number to select different columns.</p>
+
+<pre><code>beer = world_alcohol[:,3] == "Beer"
+print world_alcohol[beer,1]
+
+</code></pre>
+<p>The above code would select the second column where the "Type" column equals "Beer"</p>
 
 </div>
 </div>
@@ -910,8 +853,9 @@ Name: Protein_(g), dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sort by the amount of "Sodium_(mg)", with the largest value on top (descending sort). Assign the result to descending_sodium.</p>
-<p>Sort by the amount of "Vit<em>C</em>(mg)", with the smallest value on top (ascending sort). Assign the result to ascending_vitamin_c.</p>
+<p>Assign all of the rows where the country equals "Turkey" to turkey_rows.</p>
+<p>Assign the first 10 rows where the year equals "1985" to rows_1985.</p>
+<p>Note that variable names in Python can't start with numbers, so we can't start our name with 1985.</p>
 
 </div>
 </div>
@@ -921,25 +865,19 @@ Name: Protein_(g), dtype: float64
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Sort foods by amount of fat.</span>
-<span class="n">descending_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># wine_rows now contains only rows where the beverage type is wine.</span>
+<span class="n">wine</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Wine&quot;</span>
+<span class="n">wine_rows</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">wine</span><span class="p">,:]</span>
 
-<span class="c"># Print the most fatty food in the data.</span>
-<span class="c">#print(descending_fat.iloc[0,:])</span>
+<span class="c"># wine_rows is still a matrix, so we can index it as such.</span>
+<span class="c"># Just like we can slice vectors, we can slice matrix rows or columns.</span>
+<span class="c"># In the below statement, we print all of the columns in the first 10 rows of wine_rows.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;wine_rows[0:10,:]:&quot;</span><span class="p">,</span> <span class="n">wine_rows</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,:])</span>
+<span class="n">turkey</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Turkey&quot;</span>
+<span class="n">turkey_rows</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">turkey</span><span class="p">,:]</span>
 
-<span class="c"># Reverse the sort order.</span>
-<span class="n">ascending_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">])</span>
-
-<span class="c"># The least fatty food has no fat at all.</span>
-<span class="c">#print(ascending_fat.iloc[0,:])</span>
-
-<span class="c"># Sort by the amount of sodium.</span>
-<span class="n">descending_sodium</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
-
-<span class="c"># Sort by the amount of vitamin C.</span>
-<span class="n">ascending_vitamin_c</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Vit_C_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;ascending_vitamin_c.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">ascending_vitamin_c</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">year_1985</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1985&quot;</span>
+<span class="n">rows_1985</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">year_1985</span><span class="p">,:][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,:]</span>
 </pre></div>
 
 </div>
@@ -952,18 +890,17 @@ Name: Protein_(g), dtype: float64
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>ascending_vitamin_c.iloc[0,:10]:
- NDB_No                        1001
-Shrt_Desc         BUTTER,WITH SALT
-Water_(g)                    15.87
-Energ_Kcal                     717
-Protein_(g)                   0.85
-Lipid_Tot_(g)                81.11
-Ash_(g)                       2.11
-Carbohydrt_(g)                0.06
-Fiber_TD_(g)                     0
-Sugar_Tot_(g)                 0.06
-Name: 0, dtype: object
+<pre>wine_rows[0:10,:]: [[&apos;1986&apos; &apos;Western Pacific&apos; &apos;Viet Nam&apos; &apos;Wine&apos; &apos;0&apos;]
+ [&apos;1985&apos; &apos;Africa&apos; &quot;Cte d&apos;Ivoire&quot; &apos;Wine&apos; &apos;1.62&apos;]
+ [&apos;1987&apos; &apos;Africa&apos; &apos;Mauritius&apos; &apos;Wine&apos; &apos;0.13&apos;]
+ [&apos;1987&apos; &apos;Africa&apos; &apos;Botswana&apos; &apos;Wine&apos; &apos;0.2&apos;]
+ [&apos;1987&apos; &apos;Africa&apos; &apos;Guinea-Bissau&apos; &apos;Wine&apos; &apos;0.07&apos;]
+ [&apos;1984&apos; &apos;Americas&apos; &apos;Costa Rica&apos; &apos;Wine&apos; &apos;0.06&apos;]
+ [&apos;1986&apos; &apos;South-East Asia&apos; &apos;Myanmar&apos; &apos;Wine&apos; &apos;0&apos;]
+ [&apos;1985&apos; &apos;Europe&apos; &apos;United Kingdom of Great Britain and Northern Ireland&apos;
+  &apos;Wine&apos; &apos;1.36&apos;]
+ [&apos;1986&apos; &apos;Western Pacific&apos; &apos;Micronesia (Federated States of)&apos; &apos;Wine&apos; &apos;0&apos;]
+ [&apos;1986&apos; &apos;Europe&apos; &apos;Russian Federation&apos; &apos;Wine&apos; &apos;0.8&apos;]]
 </pre>
 </div>
 </div>
@@ -977,7 +914,7 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="9:-Multicolumn-sort">9: Multicolumn sort<a class="anchor-link" href="#9:-Multicolumn-sort">&#182;</a></h3>
+<h3 id="9:-Subsets-with-multiple-conditions">9: Subsets with multiple conditions<a class="anchor-link" href="#9:-Subsets-with-multiple-conditions">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -986,9 +923,26 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We only sorted on the value of a single column before, but we can also sort based on multiple columns.</p>
-<p>The first column in the list will be sorted on first. Any rows that have the same value for the first column will be sorted based on the second column, and so on until all of the given columns are used.</p>
-<p>We can specify different sort orders for each column using the ascending argument.</p>
+<p>So now we can find all of the rows that correspond to "Algeria", for example.</p>
+<p>But what if what we really want is to find all the rows for "Algeria" in "1985"?</p>
+<p>We'll have to use multiple conditions to generate our vector.</p>
+
+<pre><code>algeria_1985_boolean = (world_alcohol[:,2] == "Algeria") &amp; (world_alcohol[:,0] == "1985")
+
+</code></pre>
+<p>The code above will generate a boolean that uses multiple conditions.</p>
+<p>How it works is that the parentheses specify that the two component vectors should be generated first. (order of operations)</p>
+<p>Then the two vectors will be compared index by index. If both vectors are True at index 1, then the resulting vector will be True at index 1.</p>
+<p>If either vector is False at index 1, the result will be False at index 1.</p>
+<p>Here's an expanded example:</p>
+
+<pre><code>boolean_1985 = world_alcohol[:,0] == "1985"
+algeria_boolean = world_alcohol[:,2] == "Algeria"
+algeria_1985_boolean = boolean_1985 &amp; algeria_boolean
+
+</code></pre>
+<p>We can add more than 2 conditions if we want -- we just have to put an &amp; symbol between each one.</p>
+<p>The resulting vector will contain True in the position corresponding to rows where all conditions are True, and False for rows where any condition is False.</p>
 
 </div>
 </div>
@@ -1007,8 +961,8 @@ Name: 0, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Perform a multicolumn sort on food<em>info, with the first column being "Sugar_Tot</em>(g)" ascending, and the second being "Zinc_(mg)" descending. Assign the result to ascending_sugar_then_descending_zinc.</p>
-<p>Perform a multicolumn sort on food<em>info, with the first column being "Cholestrl</em>(mg)" descending, and the second being "Protein_(g)" ascending. Assign the result to descending_cholesterol_then_ascending_protein.</p>
+<p>Assign all rows where the country is "Yemen" and the year is "1987" to yemen_1987.</p>
+<p>Assign all rows where the country is "Latvia", the year is "1989", and the type of alcohol is "Wine" to latvia_1989_wine.</p>
 
 </div>
 </div>
@@ -1018,25 +972,16 @@ Name: 0, dtype: object
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Perform a multicolumn sort, with first column &quot;Lipid_Tot_(g)&quot; ascending, and the second &quot;Sodium_(mg)&quot; ascending</span>
-<span class="n">ascending_fat_then_ascending_sodium</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">,</span> <span class="k">True</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Boolean vector corresponding to Canada and 1986.</span>
+<span class="n">canada_1986</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Canada&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1986&quot;</span><span class="p">)</span>
 
-<span class="c"># Print the multicolumn sort</span>
-<span class="c">#print ascending_fat_then_ascending_sodium.iloc[0,:]</span>
+<span class="c"># We can then use canada_1986 to subset a matrix -- it&#39;s just a normal boolean vector</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol[canada_1986,:]:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">canada_1986</span><span class="p">,:])</span>
+<span class="n">yemen_1987_boolean</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Yemen&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1987&quot;</span><span class="p">)</span>
+<span class="n">yemen_1987</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">yemen_1987_boolean</span><span class="p">,:]</span>
 
-<span class="c"># Perform a multicolumn sort, with first column &quot;Lipid_Tot_(g)&quot; ascending, and the second &quot;Sodium_(mg)&quot; descending</span>
-<span class="n">ascending_fat_then_descending_sodium</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">,</span> <span class="k">False</span><span class="p">])</span>
-
-<span class="c"># Print the multicolumn sort</span>
-<span class="c">#print(ascending_fat_then_descending_sodium.iloc[0,:])</span>
-
-<span class="c"># Perform a multicolumn sort, with first column &quot;Sugar_Tot_(g)&quot; ascending, and the second &quot;Zinc_(mg)&quot; descending</span>
-<span class="n">ascending_sugar_then_descending_zinc</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">,</span> <span class="k">False</span><span class="p">])</span>
-
-<span class="c"># Perform a multicolumn sort, with first column &quot;Cholestrl_(mg)&quot; descending, and the second &quot;Protein_(g)&quot; ascending</span>
-<span class="n">descending_cholesterol_then_ascending_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;Cholestrl_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Protein_(g)&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">,</span> <span class="k">True</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;descending_cholesterol_then_ascending_protein.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">descending_cholesterol_then_ascending_protein</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+<span class="n">latvia_1989_wine_boolean</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Latvia&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1989&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Wine&quot;</span><span class="p">)</span>
+<span class="n">latvia_1989_wine</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[</span><span class="n">latvia_1989_wine_boolean</span><span class="p">,:]</span>
 </pre></div>
 
 </div>
@@ -1049,18 +994,10 @@ Name: 0, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>descending_cholesterol_then_ascending_protein.iloc[0,:10]:
- NDB_No                                                17189
-Shrt_Desc         VEAL,VAR MEATS&amp;BY-PRODUCTS,BRAIN,CKD,BRSD
-Water_(g)                                             76.89
-Energ_Kcal                                              136
-Protein_(g)                                           11.48
-Lipid_Tot_(g)                                          9.63
-Ash_(g)                                                 1.4
-Carbohydrt_(g)                                            0
-Fiber_TD_(g)                                              0
-Sugar_Tot_(g)                                           NaN
-Name: 5287, dtype: object
+<pre>world_alcohol[canada_1986,:]: [[&apos;1986&apos; &apos;Americas&apos; &apos;Canada&apos; &apos;Other&apos; &apos;&apos;]
+ [&apos;1986&apos; &apos;Americas&apos; &apos;Canada&apos; &apos;Spirits&apos; &apos;3.11&apos;]
+ [&apos;1986&apos; &apos;Americas&apos; &apos;Canada&apos; &apos;Beer&apos; &apos;4.87&apos;]
+ [&apos;1986&apos; &apos;Americas&apos; &apos;Canada&apos; &apos;Wine&apos; &apos;1.33&apos;]]
 </pre>
 </div>
 </div>
@@ -1074,7 +1011,7 @@ Name: 5287, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="10:-Creating-a-rating">10: Creating a rating<a class="anchor-link" href="#10:-Creating-a-rating">&#182;</a></h3>
+<h3 id="10:-Convert-a-column-to-floats">10: Convert a column to floats<a class="anchor-link" href="#10:-Convert-a-column-to-floats">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1083,31 +1020,12 @@ Name: 5287, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's say that we have a friend, Superman, who's trying to gain muscle, and so he wants to eat foods that have a lot of protein.</p>
-<p>But he's also very health conscious, so he wants to avoid fat.</p>
-<p>We could sort based on those two columns and give him an answer, but what if he cares more about a food having a lot of protein than it being too fatty?</p>
-<p>What we need to do is construct a rating for each food based on Superman's criteria.</p>
-<p>Then we can recommend the food that scores the highest.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's say Superman now decides that the food having a lot of protein is only twice as important as the food not being too fatty.</p>
-<p>Construct the new rating, and assign it to new_rating</p>
+<p>We now know almost everything we need to compute how much alcohol the people in a country drank in a given year!</p>
+<p>But there are a couple of things we need to work through first.</p>
+<p>First, we need to convert the "Liters of alcohol drunk" column (the fifth one) to floats.</p>
+<p>We need to do this because they are strings now, and we can't take the sum of strings.</p>
+<p>Because they aren't numeric, their sum wouldn't make much sense.</p>
+<p>We can use the astype method on the array to do this.</p>
 
 </div>
 </div>
@@ -1117,59 +1035,25 @@ Name: 5287, dtype: object
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Calculate the weighted value for protein.</span>
-<span class="n">weighted_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Let&#39;s convert the column to floats.</span>
+<span class="c">#alcohol_numbers = world_alcohol[:,4].astype(float)</span>
 
-<span class="c"># Calculate the weighted value for fat.</span>
-<span class="n">weighted_fat</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">]</span>
-
-<span class="c"># Construct the final rating by adding the weighted values.</span>
-<span class="n">initial_rating</span> <span class="o">=</span> <span class="n">weighted_protein</span> <span class="o">+</span> <span class="n">weighted_fat</span>
-<span class="n">new_rating</span> <span class="o">=</span> <span class="p">(</span><span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">]</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;new_rating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_rating</span>
-
-<span class="c"># Sort by the new rating.</span>
-<span class="n">descending_new_rating</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;new_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;descending_new_rating.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">descending_new_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+<span class="c"># Hmm, but the above code fails with an error!</span>
+<span class="c"># It looks like some of the values in the column can&#39;t be converted to floats.</span>
+<span class="c"># We&#39;ll find out how we can figure out if values are failing in the next screen.</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>descending_new_rating.iloc[0,:10]:
- NDB_No                              16422
-Shrt_Desc         SOY PROT ISOLATE,K TYPE
-Water_(g)                            4.98
-Energ_Kcal                            321
-Protein_(g)                         88.32
-Lipid_Tot_(g)                        0.53
-Ash_(g)                              3.58
-Carbohydrt_(g)                       2.59
-Fiber_TD_(g)                            0
-Sugar_Tot_(g)                           0
-Name: 5009, dtype: object
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="11:-Normalizing-columns">11: Normalizing columns<a class="anchor-link" href="#11:-Normalizing-columns">&#182;</a></h3>
+<h3 id="11:-Replace-values-in-an-array">11: Replace values in an array<a class="anchor-link" href="#11:-Replace-values-in-an-array">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1178,10 +1062,14 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One of the simplest ways to normalize a column is to divide all of the values by the maximum value in the column.</p>
-<p>It will change all of the values to be between 0 and 1.</p>
-<p>It doesn't work so well with negative values, but we don't have any (you can't have negative amounts of protein, fat, etc).</p>
-<p>This isn't necessarily the best way to normalize, and we'll learn some better methods soon.</p>
+<p>There are values in our alcohol consumption column that are preventing us from converting the column from floats to strings.</p>
+<p>In order to fix this, we first have to learn how to replace values.</p>
+<p>We can replace values in a NumPy array by just assigning to them with the equals sign.</p>
+
+<pre><code>world_alcohol[:,4][world_alcohol[:,4]=='0'] = '10'
+
+</code></pre>
+<p>The code above will replace any item in the alcohol consumption column that contains '0' (remember that the world alcohol matrix is all string values) with '10'.</p>
 
 </div>
 </div>
@@ -1200,8 +1088,8 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Normalize the values in the "Vit<em>C</em>(mg)" column, and assign the result to normalized_vitamin_c</p>
-<p>Normalize the values in the "Zinc_(mg)" column, and assign the result to normalized_zinc</p>
+<p>Replace all instances of '1986' in the year column (column 1) with '2014'.</p>
+<p>Replace all the values in the type column (column 4) with 'Grog' (pirates have taken over the world).</p>
 
 </div>
 </div>
@@ -1211,25 +1099,20 @@ Name: 5009, dtype: object
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Use the max() method to find the maximum value in a column.</span>
-<span class="n">max_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Let&#39;s say the US invades Canada (not that they should)</span>
+<span class="c"># This will replace all instances of &quot;Canada&quot; in the country column with &quot;United States of America&quot;</span>
+<span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Canada&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;United States of America&quot;</span>
 
-<span class="c"># Divide the column by the scalar.</span>
-<span class="n">normalized_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">max_protein</span>
+<span class="c"># We don&#39;t have to subset before we replace</span>
+<span class="c"># Trinidad and Tobago can invade the whole world, and replace all countries</span>
+<span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Trinidad and Tobago&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;world_alcohol[:,2][0:10]:&quot;</span><span class="p">,</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
 
-<span class="c"># Print normalized protein values.</span>
-<span class="c">#print(normalized_protein[0:20])</span>
+<span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1986&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;2014&quot;</span>
+<span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Grog&quot;</span>
 
-<span class="c"># Create normalized vitamin C value.</span>
-<span class="n">normalized_vitamin_c</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Vit_C_(mg)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Vit_C_(mg)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;normalized_vitamin_c&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">normalized_vitamin_c</span>
-
-<span class="c"># Sort by normalized vitamin C values.</span>
-<span class="n">descending_normalized_vitamin_c</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;normalized_vitamin_c&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;descending_normalized_vitamin_c.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">descending_normalized_vitamin_c</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
-
-<span class="c"># Create normalized zinc value.</span>
-<span class="n">normalized_zinc</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">f</span> <span class="o">=</span> <span class="s">&quot;data/world_alcohol.csv&quot;</span>
+<span class="n">world_alcohol</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&quot;U75&quot;</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1242,18 +1125,10 @@ Name: 5009, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>descending_normalized_vitamin_c.iloc[0,:10]:
- NDB_No                                                         3022
-Shrt_Desc         BABYFOOD,GERBER,2ND FOODS,APPL,CARROT &amp; SQUASH...
-Water_(g)                                                     83.83
-Energ_Kcal                                                       64
-Protein_(g)                                                     1.1
-Lipid_Tot_(g)                                                     0
-Ash_(g)                                                        0.26
-Carbohydrt_(g)                                                14.82
-Fiber_TD_(g)                                                    1.2
-Sugar_Tot_(g)                                                  9.09
-Name: 332, dtype: object
+<pre>world_alcohol[:,2][0:10]: [&apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos;
+ &apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos;
+ &apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos; &apos;Trinidad and Tobago&apos;
+ &apos;Trinidad and Tobago&apos;]
 </pre>
 </div>
 </div>
@@ -1267,7 +1142,7 @@ Name: 332, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="12:-Making-a-better-rating">12: Making a better rating<a class="anchor-link" href="#12:-Making-a-better-rating">&#182;</a></h3>
+<h3 id="12:-Convert-the-alcohol-consumption-column-to-floats">12: Convert the alcohol consumption column to floats<a class="anchor-link" href="#12:-Convert-the-alcohol-consumption-column-to-floats">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1276,8 +1151,7 @@ Name: 332, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We now know enough to construct a better rating for our friend Superman.</p>
-<p>We just have to normalize the columns that we are interested in before we create the rating.</p>
+<p>Now that you know what the bad value is, we can replace it and then convert the column to floats.m</p>
 
 </div>
 </div>
@@ -1296,9 +1170,9 @@ Name: 332, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Superman is twice as interested in a food having a lot of protein than he is in it having too much fat.</p>
-<p>Construct a rating with these new criteria, and assign it to better_protein_rating.</p>
-<p>Make sure to normalize the protein ("Protein<em>(g)") and fat ("Lipid_Tot</em>(g)") columns first.</p>
+<p>Replace all the values in the alcohol consumption column (column 5) that equal bad_value with '0'.</p>
+<p>Then convert all of the values in the column to floats, and assign the result to alcohol_consumption_float_column.</p>
+<p>At the end, alcohol_consumption_float_column should contain a column of floats.</p>
 
 </div>
 </div>
@@ -1308,60 +1182,24 @@ Name: 332, dtype: object
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Create better protein rating.</span>
-<span class="n">better_protein_rating</span> <span class="o">=</span> <span class="k">None</span>
-
-<span class="c"># Create normalized protein values.</span>
-<span class="n">normalized_protein</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-
-<span class="c"># Create normalized fat values.</span>
-<span class="n">normalized_fat</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-
-<span class="c"># Create new protein rating.</span>
-<span class="n">better_protein_rating</span> <span class="o">=</span> <span class="p">(</span><span class="n">normalized_protein</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">normalized_fat</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;better_protein_rating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">better_protein_rating</span>
-
-<span class="c"># Sort by new protein rating.</span>
-<span class="n">descending_better_protein_rating</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;better_protein_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;descending_better_protein_rating.iloc[0,:10]:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">descending_better_protein_rating</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:</span><span class="mi">10</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">bad_value</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+<span class="n">alcohol_consumption_float_column</span> <span class="o">=</span> <span class="k">None</span>
+<span class="n">alcohol_consumption</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">alcohol_consumption</span><span class="p">[</span><span class="n">alcohol_consumption</span> <span class="o">==</span> <span class="n">bad_value</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;0&quot;</span>
+<span class="n">alcohol_consumption_float_column</span> <span class="o">=</span> <span class="n">alcohol_consumption</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>descending_better_protein_rating.iloc[0,:10]:
- NDB_No                              16422
-Shrt_Desc         SOY PROT ISOLATE,K TYPE
-Water_(g)                            4.98
-Energ_Kcal                            321
-Protein_(g)                         88.32
-Lipid_Tot_(g)                        0.53
-Ash_(g)                              3.58
-Carbohydrt_(g)                       2.59
-Fiber_TD_(g)                            0
-Sugar_Tot_(g)                           0
-Name: 5009, dtype: object
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="13:-Normalizing-multiple-columns">13: Normalizing multiple columns<a class="anchor-link" href="#13:-Normalizing-multiple-columns">&#182;</a></h3>
+<h3 id="13:-Compute-the-total-alcohol-consumption">13: Compute the total alcohol consumption<a class="anchor-link" href="#13:-Compute-the-total-alcohol-consumption">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1370,10 +1208,7 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, let's say we want to construct a total nutrition rating that takes all the columns into account.</p>
-<p>In order to do this, we would have to normalize each of the columns, which is a huge pain.</p>
-<p>An easier way is to use a for loop to normalize each column.</p>
-<p>The "NDB_No" and "Shrt_Desc" columns (first two) can't be normalized, because they aren't nutritional values. The first one is the ID number of the food, and the second is the name.</p>
+<p>We can compute the total value of a column using the sum method.</p>
 
 </div>
 </div>
@@ -1392,8 +1227,7 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Remove the "NDB_No" and "Shrt_Desc" columns from all_columns</p>
-<p>Then, use a for loop to normalize all the other columns.</p>
+<p>Use the sum method to store the sum of the alcohol consumption column into the total_alcohol column.</p>
 
 </div>
 </div>
@@ -1403,19 +1237,11 @@ Name: 5009, dtype: object
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Energ_Kcal&quot;</span><span class="p">,</span> <span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># We&#39;ve read the alcohol consumption column (converted to floats) into the alcohol_consumption variable.</span>
+<span class="n">total_alcohol</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total_alcohol</span> <span class="o">=</span> <span class="n">alcohol_consumption_float_column</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
-<span class="c"># Loop through column_list, and normalize each of the columns in it.</span>
-<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">column_list</span><span class="p">:</span>
-    <span class="n">food_info</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">/</span> <span class="n">food_info</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-
-<span class="c"># All columns is a list of all the columns in the food_info dataframe.</span>
-<span class="n">all_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">food_info</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-<span class="c">#print &quot;All columns: &quot;, all_columns</span>
-
-<span class="n">column_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_columns</span><span class="p">)</span>
-<span class="n">all_columns</span> <span class="o">=</span> <span class="n">all_columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">column_count</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;all_columns:&quot;</span><span class="p">,</span> <span class="n">all_columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;total_alcohol:&quot;</span><span class="p">,</span> <span class="n">total_alcohol</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1428,7 +1254,7 @@ Name: 5009, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>all_columns: [&apos;Water_(g)&apos;, &apos;Energ_Kcal&apos;, &apos;Protein_(g)&apos;, &apos;Lipid_Tot_(g)&apos;, &apos;Ash_(g)&apos;, &apos;Carbohydrt_(g)&apos;, &apos;Fiber_TD_(g)&apos;, &apos;Sugar_Tot_(g)&apos;, &apos;Calcium_(mg)&apos;, &apos;Iron_(mg)&apos;, &apos;Magnesium_(mg)&apos;, &apos;Phosphorus_(mg)&apos;, &apos;Potassium_(mg)&apos;, &apos;Sodium_(mg)&apos;, &apos;Zinc_(mg)&apos;, &apos;Copper_(mg)&apos;, &apos;Manganese_(mg)&apos;, &apos;Selenium_(mcg)&apos;, &apos;Vit_C_(mg)&apos;, &apos;Thiamin_(mg)&apos;, &apos;Riboflavin_(mg)&apos;, &apos;Niacin_(mg)&apos;, &apos;Panto_Acid_mg)&apos;, &apos;Vit_B6_(mg)&apos;, &apos;Folate_Tot_(µg)&apos;, &apos;Folic_Acid_(µg)&apos;, &apos;Food_Folate_(µg)&apos;, &apos;Folate_DFE_(µg)&apos;, &apos;Choline_Tot_ (mg)&apos;, &apos;Vit_B12_(µg)&apos;, &apos;Vit_A_IU&apos;, &apos;Vit_A_RAE&apos;, &apos;Retinol_(µg)&apos;, &apos;Alpha_Carot_(µg)&apos;, &apos;Beta_Carot_(µg)&apos;, &apos;Beta_Crypt_(µg)&apos;, &apos;Lycopene_(µg)&apos;, &apos;Lut+Zea_ (µg)&apos;, &apos;Vit_E_(mg)&apos;, &apos;Vit_D_µg&apos;, &apos;Vit_D_IU&apos;, &apos;Vit_K_(µg)&apos;, &apos;FA_Sat_(g)&apos;, &apos;FA_Mono_(g)&apos;, &apos;FA_Poly_(g)&apos;, &apos;Cholestrl_(mg)&apos;, &apos;GmWt_1&apos;, &apos;GmWt_Desc1&apos;, &apos;GmWt_2&apos;, &apos;GmWt_Desc2&apos;, &apos;Refuse_Pct&apos;, &apos;new_rating&apos;, &apos;normalized_vitamin_c&apos;, &apos;better_protein_rating&apos;]
+<pre>total_alcohol: 3908.96
 </pre>
 </div>
 </div>
@@ -1442,7 +1268,7 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="14:-Finding-the-amount-of-vitamins">14: Finding the amount of vitamins<a class="anchor-link" href="#14:-Finding-the-amount-of-vitamins">&#182;</a></h3>
+<h3 id="14:-Finding-how-much-alcohol-a-person-in-a-country-drank-in-a-year">14: Finding how much alcohol a person in a country drank in a year<a class="anchor-link" href="#14:-Finding-how-much-alcohol-a-person-in-a-country-drank-in-a-year">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1451,14 +1277,8 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we normalized all of the columns, we're well on our way to making a nutritional rating.</p>
-<p>In order to get there, let's create a sum of all the vitamin columns.</p>
-<p>Most methods on pandas dataframes can operate on series, or on dataframes.</p>
-<p>Let's take the .sum() method as an example.</p>
-<p>On a series, it gives you the total of all the values in the series.</p>
-<p>When used on a dataframe, it takes the optional axis keyword argument.</p>
-<p>When axis is 0, it gives you a new series with the sums of all of the columns in the dataframe.</p>
-<p>When axis is 1, it gives you a new series with sums of all of the rows in the dataframe.</p>
+<p>We can subset a vector with another vector, as we learned earlier.</p>
+<p>This means that we can find the total alcohol consumed by any given country in any given year now.</p>
 
 </div>
 </div>
@@ -1477,8 +1297,8 @@ Name: 5009, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sum up the amount of vitamins in each food (using the vitamin_columns list to get columns from the dataframe), and assign the result to vitamin_totals.</p>
-<p>You'll need to sum the total in each row.</p>
+<p>Assign the total amount of alcohol an average person in "Canada" drank in "1986" to canada_1986_alcohol.</p>
+<p>Assign the total amount of alcohol an average person in "Trinidad and Tobago" drank in "1987" to trinidad_1987_alcohol.</p>
 
 </div>
 </div>
@@ -1488,31 +1308,22 @@ Name: 5009, dtype: object
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Fiber_TD_(g)&quot;</span><span class="p">,</span> <span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Create a boolean vector that contains True where year is 1985 and the country is Algeria.</span>
+<span class="n">algeria_1985</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Algeria&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;1985&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;algeria_1985:&quot;</span><span class="p">,</span> <span class="n">algeria_1985</span><span class="p">)</span>
 
-<span class="c"># Sum the amount of fiber and sugar in each of the foods.</span>
-<span class="n">row_total</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="n">column_list</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="c">#print(row_total)</span>
+<span class="c"># Subset the alcohol consumption vector with our boolean, and get the sum.</span>
+<span class="c"># The sum is the total amount of alcohol and average Algerian drank in 1985.</span>
+<span class="n">algeria_1985_alcohol</span> <span class="o">=</span> <span class="n">alcohol_consumption_float_column</span><span class="p">[</span><span class="n">algeria_1985</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;algeria_1985_alcohol:&quot;</span><span class="p">,</span> <span class="n">algeria_1985_alcohol</span><span class="p">)</span>
 
-<span class="c"># Sum the total amount of fiber and sugar across all the foods.</span>
-<span class="n">column_total</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="n">column_list</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="c">#print(column_total)</span>
+<span class="n">canada_1986</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Canada&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;1986&#39;</span><span class="p">)</span>
+<span class="n">canada_1986_alcohol</span> <span class="o">=</span> <span class="n">alcohol_consumption_float_column</span><span class="p">[</span><span class="n">canada_1986</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;canada_1986_alcohol:&quot;</span><span class="p">,</span> <span class="n">canada_1986_alcohol</span><span class="p">)</span>
 
-<span class="c"># Rename &#39;Vit_B12_(mcg)&#39;, &#39;Vit_D_mcg&#39;, &#39;Vit_K_(mcg)&#39; columns.</span>
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;Vit_B12_(</span><span class="se">\xb5</span><span class="s">g)&quot;</span><span class="p">:</span> <span class="s">&quot;Vit_B12_(mcg)&quot;</span><span class="p">})</span>
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;Vit_D_</span><span class="se">\xb5</span><span class="s">g&quot;</span><span class="p">:</span> <span class="s">&quot;Vit_D_mcg&quot;</span><span class="p">})</span>
-<span class="n">food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;Vit_K_(</span><span class="se">\xb5</span><span class="s">g)&quot;</span><span class="p">:</span> <span class="s">&quot;Vit_K_(mcg)&quot;</span><span class="p">})</span>
-
-<span class="c"># Sum the total amount of vitamins in each foods.</span>
-<span class="n">vitamin_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Calcium_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Iron_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Magnesium_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Phosphorus_(mg)&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;Potassium_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Sodium_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Zinc_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Copper_(mg)&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;Manganese_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Selenium_(mcg)&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_C_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Thiamin_(mg)&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;Riboflavin_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Niacin_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_B6_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_B12_(mcg)&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;Vit_A_IU&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_A_RAE&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_E_(mg)&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_D_mcg&quot;</span><span class="p">,</span> <span class="s">&quot;Vit_D_IU&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;Vit_K_(mcg)&quot;</span><span class="p">]</span>
-<span class="n">vitamins</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="n">vitamin_columns</span><span class="p">]</span>
-<span class="n">vitamin_totals</span> <span class="o">=</span> <span class="n">vitamins</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;vitamin_totals.head(10):</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">vitamin_totals</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">trinidad_1987</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;Trinidad and Tobago&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;1987&#39;</span><span class="p">)</span>
+<span class="n">trinidad_1987_alcohol</span> <span class="o">=</span> <span class="n">alcohol_consumption_float_column</span><span class="p">[</span><span class="n">trinidad_1987</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;trinidad_1987_alcohol:&quot;</span><span class="p">,</span> <span class="n">trinidad_1987_alcohol</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1525,18 +1336,10 @@ Name: 5009, dtype: object
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>vitamin_totals.head(10):
- 0    3910.684
-1    3829.252
-2    3934.431
-3    3303.482
-4    3261.634
-5    1982.328
-6    2885.552
-7    3312.130
-8    3554.729
-9    3159.877
-dtype: float64
+<pre>algeria_1985: [False False False ..., False False False]
+algeria_1985_alcohol: 0.31
+canada_1986_alcohol: 9.31
+trinidad_1987_alcohol: 4.35
 </pre>
 </div>
 </div>
@@ -1550,7 +1353,7 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="15:-Adding-a-new-column">15: Adding a new column<a class="anchor-link" href="#15:-Adding-a-new-column">&#182;</a></h3>
+<h3 id="15:-A-function-to-sum-yearly-alcohol-consumption">15: A function to sum yearly alcohol consumption<a class="anchor-link" href="#15:-A-function-to-sum-yearly-alcohol-consumption">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1559,9 +1362,8 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can add a column to a dataframe by assigning to it.</p>
-<p>food<em>info["double_fat"] = food_info["Lipid_Tot</em>(g)"] * 2</p>
-<p>The above code assigns double the amount of lipids to the "double_fat" column in food_info.</p>
+<p>Now that we know how to find the total alcohol consumption of the average person in a country in a given year, we can make a function out of it.</p>
+<p>A function will make it easier for us to calculate the alcohol consumption for all countries.</p>
 
 </div>
 </div>
@@ -1580,8 +1382,8 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We've read the vitamin_totals variable from the last screen in.</p>
-<p>Assign vitamin_totals to the "vitamin_totals" column in food_info.</p>
+<p>Fill in the rest of the calculate_consumption function.</p>
+<p>Then use the function to calculate how much alcohol people in "India" drank in "1989" on average, and store the result in india_1989_alcohol.</p>
 
 </div>
 </div>
@@ -1591,24 +1393,40 @@ dtype: float64
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Assign double protein values.</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;double_protein&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">calculate_consumption</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="n">country_year</span> <span class="o">=</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">country</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">)</span>
+    <span class="n">country_year_alcohol</span> <span class="o">=</span> <span class="n">alcohol_consumption_float_column</span><span class="p">[</span><span class="n">country_year</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">country_year_alcohol</span>
 
-<span class="c"># Assign vitamin totals.</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;vitamin_totals&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vitamin_totals</span>
+<span class="n">india_1989_alcohol</span> <span class="o">=</span> <span class="n">calculate_consumption</span><span class="p">(</span><span class="s">&quot;India&quot;</span><span class="p">,</span> <span class="s">&quot;1989&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;india_1989_alcohol:&quot;</span><span class="p">,</span> <span class="n">india_1989_alcohol</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>india_1989_alcohol: 1.66
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="16:-Making-a-nutritional-index">16: Making a nutritional index<a class="anchor-link" href="#16:-Making-a-nutritional-index">&#182;</a></h3>
+<h3 id="17:-Finding-the-country-that-drinks-the-least">17: Finding the country that drinks the least<a class="anchor-link" href="#17:-Finding-the-country-that-drinks-the-least">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1617,8 +1435,7 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We've normalized the values in vitamin_totals, and assigned it to the "vitamin_totals" column in food_info.</p>
-<p>Let's construct a nutritional rating using the amount of vitamins, fats, protein, sugar, fiber, and cholesterol.</p>
+<p>We can now loop over our dictionary keys to find the country with the lowest amount of alcohol consumed per person in 1989.</p>
 
 </div>
 </div>
@@ -1637,8 +1454,10 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Give the "vitamin<em>totals" column a weight of 3, the "Lipid_Tot</em>(g)" column a weight of -2, the "Protein<em>(g)" column a weight of 3, the "Sugar_Tot</em>(g)" column a weight of -1, the "Fiber<em>TD</em>(g)" a weight of 1, and the "Cholestrl_(mg)" column a weight of -2.</p>
-<p>Construct a rating using the above weights, and assign it to nutritional_rating.</p>
+<p>Loop over the keys in country_consumption_1989 and find the country where the average person drank the least in 1989.</p>
+<p>To do this, you'll need to use a for loop, and keep track of the lowest value and country.</p>
+<p>Assign the lowest value to lowest_consumption, and the country with the lowest value to lowest_country.</p>
+<p>Check the hint if you need help.</p>
 
 </div>
 </div>
@@ -1648,12 +1467,20 @@ dtype: float64
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Assign nutritional rating.</span>
-<span class="n">nutritional_rating</span> <span class="o">=</span> <span class="k">None</span>
-<span class="n">nutritional_rating</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;vitamin_totals&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Lipid_Tot_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Protein_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Sugar_Tot_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Fiber_TD_(g)&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">food_info</span><span class="p">[</span><span class="s">&quot;Cholestrl_(mg)&quot;</span><span class="p">]</span>
-<span class="n">food_info</span><span class="p">[</span><span class="s">&quot;nutritional_rating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nutritional_rating</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">country_consumption_1989</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1989&quot;</span><span class="p">]</span>
+<span class="c">#print(country_consumption_1989)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;nutritional_rating.head(10):</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">nutritional_rating</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="c"># country_consumption_1989 has been loaded in for you.</span>
+<span class="n">lowest_country</span> <span class="o">=</span> <span class="k">None</span>
+<span class="n">lowest_consumption</span> <span class="o">=</span> <span class="k">None</span>
+<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">country_consumption_1989</span><span class="p">:</span>
+    <span class="n">consumption</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">lowest_consumption</span> <span class="ow">is</span> <span class="k">None</span> <span class="ow">or</span> <span class="n">lowest_consumption</span> <span class="o">&gt;</span> <span class="n">consumption</span><span class="p">:</span>
+        <span class="n">lowest_consumption</span> <span class="o">=</span> <span class="n">consumption</span>
+        <span class="n">lowest_country</span> <span class="o">=</span> <span class="n">country</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowest_country:&quot;</span><span class="p">,</span> <span class="n">lowest_country</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;lowest_consumption:&quot;</span><span class="p">,</span> <span class="n">lowest_consumption</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1666,18 +1493,8 @@ dtype: float64
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>nutritional_rating.head(10):
- 0    11139.800872
-1    10881.112644
-2    11092.342511
-3     9703.192902
-4     9537.821402
-5     5691.878823
-6     8464.348554
-7             NaN
-8    10399.863834
-9             NaN
-dtype: float64
+<pre>lowest_country: Syrian Arab Republic
+lowest_consumption: 0.0
 </pre>
 </div>
 </div>
@@ -1691,7 +1508,7 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="17:-Finding-the-most-nutritious-foods">17: Finding the most nutritious foods<a class="anchor-link" href="#17:-Finding-the-most-nutritious-foods">&#182;</a></h3>
+<h3 id="17:-Finding-the-country-that-drinks-the-most">17: Finding the country that drinks the most<a class="anchor-link" href="#17:-Finding-the-country-that-drinks-the-most">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1700,8 +1517,7 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We've read the nutritional rating series from the last screen to the "nutritional_rating" column in food_info.</p>
-<p>Now, lets see if we can use it to find the most nutritious foods.</p>
+<p>Now we can find the country that drinks the most.</p>
 
 </div>
 </div>
@@ -1720,9 +1536,9 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Find the three most nutritious foods by sorting food_info using the "nutritional_rating" column.</p>
-<p>Get the name of those foods (the "Shrt_Desc" column), and assign the names to most_nutritious_foods.</p>
-<p>If most_nutritious_foods isn't a list at the end, use the list() function to turn it into one.</p>
+<p>Loop over the keys in country_consumption_1989 and find the country where the average person drank the most in 1989.</p>
+<p>To do this, you'll need to use a for loop, and keep track of the highest value and country.</p>
+<p>Assign the highest value to highest_consumption, and the country with the highest value to highest_country.</p>
 
 </div>
 </div>
@@ -1732,13 +1548,19 @@ dtype: float64
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Assign most nutritional foods.</span>
-<span class="n">most_nutritious_foods</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">sorted_food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;nutritional_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">False</span><span class="p">])</span>
-<span class="n">most_nutritious_foods</span> <span class="o">=</span> <span class="n">sorted_food_info</span><span class="p">[</span><span class="s">&quot;Shrt_Desc&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">most_nutritious_foods</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">most_nutritious_foods</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">country_consumption_1989</span> <span class="o">=</span> <span class="n">world_alcohol</span><span class="p">[:][</span><span class="n">world_alcohol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;1989&quot;</span><span class="p">]</span>
+<span class="c">#print(country_consumption_1989)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;most_nutritious_foods:&quot;</span><span class="p">,</span> <span class="n">most_nutritious_foods</span><span class="p">)</span>
+<span class="n">highest_country</span> <span class="o">=</span> <span class="k">None</span>
+<span class="n">highest_consumption</span> <span class="o">=</span> <span class="k">None</span>
+<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">country_consumption_1989</span><span class="p">:</span>
+    <span class="n">consumption</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">country</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">highest_consumption</span> <span class="ow">is</span> <span class="k">None</span> <span class="ow">or</span> <span class="n">highest_consumption</span> <span class="o">&lt;</span> <span class="n">consumption</span><span class="p">:</span>
+        <span class="n">highest_consumption</span> <span class="o">=</span> <span class="n">consumption</span>
+        <span class="n">highest_country</span> <span class="o">=</span> <span class="n">country</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;highest_country:&quot;</span><span class="p">,</span> <span class="n">highest_country</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;highest_consumption:&quot;</span><span class="p">,</span> <span class="n">highest_consumption</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1751,80 +1573,8 @@ dtype: float64
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>most_nutritious_foods: [&apos;BEEF,NZ,IMP,VAR MEATS &amp; BY-PRODUCTS,LIVER,RAW&apos;, &apos;VEAL,VAR MEATS&amp;BY-PRODUCTS,LIVER,CKD,BRSD&apos;, &apos;BEEF,NZ,IMP,VAR MEATS &amp; BY-PRODUCTS LIVER,CKD,BLD&apos;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="18:-Finding-the-least-nutritious-foods">18: Finding the least nutritious foods<a class="anchor-link" href="#18:-Finding-the-least-nutritious-foods">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's do the same as in the last screen, but find the least nutritious foods.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Find the three least nutritious foods by sorting food_info using the "nutritional_rating" column.</p>
-<p>Get the name of those foods (the "Shrt_Desc" column), and assign the names to least_nutritious_foods.</p>
-<p>If least_nutritious_foods isn't a list at the end, use the list() function to turn it into one.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Assign least nutritional foods.</span>
-<span class="n">least_nutritious_foods</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">sorted_food_info</span> <span class="o">=</span> <span class="n">food_info</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s">&quot;nutritional_rating&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="k">True</span><span class="p">])</span>
-<span class="n">least_nutritious_foods</span> <span class="o">=</span> <span class="n">sorted_food_info</span><span class="p">[</span><span class="s">&quot;Shrt_Desc&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">least_nutritious_foods</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">least_nutritious_foods</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;least_nutritious_foods:&quot;</span><span class="p">,</span> <span class="n">least_nutritious_foods</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>least_nutritious_foods: [&apos;BEEF,VAR MEATS&amp;BY-PRODUCTS,BRAIN,CKD,SIMMRD&apos;, &apos;BEEF,VAR MEATS&amp;BY-PRODUCTS,BRAIN,RAW&apos;, &apos;LAMB,NZ,IMP,BRAINS,CKD,SOAKED &amp; FRIED&apos;]
+<pre>highest_country: France
+highest_consumption: 10.24
 </pre>
 </div>
 </div>

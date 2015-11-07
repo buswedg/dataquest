@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Data Analysis with Pandas
 
 ##Dataframe Basics
@@ -19,8 +24,168 @@ Read "food_info.csv" info food_info.
 ```python
 import pandas
 
-food_info = pandas.read_csv("data/food_info.csv")
+food_info = pandas.read_csv("data/food_info.csv", encoding = "latin-1")
+food_info[:5]
 ```
+
+
+
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NDB_No</th>
+      <th>Shrt_Desc</th>
+      <th>Water_(g)</th>
+      <th>Energ_Kcal</th>
+      <th>Protein_(g)</th>
+      <th>Lipid_Tot_(g)</th>
+      <th>Ash_(g)</th>
+      <th>Carbohydrt_(g)</th>
+      <th>Fiber_TD_(g)</th>
+      <th>Sugar_Tot_(g)</th>
+      <th>...</th>
+      <th>Vit_K_(µg)</th>
+      <th>FA_Sat_(g)</th>
+      <th>FA_Mono_(g)</th>
+      <th>FA_Poly_(g)</th>
+      <th>Cholestrl_(mg)</th>
+      <th>GmWt_1</th>
+      <th>GmWt_Desc1</th>
+      <th>GmWt_2</th>
+      <th>GmWt_Desc2</th>
+      <th>Refuse_Pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1001</td>
+      <td>BUTTER,WITH SALT</td>
+      <td>15.87</td>
+      <td>717</td>
+      <td>0.85</td>
+      <td>81.11</td>
+      <td>2.11</td>
+      <td>0.06</td>
+      <td>0</td>
+      <td>0.06</td>
+      <td>...</td>
+      <td>7.0</td>
+      <td>51.368</td>
+      <td>21.021</td>
+      <td>3.043</td>
+      <td>215</td>
+      <td>5.00</td>
+      <td>1 pat,  (1" sq, 1/3" high)</td>
+      <td>14.2</td>
+      <td>1 tbsp</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1002</td>
+      <td>BUTTER,WHIPPED,W/ SALT</td>
+      <td>16.72</td>
+      <td>718</td>
+      <td>0.49</td>
+      <td>78.30</td>
+      <td>1.62</td>
+      <td>2.87</td>
+      <td>0</td>
+      <td>0.06</td>
+      <td>...</td>
+      <td>4.6</td>
+      <td>45.390</td>
+      <td>19.874</td>
+      <td>3.331</td>
+      <td>225</td>
+      <td>3.80</td>
+      <td>1 pat,  (1" sq, 1/3" high)</td>
+      <td>9.4</td>
+      <td>1 tbsp</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1003</td>
+      <td>BUTTER OIL,ANHYDROUS</td>
+      <td>0.24</td>
+      <td>876</td>
+      <td>0.28</td>
+      <td>99.48</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>...</td>
+      <td>8.6</td>
+      <td>61.924</td>
+      <td>28.732</td>
+      <td>3.694</td>
+      <td>256</td>
+      <td>12.80</td>
+      <td>1 tbsp</td>
+      <td>205.0</td>
+      <td>1 cup</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1004</td>
+      <td>CHEESE,BLUE</td>
+      <td>42.41</td>
+      <td>353</td>
+      <td>21.40</td>
+      <td>28.74</td>
+      <td>5.11</td>
+      <td>2.34</td>
+      <td>0</td>
+      <td>0.50</td>
+      <td>...</td>
+      <td>2.4</td>
+      <td>18.669</td>
+      <td>7.778</td>
+      <td>0.800</td>
+      <td>75</td>
+      <td>28.35</td>
+      <td>1 oz</td>
+      <td>17.0</td>
+      <td>1 cubic inch</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1005</td>
+      <td>CHEESE,BRICK</td>
+      <td>41.11</td>
+      <td>371</td>
+      <td>23.24</td>
+      <td>29.68</td>
+      <td>3.18</td>
+      <td>2.79</td>
+      <td>0</td>
+      <td>0.51</td>
+      <td>...</td>
+      <td>2.5</td>
+      <td>18.764</td>
+      <td>8.598</td>
+      <td>0.784</td>
+      <td>94</td>
+      <td>132.00</td>
+      <td>1 cup, diced</td>
+      <td>113.0</td>
+      <td>1 cup, shredded</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 53 columns</p>
+</div>
+
+
 
 ###2: Indexing data with pandas
 
@@ -49,8 +214,7 @@ Assign the tenth row of food_info to the variable tenth_row.
 
 ```python
 # Print first row of data.
-print "First row of data:"
-print food_info.iloc[0,:]
+print("food_info.iloc[0,:10]:\n", food_info.iloc[0,:10])
 
 # Assign second row.
 second_row = food_info.iloc[1,:]
@@ -59,60 +223,17 @@ second_row = food_info.iloc[1,:]
 tenth_row = food_info.iloc[9,:]
 ```
 
-    First row of data:
-    NDB_No                                     1001
-    Shrt_Desc                      BUTTER,WITH SALT
-    Water_(g)                                 15.87
-    Energ_Kcal                                  717
-    Protein_(g)                                0.85
-    Lipid_Tot_(g)                             81.11
-    Ash_(g)                                    2.11
-    Carbohydrt_(g)                             0.06
-    Fiber_TD_(g)                                  0
-    Sugar_Tot_(g)                              0.06
-    Calcium_(mg)                                 24
-    Iron_(mg)                                  0.02
-    Magnesium_(mg)                                2
-    Phosphorus_(mg)                              24
-    Potassium_(mg)                               24
-    Sodium_(mg)                                 643
-    Zinc_(mg)                                  0.09
-    Copper_mg)                                    0
-    Manganese_(mg)                                0
-    Selenium_(�g)                                 1
-    Vit_C_(mg)                                    0
-    Thiamin_(mg)                              0.005
-    Riboflavin_(mg)                           0.034
-    Niacin_(mg)                               0.042
-    Panto_Acid_mg)                             0.11
-    Vit_B6_(mg)                               0.003
-    Folate_Tot_(�g)                               3
-    Folic_Acid_(�g)                               0
-    Food_Folate_(�g)                              3
-    Folate_DFE_(�g)                               3
-    Choline_Tot_ (mg)                          18.8
-    Vit_B12_(�g)                               0.17
-    Vit_A_IU                                   2499
-    Vit_A_RAE                                   684
-    Retinol_(�g)                                671
-    Alpha_Carot_(�g)                              0
-    Beta_Carot_(�g)                             158
-    Beta_Crypt_(�g)                               0
-    Lycopene_(�g)                                 0
-    Lut+Zea_ (�g)                                 0
-    Vit_E_(mg)                                 2.32
-    Vit_D_�g                                      0
-    Vit_D_IU                                      0
-    Vit_K_(�g)                                    7
-    FA_Sat_(g)                               51.368
-    FA_Mono_(g)                              21.021
-    FA_Poly_(g)                               3.043
-    Cholestrl_(mg)                              215
-    GmWt_1                                        5
-    GmWt_Desc1           1 pat,  (1" sq, 1/3" high)
-    GmWt_2                                     14.2
-    GmWt_Desc2                               1 tbsp
-    Refuse_Pct                                    0
+    food_info.iloc[0,:10]:
+     NDB_No                        1001
+    Shrt_Desc         BUTTER,WITH SALT
+    Water_(g)                    15.87
+    Energ_Kcal                     717
+    Protein_(g)                   0.85
+    Lipid_Tot_(g)                81.11
+    Ash_(g)                       2.11
+    Carbohydrt_(g)                0.06
+    Fiber_TD_(g)                     0
+    Sugar_Tot_(g)                 0.06
     Name: 0, dtype: object
     
 
@@ -157,10 +278,10 @@ Assign the Cholestrl_(mg) to the variable cholesterol.
 
 ```python
 # Print names of all the columns (in order).
-print list(food_info.columns.values)
+print("list(food_info.columns.values):\n", list(food_info.columns.values))
 
 # Print a particular column.
-print food_info["Protein_(g)"][0:10]
+print("food_info['Protein_(g)'][0:10]:\n", food_info["Protein_(g)"][0:10])
 
 # Assign particular columns.
 sodium_column = food_info["Sodium_(mg)"]
@@ -168,8 +289,10 @@ saturated_fat = food_info["FA_Sat_(g)"]
 cholesterol = food_info["Cholestrl_(mg)"]
 ```
 
-    ['NDB_No', 'Shrt_Desc', 'Water_(g)', 'Energ_Kcal', 'Protein_(g)', 'Lipid_Tot_(g)', 'Ash_(g)', 'Carbohydrt_(g)', 'Fiber_TD_(g)', 'Sugar_Tot_(g)', 'Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_mg)', 'Manganese_(mg)', 'Selenium_(\xb5g)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Panto_Acid_mg)', 'Vit_B6_(mg)', 'Folate_Tot_(\xb5g)', 'Folic_Acid_(\xb5g)', 'Food_Folate_(\xb5g)', 'Folate_DFE_(\xb5g)', 'Choline_Tot_ (mg)', 'Vit_B12_(\xb5g)', 'Vit_A_IU', 'Vit_A_RAE', 'Retinol_(\xb5g)', 'Alpha_Carot_(\xb5g)', 'Beta_Carot_(\xb5g)', 'Beta_Crypt_(\xb5g)', 'Lycopene_(\xb5g)', 'Lut+Zea_ (\xb5g)', 'Vit_E_(mg)', 'Vit_D_\xb5g', 'Vit_D_IU', 'Vit_K_(\xb5g)', 'FA_Sat_(g)', 'FA_Mono_(g)', 'FA_Poly_(g)', 'Cholestrl_(mg)', 'GmWt_1', 'GmWt_Desc1', 'GmWt_2', 'GmWt_Desc2', 'Refuse_Pct']
-    0     0.85
+    list(food_info.columns.values):
+     ['NDB_No', 'Shrt_Desc', 'Water_(g)', 'Energ_Kcal', 'Protein_(g)', 'Lipid_Tot_(g)', 'Ash_(g)', 'Carbohydrt_(g)', 'Fiber_TD_(g)', 'Sugar_Tot_(g)', 'Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_mg)', 'Manganese_(mg)', 'Selenium_(µg)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Panto_Acid_mg)', 'Vit_B6_(mg)', 'Folate_Tot_(µg)', 'Folic_Acid_(µg)', 'Food_Folate_(µg)', 'Folate_DFE_(µg)', 'Choline_Tot_ (mg)', 'Vit_B12_(µg)', 'Vit_A_IU', 'Vit_A_RAE', 'Retinol_(µg)', 'Alpha_Carot_(µg)', 'Beta_Carot_(µg)', 'Beta_Crypt_(µg)', 'Lycopene_(µg)', 'Lut+Zea_ (µg)', 'Vit_E_(mg)', 'Vit_D_µg', 'Vit_D_IU', 'Vit_K_(µg)', 'FA_Sat_(g)', 'FA_Mono_(g)', 'FA_Poly_(g)', 'Cholestrl_(mg)', 'GmWt_1', 'GmWt_Desc1', 'GmWt_2', 'GmWt_Desc2', 'Refuse_Pct']
+    food_info['Protein_(g)'][0:10]:
+     0     0.85
     1     0.49
     2     0.28
     3    21.40
@@ -196,7 +319,7 @@ Make sure that you get the columns in order (zinc and selenium come first).
 
 
 ```python
-#print list food_info.columns.values
+#print(food_info.columns.values)
 
 # Rename copper and selenium columns.
 food_info = food_info.rename(columns={'Copper_mg)': 'Copper_(mg)'})
@@ -315,64 +438,20 @@ descending_sodium = food_info.sort(["Sodium_(mg)"], ascending=[False])
 # Sort by the amount of vitamin C.
 ascending_vitamin_c = food_info.sort(["Vit_C_(mg)"], ascending=[True])
 
-print "Food with least vitamin C:"
-print(ascending_vitamin_c.iloc[0,:])
+print("ascending_vitamin_c.iloc[0,:10]:\n", ascending_vitamin_c.iloc[0,:10])
 ```
 
-    Food with least vitamin C:
-    NDB_No                                     1001
-    Shrt_Desc                      BUTTER,WITH SALT
-    Water_(g)                                 15.87
-    Energ_Kcal                                  717
-    Protein_(g)                                0.85
-    Lipid_Tot_(g)                             81.11
-    Ash_(g)                                    2.11
-    Carbohydrt_(g)                             0.06
-    Fiber_TD_(g)                                  0
-    Sugar_Tot_(g)                              0.06
-    Calcium_(mg)                                 24
-    Iron_(mg)                                  0.02
-    Magnesium_(mg)                                2
-    Phosphorus_(mg)                              24
-    Potassium_(mg)                               24
-    Sodium_(mg)                                 643
-    Zinc_(mg)                                  0.09
-    Copper_(mg)                                   0
-    Manganese_(mg)                                0
-    Selenium_(mcg)                                1
-    Vit_C_(mg)                                    0
-    Thiamin_(mg)                              0.005
-    Riboflavin_(mg)                           0.034
-    Niacin_(mg)                               0.042
-    Panto_Acid_mg)                             0.11
-    Vit_B6_(mg)                               0.003
-    Folate_Tot_(�g)                               3
-    Folic_Acid_(�g)                               0
-    Food_Folate_(�g)                              3
-    Folate_DFE_(�g)                               3
-    Choline_Tot_ (mg)                          18.8
-    Vit_B12_(�g)                               0.17
-    Vit_A_IU                                   2499
-    Vit_A_RAE                                   684
-    Retinol_(�g)                                671
-    Alpha_Carot_(�g)                              0
-    Beta_Carot_(�g)                             158
-    Beta_Crypt_(�g)                               0
-    Lycopene_(�g)                                 0
-    Lut+Zea_ (�g)                                 0
-    Vit_E_(mg)                                 2.32
-    Vit_D_�g                                      0
-    Vit_D_IU                                      0
-    Vit_K_(�g)                                    7
-    FA_Sat_(g)                               51.368
-    FA_Mono_(g)                              21.021
-    FA_Poly_(g)                               3.043
-    Cholestrl_(mg)                              215
-    GmWt_1                                        5
-    GmWt_Desc1           1 pat,  (1" sq, 1/3" high)
-    GmWt_2                                     14.2
-    GmWt_Desc2                               1 tbsp
-    Refuse_Pct                                    0
+    ascending_vitamin_c.iloc[0,:10]:
+     NDB_No                        1001
+    Shrt_Desc         BUTTER,WITH SALT
+    Water_(g)                    15.87
+    Energ_Kcal                     717
+    Protein_(g)                   0.85
+    Lipid_Tot_(g)                81.11
+    Ash_(g)                       2.11
+    Carbohydrt_(g)                0.06
+    Fiber_TD_(g)                     0
+    Sugar_Tot_(g)                 0.06
     Name: 0, dtype: object
     
 
@@ -410,64 +489,20 @@ ascending_sugar_then_descending_zinc = food_info.sort(["Sugar_Tot_(g)", "Zinc_(m
 # Perform a multicolumn sort, with first column "Cholestrl_(mg)" descending, and the second "Protein_(g)" ascending
 descending_cholesterol_then_ascending_protein = food_info.sort(["Cholestrl_(mg)", "Protein_(g)"], ascending=[False, True])
 
-print "Food with greatest cholesterol and least protein:"
-print descending_cholesterol_then_ascending_protein.iloc[0,:]
+print("descending_cholesterol_then_ascending_protein.iloc[0,:10]:\n", descending_cholesterol_then_ascending_protein.iloc[0,:10])
 ```
 
-    Food with greatest cholesterol and least protein:
-    NDB_No                                                   17189
-    Shrt_Desc            VEAL,VAR MEATS&BY-PRODUCTS,BRAIN,CKD,BRSD
-    Water_(g)                                                76.89
-    Energ_Kcal                                                 136
-    Protein_(g)                                              11.48
-    Lipid_Tot_(g)                                             9.63
-    Ash_(g)                                                    1.4
-    Carbohydrt_(g)                                               0
-    Fiber_TD_(g)                                                 0
-    Sugar_Tot_(g)                                              NaN
-    Calcium_(mg)                                                16
-    Iron_(mg)                                                 1.67
-    Magnesium_(mg)                                              16
-    Phosphorus_(mg)                                            385
-    Potassium_(mg)                                             214
-    Sodium_(mg)                                                156
-    Zinc_(mg)                                                 1.61
-    Copper_(mg)                                               0.26
-    Manganese_(mg)                                           0.038
-    Selenium_(mcg)                                              11
-    Vit_C_(mg)                                                  13
-    Thiamin_(mg)                                              0.08
-    Riboflavin_(mg)                                            0.2
-    Niacin_(mg)                                               2.43
-    Panto_Acid_mg)                                               1
-    Vit_B6_(mg)                                               0.17
-    Folate_Tot_(�g)                                              3
-    Folic_Acid_(�g)                                              0
-    Food_Folate_(�g)                                             3
-    Folate_DFE_(�g)                                              3
-    Choline_Tot_ (mg)                                          NaN
-    Vit_B12_(�g)                                              9.65
-    Vit_A_IU                                                     0
-    Vit_A_RAE                                                    0
-    Retinol_(�g)                                                 0
-    Alpha_Carot_(�g)                                           NaN
-    Beta_Carot_(�g)                                            NaN
-    Beta_Crypt_(�g)                                            NaN
-    Lycopene_(�g)                                              NaN
-    Lut+Zea_ (�g)                                              NaN
-    Vit_E_(mg)                                                 NaN
-    Vit_D_�g                                                   NaN
-    Vit_D_IU                                                   NaN
-    Vit_K_(�g)                                                 NaN
-    FA_Sat_(g)                                                2.18
-    FA_Mono_(g)                                               1.74
-    FA_Poly_(g)                                               1.49
-    Cholestrl_(mg)                                            3100
-    GmWt_1                                                      85
-    GmWt_Desc1                                                3 oz
-    GmWt_2                                                     339
-    GmWt_Desc2           1 unit, cooked (yield from 1 lb raw meat)
-    Refuse_Pct                                                   0
+    descending_cholesterol_then_ascending_protein.iloc[0,:10]:
+     NDB_No                                                17189
+    Shrt_Desc         VEAL,VAR MEATS&BY-PRODUCTS,BRAIN,CKD,BRSD
+    Water_(g)                                             76.89
+    Energ_Kcal                                              136
+    Protein_(g)                                           11.48
+    Lipid_Tot_(g)                                          9.63
+    Ash_(g)                                                 1.4
+    Carbohydrt_(g)                                            0
+    Fiber_TD_(g)                                              0
+    Sugar_Tot_(g)                                           NaN
     Name: 5287, dtype: object
     
 
@@ -505,65 +540,20 @@ food_info["new_rating"] = new_rating
 # Sort by the new rating.
 descending_new_rating = food_info.sort(["new_rating"], ascending=[False])
 
-print "Food with greatest new weighting:"
-print descending_new_rating.iloc[0,:]
+print("descending_new_rating.iloc[0,:10]:\n", descending_new_rating.iloc[0,:10])
 ```
 
-    Food with greatest new weighting:
-    NDB_No                                 16422
-    Shrt_Desc            SOY PROT ISOLATE,K TYPE
-    Water_(g)                               4.98
-    Energ_Kcal                               321
-    Protein_(g)                            88.32
-    Lipid_Tot_(g)                           0.53
-    Ash_(g)                                 3.58
-    Carbohydrt_(g)                          2.59
-    Fiber_TD_(g)                               0
-    Sugar_Tot_(g)                              0
-    Calcium_(mg)                             178
-    Iron_(mg)                               14.5
-    Magnesium_(mg)                            39
-    Phosphorus_(mg)                          776
-    Potassium_(mg)                          1590
-    Sodium_(mg)                               50
-    Zinc_(mg)                               4.03
-    Copper_(mg)                            1.599
-    Manganese_(mg)                         1.493
-    Selenium_(mcg)                           0.8
-    Vit_C_(mg)                                 0
-    Thiamin_(mg)                           0.176
-    Riboflavin_(mg)                          0.1
-    Niacin_(mg)                            1.438
-    Panto_Acid_mg)                          0.06
-    Vit_B6_(mg)                              0.1
-    Folate_Tot_(�g)                          176
-    Folic_Acid_(�g)                            0
-    Food_Folate_(�g)                         176
-    Folate_DFE_(�g)                          176
-    Choline_Tot_ (mg)                      190.9
-    Vit_B12_(�g)                               0
-    Vit_A_IU                                   0
-    Vit_A_RAE                                  0
-    Retinol_(�g)                               0
-    Alpha_Carot_(�g)                           0
-    Beta_Carot_(�g)                            0
-    Beta_Crypt_(�g)                            0
-    Lycopene_(�g)                              0
-    Lut+Zea_ (�g)                              0
-    Vit_E_(mg)                                 0
-    Vit_D_�g                                   0
-    Vit_D_IU                                   0
-    Vit_K_(�g)                                 0
-    FA_Sat_(g)                             0.077
-    FA_Mono_(g)                            0.117
-    FA_Poly_(g)                            0.299
-    Cholestrl_(mg)                             0
-    GmWt_1                                 28.35
-    GmWt_Desc1                              1 oz
-    GmWt_2                                   NaN
-    GmWt_Desc2                               NaN
-    Refuse_Pct                                 0
-    new_rating                            176.11
+    descending_new_rating.iloc[0,:10]:
+     NDB_No                              16422
+    Shrt_Desc         SOY PROT ISOLATE,K TYPE
+    Water_(g)                            4.98
+    Energ_Kcal                            321
+    Protein_(g)                         88.32
+    Lipid_Tot_(g)                        0.53
+    Ash_(g)                              3.58
+    Carbohydrt_(g)                       2.59
+    Fiber_TD_(g)                            0
+    Sugar_Tot_(g)                           0
     Name: 5009, dtype: object
     
 
@@ -600,80 +590,31 @@ food_info["normalized_vitamin_c"] = normalized_vitamin_c
 
 # Sort by normalized vitamin C values.
 descending_normalized_vitamin_c = food_info.sort(["normalized_vitamin_c"], ascending=[False])
-print "Food with greatest normalized vitamin C:"
-print descending_normalized_vitamin_c.iloc[0,:]
+print("descending_normalized_vitamin_c.iloc[0,:10]:\n", descending_normalized_vitamin_c.iloc[0,:10])
 
 # Create normalized zinc value.
 normalized_zinc = food_info["Zinc_(mg)"] / food_info["Zinc_(mg)"].max()
 ```
 
-    Food with greatest normalized vitamin C:
-    NDB_No                                                               3022
-    Shrt_Desc               BABYFOOD,GERBER,2ND FOODS,APPL,CARROT & SQUASH...
-    Water_(g)                                                           83.83
-    Energ_Kcal                                                             64
-    Protein_(g)                                                           1.1
-    Lipid_Tot_(g)                                                           0
-    Ash_(g)                                                              0.26
-    Carbohydrt_(g)                                                      14.82
-    Fiber_TD_(g)                                                          1.2
-    Sugar_Tot_(g)                                                        9.09
-    Calcium_(mg)                                                            6
-    Iron_(mg)                                                            0.15
-    Magnesium_(mg)                                                          5
-    Phosphorus_(mg)                                                        17
-    Potassium_(mg)                                                        106
-    Sodium_(mg)                                                            20
-    Zinc_(mg)                                                            0.22
-    Copper_(mg)                                                         0.033
-    Manganese_(mg)                                                      0.039
-    Selenium_(mcg)                                                        0.8
-    Vit_C_(mg)                                                           2732
-    Thiamin_(mg)                                                         0.02
-    Riboflavin_(mg)                                                     0.036
-    Niacin_(mg)                                                         0.255
-    Panto_Acid_mg)                                                      0.086
-    Vit_B6_(mg)                                                         0.057
-    Folate_Tot_(�g)                                                         2
-    Folic_Acid_(�g)                                                         0
-    Food_Folate_(�g)                                                        2
-    Folate_DFE_(�g)                                                         2
-    Choline_Tot_ (mg)                                                     3.5
-    Vit_B12_(�g)                                                            0
-    Vit_A_IU                                                              417
-    Vit_A_RAE                                                              21
-    Retinol_(�g)                                                            0
-    Alpha_Carot_(�g)                                                       78
-    Beta_Carot_(�g)                                                       206
-    Beta_Crypt_(�g)                                                        11
-    Lycopene_(�g)                                                           0
-    Lut+Zea_ (�g)                                                          17
-    Vit_E_(mg)                                                           0.07
-    Vit_D_�g                                                                0
-    Vit_D_IU                                                                0
-    Vit_K_(�g)                                                              1
-    FA_Sat_(g)                                                              0
-    FA_Mono_(g)                                                             0
-    FA_Poly_(g)                                                             0
-    Cholestrl_(mg)                                                          2
-    GmWt_1                                                                NaN
-    GmWt_Desc1                                                            NaN
-    GmWt_2                                                                NaN
-    GmWt_Desc2                                                            NaN
-    Refuse_Pct                                                              0
-    new_rating                                                            2.2
-    normalized_vitamin_c                                                    1
+    descending_normalized_vitamin_c.iloc[0,:10]:
+     NDB_No                                                         3022
+    Shrt_Desc         BABYFOOD,GERBER,2ND FOODS,APPL,CARROT & SQUASH...
+    Water_(g)                                                     83.83
+    Energ_Kcal                                                       64
+    Protein_(g)                                                     1.1
+    Lipid_Tot_(g)                                                     0
+    Ash_(g)                                                        0.26
+    Carbohydrt_(g)                                                14.82
+    Fiber_TD_(g)                                                    1.2
+    Sugar_Tot_(g)                                                  9.09
     Name: 332, dtype: object
     
 
 ###12: Making a better rating
 
-
-```python
 We now know enough to construct a better rating for our friend Superman.
 
 We just have to normalize the columns that we are interested in before we create the rating.
-```
 
 ####Instructions
 
@@ -700,67 +641,20 @@ food_info["better_protein_rating"] = better_protein_rating
 
 # Sort by new protein rating.
 descending_better_protein_rating = food_info.sort(["better_protein_rating"], ascending=[False])
-print "Food with greatest better protein rating:"
-print descending_better_protein_rating.iloc[0,:]
+print("descending_better_protein_rating.iloc[0,:10]:\n", descending_better_protein_rating.iloc[0,:10])
 ```
 
-    Food with greatest better protein rating:
-    NDB_No                                     16422
-    Shrt_Desc                SOY PROT ISOLATE,K TYPE
-    Water_(g)                                   4.98
-    Energ_Kcal                                   321
-    Protein_(g)                                88.32
-    Lipid_Tot_(g)                               0.53
-    Ash_(g)                                     3.58
-    Carbohydrt_(g)                              2.59
-    Fiber_TD_(g)                                   0
-    Sugar_Tot_(g)                                  0
-    Calcium_(mg)                                 178
-    Iron_(mg)                                   14.5
-    Magnesium_(mg)                                39
-    Phosphorus_(mg)                              776
-    Potassium_(mg)                              1590
-    Sodium_(mg)                                   50
-    Zinc_(mg)                                   4.03
-    Copper_(mg)                                1.599
-    Manganese_(mg)                             1.493
-    Selenium_(mcg)                               0.8
-    Vit_C_(mg)                                     0
-    Thiamin_(mg)                               0.176
-    Riboflavin_(mg)                              0.1
-    Niacin_(mg)                                1.438
-    Panto_Acid_mg)                              0.06
-    Vit_B6_(mg)                                  0.1
-    Folate_Tot_(�g)                              176
-    Folic_Acid_(�g)                                0
-    Food_Folate_(�g)                             176
-    Folate_DFE_(�g)                              176
-    Choline_Tot_ (mg)                          190.9
-    Vit_B12_(�g)                                   0
-    Vit_A_IU                                       0
-    Vit_A_RAE                                      0
-    Retinol_(�g)                                   0
-    Alpha_Carot_(�g)                               0
-    Beta_Carot_(�g)                                0
-    Beta_Crypt_(�g)                                0
-    Lycopene_(�g)                                  0
-    Lut+Zea_ (�g)                                  0
-    Vit_E_(mg)                                     0
-    Vit_D_�g                                       0
-    Vit_D_IU                                       0
-    Vit_K_(�g)                                     0
-    FA_Sat_(g)                                 0.077
-    FA_Mono_(g)                                0.117
-    FA_Poly_(g)                                0.299
-    Cholestrl_(mg)                                 0
-    GmWt_1                                     28.35
-    GmWt_Desc1                                  1 oz
-    GmWt_2                                       NaN
-    GmWt_Desc2                                   NaN
-    Refuse_Pct                                     0
-    new_rating                                176.11
-    normalized_vitamin_c                           0
-    better_protein_rating                     1.9947
+    descending_better_protein_rating.iloc[0,:10]:
+     NDB_No                              16422
+    Shrt_Desc         SOY PROT ISOLATE,K TYPE
+    Water_(g)                            4.98
+    Energ_Kcal                            321
+    Protein_(g)                         88.32
+    Lipid_Tot_(g)                        0.53
+    Ash_(g)                              3.58
+    Carbohydrt_(g)                       2.59
+    Fiber_TD_(g)                            0
+    Sugar_Tot_(g)                           0
     Name: 5009, dtype: object
     
 
@@ -794,10 +688,10 @@ all_columns = list(food_info.columns.values)
 
 column_count = len(all_columns)
 all_columns = all_columns[2:column_count]
-print "Removed 'NDB_No' and 'Shrt_Desc': ", all_columns
+print("all_columns:", all_columns)
 ```
 
-    Removed 'NDB_No' and 'Shrt_Desc':  ['Water_(g)', 'Energ_Kcal', 'Protein_(g)', 'Lipid_Tot_(g)', 'Ash_(g)', 'Carbohydrt_(g)', 'Fiber_TD_(g)', 'Sugar_Tot_(g)', 'Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_(mg)', 'Manganese_(mg)', 'Selenium_(mcg)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Panto_Acid_mg)', 'Vit_B6_(mg)', 'Folate_Tot_(\xb5g)', 'Folic_Acid_(\xb5g)', 'Food_Folate_(\xb5g)', 'Folate_DFE_(\xb5g)', 'Choline_Tot_ (mg)', 'Vit_B12_(\xb5g)', 'Vit_A_IU', 'Vit_A_RAE', 'Retinol_(\xb5g)', 'Alpha_Carot_(\xb5g)', 'Beta_Carot_(\xb5g)', 'Beta_Crypt_(\xb5g)', 'Lycopene_(\xb5g)', 'Lut+Zea_ (\xb5g)', 'Vit_E_(mg)', 'Vit_D_\xb5g', 'Vit_D_IU', 'Vit_K_(\xb5g)', 'FA_Sat_(g)', 'FA_Mono_(g)', 'FA_Poly_(g)', 'Cholestrl_(mg)', 'GmWt_1', 'GmWt_Desc1', 'GmWt_2', 'GmWt_Desc2', 'Refuse_Pct', 'new_rating', 'normalized_vitamin_c', 'better_protein_rating']
+    all_columns: ['Water_(g)', 'Energ_Kcal', 'Protein_(g)', 'Lipid_Tot_(g)', 'Ash_(g)', 'Carbohydrt_(g)', 'Fiber_TD_(g)', 'Sugar_Tot_(g)', 'Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_(mg)', 'Manganese_(mg)', 'Selenium_(mcg)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Panto_Acid_mg)', 'Vit_B6_(mg)', 'Folate_Tot_(µg)', 'Folic_Acid_(µg)', 'Food_Folate_(µg)', 'Folate_DFE_(µg)', 'Choline_Tot_ (mg)', 'Vit_B12_(µg)', 'Vit_A_IU', 'Vit_A_RAE', 'Retinol_(µg)', 'Alpha_Carot_(µg)', 'Beta_Carot_(µg)', 'Beta_Crypt_(µg)', 'Lycopene_(µg)', 'Lut+Zea_ (µg)', 'Vit_E_(mg)', 'Vit_D_µg', 'Vit_D_IU', 'Vit_K_(µg)', 'FA_Sat_(g)', 'FA_Mono_(g)', 'FA_Poly_(g)', 'Cholestrl_(mg)', 'GmWt_1', 'GmWt_Desc1', 'GmWt_2', 'GmWt_Desc2', 'Refuse_Pct', 'new_rating', 'normalized_vitamin_c', 'better_protein_rating']
     
 
 ###14: Finding the amount of vitamins
@@ -826,31 +720,35 @@ You'll need to sum the total in each row.
 
 
 ```python
-column_list = ['Fiber_TD_(g)', 'Sugar_Tot_(g)']
+column_list = ["Fiber_TD_(g)", "Sugar_Tot_(g)"]
 
 # Sum the amount of fiber and sugar in each of the foods.
 row_total = food_info[column_list].sum(axis=1)
-#print row_total
+#print(row_total)
 
 # Sum the total amount of fiber and sugar across all the foods.
 column_total = food_info[column_list].sum(axis=0)
-#print column_total
+#print(column_total)
 
 # Rename 'Vit_B12_(mcg)', 'Vit_D_mcg', 'Vit_K_(mcg)' columns.
-food_info = food_info.rename(columns={'Vit_B12_(\xb5g)': 'Vit_B12_(mcg)'})
-food_info = food_info.rename(columns={'Vit_D_\xb5g': 'Vit_D_mcg'})
-food_info = food_info.rename(columns={'Vit_K_(\xb5g)': 'Vit_K_(mcg)'})
+food_info = food_info.rename(columns={"Vit_B12_(\xb5g)": "Vit_B12_(mcg)"})
+food_info = food_info.rename(columns={"Vit_D_\xb5g": "Vit_D_mcg"})
+food_info = food_info.rename(columns={"Vit_K_(\xb5g)": "Vit_K_(mcg)"})
 
 # Sum the total amount of vitamins in each foods.
-vitamin_columns = ['Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_(mg)', 'Manganese_(mg)', 'Selenium_(mcg)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Vit_B6_(mg)', 'Vit_B12_(mcg)', 'Vit_A_IU', 'Vit_A_RAE', 'Vit_E_(mg)', 'Vit_D_mcg', 'Vit_D_IU', 'Vit_K_(mcg)']
+vitamin_columns = ["Calcium_(mg)", "Iron_(mg)", "Magnesium_(mg)", "Phosphorus_(mg)", 
+                   "Potassium_(mg)", "Sodium_(mg)", "Zinc_(mg)", "Copper_(mg)", 
+                   "Manganese_(mg)", "Selenium_(mcg)", "Vit_C_(mg)", "Thiamin_(mg)", 
+                   "Riboflavin_(mg)", "Niacin_(mg)", "Vit_B6_(mg)", "Vit_B12_(mcg)", 
+                   "Vit_A_IU", "Vit_A_RAE", "Vit_E_(mg)", "Vit_D_mcg", "Vit_D_IU", 
+                   "Vit_K_(mcg)"]
 vitamins = food_info[vitamin_columns]
 vitamin_totals = vitamins.sum(axis=1)
-print "Vitamin totals:"
-print vitamin_totals.head(10)
+print("vitamin_totals.head(10):\n", vitamin_totals.head(10))
 ```
 
-    Vitamin totals:
-    0    3910.684
+    vitamin_totals.head(10):
+     0    3910.684
     1    3829.252
     2    3934.431
     3    3303.482
@@ -905,12 +803,11 @@ nutritional_rating = None
 nutritional_rating = 3 * food_info["vitamin_totals"] + -2 * food_info["Lipid_Tot_(g)"] + 3 * food_info["Protein_(g)"] + -1 * food_info["Sugar_Tot_(g)"] + 1 * food_info["Fiber_TD_(g)"] + -2 * food_info["Cholestrl_(mg)"]
 food_info["nutritional_rating"] = nutritional_rating
 
-print "Nutritional rating:"
-print nutritional_rating.head(10)
+print("nutritional_rating.head(10):\n", nutritional_rating.head(10))
 ```
 
-    Nutritional rating:
-    0    11139.800872
+    nutritional_rating.head(10):
+     0    11139.800872
     1    10881.112644
     2    11092.342511
     3     9703.192902
@@ -945,12 +842,10 @@ sorted_food_info = food_info.sort(["nutritional_rating"], ascending=[False])
 most_nutritious_foods = sorted_food_info["Shrt_Desc"].iloc[0:3]
 most_nutritious_foods = list(most_nutritious_foods)
 
-print "Most nutritional foods:"
-print most_nutritious_foods
+print("most_nutritious_foods:", most_nutritious_foods)
 ```
 
-    Most nutritional foods:
-    ['BEEF,NZ,IMP,VAR MEATS & BY-PRODUCTS,LIVER,RAW', 'VEAL,VAR MEATS&BY-PRODUCTS,LIVER,CKD,BRSD', 'BEEF,NZ,IMP,VAR MEATS & BY-PRODUCTS LIVER,CKD,BLD']
+    most_nutritious_foods: ['BEEF,NZ,IMP,VAR MEATS & BY-PRODUCTS,LIVER,RAW', 'VEAL,VAR MEATS&BY-PRODUCTS,LIVER,CKD,BRSD', 'BEEF,NZ,IMP,VAR MEATS & BY-PRODUCTS LIVER,CKD,BLD']
     
 
 ###18: Finding the least nutritious foods
@@ -973,10 +868,8 @@ sorted_food_info = food_info.sort(["nutritional_rating"], ascending=[True])
 least_nutritious_foods = sorted_food_info["Shrt_Desc"].iloc[0:3]
 least_nutritious_foods = list(least_nutritious_foods)
 
-print "Least nutritional foods:"
-print least_nutritious_foods
+print("least_nutritious_foods:", least_nutritious_foods)
 ```
 
-    Least nutritional foods:
-    ['BEEF,VAR MEATS&BY-PRODUCTS,BRAIN,CKD,SIMMRD', 'BEEF,VAR MEATS&BY-PRODUCTS,BRAIN,RAW', 'LAMB,NZ,IMP,BRAINS,CKD,SOAKED & FRIED']
+    least_nutritious_foods: ['BEEF,VAR MEATS&BY-PRODUCTS,BRAIN,CKD,SIMMRD', 'BEEF,VAR MEATS&BY-PRODUCTS,BRAIN,RAW', 'LAMB,NZ,IMP,BRAINS,CKD,SOAKED & FRIED']
     

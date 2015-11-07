@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# In[1]:
+
+from __future__ import print_function
+
+
 # #Data Analysis with Pandas
 
 # ##Dataframe Basics
@@ -17,11 +22,12 @@
 
 # Read "food_info.csv" info food_info.
 
-# In[1]:
+# In[2]:
 
 import pandas
 
-food_info = pandas.read_csv("data/food_info.csv")
+food_info = pandas.read_csv("data/food_info.csv", encoding = "latin-1")
+food_info[:5]
 
 
 # ###2: Indexing data with pandas
@@ -48,11 +54,10 @@ food_info = pandas.read_csv("data/food_info.csv")
 # 
 # Assign the tenth row of food_info to the variable tenth_row.
 
-# In[4]:
+# In[3]:
 
 # Print first row of data.
-print "First row of data:"
-print food_info.iloc[0,:]
+print("food_info.iloc[0,:10]:\n", food_info.iloc[0,:10])
 
 # Assign second row.
 second_row = food_info.iloc[1,:]
@@ -73,7 +78,7 @@ tenth_row = food_info.iloc[9,:]
 # 
 # Assign the first 10 items in the first column to first_10_items_in_first_column.
 
-# In[3]:
+# In[4]:
 
 # Assin a series.
 first_row = food_info.iloc[0,:]
@@ -102,10 +107,10 @@ first_10_items_in_first_column = food_info.iloc[:,0][0:10]
 # In[5]:
 
 # Print names of all the columns (in order).
-print list(food_info.columns.values)
+print("list(food_info.columns.values):\n", list(food_info.columns.values))
 
 # Print a particular column.
-print food_info["Protein_(g)"][0:10]
+print("food_info['Protein_(g)'][0:10]:\n", food_info["Protein_(g)"][0:10])
 
 # Assign particular columns.
 sodium_column = food_info["Sodium_(mg)"]
@@ -127,7 +132,7 @@ cholesterol = food_info["Cholestrl_(mg)"]
 
 # In[6]:
 
-#print list food_info.columns.values
+#print(food_info.columns.values)
 
 # Rename copper and selenium columns.
 food_info = food_info.rename(columns={'Copper_mg)': 'Copper_(mg)'})
@@ -246,8 +251,7 @@ descending_sodium = food_info.sort(["Sodium_(mg)"], ascending=[False])
 # Sort by the amount of vitamin C.
 ascending_vitamin_c = food_info.sort(["Vit_C_(mg)"], ascending=[True])
 
-print "Food with least vitamin C:"
-print(ascending_vitamin_c.iloc[0,:])
+print("ascending_vitamin_c.iloc[0,:10]:\n", ascending_vitamin_c.iloc[0,:10])
 
 
 # ###9: Multicolumn sort
@@ -284,8 +288,7 @@ ascending_sugar_then_descending_zinc = food_info.sort(["Sugar_Tot_(g)", "Zinc_(m
 # Perform a multicolumn sort, with first column "Cholestrl_(mg)" descending, and the second "Protein_(g)" ascending
 descending_cholesterol_then_ascending_protein = food_info.sort(["Cholestrl_(mg)", "Protein_(g)"], ascending=[False, True])
 
-print "Food with greatest cholesterol and least protein:"
-print descending_cholesterol_then_ascending_protein.iloc[0,:]
+print("descending_cholesterol_then_ascending_protein.iloc[0,:10]:\n", descending_cholesterol_then_ascending_protein.iloc[0,:10])
 
 
 # ###10: Creating a rating
@@ -322,8 +325,7 @@ food_info["new_rating"] = new_rating
 # Sort by the new rating.
 descending_new_rating = food_info.sort(["new_rating"], ascending=[False])
 
-print "Food with greatest new weighting:"
-print descending_new_rating.iloc[0,:]
+print("descending_new_rating.iloc[0,:10]:\n", descending_new_rating.iloc[0,:10])
 
 
 # ###11: Normalizing columns
@@ -359,8 +361,7 @@ food_info["normalized_vitamin_c"] = normalized_vitamin_c
 
 # Sort by normalized vitamin C values.
 descending_normalized_vitamin_c = food_info.sort(["normalized_vitamin_c"], ascending=[False])
-print "Food with greatest normalized vitamin C:"
-print descending_normalized_vitamin_c.iloc[0,:]
+print("descending_normalized_vitamin_c.iloc[0,:10]:\n", descending_normalized_vitamin_c.iloc[0,:10])
 
 # Create normalized zinc value.
 normalized_zinc = food_info["Zinc_(mg)"] / food_info["Zinc_(mg)"].max()
@@ -368,12 +369,9 @@ normalized_zinc = food_info["Zinc_(mg)"] / food_info["Zinc_(mg)"].max()
 
 # ###12: Making a better rating
 
-# In[ ]:
-
-We now know enough to construct a better rating for our friend Superman.
-
-We just have to normalize the columns that we are interested in before we create the rating.
-
+# We now know enough to construct a better rating for our friend Superman.
+# 
+# We just have to normalize the columns that we are interested in before we create the rating.
 
 # ####Instructions
 
@@ -400,8 +398,7 @@ food_info["better_protein_rating"] = better_protein_rating
 
 # Sort by new protein rating.
 descending_better_protein_rating = food_info.sort(["better_protein_rating"], ascending=[False])
-print "Food with greatest better protein rating:"
-print descending_better_protein_rating.iloc[0,:]
+print("descending_better_protein_rating.iloc[0,:10]:\n", descending_better_protein_rating.iloc[0,:10])
 
 
 # ###13: Normalizing multiple columns
@@ -420,7 +417,7 @@ print descending_better_protein_rating.iloc[0,:]
 # 
 # Then, use a for loop to normalize all the other columns.
 
-# In[15]:
+# In[14]:
 
 column_list = ["Energ_Kcal", "Protein_(g)"]
 
@@ -434,7 +431,7 @@ all_columns = list(food_info.columns.values)
 
 column_count = len(all_columns)
 all_columns = all_columns[2:column_count]
-print "Removed 'NDB_No' and 'Shrt_Desc': ", all_columns
+print("all_columns:", all_columns)
 
 
 # ###14: Finding the amount of vitamins
@@ -461,29 +458,33 @@ print "Removed 'NDB_No' and 'Shrt_Desc': ", all_columns
 # 
 # You'll need to sum the total in each row.
 
-# In[16]:
+# In[15]:
 
-column_list = ['Fiber_TD_(g)', 'Sugar_Tot_(g)']
+column_list = ["Fiber_TD_(g)", "Sugar_Tot_(g)"]
 
 # Sum the amount of fiber and sugar in each of the foods.
 row_total = food_info[column_list].sum(axis=1)
-#print row_total
+#print(row_total)
 
 # Sum the total amount of fiber and sugar across all the foods.
 column_total = food_info[column_list].sum(axis=0)
-#print column_total
+#print(column_total)
 
 # Rename 'Vit_B12_(mcg)', 'Vit_D_mcg', 'Vit_K_(mcg)' columns.
-food_info = food_info.rename(columns={'Vit_B12_(\xb5g)': 'Vit_B12_(mcg)'})
-food_info = food_info.rename(columns={'Vit_D_\xb5g': 'Vit_D_mcg'})
-food_info = food_info.rename(columns={'Vit_K_(\xb5g)': 'Vit_K_(mcg)'})
+food_info = food_info.rename(columns={"Vit_B12_(\xb5g)": "Vit_B12_(mcg)"})
+food_info = food_info.rename(columns={"Vit_D_\xb5g": "Vit_D_mcg"})
+food_info = food_info.rename(columns={"Vit_K_(\xb5g)": "Vit_K_(mcg)"})
 
 # Sum the total amount of vitamins in each foods.
-vitamin_columns = ['Calcium_(mg)', 'Iron_(mg)', 'Magnesium_(mg)', 'Phosphorus_(mg)', 'Potassium_(mg)', 'Sodium_(mg)', 'Zinc_(mg)', 'Copper_(mg)', 'Manganese_(mg)', 'Selenium_(mcg)', 'Vit_C_(mg)', 'Thiamin_(mg)', 'Riboflavin_(mg)', 'Niacin_(mg)', 'Vit_B6_(mg)', 'Vit_B12_(mcg)', 'Vit_A_IU', 'Vit_A_RAE', 'Vit_E_(mg)', 'Vit_D_mcg', 'Vit_D_IU', 'Vit_K_(mcg)']
+vitamin_columns = ["Calcium_(mg)", "Iron_(mg)", "Magnesium_(mg)", "Phosphorus_(mg)", 
+                   "Potassium_(mg)", "Sodium_(mg)", "Zinc_(mg)", "Copper_(mg)", 
+                   "Manganese_(mg)", "Selenium_(mcg)", "Vit_C_(mg)", "Thiamin_(mg)", 
+                   "Riboflavin_(mg)", "Niacin_(mg)", "Vit_B6_(mg)", "Vit_B12_(mcg)", 
+                   "Vit_A_IU", "Vit_A_RAE", "Vit_E_(mg)", "Vit_D_mcg", "Vit_D_IU", 
+                   "Vit_K_(mcg)"]
 vitamins = food_info[vitamin_columns]
 vitamin_totals = vitamins.sum(axis=1)
-print "Vitamin totals:"
-print vitamin_totals.head(10)
+print("vitamin_totals.head(10):\n", vitamin_totals.head(10))
 
 
 # ###15: Adding a new column
@@ -500,7 +501,7 @@ print vitamin_totals.head(10)
 # 
 # Assign vitamin_totals to the "vitamin_totals" column in food_info.
 
-# In[17]:
+# In[16]:
 
 # Assign double protein values.
 food_info["double_protein"] = food_info["Protein_(g)"] * 2
@@ -521,15 +522,14 @@ food_info["vitamin_totals"] = vitamin_totals
 # 
 # Construct a rating using the above weights, and assign it to nutritional_rating.
 
-# In[18]:
+# In[17]:
 
 # Assign nutritional rating.
 nutritional_rating = None
 nutritional_rating = 3 * food_info["vitamin_totals"] + -2 * food_info["Lipid_Tot_(g)"] + 3 * food_info["Protein_(g)"] + -1 * food_info["Sugar_Tot_(g)"] + 1 * food_info["Fiber_TD_(g)"] + -2 * food_info["Cholestrl_(mg)"]
 food_info["nutritional_rating"] = nutritional_rating
 
-print "Nutritional rating:"
-print nutritional_rating.head(10)
+print("nutritional_rating.head(10):\n", nutritional_rating.head(10))
 
 
 # ###17: Finding the most nutritious foods
@@ -546,7 +546,7 @@ print nutritional_rating.head(10)
 # 
 # If most_nutritious_foods isn't a list at the end, use the list() function to turn it into one.
 
-# In[19]:
+# In[18]:
 
 # Assign most nutritional foods.
 most_nutritious_foods = []
@@ -554,8 +554,7 @@ sorted_food_info = food_info.sort(["nutritional_rating"], ascending=[False])
 most_nutritious_foods = sorted_food_info["Shrt_Desc"].iloc[0:3]
 most_nutritious_foods = list(most_nutritious_foods)
 
-print "Most nutritional foods:"
-print most_nutritious_foods
+print("most_nutritious_foods:", most_nutritious_foods)
 
 
 # ###18: Finding the least nutritious foods
@@ -570,7 +569,7 @@ print most_nutritious_foods
 # 
 # If least_nutritious_foods isn't a list at the end, use the list() function to turn it into one.
 
-# In[20]:
+# In[19]:
 
 # Assign least nutritional foods.
 least_nutritious_foods = []
@@ -578,6 +577,5 @@ sorted_food_info = food_info.sort(["nutritional_rating"], ascending=[True])
 least_nutritious_foods = sorted_food_info["Shrt_Desc"].iloc[0:3]
 least_nutritious_foods = list(least_nutritious_foods)
 
-print "Least nutritional foods:"
-print least_nutritious_foods
+print("least_nutritious_foods:", least_nutritious_foods)
 

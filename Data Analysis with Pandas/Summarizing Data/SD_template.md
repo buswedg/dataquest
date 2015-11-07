@@ -1,4 +1,9 @@
 
+
+```python
+from __future__ import print_function
+```
+
 #Data Analysis with Pandas
 
 ##Summarizing Data
@@ -293,22 +298,25 @@ Use the Total column to calculate the number of people who fall under each Major
 
 Format of dictionary:
 
-{ 
-    "Engineering": 500,
-    "Business": 500
-    ...
-}
+    { 
+        "Engineering": 500,
+        "Business": 500
+        ...
+    }
 
 
 ```python
 # All values for "Major_category"
-print all_ages['Major_category'].value_counts().index
-print recent_grads['Major_category'].value_counts().index
+all_ages_index = all_ages["Major_category"].value_counts().index
+print("all_ages_index:\n", all_ages_index)
+
+recent_grad_index = recent_grads['Major_category'].value_counts().index
+print("recent_grad_index:\n", recent_grad_index)
 
 all_ages_major_categories = dict()
 recent_grads_major_categories = dict()
 def calculate_major_cat_totals(df):
-    cats = df['Major_category'].value_counts().index
+    cats = df["Major_category"].value_counts().index
     counts_dictionary = dict()
 
     for c in cats:
@@ -321,21 +329,23 @@ all_ages_major_categories = calculate_major_cat_totals(all_ages)
 recent_grads_major_categories = calculate_major_cat_totals(recent_grads)
 ```
 
-    Index([u'Engineering', u'Education', u'Humanities & Liberal Arts',
-           u'Biology & Life Science', u'Business', u'Health',
-           u'Computers & Mathematics', u'Physical Sciences',
-           u'Agriculture & Natural Resources', u'Psychology & Social Work',
-           u'Social Science', u'Arts', u'Industrial Arts & Consumer Services',
-           u'Law & Public Policy', u'Communications & Journalism',
-           u'Interdisciplinary'],
+    all_ages_index:
+     Index(['Engineering', 'Education', 'Humanities & Liberal Arts',
+           'Biology & Life Science', 'Business', 'Health',
+           'Computers & Mathematics', 'Physical Sciences',
+           'Agriculture & Natural Resources', 'Social Science',
+           'Psychology & Social Work', 'Arts',
+           'Industrial Arts & Consumer Services', 'Law & Public Policy',
+           'Communications & Journalism', 'Interdisciplinary'],
           dtype='object')
-    Index([u'Engineering', u'Education', u'Humanities & Liberal Arts',
-           u'Biology & Life Science', u'Business', u'Health',
-           u'Computers & Mathematics', u'Physical Sciences',
-           u'Agriculture & Natural Resources', u'Psychology & Social Work',
-           u'Social Science', u'Arts', u'Industrial Arts & Consumer Services',
-           u'Law & Public Policy', u'Communications & Journalism',
-           u'Interdisciplinary'],
+    recent_grad_index:
+     Index(['Engineering', 'Education', 'Humanities & Liberal Arts',
+           'Biology & Life Science', 'Business', 'Health',
+           'Computers & Mathematics', 'Physical Sciences',
+           'Agriculture & Natural Resources', 'Social Science',
+           'Psychology & Social Work', 'Arts',
+           'Industrial Arts & Consumer Services', 'Law & Public Policy',
+           'Communications & Journalism', 'Interdisciplinary'],
           dtype='object')
     
 
@@ -352,10 +362,10 @@ Use the "Low_wage_jobs" and "Total" columns to calculate the proportion of recen
 low_wage_percent = 0.0
 
 low_wage_percent = float(recent_grads['Low_wage_jobs'].sum(axis=0)) / (recent_grads['Total'].sum(axis=0))
-print low_wage_percent
+print("low_wage_percent:", low_wage_percent)
 ```
 
-    0.0985254607612
+    low_wage_percent: 0.09852546076122913
     
 
 ###4: Comparing datasets
@@ -391,10 +401,10 @@ for m in majors:
     elif all_ages_unemp_rate < recent_grads_unemp_rate:
         all_ages_lower_emp_count += 1
         
-print recent_grads_lower_emp_count
-print all_ages_lower_emp_count
+print("recent_grads_lower_emp_count:", recent_grads_lower_emp_count)
+print("all_ages_lower_emp_count:", all_ages_lower_emp_count)
 ```
 
-    43
-    128
+    recent_grads_lower_emp_count: 43
+    all_ages_lower_emp_count: 128
     

@@ -169,6 +169,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -213,10 +226,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">all_ages</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/all-ages.csv&quot;</span><span class="p">)</span>
 <span class="n">all_ages</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -230,7 +243,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -335,10 +348,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">recent_grads</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/recent-grads.csv&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">recent_grads</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/recent-grads.csv&quot;</span><span class="p">)</span>
 <span class="n">recent_grads</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
@@ -350,7 +363,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -549,28 +562,32 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Use the Total column to calculate the number of people who fall under each Major_category and store the result as a separate dictionary for each dataset. The key for the dictionary should be the Major_category and the value should be the total count. For the counts fromall_ages, store the results as a dictionary named all_ages_major_categories and for the counts from recent_grads, store the results as a dictionary named recent_grads_major_categories.</p>
 <p>Format of dictionary:</p>
-<p>{ 
+
+<pre><code>{ 
     "Engineering": 500,
     "Business": 500
     ...
-}</p>
+}</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># All values for &quot;Major_category&quot;</span>
-<span class="k">print</span> <span class="n">all_ages</span><span class="p">[</span><span class="s">&#39;Major_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
-<span class="k">print</span> <span class="n">recent_grads</span><span class="p">[</span><span class="s">&#39;Major_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># All values for &quot;Major_category&quot;</span>
+<span class="n">all_ages_index</span> <span class="o">=</span> <span class="n">all_ages</span><span class="p">[</span><span class="s">&quot;Major_category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;all_ages_index:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">all_ages_index</span><span class="p">)</span>
+
+<span class="n">recent_grad_index</span> <span class="o">=</span> <span class="n">recent_grads</span><span class="p">[</span><span class="s">&#39;Major_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;recent_grad_index:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">recent_grad_index</span><span class="p">)</span>
 
 <span class="n">all_ages_major_categories</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 <span class="n">recent_grads_major_categories</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">calculate_major_cat_totals</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="n">cats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">&#39;Major_category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+    <span class="n">cats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">&quot;Major_category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
     <span class="n">counts_dictionary</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cats</span><span class="p">:</span>
@@ -593,21 +610,23 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp; Liberal Arts&apos;,
-       u&apos;Biology &amp; Life Science&apos;, u&apos;Business&apos;, u&apos;Health&apos;,
-       u&apos;Computers &amp; Mathematics&apos;, u&apos;Physical Sciences&apos;,
-       u&apos;Agriculture &amp; Natural Resources&apos;, u&apos;Psychology &amp; Social Work&apos;,
-       u&apos;Social Science&apos;, u&apos;Arts&apos;, u&apos;Industrial Arts &amp; Consumer Services&apos;,
-       u&apos;Law &amp; Public Policy&apos;, u&apos;Communications &amp; Journalism&apos;,
-       u&apos;Interdisciplinary&apos;],
+<pre>all_ages_index:
+ Index([&apos;Engineering&apos;, &apos;Education&apos;, &apos;Humanities &amp; Liberal Arts&apos;,
+       &apos;Biology &amp; Life Science&apos;, &apos;Business&apos;, &apos;Health&apos;,
+       &apos;Computers &amp; Mathematics&apos;, &apos;Physical Sciences&apos;,
+       &apos;Agriculture &amp; Natural Resources&apos;, &apos;Social Science&apos;,
+       &apos;Psychology &amp; Social Work&apos;, &apos;Arts&apos;,
+       &apos;Industrial Arts &amp; Consumer Services&apos;, &apos;Law &amp; Public Policy&apos;,
+       &apos;Communications &amp; Journalism&apos;, &apos;Interdisciplinary&apos;],
       dtype=&apos;object&apos;)
-Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp; Liberal Arts&apos;,
-       u&apos;Biology &amp; Life Science&apos;, u&apos;Business&apos;, u&apos;Health&apos;,
-       u&apos;Computers &amp; Mathematics&apos;, u&apos;Physical Sciences&apos;,
-       u&apos;Agriculture &amp; Natural Resources&apos;, u&apos;Psychology &amp; Social Work&apos;,
-       u&apos;Social Science&apos;, u&apos;Arts&apos;, u&apos;Industrial Arts &amp; Consumer Services&apos;,
-       u&apos;Law &amp; Public Policy&apos;, u&apos;Communications &amp; Journalism&apos;,
-       u&apos;Interdisciplinary&apos;],
+recent_grad_index:
+ Index([&apos;Engineering&apos;, &apos;Education&apos;, &apos;Humanities &amp; Liberal Arts&apos;,
+       &apos;Biology &amp; Life Science&apos;, &apos;Business&apos;, &apos;Health&apos;,
+       &apos;Computers &amp; Mathematics&apos;, &apos;Physical Sciences&apos;,
+       &apos;Agriculture &amp; Natural Resources&apos;, &apos;Social Science&apos;,
+       &apos;Psychology &amp; Social Work&apos;, &apos;Arts&apos;,
+       &apos;Industrial Arts &amp; Consumer Services&apos;, &apos;Law &amp; Public Policy&apos;,
+       &apos;Communications &amp; Journalism&apos;, &apos;Interdisciplinary&apos;],
       dtype=&apos;object&apos;)
 </pre>
 </div>
@@ -657,13 +676,13 @@ Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">low_wage_percent</span> <span class="o">=</span> <span class="mf">0.0</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">low_wage_percent</span> <span class="o">=</span> <span class="mf">0.0</span>
 
 <span class="n">low_wage_percent</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">recent_grads</span><span class="p">[</span><span class="s">&#39;Low_wage_jobs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">recent_grads</span><span class="p">[</span><span class="s">&#39;Total&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
-<span class="k">print</span> <span class="n">low_wage_percent</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;low_wage_percent:&quot;</span><span class="p">,</span> <span class="n">low_wage_percent</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -676,7 +695,7 @@ Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp;
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.0985254607612
+<pre>low_wage_percent: 0.09852546076122913
 </pre>
 </div>
 </div>
@@ -731,10 +750,10 @@ Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># All majors, common to both DataFrames</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># All majors, common to both DataFrames</span>
 <span class="n">majors</span> <span class="o">=</span> <span class="n">recent_grads</span><span class="p">[</span><span class="s">&#39;Major&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
 
 <span class="n">recent_grads_lower_emp_count</span> <span class="o">=</span> <span class="mi">0</span>
@@ -751,8 +770,8 @@ Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp;
     <span class="k">elif</span> <span class="n">all_ages_unemp_rate</span> <span class="o">&lt;</span> <span class="n">recent_grads_unemp_rate</span><span class="p">:</span>
         <span class="n">all_ages_lower_emp_count</span> <span class="o">+=</span> <span class="mi">1</span>
         
-<span class="k">print</span> <span class="n">recent_grads_lower_emp_count</span>
-<span class="k">print</span> <span class="n">all_ages_lower_emp_count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;recent_grads_lower_emp_count:&quot;</span><span class="p">,</span> <span class="n">recent_grads_lower_emp_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;all_ages_lower_emp_count:&quot;</span><span class="p">,</span> <span class="n">all_ages_lower_emp_count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -765,8 +784,8 @@ Index([u&apos;Engineering&apos;, u&apos;Education&apos;, u&apos;Humanities &amp;
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>43
-128
+<pre>recent_grads_lower_emp_count: 43
+all_ages_lower_emp_count: 128
 </pre>
 </div>
 </div>

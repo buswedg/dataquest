@@ -1,6 +1,11 @@
 
 # coding: utf-8
 
+# In[1]:
+
+from __future__ import print_function
+
+
 # #Data Analysis with Pandas
 
 # ##Summarizing Data
@@ -14,7 +19,7 @@
 # - all-ages.csv - employment data by major for all ages
 # - recent-grads.csv - employment data by major for just recent college graduates
 
-# In[4]:
+# In[2]:
 
 import pandas as pd
 
@@ -22,7 +27,7 @@ all_ages = pd.read_csv("data/all-ages.csv")
 all_ages.head(5)
 
 
-# In[5]:
+# In[3]:
 
 recent_grads = pd.read_csv("data/recent-grads.csv")
 recent_grads.head(5)
@@ -38,22 +43,25 @@ recent_grads.head(5)
 # 
 # Format of dictionary:
 # 
-# { 
-#     "Engineering": 500,
-#     "Business": 500
-#     ...
-# }
+#     { 
+#         "Engineering": 500,
+#         "Business": 500
+#         ...
+#     }
 
-# In[7]:
+# In[4]:
 
 # All values for "Major_category"
-print all_ages['Major_category'].value_counts().index
-print recent_grads['Major_category'].value_counts().index
+all_ages_index = all_ages["Major_category"].value_counts().index
+print("all_ages_index:\n", all_ages_index)
+
+recent_grad_index = recent_grads['Major_category'].value_counts().index
+print("recent_grad_index:\n", recent_grad_index)
 
 all_ages_major_categories = dict()
 recent_grads_major_categories = dict()
 def calculate_major_cat_totals(df):
-    cats = df['Major_category'].value_counts().index
+    cats = df["Major_category"].value_counts().index
     counts_dictionary = dict()
 
     for c in cats:
@@ -74,12 +82,12 @@ recent_grads_major_categories = calculate_major_cat_totals(recent_grads)
 
 # Use the "Low_wage_jobs" and "Total" columns to calculate the proportion of recent college graduates that worked low wage jobs. Store the resulting float object of the calculation as 'low_wage_percent'.
 
-# In[11]:
+# In[5]:
 
 low_wage_percent = 0.0
 
 low_wage_percent = float(recent_grads['Low_wage_jobs'].sum(axis=0)) / (recent_grads['Total'].sum(axis=0))
-print low_wage_percent
+print("low_wage_percent:", low_wage_percent)
 
 
 # ###4: Comparing datasets
@@ -96,7 +104,7 @@ print low_wage_percent
 # - increment all_ages_lower_emp_count if Unemployment_rate is lowwer for all_ages
 # - do nothing if Unemployment_rate is the same for both
 
-# In[24]:
+# In[6]:
 
 # All majors, common to both DataFrames
 majors = recent_grads['Major'].value_counts().index
@@ -115,6 +123,6 @@ for m in majors:
     elif all_ages_unemp_rate < recent_grads_unemp_rate:
         all_ages_lower_emp_count += 1
         
-print recent_grads_lower_emp_count
-print all_ages_lower_emp_count
+print("recent_grads_lower_emp_count:", recent_grads_lower_emp_count)
+print("all_ages_lower_emp_count:", all_ages_lower_emp_count)
 
