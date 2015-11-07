@@ -60,3 +60,58 @@
     </td>
   </tr>
 </table>
+
+<br><br>
+
+<table style = "width:100%">
+  <tr></tr>
+  <tr>
+    <td colspan = "4"><b>Project</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4"><a href = "https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/">Data Analysis with Pandas</a></td>
+  </tr>
+  <tr>
+    <td><b>Author</b></td>
+    <td><b>Expertise</b></td>
+    <td><b>Tool</b></td>
+    <td><b>Industry</b></td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Darryl Buswell</td>
+    <td style="vertical-align:top">Exploratory Analysis</td>
+    <td style="vertical-align:top">Python</td>
+    <td style="vertical-align:top">Food, Beverages and Tobacco<br>Government Policy and Planning<br>Transport</td>
+  </tr>
+  <tr>
+    <td colspan = "4"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4">
+
+      Use of the Pandas dataframe object in Python for more efficient data analysis.<br><br>
+      Including:<br>
+      <ul style = "list-style-type:square;font-size:13px">
+        <li>Use of the Numpy library, matrices, and vectors in Python in order to assess alcohol consumption by country.</li>
+        <li>Python and Pandas code to index data, retrieve, sort, normalize and run calculations on US Department of Agriculture (USDA) data to discover the most/ least nutritional foods.</li>
+        <li>Python and Pandas code to compute summary statistics, create pivot tables, remove missing values, and reindex rows of passenger survival data from the Titanic.</li>
+        <li>Use of Python and Pandas to manipulate dataframes and calculate summary statistics of employment data from the American Community Survey for years 2010-2012.</li>
+      </ul>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan = "4"><b>Dataset</b></td>
+  </tr>
+  <tr>
+    <td colspan = "4">
+
+      <ul style = "list-style-type:square;font-size:13px">
+        <li>Food nutrition data from the US Department of Agriculture (USDA) National Nutrient Database for Standard Reference. <a href = "http://www.ars.usda.gov/Services/services.htm?modecode=80-40-05-25">[link]</a></li>
+        <li>Passenger data (age, gender, fare, cabin etc.) who were onboard the Titanic. <a href = "https://www.kaggle.com/c/titanic/data">[link]</a></li>
+        <li>American Community Survey from a survey on job outcomes for recent college graduates based on the major they studied in college. <a href="https://github.com/fivethirtyeight/data/blob/master/college-majors/recent-grads.csv">[link]</a></li>
+       </ul>
+
+    </td>
+  </tr>
+</table>
