@@ -1,5 +1,10 @@
 
-#Working with Data Sources
+
+```python
+from __future__ import print_function
+```
+
+#APIs and Web Scraping
 
 ##Working with APIs
 
@@ -21,13 +26,13 @@ In order to get the data, we make a request to the webserver that we want to get
 
 There are many different types of requests. The most commonly used one, a GET request, is used to retrieve data. We'll get into the other types in later missions.
 
-We can use a simple GET request to retrieve information from the OpenNotify API (http://open-notify.org/).
+We can use a simple GET request to retrieve information from the <a href = "http://open-notify.org/">OpenNotify API</a>.
 
 OpenNotify has several API endpoints. An endpoint is a server route that is used to retrieve different data from the API. For example, the /comments endpoint on the Reddit API might retrieve information about comments, whereas the /users endpoint might retrieve data about users.
 
 The first endpoint we'll look at on OpenNotify is the iss-now.json endpoint. This endpoint gets the current latitude and longitude position of the International Space Station. As you can see, retrieving this data isn't a great fit for a dataset, because it involves some calculation on the server.
 
-You can see a listing of all the endpoints on OpenNotify (http://open-notify.org/Open-Notify-API/).
+You can see a listing of all the endpoints on <a href = "http://open-notify.org/Open-Notify-API/">OpenNotify</a>.
 
 ####Instructions
 
@@ -41,10 +46,10 @@ import requests
 response = requests.get("http://api.open-notify.org/iss-now.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 ```
 
-    200
+    status_code: 200
     
 
 ###4: Status codes
@@ -69,10 +74,10 @@ import requests
 response = requests.get("http://api.open-notify.org/iss-now.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 ```
 
-    200
+    status_code: 200
     
 
 ###5: Hitting the right endpoint
@@ -90,15 +95,15 @@ import requests
 response = requests.get("http://api.open-notify.org/iss-pass.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 ```
 
-    400
+    status_code: 400
     
 
 ###6: Query parameters
 
-You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the ISS Pass (http://open-notify.org/Open-Notify-API/ISS-Pass-Times/) endpoint requires two parameters. 
+You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the <a href = "http://open-notify.org/Open-Notify-API/ISS-Pass-Times/">ISS Pass</a> endpoint requires two parameters. 
 
 The ISS Pass endpoint returns when the ISS will next pass over a given location on earth. In order to compute this, we need to pass the coordinates of the location to the API. We do this by passing two parameters -- latitude and longitude.
 
@@ -126,81 +131,19 @@ parameters = {"lat": 40.71, "lon": -74}
 response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
 
 # Print the content of the response (the data the server returned).
-print response.content
+print("response.content:", response.content)
 
 # This gets the same data as the command above.
 response = requests.get("http://api.open-notify.org/iss-pass.json?lat=40.71&lon=-74")
-print response.content
+print("response.content:", response.content)
 
 parameters = {"lat": 37.78, "lon": -122.41}
 response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
 content = response.content
 ```
 
-    {
-      "message": "success", 
-      "request": {
-        "altitude": 100, 
-        "datetime": 1445074235, 
-        "latitude": 40.71, 
-        "longitude": -74.0, 
-        "passes": 5
-      }, 
-      "response": [
-        {
-          "duration": 405, 
-          "risetime": 1445100745
-        }, 
-        {
-          "duration": 624, 
-          "risetime": 1445106387
-        }, 
-        {
-          "duration": 598, 
-          "risetime": 1445112197
-        }, 
-        {
-          "duration": 539, 
-          "risetime": 1445118069
-        }, 
-        {
-          "duration": 571, 
-          "risetime": 1445123905
-        }
-      ]
-    }
-    {
-      "message": "success", 
-      "request": {
-        "altitude": 100, 
-        "datetime": 1445074236, 
-        "latitude": 40.71, 
-        "longitude": -74.0, 
-        "passes": 5
-      }, 
-      "response": [
-        {
-          "duration": 405, 
-          "risetime": 1445100745
-        }, 
-        {
-          "duration": 624, 
-          "risetime": 1445106387
-        }, 
-        {
-          "duration": 598, 
-          "risetime": 1445112197
-        }, 
-        {
-          "duration": 539, 
-          "risetime": 1445118069
-        }, 
-        {
-          "duration": 571, 
-          "risetime": 1445123905
-        }
-      ]
-    }
+    response.content: b'{\n  "message": "success", \n  "request": {\n    "altitude": 100, \n    "datetime": 1446887129, \n    "latitude": 40.71, \n    "longitude": -74.0, \n    "passes": 5\n  }, \n  "response": [\n    {\n      "duration": 591, \n      "risetime": 1446889113\n    }, \n    {\n      "duration": 617, \n      "risetime": 1446894877\n    }, \n    {\n      "duration": 550, \n      "risetime": 1446900741\n    }, \n    {\n      "duration": 548, \n      "risetime": 1446906590\n    }, \n    {\n      "duration": 618, \n      "risetime": 1446912382\n    }\n  ]\n}'
+    response.content: b'{\n  "message": "success", \n  "request": {\n    "altitude": 100, \n    "datetime": 1446887131, \n    "latitude": 40.71, \n    "longitude": -74.0, \n    "passes": 5\n  }, \n  "response": [\n    {\n      "duration": 590, \n      "risetime": 1446889113\n    }, \n    {\n      "duration": 617, \n      "risetime": 1446894877\n    }, \n    {\n      "duration": 550, \n      "risetime": 1446900741\n    }, \n    {\n      "duration": 548, \n      "risetime": 1446906590\n    }, \n    {\n      "duration": 618, \n      "risetime": 1446912382\n    }\n  ]\n}'
     
 
 ###7: JSON Format
@@ -226,14 +169,14 @@ import json
 
 # Make a list of fast food chains.
 best_food_chains = ["Taco Bell", "Shake Shack", "Chipotle"]
-print type(best_food_chains)
+print("type(best_food_chains):", type(best_food_chains))
 
 # Use json.dumps to convert best_food_chains to a string.
 best_food_chains_string = json.dumps(best_food_chains)
-print type(best_food_chains_string)
+print("type(best_food_chains_string):", type(best_food_chains_string))
 
 # Convert best_food_chains_string back into a list
-print type(json.loads(best_food_chains_string))
+print("type(json.loads(best_food_chains_string)):", type(json.loads(best_food_chains_string)))
 
 # Make a dictionary
 fast_food_franchise = {
@@ -245,15 +188,15 @@ fast_food_franchise = {
 
 # We can also dump a dictionary to a string and load it.
 fast_food_franchise_string = json.dumps(fast_food_franchise)
-print type(fast_food_franchise_string)
+print("type(fast_food_franchise_string):", type(fast_food_franchise_string))
 
 fast_food_franchise_2 = json.loads(fast_food_franchise_string)
 ```
 
-    <type 'list'>
-    <type 'str'>
-    <type 'list'>
-    <type 'str'>
+    type(best_food_chains): <class 'list'>
+    type(best_food_chains_string): <class 'str'>
+    type(json.loads(best_food_chains_string)): <class 'list'>
+    type(fast_food_franchise_string): <class 'str'>
     
 
 ###8: Getting JSON from a request
@@ -274,14 +217,14 @@ response = requests.get("http://api.open-notify.org/iss-pass.json", params=param
 
 # Get the response data as a python object. Verify that it's a dictionary.
 data = response.json()
-print type(data)
-print data
+print("type(data):", type(data))
+print("data:", data)
 
 first_pass_duration = data["response"][0]["duration"]
 ```
 
-    <type 'dict'>
-    {u'message': u'success', u'request': {u'latitude': 37.78, u'passes': 5, u'altitude': 100, u'longitude': -122.41, u'datetime': 1445074400}, u'response': [{u'duration': 433, u'risetime': 1445111791}, {u'duration': 635, u'risetime': 1445117448}, {u'duration': 561, u'risetime': 1445123293}, {u'duration': 467, u'risetime': 1445129193}, {u'duration': 520, u'risetime': 1445135031}]}
+    type(data): <class 'dict'>
+    data: {'message': 'success', 'request': {'passes': 5, 'longitude': -122.41, 'datetime': 1446887135, 'latitude': 37.78, 'altitude': 100}, 'response': [{'duration': 609, 'risetime': 1446900165}, {'duration': 600, 'risetime': 1446905955}, {'duration': 491, 'risetime': 1446911848}, {'duration': 485, 'risetime': 1446917718}, {'duration': 589, 'risetime': 1446923509}]}
     
 
 ###9: Content type
@@ -297,17 +240,17 @@ Get content-type from response.headers. Assign the content type to the content_t
 
 ```python
 # Headers is a dictionary
-print response.headers
+print("response.headers:", response.headers)
 
 content_type = response.headers["content-type"]
 ```
 
-    {'Content-Length': '520', 'Via': '1.1 vegur', 'Expires': 'Tue, 01 Jan 1971 02:00:00 GMT', 'Server': 'gunicorn/19.3.0', 'Connection': 'keep-alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0', 'Date': 'Sat, 17 Oct 2015 09:33:20 GMT', 'Content-Type': 'application/json'}
+    response.headers: {'Server': 'gunicorn/19.3.0', 'Via': '1.1 vegur', 'Content-Type': 'application/json', 'Expires': 'Tue, 01 Jan 1971 02:00:00 GMT', 'Content-Length': '520', 'Pragma': 'no-cache', 'Date': 'Sat, 07 Nov 2015 09:05:35 GMT', 'Connection': 'keep-alive', 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'}
     
 
 ###10: Finding the number of people in space
 
-OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found here (http://open-notify.org/Open-Notify-API/People-In-Space/).
+OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found <a href = "http://open-notify.org/Open-Notify-API/People-In-Space/">here</a>.
 
 
 ```python
@@ -318,8 +261,8 @@ response = requests.get("http://api.open-notify.org/astros.json")
 data = response.json()
 
 in_space_count = data["number"]
-print in_space_count
+print("in_space_count:", in_space_count)
 ```
 
-    6
+    in_space_count: 6
     

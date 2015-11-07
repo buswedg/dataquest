@@ -1,7 +1,12 @@
 
 # coding: utf-8
 
-# #Working with Data Sources
+# In[2]:
+
+from __future__ import print_function
+
+
+# #APIs and Web Scraping
 
 # ##Working with APIs
 
@@ -23,13 +28,13 @@
 
 # There are many different types of requests. The most commonly used one, a GET request, is used to retrieve data. We'll get into the other types in later missions.
 # 
-# We can use a simple GET request to retrieve information from the OpenNotify API (http://open-notify.org/).
+# We can use a simple GET request to retrieve information from the <a href = "http://open-notify.org/">OpenNotify API</a>.
 # 
 # OpenNotify has several API endpoints. An endpoint is a server route that is used to retrieve different data from the API. For example, the /comments endpoint on the Reddit API might retrieve information about comments, whereas the /users endpoint might retrieve data about users.
 # 
 # The first endpoint we'll look at on OpenNotify is the iss-now.json endpoint. This endpoint gets the current latitude and longitude position of the International Space Station. As you can see, retrieving this data isn't a great fit for a dataset, because it involves some calculation on the server.
 # 
-# You can see a listing of all the endpoints on OpenNotify (http://open-notify.org/Open-Notify-API/).
+# You can see a listing of all the endpoints on <a href = "http://open-notify.org/Open-Notify-API/">OpenNotify</a>.
 
 # ####Instructions
 
@@ -43,7 +48,7 @@ import requests
 response = requests.get("http://api.open-notify.org/iss-now.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 
 
 # ###4: Status codes
@@ -60,7 +65,7 @@ print status_code
 
 # Make a GET request to http://api.open-notify.org/iss-pass. Assign the status code of the response to status_code.
 
-# In[5]:
+# In[4]:
 
 import requests
 
@@ -68,7 +73,7 @@ import requests
 response = requests.get("http://api.open-notify.org/iss-now.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 
 
 # ###5: Hitting the right endpoint
@@ -79,19 +84,19 @@ print status_code
 
 # Make a GET request to http://api.open-notify.org/iss-pass.json. Assign the status code of the response to status_code.
 
-# In[6]:
+# In[5]:
 
 import requests
 
 response = requests.get("http://api.open-notify.org/iss-pass.json")
 status_code = response.status_code
 
-print status_code
+print("status_code:", status_code)
 
 
 # ###6: Query parameters
 
-# You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the ISS Pass (http://open-notify.org/Open-Notify-API/ISS-Pass-Times/) endpoint requires two parameters. 
+# You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the <a href = "http://open-notify.org/Open-Notify-API/ISS-Pass-Times/">ISS Pass</a> endpoint requires two parameters. 
 # 
 # The ISS Pass endpoint returns when the ISS will next pass over a given location on earth. In order to compute this, we need to pass the coordinates of the location to the API. We do this by passing two parameters -- latitude and longitude.
 # 
@@ -109,7 +114,7 @@ print status_code
 
 # Get a response for the latitude 37.78 and the longitude -122.41 (the coordinates of San Francisco). Get the content of the response with response.content. Assign the content to the variable content.
 
-# In[7]:
+# In[6]:
 
 # Set up the parameters we want to pass to the API.
 # This is the latitude and longitude of New York City.
@@ -119,11 +124,11 @@ parameters = {"lat": 40.71, "lon": -74}
 response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
 
 # Print the content of the response (the data the server returned).
-print response.content
+print("response.content:", response.content)
 
 # This gets the same data as the command above.
 response = requests.get("http://api.open-notify.org/iss-pass.json?lat=40.71&lon=-74")
-print response.content
+print("response.content:", response.content)
 
 parameters = {"lat": 37.78, "lon": -122.41}
 response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
@@ -146,21 +151,21 @@ content = response.content
 
 # Load the fast_food_franchise_string string. Assign the result to fast_food_franchise_2.
 
-# In[9]:
+# In[7]:
 
 # Import the json library
 import json
 
 # Make a list of fast food chains.
 best_food_chains = ["Taco Bell", "Shake Shack", "Chipotle"]
-print type(best_food_chains)
+print("type(best_food_chains):", type(best_food_chains))
 
 # Use json.dumps to convert best_food_chains to a string.
 best_food_chains_string = json.dumps(best_food_chains)
-print type(best_food_chains_string)
+print("type(best_food_chains_string):", type(best_food_chains_string))
 
 # Convert best_food_chains_string back into a list
-print type(json.loads(best_food_chains_string))
+print("type(json.loads(best_food_chains_string)):", type(json.loads(best_food_chains_string)))
 
 # Make a dictionary
 fast_food_franchise = {
@@ -172,7 +177,7 @@ fast_food_franchise = {
 
 # We can also dump a dictionary to a string and load it.
 fast_food_franchise_string = json.dumps(fast_food_franchise)
-print type(fast_food_franchise_string)
+print("type(fast_food_franchise_string):", type(fast_food_franchise_string))
 
 fast_food_franchise_2 = json.loads(fast_food_franchise_string)
 
@@ -185,7 +190,7 @@ fast_food_franchise_2 = json.loads(fast_food_franchise_string)
 
 # Get the duration value of the first pass of the ISS over San Francisco (this is the duration key of the first dictionary in the response list). Assign the value to first_pass_duration.
 
-# In[10]:
+# In[8]:
 
 import requests
 
@@ -195,8 +200,8 @@ response = requests.get("http://api.open-notify.org/iss-pass.json", params=param
 
 # Get the response data as a python object. Verify that it's a dictionary.
 data = response.json()
-print type(data)
-print data
+print("type(data):", type(data))
+print("data:", data)
 
 first_pass_duration = data["response"][0]["duration"]
 
@@ -211,19 +216,19 @@ first_pass_duration = data["response"][0]["duration"]
 
 # Get content-type from response.headers. Assign the content type to the content_type variable.
 
-# In[11]:
+# In[9]:
 
 # Headers is a dictionary
-print response.headers
+print("response.headers:", response.headers)
 
 content_type = response.headers["content-type"]
 
 
 # ###10: Finding the number of people in space
 
-# OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found here (http://open-notify.org/Open-Notify-API/People-In-Space/).
+# OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found <a href = "http://open-notify.org/Open-Notify-API/People-In-Space/">here</a>.
 
-# In[13]:
+# In[10]:
 
 import requests
 
@@ -232,5 +237,5 @@ response = requests.get("http://api.open-notify.org/astros.json")
 data = response.json()
 
 in_space_count = data["number"]
-print in_space_count
+print("in_space_count:", in_space_count)
 

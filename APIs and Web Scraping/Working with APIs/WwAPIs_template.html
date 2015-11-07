@@ -169,12 +169,25 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Working-with-Data-Sources">Working with Data Sources<a class="anchor-link" href="#Working-with-Data-Sources">&#182;</a></h1>
+<h1 id="APIs-and-Web-Scraping">APIs and Web Scraping<a class="anchor-link" href="#APIs-and-Web-Scraping">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -243,10 +256,10 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There are many different types of requests. The most commonly used one, a GET request, is used to retrieve data. We'll get into the other types in later missions.</p>
-<p>We can use a simple GET request to retrieve information from the OpenNotify API (<a href="http://open-notify.org/">http://open-notify.org/</a>).</p>
+<p>We can use a simple GET request to retrieve information from the <a href = "http://open-notify.org/">OpenNotify API</a>.</p>
 <p>OpenNotify has several API endpoints. An endpoint is a server route that is used to retrieve different data from the API. For example, the /comments endpoint on the Reddit API might retrieve information about comments, whereas the /users endpoint might retrieve data about users.</p>
 <p>The first endpoint we'll look at on OpenNotify is the iss-now.json endpoint. This endpoint gets the current latitude and longitude position of the International Space Station. As you can see, retrieving this data isn't a great fit for a dataset, because it involves some calculation on the server.</p>
-<p>You can see a listing of all the endpoints on OpenNotify (<a href="http://open-notify.org/Open-Notify-API/">http://open-notify.org/Open-Notify-API/</a>).</p>
+<p>You can see a listing of all the endpoints on <a href = "http://open-notify.org/Open-Notify-API/">OpenNotify</a>.</p>
 
 </div>
 </div>
@@ -275,13 +288,13 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c"># Make a get request to get the latest position of the international space station from the opennotify api.</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-now.json&quot;</span><span class="p">)</span>
 <span class="n">status_code</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span>
 
-<span class="k">print</span> <span class="n">status_code</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;status_code:&quot;</span><span class="p">,</span> <span class="n">status_code</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -294,7 +307,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>200
+<pre>status_code: 200
 </pre>
 </div>
 </div>
@@ -351,16 +364,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c"># Make a get request to get the latest position of the international space station from the opennotify api.</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-now.json&quot;</span><span class="p">)</span>
 <span class="n">status_code</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span>
 
-<span class="k">print</span> <span class="n">status_code</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;status_code:&quot;</span><span class="p">,</span> <span class="n">status_code</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -373,7 +386,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>200
+<pre>status_code: 200
 </pre>
 </div>
 </div>
@@ -422,15 +435,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-pass.json&quot;</span><span class="p">)</span>
 <span class="n">status_code</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span>
 
-<span class="k">print</span> <span class="n">status_code</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;status_code:&quot;</span><span class="p">,</span> <span class="n">status_code</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -443,7 +456,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>400
+<pre>status_code: 400
 </pre>
 </div>
 </div>
@@ -466,7 +479,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the ISS Pass (<a href="http://open-notify.org/Open-Notify-API/ISS-Pass-Times/">http://open-notify.org/Open-Notify-API/ISS-Pass-Times/</a>) endpoint requires two parameters.</p>
+<p>You'll see that in the last example, we got a 400 status code, which indicates a bad request. If you look at the documentation for the OpenNotify API, we see that the <a href = "http://open-notify.org/Open-Notify-API/ISS-Pass-Times/">ISS Pass</a> endpoint requires two parameters.</p>
 <p>The ISS Pass endpoint returns when the ISS will next pass over a given location on earth. In order to compute this, we need to pass the coordinates of the location to the API. We do this by passing two parameters -- latitude and longitude.</p>
 <p>We can do this by adding an optional keyword argument, params, to our request. In this case, there are two parameters we need to pass:</p>
 <ul>
@@ -501,10 +514,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Set up the parameters we want to pass to the API.</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Set up the parameters we want to pass to the API.</span>
 <span class="c"># This is the latitude and longitude of New York City.</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">40.71</span><span class="p">,</span> <span class="s">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">74</span><span class="p">}</span>
 
@@ -512,11 +525,11 @@ div#notebook {
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-pass.json&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
 
 <span class="c"># Print the content of the response (the data the server returned).</span>
-<span class="k">print</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;response.content:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="c"># This gets the same data as the command above.</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-pass.json?lat=40.71&amp;lon=-74&quot;</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;response.content:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">37.78</span><span class="p">,</span> <span class="s">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">122.41</span><span class="p">}</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/iss-pass.json&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
@@ -533,70 +546,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{
-  &quot;message&quot;: &quot;success&quot;, 
-  &quot;request&quot;: {
-    &quot;altitude&quot;: 100, 
-    &quot;datetime&quot;: 1445074235, 
-    &quot;latitude&quot;: 40.71, 
-    &quot;longitude&quot;: -74.0, 
-    &quot;passes&quot;: 5
-  }, 
-  &quot;response&quot;: [
-    {
-      &quot;duration&quot;: 405, 
-      &quot;risetime&quot;: 1445100745
-    }, 
-    {
-      &quot;duration&quot;: 624, 
-      &quot;risetime&quot;: 1445106387
-    }, 
-    {
-      &quot;duration&quot;: 598, 
-      &quot;risetime&quot;: 1445112197
-    }, 
-    {
-      &quot;duration&quot;: 539, 
-      &quot;risetime&quot;: 1445118069
-    }, 
-    {
-      &quot;duration&quot;: 571, 
-      &quot;risetime&quot;: 1445123905
-    }
-  ]
-}
-{
-  &quot;message&quot;: &quot;success&quot;, 
-  &quot;request&quot;: {
-    &quot;altitude&quot;: 100, 
-    &quot;datetime&quot;: 1445074236, 
-    &quot;latitude&quot;: 40.71, 
-    &quot;longitude&quot;: -74.0, 
-    &quot;passes&quot;: 5
-  }, 
-  &quot;response&quot;: [
-    {
-      &quot;duration&quot;: 405, 
-      &quot;risetime&quot;: 1445100745
-    }, 
-    {
-      &quot;duration&quot;: 624, 
-      &quot;risetime&quot;: 1445106387
-    }, 
-    {
-      &quot;duration&quot;: 598, 
-      &quot;risetime&quot;: 1445112197
-    }, 
-    {
-      &quot;duration&quot;: 539, 
-      &quot;risetime&quot;: 1445118069
-    }, 
-    {
-      &quot;duration&quot;: 571, 
-      &quot;risetime&quot;: 1445123905
-    }
-  ]
-}
+<pre>response.content: b&apos;{\n  &quot;message&quot;: &quot;success&quot;, \n  &quot;request&quot;: {\n    &quot;altitude&quot;: 100, \n    &quot;datetime&quot;: 1446887129, \n    &quot;latitude&quot;: 40.71, \n    &quot;longitude&quot;: -74.0, \n    &quot;passes&quot;: 5\n  }, \n  &quot;response&quot;: [\n    {\n      &quot;duration&quot;: 591, \n      &quot;risetime&quot;: 1446889113\n    }, \n    {\n      &quot;duration&quot;: 617, \n      &quot;risetime&quot;: 1446894877\n    }, \n    {\n      &quot;duration&quot;: 550, \n      &quot;risetime&quot;: 1446900741\n    }, \n    {\n      &quot;duration&quot;: 548, \n      &quot;risetime&quot;: 1446906590\n    }, \n    {\n      &quot;duration&quot;: 618, \n      &quot;risetime&quot;: 1446912382\n    }\n  ]\n}&apos;
+response.content: b&apos;{\n  &quot;message&quot;: &quot;success&quot;, \n  &quot;request&quot;: {\n    &quot;altitude&quot;: 100, \n    &quot;datetime&quot;: 1446887131, \n    &quot;latitude&quot;: 40.71, \n    &quot;longitude&quot;: -74.0, \n    &quot;passes&quot;: 5\n  }, \n  &quot;response&quot;: [\n    {\n      &quot;duration&quot;: 590, \n      &quot;risetime&quot;: 1446889113\n    }, \n    {\n      &quot;duration&quot;: 617, \n      &quot;risetime&quot;: 1446894877\n    }, \n    {\n      &quot;duration&quot;: 550, \n      &quot;risetime&quot;: 1446900741\n    }, \n    {\n      &quot;duration&quot;: 548, \n      &quot;risetime&quot;: 1446906590\n    }, \n    {\n      &quot;duration&quot;: 618, \n      &quot;risetime&quot;: 1446912382\n    }\n  ]\n}&apos;
 </pre>
 </div>
 </div>
@@ -652,22 +603,22 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Import the json library</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Import the json library</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
 <span class="c"># Make a list of fast food chains.</span>
 <span class="n">best_food_chains</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Taco Bell&quot;</span><span class="p">,</span> <span class="s">&quot;Shake Shack&quot;</span><span class="p">,</span> <span class="s">&quot;Chipotle&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">best_food_chains</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(best_food_chains):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">best_food_chains</span><span class="p">))</span>
 
 <span class="c"># Use json.dumps to convert best_food_chains to a string.</span>
 <span class="n">best_food_chains_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">best_food_chains</span><span class="p">)</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">best_food_chains_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(best_food_chains_string):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">best_food_chains_string</span><span class="p">))</span>
 
 <span class="c"># Convert best_food_chains_string back into a list</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">best_food_chains_string</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(json.loads(best_food_chains_string)):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">best_food_chains_string</span><span class="p">)))</span>
 
 <span class="c"># Make a dictionary</span>
 <span class="n">fast_food_franchise</span> <span class="o">=</span> <span class="p">{</span>
@@ -679,7 +630,7 @@ div#notebook {
 
 <span class="c"># We can also dump a dictionary to a string and load it.</span>
 <span class="n">fast_food_franchise_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">fast_food_franchise</span><span class="p">)</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">fast_food_franchise_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(fast_food_franchise_string):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">fast_food_franchise_string</span><span class="p">))</span>
 
 <span class="n">fast_food_franchise_2</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">fast_food_franchise_string</span><span class="p">)</span>
 </pre></div>
@@ -694,10 +645,10 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;type &apos;list&apos;&gt;
-&lt;type &apos;str&apos;&gt;
-&lt;type &apos;list&apos;&gt;
-&lt;type &apos;str&apos;&gt;
+<pre>type(best_food_chains): &lt;class &apos;list&apos;&gt;
+type(best_food_chains_string): &lt;class &apos;str&apos;&gt;
+type(json.loads(best_food_chains_string)): &lt;class &apos;list&apos;&gt;
+type(fast_food_franchise_string): &lt;class &apos;str&apos;&gt;
 </pre>
 </div>
 </div>
@@ -747,10 +698,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c"># Make the same request we did 2 screens ago.</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">37.78</span><span class="p">,</span> <span class="s">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">122.41</span><span class="p">}</span>
@@ -758,8 +709,8 @@ div#notebook {
 
 <span class="c"># Get the response data as a python object. Verify that it&#39;s a dictionary.</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">data</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;type(data):&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;data:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
 <span class="n">first_pass_duration</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">&quot;response&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">&quot;duration&quot;</span><span class="p">]</span>
 </pre></div>
@@ -774,8 +725,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;type &apos;dict&apos;&gt;
-{u&apos;message&apos;: u&apos;success&apos;, u&apos;request&apos;: {u&apos;latitude&apos;: 37.78, u&apos;passes&apos;: 5, u&apos;altitude&apos;: 100, u&apos;longitude&apos;: -122.41, u&apos;datetime&apos;: 1445074400}, u&apos;response&apos;: [{u&apos;duration&apos;: 433, u&apos;risetime&apos;: 1445111791}, {u&apos;duration&apos;: 635, u&apos;risetime&apos;: 1445117448}, {u&apos;duration&apos;: 561, u&apos;risetime&apos;: 1445123293}, {u&apos;duration&apos;: 467, u&apos;risetime&apos;: 1445129193}, {u&apos;duration&apos;: 520, u&apos;risetime&apos;: 1445135031}]}
+<pre>type(data): &lt;class &apos;dict&apos;&gt;
+data: {&apos;message&apos;: &apos;success&apos;, &apos;request&apos;: {&apos;passes&apos;: 5, &apos;longitude&apos;: -122.41, &apos;datetime&apos;: 1446887135, &apos;latitude&apos;: 37.78, &apos;altitude&apos;: 100}, &apos;response&apos;: [{&apos;duration&apos;: 609, &apos;risetime&apos;: 1446900165}, {&apos;duration&apos;: 600, &apos;risetime&apos;: 1446905955}, {&apos;duration&apos;: 491, &apos;risetime&apos;: 1446911848}, {&apos;duration&apos;: 485, &apos;risetime&apos;: 1446917718}, {&apos;duration&apos;: 589, &apos;risetime&apos;: 1446923509}]}
 </pre>
 </div>
 </div>
@@ -825,11 +776,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Headers is a dictionary</span>
-<span class="k">print</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Headers is a dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;response.headers:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="n">content_type</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">&quot;content-type&quot;</span><span class="p">]</span>
 </pre></div>
@@ -844,7 +795,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;Content-Length&apos;: &apos;520&apos;, &apos;Via&apos;: &apos;1.1 vegur&apos;, &apos;Expires&apos;: &apos;Tue, 01 Jan 1971 02:00:00 GMT&apos;, &apos;Server&apos;: &apos;gunicorn/19.3.0&apos;, &apos;Connection&apos;: &apos;keep-alive&apos;, &apos;Pragma&apos;: &apos;no-cache&apos;, &apos;Cache-Control&apos;: &apos;no-store, no-cache, must-revalidate, max-age=0&apos;, &apos;Date&apos;: &apos;Sat, 17 Oct 2015 09:33:20 GMT&apos;, &apos;Content-Type&apos;: &apos;application/json&apos;}
+<pre>response.headers: {&apos;Server&apos;: &apos;gunicorn/19.3.0&apos;, &apos;Via&apos;: &apos;1.1 vegur&apos;, &apos;Content-Type&apos;: &apos;application/json&apos;, &apos;Expires&apos;: &apos;Tue, 01 Jan 1971 02:00:00 GMT&apos;, &apos;Content-Length&apos;: &apos;520&apos;, &apos;Pragma&apos;: &apos;no-cache&apos;, &apos;Date&apos;: &apos;Sat, 07 Nov 2015 09:05:35 GMT&apos;, &apos;Connection&apos;: &apos;keep-alive&apos;, &apos;Cache-Control&apos;: &apos;no-store, no-cache, must-revalidate, max-age=0&apos;}
 </pre>
 </div>
 </div>
@@ -867,24 +818,24 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found here (<a href="http://open-notify.org/Open-Notify-API/People-In-Space/">http://open-notify.org/Open-Notify-API/People-In-Space/</a>).</p>
+<p>OpenNotify has one more API endpoint, astros.json. It tells you how many people are currently in space. The format of the responses can be found <a href = "http://open-notify.org/Open-Notify-API/People-In-Space/">here</a>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c"># Call the API here.</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;http://api.open-notify.org/astros.json&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
 <span class="n">in_space_count</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s">&quot;number&quot;</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">in_space_count</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;in_space_count:&quot;</span><span class="p">,</span> <span class="n">in_space_count</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -897,7 +848,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>6
+<pre>in_space_count: 6
 </pre>
 </div>
 </div>
