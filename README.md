@@ -25,7 +25,7 @@
     <td colspan = "4">
 
       Foundations of Python and programming, including modules, enumeration, indexing, scopes, object-oriented programming, lambda functions, and exception handling.<br><br>
-      Instructions:<br>
+      Includes:<br>
       <ul style = "list-style-type:square;font-size:13px">
         <li>Employed basic Python syntax in order to analyze star wars script data.</li>
         <li>Use of Python to read/ parse a raw dataset, convert data types, apply if statements, and apply for loops in order to find which U.S. city has the least records of violent crime.</li>
@@ -90,12 +90,12 @@
     <td colspan = "4">
 
       Use of the Pandas dataframe object in Python for more efficient data analysis.<br><br>
-      Including:<br>
+      Includes:<br>
       <ul style = "list-style-type:square;font-size:13px">
         <li>Use of the Numpy library, matrices, and vectors in Python in order to assess alcohol consumption by country.</li>
         <li>Python and Pandas code to index data, retrieve, sort, normalize and run calculations on US Department of Agriculture (USDA) data to discover the most/ least nutritional foods.</li>
         <li>Python and Pandas code to compute summary statistics, create pivot tables, remove missing values, and reindex rows of passenger survival data from the Titanic.</li>
-        <li>Use of Python and Pandas to manipulate dataframes and calculate summary statistics of employment data from the American Community Survey for years 2010-2012.</li>
+        <li>Use of Python and Pandas to manipulate dataframes and calculate summary statistics of employment data from the American Community Survey for 2010 to 2012.</li>
       </ul>
 
     </td>
@@ -145,7 +145,7 @@
     <td colspan = "4">
 
       Various techniques to visualize data using Python, including the Matplotlib module and Seaborn.<br><br>
-      Including:<br>
+      Includes:<br>
       <ul style = "list-style-type:square;font-size:13px">
         <li>Use of the Matplotlib module to plot charts in Python of forest fire data from Montesinho National Park.</li>
         <li>Use of Python, Pandas and Matplotlib to effectively utilize visualization to explore employment data from the American Community Survey for 2010 to 2012.</li>
