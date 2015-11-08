@@ -3,21 +3,7 @@
 
 # In[1]:
 
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+from __future__ import print_function
 
 
 # #Exploring Topics in Data Science
@@ -30,17 +16,18 @@ $( document ).ready(code_toggle);
 # 
 # Each row contains the votes of an individual senator. Votes are coded as 0 for "No", 1 for "Yes", and 0.5 for "Abstain".
 
-# In[7]:
+# In[2]:
 
 import pandas as pd
 # Read in the csv file
 votes = pd.read_csv("data/114_congress.csv")
 
 # As you can see, there are 100 senators, and they voted on 15 bills (we subtract 3 because the first 3 columns aren't bills).
-print(votes.shape)
+print("votes.shape:", votes.shape)
 
 # We have more "Yes" votes than "No" votes overall
-print(pd.value_counts(votes.iloc[:,3:].values.ravel()))
+value_counts = pd.value_counts(votes.iloc[:,3:].values.ravel())
+print("value_counts:\n", value_counts)
 
 
 # ###2: Initial clustering
@@ -66,7 +53,8 @@ labels = kmeans_model.labels_
 
 # The clustering looks pretty good!
 # It's separated everyone into parties just based on voting history
-print(pd.crosstab(labels, votes["party"]))
+crosstab = pd.crosstab(labels, votes["party"])
+print("crosstab:\n", crosstab)
 
 
 # ###3: Exploring people in the wrong cluster
@@ -75,7 +63,7 @@ print(pd.crosstab(labels, votes["party"]))
 # 
 # These senators are in the cluster associated with the opposite party.
 
-# In[11]:
+# In[4]:
 
 # Let's call these types of voters "oddballs" (why not?)
 # There aren't any republican oddballs
@@ -83,7 +71,8 @@ democratic_oddballs = votes[(labels == 1) & (votes["party"] == "D")]
 
 # It looks like Reid has abstained a lot, which changed his cluster.
 # Manchin seems like a genuine oddball voter.
-print(democratic_oddballs["name"])
+oddballs = democratic_oddballs["name"]
+print("oddballs:\n", oddballs)
 
 
 # ###4: Plotting out the clusters
@@ -96,11 +85,11 @@ print(democratic_oddballs["name"])
 # 
 # Then, we can plot out all of our senators according to their votes, and shade them by their cluster.
 
-# In[25]:
+# In[5]:
 
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 pca_2 = PCA(2)
 
@@ -120,7 +109,7 @@ plt.show()
 # 
 # Let's try using 5 clusters to see what happens.
 
-# In[26]:
+# In[6]:
 
 import pandas as pd
 from sklearn.cluster import KMeans
@@ -129,5 +118,6 @@ kmeans_model = KMeans(n_clusters=5, random_state=1).fit(votes.iloc[:, 3:])
 labels = kmeans_model.labels_
 
 # The republicans are still pretty solid, but it looks like there are two democratic "factions"
-print(pd.crosstab(labels, votes["party"]))
+crosstab = pd.crosstab(labels, votes["party"])
+print("crosstab:\n", crosstab)
 

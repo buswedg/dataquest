@@ -1,41 +1,8 @@
 
 
 ```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+from __future__ import print_function
 ```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
 
 #Exploring Topics in Data Science
 
@@ -45,13 +12,12 @@ $( document ).ready(code_toggle);
 
 A counter is a map from values to their frequencies. If you initialize a counter with a string, you get a map from each letter to the number of times it appears. If two words are anagrams, they yield equal Counters, so you can use Counters to test anagrams in linear time.
 
+This lesson is based on an <a href = "https://github.com/AllenDowney/PythonCounterPmf">ipython notebook by Allen Downey</a>.
+
 
 ```python
 from collections import Counter
-```
 
-
-```python
 def is_anagram(word1, word2):
     """Checks whether the words are anagrams.
 
@@ -62,12 +28,12 @@ def is_anagram(word1, word2):
     """
     return Counter(word1) == Counter(word2)
 
-print(is_anagram('tachymetric', 'mccarthyite'))
-print(is_anagram('banana', 'peach'))
+print("is_anagram('tachymetric', 'mccarthyite'):", is_anagram('tachymetric', 'mccarthyite'))
+print("is_anagram('banana', 'peach'):", is_anagram('banana', 'peach'))
 ```
 
-    True
-    False
+    is_anagram('tachymetric', 'mccarthyite'): True
+    is_anagram('banana', 'peach'): False
     
 
 ###2: Multisets
@@ -106,10 +72,10 @@ def can_spell(word, tiles):
     """
     return Multiset(word) <= Multiset(tiles)
 
-print(can_spell('SYZYGY', 'AGSYYYZ'))
+print("can_spell('SYZYGY', 'AGSYYYZ'):", can_spell('SYZYGY', 'AGSYYYZ'))
 ```
 
-    True
+    can_spell('SYZYGY', 'AGSYYYZ'): True
     
 
 ###3: Probability Mass Functions
@@ -172,10 +138,10 @@ As an example, we can make a Pmf object that represents a 6-sided die.
 d6 = Pmf([1,2,3,4,5,6])
 d6.normalize()
 d6.name = 'one die'
-print(d6)
+print("d6:", d6)
 ```
 
-    Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666})
+    d6: Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666})
     
 
 ###5: Add operator
@@ -191,17 +157,17 @@ for key, prob in d6_twice.items():
     print(key, prob)
 ```
 
-    (2, 0.027777777777777776)
-    (3, 0.05555555555555555)
-    (4, 0.08333333333333333)
-    (5, 0.1111111111111111)
-    (6, 0.1388888888888889)
-    (7, 0.16666666666666669)
-    (8, 0.1388888888888889)
-    (9, 0.1111111111111111)
-    (10, 0.08333333333333333)
-    (11, 0.05555555555555555)
-    (12, 0.027777777777777776)
+    2 0.027777777777777776
+    3 0.05555555555555555
+    4 0.08333333333333333
+    5 0.1111111111111111
+    6 0.1388888888888889
+    7 0.16666666666666669
+    8 0.1388888888888889
+    9 0.1111111111111111
+    10 0.08333333333333333
+    11 0.05555555555555555
+    12 0.027777777777777776
     
 
 ###6: Computing the distribution
@@ -228,7 +194,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![png](output_20_0.png)
 
 
 ###7: Bayesian statistics
@@ -272,12 +238,11 @@ def make_die(num_sides):
     die.normalize()
     return die
 
-
 dice = [make_die(x) for x in [4, 6, 8, 12, 20]]
-print(dice)
+print("dice:", dice)
 ```
 
-    [Pmf({1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25}), Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666}), Pmf({1: 0.125, 2: 0.125, 3: 0.125, 4: 0.125, 5: 0.125, 6: 0.125, 7: 0.125, 8: 0.125}), Pmf({1: 0.08333333333333333, 2: 0.08333333333333333, 3: 0.08333333333333333, 4: 0.08333333333333333, 5: 0.08333333333333333, 6: 0.08333333333333333, 7: 0.08333333333333333, 8: 0.08333333333333333, 9: 0.08333333333333333, 10: 0.08333333333333333, 11: 0.08333333333333333, 12: 0.08333333333333333}), Pmf({1: 0.05, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 6: 0.05, 7: 0.05, 8: 0.05, 9: 0.05, 10: 0.05, 11: 0.05, 12: 0.05, 13: 0.05, 14: 0.05, 15: 0.05, 16: 0.05, 17: 0.05, 18: 0.05, 19: 0.05, 20: 0.05})]
+    dice: [Pmf({1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25}), Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666}), Pmf({1: 0.125, 2: 0.125, 3: 0.125, 4: 0.125, 5: 0.125, 6: 0.125, 7: 0.125, 8: 0.125}), Pmf({1: 0.08333333333333333, 2: 0.08333333333333333, 3: 0.08333333333333333, 4: 0.08333333333333333, 5: 0.08333333333333333, 6: 0.08333333333333333, 7: 0.08333333333333333, 8: 0.08333333333333333, 9: 0.08333333333333333, 10: 0.08333333333333333, 11: 0.08333333333333333, 12: 0.08333333333333333}), Pmf({1: 0.05, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 6: 0.05, 7: 0.05, 8: 0.05, 9: 0.05, 10: 0.05, 11: 0.05, 12: 0.05, 13: 0.05, 14: 0.05, 15: 0.05, 16: 0.05, 17: 0.05, 18: 0.05, 19: 0.05, 20: 0.05})]
     
 
 ###9: DiceSuite
@@ -314,20 +279,20 @@ dice_suite = DiceSuite(dice)
 dice_suite.bayesian_update(6)
 
 for die, prob in dice_suite.items():
-    print(die.name)
-    print(prob)
+    print("die.name:", die.name)
+    print("prob:", prob)
 ```
 
-    d4
-    0.0
-    d6
-    0.392156862745
-    d20
-    0.117647058824
-    d8
-    0.294117647059
-    d12
-    0.196078431373
+    die.name: d4
+    prob: 0.0
+    die.name: d6
+    prob: 0.39215686274509803
+    die.name: d12
+    prob: 0.19607843137254902
+    die.name: d8
+    prob: 0.29411764705882354
+    die.name: d20
+    prob: 0.11764705882352942
     
 
 ###11: Update again
@@ -345,18 +310,18 @@ These examples demonstrate the versatility of the Counter class, one of Python's
 dice_suite.bayesian_update(8)
 
 for die, prob in dice_suite.items():
-    print(die.name)
-    print(prob)
+    print("die.name:", die.name)
+    print("prob:", prob)
 ```
 
-    d4
-    0.0
-    d6
-    0.0
-    d20
-    0.0997229916898
-    d8
-    0.623268698061
-    d12
-    0.277008310249
+    die.name: d4
+    prob: 0.0
+    die.name: d6
+    prob: 0.0
+    die.name: d12
+    prob: 0.27700831024930744
+    die.name: d8
+    prob: 0.6232686980609419
+    die.name: d20
+    prob: 0.09972299168975071
     

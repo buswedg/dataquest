@@ -174,51 +174,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s">code_show=true; </span>
-<span class="s">function code_toggle() {</span>
-<span class="s"> if (code_show){</span>
-<span class="s"> $(&#39;div.input&#39;).hide();</span>
-<span class="s"> } else {</span>
-<span class="s"> $(&#39;div.input&#39;).show();</span>
-<span class="s"> }</span>
-<span class="s"> code_show = !code_show</span>
-<span class="s">} </span>
-<span class="s">$( document ).ready(code_toggle);</span>
-<span class="s">&lt;/script&gt;</span>
-<span class="s">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -256,29 +215,19 @@ $( document ).ready(code_toggle);
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A counter is a map from values to their frequencies. If you initialize a counter with a string, you get a map from each letter to the number of times it appears. If two words are anagrams, they yield equal Counters, so you can use Counters to test anagrams in linear time.</p>
+<p>This lesson is based on an <a href = "https://github.com/AllenDowney/PythonCounterPmf">ipython notebook by Allen Downey</a>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
 
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">is_anagram</span><span class="p">(</span><span class="n">word1</span><span class="p">,</span> <span class="n">word2</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">is_anagram</span><span class="p">(</span><span class="n">word1</span><span class="p">,</span> <span class="n">word2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Checks whether the words are anagrams.</span>
 
 <span class="sd">    word1: string</span>
@@ -288,8 +237,8 @@ $( document ).ready(code_toggle);
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">word1</span><span class="p">)</span> <span class="o">==</span> <span class="n">Counter</span><span class="p">(</span><span class="n">word2</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">is_anagram</span><span class="p">(</span><span class="s">&#39;tachymetric&#39;</span><span class="p">,</span> <span class="s">&#39;mccarthyite&#39;</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">is_anagram</span><span class="p">(</span><span class="s">&#39;banana&#39;</span><span class="p">,</span> <span class="s">&#39;peach&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;is_anagram(&#39;tachymetric&#39;, &#39;mccarthyite&#39;):&quot;</span><span class="p">,</span> <span class="n">is_anagram</span><span class="p">(</span><span class="s">&#39;tachymetric&#39;</span><span class="p">,</span> <span class="s">&#39;mccarthyite&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;is_anagram(&#39;banana&#39;, &#39;peach&#39;):&quot;</span><span class="p">,</span> <span class="n">is_anagram</span><span class="p">(</span><span class="s">&#39;banana&#39;</span><span class="p">,</span> <span class="s">&#39;peach&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -302,8 +251,8 @@ $( document ).ready(code_toggle);
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>True
-False
+<pre>is_anagram(&apos;tachymetric&apos;, &apos;mccarthyite&apos;): True
+is_anagram(&apos;banana&apos;, &apos;peach&apos;): False
 </pre>
 </div>
 </div>
@@ -334,10 +283,10 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">class</span> <span class="nc">Multiset</span><span class="p">(</span><span class="n">Counter</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Multiset</span><span class="p">(</span><span class="n">Counter</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A multiset is a set where elements can appear more than once.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">is_subset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
@@ -349,8 +298,8 @@ False
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">char</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="n">other</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">:</span>
-                <span class="k">return</span> <span class="bp">False</span>
-        <span class="k">return</span> <span class="bp">True</span>
+                <span class="k">return</span> <span class="k">False</span>
+        <span class="k">return</span> <span class="k">True</span>
     
     <span class="c"># map the &lt;= operator to is_subset</span>
     <span class="n">__le__</span> <span class="o">=</span> <span class="n">is_subset</span>
@@ -365,7 +314,7 @@ False
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">Multiset</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">Multiset</span><span class="p">(</span><span class="n">tiles</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">can_spell</span><span class="p">(</span><span class="s">&#39;SYZYGY&#39;</span><span class="p">,</span> <span class="s">&#39;AGSYYYZ&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;can_spell(&#39;SYZYGY&#39;, &#39;AGSYYYZ&#39;):&quot;</span><span class="p">,</span> <span class="n">can_spell</span><span class="p">(</span><span class="s">&#39;SYZYGY&#39;</span><span class="p">,</span> <span class="s">&#39;AGSYYYZ&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -378,7 +327,7 @@ False
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>True
+<pre>can_spell(&apos;SYZYGY&apos;, &apos;AGSYYYZ&apos;): True
 </pre>
 </div>
 </div>
@@ -412,10 +361,10 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">class</span> <span class="nc">Pmf</span><span class="p">(</span><span class="n">Counter</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Pmf</span><span class="p">(</span><span class="n">Counter</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A Counter with probabilities.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -478,13 +427,13 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">d6</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">d6</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 <span class="n">d6</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
 <span class="n">d6</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#39;one die&#39;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">d6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;d6:&quot;</span><span class="p">,</span> <span class="n">d6</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -497,7 +446,7 @@ False
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666})
+<pre>d6: Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666})
 </pre>
 </div>
 </div>
@@ -527,14 +476,14 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">d6_twice</span> <span class="o">=</span> <span class="n">d6</span> <span class="o">+</span> <span class="n">d6</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">d6_twice</span> <span class="o">=</span> <span class="n">d6</span> <span class="o">+</span> <span class="n">d6</span>
 <span class="n">d6_twice</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#39;two dice&#39;</span>
 
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="n">d6_twice</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -547,17 +496,17 @@ False
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, 0.027777777777777776)
-(3, 0.05555555555555555)
-(4, 0.08333333333333333)
-(5, 0.1111111111111111)
-(6, 0.1388888888888889)
-(7, 0.16666666666666669)
-(8, 0.1388888888888889)
-(9, 0.1111111111111111)
-(10, 0.08333333333333333)
-(11, 0.05555555555555555)
-(12, 0.027777777777777776)
+<pre>2 0.027777777777777776
+3 0.05555555555555555
+4 0.08333333333333333
+5 0.1111111111111111
+6 0.1388888888888889
+7 0.16666666666666669
+8 0.1388888888888889
+9 0.1111111111111111
+10 0.08333333333333333
+11 0.05555555555555555
+12 0.027777777777777776
 </pre>
 </div>
 </div>
@@ -587,10 +536,10 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="n">pmf_ident</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
@@ -1001,10 +950,10 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">class</span> <span class="nc">Suite</span><span class="p">(</span><span class="n">Pmf</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Suite</span><span class="p">(</span><span class="n">Pmf</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Map from hypothesis to probability.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">bayesian_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
@@ -1049,18 +998,17 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">make_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">make_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
     <span class="n">die</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
-    <span class="n">die</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#39;d</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">num_sides</span>
+    <span class="n">die</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#39;d%d&#39;</span> <span class="o">%</span> <span class="n">num_sides</span>
     <span class="n">die</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">die</span>
 
-
 <span class="n">dice</span> <span class="o">=</span> <span class="p">[</span><span class="n">make_die</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">dice</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;dice:&quot;</span><span class="p">,</span> <span class="n">dice</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1073,7 +1021,7 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[Pmf({1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25}), Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666}), Pmf({1: 0.125, 2: 0.125, 3: 0.125, 4: 0.125, 5: 0.125, 6: 0.125, 7: 0.125, 8: 0.125}), Pmf({1: 0.08333333333333333, 2: 0.08333333333333333, 3: 0.08333333333333333, 4: 0.08333333333333333, 5: 0.08333333333333333, 6: 0.08333333333333333, 7: 0.08333333333333333, 8: 0.08333333333333333, 9: 0.08333333333333333, 10: 0.08333333333333333, 11: 0.08333333333333333, 12: 0.08333333333333333}), Pmf({1: 0.05, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 6: 0.05, 7: 0.05, 8: 0.05, 9: 0.05, 10: 0.05, 11: 0.05, 12: 0.05, 13: 0.05, 14: 0.05, 15: 0.05, 16: 0.05, 17: 0.05, 18: 0.05, 19: 0.05, 20: 0.05})]
+<pre>dice: [Pmf({1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25}), Pmf({1: 0.16666666666666666, 2: 0.16666666666666666, 3: 0.16666666666666666, 4: 0.16666666666666666, 5: 0.16666666666666666, 6: 0.16666666666666666}), Pmf({1: 0.125, 2: 0.125, 3: 0.125, 4: 0.125, 5: 0.125, 6: 0.125, 7: 0.125, 8: 0.125}), Pmf({1: 0.08333333333333333, 2: 0.08333333333333333, 3: 0.08333333333333333, 4: 0.08333333333333333, 5: 0.08333333333333333, 6: 0.08333333333333333, 7: 0.08333333333333333, 8: 0.08333333333333333, 9: 0.08333333333333333, 10: 0.08333333333333333, 11: 0.08333333333333333, 12: 0.08333333333333333}), Pmf({1: 0.05, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 6: 0.05, 7: 0.05, 8: 0.05, 9: 0.05, 10: 0.05, 11: 0.05, 12: 0.05, 13: 0.05, 14: 0.05, 15: 0.05, 16: 0.05, 17: 0.05, 18: 0.05, 19: 0.05, 20: 0.05})]
 </pre>
 </div>
 </div>
@@ -1105,10 +1053,10 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">class</span> <span class="nc">DiceSuite</span><span class="p">(</span><span class="n">Suite</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">DiceSuite</span><span class="p">(</span><span class="n">Suite</span><span class="p">):</span>
     
     <span class="k">def</span> <span class="nf">likelihood</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">hypo</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Computes the likelihood of the data under the hypothesis.</span>
@@ -1146,16 +1094,16 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">dice_suite</span> <span class="o">=</span> <span class="n">DiceSuite</span><span class="p">(</span><span class="n">dice</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">dice_suite</span> <span class="o">=</span> <span class="n">DiceSuite</span><span class="p">(</span><span class="n">dice</span><span class="p">)</span>
 
 <span class="n">dice_suite</span><span class="o">.</span><span class="n">bayesian_update</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">die</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="n">dice_suite</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">die</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">prob</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;die.name:&quot;</span><span class="p">,</span> <span class="n">die</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;prob:&quot;</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1168,16 +1116,16 @@ iIiITikUERHRKYUiIiI6pVBERESnFIqIiOj0X7KhBDLkXFieAAAAAElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>d4
-0.0
-d6
-0.392156862745
-d20
-0.117647058824
-d8
-0.294117647059
-d12
-0.196078431373
+<pre>die.name: d4
+prob: 0.0
+die.name: d6
+prob: 0.39215686274509803
+die.name: d12
+prob: 0.19607843137254902
+die.name: d8
+prob: 0.29411764705882354
+die.name: d20
+prob: 0.11764705882352942
 </pre>
 </div>
 </div>
@@ -1210,14 +1158,14 @@ d12
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">dice_suite</span><span class="o">.</span><span class="n">bayesian_update</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">dice_suite</span><span class="o">.</span><span class="n">bayesian_update</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">die</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="n">dice_suite</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">die</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">prob</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;die.name:&quot;</span><span class="p">,</span> <span class="n">die</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;prob:&quot;</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1230,16 +1178,16 @@ d12
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>d4
-0.0
-d6
-0.0
-d20
-0.0997229916898
-d8
-0.623268698061
-d12
-0.277008310249
+<pre>die.name: d4
+prob: 0.0
+die.name: d6
+prob: 0.0
+die.name: d12
+prob: 0.27700831024930744
+die.name: d8
+prob: 0.6232686980609419
+die.name: d20
+prob: 0.09972299168975071
 </pre>
 </div>
 </div>

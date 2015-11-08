@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>CiP_template</title>
+<title>PMF_template</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -196,7 +196,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Clustering-in-Python">Clustering in Python<a class="anchor-link" href="#Clustering-in-Python">&#182;</a></h2>
+<h2 id="Probability-mass-functions">Probability mass functions<a class="anchor-link" href="#Probability-mass-functions">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -205,7 +205,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1:-Loading-in-the-data">1: Loading in the data<a class="anchor-link" href="#1:-Loading-in-the-data">&#182;</a></h3>
+<h3 id="1:-Introduction-to-the-data">1: Introduction to the data<a class="anchor-link" href="#1:-Introduction-to-the-data">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -214,8 +214,36 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have a csv file that contains all the votes from the 114th Senate.</p>
-<p>Each row contains the votes of an individual senator. Votes are coded as 0 for "No", 1 for "Yes", and 0.5 for "Abstain".</p>
+<p>In this lesson, we'll be working with data from the <a href= "http://www.cdc.gov/nchs/nsfg.htm">National Survey of Family Growth</a>. The data was collected from January 2002 to March 2003. It contains data on pregnancy, family life, and more. We'll use it to explore various correlations.</p>
+<p>We've selected a few columns from the original data, which are:</p>
+<ul>
+<li>prglngth -- the length of the pregnancy in weeks.</li>
+<li>birthord -- which child this was for the pregnant mother.</li>
+<li>birthwgt_lb1 -- the pounds portion of the birth weight.</li>
+<li>birthwgt_oz1 -- the ounces portion of the birth weight.</li>
+<li>agepreg -- the mother's age at the end of the pregnancy, in years.</li>
+</ul>
+<p>This lesson is based on Chapter 3 of <a href = "http://www.thinkstats2.com/">Think Stats, 2nd edition, by Allen Downey</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Find the mean agepreg for mothers in firsts. Assign the result to mean_firsts_agepreg.</p>
+<p>Find the mean agepreg for mothers in others. Assign the result to mean_others_agepreg.</p>
 
 </div>
 </div>
@@ -225,82 +253,211 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="c"># Read in the csv file</span>
-<span class="n">votes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;data/114_congress.csv&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># %load nsfg</span>
+<span class="sd">&quot;&quot;&quot;This file contains code for use with &quot;Think Stats&quot;,</span>
+<span class="sd">by Allen B. Downey, available from greenteapress.com</span>
 
-<span class="c"># As you can see, there are 100 senators, and they voted on 15 bills (we subtract 3 because the first 3 columns aren&#39;t bills).</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;votes.shape:&quot;</span><span class="p">,</span> <span class="n">votes</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="sd">Copyright 2010 Allen B. Downey</span>
+<span class="sd">License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
-<span class="c"># We have more &quot;Yes&quot; votes than &quot;No&quot; votes overall</span>
-<span class="n">value_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">votes</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">3</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;value_counts:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">value_counts</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+
+<span class="k">def</span> <span class="nf">ReadStataDct</span><span class="p">(</span><span class="n">dct_file</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reads a Stata dictionary file.</span>
+
+<span class="sd">    dct_file: string filename</span>
+<span class="sd">    options: dict of options passed to open()</span>
+
+<span class="sd">    returns: FixedWidthVariables object</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">type_map</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">byte</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">double</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+    <span class="n">var_info</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">dct_file</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+        <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span> <span class="s">r&#39;_column\(([^)]*)\)&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">vtype</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">fstring</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">vtype</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">&#39;str&#39;</span><span class="p">):</span>
+                <span class="n">vtype</span> <span class="o">=</span> <span class="nb">str</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">vtype</span> <span class="o">=</span> <span class="n">type_map</span><span class="p">[</span><span class="n">vtype</span><span class="p">]</span>
+            <span class="n">long_desc</span> <span class="o">=</span> <span class="s">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">&#39;&quot;&#39;</span><span class="p">)</span>
+            <span class="n">var_info</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">start</span><span class="p">,</span> <span class="n">vtype</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">fstring</span><span class="p">,</span> <span class="n">long_desc</span><span class="p">))</span>
+            
+    <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;start&#39;</span><span class="p">,</span> <span class="s">&#39;type&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;fstring&#39;</span><span class="p">,</span> <span class="s">&#39;desc&#39;</span><span class="p">]</span>
+    <span class="n">variables</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">var_info</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+
+    <span class="c"># fill in the end column by shifting the start column</span>
+    <span class="n">variables</span><span class="p">[</span><span class="s">&#39;end&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">variables</span><span class="o">.</span><span class="n">start</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">variables</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">variables</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;end&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">dct</span> <span class="o">=</span> <span class="n">FixedWidthVariables</span><span class="p">(</span><span class="n">variables</span><span class="p">,</span> <span class="n">index_base</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dct</span>
+
+
+<span class="k">class</span> <span class="nc">FixedWidthVariables</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Represents a set of variables in a fixed width file.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">index_base</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initializes.</span>
+
+<span class="sd">        variables: DataFrame</span>
+<span class="sd">        index_base: are the indices 0 or 1 based?</span>
+
+<span class="sd">        Attributes:</span>
+<span class="sd">        colspecs: list of (start, end) index tuples</span>
+<span class="sd">        names: list of string variable names</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">variables</span> <span class="o">=</span> <span class="n">variables</span>
+
+        <span class="c"># note: by default, subtract 1 from colspecs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">colspecs</span> <span class="o">=</span> <span class="n">variables</span><span class="p">[[</span><span class="s">&#39;start&#39;</span><span class="p">,</span> <span class="s">&#39;end&#39;</span><span class="p">]]</span> <span class="o">-</span> <span class="n">index_base</span>
+
+        <span class="c"># convert colspecs to a list of pair of int</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">colspecs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">colspecs</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="n">variables</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">ReadFixedWidth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reads a fixed width ASCII file.</span>
+
+<span class="sd">        filename: string filename</span>
+
+<span class="sd">        returns: DataFrame</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_fwf</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span>
+                             <span class="n">colspecs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">colspecs</span><span class="p">,</span> 
+                             <span class="n">names</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">names</span><span class="p">,</span>
+                             <span class="o">**</span><span class="n">options</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">df</span>
+
+    
+<span class="k">def</span> <span class="nf">ReadFemPreg</span><span class="p">(</span><span class="n">dct_file</span><span class="o">=</span><span class="s">&#39;data/2002FemPreg.dct&#39;</span><span class="p">,</span>
+                <span class="n">dat_file</span><span class="o">=</span><span class="s">&#39;data/2002FemPreg.dat.gz&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reads the NSFG pregnancy data.</span>
+
+<span class="sd">    dct_file: string file name</span>
+<span class="sd">    dat_file: string file name</span>
+
+<span class="sd">    returns: DataFrame</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dct</span> <span class="o">=</span> <span class="n">ReadStataDct</span><span class="p">(</span><span class="n">dct_file</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">dct</span><span class="o">.</span><span class="n">ReadFixedWidth</span><span class="p">(</span><span class="n">dat_file</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s">&#39;gzip&#39;</span><span class="p">)</span>
+    <span class="n">CleanFemPreg</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+
+<span class="k">def</span> <span class="nf">CleanFemPreg</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Recodes variables from the pregnancy frame.</span>
+
+<span class="sd">    df: DataFrame</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c"># mother&#39;s age is encoded in centiyears; convert to years</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">agepreg</span> <span class="o">/=</span> <span class="mf">100.0</span>
+
+    <span class="c"># birthwgt_lb contains at least one bogus value (51 lbs)</span>
+    <span class="c"># replace with NaN</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_lb</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">birthwgt_lb</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    
+    <span class="c"># replace &#39;not ascertained&#39;, &#39;refused&#39;, &#39;don&#39;t know&#39; with NaN</span>
+    <span class="n">na_vals</span> <span class="o">=</span> <span class="p">[</span><span class="mi">97</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">99</span><span class="p">]</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_lb</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">na_vals</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_oz</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">na_vals</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">hpagelb</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">na_vals</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+
+    <span class="n">df</span><span class="o">.</span><span class="n">babysex</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">nbrnaliv</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="mi">9</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+
+    <span class="c"># birthweight is stored in two columns, lbs and oz.</span>
+    <span class="c"># convert to a single column in lb</span>
+    <span class="c"># NOTE: creating a new column requires dictionary syntax,</span>
+    <span class="c"># not attribute assignment (like df.totalwgt_lb)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s">&#39;totalwgt_lb&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_lb</span> <span class="o">+</span> <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_oz</span> <span class="o">/</span> <span class="mf">16.0</span>    
+
+    <span class="c"># due to a bug in ReadStataDct, the last variable gets clipped;</span>
+    <span class="c"># so for now set it to NaN</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">cmintvw</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+
+<span class="k">def</span> <span class="nf">MakePregMap</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Make a map from caseid to list of preg indices.</span>
+
+<span class="sd">    df: DataFrame</span>
+
+<span class="sd">    returns: dict that maps from caseid to list of indices into preg df</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">caseid</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">caseid</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">caseid</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">d</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">script</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Tests the functions in this module.</span>
+
+<span class="sd">    script: string script name</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">ReadFemPreg</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13593</span>
+
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">caseid</span><span class="p">[</span><span class="mi">13592</span><span class="p">]</span> <span class="o">==</span> <span class="mi">12571</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">pregordr</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">5033</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">nbrnaliv</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">8981</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">babysex</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">4641</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_lb</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3049</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">birthwgt_oz</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1037</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">prglngth</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">39</span><span class="p">]</span> <span class="o">==</span> <span class="mi">4744</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">outcome</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">9148</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">birthord</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">4413</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">agepreg</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mf">22.75</span><span class="p">]</span> <span class="o">==</span> <span class="mi">100</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">totalwgt_lb</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mf">7.5</span><span class="p">]</span> <span class="o">==</span> <span class="mi">302</span>
+
+    <span class="n">weights</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">finalwgt</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">weights</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">finalwgt</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="n">key</span><span class="p">]</span> <span class="o">==</span> <span class="mi">6</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;%s: All tests passed.&#39;</span> <span class="o">%</span> <span class="n">script</span><span class="p">)</span>
+
+<span class="c">#if __name__ == &#39;__main__&#39;:</span>
+<span class="c">#    main(*sys.argv)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>votes.shape: (100, 18)
-value_counts:
- 1.0    803
-0.0    669
-0.5     28
-dtype: int64
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2:-Initial-clustering">2: Initial clustering<a class="anchor-link" href="#2:-Initial-clustering">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>k-means clustering will try to make clusters out of the senators.</p>
-<p>Each cluster will contain senators whose votes are as similar to each other as possible.</p>
-<p>We'll need to specify the number of clusters we want upfront.</p>
-<p>Let's try 2 to see how that looks.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
+<div class=" highlight hl-ipython3"><pre> <span class="n">preg</span> <span class="o">=</span> <span class="n">ReadFemPreg</span><span class="p">()</span>
+<span class="c">#list(preg.columns.values)</span>
 
-<span class="c"># Create a kmeans model on our data, using 2 clusters.  random_state helps ensure that the algorithm returns the same results each time.</span>
-<span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">votes</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">:])</span>
+<span class="n">births</span> <span class="o">=</span> <span class="n">preg</span><span class="p">[[</span><span class="s">&#39;prglngth&#39;</span><span class="p">,</span> <span class="s">&#39;birthord&#39;</span><span class="p">,</span> <span class="s">&#39;birthwgt_lb&#39;</span><span class="p">,</span> <span class="s">&#39;birthwgt_oz&#39;</span><span class="p">,</span> <span class="s">&#39;agepreg&#39;</span><span class="p">]]</span>
+<span class="c">#print(&quot;births:&quot;, births)</span>
 
-<span class="c"># These are our fitted labels for clusters -- the first cluster has label 0, and the second has label 1.</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span>
+<span class="c"># There are large differences between the first pregnancy and subsequent onces, so let&#39;s split the data up.</span>
+<span class="n">firsts</span> <span class="o">=</span> <span class="n">births</span><span class="p">[</span><span class="n">births</span><span class="p">[</span><span class="s">&quot;birthord&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">others</span> <span class="o">=</span> <span class="n">births</span><span class="p">[</span><span class="n">births</span><span class="p">[</span><span class="s">&quot;birthord&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span>
 
-<span class="c"># The clustering looks pretty good!</span>
-<span class="c"># It&#39;s separated everyone into parties just based on voting history</span>
-<span class="n">crosstab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">votes</span><span class="p">[</span><span class="s">&quot;party&quot;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;crosstab:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">crosstab</span><span class="p">)</span>
+<span class="c"># We end up with around 7000 rows for each.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;others.shape:&quot;</span><span class="p">,</span> <span class="n">others</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;firsts.shape:&quot;</span><span class="p">,</span> <span class="n">firsts</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">mean_firsts_agepreg</span> <span class="o">=</span> <span class="n">firsts</span><span class="p">[</span><span class="s">&quot;agepreg&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_others_agepreg</span> <span class="o">=</span> <span class="n">others</span><span class="p">[</span><span class="s">&quot;agepreg&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -313,11 +470,18 @@ dtype: int64
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>crosstab:
- party   D  I   R
-row_0           
-0      41  2   0
-1       3  0  54
+<pre>others.shape: (4735, 5)
+firsts.shape: (4413, 5)
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Anaconda3\lib\site-packages\ipykernel\__main__.py:113: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
 </pre>
 </div>
 </div>
@@ -331,7 +495,7 @@ row_0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3:-Exploring-people-in-the-wrong-cluster">3: Exploring people in the wrong cluster<a class="anchor-link" href="#3:-Exploring-people-in-the-wrong-cluster">&#182;</a></h3>
+<h3 id="2:-What's-a-PMF?">2: What's a PMF?<a class="anchor-link" href="#2:-What's-a-PMF?">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -340,8 +504,28 @@ row_0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can now find out which senators are in the "wrong" cluster.</p>
-<p>These senators are in the cluster associated with the opposite party.</p>
+<p>A <a href = "http://en.wikipedia.org/wiki/Probability_mass_function">probability mass function</a> is a function that maps from a discrete rabdom variable to the probability of each value occuring. In the case of our dataset, a discrete random variable is just a column.</p>
+<p>Before we generate a probability mass function, we generate a histogram, which just contains counts of each unique value occuring.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Extend the Pmf class to generate probabilities instead of counts. Once easy way to achieve this is to divide the count of each unique item by the total number of items. All the probabilities should sum to 1.</p>
+<p>Assign the dictionary containing the probability of each unique value occuring in the column prglngth in firsts to prglngth_firsts_pmf.</p>
 
 </div>
 </div>
@@ -351,14 +535,28 @@ row_0
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Let&#39;s call these types of voters &quot;oddballs&quot; (why not?)</span>
-<span class="c"># There aren&#39;t any republican oddballs</span>
-<span class="n">democratic_oddballs</span> <span class="o">=</span> <span class="n">votes</span><span class="p">[(</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">votes</span><span class="p">[</span><span class="s">&quot;party&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;D&quot;</span><span class="p">)]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Let&#39;s make a histogram class that counts up all the unique values in a column.</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
 
-<span class="c"># It looks like Reid has abstained a lot, which changed his cluster.</span>
-<span class="c"># Manchin seems like a genuine oddball voter.</span>
-<span class="n">oddballs</span> <span class="o">=</span> <span class="n">democratic_oddballs</span><span class="p">[</span><span class="s">&quot;name&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;oddballs:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">oddballs</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Hist</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">):</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>
+
+<span class="c"># We can use the class to count up the unique values in prglngth.</span>
+<span class="n">prglngth_firsts_hist</span> <span class="o">=</span> <span class="n">Hist</span><span class="p">(</span><span class="n">firsts</span><span class="p">[</span><span class="s">&quot;prglngth&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;prglngth_firsts_hist.counts:&quot;</span><span class="p">,</span> <span class="n">prglngth_firsts_hist</span><span class="o">.</span><span class="n">counts</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Pmf</span><span class="p">(</span><span class="n">Hist</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">):</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">column</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">/=</span> <span class="n">total</span>
+
+<span class="n">prglngth_firsts_pmf</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">(</span><span class="n">firsts</span><span class="p">[</span><span class="s">&quot;prglngth&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">counts</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;prglngth_firsts_pmf:&quot;</span><span class="p">,</span> <span class="n">prglngth_firsts_pmf</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -371,11 +569,8 @@ row_0
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>oddballs:
- 42    Heitkamp
-56     Manchin
-74        Reid
-Name: name, dtype: object
+<pre>prglngth_firsts_hist.counts: {0: 1, 17: 1, 20: 1, 21: 1, 22: 3, 23: 1, 24: 7, 25: 1, 26: 16, 27: 1, 28: 24, 29: 9, 30: 73, 31: 15, 32: 55, 33: 28, 34: 29, 35: 159, 36: 172, 37: 208, 38: 272, 39: 2114, 40: 536, 41: 360, 42: 205, 43: 87, 44: 23, 45: 6, 46: 1, 47: 1, 48: 3}
+prglngth_firsts_pmf: {0: 0.00022660321776569228, 17: 0.00022660321776569228, 20: 0.00022660321776569228, 21: 0.00022660321776569228, 22: 0.0006798096532970768, 23: 0.00022660321776569228, 24: 0.0015862225243598459, 25: 0.00022660321776569228, 26: 0.0036256514842510764, 27: 0.00022660321776569228, 28: 0.005438477226376614, 29: 0.0020394289598912306, 30: 0.016542034896895538, 31: 0.003399048266485384, 32: 0.012463176977113076, 33: 0.0063448900974393836, 34: 0.006571493315205076, 35: 0.03602991162474507, 36: 0.03897575345569907, 37: 0.04713346929526399, 38: 0.0616360752322683, 39: 0.47903920235667347, 40: 0.12145932472241106, 41: 0.08157715839564922, 42: 0.04645365964196692, 43: 0.01971447994561523, 44: 0.005211874008610922, 45: 0.0013596193065941536, 46: 0.00022660321776569228, 47: 0.00022660321776569228, 48: 0.0006798096532970768}
 </pre>
 </div>
 </div>
@@ -389,7 +584,7 @@ Name: name, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4:-Plotting-out-the-clusters">4: Plotting out the clusters<a class="anchor-link" href="#4:-Plotting-out-the-clusters">&#182;</a></h3>
+<h3 id="3:-Plotting-a-pmf">3: Plotting a pmf<a class="anchor-link" href="#3:-Plotting-a-pmf">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -398,10 +593,27 @@ Name: name, dtype: object
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's explore our clusters a little more by plotting them out.</p>
-<p>Each column of data is a dimension on a plot, and we can't visualize 15 dimensions.</p>
-<p>We'll use principal component analysis to compress the vote columns into two.</p>
-<p>Then, we can plot out all of our senators according to their votes, and shade them by their cluster.</p>
+<p>We can plot a pmf to see the probability distribution. This can be done with matplotlib.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>prglngth_firsts_pmf and prglngth_others_pmf are both dictionaries containing the probabilities of each value in their respective dataset and column pairs occuring. prglngth_firsts_pmf contains probabilities for prglngth in the firsts dataset.</p>
+<p>Plot both pmfs as basic bar charts, using the template plt.bar(x, y). Be sure to use plt.show() after plotting each pmf. Also be sure to sort the dictionary keys from lowest to highest before you plot.</p>
 
 </div>
 </div>
@@ -412,16 +624,22 @@ Name: name, dtype: object
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
-<span class="n">pca_2</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">prglngth_others_pmf</span> <span class="o">=</span> <span class="n">Pmf</span><span class="p">(</span><span class="n">others</span><span class="p">[</span><span class="s">&quot;prglngth&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">counts</span>
 
-<span class="c"># Turn the vote data into two columns with PCA</span>
-<span class="n">plot_columns</span> <span class="o">=</span> <span class="n">pca_2</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">votes</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">3</span><span class="p">:</span><span class="mi">18</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">get_plot_data</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pmf</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">pmf</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">keys</span><span class="p">,</span> <span class="n">y</span>
 
-<span class="c"># Plot senators based on the two dimensions, and shade by cluster label</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">plot_columns</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">plot_columns</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">firsts_pmf</span> <span class="o">=</span> <span class="n">get_plot_data</span><span class="p">(</span><span class="n">prglngth_firsts_pmf</span><span class="p">)</span>
+<span class="n">others_pmf</span> <span class="o">=</span> <span class="n">get_plot_data</span><span class="p">(</span><span class="n">prglngth_others_pmf</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">firsts_pmf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">firsts_pmf</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">others_pmf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">others_pmf</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -437,102 +655,156 @@ Name: name, dtype: object
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-5biulPQWSQ9Kenuddj+QNJhSXzWMKe2+knS7pI/Hzydq/ful0U/N/NySrpV0f/z8akn/1eV/r2Zi
-ykmaT+P3p+qYfyRpp6TH13k91X5qMqYs+mmrpD+In79B0n/3wO9UMzG11FeZnPG7e9ndX4o3H5Z0
-eY1muySddvcz7v4rSfdIuq7LcfXcpLQmY0q7r4ZVWchd8Z/vrtO2m/3UzM99IVZ3f1jSJWa2JeOY
-pJQnNXplCPVP6jRJu5+aiUlKv5+edffH4uc/l3RS0qVrmqXaV03GJLXQV72wSNuHJd1fY/9lks5W
-bT8V7+sFvTYpLe2+2uLu5+Ln5ySt90vf7X5q5ueu1abWiUaaMbmkd8ZlgvvN7G1djKdZafdTMzLt
-JzPbrso3kofXvJRZX9WJqaW+6trN1puZ/GVmk5J+6e7/UqNdV6469+KktA7E1PG+qhPTK+7Y4e5e
-Zw5GtyfvNftzrz0T6uaIhmbe+1FJ29z9BTO7RtLXVSnnZS3NfmpGZv1kZm+Q9K+S/iY+y35VkzXb
-Xe+rBjG11FddS/zunq/3upl9SJVa2Z+s0+RpSduqtrep8sna1biafI9n4j9/bGZzqny9bzuhdSCm
-jvdVvZjiC3Jb3f1ZM3uTpB+t8x4d7acamvm517a5PN7XLQ1jcvfnq54/YGafNbNBd1/uYlyNpN1P
-DWXVT2b2Wkn3Svond/96jSap91WjmFrtq6xG9eyV9LeSrnP3/1un2TFJV5jZdjO7WNL1kubTilF1
-JqWZ2W/Ez1cnpa07UiKNmJR+X81LGo2fj6pydvEKKfVTMz/3vKQPxnHslvRcVZmqGxrGZGZbzMzi
-57tUGVadZdKX0u+nhrLop/h4X5T0fXf/h3WapdpXzcTUcl9182p0navUT0r6H0nH48dn4/2XSrqv
-qt01qlzBPi3pkynENaJK7W5F0rOSHlgbl6Q3qzJS4zFJ3+12XM3ElHZfSRqUdFTSE5IWJF2SVT/V
-+rkl3Sjpxqo2d8Svn1Cd0VppxSTpr+M+eUzSf0ranUJMX5b0Q0m/jH+fPtwD/VQ3poz66Q8lvRQf
-czU/XZNlXzUTU6t9xQQuAAhML4zqAQCkiMQPAIEh8QNAYEj8ABAYEj8ABIbEDwCBIfEDQGBI/AAQ
-mP8H+ZkTGFPdJpUAAAAASUVORK5CYII=
+<img src="data:image/png;base64,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
+AAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -548,7 +820,7 @@ mP8H+ZkTGFPdJpUAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5:-Trying-even-more-clusters">5: Trying even more clusters<a class="anchor-link" href="#5:-Trying-even-more-clusters">&#182;</a></h3>
+<h3 id="4:-Finding-differences-between-PMFs">4: Finding differences between PMFs<a class="anchor-link" href="#4:-Finding-differences-between-PMFs">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -557,9 +829,28 @@ mP8H+ZkTGFPdJpUAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>While two clusters is interesting, it didn't tell us anything we don't already know.</p>
-<p>More clusters could show wings of each party, or cross-party groups.</p>
-<p>Let's try using 5 clusters to see what happens.</p>
+<p>We can also find the difference between 2 PMFs. This is as simple as subtracting the probabilities of each value occuring for one from the other. It is made slightly complicated by dealing with values that only occur in one, but not the other.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Make a list of all the keys that occur in prglngth_firsts_pmf and prglngth_others_pmf. These keys should be unique (each value in the list should only occur once). Sort this list in ascending order. Assign this to prglngth_all_keys.</p>
+<p>For each key in prglngth_all_keys, find the corresponding probability in prglngth_firsts_pmf (probability is 0 if key not found) and subtract the corresponding probability in prglngth_others_pmf. Make a list with all the results, called prglngth_prob_diffs.</p>
+<p>Make a basic bar plot with prglngth_all_keys on the x axis, and prglngth_prob_diffs on the y axis.</p>
 
 </div>
 </div>
@@ -569,15 +860,16 @@ mP8H+ZkTGFPdJpUAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
-<span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">votes</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">:])</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span>
+<span class="n">combined_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">prglngth_firsts_pmf</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">prglngth_others_pmf</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">unique_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">combined_keys</span><span class="p">))</span>
+<span class="n">all_keys</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">unique_keys</span><span class="p">)</span>
+<span class="n">prglngth_prob_diffs</span> <span class="o">=</span> <span class="p">[</span><span class="n">prglngth_firsts_pmf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="n">prglngth_others_pmf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">all_keys</span><span class="p">]</span>
 
-<span class="c"># The republicans are still pretty solid, but it looks like there are two democratic &quot;factions&quot;</span>
-<span class="n">crosstab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">votes</span><span class="p">[</span><span class="s">&quot;party&quot;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;crosstab:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">crosstab</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">all_keys</span><span class="p">,</span> <span class="n">prglngth_prob_diffs</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -589,17 +881,95 @@ mP8H+ZkTGFPdJpUAAAAASUVORK5CYII=
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>crosstab:
- party   D  I   R
-row_0           
-0       6  0   0
-1       0  0  52
-2      31  1   0
-3       0  0   2
-4       7  1   0
-</pre>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
 </div>
+
 </div>
 
 </div>

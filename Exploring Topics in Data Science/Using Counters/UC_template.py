@@ -3,21 +3,7 @@
 
 # In[1]:
 
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+from __future__ import print_function
 
 
 # #Exploring Topics in Data Science
@@ -27,13 +13,12 @@ $( document ).ready(code_toggle);
 # ###1: Counters
 
 # A counter is a map from values to their frequencies. If you initialize a counter with a string, you get a map from each letter to the number of times it appears. If two words are anagrams, they yield equal Counters, so you can use Counters to test anagrams in linear time.
+# 
+# This lesson is based on an <a href = "https://github.com/AllenDowney/PythonCounterPmf">ipython notebook by Allen Downey</a>.
 
-# In[3]:
+# In[2]:
 
 from collections import Counter
-
-
-# In[4]:
 
 def is_anagram(word1, word2):
     """Checks whether the words are anagrams.
@@ -45,8 +30,8 @@ def is_anagram(word1, word2):
     """
     return Counter(word1) == Counter(word2)
 
-print(is_anagram('tachymetric', 'mccarthyite'))
-print(is_anagram('banana', 'peach'))
+print("is_anagram('tachymetric', 'mccarthyite'):", is_anagram('tachymetric', 'mccarthyite'))
+print("is_anagram('banana', 'peach'):", is_anagram('banana', 'peach'))
 
 
 # ###2: Multisets
@@ -55,7 +40,7 @@ print(is_anagram('banana', 'peach'))
 # 
 # For example, you could use is_subset in a game like Scrabble to see if a given set of tiles can be used to spell a given word.
 
-# In[5]:
+# In[3]:
 
 class Multiset(Counter):
     """A multiset is a set where elements can appear more than once."""
@@ -85,7 +70,7 @@ def can_spell(word, tiles):
     """
     return Multiset(word) <= Multiset(tiles)
 
-print(can_spell('SYZYGY', 'AGSYYYZ'))
+print("can_spell('SYZYGY', 'AGSYYYZ'):", can_spell('SYZYGY', 'AGSYYYZ'))
 
 
 # ###3: Probability Mass Functions
@@ -100,7 +85,7 @@ print(can_spell('SYZYGY', 'AGSYYYZ'))
 # 
 # render returns the values and probabilities in a form ready for plotting
 
-# In[6]:
+# In[4]:
 
 class Pmf(Counter):
     """A Counter with probabilities."""
@@ -143,19 +128,19 @@ class Pmf(Counter):
 
 # As an example, we can make a Pmf object that represents a 6-sided die.
 
-# In[7]:
+# In[5]:
 
 d6 = Pmf([1,2,3,4,5,6])
 d6.normalize()
 d6.name = 'one die'
-print(d6)
+print("d6:", d6)
 
 
 # ###5: Add operator
 
 # Using the add operator, we can compute the distribution for the sum of two dice.
 
-# In[8]:
+# In[6]:
 
 d6_twice = d6 + d6
 d6_twice.name = 'two dice'
@@ -168,10 +153,10 @@ for key, prob in d6_twice.items():
 
 # Using numpy.sum, we can compute the distribution for the sum of three dice. And then plot the results (using Pmf.render)
 
-# In[10]:
+# In[7]:
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 pmf_ident = Pmf([0])
 d6_thrice = sum([d6]*3, pmf_ident)
@@ -193,7 +178,7 @@ plt.show()
 # 
 # Suite is an abstract parent class; child classes should provide a likelihood method that evaluates the likelihood of the data under a given hypothesis. update_bayesian loops through the hypothesis, evaluates the likelihood of the data under each hypothesis, and updates the probabilities accordingly. Then it re-normalizes the PMF.
 
-# In[11]:
+# In[8]:
 
 class Suite(Pmf):
     """Map from hypothesis to probability."""
@@ -220,7 +205,7 @@ class Suite(Pmf):
 # 
 # Start by making a list of Pmfs to represent the dice:
 
-# In[12]:
+# In[9]:
 
 def make_die(num_sides):
     die = Pmf(range(1, num_sides+1))
@@ -228,9 +213,8 @@ def make_die(num_sides):
     die.normalize()
     return die
 
-
 dice = [make_die(x) for x in [4, 6, 8, 12, 20]]
-print(dice)
+print("dice:", dice)
 
 
 # ###9: DiceSuite
@@ -241,7 +225,7 @@ print(dice)
 # 
 # hypo is the hypothetical die I might have rolled; to get the likelihood of the data, I select, from the given die, the probability of the given value.
 
-# In[13]:
+# In[10]:
 
 class DiceSuite(Suite):
     
@@ -260,15 +244,15 @@ class DiceSuite(Suite):
 # 
 # Then update the distribution with the given value and print the results:
 
-# In[14]:
+# In[11]:
 
 dice_suite = DiceSuite(dice)
 
 dice_suite.bayesian_update(6)
 
 for die, prob in dice_suite.items():
-    print(die.name)
-    print(prob)
+    print("die.name:", die.name)
+    print("prob:", prob)
 
 
 # ###11: Update again
@@ -281,11 +265,11 @@ for die, prob in dice_suite.items():
 # 
 # These examples demonstrate the versatility of the Counter class, one of Python's underused data structures.
 
-# In[15]:
+# In[12]:
 
 dice_suite.bayesian_update(8)
 
 for die, prob in dice_suite.items():
-    print(die.name)
-    print(prob)
+    print("die.name:", die.name)
+    print("prob:", prob)
 

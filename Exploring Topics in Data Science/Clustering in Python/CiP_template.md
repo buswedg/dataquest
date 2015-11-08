@@ -1,41 +1,8 @@
 
 
 ```python
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+from __future__ import print_function
 ```
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
 
 #Exploring Topics in Data Science
 
@@ -54,14 +21,16 @@ import pandas as pd
 votes = pd.read_csv("data/114_congress.csv")
 
 # As you can see, there are 100 senators, and they voted on 15 bills (we subtract 3 because the first 3 columns aren't bills).
-print(votes.shape)
+print("votes.shape:", votes.shape)
 
 # We have more "Yes" votes than "No" votes overall
-print(pd.value_counts(votes.iloc[:,3:].values.ravel()))
+value_counts = pd.value_counts(votes.iloc[:,3:].values.ravel())
+print("value_counts:\n", value_counts)
 ```
 
-    (100, 18)
-    1.0    803
+    votes.shape: (100, 18)
+    value_counts:
+     1.0    803
     0.0    669
     0.5     28
     dtype: int64
@@ -90,10 +59,12 @@ labels = kmeans_model.labels_
 
 # The clustering looks pretty good!
 # It's separated everyone into parties just based on voting history
-print(pd.crosstab(labels, votes["party"]))
+crosstab = pd.crosstab(labels, votes["party"])
+print("crosstab:\n", crosstab)
 ```
 
-    party   D  I   R
+    crosstab:
+     party   D  I   R
     row_0           
     0      41  2   0
     1       3  0  54
@@ -113,10 +84,12 @@ democratic_oddballs = votes[(labels == 1) & (votes["party"] == "D")]
 
 # It looks like Reid has abstained a lot, which changed his cluster.
 # Manchin seems like a genuine oddball voter.
-print(democratic_oddballs["name"])
+oddballs = democratic_oddballs["name"]
+print("oddballs:\n", oddballs)
 ```
 
-    42    Heitkamp
+    oddballs:
+     42    Heitkamp
     56     Manchin
     74        Reid
     Name: name, dtype: object
@@ -169,10 +142,12 @@ kmeans_model = KMeans(n_clusters=5, random_state=1).fit(votes.iloc[:, 3:])
 labels = kmeans_model.labels_
 
 # The republicans are still pretty solid, but it looks like there are two democratic "factions"
-print(pd.crosstab(labels, votes["party"]))
+crosstab = pd.crosstab(labels, votes["party"])
+print("crosstab:\n", crosstab)
 ```
 
-    party   D  I   R
+    crosstab:
+     party   D  I   R
     row_0           
     0       6  0   0
     1       0  0  52
