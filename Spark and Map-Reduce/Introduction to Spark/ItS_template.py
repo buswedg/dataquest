@@ -3,21 +3,7 @@
 
 # In[1]:
 
-from IPython.display import HTML
-
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+from __future__ import print_function
 
 
 # #Spark and Map-Reduce
@@ -28,7 +14,7 @@ $( document ).ready(code_toggle);
 
 # ####Big Data
 
-# Big data is a phrase that has been repeated in the press for the last decade; with an ever-growing torrent of information flowing through the web, it's clear that it's a concept that's becoming increasingly relevant. Companies like Google and Yahoo! have grown their user bases significantly, collecting more information on how their users interact with their products. Moore's law and the rapidly falling cost of storage have contributed greatly to this phenomena.
+# Big data is a phrase that has been repeated in the press for the last decade; with an ever-growing torrent of information flowing through the web, it's clear that it's a concept that's becoming increasingly relevant. Companies like Google and Yahoo! have grown their user bases significantly, collecting more information on how their users interact with their products. <a href = "https://en.wikipedia.org/wiki/Moore%27s_law">Moore's law</a> and the rapidly <a href = "https://www.aei.org/wp-content/uploads/2013/04/storage3_f.jpg">falling cost of storage</a> have contributed greatly to this phenomena.
 # 
 # While software companies got better at collecting lots of data, their ability to analyze and make sense of that data didn't keep up at nearly the same pace. Since existing technologies were not built to analyze such large quantities of data, companies like Google, Facebook, Yahoo!, and LinkedIn had to build new paradigms and tools. Engineers tried bigger and more powerful computers to process large amounts of data but ran into limits for many computational problems. Along the way, paradigms like Map-Reduce were developed as a way to efficiently distribute calculations over hundreds or thousands of computers to calculate the result in parallel. Hadoop as an open-source project quickly became the dominant data processing toolkit for big data.
 
@@ -36,13 +22,13 @@ $( document ).ready(code_toggle);
 
 # Hadoop consists of both a filesystem, a distributed file system called HDFS (Hadoop Distributed File System), and its own implementation of the Map-Reduce paradigm. Map-Reduce involves turning the computation you want into Map and Reduce steps that Hadoop could easily distribute over lots of machines. We'll dive more into how Map-Reduce works later in this lesson.
 # 
-# While Hadoop made it possible to analyze large datasets, it still had its limitations. Hadoop relied heavily on disk storage for its computation, which is cheap to store large volumes of data but much slower than memory to access and process. Hadoop wasn't a great solution for calculations that required multiple passes over the same data or lots of intermediate steps because of the need to write to and read from disk between each step. This drawback also made Hadoop a interactive data analysis, which is a lot of the work data scientists perform. 
+# While Hadoop made it possible to analyze large datasets, it still had its limitations. Hadoop relied heavily on disk storage for its computation, which is cheap to store large volumes of data but much <a href = "http://www.cnet.com/news/understanding-ram-versus-hard-drive-space-via-an-analogy/">slower than memory to access</a> and process. Hadoop wasn't a great solution for calculations that required multiple passes over the same data or lots of intermediate steps because of the need to write to and read from disk between each step. This drawback also made Hadoop a interactive data analysis, which is a lot of the work data scientists perform. 
 # 
 # Hadoop also suffered from suboptimal support of additional libraries like SQL and machine learning implementations which many data scientists needed. Once the cost of RAM, or computer memory, started to drop significantly, augmenting or replacing Hadoop by storing data in-memory quickly emerged as an appealing alternative.
 
 # ###2: Ignite the Spark revolution
 
-# After lots of ground-breaking work led by the UC Berkeley AMP Lab, Spark was developed to utilize distributed, in-memory data structures to improve speeds by orders of magnitude for many data processing workloads. There are wonderful resources online if you are interested in learning more about why Spark is a crossover hit for data scientists or read some of the original papers on the Apache Spark homepage.
+# After lots of ground-breaking work led by the <a href = "https://amplab.cs.berkeley.edu/projects/spark-lightning-fast-cluster-computing/">UC Berkeley AMP Lab</a>, Spark was developed to utilize distributed, in-memory data structures to improve speeds by orders of magnitude for many data processing workloads. There are wonderful resources online if you are interested in learning more about <a href = "http://blog.cloudera.com/blog/2014/03/why-apache-spark-is-a-crossover-hit-for-data-scientists/">why Spark is a crossover hit for data scientists</a> or read some of the original papers on the <a href = "http://spark.apache.org/research.html">Apache Spark homepage</a>.
 
 # ###3: Resilient Distributed Datasets (RDD's)
 
@@ -50,9 +36,9 @@ $( document ).ready(code_toggle);
 
 # ####PySpark
 
-# While the Spark toolkit is writen in Scala, a language that compiles down to bytecode for the JVM, the open source community has developed a wonderful toolkit called PySpark that allows you to interface with RDD's in Python. Thanks to a library called Py4J, Python can interface with Java objects, in our case RDD's, and this library one of the tools that makes PySpark work.
+# While the Spark toolkit is writen in Scala, a language that compiles down to bytecode for the JVM, the open source community has developed a wonderful toolkit called <a href = "https://spark.apache.org/docs/0.9.0/python-programming-guide.html">PySpark</a> that allows you to interface with RDD's in Python. Thanks to a library called <a href = "https://github.com/bartdag/py4j">Py4J</a>, Python can interface with Java objects, in our case RDD's, and this library one of the tools that makes PySpark work.
 # 
-# To start off, we'll load the dataset containing all of the Daily Show guests into an RDD. We are using the TSV version of FiveThirtyEight's dataset. TSV files are separated, or delimited, by a tab character "\t" instead of a comma "," like in a CSV file.
+# To start off, we'll load the dataset containing all of the Daily Show guests into an RDD. We are using the TSV version of <a href = "https://github.com/fivethirtyeight/data/tree/master/daily-show-guests">FiveThirtyEight's dataset</a>. TSV files are separated, or delimited, by a tab character "\t" instead of a comma "," like in a CSV file.
 
 # In[2]:
 
@@ -70,30 +56,39 @@ sys.path.insert(0, spark_home + "/python")
 sys.path.insert(0, os.path.join(spark_home, 'python/lib/py4j-0.8.2.1-src.zip'))
 
 # Initialize PySpark to predefine the SparkContext variable 'sc'
-execfile(os.path.join(spark_home, 'python/pyspark/shell.py'))
+filename = os.path.join(spark_home, 'python/pyspark/shell.py')
+#execfile(filename)
+exec(compile(open(filename, "rb").read(), filename, 'exec'))
 
 
 # ###4: SparkContext
 
-# SparkContext is the object that manages the connection to the clusters in Spark and coordinates running processes on the clusters themselves. SparkContext connects to cluster managers, which manage the actual executors that run the specific computations.
+# SparkContext is the object that manages the connection to the clusters in Spark and coordinates running processes on the clusters themselves. SparkContext connects to cluster managers, which manage the actual executors that run the specific computations. Here's a diagram from the Spark documentation to better visualize the architecture:
+
+# In[3]:
+
+from IPython.display import Image
+
+Image(filename='sparkarch.png') 
+
 
 # The SparkContext object sc is automatically setup on our end:
 
-# In[3]:
+# In[4]:
 
 sc
 
 
 # We then run sc.textFile() to read the TSV dataset into an RDD object raw_data. The RDD object raw_data closely resembles a List of String objects, one object for each line in the dataset:
 
-# In[4]:
+# In[5]:
 
 raw_data = sc.textFile("data/daily_show_guests.tsv")
 
 
 # We then use the take() method to print the first 5 elements of the RDD:
 
-# In[5]:
+# In[6]:
 
 raw_data.take(5)
 
@@ -121,7 +116,7 @@ raw_data.take(5)
 # 
 # The map(f) function is known as a transformation step and either a named or lambda function f is required.
 
-# In[6]:
+# In[7]:
 
 daily_show = raw_data.map(lambda line: line.split('\t'))
 daily_show.take(5)
@@ -152,7 +147,7 @@ daily_show.take(5)
 
 # You may be wondering why we couldn't just split each String in place instead of creating a new object daily_show? In Python, we could have modified the collection element-by-element in place without returning and assignign to a new object.
 # 
-# RDD objects are immutable and their values can't be changed once the object is created. In Python, List objects and Dictionary objects are mutable, which means we can change the object's values, while Tuple objects are immutable. The only way to modify a Tuple object in Python is to create a new Tuple object with the necessary updates. Spark utilizes immutability of RDD's for speed gains.
+# RDD objects are <a href = "https://www.quora.com/Why-is-a-spark-RDD-immutable">immutable</a> and their values can't be changed once the object is created. In Python, List objects and Dictionary objects are mutable, which means we can change the object's values, while Tuple objects are immutable. The only way to modify a Tuple object in Python is to create a new Tuple object with the necessary updates. Spark utilizes immutability of RDD's for speed gains.
 
 # ###8: ReduceByKey()
 
@@ -170,7 +165,7 @@ daily_show.take(5)
 # 
 # If we want to achieve this same result using Spark, we will have to use a Map step followed by a ReduceByKey step.
 
-# In[7]:
+# In[8]:
 
 tally = daily_show.map(lambda x: (x[0], 1)).reduceByKey(lambda x,y: x+y)
 print(tally)
@@ -178,7 +173,9 @@ print(tally)
 
 # ###9: Explanation
 
-# You may notice that printing tally didn't return the histogram we were hoping for. Because of lazy evaluation, PySpark delayed executing the map and reduceByKey steps until we actually need it.
+# You may notice that printing tally didn't return the histogram we were hoping for. Because of lazy evaluation, PySpark delayed executing the map and reduceByKey steps until we actually need it. Before we use take() to preview the first few elements in tally, we'll walk through the code we just wrote.
+# 
+#     daily_show.map(lambda x: (x[0], 1)).reduceByKey(lambda x, y: x+y)
 # 
 # During the map step, we used a lambda function to create a tuple consisting of:
 # - key: x[0], the first value in the List 
@@ -186,24 +183,24 @@ print(tally)
 # 
 # Our high level strategy was to create a tuple with the key representing the Year and the value representing 1. After the map step, Spark will maintain in memory a list of tuples resembling the following:
 # 
-# ('YEAR', 1)
-# ('1991', 1)
-# ('1991', 1)
-# ('1991', 1)
-# ('1991', 1)
-# ...
+#     ('YEAR', 1)
+#     ('1991', 1)
+#     ('1991', 1)
+#     ('1991', 1)
+#     ('1991', 1)
+#     ...
 # 
 # and we'd like to reduce that down to:
 # 
-# ('YEAR', 1)
-# ('1991', 4)
-# ...
+#     ('YEAR', 1)
+#     ('1991', 4)
+#     ...
 # 
 # reduceByKey(f) combines tuples with the same key using the function we specify f.
 # 
 # To see the results of these 2 steps, we'll use the take command, which forces lazy code to run immediately. Since tally is an RDD, we can't use Python's len function to know how many elements are in the collection and will instead need to use the RDD count() function.
 
-# In[8]:
+# In[9]:
 
 tally.take(tally.count())
 
@@ -212,17 +209,17 @@ tally.take(tally.count())
 
 # Unlike Pandas, Spark knows nothing about column headers and didn't set them aside. We need a way to get rid of the element:
 # 
-# ('YEAR', 1)
+#     ('YEAR', 1)
 # 
 # from our collection. While you may be tempted to try to find a way to remove this element from the RDD, recall that RDD objects are immutable and can't be changed once created. The only way to remove that tuple is to create a new RDD object without that tuple.
 # 
-# Spark comes with a function filter(f) that allows us to create a new RDD from an existing one containing only the elements meeting our criteria. Specify a function f that returns a binary value, True or False, and the resulting RDD will consist of elements where the function evaluated to True. Read more about the filter function over at Spark's documentation.
+# Spark comes with a function filter(f) that allows us to create a new RDD from an existing one containing only the elements meeting our criteria. Specify a function f that returns a binary value, True or False, and the resulting RDD will consist of elements where the function evaluated to True. Read more about the filter function over at <a href = "https://spark.apache.org/docs/1.1.1/api/python/pyspark.rdd.RDD-class.html#filter">Spark's documentation</a>.
 
 # ####Instructions
 
 # Write a function filter_year that can be used to filter the element containing the value YEAR as the first value instead of an actual year.
 
-# In[9]:
+# In[10]:
 
 def filter_year(line):
     if line[0] == 'YEAR':
@@ -239,7 +236,7 @@ filtered_daily_show = daily_show.filter(lambda line: filter_year(line))
 # 
 # Thanks to Spark's aggressive usage of memory (and only disk as a backup and for specific tasks) and well architected core, Spark is able to improve significantly on Hadoop's turnaround time. In the following code cell, we'll filter out actors with no profession listed, lowercase each profession, generate a histogram of professions, and output the first 5 tuples in the histogram.
 
-# In[10]:
+# In[11]:
 
 filtered_daily_show.filter(lambda line: line[1] != '')                    .map(lambda line: (line[1].lower(), 1))                    .reduceByKey(lambda x,y: x+y)                    .take(5)
 
@@ -247,3 +244,5 @@ filtered_daily_show.filter(lambda line: line[1] != '')                    .map(l
 # ###12: Next steps
 
 # When working with larger datasets, PySpark really shines since it blurs the line between doing data science locally on your own computer and doing data science using large amounts of distributed computing on the internet (also referred to as the cloud).
+# 
+# If you'd like to learn how to install PySpark and integrate it with IPython Notebook, read <a href = "http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">this wonderful blog post</a> that walks you through the steps.
