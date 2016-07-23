@@ -1,0 +1,1846 @@
+serial,opeid,institution,address,city,state,zip,repayment_borrowers,default_borrowers,default_rate,borrower_default_count_240,principal_outstanding_240
+1,100200,Alabama Agricultural & Mechanical University,4900 Meridian Street,Normal,AL,35762-1357,145,54,37.24%,1606,954821
+6,100500,Alabama State University,915 South Jackson Street,Montgomery,AL,36104-5714,164,12,7.32%,1567,1410608
+13,100900,Auburn University,107 Samford Hall,Auburn,AL,36849-5113,479,29,6.05%,269,747267
+14,831000,Auburn University Montgomery,7440 East Drive,Montgomery,AL,36117-3596,88,20,22.73%,184,457312
+16,101200,Birmingham Southern College,900 Arkadelphia Road,Birmingham,AL,35254-0002,69,12,17.39%,93,240798
+5,1055400,Concordia College Alabama,1712 Broad Street,Selma,AL,36701-3323,0,0,0%,75,52874
+2,100300,Faulkner University,5345 Atlanta Highway,Montgomery,AL,36109-3398,53,6,11.32%,52,115167
+36,101900,Huntingdon College,1500 East Fairview Avenue,Montgomery,AL,36106-2148,117,23,19.66%,88,143488
+38,102000,Jacksonville State University,700 Pelham Road  North,Jacksonville,AL,36265-1602,1,1,100%,12,20745
+41,102200,Jefferson State Community College,2601 Carson Road,Birmingham,AL,35215-3098,0,0,0%,5,7204
+44,102300,Judson College,302 Bibb Street,Marion,AL,36756-2504,33,5,15.15%,36,49416
+52,102800,Miles College,5500 Myron Massey Boulevard,Fairfield,AL,35064-2697,95,2,2.11%,154,100765
+59,103300,Oakwood University,7000 Adventist Boulevard  Northwest,Huntsville,AL,35896-0001,0,0,0%,155,92661
+64,103600,Samford University,800 Lakeshore Drive,Birmingham,AL,35229-7000,142,16,11.27%,104,306848
+71,104100,Spring Hill College,4000 Dauphin Street,Mobile,AL,36608-1791,92,13,14.13%,149,285286
+72,104400,Stillman College,3600 Stillman Boulevard,Tuscaloosa,AL,35403-1430,72,39,54.17%,278,246591
+73,104600,Talladega College,627 West Battle Street,Talladega,AL,35160-2354,0,0,0%,186,213790
+74,104700,Troy University,University Avenue,Troy,AL,36082-0001,78,23,29.49%,223,503169
+76,105000,Tuskegee University,308 Kresge Center,Tuskegee Institute,AL,36088-1645,260,52,20.00%,3546,4642968
+79,105100,University of Alabama,Rose Administration Building,Tuscaloosa,AL,35487-0120,513,52,10.14%,580,1562286
+80,105200,University of Alabama at Birmingham,1530 3rd Avenue South,Birmingham,AL,35294-1150,533,54,10.13%,331,883084
+53,102900,University of Mobile,5735 College Parkway,Mobile,AL,36663-0220,43,12,27.91%,102,156983
+82,100400,University of Montevallo,Palmer Circle,Montevallo,AL,35115-6000,71,15,21.13%,106,106016
+27,101600,University of North Alabama,One Harrison Plaza,Florence,AL,35632-0001,224,53,23.66%,232,352401
+83,105700,University of South Alabama,307 University Boulevard North,Mobile,AL,36688-0002,57,1,1.75%,86,174837
+46,102400,University of West Alabama,205 North Washington,Livingston,AL,35470-0000,42,14,33.33%,83,101487
+153,109000,Arkansas State University,2105 Aggie Road,Jonesboro,AR,72401-0000,431,84,19.49%,822,1480913
+152,108900,Arkansas Tech University,215 West O Street,Russellville,AR,72801-2222,30,2,6.67%,268,780002
+163,109500,Crowley's Ridge College,100 College Drive,Paragould,AR,72450-9775,0,0,0%,43,57457
+172,109700,Harding University,915 East Market,Searcy,AR,72149-0001,344,41,11.92%,323,677161
+173,109800,Henderson State University,1100 Henderson Street,Arkadelphia,AR,71999-0001,34,7,20.59%,258,410471
+174,109900,Hendrix College,1600 Washington Avenue,Conway,AR,72032-3080,59,11,18.64%,114,306581
+175,110000,John Brown University,2000 West University Street,Siloam Springs,AR,72761-2747,43,2,4.65%,63,160702
+151,108800,Lyon College,2300 Highland Road,Batesville,AR,72501-3699,98,19,19.39%,41,137384
+169,1210500,National Park Community College,101 College Drive,Hot Springs,AR,71913-9174,0,0,0%,41,42893
+181,110200,Ouachita Baptist University,410 Ouachita Drive,Arkadelphia,AR,71998-0001,34,6,17.65%,53,192327
+184,110300,Philander Smith College,900 West Daisy Gaston Bates Drive,Little Rock,AR,72202-3718,0,0,0%,674,368358
+194,110700,Southern Arkansas University,100 East University,Magnolia,AR,71753-5000,35,8,22.86%,278,413409
+201,110800,University of Arkansas,425 Administration Building,Fayetteville,AR,72701-0000,474,57,12.03%,883,2627201
+206,111000,University of Arkansas at Fort Smith,5210 Grand Avenue,Fort Smith,AR,72904-7397,0,0,0%,22,7623
+202,110100,University of Arkansas at Little Rock,2801 South University,Little Rock,AR,72204-1099,0,0,0%,23,40583
+204,108500,University of Arkansas at Monticello,140 University Drive,Monticello,AR,71656-0000,126,47,37.30%,253,387238
+205,108600,University of Arkansas at Pine Bluff,1200 North University Drive,Pine Bluff,AR,71601-2790,16,7,43.75%,217,166389
+203,110900,University of Arkansas for Medical Sciences,4301 West Markham Street,Little Rock,AR,72205-7102,45,4,8.89%,54,128307
+197,109200,University of Central Arkansas,201 Donaghey Avenue,Conway,AR,72035-0001,422,69,16.35%,892,1931025
+160,109400,University of the Ozarks,415 North College Avenue,Clarksville,AR,72830-2880,1,0,0%,79,78291
+97,1084700,Arizona Automotive Institute,6829 North 46th Avenue,Glendale,AZ,85301-3503,31,2,6.45%,155,171124
+140,711300,Arizona Christian University,2625 East Cactus Road,Phoenix,AZ,85032-7097,0,0,0%,5,12987
+101,108100,Arizona State University,Student Financial Assistance Office,Tempe,AZ,85287-0412,428,59,13.79%,598,1831573
+102,107100,Arizona Western College,2020 South Avenue 8E,Yuma,AZ,85365-8847,2,0,0%,2,3204
+8903,4051300,Art Institute of Phoenix (The),2233 West Dunlap Avenue,Phoenix,AZ,85021-2859,129,38,29.46%,2112,2736889
+134,728300,Central Arizona College,8470 North Overfield Road,Coolidge,AZ,85228-9779,0,0,0%,54,25868
+8032,3072200,Chandler - Gilbert Community College,2626 East Pecos Road,Chandler,AZ,85225-2499,5,2,40.00%,0,0
+122,830300,GateWay Community College,108 North 40th Street,Phoenix,AZ,85034-1795,16,1,6.25%,32,43391
+115,107600,Glendale Community College,6000 West Olive Avenue,Glendale,AZ,85302-3090,8,1,12.50%,20,29951
+118,107400,Grand Canyon University,3300 West Camelback Road,Phoenix,AZ,85017-3030,217,56,25.81%,251,508955
+123,107700,Mesa Community College,1833 West Southern Avenue,Mesa,AZ,85202-4866,16,5,31.25%,46,74378
+126,108200,Northern Arizona University,Gammage  Building #1 Knoles Drive,Flagstaff,AZ,86011-0001,279,46,16.49%,553,1383055
+131,107800,Phoenix College,1202 West Thomas Road,Phoenix,AZ,85013-4234,17,1,5.88%,73,136284
+133,726600,Pima County Community College,401 North Bonita Avenue,Tucson,AZ,85709-5000,86,32,37.21%,435,902378
+6229,2217100,Pima Medical Institute,3350 East Grant Road,Tucson,AZ,85716-2800,0,0,0%,12,19413
+139,830400,Scottsdale Community College,9000 East Chaparral Road,Scottsdale,AZ,85256-2626,14,1,7.14%,17,22205
+94,107000,Thunderbird School of Global Management,1 Global Place,Glendale,AZ,85306-6000,93,8,8.60%,120,438467
+112,446700,Tucson College,5151 East Broadway Boulevard,Tucson,AZ,85711-3781,0,0,0%,84,69186
+146,822100,Universal Technical Institute,10695 West Pierce Street,Avondale,AZ,85323-7946,252,40,15.87%,815,924481
+5461,2100500,Universal Technical Institute,2844 West Deer Valley Road,Phoenix,AZ,85027-9969,73,10,13.70%,157,144604
+147,108300,University of Arizona (The),PO Box 210066,Tucson,AZ,85721-0066,334,60,17.96%,338,1286559
+6176,2098800,University of Phoenix,1625 West Fountainhead Parkway,Tempe,AZ,85282-2371,46,15,32.61%,264,739788
+5877,2171500,Western International University,9215 North Black Canyon Highway,Phoenix,AZ,85021-2718,18,4,22.22%,24,49545
+148,107900,Yavapai College,1100 East Sheldon Street,Prescott,AZ,86301-3297,37,13,35.14%,69,415383
+285,1111700,Alliant International University,10455 Pomerado Road,San Diego,CA,92131-1799,304,35,11.51%,405,1567170
+5623,2099200,American Conservatory Theater Foundation,30 Grant Avenue,San Francisco,CA,94108-5800,11,2,18.18%,8,26530
+6584,2179900,Argosy University,601 South Lewis Street,Orange,CA,92868-4844,127,20,15.75%,757,1507779
+233,111600,Art Center College of Design,1700 Lida Street,Pasadena,CA,91103-1999,77,33,42.86%,44,226457
+4630,902200,Associated Technical College,1670 Wilshire Boulevard,Los Angeles,CA,90017-1690,0,0,0%,117,156661
+7485,2553500,Associated Technical College,707 Broadway,San Diego,CA,92101-3245,1,0,0%,18,32923
+7486,2553100,Associated Technical College,1593 East Vista Way,Vista,CA,92084-3577,0,0,0%,25,45767
+236,111700,Azusa Pacific University,901 East Alosta Avenue,Azusa,CA,91702-7000,166,15,9.04%,197,490576
+237,111800,Bakersfield College,1801 Panorama Drive,Bakersfield,CA,93305-1299,0,0,0%,96,102842
+247,112100,Bethany University of the Assemblies of God,800 Bethany Drive,Scotts Valley,CA,95066-2896,45,15,33.33%,339,656452
+248,112200,Biola University,13800 Biola Avenue,La Mirada,CA,90639-0001,237,5,2.11%,45,75476
+5925,716400,Bryan University,3580 Wilshire Boulevard,Los Angeles,CA,90010-2501,3,2,66.67%,20,42484
+267,112500,California Baptist University,8432 Magnolia Avenue,Riverside,CA,92504-3297,61,12,19.67%,64,184385
+270,112700,California College of the Arts,1111 Eighth Street,San Francisco,CA,94107-2206,43,6,13.95%,132,260076
+274,1215400,California Institute of Integral Studies,1453 Mission Street,San Francisco,CA,94103-2557,0,0,0%,8,15543
+275,113100,California Institute of Technology,1200 East California Boulevard,Pasadena,CA,91125-0001,85,0,0%,20,76511
+276,113200,California Institute of the Arts,24700 McBean Parkway,Valencia,CA,91355-2397,106,9,8.49%,253,1061833
+277,113300,California Lutheran University,60 West Olsen Road,Thousand Oaks,CA,91360-2787,39,5,12.82%,48,222854
+278,113400,California Maritime Academy,200 Maritime Academy Drive,Vallejo,CA,94590-8181,54,9,16.67%,53,267913
+280,114300,California Polytechnic State University,One Grand Avenue,San Luis Obispo,CA,93407-0001,184,28,15.22%,162,584831
+292,114400,California State Polytechnic University  Pomona,3801 West Temple Avenue,Pomona,CA,91768-2500,316,34,10.76%,313,612938
+287,799300,California State University  Bakersfield,9001 Stockdale Highway,Bakersfield,CA,93311-1022,55,16,29.09%,197,449784
+293,114600,California State University  Chico,400 West First Street,Chico,CA,95929-0001,237,24,10.13%,402,1392341
+288,114100,California State University  Dominguez Hills,1000 East Victoria Street,Carson,CA,90747-0001,101,41,40.59%,337,640880
+296,113800,California State University  East Bay,25800 Carlos Bee Boulevard,Hayward,CA,94542-3000,223,48,21.52%,221,549890
+294,114700,California State University  Fresno,5150 North Maple Avenue,Fresno,CA,93740-8026,127,12,9.45%,97,359853
+295,113700,California State University  Fullerton,800 North State College Boulevard,Fullerton,CA,92831-3599,245,26,10.61%,440,979950
+298,113900,California State University  Long Beach,1250 Bellflower Boulevard,Long Beach,CA,90840-0006,519,57,10.98%,1000,1891297
+297,114000,California State University  Los Angeles,5151 State University Drive,Los Angeles,CA,90032-4226,96,10,10.42%,549,1284364
+8322,3260300,California State University  Monterey Bay,100 Campus Center,Seaside,CA,93955-8001,3,3,100%,3,7581
+299,115300,California State University  Northridge,18111 Nordhoff,Northridge,CA,91330-8307,168,30,17.86%,72,270026
+300,115000,California State University - Sacramento,6000 J Street,Sacramento,CA,95819-6044,154,28,18.18%,260,921490
+289,114200,California State University  San Bernardino,5500 University Parkway,San Bernardino,CA,92407-2397,65,5,7.69%,114,279561
+7629,3011300,California State University  San Marcos,333 South Twin Oaks Valley Road,San Marcos,CA,92096-0001,32,0,0%,6,15845
+291,115700,California State University  Stanislaus,One University Circle,Turlock,CA,95382-0299,50,10,20.00%,111,352836
+4637,1310300,California Western School of Law,225 Cedar Street,San Diego,CA,92101-3090,125,3,2.40%,109,464515
+260,974800,Carrington College California,8909 Folsom Boulevard,Sacramento,CA,95826-3203,33,8,24.24%,61,123415
+308,673100,Casa Loma College,6725 Kester Avenue,Van Nuys,CA,91405-4523,147,11,7.48%,115,175004
+317,116400,Chapman University,One University Drive,Orange,CA,92866-1099,158,6,3.80%,104,175631
+5191,1036500,Charles Drew University of Medicine and Science,1731 East 120th Street,Los Angeles,CA,90059-3025,0,0,0%,72,135632
+4642,450200,City College of San Francisco,50 Phelan Avenue,San Francisco,CA,94112-1821,211,41,19.43%,889,1294796
+322,116900,Claremont Graduate University,170 East 10th Street,Claremont,CA,91711-6163,35,6,17.14%,45,188672
+323,117000,Claremont McKenna College,500 East Ninth Street,Claremont,CA,91711-6400,79,1,1.27%,19,80170
+611,128800,Claremont School of Theology,1325 North College Avenue,Claremont,CA,91711-3199,36,7,19.44%,30,132989
+5915,2147400,Cleveland Chiropractic College,590 North Vermont Avenue,Los Angeles,CA,90004-2196,34,16,47.06%,70,66950
+324,117700,Cogswell Polytechnical College,1175 Bordeaux Drive,Sunnyvale,CA,94089-1210,0,0,0%,56,63333
+524,793000,Concorde Career College,4393 Imperial Avenue,San Diego,CA,92113-1962,31,5,16.13%,36,59369
+562,853700,Concorde Career College,201 East Airport Center Drive,San Bernardino,CA,92408-3403,33,8,24.24%,128,251290
+609,807100,Concorde Career College,12951 Euclid Street,Garden Grove,CA,92840-9201,24,3,12.50%,33,61264
+659,760700,Concorde Career College,12412 Victory Boulevard,North Hollywood,CA,91606-3134,31,5,16.13%,55,99335
+8085,2596400,Crimson Technical College,8911 Aviation Boulevard,Inglewood,CA,90301-2904,4,0,0%,25,50296
+361,448000,De Anza Community College,21250 Stevens Creek Boulevard,Cupertino,CA,95014-5793,69,21,30.43%,51,115255
+363,119600,Dominican University of California,50 Acacia Avenue,San Rafael,CA,94901-2298,59,9,15.25%,59,147920
+365,2226000,East Los Angeles College,1301 Avenida Cesar Chavez,Monterey Park,CA,91754-6099,62,9,14.52%,132,312879
+369,119700,El Camino College,16007 Crenshaw Boulevard,Torrance,CA,90506-0002,0,0,0%,174,76624
+373,903200,Empire College,3035 Cleveland Avenue,Santa Rosa,CA,95403-2122,18,4,22.22%,31,35685
+228,1206100,Everest College,1245 South Winchester,San Jose,CA,95128-3908,58,9,15.52%,184,214768
+255,809000,Everest College,2215 Mission Road,Alhambra,CA,91803-1310,65,11,16.92%,111,112493
+256,1110700,Everest College,511 North  Brookhurst Street,Anaheim,CA,92801-5231,35,4,11.43%,235,260455
+257,1110900,Everest College,18040 Sherman Way,Reseda,CA,91335-4631,18,4,22.22%,14,12491
+259,760600,Everest College,3460 Wilshire Boulevard,Los Angeles,CA,90010-2221,39,5,12.82%,179,250588
+261,1102400,Everest College,814 Mission Street,San Francisco,CA,94103-2091,39,5,12.82%,124,130378
+262,1112100,Everest College,22336 Main Street,Hayward,CA,94541-4007,42,6,14.29%,58,75140
+263,1112300,Everest College,1045 West Redondo Beach Boulevard,Gardena,CA,90247-4163,37,3,8.11%,87,85192
+603,449400,Everest College,217 East Club Center Drive,San Bernardino,CA,92408-3752,35,5,14.29%,50,64210
+377,1111200,Fashion Institute of Design & Merchandising,919 South Grand Avenue,Los Angeles,CA,90015-1421,670,64,9.55%,1333,1941152
+386,119900,Foothill College,12345 El Monte Road,Los Altos Hills,CA,94022-4597,44,5,11.36%,137,156737
+523,125300,Fresno Pacific University,1717 South Chestnut Avenue,Fresno,CA,93702-4798,51,13,25.49%,157,229499
+389,120000,Fuller Theological Seminary,135 North Oakland Avenue,Pasadena,CA,91182-0002,55,1,1.82%,21,73321
+391,1202700,Galen College of California,1325 North Wishon,Fresno,CA,93728-2381,106,15,14.15%,148,200706
+392,120200,Gavilan College,5055 Santa Teresa Boulevard,Gilroy,CA,95020-9599,0,0,0%,41,35307
+6994,2231900,Gemological Institute of America,5345 Armada Drive,Carlsbad,CA,92008-4602,58,1,1.72%,45,46771
+396,120500,Golden Gate University,536 Mission Street,San Francisco,CA,94105-2967,43,4,9.30%,203,615283
+398,120700,Graduate Theological Union,2400 Ridge Road,Berkeley,CA,94709-1212,29,2,6.90%,12,61568
+399,120800,Grossmont College,8800 Grossmont College Drive,El Cajon,CA,92020-1798,0,0,0%,5,3750
+402,120900,Hartnell Community College,411 Central Avenue,Salinas,CA,93901-1697,0,0,0%,42,20125
+403,117100,Harvey Mudd College,301 Platt Boulevard,Claremont,CA,91711-5990,73,2,2.74%,6,60980
+6630,723400,Heald College,875 Howard Street,San Francisco,CA,94103-3032,1,0,0%,66,62793
+415,118300,Holy Names University,3500 Mountain Boulevard,Oakland,CA,94619-1699,31,6,19.35%,62,146256
+522,125200,Hope International University,2500 East Nutwood Avenue,Fullerton,CA,92831-3104,40,12,30.00%,50,115268
+416,114900,Humboldt State University,1 Harpst Street,Arcata,CA,95521-8299,135,33,24.44%,406,1095389
+5668,2128300,Institute for Business & Technology,2400 Walsh Avenue,Santa Clara,CA,95051-1303,0,0,0%,20,22367
+427,448400,John F. Kennedy University,100 Ellinwood Way,Pleasant Hill,CA,94523-4817,27,4,14.81%,24,81984
+7906,121500,La Sierra University,4500 Riverwalk Parkway,Riverside,CA,92515-3332,214,9,4.21%,166,497886
+445,121800,Loma Linda University,11139 Anderson Street,Loma Linda,CA,92350-0001,210,10,4.76%,164,504770
+447,121900,Long Beach City College,4901 East Carson Street,Long Beach,CA,90808-1780,45,17,37.78%,58,169596
+450,122300,Los Angeles City College,855 North Vermont Avenue,Los Angeles,CA,90029-3588,100,28,28.00%,240,285444
+5966,616500,Los Angeles County College of Nursing and Allied Health,1237 North Mission Road,Los Angeles,CA,90033-1018,17,1,5.88%,26,49260
+451,122400,Los Angeles Harbor College,1111 Figueroa Place,Wilmington,CA,90744-2397,12,4,33.33%,38,51078
+452,1255000,Los Angeles Mission College,13356 Eldridge Avenue,Sylmar,CA,91342-3200,12,5,41.67%,15,21199
+453,122600,Los Angeles Pierce College,6201 Winnetka Avenue,Woodland Hills,CA,91371-0001,39,14,35.90%,66,104660
+455,704700,Los Angeles Southwest College,1600 West Imperial Highway,Los Angeles,CA,90047-4810,50,17,34.00%,192,163355
+456,122700,Los Angeles Trade-Technical College,400 West Washington Boulevard,Los Angeles,CA,90015-4181,108,23,21.30%,365,519452
+457,122800,Los Angeles Valley College,5800 Fulton Avenue,Valley Glen,CA,91401-4096,71,23,32.39%,153,183862
+459,1164900,Loyola Marymount University,One LMU Drive,Los Angeles,CA,90045-2659,442,17,3.85%,312,1272485
+465,714200,Lyle's College of Beauty,6735 North First Street,Fresno,CA,93710-3948,11,5,45.45%,88,78862
+5200,2208600,Madera Beauty College,325 N Gateway Drive,Madera,CA,93637-3519,0,0,0%,2,1811
+467,1231600,Manchester Beauty College,3756 North Blackstone Avenue,Fresno,CA,93726-5306,0,0,0%,69,47204
+449,122000,Master's College & Seminary (The),21726 Placerita Canyon Road,Santa Clarita,CA,91321-1200,32,4,12.50%,121,231111
+475,1167200,Mendocino College,1000 Hensley Creek Road,Ukiah,CA,95482-3000,0,0,0%,32,24338
+481,123800,Mills College,5000 MacArthur Boulevard,Oakland,CA,94613-1301,107,27,25.23%,127,301370
+5370,2119100,Mission College,3000 Mission College Boulevard,Santa Clara,CA,95054-1897,0,0,0%,11,14555
+491,124500,Mount San Antonio College,1100 North Grand Avenue,Walnut,CA,91789-1399,3,3,100%,48,77308
+500,1146000,National University,11255 North Torrey Pines Road,La Jolla,CA,92037-1011,483,55,11.39%,679,1307392
+5202,1170700,North-West College,2121 West Garvey Avenue  North,West Covina,CA,91790-2097,16,2,12.50%,324,673082
+5290,1287200,North-West College,134 West Holt Avenue,Pomona,CA,91768-3199,14,2,14.29%,131,286727
+7521,2591600,North-West College,530 East Union Street,Pasadena,CA,91101-1744,11,2,18.18%,37,61256
+332,117900,Notre Dame de Namur University,1500 Ralston Avenue,Belmont,CA,94002-1997,38,4,10.53%,91,138923
+515,124900,Occidental College,1600 Campus Road,Los Angeles,CA,90041-3314,52,2,3.85%,47,206915
+4675,1298900,Oceanside College of Beauty,1575 South Coast Highway,Oceanside,CA,92054-5393,0,0,0%,7,4789
+5174,125000,Orange Coast College,2701 Fairview Road,Costa Mesa,CA,92628-5005,98,20,20.41%,136,355564
+519,125100,Otis College of Art & Design,9045 Lincoln Boulevard,Los Angeles,CA,90045-3505,10,4,40.00%,24,40259
+525,125500,Pacific Oaks College,55 Eureka Street,Pasadena,CA,91103-3606,31,14,45.16%,55,124068
+526,125600,Pacific School of Religion,1798 Scenic Avenue,Berkeley,CA,94709-1323,2,0,0%,22,77405
+528,125800,Pacific Union College,1 Angwin Avenue,Angwin,CA,94508-9797,155,26,16.77%,261,669346
+532,126100,Pasadena City College,1570 East Colorado Boulevard,Pasadena,CA,91106-2003,52,21,40.38%,131,242321
+535,449000,Patten University,2433 Coolidge Avenue,Oakland,CA,94601-2699,0,0,0%,19,28394
+536,1014900,Pepperdine University,24255 Pacific Coast Highway,Malibu,CA,90263-4301,289,13,4.50%,211,1045652
+539,117200,Pitzer College,1050 North Mills Avenue,Claremont,CA,91711-6101,78,5,6.41%,73,349531
+540,126200,Point Loma Nazarene University,3900 Lomaland Drive,San Diego,CA,92106-2899,187,13,6.95%,130,301343
+541,117300,Pomona College,550 North College Avenue,Claremont,CA,91711-6301,71,1,1.41%,49,227077
+548,130800,Reedley College,995 North Reed Avenue,Reedley,CA,93654-2099,0,0,0%,1,618
+551,126900,Rio Hondo Community College,3600 Workman Mill Road,Whittier,CA,90601-1699,0,0,0%,86,53720
+557,891800,Saddleback College,28000 Marguerite Parkway,Mission Viejo,CA,92692-3699,2,0,0%,2,6566
+558,130200,Saint Mary's College of California,1928 Saint Mary's Road,Moraga,CA,94556-2744,181,21,11.60%,158,297442
+5919,701200,Samuel Merritt University,450 30th Street,Oakland,CA,94609-3108,55,3,5.45%,78,470493
+563,127200,San Bernardino Valley College,701 South Mount Vernon Avenue,San Bernardino,CA,92410-2798,16,9,56.25%,85,53136
+5046,1203100,San Diego Christian College,2100 Greenfield Drive,El Cajon,CA,92019-1157,35,3,8.57%,10,19100
+301,115100,San Diego State University,5500 Campanile Drive,San Diego,CA,92182-1690,206,8,3.88%,190,690380
+572,127800,San Francisco Conservatory of Music,50 Oak Street,San Francisco,CA,94102-6011,33,4,12.12%,36,169730
+574,115400,San Francisco State University,1600 Holloway Avenue,San Francisco,CA,94132-1740,765,80,10.46%,936,1547865
+579,115500,San Jose State University,One Washington Square,San Jose,CA,95192-0036,344,23,6.69%,334,1350167
+580,128400,Santa Ana College,1530 West 17th Street,Santa Ana,CA,92706-3398,48,7,14.58%,18,19758
+4694,998900,Santa Barbara Business College,4839 Market Street,Ventura,CA,93003-8053,64,14,21.88%,135,208876
+583,128500,Santa Barbara City College,721 Cliff Drive,Santa Barbara,CA,93109-2394,0,0,0%,59,35029
+653,132600,Santa Clara University,500 El Camino Real,Santa Clara,CA,95053-4956,169,13,7.69%,184,725635
+5595,2120600,Saybrook University,747 Front Street  3rd Floor,San Francisco,CA,94111-1920,2,2,100%,0,0
+597,117400,Scripps College,1030 Columbia Avenue,Claremont,CA,91711-3948,64,1,1.56%,41,155002
+601,129100,Simpson University,2211 College View Drive,Redding,CA,96003-8606,82,9,10.98%,24,38302
+290,115600,Sonoma State University,1801 East Cotati Avenue,Rohnert Park,CA,94928-3609,39,8,20.51%,45,193842
+610,123000,Southern California College of Optometry,2575 Yorba Linda Boulevard,Fullerton,CA,92831-1699,88,2,2.27%,5,36515
+618,129500,Southwestern Law School,3050 Wilshire Boulevard,Los Angeles,CA,90010-1106,122,7,5.74%,172,1382184
+619,130500,Stanford University,1 Stanford University,Stanford,CA,94305-1926,956,26,2.72%,329,2354070
+5040,1085400,Thomas Jefferson School of Law,1155 Island Avenue,San Diego,CA,92101-2928,44,4,9.09%,13,34051
+462,1231700,Tulare Beauty College,1400 West Inyo Avenue,Tulare,CA,93274-3432,0,0,0%,2,2175
+7805,2559300,United Education Institute,6055 Pacific Boulevard,Huntington Park,CA,90255-2933,0,0,0%,102,229978
+638,131200,University of California  Berkeley,200 California Hall,Berkeley,CA,94720-1520,610,35,5.74%,714,1606849
+639,131300,University of California  Davis,One Shields Avenue,Davis,CA,95616-8558,2207,130,5.89%,845,2733426
+404,394700,University of California  Hastings College of the Law,200 McAllister Street,San Francisco,CA,94102-4978,315,12,3.81%,63,483376
+640,131400,University of California  Irvine,501 Aldrich Hall,Irvine,CA,92697-0001,594,12,2.02%,330,808017
+641,131500,University of California  Los Angeles,405 Hilgard Avenue,Los Angeles,CA,90095-9000,2438,58,2.38%,627,1744011
+642,131600,University of California  Riverside,900 University Avenue,Riverside,CA,92521-0209,777,41,5.28%,361,636348
+644,131700,University of California  San Diego,9500 Gilman Drive,La Jolla,CA,92093-0013,1200,83,6.92%,907,2169260
+645,131900,University of California  San Francisco,513 Parnassus Avenue,San Francisco,CA,94143-0246,276,1,0.36%,17,200422
+643,132000,University of California  Santa Barbara,5221 Cheadle Hall,Santa Barbara,CA,93106-2030,818,59,7.21%,614,1760216
+646,132100,University of California  Santa Cruz,1156 High Street,Santa Cruz,CA,95064-0001,870,48,5.52%,485,930011
+435,121600,University of La Verne,1950 3rd Street,La Verne,CA,91750-4443,230,46,20.00%,409,655126
+648,132200,University of Redlands,1200 East Colton Avenue,Redlands,CA,92373-0999,118,13,11.02%,217,685867
+649,1039500,University of San Diego,5998 Alcala Park,San Diego,CA,92110-2492,355,31,8.73%,315,1181833
+652,132500,University of San Francisco,2130 Fulton Street,San Francisco,CA,94117-1080,339,26,7.67%,205,749017
+654,132800,University of Southern California,University Park Campus,Los Angeles,CA,90089-0001,1522,49,3.22%,1838,5629107
+655,132900,University of the Pacific,3601 Pacific Avenue,Stockton,CA,95211-0197,564,32,5.67%,368,1450806
+612,129300,Vanguard University of Southern California,55 Fair Drive,Costa Mesa,CA,92626-6597,118,29,24.58%,157,317016
+675,117600,West Hills Community College,300 Cherry Lane,Coalinga,CA,93210-1399,0,0,0%,4,4291
+676,859600,West Los Angeles College,9000 Overland Avenue,Culver City,CA,90230-3500,21,10,47.62%,104,138382
+677,133800,West Valley College,14000 Fruitvale Avenue,Saratoga,CA,95070-5697,0,0,0%,55,59946
+5596,2482700,Western University of Health Sciences,College Plaza,Pomona,CA,91766-1854,220,14,6.36%,57,316721
+683,134100,Westmont College,955 La Paz Road,Santa Barbara,CA,93108-1099,58,7,12.07%,65,221580
+8556,3072700,Westwood College - Los Angeles,3250 Wilshire Boulevard,Los Angeles,CA,90010-1577,1,1,100%,16,22548
+544,1162600,Westwood College - South Bay,19700 South Vermont Avenue,Torrance,CA,90502-1148,1,0,0%,84,128532
+684,134200,Whittier College,13406 East Philadelphia Street,Whittier,CA,90601-4413,145,20,13.79%,168,517934
+5922,134300,Woodbury University,7500 North Glenoaks Boulevard,Burbank,CA,91504-1052,45,7,15.56%,78,318114
+688,884600,Wright Institute (The),2728 Durant Avenue,Berkeley,CA,94704-1796,79,1,1.27%,38,147022
+598,719000,WyoTech,200 Whitney Place,Fremont,CA,94539-7663,21,4,19.05%,16,24020
+693,134500,Adams State University,208 Edgemont Boulevard,Alamosa,CO,81102-2373,53,4,7.55%,153,264659
+5293,2078900,Art Institute of Colorado (The),1200 Lincoln Street,Denver,CO,80203-2172,149,44,29.53%,460,576247
+738,940100,Colorado Christian University,8787 W. Alameda Avenue,Lakewood,CO,80226-7449,51,3,5.88%,54,70690
+704,134700,Colorado College,14 East Cache La Poudre,Colorado Springs,CO,80903-3294,102,3,2.94%,27,135712
+722,135800,Colorado Mesa University,1100 North Avenue,Grand Junction,CO,81501-3122,48,8,16.67%,286,351025
+736,135900,Colorado Northwestern Community College,500 Kennedy Drive,Rangely,CO,81648-3598,39,6,15.38%,110,256764
+707,134800,Colorado School of Mines,1500 Illinois Street,Golden,CO,80401-1887,121,9,7.44%,77,345369
+708,135000,Colorado State University,102 Administration Building,Fort Collins,CO,80523-0100,694,117,16.86%,961,2751851
+743,136500,Colorado State University-Pueblo,2200 Bonforte Boulevard,Pueblo,CO,81001-4901,31,8,25.81%,753,1786318
+705,1014800,Colorado Technical University,4435 North Chestnut Street,Colorado Springs,CO,80907-3896,51,7,13.73%,200,332207
+4994,887100,Concorde Career College,111 Havana Street,Aurora,CO,80010-4314,77,12,15.58%,85,118846
+715,135300,Fort Lewis College,1000 Rim Drive,Durango,CO,81301-3999,147,26,17.69%,277,482684
+6436,2267500,Glenwood Beauty Academy,51241 Highway 6 & 24  Suite 1,Glenwood Springs,CO,81601-2577,0,0,0%,6,6882
+716,135400,Iliff School of Theology,2201 South University Boulevard,Denver,CO,80210-4798,69,5,7.25%,33,241296
+6699,2253700,IntelliTec College,2315 East Pikes Peak Avenue,Colorado Springs,CO,80909-6096,79,16,20.25%,169,393731
+8169,3066900,IntelliTec College,772 Horizon Drive,Grand Junction,CO,81506-3994,38,3,7.89%,104,131640
+734,863500,IntelliTec Medical Institute,6805 Corporate Drive  Suite 100,Colorado Springs,CO,80919-1570,22,7,31.82%,40,41146
+717,135500,Lamar Community College,2401 South Main,Lamar,CO,81052-3999,0,0,0%,57,39697
+711,754700,Lincoln College of Technology,11194 East 45th Street,Denver,CO,80239-3006,82,25,30.49%,882,979006
+723,136000,Metropolitan State University of Denver,890 Auraria Parkway,Denver,CO,80204-3362,458,77,16.81%,1018,2958172
+5390,2117500,Naropa University,2130 Arapahoe Avenue,Boulder,CO,80302-6697,51,13,25.49%,150,258933
+4990,1300700,Nazarene Bible College,1111 Academy Park Loop,Colorado Springs,CO,80910-3717,5,2,40.00%,3,7899
+8025,3014900,Platt College,3100 South Parker Road Suite 200,Aurora,CO,80014-3141,23,2,8.70%,21,61083
+703,729700,Redstone College,10851 West 120th Avenue,Broomfield,CO,80020-9988,8,1,12.50%,502,824198
+737,136300,Regis University,3333 Regis Boulevard,Denver,CO,80221-1099,140,7,5.00%,53,154523
+745,136800,Trinidad State Junior College,600 Prospect Street,Trinidad,CO,81082-2396,0,0,0%,9,5190
+749,450900,University of Colorado at Colorado Springs,1420 Austin Bluffs Parkway,Colorado Springs,CO,80918-3735,106,20,18.87%,320,1046294
+748,137000,University of Colorado Boulder,Regent Adminstrative Center 175,Boulder,CO,80309-0077,431,12,2.78%,876,2699379
+747,450800,University of Colorado Denver,1380 Lawrence Street,Denver,CO,80204-2029,236,23,9.75%,192,573388
+751,137100,University of Denver,University Park Campus,Denver,CO,80208-2000,417,6,1.44%,156,686063
+752,134900,University of Northern Colorado,501 20th Street,Greeley,CO,80639-0001,460,72,15.65%,581,1050937
+755,137200,Western State Colorado University,Taylor Hall,Gunnison,CO,81231-0000,63,6,9.52%,209,401079
+712,754800,Westwood College - Denver North,7350 North Broadway,Denver,CO,80221-3653,17,1,5.88%,409,733152
+757,137400,Albertus Magnus College,700 Prospect Street,New Haven,CT,06511-1189,51,19,37.25%,91,163779
+771,763500,Capital Community College,950 Main,Hartford,CT,06103-1207,0,0,0%,2,1200
+763,137800,Central Connecticut State University,1615 Stanley Street,New Britain,CT,06050-2490,271,51,18.82%,598,1053994
+767,137900,Connecticut College,270 Mohegan Avenue,New London,CT,06320-4196,169,11,6.51%,131,300775
+769,142500,Eastern Connecticut State University,83 Windham Street,Willimantic,CT,06226-2295,61,6,9.84%,323,421665
+770,138500,Fairfield University,1073 North Benson Road,Fairfield,CT,06824-5171,229,5,2.18%,139,200849
+7930,730300,Lincoln Technical Institute,200 John Downey Drive,New Britain,CT,06051-2904,0,0,0%,9,17251
+776,139200,Manchester Community College,Great Path,Manchester,CT,06045-1046,2,0,0%,19,22297
+778,803800,Middlesex Community College,100 Training Hill Road,Middletown,CT,06457-4889,1,1,100%,9,19863
+779,139300,Mitchell College,437 Pequot Avenue,New London,CT,06320-4498,39,8,20.51%,181,314262
+777,698200,Naugatuck Valley Community College,750 Chase Parkway,Waterbury,CT,06708-3089,0,0,0%,181,155540
+786,745900,Paier College of Art,20 Gorham Avenue,Hamden,CT,06514-3902,25,3,12.00%,16,36049
+787,140100,Post University,800 Country Club Road,Waterbury,CT,06723-3240,63,42,66.67%,138,270432
+789,140200,Quinnipiac University,275 Mount Carmel Avenue,Hamden,CT,06518-1908,273,3,1.10%,110,247639
+791,140300,Sacred Heart University,5151 Park Avenue,Fairfield,CT,06825-1000,33,3,9.09%,42,84701
+796,140600,Southern Connecticut State University,501 Crescent Street,New Haven,CT,06515-1355,159,37,23.27%,615,1264236
+782,1242500,Stone Academy,1315 Dixwell Avenue,Hamden,CT,06514-4125,109,22,20.18%,112,175507
+780,976500,Three Rivers Community College,574 New London Turnpike,Norwich,CT,06360-6598,0,0,0%,92,72353
+799,141400,Trinity College,300 Summit Street,Hartford,CT,06106-3100,90,9,10.00%,55,211725
+800,976400,Tunxis Community College,271 Scott Swamp Road,Farmington,CT,06032-3187,20,1,5.00%,25,58236
+801,141600,University of Bridgeport,126 Park Avenue,Bridgeport,CT,06601-5650,261,55,21.07%,626,1814944
+802,141700,University of Connecticut,352 Mansfield Road,Storrs,CT,06269-2151,878,49,5.58%,568,1013563
+803,142200,University of Hartford,200 Bloomfield Avenue,West Hartford,CT,06117-1599,249,17,6.83%,410,696694
+804,139700,University of New Haven,300 Boston Post Road,West Haven,CT,06516-1999,121,24,19.83%,313,770733
+792,140900,University of Saint Joseph,1678 Asylum Avenue,West Hartford,CT,06117-2791,76,18,23.68%,53,218512
+807,142400,Wesleyan University,237 High Street,Middletown,CT,06459-3208,243,18,7.41%,146,642423
+808,138000,Western Connecticut State University,181 White Street,Danbury,CT,06810-6826,116,14,12.07%,293,587881
+809,142600,Yale University,246 Church Street,New Haven,CT,06520-8288,452,25,5.53%,287,1735979
+822,143400,American University (The),4400 Massachusetts Avenue NW,Washington,DC,20016-8020,246,18,7.32%,427,950887
+830,143700,Catholic University of America (The),620 Michigan Avenue  Northeast,Washington,DC,20064-0002,254,16,6.30%,403,773570
+832,1195000,Corcoran College of Art and Design,500 17th Street  NW,Washington,DC,20006-4804,69,5,7.25%,27,50878
+837,144300,Gallaudet University,800 Florida Avenue NorthEast,Washington,DC,20002-3695,86,6,6.98%,75,178943
+839,144400,George Washington University,2121 Eye Street Northwest,Washington,DC,20052-2353,960,34,3.54%,599,2043883
+840,144500,Georgetown University,37th and O Streets NW,Washington,DC,20057-1252,515,14,2.72%,179,1185166
+841,144800,Howard University,2400 Sixth Street  NW,Washington,DC,20059-0001,59,8,13.56%,275,850546
+848,145900,Strayer University,1133 15th  Street NW,Washington,DC,20005-2603,0,0,0%,63,30322
+850,146000,Trinity College,125 Michigan Avenue  Northeast,Washington,DC,20017-1004,98,25,25.51%,58,178731
+836,144100,University of the District of Columbia,4200 Connecticut Avenue Northwest,Washington,DC,20008-1175,33,15,45.45%,477,747211
+811,142800,Delaware State University,1200 North Dupont Highway,Dover,DE,19901-2277,56,31,55.36%,29,59907
+812,2144900,Delaware Technical & Community College,333 Shipley Street - #103,Wilmington,DE,19801-2412,0,0,0%,19,20345
+815,1172700,Delaware Technical & Community College,Financial Aid Office,Dover,DE,19901-8736,0,0,0%,5,6194
+814,705300,Delaware Technical & Community College - Owens Campus,Rt. 18,Georgetown,DE,19947-0000,0,0,0%,19,23879
+816,142900,Goldey-Beacom College,4701 Limestone Road,Wilmington,DE,19808-1993,70,22,31.43%,51,1660072
+818,143100,University of Delaware,104 Hullihen Hall,Newark,DE,19716-0099,504,16,3.17%,462,960221
+819,143300,Wesley College,120 North State Street,Dover,DE,19901-3875,102,39,38.24%,190,280829
+856,1019500,Art Institute of Fort Lauderdale (The),1799 Southeast 17th Street,Fort Lauderdale,FL,33316-3013,250,67,26.80%,898,919435
+6199,2215900,ATI Career Training Center,2890 NW 62nd Street,Fort Lauderdale,FL,33309-1785,0,0,0%,22,28742
+7310,2293200,ATI Career Training Center,1525 Northwest 167th Street,Miami,FL,33169-5742,0,0,0%,10,27312
+857,146600,Barry University,11300 Northeast 2 Avenue,Miami Shores,FL,33161-6628,104,43,41.35%,246,543343
+8846,3373300,Beacon College,105 East Main Street,Leesburg,FL,34748-5224,44,0,0%,0,0
+859,146700,Bethune Cookman University,640 Dr. Mary McLeod Bethune Blvd,Daytona Beach,FL,32114-3099,0,0,0%,485,349148
+5856,2089600,Concorde Career Institute,7960 Arlington Expressway,Jacksonville,FL,32211-7429,27,5,18.52%,41,87612
+874,148700,Eckerd College,4200 54th Avenue South,Saint Petersburg,FL,33711-4744,171,22,12.87%,142,186939
+877,147900,Embry-Riddle Aeronautical University,600 South Clyde Morris Boulevard,Daytona Beach,FL,32114-3900,430,17,3.95%,168,593650
+8506,3108500,Everglades University,5002 T-Rex Avenue,Boca Raton,FL,33431-0000,9,1,11.11%,14,14052
+878,789300,Flagler College,74 King Street,Saint Augustine,FL,32085-4342,30,8,26.67%,33,77707
+879,148000,Florida Agricultural & Mechanical University,1500 S Martin Luther King Jr Blvd,Tallahassee,FL,32307-3100,94,37,39.36%,602,528429
+880,148100,Florida Atlantic University,777 Glades Road,Boca Raton,FL,33431-6498,61,8,13.11%,160,440493
+881,148200,Florida College,119 North Glen Arven Avenue,Temple Terrace,FL,33617-5578,41,13,31.71%,92,137270
+7960,3008600,Florida College of Natural Health,2001 West Sample Road,Pompano Beach,FL,33064-1342,21,2,9.52%,27,41307
+882,146900,Florida Institute of Technology,150 West University Boulevard,Melbourne,FL,32901-6988,248,38,15.32%,186,486275
+883,963500,Florida International University,Modesto A. Maidique Campus,Miami,FL,33199-0001,113,30,26.55%,464,565163
+7565,2547600,Florida National College,4425 West 20th Avenue,Hialeah,FL,33012-4108,32,3,9.38%,8,7261
+887,148800,Florida Southern College,111 Lake Hollingsworth Drive,Lakeland,FL,33801-5698,120,24,20.00%,295,587209
+888,148900,Florida State University,211 Wescott Building,Tallahassee,FL,32306-1470,520,34,6.54%,550,1598810
+895,149500,Jacksonville University,2800 University Boulevard North,Jacksonville,FL,32211-3394,83,31,37.35%,193,585495
+896,149700,Jones College,5353 Arlington Expressway,Jacksonville,FL,32211-5588,5,0,0%,237,502307
+6085,2151900,Keiser University,1500 Northwest 49th Street,Fort Lauderdale,FL,33309-3700,62,0,0%,418,387933
+904,150500,Lynn University,3601 North Military Trail,Boca Raton,FL,33431-5598,2,0,0%,114,188281
+906,150600,Miami Dade College,300 Northeast 2 Avenue,Miami,FL,33132-2297,541,23,4.25%,1534,2859608
+5464,887800,Miami International University of Art & Design,1501 Biscayne Boulevard,Miami,FL,33132-1418,42,5,11.90%,155,139940
+908,150800,North Florida Community College,325 NW Turner Davis Drive,Madison,FL,32340-1699,0,0,0%,57,11228
+909,150900,Nova Southeastern University,3301 College Avenue,Fort Lauderdale,FL,33314-7796,166,7,4.22%,151,409855
+911,884900,Palm Beach Atlantic University,901 South Flagler Drive,West Palm Beach,FL,33401-6505,37,4,10.81%,66,119028
+918,151500,Rollins College,1000 Holt Avenue,Winter Park,FL,32789-4499,68,17,25.00%,93,205839
+923,152600,Saint Leo University,33701 State Road 52,Saint Leo,FL,33574-6665,93,34,36.56%,166,398909
+860,146800,Saint Thomas University,16401 N W 37th Avenue,Miami Gardens,FL,33054-0000,129,19,14.73%,367,983746
+8509,3123900,Southeastern College,6812 Forest Hill Blvd D1,Greenacres,FL,33413-0000,13,1,7.69%,14,10358
+932,152100,Southeastern University,1000 Longfellow Boulevard,Lakeland,FL,33801-6099,111,28,25.23%,128,213056
+924,152800,St. Petersburg College,6021 142nd Avenue North,Clearwater,FL,33760-3768,0,0,0%,19,26234
+933,153100,Stetson University,421 North Woodland Boulevard,DeLand,FL,32723-3761,145,18,12.41%,301,1099234
+9082,3549300,Ultimate Medical Academy,1255 Cleveland Street,Clearwater,FL,33756-4917,2766,273,9.87%,0,0
+889,395400,University of Central Florida,4000 Central Florida Boulevard,Orlando,FL,32816-0001,275,33,12.00%,380,903270
+939,153500,University of Florida,226 Tigert Hall,Gainesville,FL,32611-3150,1026,54,5.26%,988,2939499
+940,153600,University of Miami,1204 Dickinson Drive,Coral Gables,FL,33146-6531,1081,88,8.14%,1458,3540282
+942,153700,University of South Florida,4202 East Fowler Avenue,Tampa,FL,33620-6960,408,57,13.97%,675,1209448
+943,153800,University of Tampa,401 West Kennedy Boulevard,Tampa,FL,33606-1490,137,13,9.49%,162,196934
+944,395500,University of West Florida (The),11000 University Parkway,Pensacola,FL,32514-5750,134,21,15.67%,267,636434
+946,884800,Warner University,13895  Highway 27,Lake Wales,FL,33859-8725,31,3,9.68%,20,42664
+948,154000,Webber International University,1201 Scenic Highway,Babson Park,FL,33827-0096,24,4,16.67%,46,66562
+949,154100,Abraham Baldwin Agricultural College,2802 Moore Highway,Tifton,GA,31793-2601,0,0,0%,243,291790
+953,154400,Albany State University,504 College Drive,Albany,GA,31705-2796,32,8,25.00%,159,106875
+957,154600,Armstrong Atlantic State University,11935 Abercorn Street,Savannah,GA,31419-1997,0,0,0%,9,3382
+1019,927000,Art Institute of Atlanta (The),6600 Peachtree Dunwoody Road,Atlanta,GA,30328-1649,219,96,43.84%,1368,1390359
+967,155200,Augusta State University,2500 Walton Way,Augusta,GA,30904-2200,31,4,12.90%,136,154856
+971,155400,Berry College,2277 Martha Berry Highway NW,Mount Berry,GA,30149-5007,67,4,5.97%,18,67258
+975,155600,Brenau University,500 Washington Street  SE,Gainesville,GA,30501-3668,95,16,16.84%,86,153620
+976,155700,Brewton Parker College,201 David Eliza Fountain Circle,Mount Vernon,GA,30445-0000,40,20,50.00%,138,108644
+6093,2060900,Brown College of Court Reporting,1900 Emery Street Northwest,Atlanta,GA,30318-2570,58,6,10.34%,63,75557
+7941,155900,Clark Atlanta University,223 James P. Brawley Drive SW,Atlanta,GA,30314-4385,222,103,46.40%,827,2096341
+982,897600,Clayton State University,2000 Clayton State Boulevard,Morrow,GA,30260-0285,0,0,0%,2,1770
+984,156100,Columbus State University,4225 University Avenue,Columbus,GA,31907-5645,119,22,18.49%,133,183625
+987,348400,Covenant College,14049 Scenic Highway,Lookout Mountain,GA,30750-4164,100,7,7.00%,88,178638
+997,156400,Emory University,200 Dowman Drive Suite 300,Atlanta,GA,30322-1960,392,16,4.08%,125,615399
+999,156600,Fort Valley State University,1005 State University Drive,Fort Valley,GA,31030-3298,102,44,43.14%,591,810604
+1001,160200,Georgia College & State University,231 West Hancock Street,Milledgeville,GA,31061-0490,160,14,8.75%,47,146007
+1020,157900,Georgia Health Sciences University,1120 Fifteenth Street,Augusta,GA,30912-0004,174,4,2.30%,13,25167
+1002,156900,Georgia Institute of Technology,225 North Avenue Northwest,Atlanta,GA,30332-0325,195,7,3.59%,101,360613
+1004,157200,Georgia Southern University,Rosenwald Bldg  Sweetheart Circle,Statesboro,GA,30460-8065,208,37,17.79%,295,465215
+1005,157300,Georgia Southwestern State University,800 GSW University Drive,Americus,GA,31709-4693,58,11,18.97%,78,156888
+1006,157400,Georgia State University,30 Courtland Street,Atlanta,GA,30303-3010,232,27,11.64%,701,1397099
+1012,156800,Interdenominational Theological Center,700 Martin Luther King Jr Drive SW,Atlanta,GA,30314-4143,7,1,14.29%,43,64229
+1013,157700,Kennesaw State University,1000 Chastain Road,Kennesaw,GA,30144-5591,39,9,23.08%,109,126450
+1014,157800,LaGrange College,601 Broad Street,LaGrange,GA,30240-2999,56,11,19.64%,61,105394
+5611,2074800,Life University,1269 Barclay Circle,Marietta,GA,30060-2996,272,39,14.34%,397,1509820
+1022,158000,Mercer University,1400 Coleman Avenue,Macon,GA,31207-0001,267,19,7.12%,142,524549
+1023,158100,Middle Georgia College,1100 Second Street SE,Cochran,GA,31014-1599,12,3,25.00%,0,0
+1024,158200,Morehouse College,830 Westview Drive SW,Atlanta,GA,30314-3773,57,25,43.86%,1243,1682670
+6094,2482100,Morehouse School of Medicine,720 Westview Drive Southwest,Atlanta,GA,30310-1495,50,0,0%,47,293145
+1028,158500,North Georgia College & State University,82 College Circle,Dahlonega,GA,30597-0001,102,23,22.55%,62,138442
+1030,158600,Oglethorpe University,4484 Peachtree Road  Northeast,Atlanta,GA,30319-2737,36,11,30.56%,82,184550
+1031,158700,Paine College,1235 Fifteenth Street,Augusta,GA,30901-3182,28,14,50.00%,269,237205
+1039,159000,Savannah State University,3219 College Street,Savannah,GA,31404-5298,42,16,38.10%,325,369592
+1041,159100,Shorter University,315 Shorter Avenue,Rome,GA,30165-4298,10,4,40.00%,138,265971
+4731,1303900,South University,709 Mall Boulevard,Savannah,GA,31406-4881,57,2,3.51%,386,464637
+5798,157000,Southern Polytechnic State University,1100 South Marietta Parkway,Marietta,GA,30060-2896,3,1,33.33%,44,72603
+1044,159400,Spelman College,350 Spelman Lane Southwest,Atlanta,GA,30314-4399,108,3,2.78%,201,400220
+1049,159600,Toccoa Falls College,325 Chapel Drive,Toccoa Falls,GA,30598-0001,13,1,7.69%,32,51958
+1051,159800,University of Georgia,Administration Building,Athens,GA,30602-1661,369,13,3.52%,116,379434
+1059,160100,University of West Georgia,1601 Maple Street,Carrollton,GA,30118-0002,147,45,30.61%,476,497926
+1058,160000,Wesleyan College,4760 Forsyth Road,Macon,GA,31210-4462,67,16,23.88%,57,131690
+1063,160500,Chaminade University of Honolulu,3140 Waialae Avenue,Honolulu,HI,96816-1578,101,48,47.52%,217,586930
+1067,727900,Hawaii Pacific University,1164 Bishop Street,Honolulu,HI,96813-2882,188,22,11.70%,175,353485
+1071,161200,Honolulu Community College,874 Dillingham Boulevard,Honolulu,HI,96817-4598,58,16,27.59%,184,253501
+1073,161300,Kapiolani Community College,4303 Diamond Head Road,Honolulu,HI,96816-4421,64,14,21.88%,66,92726
+1074,161400,Kauai Community College,3-1901 Kaumualii Highway,Lihue,HI,96766-9591,0,0,0%,1,1267
+1075,454900,Leeward Community College,96-045 Ala Ike,Pearl City,HI,96782-3393,20,5,25.00%,37,39155
+1068,161100,University of Hawaii at Hilo,200 West Kawili Street,Hilo,HI,96720-4091,84,11,13.10%,208,514953
+1078,161000,University of Hawaii at Manoa,2444 Dole Street,Honolulu,HI,96822-2399,457,44,9.63%,442,1538822
+1076,161500,University of Hawaii Maui College,310 West Kaahumanu Avenue,Kahului,HI,96732-1644,49,15,30.61%,71,126740
+1080,1122000,Windward Community College,45-720 Keaahala Road,Kaneohe,HI,96744-3528,25,5,20.00%,17,25455
+8408,3069100,Allen College,1825 Logan Avenue,Waterloo,IA,50703-1916,2,0,0%,0,0
+1405,396300,American Institute of Business,2500 Fleur Drive,Des Moines,IA,50321-1799,72,11,15.28%,205,197722
+1412,184600,Briar Cliff University,3303 Rebecca Street,Sioux City,IA,51104-2100,99,11,11.11%,183,492146
+1413,184700,Buena Vista University,610 West Fourth Street,Storm Lake,IA,50588-9987,176,14,7.95%,164,259123
+1415,185000,Central College,812 University Street,Pella,IA,50219-1999,271,20,7.38%,216,309850
+1416,185200,Clarke University,1550 Clarke Drive,Dubuque,IA,52001-3198,43,6,13.95%,120,208571
+1417,185400,Coe College,1220 First Avenue Northeast,Cedar Rapids,IA,52402-5092,162,16,9.88%,197,634858
+1420,185600,Cornell College,600 First Street  South West,Mount Vernon,IA,52314-1098,84,10,11.90%,93,154498
+1419,185500,Des Moines University - Osteopathic Medical Center,3200 Grand Avenue,Des Moines,IA,50312-4198,58,1,1.72%,17,44823
+1423,185800,Divine Word College,102 Jacoby Drive Southwest,Epworth,IA,52045-0380,21,2,9.52%,35,76174
+1424,185900,Dordt College,498 4th Avenue Northeast,Sioux Center,IA,51250-1697,128,8,6.25%,77,184222
+1425,186000,Drake University,2507 University Avenue,Des Moines,IA,50311-4505,323,16,4.95%,158,751188
+1432,186600,Graceland University,1 University Place,Lamoni,IA,50140-1699,256,47,18.36%,438,965791
+1433,186700,Grand View University,1200 Grandview Avenue,Des Moines,IA,50316-1599,115,13,11.30%,189,240813
+1434,186800,Grinnell College,Nollen House,Grinnell,IA,50112-1690,113,6,5.31%,35,186632
+1438,186500,Iowa Central Community College,One Triton Circle,Fort Dodge,IA,50501-5798,0,0,0%,2,945
+1440,186900,Iowa State University of Science & Technology,0210 Beardshear Hall,Ames,IA,50011-2028,1121,83,7.40%,594,1331811
+1441,187100,Iowa Wesleyan College,601 North Main Street,Mount Pleasant,IA,52641-1398,72,42,58.33%,154,262840
+1444,407600,Kirkwood Community College,6301 Kirkwood Boulevard Southwest,Cedar Rapids,IA,52406-2068,305,110,36.07%,905,679683
+1446,187300,Loras College,1450 Alta Vista Street,Dubuque,IA,52004-0178,207,24,11.59%,139,457812
+1447,187400,Luther College,700 College Drive,Decorah,IA,52101-1045,312,18,5.77%,104,381741
+1448,1111300,Maharishi University of Management,1000 North Fourth Street,Fairfield,IA,52557-0001,82,13,15.85%,40,282080
+1451,187900,Morningside College,1501 Morningside Avenue,Sioux City,IA,51106-1751,214,16,7.48%,77,103774
+1452,188000,Mount Mercy University,1330 Elmhurst Drive NE,Cedar Rapids,IA,52402-4797,135,12,8.89%,95,163741
+1457,188300,Northwestern College,101 7th Street Southwest,Orange City,IA,51041-1996,94,5,5.32%,111,179508
+1459,1230000,Palmer College of Chiropractic,1000 Brady Street,Davenport,IA,52803-5287,326,15,4.60%,221,794525
+1463,188900,Saint Ambrose University,518 West Locust Street,Davenport,IA,52803-2898,172,24,13.95%,159,437138
+1468,188700,Simpson College,701 North C Street,Indianola,IA,50125-1297,222,13,5.86%,138,263110
+1478,189100,University of Dubuque,2000 University Avenue,Dubuque,IA,52001-5099,70,20,28.57%,84,407420
+1479,189200,University of Iowa,4 Jessup Hall,Iowa City,IA,52242-1316,689,22,3.19%,789,1399534
+1480,189000,University of Northern Iowa,1227 West 27th Street,Cedar Falls,IA,50614-0002,545,53,9.72%,574,1487625
+1481,189300,Upper Iowa University,605 Washington Street,Fayette,IA,52142-9206,57,11,19.30%,44,53019
+1483,189500,Waldorf College,106 South 6th Street,Forest City,IA,50436-1700,110,22,20.00%,183,290136
+1484,189600,Wartburg College,100 Wartburg Boulevard,Waverly,IA,50677-2200,197,16,8.12%,140,266285
+1485,189700,Wartburg Theological Seminary,333 Wartburg Place,Dubuque,IA,52004-5004,30,1,3.33%,4,12546
+1488,190000,William Penn University,201 Trueblood Avenue,Oskaloosa,IA,52577-1799,81,19,23.46%,276,546841
+1081,161600,Boise State University,1910 University Drive,Boise,ID,83725-1000,421,85,20.19%,928,1716310
+1082,161700,College of Idaho (The),2112 Cleveland Boulevard,Caldwell,ID,83605-4432,51,10,19.61%,82,201076
+1086,162000,Idaho State University,919 South 8th Street,Pocatello,ID,83209-5377,231,24,10.39%,279,366319
+1087,162100,Lewis-Clark State College,500 8th Avenue,Lewiston,ID,83501-2698,30,0,0%,26,53051
+1089,162300,North Idaho College,1000 West Garden Avenue,Coeur d'Alene,ID,83814-2199,84,16,19.05%,179,342534
+1090,162400,Northwest Nazarene University,623 South University Boulevard,Nampa,ID,83686-5897,106,13,12.26%,65,280839
+1093,162600,University of Idaho,709 Deakin Avenue,Moscow,ID,83844-4291,710,96,13.52%,564,1140152
+1102,163300,Augustana College,639 38th Street,Rock Island,IL,61201-2296,191,13,6.81%,106,259655
+1103,163400,Aurora University,347 South Gladstone Avenue,Aurora,IL,60506-4892,30,3,10.00%,150,227260
+1167,176700,Benedictine University,5700 College Road,Lisle,IL,60532-0900,110,16,14.55%,180,335387
+1109,163900,Blackburn University,700 College Avenue,Carlinville,IL,62626-1498,0,0,0%,22,73555
+1110,164100,Bradley University,1501 West Bradley Avenue,Peoria,IL,61625-0002,211,12,5.69%,99,199913
+1121,169400,Chicago State University,9501 South  King Drive,Chicago,IL,60628-1598,83,18,21.69%,724,926640
+1123,164700,City Colleges of Chicago System Office,226 West Jackson Boulevard,Chicago,IL,60606-6998,39,3,7.69%,1169,387296
+1132,166600,Concordia University,7400 Augusta,River Forest,IL,60305-1499,51,9,17.65%,169,212638
+1141,167100,DePaul University,1 East Jackson Boulevard,Chicago,IL,60604-2287,265,12,4.53%,307,1137410
+1142,1072700,DeVry University,3300 North Campbell,Chicago,IL,60618-5994,7364,1505,20.44%,20728,32815502
+1270,175000,Dominican University,7900 West Division Street,River Forest,IL,60305-1066,41,7,17.07%,132,313495
+1143,167400,Eastern Illinois University,600 Lincoln Avenue,Charleston,IL,61920-3099,291,20,6.87%,531,997877
+1146,167600,Elmhurst College,190 Prospect Street,Elmhurst,IL,60126-3296,129,8,6.20%,99,169589
+1147,167800,Eureka College,300 East College Avenue,Eureka,IL,61530-9976,43,7,16.28%,21,33727
+2065,1185800,Everest College,9811 Woods Drive  Suite 200,Skokie,IL,60077-1074,78,10,12.82%,318,296552
+7216,2522800,Fox College,6640 S. Cicero,Bedford Park,IL,60638-1999,44,6,13.64%,21,43185
+1153,168200,Garrett - Evangelical Theological Seminary,2121 Sheridan Road,Evanston,IL,60201-2926,52,16,30.77%,70,213739
+1156,914500,Governors State University,1 University Parkway,University Park,IL,60466-0975,119,13,10.92%,285,645126
+1159,168400,Greenville College,315 East College Avenue,Greenville,IL,62246-1199,71,8,11.27%,168,292744
+1169,168800,Illinois College,1101 West College Avenue,Jacksonville,IL,62650-2299,107,9,8.41%,126,177598
+1170,168900,Illinois College of Optometry,3241 South Michigan Avenue,Chicago,IL,60616-3878,70,0,0%,1,22605
+6763,174200,Illinois Eastern Community Colleges - Olney Central College,305 North West Street,Olney,IL,62450-1099,53,15,28.30%,0,0
+1173,169100,Illinois Institute of Technology,3300 South Federal,Chicago,IL,60661-3793,266,13,4.89%,222,650933
+1175,169200,Illinois State University,302 Hovey Hall,Normal,IL,61790-1000,363,18,4.96%,772,1545783
+1177,169600,Illinois Wesleyan University,1312 North Park Street,Bloomington,IL,61702-2900,145,18,12.41%,233,524529
+1188,170000,Judson University,1151 North State Street,Elgin,IL,60123-1498,53,3,5.66%,74,107979
+1190,170100,Kaskaskia College,27210 College Road,Centralia,IL,62801-7878,79,16,20.25%,0,0
+1192,170300,Kendall College,900 N. North Branch Street,Chicago,IL,60622-4278,48,14,29.17%,235,304040
+1195,170400,Knox College,2 East South Street,Galesburg,IL,61401-4999,169,13,7.69%,52,168588
+1196,170600,Lake Forest College,555 North Sheridan Road,Lake Forest,IL,60045-2399,113,14,12.39%,154,372427
+1202,170700,Lewis University,One University Parkway,Romeoville,IL,60446-2200,42,5,11.90%,47,113363
+1203,170800,Lincoln Christian University,100 Campus View Drive,Lincoln,IL,62656-2167,112,34,30.36%,83,178745
+1204,170900,Lincoln College,300 Keokuk Street,Lincoln,IL,62656-1699,32,9,28.13%,20,24539
+1208,171000,Loyola University Chicago,820 North Michigan Avenue,Chicago,IL,60611-2196,923,87,9.43%,606,1386044
+1210,171600,MacCormac College,MacCormac College - Main Campus,Chicago,IL,60602-4405,0,0,0%,6,6526
+1211,171700,MacMurray College,447 East College Avenue,Jacksonville,IL,62650-2590,118,25,21.19%,391,755516
+1216,172200,McKendree University,701 College Road,Lebanon,IL,62254-1299,60,16,26.67%,56,74141
+1118,165700,Midwestern University,555 31st Street,Downers Grove,IL,60515-1200,40,1,2.50%,8,20555
+1221,172400,Millikin University,1184 West Main Street,Decatur,IL,62522-2084,149,20,13.42%,213,592466
+1225,172500,Monmouth College,700 East Broadway,Monmouth,IL,61462-1963,227,30,13.22%,527,714199
+1238,173300,National Louis University,122 South Michigan Avenue,Chicago,IL,60603-3032,91,24,26.37%,282,602718
+1236,173200,National University of Health Sciences (The),200 East Roosevelt Road,Lombard,IL,60148-4583,99,3,3.03%,51,112716
+1240,173400,North Central College,30 North Brainard Street,Naperville,IL,60540-4690,117,5,4.27%,83,130048
+1244,173500,North Park University,3225 West Foster Avenue,Chicago,IL,60625-4895,151,19,12.58%,353,503838
+1241,169300,Northeastern Illinois University,5500 North Saint Louis Avenue,Chicago,IL,60625-4699,129,14,10.85%,188,441129
+1243,173700,Northern Illinois University,Altgeld Hall - Room 300A,DeKalb,IL,60115-2854,560,62,11.07%,260,587140
+1246,173900,Northwestern University,633 Clark Street,Evanston,IL,60208-0001,1030,29,2.82%,433,2613472
+1250,174100,Olivet Nazarene University,One University Avenue,Bourbonnais,IL,60914-2271,281,26,9.25%,148,241784
+1253,711800,Parkland College,2400 West Bradley Avenue,Champaign,IL,61821-1899,1,0,0%,69,100278
+1258,174500,Quincy University,1800 College Avenue,Quincy,IL,62301-2699,151,32,21.19%,214,430348
+1263,174600,Robert Morris University Illinois,401 South State Street,Chicago,IL,60605-1225,292,25,8.56%,1114,1881743
+1268,174800,Rockford College,5050 East State Street,Rockford,IL,61108-2393,57,9,15.79%,212,421362
+1120,165900,Rosalind Franklin University of Medicine and Science,3333 Green Bay Road,North Chicago,IL,60064-3095,211,15,7.11%,65,362567
+1271,980000,Rush University,600 South Paulina Street,Chicago,IL,60612-3806,238,7,2.94%,52,362212
+1273,176800,Saint Xavier University,3700 West 103rd Street,Chicago,IL,60655-3199,126,17,13.49%,288,575048
+1279,175300,School of the Art Institute of Chicago,37 South Wabash Avenue,Chicago,IL,60603-3013,195,27,13.85%,418,915146
+1283,175600,Shimer College,3424 South State Street,Chicago,IL,60616-3893,31,5,16.13%,90,262576
+1285,175800,Southern Illinois University at Carbondale,Lincoln Drive,Carbondale,IL,62901-0000,859,51,5.94%,1070,2296906
+1286,175900,Southern Illinois University Edwardsville,2308 Rendleman Hall,Edwardsville,IL,62026-1060,36,1,2.78%,67,101645
+1299,177100,Trinity Christian College,6601 West College Drive,Palos Heights,IL,60463-0929,73,7,9.59%,72,126211
+1300,177200,Trinity International University,2065 Half Day Road,Deerfield,IL,60015-1283,196,20,10.20%,167,260563
+1302,177300,Triton College,2000 North 5th Avenue,River Grove,IL,60171-1995,0,0,0%,4,4857
+1305,177400,University of Chicago (The),5801 South Ellis Avenue,Chicago,IL,60637-1476,923,16,1.73%,391,1767200
+1307,177600,University of Illinois at Chicago,809 S Marshfield Ave # 520,Chicago,IL,60612-4305,1486,52,3.50%,954,2261857
+1274,933300,University of Illinois at Springfield,One University Plaza,Springfield,IL,62703-5407,30,3,10.00%,12,20310
+1306,177500,University of Illinois at Urbana-Champaign,601 East John Street,Champaign,IL,61820-5796,1043,38,3.64%,767,1366452
+1129,166400,University of Saint Francis,500 Wilcox Street,Joliet,IL,60435-6188,57,6,10.53%,91,200506
+1313,178000,Western Illinois University,1 University Circle,Macomb,IL,61455-1390,47,3,6.38%,222,399859
+8606,3079200,Westwood College - DuPage,7155 Janes Avenue,Woodridge,IL,60517-2321,1,1,100%,9,11041
+7285,2313900,Westwood College - O'Hare Airport,8501 West Higgins Road,Chicago,IL,60631-2801,3,1,33.33%,8,15585
+1314,178100,Wheaton College,501 College Avenue,Wheaton,IL,60187-5535,178,4,2.25%,57,120005
+1321,178500,Anderson University,1100 East 5th Street,Anderson,IN,46012-3495,103,12,11.65%,299,735508
+1322,178600,Ball State University,2000 University Avenue,Muncie,IN,47306-0880,588,102,17.35%,935,2092731
+4741,163700,Bethany Theological Seminary,615 National Road West,Richmond,IN,47374-4019,12,0,0%,4,9035
+1323,178700,Bethel College,1001 Bethel Circle,Mishawaka,IN,46545-5591,57,3,5.26%,79,78334
+1324,178800,Butler University,4600 Sunset Avenue,Indianapolis,IN,46208-3487,286,19,6.64%,117,287432
+1329,179200,DePauw University,313 South Locust Street,Greencastle,IN,46135-0037,204,10,4.90%,103,238217
+1331,179300,Earlham College,801 National Road West,Richmond,IN,47374-4095,117,6,5.13%,82,248356
+1336,179800,Franklin College of Indiana,101 Branigin Boulevard,Franklin,IN,46131-2623,120,14,11.67%,194,464188
+1337,179900,Goshen College,1700 South Main Street,Goshen,IN,46526-4794,92,4,4.35%,35,112397
+1338,180000,Grace College and Theological Seminary,200 Seminary Drive,Winona Lake,IN,46590-1224,122,8,6.56%,83,251406
+1342,726300,Holy Cross College,54515 SR 933 North,Notre Dame,IN,46556-0308,27,12,44.44%,40,52905
+1343,180300,Huntington University,2303 College Avenue,Huntington,IN,46750-1299,78,11,14.10%,89,173598
+1346,180500,Indiana Institute of Technology,1600 East Washington Boulevard,Fort Wayne,IN,46803-1297,66,8,12.12%,188,310631
+1348,180700,Indiana State University,Office of the President,Terre Haute,IN,47809-2501,405,25,6.17%,907,1802867
+1354,180900,Indiana University - Bloomington,107 South Indiana Avenue,Bloomington,IN,47405-7000,897,13,1.45%,627,1868924
+1351,181100,Indiana University - East,2325 Chester Boulevard,Richmond,IN,47374-1289,69,11,15.94%,42,68055
+1350,181400,Indiana University - Kokomo,2300 South Washington Street,Kokomo,IN,46902-3557,34,5,14.71%,55,54791
+1349,181500,Indiana University - Northwest,3400 Broadway,Gary,IN,46408-1197,36,8,22.22%,93,141793
+1379,182800,Indiana University - Purdue University - Ft Wayne,2101 East Coliseum Boulevard,Fort Wayne,IN,46805-1499,221,28,12.67%,161,327337
+1352,181300,Indiana University - Purdue University Indianapolis,355 Lansing Street,Indianapolis,IN,46202-5145,683,51,7.47%,638,853135
+1353,181600,Indiana University - South Bend,1700 Mishawaka Avenue,South Bend,IN,46634-7111,189,27,14.29%,237,312585
+1355,181700,Indiana University Southeast,4201 Grant Line Road,New Albany,IN,47150-6405,145,17,11.72%,201,333345
+1368,182200,Indiana Wesleyan University,4201 South Washington Street,Marion,IN,46953-4974,84,18,21.43%,156,306664
+1358,457900,International Business College,5699 Coventry Lane,Fort Wayne,IN,46804-1298,120,17,14.17%,84,218439
+6335,2201800,Kaplan College,7833 Indianapolis Boulevard,Hammond,IN,46324-3347,115,39,33.91%,259,255755
+1366,182000,Manchester University,604 East College Avenue,North Manchester,IN,46962-1276,79,8,10.13%,165,423074
+1367,182100,Marian University,3200 Cold Spring Road,Indianapolis,IN,46222-1997,87,12,13.79%,135,273028
+1580,1048900,National College,6060 Castleway Drive West,Indianapolis,IN,46250-1930,39,1,2.56%,89,183387
+1374,182400,Oakland City University,138 N. Lucretia Street,Oakland City,IN,47660-1099,49,9,18.37%,54,127249
+1380,182500,Purdue University,610 Purdue Mall,West Lafayette,IN,47907-2040,1008,53,5.26%,350,839945
+1378,182700,Purdue University - Calumet,2200 169th Street,Hammond,IN,46323-2094,40,1,2.50%,47,127171
+1381,182600,Purdue University - North Central,1401 South US Highway 421,Westville,IN,46391-9542,35,3,8.57%,13,17827
+1383,183000,Rose - Hulman Institute of Technology,5500 Wabash Avenue,Terre Haute,IN,47803-3999,271,12,4.43%,42,169680
+1386,183300,Saint Joseph's College,1498 South College Avenue,Rensselaer,IN,47978-0000,97,17,17.53%,89,175754
+1387,183500,Saint Mary of the Woods College,Saint Mary of the Woods Road,Saint Mary of the Woods,IN,47876-0067,90,28,31.11%,94,115822
+1388,183600,Saint Mary's College,133 LeMans Hall,Notre Dame,IN,46556-5007,69,13,18.84%,146,357574
+1393,183800,Taylor University,236 West Reade Avenue,Upland,IN,46989-1001,142,13,9.15%,186,309288
+1395,183900,Trine University,1 University Avenue,Angola,IN,46703-1764,0,0,0%,33,81298
+1396,179500,University of Evansville,1800 Lincoln Avenue,Evansville,IN,47722-0002,201,7,3.48%,85,308333
+1344,180400,University of Indianapolis,1400 East Hanna Avenue,Indianapolis,IN,46227-3697,307,44,14.33%,377,544323
+1397,184000,University of Notre Dame,400 Main Building,Notre Dame,IN,46556-5602,538,16,2.97%,361,1984846
+1385,183200,University of Saint Francis,2701 Spring Street,Fort Wayne,IN,46808-3994,36,4,11.11%,166,333960
+1347,180800,University of Southern Indiana,8600 University Boulevard,Evansville,IN,47712-3596,1,0,0%,0,0
+1398,184200,Valparaiso University,1700 Chapel Drive,Valparaiso,IN,46383-6493,308,13,4.22%,219,688979
+1400,184300,Vincennes University,1002 North First Street,Vincennes,IN,47591-1523,90,52,57.78%,284,436346
+1490,190300,Baker University,618 Eighth Street,Baldwin City,KS,66006-0065,186,22,11.83%,114,340235
+1491,460800,Barton County Community College,245 North East 30 Road,Great Bend,KS,67530-9283,0,0,0%,43,47558
+1492,1025600,Benedictine College,1020 North 2nd Street,Atchison,KS,66002-1499,146,24,16.44%,389,923015
+1493,190400,Bethany College,335 E Swensson St,Lindsborg,KS,67456-1897,103,14,13.59%,140,359644
+1494,190500,Bethel College,300 East 27th Street,North Newton,KS,67117-8061,75,13,17.33%,212,585076
+1495,675500,Brown Mackie College (The),2106 South 9th. Street,Salina,KS,67401-7307,74,18,24.32%,630,1018611
+1497,190800,Central Christian College of Kansas,1200 South Main Street,McPherson,KS,67460-5799,94,18,19.15%,259,876929
+5951,2090700,Cleveland University-Kansas City,10850 Lowell Avenue,Overland Park,KS,66210-1613,6,2,33.33%,75,77548
+1502,191100,Colby Community College,1255 South Range,Colby,KS,67701-4099,93,19,20.43%,207,281648
+1508,192700,Emporia State University,1200 Commerical Street,Emporia,KS,66801-5087,227,30,13.22%,470,1238926
+1509,191500,Fort Hays State University,600 Park Street,Hays,KS,67601-4099,331,39,11.78%,206,519833
+1512,191800,Friends University,2100 W. University Street,Wichita,KS,67213-3397,79,18,22.78%,160,430215
+1516,192000,Hesston College,325 South College Drive,Hesston,KS,67062-2093,123,18,14.63%,30,117297
+1522,824400,Johnson County Community College,12345 College Boulevard,Overland Park,KS,66210-1299,109,33,30.28%,189,302238
+1527,192800,Kansas State University,110 Anderson Hall,Manhattan,KS,66506-1104,547,39,7.13%,832,1401566
+1529,192900,Kansas Wesleyan University,100 East Claflin Street,Salina,KS,67401-6196,60,4,6.67%,149,217616
+1533,193100,Manhattan Christian College,1415 Anderson Avenue,Manhattan,KS,66502-4081,62,11,17.74%,32,69844
+1535,193300,McPherson College,1600 East Euclid Street,McPherson,KS,67460-3899,58,11,18.97%,191,297814
+1536,703200,MidAmerica Nazarene University,2030 East College Way,Olathe,KS,66062-1899,147,19,12.93%,150,441936
+1525,193900,Newman University,3100 McCormick Avenue,Wichita,KS,67213-2084,45,10,22.22%,64,75147
+1543,193700,Ottawa University,1001 South Cedar,Ottawa,KS,66067-3399,84,19,22.62%,325,776884
+1526,192600,Pittsburg State University,1701 South Broadway,Pittsburg,KS,66762-7500,197,22,11.17%,379,786609
+1553,194000,Southwestern College,100 College Street,Winfield,KS,67156-2499,91,29,31.87%,317,936444
+1554,194500,Sterling College,125 West Cooper,Sterling,KS,67579-1533,36,2,5.56%,22,74503
+1555,194600,Tabor College,400 South Jefferson,Hillsboro,KS,67063-1799,50,14,28.00%,140,299212
+1556,194800,University of Kansas,Strong Hall,Lawrence,KS,66045-7535,703,54,7.68%,442,1639205
+1548,194300,University of Saint Mary,4100 South 4th Street Trafficway,Leavenworth,KS,66048-5023,61,18,29.51%,86,129967
+1558,194900,Washburn University - Topeka,1700 Southwest College Avenue,Topeka,KS,66621-1110,125,23,18.40%,149,184155
+1561,195000,Wichita State University,1845 Fairmount,Wichita,KS,67208-0001,425,48,11.29%,762,1468191
+1562,195100,Alice Lloyd College,100 Purpose Road,Pippa Passes,KY,41844-9703,4,3,75.00%,177,106748
+1563,195200,Asbury College,1 Macklem Drive,Wilmore,KY,40390-1198,154,11,7.14%,124,257605
+1564,195300,Asbury Theological Seminary,204 North Lexington Avenue,Wilmore,KY,40390-1199,138,10,7.25%,124,554080
+1566,195400,Bellarmine University,2001 Newburg Road,Louisville,KY,40205-1877,47,3,6.38%,42,69709
+1567,195500,Berea College,101 Chestnut Street,Berea,KY,40404-2182,71,8,11.27%,122,74988
+1569,195800,Brescia University,717 Frederica Street,Owensboro,KY,42301-3023,68,19,27.94%,88,220929
+1572,195900,Campbellsville University,1 University Drive,Campbellsville,KY,42718-2799,61,7,11.48%,28,61655
+1573,196100,Centre College of Kentucky,600 West Walnut Street,Danville,KY,40422-1394,40,5,12.50%,55,123613
+1576,196300,Eastern Kentucky University,521 Lancaster Avenue,Richmond,KY,40475-3102,193,27,13.99%,411,1075483
+1578,196400,Georgetown College,400 East College Street,Georgetown,KY,40324-1628,40,5,12.50%,61,220528
+1581,196500,Kentucky Christian University,100 Academic Parkway,Grayson,KY,41143-2205,50,7,14.00%,65,77593
+1583,196800,Kentucky State University,400 East Main Street,Frankfort,KY,40601-2355,86,9,10.47%,1041,1071285
+1584,196900,Kentucky Wesleyan College,3000 Frederica Street,Owensboro,KY,42301-6057,74,19,25.68%,96,207593
+1588,197200,Lindsey Wilson College,210 Lindsey Wilson Street,Columbia,KY,42728-1223,81,28,34.57%,142,287413
+1589,197400,Louisville Presbyterian Theological Seminary,1044 Alta Vista Road,Louisville,KY,40205-1798,24,2,8.33%,14,103480
+1592,197600,Morehead State University,202 Howell McDowell Building,Morehead,KY,40351-1689,238,48,20.17%,337,593659
+1593,197700,Murray State University,Student Financial Aid,Murray,KY,42071-0009,774,16,2.07%,302,507591
+1595,927500,Northern Kentucky University,Nunn Drive,Highland Heights,KY,41099-0001,135,22,16.30%,404,690132
+1603,196000,Spalding University,845 South Third Street,Louisville,KY,40203-2188,41,9,21.95%,164,231479
+1604,461800,Spencerian College,4627 Dixie Highway,Louisville,KY,40216-2605,135,28,20.74%,228,410009
+1598,198300,St. Catharine College,2735 Bardstown Road,St. Catharine,KY,40061-9499,30,15,50.00%,67,95760
+5018,1208800,Sullivan College of Technology and Design,3901 Atkinson Square Drive,Louisville,KY,40218-4528,98,11,11.22%,163,254326
+1606,461900,Sullivan University,3101 Bardstown Road,Louisville,KY,40205-3000,79,0,0%,437,847968
+1607,200100,Thomas More College,333 Thomas More Parkway,Crestview Hills,KY,41017-3495,70,15,21.43%,176,315864
+1608,198700,Transylvania University,300 North Broadway,Lexington,KY,40508-1797,67,2,2.99%,78,152406
+1609,198800,Union College,310 College Street,Barbourville,KY,40906-1499,58,9,15.52%,124,163036
+1611,198900,University of Kentucky,South Limestone,Lexington,KY,40506-0032,1005,36,3.58%,1495,2032637
+1612,199900,University of Louisville,2301 South Third Street,Louisville,KY,40208-1415,402,67,16.67%,426,1231073
+1597,198000,University of Pikeville,147 Sycamore Street,Pikeville,KY,41501-1194,69,14,20.29%,54,114959
+1574,196200,University of the Cumberlands,6191 College Station Drive,Williamsburg,KY,40769-1372,68,8,11.76%,121,521136
+1615,200200,Western Kentucky University,1906 College Heights Blvd,Bowling Green,KY,42101-3576,126,7,5.56%,223,647883
+6270,2197500,Baton Rouge School of Computers,9352 Interline Avenue,Baton Rouge,LA,70809-8188,48,10,20.83%,66,82049
+6481,2234000,Cameron College,2740 Canal Street,New Orleans,LA,70119-5500,22,1,4.55%,55,56291
+1621,200300,Centenary College of Louisiana,2911 Centenary Boulevard,Shreveport,LA,71104-3396,50,13,26.00%,30,117919
+1626,462500,Delgado Community College,615 City Park Avenue,New Orleans,LA,70119-4399,0,0,0%,126,55164
+7765,2538300,Delta College of Arts & Technology,7380 Exchange Place,Baton Rouge,LA,70806-1529,0,0,0%,3,3500
+5031,2055500,Delta School of Business and Technology,517 Broad Street,Lake Charles,LA,70601-4334,37,1,2.70%,306,806137
+1631,200400,Dillard University,2601 Gentilly Boulevard,New Orleans,LA,70122-3097,102,17,16.67%,1081,1665879
+1642,200700,Louisiana College,1140 College Drive,Pineville,LA,71360-5122,0,0,0%,350,408813
+1643,201000,Louisiana State University & Agricultural & Mechanical College,156 Thomas Boyd Hall,Baton Rouge,LA,70803-5710,386,31,8.03%,269,1095703
+1645,201200,Louisiana State University at Eunice,2048 Johnson Highway,Eunice,LA,70535-6726,39,5,12.82%,131,194838
+1649,201400,Louisiana State University Health Sciences Center,433 Bolivar Street,New Orleans,LA,70112-2223,89,14,15.73%,125,338856
+1650,806700,Louisiana State University Health Sciences Center in Shreveport,1501 Kings Highway,Shreveport,LA,71130-3932,38,2,5.26%,31,145729
+1648,200800,Louisiana Tech University,Wyly Tower  Railroad Avenue,Ruston,LA,71272-0001,272,27,9.93%,265,758346
+1651,201600,Loyola University New Orleans,6363 Saint Charles Avenue,New Orleans,LA,70118-6195,201,36,17.91%,349,838440
+1653,201700,McNeese State University,4205 Ryan Street,Lake Charles,LA,70609-4510,94,8,8.51%,178,377651
+1657,200500,Nicholls State University,906 East First Street,Thibodaux,LA,70310-0001,2,1,50.00%,1,1346
+1659,202100,Northwestern State University,140 Central Avenue,Natchitoches,LA,71497-0001,138,39,28.26%,203,457057
+1662,202300,Our Lady of Holy Cross College,4123 Woodland Drive,New Orleans,LA,70131-7399,0,0,0%,43,45716
+1668,202400,Southeastern Louisiana University,900 West University Avenue,Hammond,LA,70402-0001,160,40,25.00%,660,1008068
+1669,202500,Southern University and Agricultural & Mechanical Colg at Baton Rouge,Joseph S Clark Adminstration Bldg,Baton Rouge,LA,70813-9374,0,0,0%,2955,1665308
+1671,768600,Southern University at Shreveport - Bossier City,3050 Martin Luther King Jr Drive,Shreveport,LA,71107-4795,0,0,0%,255,214919
+1677,202900,Tulane University,6823 St. Charles Avenue,New Orleans,LA,70118-5698,844,65,7.70%,529,2009899
+1678,203100,University of Louisiana at Lafayette,200 East University Avenue,Lafayette,LA,70504-0001,123,17,13.82%,672,2879239
+1658,202000,University of Louisiana at Monroe,700 University Avenue,Monroe,LA,71209-9001,102,8,7.84%,141,377193
+1646,201500,University of New Orleans (The),2000 Lakeshore Drive,New Orleans,LA,70148-0001,256,56,21.88%,573,1228205
+1679,203200,Xavier University of Louisiana,One Drexel Drive,New Orleans,LA,70125-1098,119,7,5.88%,489,688751
+1795,211400,American International College,1000 State Street,Springfield,MA,01109-3189,103,32,31.07%,455,624050
+1796,211500,Amherst College,Boltwood Avenue at College Street,Amherst,MA,01002-5000,74,5,6.76%,70,294670
+1804,211700,Anna Maria College,50 Sunset Lane,Paxton,MA,01612-1198,47,10,21.28%,160,320411
+1810,211800,Assumption College,500 Salisbury Street,Worcester,MA,01615-1294,186,10,5.38%,62,122938
+1811,211900,Atlantic Union College,338 Main Street,South Lancaster,MA,01561-1000,149,35,23.49%,247,363742
+1812,212100,Babson College,231 Forest Street,Babson Park,MA,02457-0310,42,5,11.90%,79,298447
+1938,964500,Bard College at Simon's Rock,84 Alford Road,Great Barrington,MA,01230-9702,49,13,26.53%,108,159721
+1814,212200,Bay Path College,588 Longmeadow Street,Longmeadow,MA,01106-2212,77,14,18.18%,171,339406
+1815,396500,Bay State College,122 Commonwealth Avenue,Boston,MA,02116-2901,37,5,13.51%,209,401715
+1816,212300,Becker College,61 Sever Street,Worcester,MA,01615-0071,0,0,0%,31,44430
+1817,212400,Bentley University,175 Forest Street,Waltham,MA,02452-4705,361,9,2.49%,106,322826
+1818,212600,Berklee College of Music,1140 Boylston Street,Boston,MA,02215-3693,299,48,16.05%,410,898540
+1825,212800,Boston College,140 Commonwealth Avenue,Chestnut Hill,MA,02467-3800,904,15,1.66%,232,952281
+1828,213000,Boston University,Office of the President,Boston,MA,02215-1789,1304,33,2.53%,1046,2772638
+1830,213300,Brandeis University,415 South Street,Waltham,MA,02453-2700,216,16,7.41%,161,580286
+1831,218300,Bridgewater State University,131 Summer Street,Bridgewater,MA,02325-0001,82,9,10.98%,628,851088
+1836,1121000,Bunker Hill Community College,250 New Rutherford Avenue,Boston,MA,02129-2991,1,0,0%,6,8955
+6282,2182900,Cambridge College,1000 Massachusetts Avenue,Cambridge,MA,02138-5304,10,5,50.00%,31,64902
+1839,216800,Cape Cod Community College,2240 Iyannough Road,West Barnstable,MA,02668-1599,0,0,0%,82,73381
+1845,213900,Clark University,950 Main Street,Worcester,MA,01610-1473,158,6,3.80%,96,330809
+1846,214000,College of Our Lady of the Elms,291 Springfield Street,Chicopee,MA,01013-2839,37,6,16.22%,145,208585
+1847,214100,College of the Holy Cross,1 College Street,Worcester,MA,01610-2395,205,3,1.46%,55,154461
+1850,214300,Curry College,1071 Blue Hill Avenue,Milton,MA,02186-2395,31,10,32.26%,66,93038
+1851,214400,Dean College,99 Main Street,Franklin,MA,02038-1994,64,23,35.94%,485,701673
+1854,214500,Eastern Nazarene College,23 East Elm Avenue,Quincy,MA,02170-2999,144,44,30.56%,186,257812
+1857,214600,Emerson College,120 Boylston Street,Boston,MA,02116-4624,182,8,4.40%,74,173723
+1859,214700,Emmanuel College,400 The Fenway,Boston,MA,02115-5798,124,23,18.55%,227,491732
+5221,214800,Endicott College,376 Hale Street,Beverly,MA,01915-2098,93,7,7.53%,129,106835
+1835,1151000,Everest Institute,1505 Commonwealth Avenue,Brighton,MA,02135-3605,40,3,7.50%,18,15117
+1862,215000,Fisher College,118 Beacon Street,Boston,MA,02116-1500,38,15,39.47%,144,223019
+1863,218400,Fitchburg State University,160 Pearl Street,Fitchburg,MA,01420-2697,109,9,8.26%,233,343198
+1865,218500,Framingham State College,100 State Street,Framingham,MA,01702-2471,213,52,24.41%,301,503700
+1868,215300,Gordon College,255 Grapevine Road,Wenham,MA,01984-1899,142,13,9.15%,141,265706
+1869,974700,Gordon Conwell Theological Seminary,130 Essex Street,South Hamilton,MA,01982-2317,79,3,3.80%,29,89358
+1873,466100,Hampshire College,893 West Street,Amherst,MA,01002-3359,2,0,0%,2,3172
+1874,215500,Harvard University,Massachusetts Hall,Cambridge,MA,02138-3800,1221,50,4.10%,402,2842219
+1882,632400,Laboure College,2120 Dorchester Avenue,Boston,MA,02124-5698,35,8,22.86%,73,117775
+1883,215800,Lasell College,1844 Commonwealth Avenue,Newton,MA,02466-2716,50,12,24.00%,65,120291
+6284,633100,Lawrence Memorial Hospital School of Nursing,170 Governors Avenue,Medford,MA,02155-1643,26,4,15.38%,15,29147
+1886,216000,Lesley University,29 Everett Street,Cambridge,MA,02138-2790,93,18,19.35%,194,372781
+1895,216500,Mass. College of Pharmacy & Health Sciences,179 Longwood Avenue,Boston,MA,02115-5804,167,10,5.99%,89,175953
+1893,218000,Massachusetts College of Art and Design,621 Huntington Avenue,Boston,MA,02115-5803,101,26,25.74%,172,297554
+1916,218700,Massachusetts College of Liberal Arts,375 Church Street,North Adams,MA,01247-4100,92,3,3.26%,165,222325
+1897,217800,Massachusetts Institute of Technology,77 Massachusetts Avenue,Cambridge,MA,02139-4307,618,13,2.10%,82,668752
+1901,212000,Merrimack College,315 Turnpike Street,North Andover,MA,01845-5800,211,20,9.48%,300,1077586
+1902,993600,Middlesex Community College,Springs Road,Bedford,MA,01730-1197,77,11,14.29%,173,232515
+1903,219200,Mount Holyoke College,50 College Street,South Hadley,MA,01075-1492,181,16,8.84%,214,550243
+1894,216400,New England College of Optometry (The),424 Beacon Street,Boston,MA,02115-1129,82,0,0%,17,44670
+1907,219400,New England Conservatory of Music,290 Huntington Street,Boston,MA,02115-5018,91,2,2.20%,20,99964
+1910,891600,New England School of Law,154 Stuart Street,Boston,MA,02116-5687,87,9,10.34%,87,190835
+1911,748400,Newbury College,129 Fisher Avenue,Brookline,MA,02445-5796,0,0,0%,148,115110
+1921,219900,Northeastern University,360 Huntington Avenue,Boston,MA,02115-5000,1339,63,4.71%,396,919159
+1930,220600,Regis College,235 Wellesley Street,Weston,MA,02493-1571,89,22,24.72%,137,335456
+1931,1193000,Roxbury Community College,1234 Columbus Avenue,Boston,MA,02120-3400,0,0,0%,412,151490
+1933,218800,Salem State University,352 Lafayette Street,Salem,MA,01970-5353,144,21,14.58%,170,254100
+1937,220800,Simmons College,300 The Fenway,Boston,MA,02115-5898,144,16,11.11%,149,471885
+1943,221100,Springfield College,263 Alden Street,Springfield,MA,01109-3797,207,22,10.63%,172,391178
+1947,221700,Stonehill College,320 Washington Street,Easton,MA,02357-6110,64,0,0%,4,9414
+1948,221800,Suffolk University,Beacon Hill,Boston,MA,02108-2770,449,48,10.69%,323,817681
+1940,220900,Trustees of the Smith College,10 Elm Street,Northampton,MA,01063-2936,118,13,11.02%,139,335825
+1952,221900,Tufts University,175 Packard Avenue,Medford,MA,02155-5808,332,21,6.33%,177,887103
+1953,222100,University of Massachusetts - Amherst,374 Whitmore Building,Amherst,MA,01003-0000,1430,126,8.81%,1266,3042586
+8104,222200,University of Massachusetts - Boston,100 Morrissey Boulevard,Boston,MA,02125-3393,337,42,12.46%,633,1606270
+1942,221000,University of Massachusetts - Dartmouth,285 Old Westport Road,North Dartmouth,MA,02747-2300,214,26,12.15%,202,379193
+1889,216100,University of Massachusetts - Lowell,One University Avenue,Lowell,MA,01854-2881,302,38,12.58%,678,1252939
+8105,975600,University of Massachusetts Medical Center,55 Lake Avenue North,Worcester,MA,01655-0001,35,0,0%,4,50030
+1955,222400,Wellesley College,106 Central Street,Wellesley,MA,02481-8203,112,7,6.25%,116,423513
+1956,222500,Wentworth Institute of Technology,550 Huntington Avenue,Boston,MA,02115-5998,131,7,5.34%,206,465230
+1958,222600,Western New England University,1215 Wilbraham Road,Springfield,MA,01119-2654,303,42,13.86%,384,884318
+1959,218900,Westfield State University,333 Western Avenue,Westfield,MA,01086-1630,114,21,18.42%,247,301470
+1960,222700,Wheaton College,26 East Main Street,Norton,MA,02766-2322,139,19,13.67%,264,536669
+1961,222800,Wheelock College,200  The Riverway,Boston,MA,02215-4176,47,1,2.13%,142,259481
+1964,222900,Williams College,880 Main Street,Williamstown,MA,01267-2600,106,1,0.94%,13,50397
+1966,223300,Worcester Polytechnic Institute,100 Institute Road,Worcester,MA,01609-2280,365,23,6.30%,183,575725
+1967,219000,Worcester State University,486 Chandler Street,Worcester,MA,01602-2597,89,8,8.99%,234,272080
+1735,206100,Baltimore City Community College,2901 Liberty Heights Avenue,Baltimore,MD,21215-7893,0,0,0%,394,202333
+1726,206200,Bowie State University,14000 Jericho Park Road,Bowie,MD,20715-9465,48,20,41.67%,534,887272
+1728,143600,Capitol College,11301 Springfield Road,Laurel,MD,20708-9759,101,26,25.74%,118,392918
+1732,465000,Chesapeake College,1000 College Circle,Wye Mills,MD,21679-0008,26,6,23.08%,79,64478
+1737,206800,Coppin State University,2500 West North Avenue,Baltimore,MD,21216-3698,53,14,26.42%,984,1423539
+1747,207200,Frostburg State University,101 Braddock Road,Frostburg,MD,21532-1099,155,19,12.26%,367,452493
+1749,207300,Goucher College,1021 Dulaney Valley Road,Baltimore,MD,21204-2794,94,13,13.83%,165,515732
+1753,207600,Hood College,401 Rosemont Avenue,Frederick,MD,21701-8575,92,9,9.78%,203,485997
+1756,207700,Johns Hopkins University,242 Garland Hall,Baltimore,MD,21218-2693,546,5,0.92%,68,422719
+1760,207800,Loyola University Maryland,4501 North Charles Street,Baltimore,MD,21210-2699,300,9,3.00%,88,103634
+1761,208000,Maryland Institute College of Art,1300 West Mount Royal Avenue,Baltimore,MD,21217-4191,151,28,18.54%,345,589176
+1792,210900,McDaniel College,2 College Hill,Westminster,MD,21157-4390,156,7,4.49%,77,135076
+1762,691100,Montgomery College,900 Hungerford Drive,Rockville,MD,20850-1195,59,19,32.20%,492,877357
+1763,208300,Morgan State University,1700 East Cold Spring Lane,Baltimore,MD,21251-0002,150,81,54.00%,945,1727110
+1766,208600,Mount Saint Mary's University,16300 Old Emmitsburg Road,Emmitsburg,MD,21727-7799,147,23,15.65%,281,581733
+1767,208700,Ner Israel Rabbinical College,400 Mount Wilson Lane,Baltimore,MD,21208-1198,10,2,20.00%,13,46915
+1733,206500,Notre Dame of Maryland University,4701 North Charles Street,Baltimore,MD,21210-2476,103,27,26.21%,107,277132
+1775,209500,Saint Mary's College of Maryland,18952 East Fisher Road,Saint Marys City,MD,20686-3001,36,10,27.78%,21,55658
+1777,209100,Salisbury University,1101 Camden Avenue,Salisbury,MD,21801-6862,68,11,16.18%,161,389154
+1773,209200,St. John's College,60 College Avenue,Annapolis,MD,21401-1655,65,2,3.08%,21,55869
+1787,210700,Stevenson University,1525 Greenspring Valley Road,Stevenson,MD,21153-0641,11,0,0%,2,2456
+1779,209900,Towson University,8000 York Road,Towson,MD,21252-0002,366,55,15.03%,559,2600739
+1782,210200,University of Baltimore,1420 North Charles Street,Baltimore,MD,21201-5779,174,22,12.64%,401,944760
+1785,210400,University of Maryland  Baltimore,520 West Lombard Street,Baltimore,MD,21201-1691,273,2,0.73%,73,315603
+1784,210500,University of Maryland - Baltimore County,1000 Hilltop Circle,Baltimore,MD,21250-0002,135,12,8.89%,302,462294
+1783,210300,University of Maryland  College Park,0102 Lee Building,College Park,MD,20742-5145,616,60,9.74%,1433,3194708
+1786,210600,University of Maryland - Eastern Shore,Backbone Road,Princess Anne,MD,21853-4053,61,11,18.03%,201,279082
+1781,1164400,University of Maryland University College,3501 University Boulevard East,Adelphi,MD,20783-8078,76,6,7.89%,269,605090
+1734,206700,Washington Adventist University,7600 Flower Avenue,Takoma Park,MD,20912-7796,66,30,45.45%,343,661900
+1791,210800,Washington College,300 Washington Avenue,Chestertown,MD,21620-1197,118,15,12.71%,32,96391
+1681,203600,Bates College,2 Andrews Road,Lewiston,ME,04240-6028,121,1,0.83%,39,170903
+1683,203800,Bowdoin College,6000 College Station,Brunswick,ME,04011-8451,96,4,4.17%,18,86180
+1686,203900,Colby College,4000 Mayflower Hill,Waterville,ME,04901-8840,111,8,7.21%,90,362851
+1687,1138500,College of the Atlantic,105 Eden Street,Bar Harbor,ME,04609-1105,64,0,0%,37,38516
+1689,204300,Husson University,One College Circle,Bangor,ME,04401-2999,64,11,17.19%,90,156461
+1695,1167300,Maine College of Art,522 Congress Street,Portland,ME,04101-3987,33,6,18.18%,97,140852
+1691,204400,Maine Maritime Academy,Pleasant Street,Castine,ME,04420-0001,106,1,0.94%,64,167003
+1698,205100,Saint Joseph's College,278 Whites Bridge Road,Standish,ME,04084-5236,113,18,15.93%,139,188296
+1700,205200,Thomas College,180 West River Road,Waterville,ME,04901-5097,113,23,20.35%,207,277710
+1701,685800,Unity College,90 Quaker Hill Road,Unity,ME,04988-9502,10,0,0%,4,7506
+1707,205300,University of Maine,168 College Avenue,Orono,ME,04469-0001,674,81,12.02%,846,1925288
+1702,676000,University of Maine - Augusta,46 University Drive,Augusta,ME,04330-9410,37,6,16.22%,175,294611
+1703,204000,University of Maine - Farmington,224 Main Street,Farmington,ME,04938-1990,208,19,9.13%,237,400425
+1704,204100,University of Maine - Fort Kent,23 University Drive,Fort Kent,ME,04743-1292,64,14,21.88%,96,164935
+1706,205500,University of Maine - Machias,116 O'Brien Avenue,Machias,ME,04654-1397,47,11,23.40%,119,120635
+1710,203300,University of Maine - Presque Isle,181 Main Street,Presque Isle,ME,04769-2888,95,18,18.95%,197,224122
+1697,205000,University of New England,11 Hills Beach Road,Biddeford,ME,04005-9599,295,18,6.10%,525,1817936
+1705,205400,University of Southern Maine,96 Falmouth Street,Portland,ME,04104-4864,493,62,12.58%,567,1357433
+1969,223400,Adrian College,110 South Madison Street,Adrian,MI,49221-2575,139,30,21.58%,214,439733
+1970,223500,Albion College,611 East Porter Street,Albion,MI,49224-1831,145,20,13.79%,132,349060
+1972,223600,Alma College,614 West Superior Street,Alma,MI,48801-1599,110,17,15.45%,121,208586
+1973,223700,Alpena Community College,665 Johnson Street,Alpena,MI,49707-1495,0,0,0%,75,26603
+1975,223800,Andrews University,4150 Administration Drive,Berrien Springs,MI,49104-0750,91,14,15.38%,211,564737
+1976,223900,Aquinas College,1607 Robinson Road Southeast,Grand Rapids,MI,49506-1799,0,0,0%,68,74883
+1982,224100,Calvin College,3201 Burton Street Southeast,Grand Rapids,MI,49546-4388,476,41,8.61%,181,447865
+1983,224200,Calvin Theological Seminary,3233 Burton Street Southeast,Grand Rapids,MI,49546-4387,34,2,5.88%,6,9868
+1985,224300,Central Michigan University,106 Warriner Hall,Mt Pleasant,MI,48859-0001,442,34,7.69%,163,498404
+1988,224700,Concordia University,4090 Geddes Road,Ann Arbor,MI,48105-2797,91,15,16.48%,138,452764
+2010,226600,Cornerstone University,1001 East Beltline Northeast,Grand Rapids,MI,49525-5897,67,11,16.42%,153,260699
+2005,225900,Eastern Michigan University,202 Welch Hall,Ypsilanti,MI,48197-2214,646,103,15.94%,1188,2152854
+2066,982800,Everest Institute,21107 Lahser Road,Southfield,MI,48033-4400,80,9,11.25%,323,387016
+2006,226000,Ferris State University,901 South State Street,Big Rapids,MI,49307-2251,792,105,13.26%,1410,3461827
+2090,232200,Finlandia University,601 Quincy Street,Hancock,MI,49930-1882,77,14,18.18%,302,379132
+4775,226500,Grace Bible College,1011 Aldon Street Southwest,Grand Rapids,MI,49509-1998,51,0,0%,0,0
+2011,226700,Grand Rapids Community College,143 Bostwick Avenue Northeast,Grand Rapids,MI,49503-3295,3,3,100%,31,51672
+2012,226800,Grand Valley State University,One Campus Drive,Allendale,MI,49401-9403,597,33,5.53%,392,728924
+2017,227300,Hope College,141 East 12th Street,Holland,MI,49423-3607,202,18,8.91%,214,589742
+2023,227500,Kalamazoo College,1200 Academy Street,Kalamazoo,MI,49006-3295,131,8,6.11%,39,180278
+2029,229300,Lake Superior State University,650 West Easterday Avenue,Sault Ste Marie,MI,49783-1691,166,18,10.84%,220,310982
+2032,227900,Lawrence Technological University,21000 West Ten Mile Road,Southfield,MI,48075-1058,84,27,32.14%,167,221265
+2039,228400,Marygrove College,8425 West McNichols Road,Detroit,MI,48221-2599,82,26,31.71%,991,1306508
+2045,229000,Michigan State University,556 East Circle Dr  Room 252,East Lansing,MI,48824-1113,1856,136,7.33%,2810,4640714
+2046,229200,Michigan Technological University,1400 Townsend Drive,Houghton,MI,49931-1295,380,23,6.05%,178,621754
+2052,229700,Muskegon Community College,221 South Quarterline Road,Muskegon,MI,49442-1432,0,0,0%,9,3754
+2056,230100,Northern Michigan University,1401 Presque Isle Avenue,Marquette,MI,49855-5316,710,102,14.37%,1910,3253933
+2060,230700,Oakland University,2200 North Squirrel Road,Rochester,MI,48309-4401,89,12,13.48%,53,131605
+2061,230800,Olivet College,320 South Main Street,Olivet,MI,49076-9902,40,8,20.00%,276,676016
+2043,228800,Rochester College,800 West Avon Road,Rochester Hills,MI,48307-2764,80,25,31.25%,223,316552
+2069,231400,Saginaw Valley State University,7400 Bay Road,University Center,MI,48710-0001,1,0,0%,0,0
+2077,231700,Southwestern Michigan College,58900 Cherry Grove Road,Dowagiac,MI,49047-9793,44,5,11.36%,168,434390
+2078,231800,Spring Arbor University,106 East Main Street,Spring Arbor,MI,49283-9984,147,15,10.20%,141,347673
+2092,232300,University of Detroit Mercy,4001 West McNichols Road,Detroit,MI,48221-3038,426,69,16.20%,1309,2743427
+2093,232500,University of Michigan - Ann Arbor,503 Thompson Street,Ann Arbor,MI,48109-1340,2654,97,3.65%,1136,3534219
+2100,232800,Washtenaw Community College,4800 East Huron River Drive,Ann Arbor,MI,48105-4800,0,0,0%,57,31245
+2101,923000,Wayne County Community College District,801 West Fort Street,Detroit,MI,48226-3010,0,0,0%,122,65420
+2102,232900,Wayne State University,42 West Warren Ave,Detroit,MI,48201-1306,853,75,8.79%,695,1571459
+2105,233000,Western Michigan University,1903 West Michigan Avenue,Kalamazoo,MI,49008-3899,488,64,13.11%,542,1105032
+2106,233100,Western Theological Seminary,101 East 13th Street,Holland,MI,49423-3622,5,0,0%,8,13534
+2109,233200,Anoka-Ramsey Community College,11200 Mississippi Boulevard NW,Coon Rapids,MN,55433-3499,78,9,11.54%,54,81916
+2113,233400,Augsburg College,2211 Riverside Avenue,Minneapolis,MN,55454-1351,160,18,11.25%,101,547551
+2117,233600,Bemidji State University,1500 Birchmont Drive Northeast,Bemidji,MN,56601-2699,176,19,10.80%,190,563054
+2118,233700,Bethany Lutheran College,700 Luther Drive,Mankato,MN,56001-6163,47,6,12.77%,8,31545
+2119,905800,Bethel University,3900 Bethel Drive,Saint Paul,MN,55112-6999,236,5,2.12%,58,113404
+2125,234000,Carleton College,One North College Street,Northfield,MN,55057-4001,133,4,3.01%,51,276345
+2121,233900,Central Lakes College,501 West College Drive,Brainerd,MN,56401-3900,0,0,0%,10,14933
+2127,234100,College of Saint Benedict,37 South College Avenue,St Joseph,MN,56374-2099,140,10,7.14%,52,281900
+2129,234300,College of Saint Scholastica,1200 Kenwood Avenue,Duluth,MN,55811-4199,199,19,9.55%,175,346160
+2132,234600,Concordia College - Moorhead,901 South 8th Street,Moorhead,MN,56562-0001,310,18,5.81%,407,1084688
+2133,234700,Concordia University - Saint Paul,275 North Syndicate Street,Saint Paul,MN,55104-5494,51,15,29.41%,151,544421
+2204,238300,Crown College,8700 College View Drive,St Bonifacius,MN,55375-9001,38,9,23.68%,103,235351
+2153,235300,Gustavus Adolphus College,800 West College Avenue,Saint Peter,MN,56082-1498,132,5,3.79%,27,63141
+2154,235400,Hamline University,1536 Hewitt Avenue,Saint Paul,MN,55104-1284,336,29,8.63%,223,714985
+2157,235500,Hibbing Community College,1515 East 25th Street,Hibbing,MN,55746-3300,77,19,24.68%,74,175315
+2160,974000,Inver Hills Community College,2500 80th Street East,Inver Grove Heights,MN,55076-3224,0,0,0%,9,10136
+2161,235600,Itasca Community College,1851 East Highway 169,Grand Rapids,MN,55744-3397,89,21,23.60%,75,226411
+6288,235700,Luther Seminary,2481 Como Avenue,St Paul,MN,55108-1496,34,1,2.94%,20,153851
+2166,235800,Macalester College,1600 Grand Avenue,Saint Paul,MN,55105-1899,118,1,0.85%,109,468144
+2139,236100,Martin Luther College,1995 Luther Court,New Ulm,MN,56073-3965,38,1,2.63%,7,10506
+2170,400900,Mesabi Range Community and Technical College,1001 West Chestnut Street,Virginia,MN,55792-0000,0,0,0%,43,70889
+2176,1037400,Metropolitan State University,700 East 7th Street,Saint Paul,MN,55106-5000,0,0,0%,42,35028
+5482,464500,Minneapolis Business College,1711 West County Road B,Roseville,MN,55113-4036,67,8,11.94%,60,118102
+2173,236500,Minneapolis College of Art & Design,2501 Stevens Avenue,Minneapolis,MN,55404-4343,56,9,16.07%,139,347263
+2138,554100,Minnesota State Community and Technical College,150 Second Street Southwest,Perham,MN,56573-1405,24,4,16.67%,19,57251
+2168,236000,Minnesota State University  Mankato,309 Wigley Administration Center,Mankato,MN,56001-6068,320,29,9.06%,242,562578
+2179,236700,Minnesota State University Moorhead,1104 7th Avenue South,Moorhead,MN,56563-0001,116,8,6.90%,184,6604022
+2152,526300,Minnesota West Community and Technical College,1593 11th Avenue,Granite Falls,MN,56241-1096,8,1,12.50%,11,31257
+2180,795400,Normandale Community College,9700 France Avenue South,Bloomington,MN,55431-4399,7,0,0%,0,0
+2181,236900,North Central University,910 Elliot Avenue,Minneapolis,MN,55404-1391,35,3,8.57%,118,213888
+2182,237000,North Hennepin Community College,7411 85th Avenue North,Brooklyn Park,MN,55445-2299,61,12,19.67%,133,284933
+2183,238500,Northland Community and Technical College,1101 Highway One East,Thief River Falls,MN,56701-2598,17,2,11.76%,7,13984
+2184,237100,Northwestern College,3003 Snelling Avenue North,Saint Paul,MN,55113-1598,79,5,6.33%,105,280486
+4780,1232800,Northwestern Health Sciences University,2501 West 84th Street,Bloomington,MN,55431-1599,223,16,7.17%,162,710317
+2190,677500,Rainy River Community College,1501 Highway 71,International Falls,MN,56649-2187,0,0,0%,6,10606
+2197,869400,Rasmussen College,226 Park Avenue South,Saint Cloud,MN,56301-3713,8,3,37.50%,117,244444
+2220,525200,Ridgewater College,2101 15th Avenue Northwest,Willmar,MN,56201-2098,7,1,14.29%,12,11886
+2115,233500,Riverland Community College,1900 Eighth Avenue Northwest,Austin,MN,55912-1473,43,5,11.63%,33,59863
+2195,237300,Rochester Community and Technical College,851 Thirtieth Avenue Southeast,Rochester,MN,55904-4999,150,12,8.00%,106,186972
+2200,237900,Saint Johns University,Collegeville Road,Collegeville,MN,56321-0000,134,2,1.49%,15,34455
+2201,238000,Saint Mary's University of Minnesota,700 Terrace Heights,Winona,MN,55987-1399,104,3,2.88%,99,347648
+2203,238200,Saint Olaf College,1520 Saint Olaf Avenue,Northfield,MN,55057-1098,159,5,3.14%,96,430905
+2208,237500,Southwest Minnesota State University,1501 State Street,Marshall,MN,56258-1598,108,6,5.56%,101,158022
+2128,234200,St. Catherine University,2004 Randolph Avenue,Saint Paul,MN,55105-1789,132,20,15.15%,360,1113836
+2199,237700,St. Cloud State University,720 Fourth Avenue South,Saint Cloud,MN,56301-4498,460,26,5.65%,234,488332
+2214,406900,University of Minnesota - Crookston,Highway 2 and 75 North,Crookston,MN,56716-5001,40,6,15.00%,40,71471
+2215,238800,University of Minnesota  Duluth,1049  University Drive,Duluth,MN,55812-2496,551,36,6.53%,330,876290
+2217,238900,University of Minnesota - Morris,600 East 4th Street,Morris,MN,56267-2113,67,2,2.99%,36,103186
+2216,396900,University of Minnesota - Twin Cities,200 Fraser Hall,Minneapolis,MN,55455-0422,735,39,5.31%,521,1556777
+2131,234500,University of Saint Thomas,2115 Summit Avenue,St Paul,MN,55105-1096,189,10,5.29%,97,255563
+2218,235000,Vermilion Community College,1900 East Camp Street,Ely,MN,55731-1996,0,0,0%,3,4849
+4920,239100,William Mitchell College of Law,875 Summit Avenue,St Paul,MN,55105-3076,46,2,4.35%,89,271047
+2224,239400,Winona State University,8th and Johnson Street,Winona,MN,55987-5838,141,15,10.64%,285,470923
+2334,247700,A. T. Still University of Health Sciences,800 West Jefferson Street,Kirksville,MO,63501-1497,48,1,2.08%,14,68238
+5055,1212000,Assemblies of God Theological Seminary,1435 North Glenstone Avenue,Springfield,MO,65802-2131,78,12,15.38%,13,48788
+2283,244900,Avila University,11901 Wornall Street,Kansas City,MO,64145-1698,137,24,17.52%,238,284706
+2291,245200,Central Bible College,3000 North Grant Avenue,Springfield,MO,65803-1096,59,6,10.17%,117,124965
+2292,245300,Central Methodist University,411 Central Methodist Square,Fayette,MO,65248-1198,63,14,22.22%,267,262151
+2296,245600,Columbia College,1001 Rogers Street,Columbia,MO,65216-4581,68,23,33.82%,148,165117
+2298,245700,Concordia Seminary,801 Seminary Place,Saint Louis,MO,63105-3199,31,1,3.23%,61,197098
+2304,246000,Culver-Stockton College,One College Hill,Canton,MO,63435-1299,41,15,36.59%,139,233190
+2307,246100,Drury University,900 North Benton Avenue,Springfield,MO,65802-3791,62,10,16.13%,44,81620
+2311,246300,Evangel University,1111 North Glenstone Avenue,Springfield,MO,65802-2125,234,32,13.68%,218,364805
+2315,246400,Fontbonne University,6800 Wydown Boulevard,Saint Louis,MO,63105-3098,100,16,16.00%,198,345234
+2319,908900,Hannibal - LaGrange University,2800 Palmyra Road,Hannibal,MO,63401-1999,78,9,11.54%,64,68034
+2321,1027900,Hickey College,940 West Port Plaza,Saint Louis,MO,63146-3127,45,6,13.33%,42,95420
+2327,247300,Kansas City Art Institute,4415 Warwick Boulevard,Kansas City,MO,64111-1874,114,15,13.16%,133,312616
+2329,247400,Kansas City University of Medicine and Biosciences,1750 Independence Avenue,Kansas City,MO,64106-2311,4,1,25.00%,3,32324
+6268,2068200,Lester E. Cox Medical Center,1423 North Jefferson,Springfield,MO,65802-1988,28,7,25.00%,14,20276
+2337,248000,Lindenwood University,209 South Kingshighway,Saint Charles,MO,63301-1695,107,16,14.95%,230,345202
+2339,470300,Logan College of Chiropractic,1851 Schoettler Road,Chesterfield,MO,63006-1065,229,17,7.42%,256,1147976
+2343,248200,Maryville University of Saint Louis,650 Maryville University Drive,St. Louis,MO,63141-7299,35,6,17.14%,88,127011
+2352,248800,Missouri Southern State University,3950 E. Newman Road,Joplin,MO,64801-1595,187,25,13.37%,385,707588
+2384,250300,Missouri State University,901 South National,Springfield,MO,65897-0094,348,63,18.10%,627,245627
+2396,251700,Missouri University of Science & Technology,300 West 13th Street,Rolla,MO,65409-0250,342,61,17.84%,294,685063
+2353,248900,Missouri Valley College,500 East College Street,Marshall,MO,65340-3197,51,5,9.80%,641,847672
+2354,249000,Missouri Western State University,4525 Downs Drive,Saint Joseph,MO,64507-2294,113,20,17.70%,437,599461
+2360,249600,Northwest Missouri State University,800 University Drive,Maryville,MO,64468-6001,216,21,9.72%,89,115360
+2363,249800,Park University,8700 Northwest River Park Drive,Parkville,MO,64152-3795,68,10,14.71%,66,207828
+2310,1040500,Pinnacle Career Institute,1001 E. 101st Terrace,Kansas City,MO,64131-3367,46,17,36.96%,34,44533
+5743,639200,Research Medical Center,2316 East Meyer Boulevard,Kansas City,MO,64132-1199,1,0,0%,0,0
+2368,249900,Rockhurst University,1100 Rockhurst Road,Kansas City,MO,64110-2561,166,33,19.88%,239,360100
+2371,250400,Saint Louis College of Pharmacy,4588 Parkview Place,Saint Louis,MO,63110-1088,35,3,8.57%,7,38494
+2375,250600,Saint Louis University,One Grand Boulevard,Saint Louis,MO,63103-2097,412,27,6.55%,236,976678
+5457,978200,Saint Luke's College of Health Sciences,624 Westport Road,Kansas City,MO,64111-3128,25,5,20.00%,24,65119
+2382,250100,Southeast Missouri State University,One University Plaza,Cape Girardeau,MO,63701-4799,167,26,15.57%,340,869512
+2383,250200,Southwest Baptist University,1600 University Avenue,Bolivar,MO,65613-2597,232,36,15.52%,557,1206868
+2386,251200,Stephens College,1200 East Broadway,Columbia,MO,65215-0001,86,17,19.77%,114,335212
+2359,249500,Truman State University,100 East Normal Street,Kirksville,MO,63501-4221,272,19,6.99%,149,283065
+2293,245400,University of Central Missouri,202 Administration Building,Warrensburg,MO,64093-5001,446,54,12.11%,460,1058337
+2394,251600,University of Missouri - Columbia,11 Jesse Hall,Columbia,MO,65211-1600,1063,65,6.11%,440,876800
+2395,251800,University of Missouri - Kansas City,5100 Rockhill Road,Kansas City,MO,64110-2497,423,77,18.20%,679,1219717
+2397,251900,University of Missouri - Saint Louis,One University Boulevard,St Louis,MO,63121-4499,237,50,21.10%,479,493954
+2399,252000,Washington University in St. Louis,One Brookings Drive,St Louis,MO,63130-4899,926,25,2.70%,233,1427003
+2402,252100,Webster University,470 East Lockwood Avenue,Saint Louis,MO,63119-3194,99,26,26.26%,147,413997
+2404,252300,Westminster College,501 Westminster Avenue,Fulton,MO,65251-1299,35,8,22.86%,74,144545
+2405,252400,William Jewell College,500 College Hill,Liberty,MO,64068-1896,131,12,9.16%,201,420647
+2406,252500,William Woods University,One University Avenue,Fulton,MO,65251-2388,52,8,15.38%,95,199661
+2226,239600,Alcorn State University,1000 ASU Drive,Alcorn State,MS,39096-7500,5,2,40.00%,1695,846454
+2229,239700,Belhaven University,1500 Peachtree Street,Jackson,MS,39202-1789,30,5,16.67%,62,145033
+2230,239800,Blue Mountain College,201 West Main Street,Blue Mountain,MS,38610-9370,0,0,0%,75,131784
+2235,240300,Delta State University,Highway 8 West,Cleveland,MS,38733-0000,101,21,20.79%,389,520614
+2237,240400,East Central Community College,275 West Broad Street,Decatur,MS,39327-0129,0,0,0%,93,32261
+2245,241000,Jackson State University,1400 J. R. Lynch Street,Jackson,MS,39217-0001,137,51,37.23%,2385,2165201
+2246,241100,Jones County Junior College,900 South Court Street,Ellisville,MS,39437-3999,0,0,0%,4,3527
+2248,241300,Meridian Community College,910 Highway 19 North,Meridan,MS,39307-5890,0,0,0%,55,21889
+2249,241400,Millsaps College,1701 North State Street,Jackson,MS,39210-0001,55,7,12.73%,111,294227
+2251,241500,Mississippi College,200 South Captiol Street,Clinton,MS,39058-0001,94,20,21.28%,225,456979
+2256,242300,Mississippi State University,Lee Boulevard,Mississippi State,MS,39762-9698,516,77,14.92%,629,2325078
+2255,242200,Mississippi University for Women,1100 College Street,Columbus,MS,39701-5818,81,6,7.41%,81,212997
+2266,243300,Rust College,150 Rust Avenue,Holly Springs,MS,38635-2328,0,0,0%,1037,468106
+2269,243900,Tougaloo College,500 West County Line Road,Tougaloo,MS,39174-9799,30,15,50.00%,721,493242
+2270,244000,University of Mississippi,123 Lyceum Building,University,MS,38677-1848,527,60,11.39%,623,1736461
+2272,244100,University of Southern Mississippi,118 College Drive,Hattiesburg,MS,39406-0001,1576,245,15.55%,1167,3716972
+2278,244700,William Carey University,489 Tuscan Avenue,Hattiesburg,MS,39401-5499,65,9,13.85%,106,113659
+2411,252600,Carroll College,1601 North Benton Avenue,Helena,MT,59625-0002,101,10,9.90%,131,264629
+2414,252900,Dawson Community College,300 College Drive,Glendive,MT,59330-1405,24,8,33.33%,24,49745
+2421,252800,Miles Community College,2715 Dickinson,Miles City,MT,59301-4799,0,0,0%,24,28895
+2415,253000,Montana State University - Billings,1500 University Drive,Billings,MT,59101-0298,142,18,12.68%,584,1009951
+2426,253300,Montana State University - Northern,300 West 11th Street,Havre,MT,59501-3148,85,21,24.71%,218,304795
+2425,253200,Montana State University Bozeman,Strand Union Building  Room 183,Bozeman,MT,59717-4160,920,74,8.04%,581,1182032
+2424,253100,Montana Tech of the University of Montana,1300 West Park Street,Butte,MT,59701-8997,51,17,33.33%,74,193776
+2427,253400,Rocky Mountain College,1511 Poly Drive,Billings,MT,59102-1796,0,0,0%,88,157235
+2413,252700,University of Great Falls,1301 20th Street South,Great Falls,MT,59405-4996,93,25,26.88%,129,240125
+2428,253600,University of Montana (The),33 Campus Drive,Missoula,MT,59812-0001,692,82,11.85%,907,1491834
+2429,253700,University of Montana Western (The),710 South Atlantic Street,Dillon,MT,59725-3598,46,15,32.61%,137,174041
+3056,290600,Appalachian State University,Dougherty Administration Building,Boone,NC,28608-0001,228,25,10.96%,271,620726
+3059,290800,Barton College,704A College Street,Wilson,NC,27893-3104,43,8,18.60%,274,539015
+3062,291000,Belmont Abbey College,100 Belmont Mount Holly Road,Belmont,NC,28012-1802,3,1,33.33%,23,37522
+3063,291100,Bennett College,900 East Washington Street,Greensboro,NC,27401-3239,59,7,11.86%,204,234210
+3068,291200,Brevard College,1 Brevard College Drive,Brevard,NC,28712-3306,55,17,30.91%,72,109772
+3082,781400,Brookstone College of Business,10125 Berkeley Place Drive,Charlotte,NC,28262-1294,0,0,0%,8,12710
+3070,291300,Campbell University,143 Main Street,Buies Creek,NC,27506-0036,106,17,16.04%,326,671969
+3073,291400,Catawba College,2300 West Innes Street,Salisbury,NC,28144-2488,64,11,17.19%,90,343377
+3078,291600,Chowan University,One University Place,Murfreesboro,NC,27855-1850,46,6,13.04%,186,294057
+3085,291800,Davidson College,Concord and Main Streets,Davidson,NC,28035-0000,31,0,0%,1,972
+3087,292000,Duke University,2122 Campus Drive,Durham,NC,27708-0397,845,14,1.66%,283,1294134
+3090,292300,East Carolina University,East Fifth Street,Greenville,NC,27858-1818,593,89,15.01%,736,1679377
+3094,292600,Elizabeth City State University,1704 Weeksville Road,Elizabeth City,NC,27909-7806,67,31,46.27%,761,545081
+3095,292700,Elon University,100 Campus Drive,Elon,NC,27244-2010,91,4,4.40%,94,273932
+3097,292800,Fayetteville State University,1200 Murchison Road,Fayetteville,NC,28301-4298,97,13,13.40%,237,562085
+3100,292900,Gardner - Webb University,110 South Main Street,Boiling Springs,NC,28017-0000,140,21,15.00%,315,844271
+3102,293000,Greensboro College,815 West Market Street,Greensboro,NC,27401-1875,73,7,9.59%,148,321227
+3103,293100,Guilford College,5800 West Friendly Avenue,Greensboro,NC,27410-4171,141,14,9.93%,126,571017
+3108,293300,High Point University,833 Montlieu Avenue,High Point,NC,27262-4221,39,5,12.82%,161,348445
+3110,768700,James Sprunt Community College,133 James Sprunt Drive,Kenansville,NC,28349-0398,0,0,0%,3,159
+3113,293600,Johnson C Smith University,100 Beatties Ford Road,Charlotte,NC,28216-5398,44,8,18.18%,565,666017
+3116,293700,King's College,322 Lamar Avenue,Charlotte,NC,28204-2435,141,21,14.89%,111,215360
+3120,293900,Lees-McRae College,375 College Drive,Banner Elk,NC,28604-0000,31,7,22.58%,40,82742
+3122,294100,Lenoir-Rhyne University,625 Seventh Avenue Northeast,Hickory,NC,28601-3984,46,10,21.74%,71,196690
+3124,294300,Louisburg College,501 North Main Street,Louisburg,NC,27549-2398,46,15,32.61%,177,346538
+3126,294400,Mars Hill College,124 Cascade Street,Mars Hill,NC,28754-0000,60,15,25.00%,261,560954
+3130,294500,Meredith College,3800 Hillsborough Street,Raleigh,NC,27607-5298,30,9,30.00%,76,133473
+3131,294600,Methodist University,5400 Ramsey Street,Fayetteville,NC,28311-1420,51,3,5.88%,89,123267
+3135,294800,Montreat College,310 Gaither Circle,Montreat,NC,28757-1267,44,5,11.36%,103,140391
+3136,294900,Mount Olive College,634 Henderson Street,Mount Olive,NC,28365-1299,37,10,27.03%,135,208762
+3138,290500,North Carolina Agricultural & Technical State University,1601 East Market Street,Greensboro,NC,27411-0001,118,15,12.71%,328,453445
+3139,295000,North Carolina Central University,1801 Fayetteville Street,Durham,NC,27707-3198,137,12,8.76%,1812,2906792
+3141,297200,North Carolina State University,20 Watauga Club Drive,Raleigh,NC,27695-7001,555,31,5.59%,587,1099665
+3142,295100,North Carolina Wesleyan College,3400 North Wesleyan Boulevard,Rocky Mount,NC,27804-8699,48,8,16.67%,195,294266
+3146,295500,Pfeiffer University,48380 US 502 Highway North,Misenheimer,NC,28109-0000,40,13,32.50%,264,418408
+3151,295700,Queens University of Charlotte,1900 Selwyn Avenue,Charlotte,NC,28274-0001,3,1,33.33%,74,75977
+3161,296800,Saint Augustine's University,1315 Oakwood Avenue,Raleigh,NC,27610-2298,129,21,16.28%,891,4367307
+3163,296000,Salem College,601 South Church Street,Winston-Salem,NC,27101-5376,27,3,11.11%,7,51129
+3168,296200,Shaw University,118 East South Street,Raleigh,NC,27601-2393,71,28,39.44%,843,1079241
+3075,1026400,South College,140 Sweeten Creek Road,Asheville,NC,28803-0000,101,42,41.58%,211,304077
+3171,296400,Southeastern Community College,4564 Chadbourn Highway,Whiteville,NC,28472-5422,0,0,0%,31,12837
+3179,290700,University of North Carolina  Asheville,1 University Heights,Asheville,NC,28804-8503,96,20,20.83%,86,257841
+3180,297400,University of North Carolina - Chapel Hill,102 South Building,Chapel Hill,NC,27599-9100,945,60,6.35%,572,2372042
+3181,297500,University of North Carolina - Charlotte,9201 University City Boulevard,Charlotte,NC,28223-0001,191,45,23.56%,420,1038730
+3182,297600,University of North Carolina - Greensboro,1000 Spring Garden Street,Greensboro,NC,27412-0001,168,13,7.74%,246,737854
+3145,295400,University of North Carolina at Pembroke,One University Drive,Pembroke,NC,28372-1510,30,12,40.00%,179,383808
+3183,298400,University of North Carolina at Wilmington (The),601 South College Road,Wilmington,NC,28403-3297,209,24,11.48%,192,616781
+3140,398100,University of North Carolina School of the Arts,1533 South Main Street,Winston-Salem,NC,27127-2188,62,12,19.35%,52,120264
+3185,297800,Wake Forest University,1834 Wake Forest Road,Winston-Salem,NC,27109-7246,325,12,3.69%,126,552842
+3187,297900,Warren Wilson College,701 Warren Wilson Road,Swannanoa,NC,28778-2099,6,0,0%,12,25415
+3189,298100,Western Carolina University,Highway 107,Cullowhee,NC,28723-9731,259,23,8.88%,190,584461
+3195,298600,Winston-Salem State University,601 Martin L. King  Jr. Drive,Winston-Salem,NC,27110-0001,32,11,34.38%,277,436839
+3200,298800,Bismarck State College,1500 Edwards Avenue,Bismarck,ND,58501-1299,104,6,5.77%,125,112750
+3212,299500,Dakota College at Bottineau,105 Simrall Boulevard,Bottineau,ND,58318-1159,37,3,8.11%,77,93081
+3204,298900,Dickinson State University,291 Campus Drive,Dickinson,ND,58601-4896,58,5,8.62%,101,174084
+3205,299000,Jamestown College,6080 College Lane,Jamestown,ND,58405-3401,62,10,16.13%,130,337077
+3206,299100,Lake Region State College,1801 College Drive North,Devils Lake,ND,58301-1598,37,2,5.41%,100,113485
+3208,299300,Mayville State University,330 Third Street Northeast,Mayville,ND,58257-1299,56,9,16.07%,158,211066
+3201,935400,Medcenter One College of Nursing,512 North 7th Street,Bismarck,ND,58501-4494,27,1,3.70%,2,3724
+6566,299400,Minot State University,500 University Avenue West,Minot,ND,58707-0001,152,12,7.89%,283,512869
+3211,299600,North Dakota State College of Science,800 North 6th Street,Wahpeton,ND,58076-0002,117,19,16.24%,186,454182
+3213,299700,North Dakota State University - Main Campus - Fargo,1301 12th Avenue North,Fargo,ND,58102-0000,452,18,3.98%,434,599310
+3217,1205900,Trinity Bible College,50 - 6th Avenue South,Ellendale,ND,58436-7105,41,17,41.46%,179,445096
+3207,299200,University of Mary,7500 University Drive,Bismarck,ND,58504-9652,154,13,8.44%,107,102378
+3221,300500,University of North Dakota,264 Centennial Drive,Grand Forks,ND,58202-8193,645,32,4.96%,815,2485516
+3223,300800,Valley City State University,101 College Street Southwest,Valley City,ND,58072-0000,68,4,5.88%,95,166856
+3222,300700,Williston State College,1410 University Avenue,Williston,ND,58801-4464,45,4,8.89%,73,73703
+2440,253900,Chadron State College,1000 Main Street,Chadron,NE,69337-2690,53,3,5.66%,33,81982
+2441,254000,College of Saint Mary,7000 Mercy Road,Omaha,NE,68106-2606,49,4,8.16%,57,123937
+2442,254100,Concordia University,800 North Columbia Avenue,Seward,NE,68434-1594,72,6,8.33%,41,263195
+2444,254200,Creighton University,2500 California Plaza,Omaha,NE,68178-0001,442,22,4.98%,197,871323
+2446,254400,Doane College,1014 Boswell Avenue,Crete,NE,68333-2421,88,2,2.27%,105,102250
+2449,254800,Hastings College,710 North Turner Avenue,Hastings,NE,68901-7621,143,14,9.79%,141,145571
+5064,1151900,Joseph's College of Beauty,5801 O Street,Lincoln,NE,68510-2226,29,10,34.48%,268,560500
+2460,255300,Midland University,900 North Clarkson Street,Fremont,NE,68025-4254,111,25,22.52%,246,663699
+7575,640400,Nebraska Methodist College of Nursing & Allied Health,Josie Harper Campus,Omaha,NE,68114-2852,5,0,0%,2,2626
+2462,255500,Nebraska Wesleyan University,5000 Saint Paul Avenue,Lincoln,NE,68504-2796,186,15,8.06%,103,122932
+2476,256300,Union College,3800 South 48th Street,Lincoln,NE,68506-4387,96,8,8.33%,72,158140
+2479,256500,University of Nebraska,201 Administration Building,Lincoln,NE,68588-0419,1063,131,12.32%,1034,1609679
+2455,255100,University of Nebraska - Kearney,Founders Hall,Kearney,NE,68849-0001,176,10,5.68%,98,151881
+2480,255400,University of Nebraska - Omaha,60th & Dodge Street,Omaha,NE,68182-0001,271,24,8.86%,262,828281
+2478,689500,University of Nebraska Medical Center,984265 Nebraska Medical Center,Omaha,NE,68198-4265,119,2,1.68%,22,73890
+2481,256600,Wayne State College,1111 Main Street,Wayne,NE,68787-1172,85,5,5.88%,35,47808
+2483,256700,York College,1125 East 8th Street,York,NE,68467-2699,48,10,20.83%,163,299404
+2500,257200,Colby-Sawyer College,541 Main Street,New London,NH,03257-4648,57,3,5.26%,18,60068
+2510,473100,Daniel Webster College,20 University Drive,Nashua,NH,03063-1300,59,15,25.42%,103,229563
+2503,257300,Dartmouth College,207 Parkhurst Hall,Hanover,NH,03755-3529,357,9,2.52%,154,973941
+2505,257500,Franklin Pierce University,40 University Drive,Rindge,NH,03461-0060,125,19,15.20%,448,1142309
+2519,258300,Great Bay Community College,320 Corporate Drive,Portsmouth,NH,03801-2807,23,7,30.43%,50,60825
+2506,472900,Hesser College,3 Sundial Avenue,Manchester,NH,03103-7230,261,98,37.55%,857,1777047
+2507,259000,Keene State College,229 Main Street,Keene,NH,03435-1504,225,26,11.56%,181,353896
+2516,755500,Lakes Region Community College,379 Belmont Road,Laconia,NH,03246-1326,26,8,30.77%,42,27428
+2517,258200,Manchester Community College,1066 Front Street,Manchester,NH,03102-8518,30,3,10.00%,61,73920
+2518,923600,Nashua Community College,505 Amherst Street,Nashua,NH,03063-2052,31,6,19.35%,65,70092
+2511,257900,New England College,98 Bridge Street,Henniker,NH,03242-3293,146,33,22.60%,296,652326
+2513,258100,NHTI  - Concord's Community College,31 College Drive,Concord,NH,03301-7412,59,19,32.20%,224,214430
+2521,259100,Plymouth State University of the University System of New Hampshire,17 High Street,Plymouth,NH,03264-1595,183,26,14.21%,301,437870
+2515,756000,River Valley Community College,One College Place,Claremont,NH,03743-9707,19,4,21.05%,28,25678
+2522,258600,Rivier University,420 South Main Street,Nashua,NH,03060-5086,63,11,17.46%,55,71849
+2523,258700,Saint Anselm College,100 Saint Anselm Drive,Manchester,NH,03102-1310,99,4,4.04%,83,236212
+2512,258000,Southern New Hampshire University,2500 North River Road,Manchester,NH,03106-1045,280,25,8.93%,252,437756
+2524,258900,University of New Hampshire,Main Street,Durham,NH,03824-2511,1247,62,4.97%,785,1439695
+5230,2097900,University of New Hampshire School of Law,2 White Street,Concord,NH,03301-9912,51,6,11.76%,28,106716
+2514,529100,White Mountains Community College,2020 Riverside Drive,Berlin,NH,03570-3799,74,22,29.73%,100,76345
+2529,259600,Atlantic Cape Community College,5100 Black Horse Pike,Mays Landing,NJ,08330-2699,0,0,0%,124,150873
+2533,794700,Beth Medrash Govoha of America,617 Sixth Street,Lakewood,NJ,08701-2754,47,0,0%,32,33694
+2542,259900,Centenary College,400 Jefferson Street,Hackettstown,NJ,07840-2184,61,18,29.51%,203,334150
+2618,264200,College of New Jersey (The),2000 Pennington Road,Ewing,NJ,08628-0718,141,21,14.89%,470,1091519
+2546,260000,College of Saint Elizabeth,2 Convent Road,Morristown,NJ,07960-6989,67,26,38.81%,181,417816
+2554,260300,Drew University,36 Madison Avenue,Madison,NJ,07940-4063,125,15,12.00%,175,782162
+2560,710700,Essex County College,303 University Avenue,Newark,NJ,07102-1798,0,0,0%,957,355399
+2561,260700,Fairleigh Dickinson University,1000 River Road,Teaneck,NJ,07666-1996,376,38,10.11%,1258,2315151
+2565,260800,Georgian Court University,900 Lakewood Avenue,Lakewood,NJ,08701-2697,1,1,100%,13,17836
+2574,262200,Kean University,1000 Morris Avenue,Union,NJ,07083-7131,153,29,18.95%,523,556525
+2584,261500,Middlesex County College,2600 Woodbridge Avenue,Edison,NJ,08818-3050,0,0,0%,97,69419
+2585,261600,Monmouth University,400 Cedar Avenue,West Long Branch,NJ,07764-1898,353,31,8.78%,534,938723
+2586,261700,Montclair State University,1 Normal Avenue,Montclair,NJ,07043-9987,239,81,33.89%,635,1434300
+2571,261300,New Jersey City University,2039 Kennedy Boulevard,Jersey City,NJ,07305-1597,37,8,21.62%,476,692718
+2589,262100,New Jersey Institute of Technology,323 Martin Luther King Blvd.,Newark,NJ,07102-1982,152,23,15.13%,399,554593
+2591,262400,Ocean County College,College Drive,Toms River,NJ,08754-2001,0,0,0%,8,7260
+5943,2131600,Pennco Tech,99 Erial Road,Blackwood,NJ,08012-9961,6,3,50.00%,26,45129
+2595,262600,Princeton Theological Seminary,64 Mercer Street,Princeton,NJ,08540-0803,41,1,2.44%,61,246357
+2596,262700,Princeton University,1 Nassau Hall,Princeton,NJ,08544-0001,148,1,0.68%,7,29871
+2597,860900,Rabbinical College of America,226 Sussex Avenue,Morristown,NJ,07960-3600,0,0,0%,46,85256
+2599,934400,Ramapo College of New Jersey,505 Ramapo Valley Road,Mahwah,NJ,07430-1680,71,20,28.17%,428,478378
+2613,934500,Richard Stockton College of New Jersey (The),101 Vera King Farris Drive,Galloway,NJ,08205-9441,98,19,19.39%,308,622160
+2600,262800,Rider University,2083 Lawrenceville Road,Lawrenceville,NJ,08648-3099,548,49,8.94%,719,1335688
+2566,260900,Rowan University,201 Mullica Hill Road,Glassboro,NJ,08028-1702,0,0,0%,590,512356
+2602,262900,Rutgers  the State University of New Jersey,Old Queens Building,New Brunswick,NJ,08901-1281,1434,152,10.60%,2787,6612083
+2604,263800,Saint Peter's University,2641 Kennedy Boulevard,Jersey City,NJ,07306-5997,0,0,0%,66,107351
+2610,263200,Seton Hall University,400 South Orange Avenue,South Orange,NJ,07079-2697,306,36,11.76%,1068,2857392
+2612,263900,Stevens Institute of Technology,Castle Point on Hudson,Hoboken,NJ,07030-5370,256,33,12.89%,356,980197
+2616,545200,Teterboro School of Aeronautics,80 Moonachie Avenue,Teterboro,NJ,07608-1083,8,2,25.00%,15,29391
+2545,1039400,University of Medicine & Dentistry of New Jersey,30 Bergen Street,Newark,NJ,07107-3000,346,10,2.89%,67,536930
+2633,262500,William Paterson University of New Jersey,300 Pompton Road,Wayne,NJ,07470-2152,108,50,46.30%,299,327038
+2635,474200,Central New Mexico Community College,525 Buena Vista South East,Albuquerque,NM,87106-4096,28,2,7.14%,17,28900
+2641,265100,Eastern New Mexico University,Highway #70,Portales,NM,88130-6000,275,32,11.64%,961,2576881
+2646,265300,New Mexico Highlands University,National Avenue,Las Vegas,NM,87701-4436,41,5,12.20%,82,216675
+2647,265400,New Mexico Institute of Mining & Technology,801 Leroy Place,Socorro,NM,87801-4796,49,5,10.20%,86,352159
+2649,265600,New Mexico Military Institute,101 West College,Roswell,NM,88201-5173,10,6,60.00%,13,26942
+2650,265700,New Mexico State University,University Avenue  MSC 5100,Las Cruces,NM,88003-8001,625,81,12.96%,846,2016944
+2651,2083900,Northern New Mexico College,State Highway 554,El Rito,NM,87530-0000,32,3,9.38%,22,84389
+2652,209300,Saint John's College,1160 Camino Cruz Blanca,Santa Fe,NM,87505-4599,37,2,5.41%,29,148586
+2637,264900,Santa Fe University of Art and Design,1600 Saint Michael's Drive,Santa Fe,NM,87505-7634,34,13,38.24%,97,361918
+2658,266300,University of New Mexico,Scholes Hall Room 160,Albuquerque,NM,87131-0001,310,27,8.71%,612,1496118
+2659,266400,Western New Mexico University,1000 W. College Avenue,Silver City,NM,88061-5417,29,1,3.45%,291,554330
+2495,2107700,Truckee Meadows Community College,7000 Dandini Boulevard,Reno,NV,89512-3999,58,12,20.69%,27,51206
+2494,256800,University of Nevada   Reno,North Virginia Street,Reno,NV,89557-0002,211,14,6.64%,94,196038
+2493,256900,University of Nevada - Las Vegas,4505 South Maryland Parkway,Las Vegas,NV,89154-1001,131,17,12.98%,212,489387
+2663,266600,Adelphi University,South Avenue,Garden City,NY,11530-4299,261,23,8.81%,139,315314
+2668,288500,Albany College of Pharmacy and Health Sciences,106 New Scotland Avenue,Albany,NY,12208-3492,98,5,5.10%,49,58580
+2669,288600,Albany Law School of Union University,80 New Scotland Avenue,Albany,NY,12208-3494,79,4,5.06%,82,520911
+5337,288700,Albany Medical College,47 New Scotland Avenue,Albany,NY,12208-3479,36,2,5.56%,19,185920
+2671,266800,Alfred University,Carnegie Hall  1 Saxon Drive,Alfred,NY,14802-1205,164,16,9.76%,236,596941
+2681,643500,Arnot Ogden Medical Center,600 Roe Avenue,Elmira,NY,14905-1676,1,0,0%,2,7700
+2690,266900,Bank Street College of Education,610 West 112th Street,New York,NY,10025-1898,49,5,10.20%,17,86760
+2691,267100,Bard College,Annandale Road,Annandale-on-Hudson,NY,12504-5000,92,9,9.78%,146,237188
+2692,270800,Barnard College,3009 Broadway,New York,NY,10027-6598,40,3,7.50%,16,121282
+2983,283600,Binghamton University,3600 Vestal Parkway East,Binghamton,NY,13902-6000,514,44,8.56%,571,729377
+2712,267700,Brooklyn Law School,250 Joralemon Street,Brooklyn,NY,11201-3798,228,4,1.75%,133,393326
+2716,268100,Canisius College,2001 Main Street,Buffalo,NY,14208-1098,294,48,16.33%,598,1088167
+5341,2056400,Capri Cosmetology Learning Center,251 West Route 59,Nanuet,NY,10954-4915,0,0,0%,7,5124
+2725,269900,Clarkson University,8 Clarkson Avenue,Potsdam,NY,13699-1403,208,12,5.77%,195,594035
+2728,270100,Colgate University,13 Oak Drive,Hamilton,NY,13346-1386,104,3,2.88%,39,202662
+2730,270300,College of Mount Saint Vincent,6301 Riverdale Avenue,Riverdale,NY,10471-1093,76,18,23.68%,150,190121
+2731,270400,College of New Rochelle (The),29 Castle Place,New Rochelle,NY,10805-2339,176,20,11.36%,499,1434475
+2733,270500,College of Saint Rose,432 Western Avenue,Albany,NY,12203-1490,83,12,14.46%,53,125223
+2737,270700,Columbia University in the City of New York,210 Kent Hall,New York,NY,10027-0000,1283,80,6.24%,1795,7174719
+2747,271000,Cooper Union for the Advancement of Science & Art (The),30 Cooper Square,New York,NY,10003-7120,9,3,33.33%,15,58150
+2748,271100,Cornell University,300 Day Hall,Ithaca,NY,14853-2801,1022,18,1.76%,329,1280980
+2751,730400,Culinary Institute of America,1946 Campus Drive,Hyde Park,NY,12538-1499,138,21,15.22%,157,313779
+2757,2506100,CUNY City University of New York - Central,535 East 80th Street,New York,NY,10021-0795,2242,268,11.95%,8484,15207868
+2942,280800,Daemen College,4380 Main Street,Amherst,NY,14226-3592,168,30,17.86%,364,501567
+2772,271300,Dominican College of Blauvelt,470 Western Highway,Orangeburg,NY,10962-1210,62,27,43.55%,58,98177
+2773,266700,Dowling College,Idle Hour Boulevard,Oakdale,NY,11769-1999,155,29,18.71%,383,683281
+2779,286400,Dutchess Community College,53 Pendell Road,Poughkeepsie,NY,12601-1595,49,16,32.65%,68,96304
+2780,271200,D'Youville College,320 Porter Avenue,Buffalo,NY,14201-1084,206,20,9.71%,228,336370
+2788,271800,Elmira College,One Park Place,Elmira,NY,14901-2099,76,7,9.21%,180,420605
+2793,286600,Fashion Institute of Technology,7th Avenue at 27th Street,New York,NY,10001-5992,141,15,10.64%,168,402242
+2797,272200,Fordham University,441 East Fordham Road,Bronx,NY,10458-5157,221,39,17.65%,667,1444525
+7587,2540800,Globe Institute of Technology,500 Seventh Avenue,New York,NY,10018-4503,0,0,0%,12,16348
+2806,272800,Hamilton College,198 College Hill Road,Clinton,NY,13323-1218,51,1,1.96%,31,145127
+2809,272900,Hartwick College,One Hartwick Drive,Oneonta,NY,13820-4020,128,19,14.84%,166,558670
+2812,478800,Herkimer County Community College - SUNY Office of Community Colleges,100 Reservoir Road,Herkimer,NY,13350-1598,0,0,0%,101,87695
+2813,273500,Hilbert College,5200 South Park Avenue,Hamburg,NY,14075-1597,36,4,11.11%,42,44144
+2814,273100,Hobart and William Smith Colleges,337 Pulteney Street,Geneva,NY,14456-3397,59,4,6.78%,41,228209
+2815,273200,Hofstra University,101 Hofstra University,Hempstead,NY,11549-1010,331,28,8.46%,653,1344437
+2817,273400,Houghton College,1 Willard Avenue,Houghton,NY,14744-0128,112,12,10.71%,168,294477
+2821,273700,Iona College,715 North Avenue,New Rochelle,NY,10801-1890,107,19,17.76%,340,623545
+2822,737500,Island Drafting & Technical Institute,128 Broadway,Amityville,NY,11701-2704,36,3,8.33%,28,42823
+2823,273900,Ithaca College,953 Danby Road,Ithaca,NY,14850-7000,594,34,5.72%,206,376547
+2828,274200,Juilliard School (The),60 Lincoln Center Plaza,New York,NY,10023-6588,87,12,13.79%,31,143405
+2832,274400,Keuka College,141 Central Avenue,Keuka Park,NY,14478-0000,69,9,13.04%,209,350097
+2839,274800,Le Moyne College,1419 Salt Springs Road,Syracuse,NY,13214-1399,165,14,8.48%,172,312709
+2836,746600,LIM College,12 East 53rd Street,New York,NY,10022-5268,0,0,0%,4,28411
+2843,275100,Long Island University,University Center-C.W. Post Campus,Brookville,NY,11548-1326,726,53,7.30%,715,1408253
+2845,275800,Manhattan College,Manhattan College Parkway,Riverdale,NY,10471-4098,123,13,10.57%,113,271997
+2847,275900,Manhattan School of Music,120 Claremont Avenue,New York,NY,10027-4689,84,22,26.19%,165,300329
+2849,276000,Manhattanville College,2900 Purchase Street,Purchase,NY,10577-2132,202,33,16.34%,253,321525
+2851,276300,Maria College,700 New Scotland Avenue,Albany,NY,12208-1798,66,14,21.21%,50,117088
+2854,276500,Marist College,3399 North Road,Poughkeepsie,NY,12601-1387,256,11,4.30%,248,675427
+2856,276900,Marymount Manhattan College,221 East 71st Street,New York,NY,10021-4597,0,0,0%,162,122158
+2859,277200,Mercy College,555 Broadway,Dobbs Ferry,NY,10522-1189,0,0,0%,48,167075
+2861,726400,Mesivta Torah Vodaath Rabbinical Seminary,425 East 9th Street,Brooklyn,NY,11218-5209,14,0,0%,0,0
+2862,397400,Mesivtha Tifereth Jerusalem of America,145 East Broadway,New York,NY,10002-6382,0,0,0%,6,20802
+2870,287100,Mohawk Valley Community College - SUNY Office of Community Colleges,1101 Sherman Drive,Utica,NY,13501-5394,182,25,13.74%,220,335220
+2871,277500,Molloy College,1000 Hempstead Avenue,Rockville Centre,NY,11570-1100,65,4,6.15%,143,225655
+2874,277800,Mount Saint Mary College,330 Powell Avenue,Newburgh,NY,12550-3494,54,10,18.52%,73,106532
+2764,702600,Mount Sinai School of Medicine,One Gustave L Levy Place,New York,NY,10029-6500,53,1,1.89%,13,167203
+2876,287300,Nassau Community College,1 Education Drive,Garden City,NY,11530-6793,41,19,46.34%,54,82628
+2878,277900,Nazareth College of Rochester,4245 East Avenue,Rochester,NY,14618-3790,190,13,6.84%,49,56298
+2879,2066200,New School  The,66 West 12th Street,New York,NY,10011-8603,343,57,16.62%,778,1740118
+2736,1227700,New York Chiropractic College,2360 State Route 89,Seneca Falls,NY,13148-0800,117,5,4.27%,24,112329
+2881,274900,New York College of Podiatric Medicine,53 East 124th Street,New York,NY,10035-1940,58,4,6.90%,71,395583
+2885,278200,New York Institute of Technology,2 Northern Boulevard,Old Westbury,NY,11568-8000,465,66,14.19%,735,1845652
+2886,278300,New York Law School,185 West Broadway,New York,NY,10013-2960,74,10,13.51%,178,737325
+2887,278400,New York Medical College,Administration Building,Valhalla,NY,10595-1600,105,3,2.86%,16,478698
+2892,278500,New York University,70 Washington Square South,New York,NY,10012-1091,1953,150,7.68%,3541,10380002
+2894,287400,Niagara County Community College,3111 Saunders Settlement Road,Sanborn,NY,14132-9460,3,1,33.33%,3,1700
+2895,278800,Niagara University,Lewiston Road,Niagara University,NY,14109-2010,307,38,12.38%,240,397479
+2896,711100,North Country Community College,23 Santanoni Avenue,Saranac Lake,NY,12983-2046,0,0,0%,50,32631
+2897,278900,Notre Dame College of St Johns University,300 Howard Avenue,Staten Island,NY,10301,0,0,0%,20,13552
+2898,279000,Nyack College,One South Boulevard,Nyack,NY,10960-3698,33,5,15.15%,181,215996
+2903,287600,Orange County Community College,115 South Street,Middletown,NY,10940-6441,78,23,29.49%,63,123235
+8892,2104300,Otsego Delaware Schoharie Greene BOCES,2020 Jump Brook Road,Grand Gorge,NY,12134-0000,42,2,4.76%,0,0
+2905,279100,Pace University,One Pace Plaza,New York,NY,10038-1598,497,61,12.27%,860,2331151
+2908,279500,Paul Smith's College of Arts & Sciences,Route 86 & 30,Paul Smiths,NY,12970-0000,114,26,22.81%,161,233063
+2911,279600,Polytechnic Institute of New York University,6 Metrotech Center,Brooklyn,NY,11201-3840,149,20,13.42%,357,812787
+2913,279800,Pratt Institute,200 Willoughby Avenue,Brooklyn,NY,11205-3899,476,61,12.82%,1617,2986918
+2926,397800,Rabbinical Seminary of America,76-01 147th Street,Flushing,NY,11367-3148,0,0,0%,6,8328
+2934,280300,Rensselaer Polytechnic Institute,110 Eighth Street,Troy,NY,12180-3590,541,13,2.40%,238,1128911
+2938,280500,Roberts Wesleyan College,2301 Westside Drive,Rochester,NY,14624-1997,168,24,14.29%,242,385916
+2940,280600,Rochester Institute of Technology,1 Lomb Memorial Drive,Rochester,NY,14623-5608,848,63,7.43%,1018,3589857
+2941,287700,Rockland Community College,145 College Road,Suffern,NY,10901-3611,0,0,0%,71,38244
+2943,281000,Sage Colleges,65 First Street,Troy,NY,12180-4199,178,28,15.73%,341,630529
+2949,282000,Saint Francis College,180 Remsen Street,Brooklyn Heights,NY,11201-4398,53,13,24.53%,50,78978
+2951,282100,Saint John Fisher College,3690 East Avenue,Rochester,NY,14618-3597,249,13,5.22%,323,444110
+2952,282300,Saint John's University,8000 Utopia Parkway,Jamaica,NY,11439-1343,717,75,10.46%,1296,3127930
+2953,282500,Saint Joseph's College,245 Clinton Avenue,Brooklyn,NY,11205-3688,66,16,24.24%,56,188953
+2955,283200,Saint Thomas Aquinas College,125 Route 340,Sparkill,NY,10976-1050,62,16,25.81%,49,71991
+2958,281300,Sarah Lawrence College,One Mead Way,Bronxville,NY,10708-5999,99,5,5.05%,64,181334
+2961,678500,Schenectady County Community College,78 Washington Avenue,Schenectady,NY,12305-2294,0,0,0%,78,53622
+2963,746800,School of Visual Arts,209 East 23rd Street,New York,NY,10010-3994,262,26,9.92%,523,910345
+2966,281600,Siena College,515 Loudon Road,Loudonville,NY,12211-1462,193,22,11.40%,54,159794
+2967,281400,Skidmore College,815 North Broadway,Saratoga Springs,NY,12866-1632,46,5,10.87%,93,389300
+2947,281700,St. Bonaventure University,3261 West State Road,St. Bonaventure,NY,14778-2284,160,19,11.88%,249,458325
+2954,282900,St. Lawrence University,Romoda Drive,Canton,NY,13617-1455,69,4,5.80%,70,240436
+2982,283500,State University of New York at Albany,1400 Washington Avenue,Albany,NY,12222-0001,783,86,10.98%,909,1767626
+2984,283700,State University of New York at Buffalo,501 Capen Hall,Buffalo,NY,14260-0001,1318,95,7.21%,1341,2089055
+2980,285800,State University of New York at Farmingdale,2350 Broadhollow Road  Route 110,Farmingdale,NY,11735-1021,121,22,18.18%,696,1069918
+2993,284600,State University of New York at New Paltz,75 South Manheim Boulevard,New Paltz,NY,12561-2499,316,28,8.86%,645,966669
+2986,283800,State University of New York at Stony Brook,310 Administration Building,Stony Brook,NY,11794-0701,457,41,8.97%,723,1103683
+2997,284900,State University of New York College at Plattsburgh,101 Broad Street,Plattsburgh,NY,12901-2681,176,22,12.50%,273,397754
+2985,285000,State University of New York College at Potsdam,44 Pierrepont Avenue,Potsdam,NY,13676-2294,215,18,8.37%,333,564615
+2999,283900,State University of New York Downstate Medical Center,450 Clarkson Avenue,Brooklyn,NY,11203-2098,205,2,0.98%,66,242728
+2972,1167800,State University of New York Institute of Technology at Utica - Rome,100 Seymour Road,Utica,NY,13502-1311,36,3,8.33%,60,93133
+3001,284000,State University of New York Upstate Medical University,750 East Adams Street,Syracuse,NY,13210-2375,68,1,1.47%,17,44892
+2975,287900,Sullivan County Community College - SUNY Office of Community Colleges,112 College Road,Loch Sheldrake,NY,12759-5151,32,11,34.38%,270,456273
+2991,284400,SUNY at Fredonia,280 Central Avenue,Fredonia,NY,14063-1145,342,25,7.31%,430,593459
+2988,284100,SUNY College at Brockport,350 New Campus Drive,Brockport,NY,14420-2914,425,27,6.35%,722,1107694
+2989,284200,SUNY College at Buffalo,1300 Elmwood Avenue,Buffalo,NY,14222-1095,400,41,10.25%,882,1975140
+2990,284300,SUNY College at Cortland,Miller Administration Building,Cortland,NY,13045-0900,213,7,3.29%,161,204449
+2992,284500,SUNY College at Geneseo,1 College Circle,Geneseo,NY,14454-1401,297,16,5.39%,256,399548
+2994,710900,SUNY College at Old Westbury,Route 107,Old Westbury,NY,11568-0210,77,13,16.88%,144,136044
+2995,284700,SUNY College at Oneonta,Ravine Parkway,Oneonta,NY,13820-4015,343,29,8.45%,513,1096709
+2996,284800,SUNY College at Oswego,7060 State Route 104,Oswego,NY,13126-3599,397,41,10.33%,622,887485
+2998,679100,SUNY College at Purchase,735 Anderson Hill Road,Purchase,NY,10577-1400,42,5,11.90%,162,256100
+2978,285600,SUNY College of Agriculture & Technology at Cobleskill,106 Suffolk Circle,Cobleskill,NY,12043-9986,201,33,16.42%,298,373744
+2981,285900,SUNY College of Agriculture & Technology at Morrisville,Whipple Administration Building,Morrisville,NY,13408-0901,168,28,16.67%,435,412875
+2987,285100,SUNY College of Environment Science & Forestry,1 Forestry Drive,Syracuse,NY,13210-2778,64,4,6.25%,51,109157
+2971,992900,SUNY College of Optometry,33 West 42nd Street,New York,NY,10036-8003,52,0,0%,6,12552
+2976,285400,SUNY College of Technology at Alfred,Alfred State College,Alfred,NY,14802-9951,209,27,12.92%,554,623893
+2977,285500,SUNY College of Technology at Canton,Cornell Drive,Canton,NY,13617-1098,185,29,15.68%,430,529635
+2979,285700,SUNY College of Technology at Delhi,2 Main Street,Delhi,NY,13753-1190,153,25,16.34%,345,429850
+2789,1028600,SUNY Empire State College,Two Union Avenue,Saratoga Springs,NY,12866-4391,73,8,10.96%,88,189765
+3000,285300,SUNY Maritime College,6 Pennyfield Avenue,Bronx,NY,10465-4198,49,7,14.29%,101,199605
+3033,288100,SUNY Westchester Community College,75 Grasslands Road,Valhalla,NY,10595-1698,0,0,0%,206,213786
+3004,288200,Syracuse University,Crouse Hinds Hall  Suite 600,Syracuse,NY,13244-2130,1039,49,4.72%,474,1847930
+3007,397900,Teachers College  Columbia University,525 West 120th Street,New York,NY,10027-6696,84,5,5.95%,100,407022
+3008,1103100,Technical Career Institutes,320 West 31st Street,New York,NY,10001-2789,30,16,53.33%,159,276305
+3010,1014200,Touro College,27-33 West 23 Street,New York,NY,10010-4202,147,11,7.48%,172,260480
+3016,288900,Union College,807 Union Street,Schenectady,NY,12308-2311,67,4,5.97%,94,458757
+3017,289000,Union Theological Seminary,3041 Broadway,New York,NY,10027-5710,75,15,20.00%,78,285518
+3020,289400,University of Rochester,240 Wallis Hall,Rochester,NY,14627-9000,577,21,3.64%,283,885460
+3021,288300,Utica College,1600 Burrstone Road,Utica,NY,13502-4892,38,5,13.16%,173,163351
+3023,289500,Vassar College,124 Raymond Avenue,Poughkeepsie,NY,12604-0008,170,7,4.12%,57,197217
+2660,266500,Vaughn College of Aeronautics and Technology,86-01 23rd Avenue,Flushing,NY,11369-9997,0,0,0%,50,55112
+3025,289600,Villa Maria College of Buffalo,240 Pine Ridge Road,Buffalo,NY,14225-3999,0,0,0%,17,19007
+3028,289900,Wagner College,One Campus Road,Staten Island,NY,10301-4495,128,14,10.94%,211,446009
+3032,290100,Wells College,Route 90  170 Main Street,Aurora,NY,13026-0500,60,7,11.67%,42,92839
+3051,290300,Yeshiva University,500 West 185th Street,New York,NY,10033-3201,227,19,8.37%,289,756223
+3053,1182100,Yeshivath Zichron Moshe,Laurel Park Road,South Fallsburg,NY,12779-0580,7,0,0%,0,0
+6048,2152100,Academy of Court Reporting and Technology,2044 Euclid Avenue,Cleveland,OH,44115-2282,59,8,13.56%,72,64212
+3227,301000,Antioch University,900 Dayton Street,Yellow Springs,OH,45387-1608,121,7,5.79%,559,1808711
+3285,1289100,Antonelli College,124 E. 7th Street,Cincinnati,OH,45202-2592,4,0,0%,9,15682
+3230,301200,Ashland University,401 College Avenue,Ashland,OH,44805-3799,127,32,25.20%,105,195635
+3233,301400,Baldwin Wallace University,275 Eastland Road,Berea,OH,44017-2088,275,26,9.45%,125,246578
+3237,301600,Bluffton University,1 University Drive,Bluffton,OH,45817-2104,167,37,22.16%,354,426176
+3240,301800,Bowling Green State University,1001 East Wooster Street,Bowling Green,OH,43403-0001,418,98,23.44%,659,1410129
+3265,485300,Bradford School,2469 Stelzer Road,Columbus,OH,43219-3129,80,10,12.50%,73,180572
+3242,302300,Capital University,1 College and Main,Columbus,OH,43209-2394,188,26,13.83%,148,313858
+3244,302400,Case Western Reserve University,10900 Euclid Avenue,Cleveland,OH,44106-7049,786,37,4.71%,197,511544
+3245,302500,Cedarville University,251 North Main Street,Cedarville,OH,45314-8564,140,16,11.43%,101,216171
+3276,304300,Chancellor University,6000 Lombardo Center,Seven Hills,OH,44131-5907,37,20,54.05%,306,284879
+3251,1034500,Cincinnati State Technical & Community College,3520 Central Parkway,Cincinnati,OH,45223-2690,3,2,66.67%,0,0
+3257,398200,Cleveland Institute of Art (The),11141 East Boulevard,Cleveland,OH,44106-1700,63,16,25.40%,129,262091
+3258,303100,Cleveland Institute of Music (The),11021 East Boulevard,Cleveland,OH,44106-1776,52,4,7.69%,37,174503
+3260,303200,Cleveland State University,2121 Euclid Avenue,Cleveland,OH,44115-2214,264,58,21.97%,1032,2749766
+3261,303300,College of Mount Saint Joseph,5701 Delhi Road,Cincinnati,OH,45233-1670,152,19,12.50%,130,172025
+3264,303700,College of Wooster (The),1189 Beall Avenue,Wooster,OH,44691-2363,133,13,9.77%,77,408243
+3266,303900,Columbus College of Art & Design,107 North Ninth Street,Columbus,OH,43215-1758,44,8,18.18%,267,742553
+3271,304000,Cuyahoga Community College,700 Carnegie Avenue,Cleveland,OH,44115-2878,0,0,0%,25,35025
+3272,485500,Davis College,4747 Monroe Street,Toledo,OH,43623-4307,13,3,23.08%,171,114876
+5103,2056800,Daymar College,1410 Industrial Drive,Chillicothe,OH,45601-1038,5,0,0%,42,29049
+3274,304100,Defiance College,701 North Clinton,Defiance,OH,43512-1695,66,11,16.67%,127,215526
+3275,304200,Denison University,100 West Loop,Granville,OH,43023-1329,46,4,8.70%,109,272388
+3353,311400,Firelands Regional Medical Center,1912 Hayes Ave,Sandusky,OH,44870-4788,45,1,2.22%,5,5880
+3262,303600,Franciscan University of Steubenville,1235 University Boulevard,Steubenville,OH,43952-1763,61,7,11.48%,84,115749
+3290,304800,Heidelberg University,310 East Market Street,Tiffin,OH,44883-2462,168,42,25.00%,378,554347
+3291,304900,Hiram College,State Route 700,Hiram,OH,44234-1808,106,29,27.36%,254,989816
+4818,1313200,International College of Broadcasting,6 South Smithville Road,Dayton,OH,45431-1898,21,6,28.57%,35,155671
+3298,305000,John Carroll University,20700 North Park Boulevard,University Heights,OH,44118-4581,259,15,5.79%,339,709121
+3299,305100,Kent State University,Executive Office  2nd Floor Library,Kent,OH,44242-0001,1222,246,20.13%,2576,5127382
+3300,306500,Kenyon College,Kenyon College,Gambier,OH,43022-9623,56,2,3.57%,58,137633
+3301,703500,Kettering College,3737 Southern Boulevard,Kettering,OH,45429-1299,35,5,14.29%,27,44748
+3303,306600,Lake Erie College,391 West Washington Street,Painesville,OH,44077-3389,77,20,25.97%,189,399162
+6053,680400,Lakeland Community College,7700 Clocktower Drive,Kirtland,OH,44094-5198,6,3,50.00%,41,70124
+3306,306800,Lorain County Community College,1005 N Abbe Road,Elyria,OH,44035-1691,0,0,0%,75,17256
+5234,306900,Lourdes University,6832 Convent Boulevard,Sylvania,OH,43560-2898,41,11,26.83%,28,48611
+3307,307200,Malone University,2600 Cleveland Avenue NW,Canton,OH,44709-3897,94,11,11.70%,147,186216
+3310,307300,Marietta College,215 Fifth Street,Marietta,OH,45750-4033,186,13,6.99%,175,316104
+3311,1073600,Marion Technical College,1467 Mt Vernon Avenue,Marion,OH,43302-5694,0,0,0%,3,991
+3315,307700,Miami University,Roudebush Hall,Oxford,OH,45056-1831,315,53,16.83%,620,1391220
+8246,3071900,Mount Carmel College of Nursing,127 South Davis Avenue,Columbus,OH,43222-1598,0,0,0%,1,1562
+3322,708500,Mount Vernon Nazarene University,800 Martinsburg Road,Mount Vernon,OH,43050-9500,209,25,11.96%,176,205283
+3324,308400,Muskingum University,163 Stormont Street,New Concord,OH,43762-1199,227,71,31.28%,223,374845
+5236,2454400,Northeast Ohio Medical University,4209 State Route 44,Rootstown,OH,44272-9621,115,4,3.48%,6,21931
+3330,308500,Notre Dame College of Ohio,4545 College Road,South Euclid,OH,44121-4293,35,9,25.71%,85,123517
+3331,308600,Oberlin College,70 North Professor Street,Oberlin,OH,44074-1090,221,8,3.62%,579,1625947
+3333,308800,Ohio College of Podiatric Medicine,6000 Rockside Woods Blvd,Independence,OH,44131-7304,81,2,2.47%,47,318573
+3335,303500,Ohio Dominican University,1216 Sunbury Road,Columbus,OH,43219-2099,146,9,6.16%,124,199470
+3337,308900,Ohio Northern University,525 South Main Street,Ada,OH,45810-1555,230,34,14.78%,429,867735
+6748,2066100,Ohio State College of Barber Styling,4614 East Broad Street,Columbus,OH,43213-1301,6,0,0%,23,34847
+3341,309000,Ohio State University (The),205 Bricker Hall,Columbus,OH,43210-1358,1355,139,10.26%,3523,6936334
+3334,1174500,Ohio Technical College,1374 East 51st Street,Cleveland,OH,44103-1228,169,44,26.04%,685,706702
+3342,310000,Ohio University,020 Chubb Hall,Athens,OH,45701-2979,458,69,15.07%,800,1444470
+3344,310900,Ohio Wesleyan University,61 South Sandusky Street,Delaware,OH,43015-2398,230,31,13.48%,153,412350
+3345,311000,Otterbein University,1 South Grove Street,Westerville,OH,43081-2006,199,31,15.58%,355,533066
+3350,311300,Pontifical College Josephinum,7625 North High Street,Columbus,OH,43235-1498,10,1,10.00%,17,42605
+3368,486600,Stautzenberger College,1796 Indian Wood Circle,Maumee,OH,43537-4007,0,0,0%,244,367882
+3372,312100,Tiffin University,155 Miami Street,Tiffin,OH,44883-2161,36,11,30.56%,51,68258
+5107,2054300,Trumbull Business College,3200 Ridge Road,Warren,OH,44484-3250,19,1,5.26%,110,100847
+3375,1092300,Union Institute & University,440 East McMillan Street,Cincinnati,OH,45206-1925,111,20,18.02%,369,864749
+3378,312300,University of Akron (The),302 Buchtel Avenue,Akron,OH,44325-4702,698,127,18.19%,1422,2251171
+3379,312500,University of Cincinnati,2624 Clifton Avenue,Cincinnati,OH,45221-0125,1149,110,9.57%,2365,5591425
+3380,312700,University of Dayton,300 College Park,Dayton,OH,45469-0002,432,26,6.02%,260,949289
+3283,304500,University of Findlay (The),1000 North Main Street,Findlay,OH,45840-3695,192,33,17.19%,615,575638
+3321,308300,University of Mount Union,1972 Clark Avenue,Alliance,OH,44601-3993,287,38,13.24%,200,279062
+3356,311600,University of Rio Grande,218 North College Avenue,Rio Grande,OH,45674-3131,59,8,13.56%,116,168263
+3381,313100,University of Toledo,2801 West Bancroft Street,Toledo,OH,43606-3390,825,98,11.88%,1068,2497532
+3382,313300,Urbana University,579 College Way,Urbana,OH,43078-2091,245,118,48.16%,454,725543
+3383,313400,Ursuline College,2550 Lander Road,Pepper Pike,OH,44124-4398,57,8,14.04%,114,133236
+3385,313500,Walsh University,2020 East Maple Street,North Canton,OH,44720-3396,264,31,11.74%,221,311099
+3390,314100,Wilberforce University,1055 North Bickett Road,Wilberforce,OH,45384-1001,139,57,41.01%,386,834669
+3391,314200,Wilmington College,1870 Quaker Way,Wilmington,OH,45177-2499,213,24,11.27%,299,619235
+3392,314300,Wittenberg University,200 West Ward Street,Springfield,OH,45501-2199,186,21,11.29%,167,475167
+3393,307800,Wright State University,3640 Colonel Glenn Highway,Dayton,OH,45435-0002,549,74,13.48%,883,1788242
+3394,314400,Xavier University,3800 Victory Parkway,Cincinnati,OH,45207-1035,263,29,11.03%,98,218923
+3396,314500,Youngstown State University,One University Plaza,Youngstown,OH,44555-0001,138,21,15.22%,311,612774
+3405,315000,Cameron University,2800 West Gore Boulevard,Lawton,OK,73505-6377,0,0,0%,48,50626
+3406,317600,Carl Albert State College,1507 South McKenna,Poteau,OK,74953-5208,82,50,60.98%,262,598248
+3414,315400,East Central University,1100 East 14th,Ada,OK,74820-6999,78,18,23.08%,393,604666
+3415,315500,Eastern Oklahoma State College,1301 West Main,Wilburton,OK,74578-4999,0,0,0%,158,107726
+3421,1026600,Hillsdale Free Will Baptist College,3701 South I-35 Frontage Road,Moore,OK,73160-0000,10,5,50.00%,86,121596
+3424,315700,Langston University,West Highway 33,Langston,OK,73050-0000,0,0,0%,18,29892
+4029,694200,Mid-America Christian University,3500 Southwest 119th Street,Oklahoma City,OK,73170-4504,23,10,43.48%,99,114453
+3428,316100,Northeastern State University,600 North Grand,Tahlequah,OK,74464-2399,159,21,13.21%,567,1501033
+3430,316200,Northern Oklahoma College,1220 East Grand,Tonkawa,OK,74653-0310,0,0,0%,262,182838
+3431,316300,Northwestern Oklahoma State University,709 Oklahoma Boulevard,Alva,OK,73717-2799,9,0,0%,0,0
+3434,316400,Oklahoma Baptist University,500 West University,Shawnee,OK,74801-2590,43,4,9.30%,138,218449
+3435,316500,Oklahoma Christian University,2501 East Memorial Road,Oklahoma City,OK,73013-0000,165,25,15.15%,296,613045
+3437,316600,Oklahoma City University,2501 North Blackwelder,Oklahoma City,OK,73106-1493,155,18,11.61%,255,775119
+3438,317400,Oklahoma Panhandle State University,323 Eagle Boulevard,Goodwell,OK,73939-0000,4,2,50.00%,14,26726
+3441,317000,Oklahoma State University,401 Whitehurst,Stillwater,OK,74078-1026,347,40,11.53%,430,1645507
+3433,1128200,Oklahoma State University Center for Health Sciences,1111 West 17th Street,Tulsa,OK,74117-1898,44,1,2.27%,7,63649
+3442,317200,Oklahoma State University Institute of Technology - Okmulgee,1801 East 4th Street,Okmulgee,OK,74447-3901,146,54,36.99%,483,1091346
+3400,315100,Oklahoma Wesleyan University,2201 Silver Lake Road,Bartlesville,OK,74006-6299,52,2,3.85%,77,126017
+3443,398500,Oral Roberts University,7777 S. Lewis Avenue,Tulsa,OK,74171-0001,485,48,9.90%,849,3741070
+6907,2306800,Platt College,3801 South Sheridan,Tulsa,OK,74145-1111,0,0,0%,17,27249
+3402,314900,Southern Nazarene University,6729 Northwest 39th Expressway,Bethany,OK,73008-2694,105,23,21.90%,213,492265
+3456,767800,Spartan College of Aeronautics and Technology,8820 East Pine Street,Tulsa,OK,74115-5800,50,9,18.00%,1059,2137693
+3408,315200,University of Central Oklahoma,100 North University  Drive,Edmond,OK,73034-5209,34,12,35.29%,419,654228
+3461,318400,University of Oklahoma,660 Parrington Oval,Norman,OK,73019-3073,484,39,8.06%,722,1897445
+3462,316700,University of Science & Arts of Oklahoma,1727 W. Alabama,Chickasha,OK,73018-5322,9,1,11.11%,52,65874
+3463,318500,University of Tulsa (The),800 South Tucker Drive,Tulsa,OK,74104-3189,183,19,10.38%,159,772695
+3469,318600,Blue Mountain Community College,2411 North West Carden,Pendleton,OR,97801-0000,0,0,0%,41,39553
+3472,321800,Chemeketa Community College,4000 Lancaster Drive Northeast,Salem,OR,97309-1500,237,75,31.65%,502,909172
+3496,888700,Concorde Career College,1425 NE Irving Street,Portland,OR,97232-2242,55,16,29.09%,131,209661
+3478,319100,Concordia University,2811 Northeast Holman Street,Portland,OR,97211-6099,15,4,26.67%,93,152428
+3522,133900,Corban University,5000 Deer Park Drive South East,Salem,OR,97301-9392,45,8,17.78%,88,188003
+3479,319300,Eastern Oregon University,One University Boulevard,La Grande,OR,97850-2899,81,14,17.28%,224,380375
+3481,319400,George Fox University,414 North Meridian Street,Newberg,OR,97132-2697,144,16,11.11%,153,257071
+3482,319600,Lane Community College,4000 East 30th Avenue,Eugene,OR,97405-0640,154,15,9.74%,787,1708482
+3483,319700,Lewis & Clark College,0615 SW Palatine Hill Road,Portland,OR,97219-7899,294,5,1.70%,46,165587
+3484,319800,Linfield College,900 Southeast Baker Street,McMinnville,OR,97128-6894,129,6,4.65%,89,357276
+3485,693800,Linn-Benton Community College,6500 Pacific Boulevard Southwest,Albany,OR,97321-3774,133,41,30.83%,9,26450
+3486,319900,Marylhurst University,17600 Pacific Highway (Hwy.43),Marylhurst,OR,97036-7036,25,7,28.00%,59,196300
+3491,320400,Mount Hood Community College,26000 SE Stark Street,Gresham,OR,97030-3300,168,52,30.95%,331,579463
+3493,320800,Northwest Christian University,828 East 11th Avenue,Eugene,OR,97401-3727,53,7,13.21%,38,98173
+5113,488200,Oregon Health & Science University,3181 SW Sam Jackson Park Road,Portland,OR,97239-3098,267,8,3.00%,48,155962
+3499,321100,Oregon Institute of Technology,3201 Campus Drive,Klamath Falls,OR,97601-8801,140,7,5.00%,82,172115
+3500,321000,Oregon State University,1500 S.W. Jefferson,Corvallis,OR,97331-8507,1191,67,5.63%,684,1864004
+3501,321200,Pacific University,2043 College Way,Forest Grove,OR,97116-1797,229,21,9.17%,91,270769
+3503,321300,Portland Community College,12000 SW 49th Avenue,Portland,OR,97219-7198,415,85,20.48%,632,1072376
+3505,321600,Portland State University,1721 South West Broadway,Portland,OR,97201-0000,325,45,13.85%,386,1165332
+3506,321700,Reed College,3203 SE Woodstock Boulevard,Portland,OR,97202-8199,161,4,2.48%,32,111349
+3510,321900,Southern Oregon University,1250 Siskiyou Boulevard,Ashland,OR,97520-5010,223,27,12.11%,458,724382
+3513,322100,Treasure Valley Community College,650 College Boulevard,Ontario,OR,97914-3423,11,8,72.73%,44,65172
+3518,322300,University of Oregon,110 Johnson Hall,Eugene,OR,97403-1226,827,81,9.79%,831,2119849
+3520,322400,University of Portland,5000 North Willamette Boulevard,Portland,OR,97203-5798,112,9,8.04%,84,279387
+3525,1230900,University of Western States,2900 North East  132nd Avenue,Portland,OR,97230-3099,123,10,8.13%,92,356715
+3521,322500,Warner Pacific College,2219 S.E. 68th Avenue,Portland,OR,97215-4099,100,22,22.00%,48,139529
+3498,320900,Western Oregon University,345 North Monmouth Avenue,Monmouth,OR,97361-1394,313,33,10.54%,497,693626
+3526,322700,Willamette University,900 State Street,Salem,OR,97301-3930,200,18,9.00%,101,602839
+3528,322900,Albright College,13th & Bern Street,Reading,PA,19612-5234,169,31,18.34%,372,629855
+3529,323000,Allegheny College,520 North Main Street,Meadville,PA,16335-3902,301,17,5.65%,227,610168
+3534,323300,Alvernia University,400 St. Bernardine Street,Reading,PA,19607-1799,76,20,26.32%,64,147321
+5391,743000,Antonelli Institute,300 Montgomery Avenue,Erdenheim,PA,19038-8242,31,3,9.68%,56,102001
+3541,323500,Arcadia University,450 South Easton Road,Glenside,PA,19038-3295,53,18,33.96%,161,232128
+5247,835000,Art Institute of Philadelphia (The),1622 Chestnut Street,Philadelphia,PA,19103-5198,118,44,37.29%,1053,1040779
+3539,747000,Art Institute of Pittsburgh (The),420 Boulevard of the Allies,Pittsburgh,PA,15219-1301,158,25,15.82%,423,769997
+3542,331500,Bloomsburg University of Pennsylvania,400 East Second Street,Bloomsburg,PA,17815-1301,79,23,29.11%,428,918007
+3543,972100,Bradford School,125 W Station Square Drive,Pittsburgh,PA,15219-2602,92,12,13.04%,88,229456
+3544,323700,Bryn Mawr College,101 North Merion Avenue,Bryn Mawr,PA,19010-2899,113,0,0%,51,184401
+3545,323800,Bucknell University,Moore Avenue,Lewisburg,PA,17837-2122,178,10,5.62%,74,247412
+3546,323900,Bucks County Community College,275 Swamp Road,Newtown,PA,18940-1320,12,3,25.00%,72,71045
+3549,324100,Cabrini College,610 King of Prussia Road,Radnor,PA,19087-3698,86,25,29.07%,119,180410
+3550,331600,California University of Pennsylvania,250 University Avenue,California,PA,15419-1394,154,26,16.88%,440,709909
+3552,330300,Carlow University,3333 Fifth Avenue,Pittsburgh,PA,15213-3165,152,8,5.26%,190,190478
+3553,324200,Carnegie Mellon University,5000 Forbes Avenue,Pittsburgh,PA,15213-3890,397,18,4.53%,368,1090734
+3554,324300,Cedar Crest College,100 College Drive,Allentown,PA,18104-6196,40,9,22.50%,38,45798
+3556,324400,Chatham University,Woodland Road,Pittsburgh,PA,15232-2826,35,11,31.43%,110,193517
+3557,324500,Chestnut Hill College,9601 Germantown Avenue,Philadelphia,PA,19118-2693,38,14,36.84%,131,208536
+3558,331700,Cheyney University of Pennsylvania,1837 University Circle,Cheyney,PA,19319-0200,7,5,71.43%,349,303269
+3560,331800,Clarion University of Pennsylvania,840 Wood Street,Clarion,PA,16214-1232,66,12,18.18%,54,136241
+3566,711000,Delaware County Community College,901 Media Line Road,Media,PA,19063-1094,0,0,0%,58,29342
+3571,325200,Delaware Valley College of Science & Agriculture,700 East Butler Avenue,Doylestown,PA,18901-2697,182,25,13.74%,333,513926
+3532,398600,DeSales University,2755 Station Avenue,Center Valley,PA,18034-9568,38,5,13.16%,71,253347
+3572,325300,Dickinson College,College and Louther Streets,Carlisle,PA,17013-2896,155,6,3.87%,97,359871
+3574,325600,Drexel University,3141 Chestnut Street,Philadelphia,PA,19104-2875,1227,107,8.72%,1293,2290534
+3577,325800,Duquesne University of the Holy Spirit,600 Forbes Avenue,Pittsburgh,PA,15282-0001,883,80,9.06%,647,663617
+3578,332000,East Stroudsburg University of Pennsylvania,200 Prospect Street,East Stroudsburg,PA,18301-2999,94,21,22.34%,220,523497
+3579,325900,Eastern University,1300 Eagle Road,St Davids,PA,19087-3696,191,18,9.42%,227,245909
+3580,332100,Edinboro University of Pennsylvania,Meadville Street,Edinboro,PA,16444-0001,140,36,25.71%,475,510967
+3582,326200,Elizabethtown College,1 Alpha Drive,Elizabethtown,PA,17022-2298,106,3,2.83%,45,61601
+3589,326500,Franklin & Marshall College,617 College Avenue,Lancaster,PA,17603-2802,107,5,4.67%,101,299641
+3591,326600,Gannon University,109 University Square,Erie,PA,16541-0001,77,5,6.49%,155,358095
+3593,326700,Geneva College,3200 College Avenue,Beaver Falls,PA,15010-3599,195,15,7.69%,189,282179
+3594,326800,Gettysburg College,300 North Washington Street,Gettysburg,PA,17325-1486,54,2,3.70%,14,44967
+3596,327000,Gwynedd-Mercy College,1325 Sumneytown Pike,Gwynedd Valley,PA,19437-0901,97,4,4.12%,37,65023
+3598,327200,Harcum College,750 Montgomery Avenue,Bryn Mawr,PA,19010-3476,35,5,14.29%,227,350592
+3601,327400,Haverford College,370 Lancaster Avenue,Haverford,PA,19041-1392,71,3,4.23%,9,36154
+3602,327500,Holy Family University,9801 Frankford Avenue,Philadelphia,PA,19114-2094,154,26,16.88%,245,218256
+3603,327600,Immaculata University,King Road,Immaculata,PA,19345-0647,45,8,17.78%,87,137681
+3604,327700,Indiana University of Pennsylvania,201 Sutton Hall,Indiana,PA,15705-1097,825,87,10.55%,1014,1385300
+3611,327900,Juniata College,1700 Moore Street,Huntingdon,PA,16652-2196,128,9,7.03%,62,97111
+3715,491000,Kaplan Career Institute,5650 Derry Street,Harrisburg,PA,17111-3571,83,17,20.48%,43,66025
+3612,328000,Keystone College,One College Green,La Plume,PA,18440-0200,38,10,26.32%,455,830106
+3613,328200,Kings College,133 North  River Street,Wilkes-Barre,PA,18711-0801,177,24,13.56%,171,322787
+3614,332200,Kutztown University of Pennsylvania,15200 Kutztown Road,Kutztown,PA,19530-9339,227,39,17.18%,294,564862
+3615,398700,La Roche College,9000 Babcock Boulevard,Pittsburgh,PA,15237-5898,42,8,19.05%,205,296072
+3616,328700,La Salle University,1900 West Olney Avenue,Philadelphia,PA,19141-1199,261,32,12.26%,353,693871
+3617,328300,Lackawanna College,501 Vine Street,Scranton,PA,18509-9961,62,22,35.48%,90,115213
+3618,328400,Lafayette College,Markle Hall  High Street,Easton,PA,18042-1768,79,5,6.33%,49,212038
+3621,328500,Lancaster Bible College,901 Eden Road,Lancaster,PA,17601-5036,30,5,16.67%,31,42165
+3622,328800,Lebanon Valley College,101 North College Avenue,Annville,PA,17003-1400,123,6,4.88%,110,195168
+3623,681000,Lehigh Carbon Community College,4525 Education Park Drive,Schnecksville,PA,18078-2598,74,16,21.62%,174,214881
+3624,328900,Lehigh University,27 Memorial Drive West,Bethlehem,PA,18015-1588,181,3,1.66%,23,50106
+3627,329000,Lincoln University,1570 Baltimore Pike,Lincoln University,PA,19352-0999,68,11,16.18%,1481,1489882
+3628,332300,Lock Haven University of Pennsylvania,North Fairview Street,Lock Haven,PA,17745-2439,76,20,26.32%,167,204592
+3632,329300,Lycoming College,700 College Place,Williamsport,PA,17701-5192,144,28,19.44%,211,425750
+3634,329400,Manor College,700 Fox Chase Road,Jenkintown,PA,19046-3399,7,3,42.86%,97,144092
+3635,332400,Mansfield University of Pennsylvania,Academy Street,Mansfield,PA,16933-1123,195,30,15.38%,239,297787
+3638,329600,Marywood University,2300 Adams Avenue,Scranton,PA,18509-1598,186,22,11.83%,144,230093
+3643,329700,Mercyhurst University,501 East 38th Street,Erie,PA,16546-0001,73,11,15.07%,187,452637
+3644,329800,Messiah College,One College Avenue,Mechanicsburg,PA,17055-0000,159,9,5.66%,165,309946
+3645,332500,Millersville University of Pennsylvania,101 North George Street,Millersville,PA,17551-1800,92,22,23.91%,90,259809
+3563,324700,Misericordia  University,301 Lake Street,Dallas,PA,18612-1008,150,21,14.00%,127,227394
+3647,330000,Moore College of Art and Design,20th and the Parkway,Philadelphia,PA,19103-1190,82,25,30.49%,160,356301
+3648,330100,Moravian College,1200 Main Street,Bethlehem,PA,18018-6650,136,9,6.62%,132,275567
+3650,330200,Mount Aloysius College,7373 Admiral Peary Highway,Cresson,PA,16630-1999,67,13,19.40%,156,118393
+3651,330400,Muhlenberg College,2400 Chew Street,Allentown,PA,18104-5586,63,2,3.17%,27,86473
+3656,719100,Northampton County Area Community College,3835 Green Pond Road,Bethlehem,PA,18020-7599,41,13,31.71%,93,101282
+3678,944900,Pennco Tech,3815 Otter Street,Bristol,PA,19007-3696,22,8,36.36%,49,71505
+3668,332900,Pennsylvania State University (The),President's Office,University Park,PA,16802-1503,1890,26,1.38%,2230,5768001
+3669,335200,Philadelphia College of Osteopathic Medicine,4170 City Avenue,Philadelphia,PA,19131-1694,161,5,3.11%,69,140728
+3671,335400,Philadelphia University,School House Lane & Henry Avenue,Philadelphia,PA,19144-5497,292,42,14.38%,415,294149
+3684,743700,Pittsburgh Technical Institute,1111 McKee Road,Oakdale,PA,15071-3205,0,0,0%,5,5950
+3685,335700,Point Park University,201 Wood Street,Pittsburgh,PA,15222-1912,89,20,22.47%,333,351661
+3688,335900,Robert Morris University,6001 University Boulevard,Moon Township,PA,15108-1189,91,19,20.88%,188,263223
+3690,336000,Rosemont College,1400 Montgomery Avenue,Rosemont,PA,19010-1699,121,42,34.71%,104,258607
+3694,336600,Saint Francis University,110 Franciscan Way,Loretto,PA,15940-0600,97,22,22.68%,321,498336
+3696,336700,Saint Joseph's University,5600 City Avenue,Philadelphia,PA,19131-1395,142,25,17.61%,247,465360
+3698,336800,Saint Vincent College & Seminary,300 Fraser Purchase Road,Latrobe,PA,15650-2690,157,16,10.19%,91,178243
+3665,331100,Salus University,8360 Old York Road,Elkins Park,PA,19027-1598,150,4,2.67%,52,247771
+3702,336200,Seton Hill University,1 Seton Hill Drive,Greensburg,PA,15601-1599,84,18,21.43%,124,211722
+3703,332600,Shippensburg University of Pennsylvania,1871 Old Main Drive,Shippensburg,PA,17257-2299,191,27,14.14%,233,424334
+3704,332700,Slippery Rock University,1 Morrow Way,Slippery Rock,PA,16057-1326,391,70,17.90%,816,1035918
+3706,336900,Susquehanna University,514 University Avenue,Selinsgrove,PA,17870-1001,122,7,5.74%,52,158931
+3707,337000,Swarthmore College,500 College Avenue,Swarthmore,PA,19081-1390,46,5,10.87%,49,121190
+3711,337100,Temple University,Conwell Hall  Ground Floor,Philadelphia,PA,19122-6003,3297,366,11.10%,4986,7660352
+3712,337600,Thiel College,75 College Avenue,Greenville,PA,16125-2181,189,46,24.34%,513,731668
+3713,1239300,Thomas Jefferson University,1020 Walnut Street,Philadelphia,PA,19107-5543,130,6,4.62%,98,486741
+3718,783900,Triangle Tech,1940 Perrysville Avenue,Pittsburgh,PA,15214-3897,2,0,0%,22,15988
+3720,337800,University of Pennsylvania,3451 Walnut Street,Philadelphia,PA,19104-6216,1735,85,4.90%,945,5600141
+3721,337900,University of Pittsburgh - Pittsburgh,107 Cathedral of Learning,Pittsburgh,PA,15260-0001,1603,63,3.93%,2081,3244015
+3722,338400,University of Scranton,800 Linden,Scranton,PA,18510-4622,146,12,8.22%,96,322180
+3672,335000,University of the Arts (The),320 South Broad Street,Philadelphia,PA,19102-9493,155,20,12.90%,268,518725
+3670,335300,University of the Sciences in Philadelphia,600 South 43rd Street,Philadelphia,PA,19104-4495,54,4,7.41%,119,386798
+3723,338500,Ursinus College,601 East Main Street,Collegeville,PA,19426-1000,143,18,12.59%,170,342985
+3657,330600,Valley Forge Christian College,1401 Charlestown Road,Phoenixville,PA,19460-2399,46,6,13.04%,53,85154
+3725,338800,Villanova University,800 Lancaster Avenue,Villanova,PA,19085-1699,499,16,3.21%,68,207358
+3726,338900,Washington and Jefferson College,60 South Lincoln Street,Washington,PA,15301-4801,30,4,13.33%,252,423098
+3727,339100,Waynesburg University,51 West College Street,Waynesburg,PA,15370-1222,104,13,12.50%,272,224290
+3728,332800,West Chester University of Pennsylvania,700 S. High Street,West Chester,PA,19383-0001,254,34,13.39%,250,907936
+3729,339200,Westminster College,319 South Market Street,New Wilmington,PA,16172-0002,157,12,7.64%,30,80136
+3733,331300,Widener University,One University Place,Chester,PA,19013-5792,585,14,2.39%,600,1158732
+3736,339400,Wilkes University,84 West South Street,Wilkes-Barre,PA,18766-0998,146,21,14.38%,320,691664
+3739,339600,Wilson College,1015 Philadelphia Avenue,Chambersburg,PA,17201-1285,102,27,26.47%,102,290248
+3741,339900,York College of Pennsylvania,Country Club Road,York,PA,17405-7199,12,4,33.33%,6,15894
+4586,502200,Bayamon Central University,Ave. Zaya Verde Urb. La Milagrosa,Bayamon,PR,00960-1725,0,0,0%,219,124096
+4588,1252500,Caribbean University,Road 167 KM 21.2,Bayamon,PR,00960-0493,0,0,0%,90,48893
+4599,393800,Inter American University of Puerto Rico,PR Highway 1  Km. 16.3,San Juan,PR,00926-0000,844,154,18.25%,3843,4247534
+4589,393600,Pontifical Catholic University of Puerto Rico (The),2250 Las Americas Avenue Suite 564,Ponce,PR,00717-9997,461,45,9.76%,2478,5493640
+4594,394100,Universidad del Este,Calle Prin Sabana,Carolina,PR,00984-2010,5,0,0%,7,11217
+9097,1212300,University of Puerto Rico  Aguadilla Regional College,Calle North East,Aguadilla,PR,00604-0160,3,2,66.67%,41,57909
+9099,722800,University of Puerto Rico - Arecibo,Street Number 653  Route 128  Km.8,Arecibo,PR,00614-4010,4,1,25.00%,41,38302
+9113,720600,University of Puerto Rico - Cayey University College,205 Antonio R. Barcelo Avenue,Cayey,PR,00736-5534,6,3,50.00%,16,27758
+9095,394300,University of Puerto Rico - Humacao University College,100 State Road 908,Humacao,PR,00791-4300,4,1,25.00%,28,42943
+9125,394400,University of Puerto Rico - Mayaguez,Road # 2 Post Street Alfonso Valdez,Mayaguez,PR,00680-0000,51,9,17.65%,318,293129
+9093,2460000,University of Puerto Rico - Medical Science Campus,Terrenos Centro Medico,Rio Piedras,PR,00936-0000,0,0,0%,40,58915
+9094,965200,University of Puerto Rico  Ponce Tech Univ College,2151 Santiago de los Caballeros Ave,Ponce,PR,00716-0000,0,0,0%,18,13712
+9109,710800,University of Puerto Rico - Rio Piedras Campus,39 Ponce de Leon Avenue,R?o Piedras,PR,00931-3300,8,1,12.50%,278,319588
+9100,1092200,University of Puerto Rico - Utuado,Carretera Num. 123 Kilometro 52.2,Utuado,PR,00641-2500,0,0,0%,15,19365
+9096,1097500,University of Puerto Rico Bayamon Technical University College,Numero 170 Carretera 174,Bayamon,PR,00959-1911,0,0,0%,11,15780
+4590,393700,University of the Sacred Heart,Rosales & San Antonio Street,San Juan,PR,00914-0383,103,15,14.56%,399,1384435
+3743,340100,Brown University,Prospect Street,Providence,RI,02912-9127,514,6,1.17%,178,885971
+3744,340200,Bryant University,1150 Douglas Pike,Smithfield,RI,02917-1284,327,8,2.45%,212,455284
+3745,340400,Johnson & Wales University,8 Abbott Park Place,Providence,RI,02903-3703,2044,186,9.10%,5688,16011647
+3747,340600,Providence College,549 River Avenue,Providence,RI,02918-0001,307,13,4.23%,177,480138
+3748,340700,Rhode Island College,600 Mt Pleasant Avenue,Providence,RI,02908-1991,338,59,17.46%,742,1263256
+3751,340900,Rhode Island School of Design,Two College Street,Providence,RI,02903-2784,228,15,6.58%,147,577739
+3753,341000,Roger Williams University,One Old Ferry Road,Bristol,RI,02809-2921,214,21,9.81%,341,365756
+3754,341100,Salve Regina University,100 Ochre Point Avenue,Newport,RI,02840-4192,94,10,10.64%,240,351828
+3755,1115900,Sawyer School  (The),101 Main Street,Pawtucket,RI,02860-4117,0,0,0%,38,47238
+3757,341400,University of Rhode Island,Green Hall,Kingston,RI,02881-0000,540,117,21.67%,1074,2241281
+3760,341700,Allen University,1530 Harden Street,Columbia,SC,29204-1085,0,0,0%,37,63378
+3761,341800,Anderson University,316 Boulevard,Anderson,SC,29621-4035,95,7,7.37%,215,425600
+3765,342000,Benedict College,1600 Harden Street,Columbia,SC,29204-1086,33,9,27.27%,395,544564
+3763,341900,Charleston Southern University,9200 University Boulevard,Charleston,SC,29406-2160,122,22,18.03%,509,1024066
+3769,342300,Citadel  The Military College of South Carolina,171 Moultrie Street,Charleston,SC,29409-0002,52,10,19.23%,27,87267
+3770,342400,Claflin University,400 Magnolia Street,Orangeburg,SC,29115-4498,127,86,67.72%,836,849638
+3771,342500,Clemson University,201 Sikes Hall,Clemson,SC,29634-0001,403,34,8.44%,250,623249
+7401,345100,Coastal Carolina University,755 Highway 544,Conway,SC,29526-8428,52,13,25.00%,120,337836
+3773,342700,Coker College,300 East College Avenue,Hartsville,SC,29550-3797,99,21,21.21%,108,222979
+3774,342800,College of Charleston,66 George Street,Charleston,SC,29424-0100,111,17,15.32%,297,437961
+3775,343000,Columbia College,1301 Columbia College Drive,Columbia,SC,29203-5998,57,8,14.04%,68,181568
+3778,343100,Converse College,580 East Main Street,Spartanburg,SC,29302-1931,38,2,5.26%,35,101991
+3781,343200,Erskine College,2 Washington Street,Due West,SC,29639-0000,30,3,10.00%,37,128520
+3782,399000,Florence - Darlington Technical College,2715 West Lucas Street,Florence,SC,29501-1251,33,4,12.12%,56,131747
+3783,492400,Forrest College,601 East River Street,Anderson,SC,29624-2405,11,0,0%,19,29446
+3784,922600,Francis Marion University,Highway 301 North,Florence,SC,29506-0000,55,4,7.27%,44,159927
+3786,343400,Furman University,3300 Poinsett Highway,Greenville,SC,29613-5253,122,10,8.20%,73,321694
+3790,343500,Lander University,320 Stanley Avenue,Greenwood,SC,29649-2099,90,19,21.11%,169,319001
+3791,343600,Limestone College,1115 College Drive,Gaffney,SC,29340-3799,27,13,48.15%,34,80188
+3792,343800,Medical University of South Carolina,171 Ashley Avenue,Charleston,SC,29425-0100,199,6,3.02%,57,119300
+3794,343900,Morris College,100 West College Street,Sumter,SC,29150-3599,66,42,63.64%,445,426081
+3795,344000,Newberry College,2100 College Street,Newberry,SC,29108-2197,38,9,23.68%,181,368921
+3802,344500,Presbyterian College,503 South Broad Street,Clinton,SC,29325-2503,107,10,9.35%,48,112713
+5128,2063700,Sherman College of Straight Chiropractic,2020 Springfield Road,Spartanburg,SC,29316-7251,113,26,23.01%,143,294725
+3805,344600,South Carolina State University,300 College Street Northeast,Orangeburg,SC,29117-4427,142,27,19.01%,508,553665
+3767,342200,Southern Wesleyan University,907 Wesleyan Drive,Central,SC,29630-1020,58,7,12.07%,73,182918
+3808,344700,Spartanburg Methodist College,1000 Powell Mill Road,Spartanburg,SC,29301-5899,53,19,35.85%,100,254150
+7399,344900,University of South Carolina - Aiken,471 University Parkway,Aiken,SC,29801-6399,39,8,20.51%,35,73179
+3813,344800,University of South Carolina - Columbia,Columbia-Campus,Columbia,SC,29208-3999,593,32,5.40%,292,739610
+3812,991100,University of South Carolina Regional Campuses,1600 Hampton Street Annex,Columbia,SC,29208-0001,94,19,20.21%,85,188170
+7400,695100,University of South Carolina Upstate,800 University Way,Spartanburg,SC,29303-9972,78,9,11.54%,59,96313
+3814,345500,Voorhees College,481 Porter Road,Denmark,SC,29042-0000,11,2,18.18%,426,377840
+3816,345600,Winthrop University,701 Oakland Avenue,Rock Hill,SC,29733-0001,133,23,17.29%,221,297426
+3817,345700,Wofford College,429 North Church Street,Spartanburg,SC,29303-3663,78,2,2.56%,33,47523
+3821,345800,Augustana College,2001 South Summit Avenue,Sioux Falls,SD,57197-0001,244,16,6.56%,135,466251
+3823,345900,Black Hills State University,1200 University Avenue,Spearfish,SD,57799-9502,192,22,11.46%,152,265544
+3824,346300,Dakota State University,820 North Washington,Madison,SD,57042-1799,101,17,16.83%,114,151668
+3825,346100,Dakota Wesleyan University,1200 West University Avenue,Mitchell,SD,57301-4398,76,18,23.68%,298,437574
+3828,530900,Lake Area Technical Institute,1201 Arrow Avenue,Watertown,SD,57201-0730,65,4,6.15%,98,165341
+3829,828400,Mitchell Technical Institute,1800 East Spruce Street,Mitchell,SD,57301-9931,62,9,14.52%,27,69027
+3830,346500,Mount Marty College,1105 West 8th Street,Yankton,SD,57078-3724,77,12,15.58%,63,98727
+3831,405700,National American University,5301 S. Highway 16,Rapid City,SD,57701-3692,47,6,12.77%,262,361788
+3833,346600,Northern State University,1200 South Jay Street,Aberdeen,SD,57401-7198,152,8,5.26%,84,282066
+3835,346700,Presentation College,1500 North Main Street,Aberdeen,SD,57401-1299,38,4,10.53%,152,225140
+3839,347000,South Dakota School of Mines & Technology,501 East Saint Joseph Street,Rapid City,SD,57701-3995,97,11,11.34%,83,142701
+3840,347100,South Dakota State University,222 Administration Lane,Brookings,SD,57007-2298,482,23,4.77%,140,309508
+3837,346900,University of Sioux Falls,1101 West 22nd Street,Sioux Falls,SD,57105-1699,81,10,12.35%,253,351141
+3845,347400,University of South Dakota,414 East Clark Street,Vermillion,SD,57069-2390,692,83,11.99%,784,953652
+3852,347800,Austin Peay State University,601 College Street,Clarksville,TN,37044-0002,85,22,25.88%,153,372405
+3854,347900,Belmont University,1900 Belmont Boulevard,Nashville,TN,37212-3757,98,12,12.24%,130,176227
+3855,348000,Bethel University,325 Cherry Avenue,McKenzie,TN,38201-1705,53,10,18.87%,91,150463
+3857,353600,Bryan College,721 Bryan Drive,Dayton,TN,37321-7000,68,6,8.82%,75,242852
+3858,348100,Carson - Newman College,1646 Russell Avenue,Jefferson City,TN,37760-2204,51,6,11.76%,176,477368
+3861,348200,Christian Brothers University,650 East Parkway South,Memphis,TN,38104-5581,34,4,11.76%,62,158887
+3865,348500,Cumberland University,One Cumberland Square,Lebanon,TN,37087-3554,24,4,16.67%,57,75830
+3873,348700,East Tennessee State University,Lake Street,Johnson City,TN,37614-2857,200,26,13.00%,652,1717513
+3879,349000,Fisk University,1000 17th Avenue North,Nashville,TN,37208-3045,55,23,41.82%,315,597575
+3881,349200,Freed Hardeman University,158 East Main Street,Henderson,TN,38340-2399,93,13,13.98%,181,388892
+3886,493700,Jackson State Community College,2046 North Parkway Street,Jackson,TN,38301-3797,37,10,27.03%,33,53522
+3888,349600,King College,1350 King College Road,Bristol,TN,37620-2699,34,3,8.82%,74,159930
+3891,349800,Lambuth University,705 Lambuth Boulevard,Jackson,TN,38301-5296,50,19,38.00%,143,279053
+3894,350000,Lee University,1120 North Ocoee Street,Cleveland,TN,37311-4475,141,31,21.99%,325,630809
+3895,350200,Lincoln Memorial University,6965 Cumberland Gap Parkway,Harrogate,TN,37752-7920,71,15,21.13%,253,432914
+3867,348600,Lipscomb University,One University Park Drive,Nashville,TN,37204-3951,96,2,2.08%,98,218775
+3897,350500,Maryville College,502 East Lamar Alexander Parkway,Maryville,TN,37804-5907,87,32,36.78%,146,504456
+3899,350600,Meharry Medical College,1005 Dr. David B Todd Jr. Boulevard,Nashville,TN,37208-3599,105,7,6.67%,106,659939
+3905,351000,Middle Tennessee State University,1301 East Main Street,Murfreesboro,TN,37132-3754,276,47,17.03%,542,1053665
+3907,351100,Milligan College,One Blowers Boulevard,Milligan College,TN,37682-4001,64,6,9.38%,154,171125
+1577,461700,National College of Business and Technology,1638 Bell Road,Nashville,TN,37211-6605,36,1,2.78%,81,121962
+3920,351900,Rhodes College,2000 North Parkway,Memphis,TN,38112-1690,104,8,7.69%,43,114067
+3913,991400,Roane State Community College,276 Patton Lane,Harriman,TN,37748-8664,0,0,0%,17,9671
+3889,493800,South College,3904 Lonas Drive,Knoxville,TN,37909-3323,106,0,0%,325,267039
+3919,351800,Southern Adventist University,4881 Taylor Circle,Collegedale,TN,37315-0370,182,33,18.13%,240,596620
+3917,351700,Southern College of Optometry,1245 Madison Avenue,Memphis,TN,38104-2222,104,2,1.92%,11,48948
+3916,1043900,Southwest Tennessee Community College,737 Union Avenue,Memphis,TN,38104-3322,0,0,0%,407,109920
+3927,352200,Tennessee State University,3500 John A. Merritt Boulevard,Nashville,TN,37209-1561,146,42,28.77%,2360,2587923
+3928,352300,Tennessee Technological University,1000 North Dixie Avenue,Cookeville,TN,38505-0001,169,6,3.55%,55,90870
+3929,352400,Tennessee Temple University,1815 Union Avenue,Chattanooga,TN,37404-3587,112,34,30.36%,226,695771
+3930,352500,Tennessee Wesleyan College,204 East College Street,Athens,TN,37371-0040,48,12,25.00%,44,85246
+3931,352600,Trevecca Nazarene University,333 Murfreesboro Road,Nashville,TN,37210-2877,110,12,10.91%,101,269899
+3932,352700,Tusculum College,60 Shiloh Road,Greeneville,TN,37743-0001,44,6,13.64%,140,301008
+3933,352800,Union University,1050 Union University Drive,Jackson,TN,38305-3697,64,15,23.44%,52,90558
+3902,350900,University of Memphis (The),Southern Avenue,Memphis,TN,38152-4611,85,15,17.65%,641,900343
+3937,353000,University of Tennessee,800 Andy Holt Avenue,Knoxville,TN,37996-0150,826,30,3.63%,1232,3266710
+3936,352900,University of Tennessee - Chattanooga,615 McCallie Avenue,Chattanooga,TN,37403-2598,97,7,7.22%,254,621971
+3938,353100,University of Tennessee - Martin,325 Administration,Martin,TN,38238-0002,170,39,22.94%,296,705236
+3940,353400,University of the South (The),735 University Avenue,Sewanee,TN,37383-1000,75,8,10.67%,48,181892
+3941,353500,Vanderbilt University,211 Kirkland Hall,Nashville,TN,37240-0001,393,7,1.78%,214,877133
+3942,991200,Volunteer State Community College,1480 Nashville Pike,Gallatin,TN,37066-3188,0,0,0%,21,12952
+3944,494700,West Tennessee Business College,1186 Highway 45 By Pass,Jackson,TN,38301-3256,0,0,0%,106,62754
+3946,353700,Abilene Christian University,1600 Campus Court,Abilene,TX,79699-3701,73,8,10.96%,114,248781
+3956,354100,Angelo State University,2601 West Avenue 'N',San Angelo,TX,76909-5069,37,6,16.22%,11,58629
+7744,2521200,Arlington Career Institute,901 Avenue K,Grand Prairie,TX,75050-2636,0,0,0%,21,29465
+5612,2117100,Art Institute of Houston (The),4140 Southwest Freeway,Houston,TX,77027-7311,228,59,25.88%,1570,2125797
+7642,2596600,ATI Career Training Center,10003 Technology Boulevard  West,Dallas,TX,75220-4443,0,0,0%,5,10542
+3954,1248200,ATI Technical Training Center,6627 Maple Avenue,Dallas,TX,75235-4622,0,0,0%,54,46818
+3961,354300,Austin College,900 North Grand Avenue,Sherman,TX,75090-4440,98,6,6.12%,99,362394
+3964,494900,Baylor College of Medicine,One Baylor Plaza,Houston,TX,77030-3498,102,4,3.92%,17,137905
+3965,354500,Baylor University,500 Speight Avenue,Waco,TX,76798-1458,117,10,8.55%,269,915091
+6648,2294800,Capitol City Careers,5424 Highway 290 West #200,Austin,TX,78735-1498,0,0,0%,129,117160
+5145,2074100,Capitol City Trade & Technical School,205 East Riverside Drive,Austin,TX,78704-1281,0,0,0%,128,105501
+7569,2591100,Career Point College,4522 Fredericksburg Road,San Antonio,TX,78201-2027,0,0,0%,482,622158
+3976,400300,Central Texas College District,6200 West Central Texas Expressway,Killeen,TX,76540-4199,0,0,0%,79,88473
+3981,355300,Cisco College,101 College Heights,Cisco,TX,76437-9803,0,0,0%,74,20068
+3983,355400,Clarendon College,1122 College Drive,Clarendon,TX,79226-0000,0,0,0%,1,1369
+5821,2119200,Court Reporting Institute of Dallas,1341 W. Mockingbird Lane,Dallas,TX,75247-6913,0,0,0%,7,2126
+3991,356000,Dallas Baptist University,3000 Mountain Creek Parkway,Dallas,TX,75211-9299,58,0,0%,10,28370
+3996,356300,Del Mar College,101 Baldwin,Corpus Christi,TX,78404-3897,0,0,0%,25,23655
+4015,356400,East Texas Baptist University,1209 North Grove,Marshall,TX,75670-1423,50,11,22.00%,354,608318
+4017,1038700,El Paso Community College,919 Hunter,El Paso,TX,79915-1908,0,0,0%,5,1897
+6651,2261300,Everest Institute,6550 First Park Ten Boulevard,San Antonio,TX,78213-3841,5,2,40.00%,6,7615
+4030,1050900,Hallmark College of Technology,10401 IH-10 West,San Antonio,TX,78230-1736,59,22,37.29%,253,396863
+4031,357100,Hardin-Simmons University,2200 Hickory Street,Abilene,TX,79698-6050,62,8,12.90%,113,262023
+4034,357300,Hill College,112 Lamar Drive,Hillsboro,TX,76645-2711,0,0,0%,9,4751
+4037,1063300,Houston Community College,3100 Main Street,Houston,TX,77002-7517,0,0,0%,61,50536
+4039,357500,Howard Payne University,1000 Fisk Avenue,Brownwood,TX,76801-2715,49,9,18.37%,211,530418
+4040,357700,Huston - Tillotson University,900 Chicon Street,Austin,TX,78702-2795,0,0,0%,250,295795
+4046,363700,Jarvis Christian College,US Highway 80 East,Hawkins,TX,75765-1470,37,4,10.81%,729,1108468
+4051,358100,Lamar University,4400 Martin Luther King Parkway,Beaumont,TX,77710-0042,72,6,8.33%,67,170814
+4055,358400,LeTourneau University,2100 South Mobberly Avenue,Longview,TX,75602-3564,191,11,5.76%,102,180888
+4056,358500,Lon Morris College,800 College Avenue,Jacksonville,TX,75766-2900,0,0,0%,42,16197
+4059,358600,Lubbock Christian University,5601 19th Street,Lubbock,TX,79407-2099,154,26,16.88%,294,545346
+4069,359100,McMurry University,South 14th & Sayles Boulevard,Abilene,TX,79697-0001,56,15,26.79%,92,241691
+4071,359200,Midwestern State University,3410 Taft Boulevard,Wichita Falls,TX,76308-2099,3,0,0%,0,0
+4090,359800,Our Lady of The Lake University,411 South West 24th Street,San Antonio,TX,78207-4689,66,16,24.24%,318,598585
+6653,2305300,Parker University,2540 Walnut Hill Lane,Dallas,TX,75229-5609,43,7,16.28%,11,33299
+4098,363000,Prairie View Agricultural & Mechanical University,FM 1098 @ LW Minor Street,Prairie View,TX,77446-2967,20,3,15.00%,359,497618
+4102,360400,Rice University,6100 Main Street,Houston,TX,77005-1892,170,9,5.29%,187,766660
+4106,362100,Saint Edwards University,3001 South Congress Avenue,Austin,TX,78704-0000,43,2,4.65%,117,460579
+4108,362300,Saint Mary's University,One Camino Santa Maria,San Antonio,TX,78228-8500,303,51,16.83%,508,1482325
+4110,360600,Sam Houston State University,1806 Avenue J,Huntsville,TX,77340-0000,15,6,40.00%,112,219490
+4116,361100,South Plains College,1401 South College Avenue,Levelland,TX,79336-6504,0,0,0%,43,15486
+4119,361300,Southern Methodist University,6425 Boaz Street,Dallas,TX,75275-0100,48,4,8.33%,161,1469274
+5157,2093600,Southwest Institute of Technology,5424 Highway 290 West,Austin,TX,78735-8890,0,0,0%,168,206251
+4126,361900,Southwestern Adventist University,100 West Hillcrest,Keene,TX,76059-1922,69,18,26.09%,23,45588
+4123,361600,Southwestern Assemblies of God University,1200 Sycamore Street,Waxahachie,TX,75165-2397,60,15,25.00%,120,425010
+4125,361800,Southwestern Christian College,200 Bowser Circle,Terrell,TX,75160-3400,0,0,0%,84,6980
+4127,362000,Southwestern University,1001 East University Avenue,Georgetown,TX,78626-6111,93,15,16.13%,96,455366
+4129,362400,Stephen F Austin State University,1936 North Street,Nacogdoches,TX,75962-0001,203,40,19.70%,427,1263161
+4130,362500,Sul Ross State University,East Highway 90,Alpine,TX,79832-0113,34,21,61.76%,370,676582
+4131,363100,Tarleton State University,1333 West Washington,Stephenville,TX,76401-0002,0,0,0%,123,347488
+4134,362800,Texarkana College,2500 North Robison Road,Texarkana,TX,75599-0001,0,0,0%,49,20893
+4136,363200,Texas A&M University,805 Rudder Tower,College Station,TX,77843-1246,930,104,11.18%,1096,2613726
+4016,356500,Texas A&M University - Commerce,2600 South Neal,Commerce,TX,75429-3011,141,27,19.15%,60,203203
+4138,1116100,Texas A&M University - Corpus Christi,6300 Ocean Drive,Corpus Christi,TX,78412-5599,37,8,21.62%,147,304192
+4135,363900,Texas A&M University - Kingsville,College Hall,Kingsville,TX,78363-8203,49,22,44.90%,164,432037
+4140,363600,Texas Christian University,2800 South University Drive,Fort Worth,TX,76129-0001,403,37,9.18%,404,862246
+4141,363800,Texas College,2404 North Grand Avenue,Tyler,TX,75702-4500,0,0,0%,170,307034
+4144,364100,Texas Lutheran University,1000 West Court Street,Seguin,TX,78155-5999,184,45,24.46%,489,839479
+4145,364200,Texas Southern University,3100 Cleburne,Houston,TX,77004-4598,106,91,85.85%,734,1212473
+4122,361500,Texas State University-San Marcos,601 University Drive,San Marcos,TX,78666-4602,20,2,10.00%,0,0
+4151,364400,Texas Tech University,15th & Akron,Lubbock,TX,79409-2011,37,8,21.62%,145,488016
+5175,1067400,Texas Tech University Health Sciences Center,3601 4th Street,Lubbock,TX,79430-0001,94,8,8.51%,73,189802
+4153,364600,Texas Woman's University,304 Administration Drive,Denton,TX,76204-5587,72,6,8.33%,87,332483
+4154,364700,Trinity University,One Trinity Place,San Antonio,TX,78212-7200,140,2,1.43%,130,521022
+7058,2362000,Universal Technical Institute,721 Lockhaven Drive,Houston,TX,77073-9982,96,13,13.54%,406,429114
+4165,365100,University of Dallas,1845 East Northgate Drive,Irving,TX,75062-4799,124,9,7.26%,137,338426
+4166,365200,University of Houston,University Park,Houston,TX,77204-2010,751,104,13.85%,693,1869834
+4160,1171100,University of Houston - Clear Lake,2700 Bay Area Boulevard,Houston,TX,77058-1002,100,30,30.00%,112,264048
+4062,358800,University of Mary Hardin-Baylor,9th & College Street,Belton,TX,76513-2599,41,3,7.32%,123,349214
+4085,359400,University of North Texas,Avenue C and Chestnut,Denton,TX,76203-5017,72,10,13.89%,262,718964
+5158,976800,University of North Texas Health Science Center at Fort Worth,3500 Camp Bowie Boulevard,Fort Worth,TX,76107-2699,65,5,7.69%,46,158015
+4168,365400,University of Saint Thomas,3800 Montrose Boulevard,Houston,TX,77006-4626,35,6,17.14%,69,172880
+4091,359900,University of Texas - Pan American,1201 West University Drive,Edinburg,TX,78539-2999,176,33,18.75%,237,885947
+4172,365600,University of Texas at Arlington,701 South Nedderman Drive,Arlington,TX,76013-0000,154,26,16.88%,244,632540
+4173,365800,University of Texas at Austin,2400 Inner Campus Drive,Austin,TX,78712-0000,1113,65,5.84%,1732,7072509
+4174,974100,University of Texas at Dallas,2601 North Floyd Road,Richardson,TX,75080-1407,43,13,30.23%,204,409123
+4176,366100,University of Texas at El Paso,500 West University,El Paso,TX,79968-0500,50,2,4.00%,204,705955
+4169,1011500,University of Texas at San Antonio,1 UTSA Circle,San Antonio,TX,78249-0600,186,28,15.05%,216,401121
+4158,1116300,University of Texas at Tyler,3900 University Boulevard,Tyler,TX,75799-6699,2,0,0%,44,116001
+5159,495100,University of Texas Health Science Center at Houston,7000 Fannin,Houston,TX,77030-5400,86,1,1.16%,91,228736
+4162,365900,University of Texas Health Science Center at San Antonio,7703 Floyd Curl Drive,San Antonio,TX,78229-3900,311,22,7.07%,250,645850
+4177,495200,University of Texas Medical Branch at Galveston,301 University Boulevard,Galveston,TX,77555-1305,84,1,1.19%,79,238509
+4161,1001900,University of Texas Southwestern Medical Center (The),5323 Harry Hines Boulevard,Dallas,TX,75390-9096,175,3,1.71%,50,958484
+4041,357800,University of the Incarnate Word,4301 Broadway,San Antonio,TX,78209-6398,104,15,14.42%,170,508782
+5823,2144800,Vet Tech Institute of Houston,4669 Southwest Freeway,Houston,TX,77027-9881,37,5,13.51%,54,129247
+4184,366300,Wayland Baptist University,1900 West 7th Street,Plainview,TX,79072-6998,86,9,10.47%,21,39618
+4186,366500,West Texas A&M University,2501 4th Avenue,Canyon,TX,79015-0001,26,6,23.08%,8,35714
+4188,366800,Wharton County Junior College,911 Boling Highway,Wharton,TX,77488-3298,0,0,0%,18,10832
+4190,366900,Wiley College,711 Wiley Avenue,Marshall,TX,75670-5199,32,0,0%,730,774894
+4194,367100,Dixie State College of Utah,225 South 700 East,St George,UT,84770-3876,57,9,15.79%,95,270759
+4220,522000,Salt Lake Community College,4600 South Redwood Road,Salt Lake City,UT,84123-0000,171,13,7.60%,395,736156
+4212,367900,Snow College,150  East College Avenue,Ephraim,UT,84627-1299,20,0,0%,41,67442
+4213,367800,Southern Utah University,351 West Center Street,Cedar City,UT,84720-2470,73,7,9.59%,24,75963
+4214,367400,Stevens Henager College,1350 West 1890 South,West Haven,UT,84401-1420,40,6,15.00%,219,466104
+4217,367500,University of Utah,201 South 1460 East Rm 105,Salt Lake City,UT,84112-9055,913,17,1.86%,111,336198
+4218,367700,Utah State University,1400 Old Main Hill,Logan,UT,84322-1400,454,14,3.08%,345,958339
+4219,402700,Utah Valley University,800 West University Parkway,Orem,UT,84058-5999,60,3,5.00%,47,123602
+4221,368000,Weber State University,3850 Harrison Boulevard,Ogden,UT,84408-1001,325,6,1.85%,438,1110692
+4223,368100,Westminster College,1840 South 1300 East,Salt Lake City,UT,84105-3697,201,19,9.45%,205,405557
+8435,3127500,Advanced Technology Institute,5700 Southern Boulevard,Virginia Beach,VA,23462-2409,9,2,22.22%,10,18829
+4251,370200,Averett University,420 West Main Street,Danville,VA,24541-3692,91,21,23.08%,216,656178
+4254,370400,Bridgewater College,402 East College Street,Bridgewater,VA,22812-1599,197,12,6.09%,154,323738
+4259,370500,College of William & Mary,200 Richmond Road,Williamsburg,VA,23187-8795,126,7,5.56%,25,105337
+4264,370800,Eastern Mennonite University,1200 Park Road,Harrisonburg,VA,22802-2462,118,13,11.02%,146,424181
+4907,1033800,Eastern Virginia Medical School,825 Fairfax Avenue,Norfolk,VA,23501-1980,34,0,0%,13,129779
+4266,1019800,ECPI University,5555 Greenwich Road,Virginia Beach,VA,23462-6542,111,10,9.01%,708,1178809
+4267,370900,Emory & Henry College,30461 Garnand Drive,Emory,VA,24327-0010,52,8,15.38%,148,247234
+4280,926700,Everest College,803 Diligence Drive,Newport News,VA,23606-4203,118,17,14.41%,312,413203
+4269,371100,Ferrum College,215 Ferrum Mountain Road,Ferrum,VA,24088-2612,124,33,26.61%,377,461429
+4271,374900,George Mason University,4400 University Drive,Fairfax,VA,22030-4444,312,28,8.97%,191,383295
+4273,371300,Hampden Sydney College,College Road,Hampden Sydney,VA,23943-0128,52,8,15.38%,55,208402
+4274,371400,Hampton University,E Queen Street,Hampton,VA,23668-0099,323,29,8.98%,1004,1806785
+4275,371500,Hollins University,7916 Williamson Road,Roanoke,VA,24019-4421,82,13,15.85%,152,348426
+4287,372100,James Madison University,South Main Street,Harrisonburg,VA,22807-3780,205,13,6.34%,126,221100
+4282,371900,Longwood University,201 High Street,Farmville,VA,23909-1899,104,9,8.65%,73,96546
+4286,372000,Lynchburg College,1501 Lakeside Drive,Lynchburg,VA,24501-3199,162,25,15.43%,133,201752
+4288,372300,Mary Baldwin College,Frederick and New Streets,Staunton,VA,24401-3610,88,25,28.41%,180,327873
+4290,372400,Marymount University,2807 North Glebe Road,Arlington,VA,22207-4224,74,19,25.68%,71,151899
+6541,2247200,MedSpa Careers Institute,800 Moorefield Park Drive,Richmond,VA,23236-3686,5,1,20.00%,12,13798
+4293,372600,National College,1813 East Main Street,Salem,VA,24153-4524,124,9,7.26%,527,854125
+4297,376500,Norfolk State University,700 Park Avenue,Norfolk,VA,23504-8000,92,26,28.26%,1310,1859233
+4299,372700,Northern Virginia Community College,8333 Little River Turnpike,Annandale,VA,22003-3743,279,84,30.11%,848,1314387
+4300,372800,Old Dominion University,Hampton Boulevard,Norfolk,VA,23529-0001,132,11,8.33%,140,276451
+4308,373200,Radford University,East Main Street,Radford,VA,24142-6905,114,17,14.91%,152,393479
+4310,373300,Randolph - Macon College,204 Henry Street,Ashland,VA,23005-5505,104,12,11.54%,125,288937
+4309,373400,Randolph College,2500 Rivermont Avenue,Lynchburg,VA,24503-1526,112,8,7.14%,46,98611
+4313,373600,Roanoke College,221 College Lane,Salem,VA,24153-3794,85,8,9.41%,90,191817
+4314,373900,Saint Paul's College,115 College Drive,Lawrenceville,VA,23868-1299,21,13,61.90%,263,454956
+4315,373700,Shenandoah University,1460 University Drive,Winchester,VA,22601-5195,38,8,21.05%,65,261195
+8221,3092700,Skyline College,5234 Airport Road NW,Roanoke,VA,24012-1603,1,0,0%,5,8377
+7117,2535400,Skyline College - Richmond,800 Moorefield Park Drive,Richmond,VA,23236-3659,67,13,19.40%,123,207597
+4323,374200,Sweet Briar College,134 Chapel Drive,Sweet Briar,VA,24595-9998,91,12,13.19%,11,50720
+4289,374600,University of Mary Washington,1301 College Avenue,Fredericksburg,VA,22401-5358,69,11,15.94%,23,100195
+4326,374400,University of Richmond,28 Westhampton Way,Richmond,VA,23173-0001,111,3,2.70%,50,173120
+4327,374500,University of Virginia,1827 University Avenue,Charlottesville,VA,22903-2600,590,38,6.44%,429,1573645
+4257,374700,University of Virginia's College at Wise (The),1 College Avenue,Wise,VA,24293-4412,11,6,54.55%,19,26289
+4329,373500,Virginia Commonwealth University,901 West Franklin Street,Richmond,VA,23284-9004,644,143,22.20%,1738,4380615
+4331,375200,Virginia Intermont College,1013 Moore Street,Bristol,VA,24201-4298,39,14,35.90%,34,113720
+4332,375300,Virginia Military Institute,VMI Parade,Lexington,VA,24450-2138,48,6,12.50%,37,95750
+4333,375400,Virginia Polytechnic Institute & State University,222 Burruss Hall,Blacksburg,VA,24061-2000,410,38,9.27%,269,894053
+4335,376400,Virginia State University,1 Hayden Drive,Petersburg,VA,23806-0001,125,49,39.20%,686,938379
+4336,376600,Virginia Union University,1500 North Lombardy Street,Richmond,VA,23220-1711,128,12,9.38%,688,588600
+4337,376700,Virginia Wesleyan College,1584 Wesleyan Drive,Norfolk,VA,23502-5599,61,11,18.03%,79,151257
+4340,376800,Washington and Lee University,204 West Washington Street,Lexington,VA,24450-0303,43,2,4.65%,50,142929
+4616,394600,University of the Virgin Islands,#2 John Brewers Bay,St.  Thomas,VI,00802-6000,30,14,46.67%,40,46100
+4909,1218300,Burlington College,351 North Avenue,Burlington,VT,05401-8477,67,20,29.85%,65,140189
+4225,368300,Castleton State College,Seminary Street,Castleton,VT,05735-0000,158,30,18.99%,518,682289
+4226,368400,Champlain College,163 South Willard Street,Burlington,VT,05401-3950,200,20,10.00%,140,197181
+4227,368500,College of Saint Joseph,71 Clement Road,Rutland,VT,05701-3899,48,14,29.17%,36,31436
+4230,368600,Goddard College,123 Pitkin Road,Plainfield,VT,05667-0000,62,7,11.29%,28,49929
+4232,368800,Johnson State College,337 College Hill,Johnson,VT,05656-9898,98,20,20.41%,193,182245
+4233,368900,Lyndon State College,1001 College Road,Lyndonville,VT,05851-0919,124,28,22.58%,250,226214
+4236,369100,Middlebury College,Old Chapel Building,Middlebury,VT,05753-0000,398,25,6.28%,153,902883
+6743,2254000,New England Culinary Institute,56 College Street,Montpelier,VT,05602-3115,33,7,21.21%,14,20347
+4237,369200,Norwich University,158 Harmon Avenue,Northfield,VT,05663-1035,240,36,15.00%,193,713226
+4242,369400,Saint Michael's College,Winooski Park,Colchester,VT,05439-0001,320,20,6.25%,111,243864
+4243,886000,SIT,1 Kipling Road,Brattleboro,VT,05302-4801,42,6,14.29%,117,209462
+4246,369600,University of Vermont and State Agricultural College,85 South Prospect Street,Burlington,VT,05405-0160,851,48,5.64%,386,586147
+4248,1193400,Vermont Law School,164 Chelsea Street,South Royalton,VT,05068-9998,42,0,0%,58,272529
+4249,369800,Vermont Technical College,1 Main Street,Randolph Center,VT,05061-0000,113,12,10.62%,215,179897
+6752,2291300,Art Institute of Seattle (The),2323 Elliott Avenue,Seattle,WA,98121-1622,83,19,22.89%,520,760934
+6431,2242500,Bastyr University,14500 Juanita Drive Northeast,Kenmore,WA,98028-4966,105,1,0.95%,8,25934
+4346,499900,Bellingham Technical College,3028 Lindbergh Avenue,Bellingham,WA,98225-1599,306,37,12.09%,0,0
+4347,377000,Big Bend Community College,7662 Chanute Street,Moses Lake,WA,98837-3299,76,7,9.21%,5,9805
+4350,377100,Central Washington University,400 East University Way,Ellensburg,WA,98926-7501,457,57,12.47%,396,919925
+4356,1231500,Cornish College of the Arts,1000 Lenora Street,Seattle,WA,98121-4604,46,4,8.70%,53,147785
+4358,377500,Eastern Washington University,214 Showalter Hall,Cheney,WA,99004-2444,303,39,12.87%,279,782980
+4362,815500,Evergreen State College (The),2700 Evergreen Parkway Northwest,Olympia,WA,98505-0002,156,47,30.13%,421,1060015
+4366,377800,Gonzaga University,502 East Boone Avenue,Spokane,WA,99258-0083,318,16,5.03%,113,514799
+4364,377700,Heritage University,3240 Fort Road,Toppenish,WA,98948-9562,35,7,20.00%,53,124358
+4391,970400,North Seattle Community College,9600 College Way North,Seattle,WA,98103-3599,68,8,11.76%,11,16756
+4392,378300,Northwest University,5520 108th Avenue Northeast,Kirkland,WA,98033-7523,69,10,14.49%,108,159693
+4395,378500,Pacific Lutheran University,12180 Park Avenue,Tacoma,WA,98447-0003,449,52,11.58%,368,791896
+4374,938700,Perry Technical Institute,2011 West Washington Avenue,Yakima,WA,98903-1239,80,14,17.50%,22,55032
+4363,500000,Pierce College,9401 Farwest Drive Southwest,Lakewood,WA,98498-1919,32,2,6.25%,5,16336
+4401,379400,Saint Martin's University,5000 Abbey Way SE,Lacey,WA,98503-7500,99,16,16.16%,154,198412
+4406,378700,Seattle Central Community College,1701 Broadway,Seattle,WA,98122-2413,0,0,0%,1,947
+4407,378800,Seattle Pacific University,3307 Third Avenue West,Seattle,WA,98119-1997,281,22,7.83%,212,568619
+4408,379000,Seattle University,901 12th Avenue,Seattle,WA,98122-1090,361,34,9.42%,312,780635
+4418,379700,University of Puget Sound,1500 North Warner Street,Tacoma,WA,98416-0001,387,22,5.68%,206,3368511
+4419,379800,University of Washington - Seattle,3917 University Way NE,Seattle,WA,98195-1122,1782,182,10.21%,785,3278265
+4422,500600,Walla Walla Community College,500 Tausick Way,Walla Walla,WA,99362-9267,60,8,13.33%,163,332724
+4421,379900,Walla Walla University,204 South College Avenue,College Place,WA,99324-1198,94,1,1.06%,102,236854
+4423,380000,Washington State University,1 Southeast Stadium Way,Pullman,WA,99164-1035,1058,101,9.55%,1311,3024082
+4429,380200,Western Washington University,516 High Street,Bellingham,WA,98225-5946,358,30,8.38%,488,1398027
+4431,380300,Whitman College,345 Boyer Street,Walla Walla,WA,99362-2067,75,5,6.67%,22,121730
+4432,380400,Whitworth University,300 West Hawthorne Road,Spokane,WA,99251-0001,208,10,4.81%,61,170221
+4434,380500,Yakima Valley Community College,16th Avenue & Nob Hill Boulevard,Yakima,WA,98907-2520,16,5,31.25%,0,0
+4480,383200,Alverno College,3400 South 43rd Street,Milwaukee,WI,53234-3922,55,7,12.73%,89,192756
+4484,383500,Beloit College,700 College Street,Beloit,WI,53511-5595,97,13,13.40%,143,736732
+4487,383700,Cardinal Stritch University,6801 North Yates Road,Milwaukee,WI,53217-9884,67,23,34.33%,193,267614
+4489,383800,Carroll University,100 North East Avenue,Waukesha,WI,53186-5593,84,3,3.57%,39,148465
+4490,383900,Carthage College,2001 Alford Park Drive,Kenosha,WI,53140-1994,222,46,20.72%,324,472922
+4497,384800,Edgewood College,1000 Edgewood College Drive,Madison,WI,53711-1958,68,2,2.94%,72,105471
+4568,962100,Herzing University,5218 East Terrace Drive,Madison,WI,53718-4236,107,27,25.23%,311,578843
+4505,385400,Lakeland College,W3718 South Drive,Plymouth,WI,53073-0000,38,12,31.58%,39,119974
+4507,385600,Lawrence University of Wisconsin,711 E. Boldt Way,Appleton,WI,54911-0000,190,5,2.63%,89,328514
+4513,386100,Marian University,45 South National Avenue,Fond Du Lac,WI,54935-4699,46,3,6.52%,117,246049
+4514,386300,Marquette University,1250 West Wisconsin Ave,Milwaukee,WI,53201-1881,927,49,5.29%,372,1575615
+4515,2453500,Medical College of Wisconsin,8701 Watertown Plank Road,Milwaukee,WI,53226-0509,202,4,1.98%,18,110311
+4519,386600,Milwaukee Area Technical College,700 West State Street,Milwaukee,WI,53233-1443,0,0,0%,22,21015
+4521,386800,Milwaukee School of Engineering,1025 North Broadway,Milwaukee,WI,53202-3109,49,12,24.49%,74,245398
+4523,386900,Mount Mary College,2900 North Menomonee River Parkway,Milwaukee,WI,53222-4597,111,26,23.42%,137,317022
+4529,387500,Northland College,1411 Ellis Avenue,Ashland,WI,54806-3999,81,19,23.46%,101,363676
+4532,388400,Ripon College,300  Seward Street,Ripon,WI,54971-0248,96,13,13.54%,191,489593
+4537,389200,Saint Norbert College,100 Grant Street,DePere,WI,54115-2099,105,8,7.62%,69,221029
+4551,391700,University of Wisconsin - Eau Claire,Park & Garfield Avenue,Eau Claire,WI,54702-4004,711,33,4.64%,272,1017396
+8172,389900,University of Wisconsin - Green Bay,2420 Nicolet Drive,Green Bay,WI,54311-7001,242,2,0.83%,138,277384
+4552,391900,University of Wisconsin - LaCrosse,1725 State Street,La Crosse,WI,54601-3742,211,28,13.27%,139,264003
+4553,389500,University of Wisconsin - Madison,500 Lincoln Drive,Madison,WI,53706-1380,2072,24,1.16%,1076,3404244
+4554,389600,University of Wisconsin - Milwaukee,2310 East Hartford Avenue,Milwaukee,WI,53211-3165,630,56,8.89%,599,1425793
+4555,392000,University of Wisconsin - Oshkosh,800 Algoma Boulevard,Oshkosh,WI,54901-8604,231,16,6.93%,153,382154
+4556,501500,University of Wisconsin - Parkside,900 Wood Road,Kenosha,WI,53141-2000,121,19,15.70%,172,334356
+4557,392100,University of Wisconsin - Platteville,1 University Plaza,Platteville,WI,53818-3099,236,22,9.32%,144,365331
+4558,392300,University of Wisconsin - River Falls,410 South Third Street,River Falls,WI,54022-5013,396,34,8.59%,342,630442
+4550,392400,University of Wisconsin - Stevens Point,2100 Main Street,Stevens Point,WI,54481-3871,754,50,6.63%,359,954671
+4546,391500,University of Wisconsin - Stout,712 South Broadway,Menomonie,WI,54751-0790,466,34,7.30%,158,621931
+4559,392500,University of Wisconsin - Superior,Belknap & Catlin Avenue,Superior,WI,54880-2898,136,20,14.71%,102,157703
+4561,392600,University of Wisconsin - Whitewater,800 West Main Street,Whitewater,WI,53190-1792,520,55,10.58%,427,823565
+4562,391100,Viterbo University,900 Viterbo Drive,La Crosse,WI,54601-4777,88,13,14.77%,94,281267
+4435,380600,Alderson Broaddus College,College Hill Drive,Philippi,WV,26416-1051,127,17,13.39%,218,402269
+4438,380800,Bethany College,Main Street,Bethany,WV,26032-0417,207,60,28.99%,477,1100335
+4439,380900,Bluefield State College,219 Rock Street,Bluefield,WV,24701-2198,30,19,63.33%,353,481292
+4443,381000,Concord University,Vermillion Street,Athens,WV,24712-0000,214,54,25.23%,380,566623
+4444,381100,Davis & Elkins College,100 Campus Drive,Elkins,WV,26241-3996,57,19,33.33%,309,466802
+4462,1035600,Everest Institute,5514 Big Tyler Road,Cross Lanes,WV,25313-1304,44,6,13.64%,143,211607
+4445,381200,Fairmont State University,1201 Locust Avenue,Fairmont,WV,26554-2470,144,52,36.11%,404,566148
+4451,381500,Marshall University,One John Marshall Drive,Huntington,WV,25755-3300,231,45,19.48%,693,1366466
+4454,500800,Mountain State College,Spring at Sixteenth,Parkersburg,WV,26101-3993,13,2,15.38%,73,227666
+4455,381900,Ohio Valley University,1 Campus View Drive,Vienna,WV,26105-8000,59,21,35.59%,131,189838
+4459,382000,Salem International University,223 West Main Street,Salem,WV,26426-0500,38,6,15.79%,224,673794
+4460,382200,Shepherd University,301 North King Street,Shepherdstown,WV,25443-3210,94,23,24.47%,244,324018
+4453,381800,University of Charleston,2300 MacCorkle Avenue SE,Charleston,WV,25304-1099,72,13,18.06%,131,345717
+4463,382300,West Liberty University,208 University Drive,West Liberty,WV,26074-0295,69,18,26.09%,278,491500
+5676,1086100,West Virginia Business College,1052 Main Street,Wheeling,WV,26003-2702,0,0,0%,24,30669
+4467,1057300,West Virginia Junior College,1000 Virginia Street East,Charleston,WV,25301-9983,43,6,13.95%,285,590018
+4468,500700,West Virginia Junior College,148 Willey Street,Morgantown,WV,26505-5596,38,8,21.05%,122,284118
+4472,905400,West Virginia Northern Community College,1704 Market Street,Wheeling,WV,26003-3699,8,2,25.00%,146,104032
+4447,1124500,West Virginia School of Osteopathic Medicine,400 North Lee Street,Lewisburg,WV,24901-1128,115,1,0.87%,14,47780
+4473,382600,West Virginia State University,Rt. 25 and Barron Drive,Institute,WV,25112-0000,42,17,40.48%,140,273494
+4474,382700,West Virginia University,University Avenue at College,Morgantown,WV,26506-6201,1065,142,13.33%,2084,4757247
+4475,383000,West Virginia Wesleyan College,59 College Avenue,Buckannon,WV,26201-2600,71,16,22.54%,164,409676
+4477,383100,Wheeling Jesuit University,316 Washington Avenue,Wheeling,WV,26003-6243,98,14,14.29%,164,338600
+4570,392800,Casper College,125 College Drive,Casper,WY,82601-4612,0,0,0%,33,17064
+4577,393200,University of Wyoming,Department 3434,Laramie,WY,82071-3663,387,30,7.75%,411,718258
+4579,915700,WyoTech,4373 North 3rd Street,Laramie,WY,82072-9519,1666,206,12.36%,2372,3700020
