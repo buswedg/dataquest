@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Getting%20Started%20with%20Matrices/">Getting Started with Matrices</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Getting%20Started%20with%20Matrices/">Getting Started with Matrices</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Food, Beverages and Tobacco
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Dataframe%20Basics/">Dataframe Basics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Dataframe%20Basics/">Dataframe Basics</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Food, Beverages and Tobacco
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Working%20with%20Missing%20Data/">Working with Missing Data</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Working%20with%20Missing%20Data/">Working with Missing Data</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Transportation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Summarizing%20Data/">Summarizing Data</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/Summarizing%20Data/">Summarizing Data</a>
 </td>
 </tr>
 <tr>
