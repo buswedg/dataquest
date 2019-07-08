@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/APIs%20and%20Web%20Scraping/Working%20with%20APIs/">Working with APIs</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/APIs%20and%20Web%20Scraping/Working%20with%20APIs/">Working with APIs</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Sciences
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/APIs%20and%20Web%20Scraping/Intermediate%20APIs/">Intermediate APIs</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/APIs%20and%20Web%20Scraping/Intermediate%20APIs/">Intermediate APIs</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/APIs%20and%20Web%20Scraping/Web%20scraping/">Web scraping</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/APIs%20and%20Web%20Scraping/Web%20scraping/">Web scraping</a>
 </td>
 </tr>
 <tr>
