@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Visualization/Plotting%20Basics/">Plotting Basics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/Plotting%20Basics/">Plotting Basics</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Environment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Visualization/Data%20Visualization%20and%20Exploration%20/">Data Visualization and Exploration </a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/Data%20Visualization%20and%20Exploration%20/">Data Visualization and Exploration </a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Education
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Visualization/Creating%20Compelling%20Visualizations/">Creating Compelling Visualizations</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/Creating%20Compelling%20Visualizations/">Creating Compelling Visualizations</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Health Care
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Visualization/Introduction%20to%20Matplotlibs%20Internals/">Introduction to Matplotlibs Internals</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/Introduction%20to%20Matplotlibs%20Internals/">Introduction to Matplotlibs Internals</a>
 </td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Information Technology
 </td>
 </tr>
 <tr>
