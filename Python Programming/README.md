@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Python%20Basics/">Python Basics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Python%20Basics/">Python Basics</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/If%20Statements%20and%20Loops/">If Statements and Loops</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/If%20Statements%20and%20Loops/">If Statements and Loops</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Dictionaries/">Dictionaries</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Dictionaries/">Dictionaries</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Environment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Functions%20and%20Debugging/">Functions and Debugging</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Functions%20and%20Debugging/">Functions and Debugging</a>
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Modules%20and%20Classes/">Modules and Classes</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Modules%20and%20Classes/">Modules and Classes</a>
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Enumeration%20and%20Catching%20Errors/">Enumeration and Catching Errors</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Enumeration%20and%20Catching%20Errors/">Enumeration and Catching Errors</a>
 </td>
 </tr>
 <tr>
@@ -305,7 +305,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Indexing%20and%20More%20Functions/">Indexing and More Functions</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Indexing%20and%20More%20Functions/">Indexing and More Functions</a>
 </td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ Transportation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Scopes%20and%20Debugging/">Scopes and Debugging</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Scopes%20and%20Debugging/">Scopes and Debugging</a>
 </td>
 </tr>
 <tr>
@@ -405,7 +405,7 @@ Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Object-Oriented%20Programming/">Object-Oriented Programming</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Object-Oriented%20Programming/">Object-Oriented Programming</a>
 </td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Exception%20Handling/">Exception Handling</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Exception%20Handling/">Exception Handling</a>
 </td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
@@ -505,7 +505,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/Lambda%20Functions/">Lambda Functions</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/Lambda%20Functions/">Lambda Functions</a>
 </td>
 </tr>
 <tr>
