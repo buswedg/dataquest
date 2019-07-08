@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Linear%20Algebra%20in%20Python/Solving%20Systems%20of%20Equations%20with%20Matrices/">Solving Systems of Equations with Matrices</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Linear%20Algebra%20in%20Python/Solving%20Systems%20of%20Equations%20with%20Matrices/">Solving Systems of Equations with Matrices</a>
 </td>
 </tr>
 <tr>
@@ -25,7 +25,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Linear%20Algebra%20in%20Python/Working%20with%20Vectors/">Working with Vectors</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Linear%20Algebra%20in%20Python/Working%20with%20Vectors/">Working with Vectors</a>
 </td>
 </tr>
 <tr>
@@ -75,7 +75,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
