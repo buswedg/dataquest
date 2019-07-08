@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Decision%20Trees/Introduction%20to%20Decision%20Trees/">Introduction to Decision Trees</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Decision%20Trees/Introduction%20to%20Decision%20Trees/">Introduction to Decision Trees</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Decision%20Trees/Building%20a%20Decision%20Tree/">Building a Decision Tree</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Decision%20Trees/Building%20a%20Decision%20Tree/">Building a Decision Tree</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Decision%20Trees/Applying%20Decision%20Trees/">Applying Decision Trees</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Decision%20Trees/Applying%20Decision%20Trees/">Applying Decision Trees</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Decision%20Trees/Introduction%20to%20Random%20Forests/">Introduction to Random Forests</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Decision%20Trees/Introduction%20to%20Random%20Forests/">Introduction to Random Forests</a>
 </td>
 </tr>
 <tr>
