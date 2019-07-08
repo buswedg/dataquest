@@ -1,4 +1,4 @@
-"<table>
+<table>
 <tr></tr>
 <tr>
 <td colspan="4"><b>Project</b></td>
@@ -382,6 +382,64 @@ Information Technology<br>Sciences
 </tr>
 <tr>
 <td colspan="4">
+<a href="https://github.com/buswedg/dataquest/tree/master/SQL%20and%20Databases/">SQL and Databases</a>
+</td>
+</tr>
+<tr>
+<td><b>Author</b></td>
+<td><b>Expertise</b></td>
+<td><b>Tool</b></td>
+<td><b>Industry</b></td>
+</tr>
+<tr>
+<td>
+Darryl Buswell
+</td>
+<td>
+Data Management
+</td>
+<td>
+MS SQL<br>Python
+</td>
+<td>
+Education
+</td>
+</tr>
+<tr>
+<td colspan="4"><b>Description</b></td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Basics of using Python to work SQL databases.</p>
+<p>Includes:</p>
+<ul>
+<li>Basics of using Python to work with SQL databases, including how to apply the SELECT and WHERE statements to obtain data about the rank and major of recent graduates.</li>
+<li>Use logical operators WHERE, AND and OR to write an SQL query in Python.</li>
+<li>Use SQL in Python to select and limit results retrieved from a query.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4"><b>Dataset</b></td>
+</tr>
+<tr>
+<td colspan="4">
+<ul>
+<li>American Community Survey (ACS) results for 2010 to 2012 from a survey on job outcomes for recent college graduates based on the major they studied in college. <a href="https://github.com/fivethirtyeight/data/blob/master/college-majors/recent-grads.csv" target="_blank">[link]</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr></tr>
+<tr>
+<td colspan="4"><b>Project</b></td>
+</tr>
+<tr>
+<td colspan="4">
 <a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/">Probability and Statistics in Pythons</a>
 </td>
 </tr>
@@ -731,7 +789,7 @@ Entertainment<br>Government Policy and Planning<br>Health Care<br>Information Te
 <p>Includes:</p>
 <ul>
 <li>Use of Python to apply k-means clustering and principle component analysis to group US senators into clusters based on their voting habits.</li>
-<li>Applied NaÃ¯ve Bayes theory using Scikit-learn and Python to predict whether a movie review is positive or negative given only the text of the review.</li>
+<li>Applied Naïve Bayes theory using Scikit-learn and Python to predict whether a movie review is positive or negative given only the text of the review.</li>
 <li>Creation of counters that can represent a multiset and probability mass function (e.g. Suite), using Python.</li>
 <li>Use of Python to plot a Probability Mass Function (PMF) and analyze the differences between PMFs to explore correlations in data from the National Survey of Family Growth.</li>
 <li>Use of Euclidean Distance, the K-nearest neighbours (KNN) algorithm in Python to analyze NBA player performance data in the 2013-14 season.</li>
@@ -814,6 +872,3 @@ Education<br>Entertainment
 </td>
 </tr>
 </table>
-
-
-
