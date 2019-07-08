@@ -1,11 +1,11 @@
-<table>
+"<table>
 <tr></tr>
 <tr>
 <td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20Programming/">Python Programming</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20Programming/">Python Programming</a>
 </td>
 </tr>
 <tr>
@@ -25,7 +25,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-Entertainment<br>Environment<br>Government Policy and Planning<br>Information Technology<br>Securities and Finance<br>Sports and Recreation<br>Transportation
+Entertainment<br>Environment<br>Government Policy and Planning<br>Information Technology<br>Sciences<br>Securities and Finance<br>Sports and Recreation<br>Transportation
 </td>
 </tr>
 <tr>
@@ -81,7 +81,7 @@ Entertainment<br>Environment<br>Government Policy and Planning<br>Information Te
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Analysis%20with%20Pandas/">Data Analysis with Pandas</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Analysis%20with%20Pandas/">Data Analysis with Pandas</a>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ Food, Beverages and Tobacco<br>Government Policy and Planning<br>Transportation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Visualization/">Data Visualization</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Visualization/">Data Visualization</a>
 </td>
 </tr>
 <tr>
@@ -163,7 +163,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-Education<br>Environment<br>Health Care
+Education<br>Environment<br>Health Care<br>Information Technology
 </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ Education<br>Environment<br>Health Care
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Cleaning/">Data Cleaning</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Cleaning/">Data Cleaning</a>
 </td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20for%20Business%20Analysts/">Python for Business Analysts</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20for%20Business%20Analysts/">Python for Business Analysts</a>
 </td>
 </tr>
 <tr>
@@ -305,6 +305,7 @@ Arts and Culture<br>Housing<br>Securities and Finance
 <td colspan="4">
 <ul>
 <li>Annual housing affordability survey data (e.g. age of household head, housing costs, number of bedrooms and year house was built) collected by the US Department of Housing & Urban Development (HUD). <a href="http://portal.hud.gov/hudportal/HUD" target="_blank">[link]</a></li>
+<li>Annual housing affordability survey data (e.g. age of household head, housing costs, number of bedrooms and year house was built) collected by the US Department of Housing & Urban Development (HUD). <a href="http://portal.hud.gov/hudportal/HUD" target="_blank">[link]</a></li>
 <li>Historical daily share price data for Microsoft, Inc. and Apple Computer, Inc. from the date each company went public.</li>
 <li>Basic metadata (e.g. title, artist, date made, medium, dimensions, and date acquired) for 120,000 records within the Museum of Modern Art's catalogue of artwork.  <a href="https://github.com/MuseumofModernArt/collection" target="_blank">[link]</a></li>
 </ul>
@@ -321,7 +322,7 @@ Arts and Culture<br>Housing<br>Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/APIs%20and%20Web%20Scraping/">APIs and Web Scraping</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/APIs%20and%20Web%20Scraping/">APIs and Web Scraping</a>
 </td>
 </tr>
 <tr>
@@ -381,7 +382,7 @@ Information Technology<br>Sciences
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/">Probability and Statistics in Pythons</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/">Probability and Statistics in Pythons</a>
 </td>
 </tr>
 <tr>
@@ -401,7 +402,7 @@ Statistical Inference
 Python
 </td>
 <td>
-Arts and Culture<br>Food, Beverages and Tobacco<br>Securities and Finance<br>Sports and Recreation<br>Tourism
+Arts and Culture<br>Food, Beverages and Tobacco<br>Sciences<br>Securities and Finance<br>Sports and Recreation<br>Tourism
 </td>
 </tr>
 <tr>
@@ -433,6 +434,7 @@ Arts and Culture<br>Food, Beverages and Tobacco<br>Securities and Finance<br>Spo
 <li>American Community Survey (ACS) results collected by the US Census Bureau. <a href="https://www.census.gov/programs-surveys/acs/" target="_blank">[link]</a></li>
 <li>Collins Gem Guide to Flags. <a href="https://archive.ics.uci.edu/ml/datasets/Flags" target="_blank">[link]</a></li>
 <li>Hourly and daily count of rental bikes between 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information. <a href="http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset" target="_blank">[link]</a></li>
+<li>Hourly and daily count of rental bikes between 2011 and 2012 in Capital bikeshare system with the corresponding weather and seasonal information. <a href="http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset" target="_blank">[link]</a></li>
 </ul>
 </td>
 </tr>
@@ -447,7 +449,7 @@ Arts and Culture<br>Food, Beverages and Tobacco<br>Securities and Finance<br>Spo
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Linear%20Algebra%20in%20Python/">Linear Algebra in Python</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Linear%20Algebra%20in%20Python/">Linear Algebra in Python</a>
 </td>
 </tr>
 <tr>
@@ -467,7 +469,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
@@ -504,7 +506,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/">Machine Learning in Python</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/">Machine Learning in Python</a>
 </td>
 </tr>
 <tr>
@@ -574,7 +576,7 @@ Education<br>Entertainment<br>Environment<br>Securities and Finance<br>Sports an
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Decision%20Trees/">Decision Trees</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Decision%20Trees/">Decision Trees</a>
 </td>
 </tr>
 <tr>
@@ -619,6 +621,9 @@ Government Policy and Planning
 <td colspan="4">
 <ul>
 <li>Extracted data (marital status, age, type of work) for citizens from the 1994 US Census. <a href="http://archive.ics.uci.edu/ml/datasets/Adult" target="_blank">[link]</a></li>
+<li>Extracted data (marital status, age, type of work) for citizens from the 1994 US Census. <a href="http://archive.ics.uci.edu/ml/datasets/Adult" target="_blank">[link]</a></li>
+<li>Extracted data (marital status, age, type of work) for citizens from the 1994 US Census. <a href="http://archive.ics.uci.edu/ml/datasets/Adult" target="_blank">[link]</a></li>
+<li>Extracted data (marital status, age, type of work) for citizens from the 1994 US Census. <a href="http://archive.ics.uci.edu/ml/datasets/Adult" target="_blank">[link]</a></li>
 </ul>
 </td>
 </tr>
@@ -633,7 +638,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/">Data Structures and Algorithms</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/">Data Structures and Algorithms</a>
 </td>
 </tr>
 <tr>
@@ -653,7 +658,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-Sports and Recreation
+Information Technology<br>Sports and Recreation
 </td>
 </tr>
 <tr>
@@ -679,6 +684,7 @@ Sports and Recreation
 <td colspan="4">
 <ul>
 <li>NBA player performance statistics for the 2013-14 season, including player name, position, games played and total points scored. <a href="http://www.basketball-reference.com/leagues/NBA_2013_totals.html" target="_blank">[link]</a></li>
+<li>NBA player performance statistics for the 2013-14 season, including player name, position, games played and total points scored. <a href="http://www.basketball-reference.com/leagues/NBA_2013_totals.html" target="_blank">[link]</a></li>
 </ul>
 </td>
 </tr>
@@ -693,7 +699,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/">Exploring Topics in Data Science</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/">Exploring Topics in Data Science</a>
 </td>
 </tr>
 <tr>
@@ -713,7 +719,7 @@ Exploratory Analysis<br>Machine Learning<br>Statistical Inference
 Python
 </td>
 <td>
-Entertainment<br>Government Policy and Planning<br>Health Care<br>Information Technology<br>Sports and Recreation
+Entertainment<br>Government Policy and Planning<br>Health Care<br>Information Technology<br>Sciences<br>Sports and Recreation
 </td>
 </tr>
 <tr>
@@ -725,7 +731,7 @@ Entertainment<br>Government Policy and Planning<br>Health Care<br>Information Te
 <p>Includes:</p>
 <ul>
 <li>Use of Python to apply k-means clustering and principle component analysis to group US senators into clusters based on their voting habits.</li>
-<li>Applied Naïve Bayes theory using Scikit-learn and Python to predict whether a movie review is positive or negative given only the text of the review.</li>
+<li>Applied NaÃ¯ve Bayes theory using Scikit-learn and Python to predict whether a movie review is positive or negative given only the text of the review.</li>
 <li>Creation of counters that can represent a multiset and probability mass function (e.g. Suite), using Python.</li>
 <li>Use of Python to plot a Probability Mass Function (PMF) and analyze the differences between PMFs to explore correlations in data from the National Survey of Family Growth.</li>
 <li>Use of Euclidean Distance, the K-nearest neighbours (KNN) algorithm in Python to analyze NBA player performance data in the 2013-14 season.</li>
@@ -758,7 +764,7 @@ Entertainment<br>Government Policy and Planning<br>Health Care<br>Information Te
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Spark%20and%20Map-Reduce/">Spark and Map-Reduce</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Spark%20and%20Map-Reduce/">Spark and Map-Reduce</a>
 </td>
 </tr>
 <tr>
@@ -789,8 +795,8 @@ Education<br>Entertainment
 <p>Use of Apache Spark via PySpark in Python and the map-reduce technique to clean and analyze large datasets.</p>
 <p>Includes:</p>
 <ul>
-<li>Basic use of PySpark in Python to take advantage of distributed processing. Used of the ReduceByKey() function and filtering to tally the number of Daily Show guests for each year that the show has been running.</li>
-<li>Use of PySpark in Python to transform Hamlet text into a format that is suitable for data analysis and to explore an RDD before trying to chain another transformation to the RDD.</li>
+<li>Basic use of PySpark in Python to take advantage of distributed processing. Includes use of map() and reducebykey() functions, as well as filtering techniques in order to tally the number of Daily Show guests for each year that the show has been running.</li>
+<li>Use of PySpark in Python to transform Hamlet text into a format that is suitable for data analysis. Includes use of flatMap(), filter(), count(), and collect() functions to explore the dataset as a RDD.</li>
 <li>Use of PySpark in Python, including the map-reduce paradigm, transformations and actions, and data cleaning, in order to transform Hamlet text into a dataset that is suitable for analysis.</li>
 </ul>
 </td>
@@ -803,7 +809,11 @@ Education<br>Entertainment
 <ul>
 <li>List of guest appearances on the Daily Show from 1999 to 2015.</li>
 <li>The entire text of Shakespeare's Hamlet. <a href="http://www.opensourceshakespeare.org/stats/" target="_blank">[link]</a></li>
+<li>The entire text of Shakespeare's Hamlet. <a href="http://www.opensourceshakespeare.org/stats/" target="_blank">[link]</a></li>
 </ul>
 </td>
 </tr>
 </table>
+
+
+
