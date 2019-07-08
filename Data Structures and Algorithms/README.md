@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Memory%20and%20Unicode/">Memory and Unicode</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Memory%20and%20Unicode/">Memory and Unicode</a>
 </td>
 </tr>
 <tr>
@@ -25,7 +25,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Information Technology
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Algorithms/">Algorithms</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Algorithms/">Algorithms</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Binary%20Search/">Binary Search</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Binary%20Search/">Binary Search</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Data%20Structures/">Data Structures</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Data%20Structures/">Data Structures</a>
 </td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Information Technology
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Recursion%20and%20Advanced%20Data%20Structures/">Recursion and Advanced Data Structures</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Data%20Structures%20and%20Algorithms/Recursion%20and%20Advanced%20Data%20Structures/">Recursion and Advanced Data Structures</a>
 </td>
 </tr>
 <tr>
@@ -225,7 +225,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Information Technology
 </td>
 </tr>
 <tr>
