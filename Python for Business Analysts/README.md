@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20for%20Business%20Analysts/Introduction%20to%20Pandas/">Introduction to Pandas</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20for%20Business%20Analysts/Introduction%20to%20Pandas/">Introduction to Pandas</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Housing
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20for%20Business%20Analysts/Automate%20Repetitive%20Tasks/">Automate Repetitive Tasks</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20for%20Business%20Analysts/Automate%20Repetitive%20Tasks/">Automate Repetitive Tasks</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Housing
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20for%20Business%20Analysts/Plotting%20the%20Rise%20of%20Computers/">Plotting the Rise of Computers</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20for%20Business%20Analysts/Plotting%20the%20Rise%20of%20Computers/">Plotting the Rise of Computers</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Python%20for%20Business%20Analysts/Cleaning%20Data/">Cleaning Data</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Python%20for%20Business%20Analysts/Cleaning%20Data/">Cleaning Data</a>
 </td>
 </tr>
 <tr>
