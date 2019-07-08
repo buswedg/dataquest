@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Clustering%20in%20Python/">Clustering in Python</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Clustering%20in%20Python/">Clustering in Python</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Government Policy and Planning
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Naive%20Bayes%20for%20Sentiment%20Analysis/">Naive Bayes for Sentiment Analysis</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Naive%20Bayes%20for%20Sentiment%20Analysis/">Naive Bayes for Sentiment Analysis</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Using%20Counters/">Using Counters</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Using%20Counters/">Using Counters</a>
 </td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ Exploratory Analysis
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Probability%20Mass%20Functions/">Probability Mass Functions</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Probability%20Mass%20Functions/">Probability Mass Functions</a>
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Health Care
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/K-Nearest%20Neighbors%20Introduction/">K-Nearest Neighbors Introduction</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/K-Nearest%20Neighbors%20Introduction/">K-Nearest Neighbors Introduction</a>
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Introduction%20to%20Natural%20Language%20Processing%20%20/">Introduction to Natural Language Processing  </a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Exploring%20Topics%20in%20Data%20Science/Introduction%20to%20Natural%20Language%20Processing%20%20/">Introduction to Natural Language Processing  </a>
 </td>
 </tr>
 <tr>
