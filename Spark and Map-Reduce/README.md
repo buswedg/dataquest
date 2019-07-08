@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Spark%20and%20Map-Reduce/Introduction%20to%20Spark/">Introduction to Spark</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Spark%20and%20Map-Reduce/Introduction%20to%20Spark/">Introduction to Spark</a>
 </td>
 </tr>
 <tr>
@@ -33,7 +33,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<p>Basic use of PySpark in Python to take advantage of distributed processing. Used of the ReduceByKey() function and filtering to tally the number of Daily Show guests for each year that the show has been running.</p>
+<p>Basic use of PySpark in Python to take advantage of distributed processing. Includes use of map() and reducebykey() functions, as well as filtering techniques in order to tally the number of Daily Show guests for each year that the show has been running.</p>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Spark%20and%20Map-Reduce/Transformations%20and%20Actions/">Transformations and Actions</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Spark%20and%20Map-Reduce/Transformations%20and%20Actions/">Transformations and Actions</a>
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Darryl Buswell
 Big Data<br>Data Management
 </td>
 <td>
-Python
+Python<br>Spark
 </td>
 <td>
 Education
@@ -83,7 +83,7 @@ Education
 </tr>
 <tr>
 <td colspan="4">
-<p>Use of PySpark in Python to transform Hamlet text into a format that is suitable for data analysis and to explore an RDD before trying to chain another transformation to the RDD.</p>
+<p>Use of PySpark in Python to transform Hamlet text into a format that is suitable for data analysis. Includes use of flatMap(), filter(), count(), and collect() functions to explore the dataset as a RDD.</p>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Education
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Spark%20and%20Map-Reduce/Transforming%20Hamlet%20Into%20A%20Dataset/">Transforming Hamlet Into A Dataset</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Spark%20and%20Map-Reduce/Transforming%20Hamlet%20Into%20A%20Dataset/">Transforming Hamlet Into A Dataset</a>
 </td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ Darryl Buswell
 Big Data<br>Data Management
 </td>
 <td>
-Python
+Python<br>Spark
 </td>
 <td>
 Education
