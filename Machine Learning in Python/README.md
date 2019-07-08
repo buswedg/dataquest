@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Regression%20Basics/">Regression Basics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Regression%20Basics/">Regression Basics</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Classification%20Basics/">Classification Basics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Classification%20Basics/">Classification Basics</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Logistic%20Regression/">Logistic Regression</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Logistic%20Regression/">Logistic Regression</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Education
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Multiclass%20Classification/">Multiclass Classification</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Multiclass%20Classification/">Multiclass Classification</a>
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Transportation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Intermediate%20Linear%20Regression/">Intermediate Linear Regression</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Intermediate%20Linear%20Regression/">Intermediate Linear Regression</a>
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Tourism
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/K%20Means%20Clustering/">K Means Clustering</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/K%20Means%20Clustering/">K Means Clustering</a>
 </td>
 </tr>
 <tr>
@@ -305,7 +305,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Gradient%20Descent/">Gradient Descent</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Gradient%20Descent/">Gradient Descent</a>
 </td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Machine%20Learning%20in%20Python/Introduction%20to%20Neural%20Networks/">Introduction to Neural Networks</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Machine%20Learning%20in%20Python/Introduction%20to%20Neural%20Networks/">Introduction to Neural Networks</a>
 </td>
 </tr>
 <tr>
