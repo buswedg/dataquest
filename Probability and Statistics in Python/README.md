@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Introduction%20to%20Statistics/">Introduction to Statistics</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Introduction%20to%20Statistics/">Introduction to Statistics</a>
 </td>
 </tr>
 <tr>
@@ -25,7 +25,7 @@ Statistical Inference
 Python
 </td>
 <td>
-
+Sciences
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Standard%20Deviation%20and%20Correlation/">Standard Deviation and Correlation</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Standard%20Deviation%20and%20Correlation/">Standard Deviation and Correlation</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Sports and Recreation
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Linear%20Regression/">Linear Regression</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Linear%20Regression/">Linear Regression</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Food, Beverages and Tobacco
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Distributions%20and%20Sampling/">Distributions and Sampling</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Distributions%20and%20Sampling/">Distributions and Sampling</a>
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ Securities and Finance
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Introduction%20to%20Probability/">Introduction to Probability</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Introduction%20to%20Probability/">Introduction to Probability</a>
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Arts and Culture
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Calculating%20Probabilities/">Calculating Probabilities</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Calculating%20Probabilities/">Calculating Probabilities</a>
 </td>
 </tr>
 <tr>
@@ -305,7 +305,7 @@ Tourism
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/datakick/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Probability%20Distributions/">Probability Distributions</a>
+<a href="https://github.com/buswedg/dataquest/tree/master/Probability%20and%20Statistics%20in%20Pythons/Probability%20Distributions/">Probability Distributions</a>
 </td>
 </tr>
 <tr>
